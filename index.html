@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Katalog AI use casů – veřejný sektor</title>
+    <title>Katalog využití umělé inteligence ve veřejném sektoru</title>
     <!-- Styl blízký dia.gov.cz – hlavní zelená #368537 -->
     <link rel="stylesheet" href="styles.css" />
 </head>
@@ -291,6 +291,14 @@
         </section>
     </main>
 
+    <div id="info-banner" class="info-banner">
+        <button class="banner-close" aria-label="Zavřít banner">&times;</button>
+        <p>
+            Máte ve veřejném sektoru zajímavý use case, o kterém chcete informovat ostatní?
+            Napište na <a href="mailto:kc@dia.gov.cz">kc@dia.gov.cz</a> a rádi jej do katalogu zařadíme.
+        </p>
+    </div>
+
     <script>
         document.addEventListener("DOMContentLoaded", () => {
             const sidebar = document.getElementById("sidebar");
@@ -331,6 +339,23 @@
             menuBtn.addEventListener("click", () => {
                 sidebar.classList.toggle("open");
             });
+
+            // info banner
+            const banner = document.getElementById("info-banner");
+            const bannerClose = banner.querySelector(".banner-close");
+            let bannerTimer;
+
+            function showBanner() {
+                banner.style.display = "block";
+            }
+
+            function hideBanner() {
+                banner.style.display = "none";
+                if (bannerTimer) clearTimeout(bannerTimer);
+                bannerTimer = setTimeout(showBanner, 120000);
+            }
+
+            bannerClose.addEventListener("click", hideBanner);
         });
     </script>
 </body>
