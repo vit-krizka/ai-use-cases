@@ -124,6 +124,62 @@ h2 {
     color: var(--primary);
 }
 
+/* ===== Use-case detail styling ===== */
+.meta {
+    list-style: none;
+    margin: 0 0 1.5rem 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 0.5rem 1rem;
+    font-size: 0.9rem;
+    color: #555;
+}
+
+.meta .icon {
+    margin-right: 0.4rem;
+}
+
+.highlight {
+    background: #f9f9f9;
+    border-left: 4px solid var(--primary);
+    padding: 1rem;
+    border-radius: 4px;
+    margin-bottom: 2rem;
+}
+
+.info-grid .row {
+    margin-bottom: 1.5rem;
+}
+
+.info-grid h3 {
+    margin: 0 0 0.5rem 0;
+    font-size: 1.1rem;
+    color: var(--primary);
+}
+
+.bottom-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.bottom-cards .card {
+    flex: 1 1 200px;
+    background: var(--secondary);
+    border-radius: 6px;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+.bottom-cards .card strong {
+    font-size: 0.95rem;
+    color: var(--primary);
+}
+
 /* ===== Mobile ===== */
 @media (max-width: 768px) {
     body {
