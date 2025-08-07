@@ -283,13 +283,13 @@
                     setActiveLink(link);
                     showSection(id);
                     history.replaceState(null, "", `#${id}`);
-                    if (window.innerWidth <= 768) sidebar.classList.add("closed");
+                    if (window.innerWidth <= 768) sidebar.classList.remove("open");
                 });
             });
 
             // hamburger
             menuBtn.addEventListener("click", () => {
-                sidebar.classList.toggle("closed");
+                sidebar.classList.toggle("open");
             });
         });
     </script>

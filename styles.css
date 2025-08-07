@@ -80,10 +80,6 @@ body {
     transition: transform 0.3s ease;
 }
 
-#sidebar.closed {
-    transform: translateX(-100%);
-}
-
 nav ul {
     list-style: none;
     margin: 0;
