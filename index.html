@@ -114,7 +114,7 @@
                 </path>
             </svg>
         </div>
-        <h1>AI use cases veřejná správa</h1>
+        <h1>Katalog využití AI ve veřejném sektoru</h1>
     </div>
 
     <aside id="sidebar">
@@ -291,6 +291,12 @@
         </section>
     </main>
 
+    <footer>
+        <div class="footer-logo" aria-label="Digitální informační agentura"></div>
+        <p>Katalog spravuje Digitální a informační agentura (DIA).</p>
+        <p><a href="podminky.html">Podmínky využití a ochrana osobních údajů</a></p>
+    </footer>
+
     <div id="info-banner" class="info-banner">
         <button class="banner-close" aria-label="Zavřít banner">&times;</button>
         <p>
@@ -356,6 +362,11 @@
             }
 
             bannerClose.addEventListener("click", hideBanner);
+
+            const footerLogo = document.querySelector(".footer-logo");
+            if (footerLogo) {
+                footerLogo.innerHTML = document.querySelector(".logo").innerHTML;
+            }
         });
     </script>
 </body>
