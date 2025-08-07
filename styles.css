@@ -17,6 +17,7 @@ body {
     margin: 0;
     display: grid;
     grid-template-columns: var(--sidebar-width) 1fr;
+    grid-template-rows: 1fr auto;
     min-height: 100vh;
 }
 
@@ -108,6 +109,7 @@ footer {
     padding: 2rem 1rem;
     margin-top: 2rem;
     font-size: 0.9rem;
+    grid-column: 1 / -1;
 }
 
 footer .footer-logo {
