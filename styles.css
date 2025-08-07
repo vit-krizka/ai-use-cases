@@ -129,9 +129,6 @@ h2 {
     list-style: none;
     margin: 0 0 1.5rem 0;
     padding: 1rem;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 0.5rem 1rem;
     font-size: 0.9rem;
     color: #555;
     background: #f0f0f0;
@@ -141,10 +138,18 @@ h2 {
 
 .meta li {
     list-style: none;
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.25rem;
+}
+
+.meta li:last-child {
+    margin-bottom: 0;
 }
 
 .meta .icon {
     margin-right: 0.4rem;
+    font-size: 1.1rem;
 }
 
 .highlight {
@@ -155,14 +160,30 @@ h2 {
     margin-bottom: 2rem;
 }
 
-.info-grid .row {
-    margin-bottom: 1.5rem;
+
+.info-grid {
+    display: grid;
+    grid-template-columns: 220px 1fr;
+    gap: 0.5rem 1rem;
+    margin-bottom: 2rem;
+    background: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 1rem;
 }
 
-.info-grid h3 {
-    margin: 0 0 0.5rem 0;
+.info-grid dt {
+    margin: 0;
     font-size: 1.1rem;
     color: var(--primary);
+}
+
+.info-grid dd {
+    margin: 0 0 1rem 0;
+}
+
+.info-grid dd:last-of-type {
+    margin-bottom: 0;
 }
 
 .bottom-cards {
@@ -174,8 +195,9 @@ h2 {
 
 .bottom-cards .card {
     flex: 1 1 200px;
-    background: var(--secondary);
-    border-radius: 6px;
+    background: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
     padding: 1rem;
     display: flex;
     flex-direction: column;
