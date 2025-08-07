@@ -260,4 +260,24 @@ h2 {
     .hamburger {
         display: block;
     }
+
+    .info-grid {
+        display: block;
+    }
+
+    .info-grid dt {
+        margin-top: 1rem;
+    }
+
+    .info-grid dt:first-of-type {
+        margin-top: 0;
+    }
+
+    .info-grid dd {
+        margin-bottom: 1rem;
+    }
+
+    .info-grid dd:last-of-type {
+        margin-bottom: 0;
+    }
 }
