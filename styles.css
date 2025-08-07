@@ -72,7 +72,7 @@ body {
     background: var(--secondary);
     border-right: 1px solid #d9e2ec;
     overflow-y: auto;
-    padding: 70px 0 1rem;
+    padding: 56px 0 1rem;
     /* for fixed topbar */
     position: sticky;
     top: 0;
