@@ -285,10 +285,19 @@ h2 {
         top: 0;
         width: var(--sidebar-width);
         transform: translateX(-100%);
+        z-index: 999;
     }
 
     #sidebar.open {
         transform: translateX(0);
+    }
+
+    main {
+        grid-column: 1;
+    }
+
+    footer {
+        grid-column: 1;
     }
 
     .hamburger {
