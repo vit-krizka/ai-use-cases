@@ -16,7 +16,8 @@
     "Očekávané dopady": "vývoj AI modelů pro digitální patologii čelí nedostatku specializovaných nástrojů rozšiřujících PyTorch, což vede k neefektivitě a opakujícím se chybám \ntento projekt si klade za cíl vytvořit univerzální knihovnu pro strojové učení v digitální patologii, která usnadní práci s velkými obrazovými daty prostřednictvím modulů pro předzpracování dat, augmentaci dat, výpočet metrik a rekonstrukci dat \nknihovna bude vycházet z nástrojů vytvořených v RationAI a bude zveřejněna pod licencí MIT na GitHub",
     "Vyhodnocení úspěšnosti": "Vývoj nástroje stále probíhá.",
     "Poučení pro příští projekty": "Vývoj nástroje stále probíhá.",
-    "Dokumentace": "Informace z veřejných zdrojů:\nhttps://www.muni.cz/vyzkum/projekty/73713",
+    "Zdroj": "https://www.muni.cz/vyzkum/projekty/73713",
+    "Označení zdroje": "Informace o projektu na webu Masarykovy univerzity",
     "Informace o zdroji a kontaktní osoba": "RNDr. Vít Musil, Ph.D. , odborný asistent – Katedra teorie programování, Masarykova univerzita, vit.musil@mail.muni.cz",
     "Obor činnosti": "Zdravotnictví",
     "Kategorie use case": "Analýza audiovizuálních dat"
@@ -37,7 +38,8 @@
     "Očekávané dopady": "+15–20 % více zachycených zhoubných nádorů oproti standardnímu postupu\nredukce falešně pozitivních nálezů a s tím souvisejících doplňkových vyšetření\nzrychlení čtení snímků a zvýšení průchodnosti pracoviště\ntransparentní metriky a auditovatelnost procesu hodnocení",
     "Vyhodnocení úspěšnosti": "Úspěšnost bude sledována porovnáním senzitivity/specificity před a po implementaci, změnou detekční míry (počet karcinomů na 1000 vyšetření), počtem doplňkových vyšetření a průměrným časem čtení snímku. První roční audit vyhodnotí dosažení cílů a případně upraví pracovní postupy.",
     "Poučení pro příští projekty": "AI je podpůrný nástroj – finální odpovědnost nese lékař, nutné právní a procesní ošetření\nověřit CE certifikaci pro 2D/3D mamografii a kompatibilitu s PACS/DICOM před nákupem\nnastavit kybernetickou a datovou bezpečnost včetně logování a audit trailu\n definovat metriky úspěchu a průběžně je vyhodnocovat\n zajistit školení personálu",
-    "Dokumentace": "Zadávací dokumentace: https://tenderarena.cz/dodavatel/zakazka/712607",
+    "Zdroj": "https://tenderarena.cz/dodavatel/zakazka/712607",
+    "Označení zdroje": "Zadávací dokumentace v systému TenderArena",
     "Informace o zdroji a kontaktní osoba": "Kontakt na straně zadavatele: Oddělení veřejných zakázek FNHK (zakazky@fnhk.cz ).\nKontakt na straně projektu/klinické části: Radiologická klinika FNHK.\nhttps://screenpoint-medical.com/news-coverage/transpara-ai-boosts-breast-cancer-detection-without-increasing-reading-time-study-finds/",
     "Obor činnosti": "Zdravotnictví",
     "Kategorie use case": "Analýza audiovizuálních dat; Predikce a  automatizované rozhodování"
@@ -58,7 +60,8 @@
     "Očekávané dopady": "až o 30 % více detekovaných nálezů oproti běžné praxi\nautomatizovaná tvorba lékařských zpráv → snížení administrativní zátěže\nplánováno 100 000 AI vyšetření ročně\nrychlejší a přesnější diagnostika",
     "Vyhodnocení úspěšnosti": "Systém dosahuje přibližně 90% přesnosti v detekci abnormalit. AI již vyhodnotila desítky tisíc snímků. Radiologové systém aktivně využívají, přičemž AI zvýrazňuje podezřelé oblasti \na pomáhá s tvorbou zpráv. Nasazení v praxi bylo pozitivně přijato.",
     "Poučení pro příští projekty": "potřeba úzké spolupráce s lékaři při vývoji a validaci\nAI je efektivní nástroj pro řešení nedostatku personálu\ndůvěryhodnost systému podporuje certifikace jako zdravotnický prostředek\nkvalitní tréninková data a zpětná vazba jsou klíčové \npro přesnost",
-    "Dokumentace": null,
+    "Zdroj": null,
+    "Označení zdroje": null,
     "Informace o zdroji a kontaktní osoba": "Informace o tomto projektu byly získány z veřejných zdrojů, konkrétně za článku https://www.businessinfo.cz/clanky/v-moravskoslezskem-kraji-pomaha-v-nemocnicich-s-diagnostikou-a-lecbou-umela-inteligence-a-virtualni-realita/",
     "Obor činnosti": "Zdravotnictví",
     "Kategorie use case": "Analýza audiovizuálních dat; Generování obsahu a chatboti úředníků; Optimalizace  úředních procesů"
@@ -79,7 +82,8 @@
     "Očekávané dopady": "výrazná úspora času oproti ručnímu přepisu díky automatizovanému workflow\nrychlejší zveřejňování stenografických záznamů a vyšší transparentnost, (inference z nasazení v PSP; zdroj uvádí nahrazení ručního přepisu)\nzvýšení dostupnosti obsahu (titulky, překlady pro cizojazyčné publikum a osoby se sluchovým postižením)\nmožnost fulltextového vyhledávání v audio archivech\nsnížení personální zátěže stenografů (část práce nahrazena AI, zůstává editace)\npřístupnost – titulky/překlady pro osoby se sluchovým postižením či cizojazyčné publikum",
     "Vyhodnocení úspěšnosti": "Projekt je v ostrém provozu; ruční stenografie byla nahrazena automatizovaným přepisem s editací. Doporučené metriky: průměrný čas publikace přepisu po skončení jednání; přesnost po korektuře (% chyb); počet hodin lidské editace na 1 hodinu záznamu. (Konkrétní KPI nebyly veřejně zveřejněny.)",
     "Poučení pro příští projekty": "kvalitu výrazně zvyšuje lidská kontrola a průběžné doplňování doménové terminologie\nje nutné ošetřit ochranu osobních údajů a bezpečný přenos záznamů\nintegrace do workflow (nahrávání streamu, plánování, publikace) je klíčová pro reálné úspory\npočítejte s variabilní kvalitou záznamů (hluk, vzdálenost mikrofonu); je třeba technicky zajistit kvalitní audio",
-    "Dokumentace": "https://nen.nipez.cz/verejne-zakazky/detail-zakazky/N006-23-V00024436",
+    "Zdroj": "https://nen.nipez.cz/verejne-zakazky/detail-zakazky/N006-23-V00024436",
+    "Označení zdroje": "Detail veřejné zakázky v systému NEN",
     "Informace o zdroji a kontaktní osoba": "Kancelář Poslanecké sněmovny, \ne‑mail: posta@psp.cz, tel. 257 171 717.\nDodavatel: NEWTON Technologies, a.s., podpora@beey.io\nhttps://advokatnidenik.cz/2024/10/16/umela-inteligence-nove-pomaha-se-zaznamy-z-jednani-poslanecke-snemovny/",
     "Obor činnosti": "Spravedlnost a volby",
     "Kategorie use case": "Analýza audiovizuálních dat; Generování obsahu a chatboti úředníků; Optimalizace  úředních procesů"
@@ -100,7 +104,8 @@
     "Očekávané dopady": "průběžná kontrola ploch bez nutnosti části fyzických kontrol v terénu (úspora  až 70 % výjezdů fyzických kontrolorů)\nzkrácení kontrolního cyklu z týdnů na dny\nlepší cílení inspekcí díky risk scoringu založenému \nna datech\nzvýšení přesnosti při vyhodnocení skutečného stavu polí\nmožnost včasného zásahu v případě nedodržení podmínek\nrychlejší a přesnější ověřování žádostí o dotace (zkrácení lhůt rozhodování)\nautomatizace pro více než 100 000 ha zemědělské půdy\nsjednocení dat a metodiky hodnocení napříč regiony",
     "Vyhodnocení úspěšnosti": "Pilotní nasazení systému prokázalo vysokou spolehlivost při detekci změn v užívání půdy a vyhodnocení souladu s dotačními podmínkami – ve více než 85 % případů byl výsledek vyhodnocen správně. Díky integraci s mobilní aplikací GTFoto došlo k výraznému snížení potřeby fyzických kontrol v terénu. Byly splněny všechny hlavní cíle pilotního provozu, včetně přesnosti klasifikace plodin, automatizace hodnocení a dodržení reakčních dob. Na základě dosažených výsledků byl systém rozšířen do širšího provozu.",
     "Poučení pro příští projekty": "nutnost dostatečně kvalitního školení uživatelů (SZIF, farmáři)\nvčasná komunikace s příjemci dotací o výstupech systému\nkombinace AI a manuální validace (např. fotodokumentace) zvyšuje spolehlivost\nchybná detekce některých plodin (vojtěška, travní směsi) vyžaduje další trénink modelů\npřínosná je spolupráce s ESA a sdílení know-how v rámci EU\nPoučení pro ve veřejné zakázky: \nnastavit jasná akceptační kritéria pro kvalitu algoritmů předem (např. per‑crop accuracy)\nvyhnout se vendor lockinu – požadovat otevřenou dokumentaci, možnost převodu kódu a dat \nzajistit interní kapacity na validaci výsledků a správu datového workflow\npočítat s legislativními změnami SZP (CAP) – flexibilita procesů i smluv",
-    "Dokumentace": "https://business.esa.int/projects/dromas\nhttps://www.gisat.cz/\nhttps://zakazky.szif.cz/contract_display_151.html",
+    "Zdroj": "https://business.esa.int/projects/dromas",
+    "Označení zdroje": "Informace o projektu DROMAS na portálu ESA",
     "Informace o zdroji a kontaktní osoba": "marie.hakova@gisat.cz\nprojektový garant SZIF (dle VZ)",
     "Obor činnosti": "Životní prostředí a zemědělství",
     "Kategorie use case": "Analýza audiovizuálních dat; Monitoring, bezpečnost a dohled; Optimalizace  úředních procesů; Predikce a  automatizované rozhodování"
@@ -121,7 +126,8 @@
     "Očekávané dopady": "rychlejší tvorba prvních iterací slovníků založených na legislativních zdrojích",
     "Vyhodnocení úspěšnosti": "Testování probíhá s PoC – sledujeme porovnání správnosti tvorby slovníků s pomocí asistenta a tvorby bez asistenta, společně se spokojeností uživatelů.",
     "Poučení pro příští projekty": "Důraz při vývoji by měl být kladen na pečlivou přípravu promptů (včetně přesné definice problému, kontextu, příkladů a očekávaného výstupu) a přípravě kvalitních vstupních dat. Klíčové je si uvědomit, jaké silné a slabé stránky LLM mají a nechat je pracovat jen na té části problému, na kterou se hodí.",
-    "Dokumentace": null,
+    "Zdroj": null,
+    "Označení zdroje": null,
     "Informace o zdroji a kontaktní osoba": "Alice Binderová, DIA",
     "Obor činnosti": "Jiné:  Veřejná správa",
     "Kategorie use case": "Analýza audiovizuálních dat; Generování obsahu a chatboti úředníků"
@@ -142,7 +148,8 @@
     "Očekávané dopady": "úspora času úředníků\núspora času žadatelů",
     "Vyhodnocení úspěšnosti": "-",
     "Poučení pro příští projekty": "-",
-    "Dokumentace": "-",
+    "Zdroj": null,
+    "Označení zdroje": null,
     "Informace o zdroji a kontaktní osoba": "-",
     "Obor činnosti": "Jiné:  E government",
     "Kategorie use case": "Analýza audiovizuálních dat; Generování obsahu a chatboti úředníků; Komunikace a klientský servis  (chatboti pro veřejnost)"
@@ -163,7 +170,8 @@
     "Očekávané dopady": "úspora času úředníků\núspora peněz, pokud nebude nutné využívat konzultační firmy",
     "Vyhodnocení úspěšnosti": "-",
     "Poučení pro příští projekty": "-",
-    "Dokumentace": "-",
+    "Zdroj": null,
+    "Označení zdroje": null,
     "Informace o zdroji a kontaktní osoba": "-",
     "Obor činnosti": "Jiné:  E government",
     "Kategorie use case": "Analýza audiovizuálních dat; Generování obsahu a chatboti úředníků; Komunikace a klientský servis  (chatboti pro veřejnost)"
@@ -184,7 +192,8 @@
     "Očekávané dopady": "Přínosy:\nzkrácení lhůty vyplnění formuláře\nzvýšení dostupnosti e-formulářů pro znevýhodněné skupiny\nsnížení chybovosti při zadávání dat\nmožnost integrace s Portálem občana i dalšími portály\nzvýšení komfortu a přívětivosti veřejných digitálních služeb",
     "Vyhodnocení úspěšnosti": "V současné době proběhl POC a výsledky jsou velmi dobré. Systém dokáže v rámci interakce klienta a AI zjistit požadovaná data a předat je ve tvaru JSON pro vyplnění formuláře na příslušném portálu.",
     "Poučení pro příští projekty": "Byla potvrzena nutnost přesně definovat datovou strukturu a nápovědu ke každému poli. Kritická je validace výstupního JSON a kontrola správného mapování na cílový formulář.",
-    "Dokumentace": "20250630 POC AI pro vyplnění formuláře.pptx",
+    "Zdroj": null,
+    "Označení zdroje": null,
     "Informace o zdroji a kontaktní osoba": "Jan Petr, Digitální a informační agentura, 602 392 480, jan.petr@dia.gov.cz\nPhil Lázníček, Digitální a informační agentura, phil.laznicek@dia.gov.cz",
     "Obor činnosti": "Doprava; Finance a daně; Kultura, sport a turismus; Místní rozvoj; Obrana; Práce a zaměstnanost; Průmysl, obchod a energetika; Sociální zabezpečení a dávky; Spravedlnost a volby; Statistiky a evidence obyvatel; Školství, věda a výzkum; Telekomunikace a digitální infrastruktura; Územní plánování, stavební řízení a evidence nemovitostí; Veřejné zakázky a hospodářská soutěž; Vnitřní věci a bezpečnost; Zahraniční vztahy; Zdravotnictví; Životní prostředí a zemědělství; Jiné: Sběr dat napříč agendami",
     "Kategorie use case": "Generování obsahu a chatboti úředníků; Komunikace a klientský servis  (chatboti pro veřejnost); Optimalizace  úředních procesů"
@@ -205,7 +214,8 @@
     "Očekávané dopady": "výrazné zrychlení auditu díky okamžitým odpovědím \nv přirozeném jazyce\nzvýšení přesnosti kontrol a snížení chybovosti\ntransparentnost odpovědí díky automatickým citacím\nškálovatelnost do dalších ministerstev (MPSV, MŽP, MPO…)",
     "Vyhodnocení úspěšnosti": "Projekt je v pilotu, ale již první odezvy ukazují zvýšenou produktivitu a spokojenost auditorů. Adam je považován \nza „příklad efektivní spolupráce mezi akademickou sférou \na veřejnou správou“.",
     "Poučení pro příští projekty": "důležitost bezpečnosti a spolehlivosti (neodpovídá, když nezná), viz zásady designu AI\ntransparentnost díky odkazu na zdrojové dokumenty\núspěch díky vlivu akademicko-veřejného partnerství (CIIRC & MF)\nmožnost multiplatformního rozšíření do dalších resortů",
-    "Dokumentace": "Nelze vyhledat ve veřejných zdrojích.",
+    "Zdroj": null,
+    "Označení zdroje": null,
     "Informace o zdroji a kontaktní osoba": "Informace o tomto projektu byly získány z veřejných zdrojů, konkrétně ze článku https://www.mfcr.cz/cs/ministerstvo/media/tiskove-zpravy/2025/chatbot-adam-z-dilny-cvut-ciirc-pomaha-auditnimu-o-59766\nCIIRC ČVUT / EDIH CTU \nVedoucí vývoje: Ing. Jan Šedivý, Ph.D. (CIIRC).",
     "Obor činnosti": "Finance a daně",
     "Kategorie use case": "Analýza audiovizuálních dat; Generování obsahu a chatboti úředníků; Optimalizace  úředních procesů"
@@ -226,7 +236,8 @@
     "Očekávané dopady": "zrychlení procesu správního řízení\nsnížení administrativní zátěže úředníka\nsnížení chybovosti \nzvýšení konzistence rozhodnutí a odůvodnění díky návrhům formulací z judikatury\nautomatické sledování lhůt v rámci řízení",
     "Vyhodnocení úspěšnosti": "Projekt je ve fázi mapování procesů a přípravy podkladů pro zadávací dokumentaci veřejné zakázky.",
     "Poučení pro příští projekty": "potřeba navázání spolupráce s věcnými gestory agend \na úředníky, kteří je místně vykonávají \npilotování nástroje na agendě s vysokou opakovatelností \nriziko rezistence uživatelů vůči automatizaci (různé důvody, nutná podpora “shora”)",
-    "Dokumentace": "Ve stavu interního záměru, dokumentace na vyžádání \nna interním intranetu MV.",
+    "Zdroj": null,
+    "Označení zdroje": null,
     "Informace o zdroji a kontaktní osoba": "Konzultace OKC / Kristián Malina (kristian.malina@mv.gov.cz) OKC DIA (Viktor Švec) viktor.svec@dia.gov.cz",
     "Obor činnosti": "Doprava; Vnitřní věci a bezpečnost; Životní prostředí a zemědělství",
     "Kategorie use case": "Analýza audiovizuálních dat; Generování obsahu a chatboti úředníků; Optimalizace  úředních procesů; Predikce a  automatizované rozhodování"
@@ -247,7 +258,8 @@
     "Očekávané dopady": "úspora času úředníků a zjednodušení komunikace s občany\nzvýšení transparentnosti rozhodování\nzrychlení vyhledávání a orientace v dokumentaci",
     "Vyhodnocení úspěšnosti": "Měřeno na základě odezvy uživatelů (občanů), míry využívání nástroje a snížení zátěže úředníků. Projekt je aktivně vyhodnocován městskou částí a Operátorem ICT \n(data na vyžádání).",
     "Poučení pro příští projekty": "nutnost participativního vývoje (zapojení úředníků \na politiků)\nzajištění GDPR kompatibility a bezpečnosti dat\nreplikovatelnost v dalších obcích a městských částech",
-    "Dokumentace": "Interní dokumentace projektu CommuniCity (Horizont Evropa)",
+    "Zdroj": null,
+    "Označení zdroje": null,
     "Informace o zdroji a kontaktní osoba": "denisa.pevna@operator-ict.cz; Václav Kožený, místostarosta MČ Praha 6, vkozeny@praha6.cz; Vladimír Šuvarina KITT 6, vsuvarina@praha6.cz",
     "Obor činnosti": "Jiné: Městská správa (eGovernment)",
     "Kategorie use case": "Analýza audiovizuálních dat; Komunikace a klientský servis  (chatboti pro veřejnost)"
@@ -268,7 +280,8 @@
     "Očekávané dopady": "57 058 aktivních uživatelů během prvních 5 měsíců\n24 % dotazů směřovalo na otázky povahy chatbot \nvs. člověk\n18 % dotazů se týkalo orientace ve veřejném rejstříku\n5 500 dotazů směřovalo na podání žádostí; 2 800 uživatelům pomohl s vyplněním formulářů\n5 700 dotazů cílilo na vyhledání subjektu \n4 300 dotazů se týkalo nahrávání dokumentů; v 38 % šlo o založení dokumentu",
     "Vyhodnocení úspěšnosti": "Projekt je úspěšný = 55–60 tisíc uživatelů během pěti měsíců. Cíle v podpoře rutinních dotazů, snížení zátěže na zaměstnance a zlepšení dostupnosti služeb byly naplněny. Metriky (počet uživatelů, rozložení typů dotazů, konkrétní interakce) ukazují silnou adopci a očekávaný přínos.",
     "Poučení pro příští projekty": "hlavní fokus na často kladené dotazy, rozdělení odpovědností \nriziko nesprávného nasměrování dotazů – vyžaduje průběžné ladění NLP modelů\npravidelné sledování kvality odpovědí, uživatelské spokojenosti\npřipravit na přechod do cloudového prostředí, větší zapojení agenta",
-    "Dokumentace": "https://msp.gov.cz/web/msp/rozcestnik/-/clanek/nov%C3%BD-zam%C4%9Bstnanec-na-ministerstvu-spravedlnosti-chatbot-just%C3%ADna\nhttps://msp.gov.cz/en/web/msp/rozcestnik/-/clanek/umela-inteligence-na-ministerstvu-spravedlnosti-kopirovat-",
+    "Zdroj": "https://msp.gov.cz/web/msp/rozcestnik/-/clanek/nov%C3%BD-zam%C4%9Bstnanec-na-ministerstvu-spravedlnosti-chatbot-just%C3%ADna",
+    "Označení zdroje": "Článek o chatbotu Justína na webu Ministerstva spravedlnosti",
     "Informace o zdroji a kontaktní osoba": "Jana Šístková, jana.sistkova@msp.justice.cz , Oddělení řízení služeb, Ministerstvo spravedlnosti",
     "Obor činnosti": "Spravedlnost a volby",
     "Kategorie use case": "Analýza audiovizuálních dat; Komunikace a klientský servis  (chatboti pro veřejnost); Optimalizace  úředních procesů"
@@ -289,7 +302,8 @@
     "Očekávané dopady": "zjednodušení interakce veřejnosti s veřejnou správou a tím zlepšení dostupnosti a srozumitelnosti služeb VS pro uživatele \nzefektivnění interakce veřejné správy s uživateli a zvýšení kvality poskytovaných služeb VS \nsnížení zátěže garantů a operátorů jednotlivých služeb při zodpovídání běžně se opakujících dotazů veřejnosti v důsledku využití AI – úspora času",
     "Vyhodnocení úspěšnosti": "Bude řešeno v rámci fáze realizace.",
     "Poučení pro příští projekty": "Bude vyhodnoceno v rámci fáze realizace.",
-    "Dokumentace": "Bude řešeno v rámci fáze realizace.",
+    "Zdroj": null,
+    "Označení zdroje": null,
     "Informace o zdroji a kontaktní osoba": "Radim Valčuha, radim.valcuha@dia.gov.cz",
     "Obor činnosti": "Jiné: Podpora výše uvedených služeb/agend ve správě DIA",
     "Kategorie use case": "Komunikace a klientský servis  (chatboti pro veřejnost)"
@@ -310,7 +324,8 @@
     "Očekávané dopady": "zrychlení zpracování přestupků v zónách placeného stání.\núspora pracovních kapacit – tisíce přestupků vyřešeny bez ruční kontroly\nsnížení počtu administrativních chyb\nzlepšení výběru pokut a vymáhání",
     "Vyhodnocení úspěšnosti": "Systém „Emil“ je v rutinním provozu. Úspěšně zpracoval \na odbavil desítky tisíc přestupků bez nutnosti ručního zásahu. Umožnil městské části snížit personální zátěž v agendě Vyřizování přestupků. Přesnost rozpoznávání SPZ a generování výzev je dostatečná pro plně automatizované využití v praxi.",
     "Poučení pro příští projekty": "i jednoduchá automatizace rutinní agendy přináší vysokou efektivitu\ndůležité je nastavení kvalitních vstupních dat (foto/video dokumentace)\ntransparentní nastavení procesů v rozhodovacím řetězci systému\nnutnost komunikace s veřejností kvůli akceptaci AI \nve správním řízení",
-    "Dokumentace": "https://m.praha8.cz/v-praze-8-resi-prestupky-za-spatne-parkovani-softwarovy-robot-1.html",
+    "Zdroj": "https://m.praha8.cz/v-praze-8-resi-prestupky-za-spatne-parkovani-softwarovy-robot-1.html",
+    "Označení zdroje": "Článek o systému Emil na webu MČ Praha 8",
     "Informace o zdroji a kontaktní osoba": "Informace čerpány z mediálních článků (např. CzechCrunch, Technet.cz) a tiskových zpráv MČ Praha 8. Přímý kontakt na Městský úřad Praha 8 – Odbor dopravy.",
     "Obor činnosti": "Doprava",
     "Kategorie use case": "Analýza audiovizuálních dat; Generování obsahu a chatboti úředníků; Monitoring, bezpečnost a dohled; Optimalizace  úředních procesů"
@@ -331,7 +346,8 @@
     "Očekávané dopady": "Rychlejší detekce a vyřešení bezpečnostních incidentů (zkrácení MTTR)\nSnížení počtu přehlédnutých hrozeb díky korelaci signálů\nVyšší úroveň kybernetické bezpečnosti celé VS\nPodpora a facilitace 1. a 2. linie SOC pomocí AI nástrojů\nBudování sdílené znalostní báze playbooků a postupů",
     "Vyhodnocení úspěšnosti": "Navržené metriky: průměrný čas detekce a reakce (MTTD/MTTR), počet automatizovaně vyřešených incidentů, počet eskalací na vyšší úroveň SOC, míra falešných poplachů. Vyhodnocení bude možné po nasazení u konkrétní instituce.",
     "Poučení pro příští projekty": "Jasně definovat integrační rozhraní na SIEM, ticketing a log management\nNastavit governance a odpovědnosti – AI doporučuje, člověk rozhoduje\nPravidelně revidovat a trénovat modely na nová data/hrozby\nStandardizovat playbooky napříč institucemi VS\nZajistit školení SOC/CSIRT týmů na práci s AI nástroji",
-    "Dokumentace": null,
+    "Zdroj": null,
+    "Označení zdroje": null,
     "Informace o zdroji a kontaktní osoba": "Kontaktní osoba: Cloudová kancelář MIRRI (kontakt bude doplněn – např. cloud@mirri.gov.sk)",
     "Obor činnosti": "Vnitřní věci a bezpečnost",
     "Kategorie use case": "Analýza audiovizuálních dat; Monitoring, bezpečnost a dohled"
@@ -352,7 +368,8 @@
     "Očekávané dopady": "zvýšení schopnosti detekce kybernetických hrozeb \nna národní úrovni\nzrychlení reakce na incidenty\nzískání technologického náskoku v oblasti kybernetické obrany",
     "Vyhodnocení úspěšnosti": "Projekt se nachází ve fázi experimentálního vývoje. Hlavním výstupem bude funkční prototyp systému. Přínosy budou hodnoceny na základě přesnosti detekce, kompatibility \ns infrastrukturními systémy a schopnosti operovat v reálném čase.",
     "Poučení pro příští projekty": "nutnost vlastního vývoje z důvodu strategické autonomie\nzajištění kompatibility s existujícími systémy (např. IBM QRadar)\nnáročnost na specializované znalosti a infrastrukturu (FPGA, síťová bezpečnost)",
-    "Dokumentace": "https://nen.nipez.cz/profily-zadavatelu-platne/p:pzp:query=ministerstvo%20obrany/detail-profilu/MO/uzavrene-zakazky/p:pzvz:query=kyber;puvz:query=kyber/detail-zakazky/N006-21-V00021516/zadavaci-dokumentace/p:pzd:page=2",
+    "Zdroj": "https://nen.nipez.cz/profily-zadavatelu-platne/p:pzp:query=ministerstvo%20obrany/detail-profilu/MO/uzavrene-zakazky/p:pzvz:query=kyber;puvz:query=kyber/detail-zakazky/N006-21-V00021516/zadavaci-dokumentace/p:pzd:page=2",
+    "Označení zdroje": "Zadávací dokumentace v systému NEN",
     "Informace o zdroji a kontaktní osoba": "Ministerstvo obrany ČR \nVěra Pavlíčková (pavlickovav@army.cz) tel: +420 973 225 091",
     "Obor činnosti": "Obrana",
     "Kategorie use case": "Monitoring, bezpečnost a dohled; Predikce a  automatizované rozhodování"
@@ -373,7 +390,8 @@
     "Očekávané dopady": "zrychlení procesu podání a oběhu dokumentů ke koncovým zpracovatelům\ndigitalizace dokumentů a automatizace stereotypních činností\nsnížení časové, personální a prostorové kapacity\npředpoklad zapojení AI v souvislosti s novelou správního řízení",
     "Vyhodnocení úspěšnosti": "Vybrané prvky automatizace na jednom správním postupu a minimálně u jednoho OVM.\nPoužívání a automatizace administrativních postupů alespoň pro jedno OVM.",
     "Poučení pro příští projekty": "Není k dispozici",
-    "Dokumentace": "Ve stavu interního záměru. Dokumentace na vyžádání na interním intranetu MV. Kontaktovat Viktora Švece viktor.svec@dia.gov.cz",
+    "Zdroj": null,
+    "Označení zdroje": null,
     "Informace o zdroji a kontaktní osoba": "KC DIA (Viktor Švec) viktor.svec@dia.gov.cz\nMartin Vaněk, martin.vanek@mv.gov.cz, Oddělní projektového řízení, Ministerstvo vnitra.",
     "Obor činnosti": "Vnitřní věci a bezpečnost",
     "Kategorie use case": "Analýza audiovizuálních dat; Optimalizace  úředních procesů; Predikce a  automatizované rozhodování"
@@ -394,7 +412,8 @@
     "Očekávané dopady": "přehledná evidence a správa dokumentů\nautomatická kontrola souladu s platnými pr. předpisy\npředcházení redundancí, duplicit a konfliktů\nnávrhy pro zpřehlednění a zjednodušení jazyka\ngenerování stručných souhrnů\ninteraktivní chatbot pro Q&A\ngenerování templatů instrukcí, jm. listin...\ngenerování testů pro uživatele (reporting znalostí)",
     "Vyhodnocení úspěšnosti": "-",
     "Poučení pro příští projekty": "-",
-    "Dokumentace": "-",
+    "Zdroj": null,
+    "Označení zdroje": null,
     "Informace o zdroji a kontaktní osoba": "Martin Bahenský, Digitální a informační agentura, KŘÚ",
     "Obor činnosti": "Jiné : Veřejná správa",
     "Kategorie use case": "Analýza audiovizuálních dat; Generování obsahu a chatboti úředníků; Komunikace a klientský servis  (chatboti pro veřejnost); Optimalizace  úředních procesů"
@@ -415,7 +434,8 @@
     "Očekávané dopady": "Zpracováno přes 110 000 dokumentů během prvních ~4 měsíců; cca 5 500 (≈5 %) označeno k manuálnímu dořešení.\nRoční objem >1 000 000 příloh.\nÚspora práce zhruba 2 FTE (pracovníci) jen v pilotní fázi.",
     "Vyhodnocení úspěšnosti": "Metriky zahrnují počet zpracovaných příloh, procento dokumentů odeslaných k ručnímu dořešení, úsporu času a personálních kapacit. První výsledky (110k/5,5k/≈2 FTE) naznačují, že cíle (automatizovat kontrolu a šetřit lidské zdroje) jsou naplňovány. Další vyhodnocení by mělo sledovat přesnost modelu (false positives/negatives) a dopad na délku řízení.",
     "Poučení pro příští projekty": "Jasně definovat akceptační kritéria (co je „správná“ příloha) a mít kvalitní trénovací dataset.\nZapojení uživatelů (úředníků) do ladění pravidel a workflow – aby se minimalizovala zbytečná eskalace.\nProaktivní monitoring kvality modelu a rychlé iterace (MLOps).\nVyřešit licenční a bezpečnostní aspekty při využití cloudových AI služeb (Azure).",
-    "Dokumentace": "Dokumentace k systému JENDA (jedná se totiž o rozvoj systému JENDA)",
+    "Zdroj": null,
+    "Označení zdroje": null,
     "Informace o zdroji a kontaktní osoba": "https://news.microsoft.com/cs-cz/2024/11/06/data-a-umela-inteligence-mpsv-a-microsoft-poradaji-prvni-globalni-hackathon-pro-verejny-sektor/",
     "Obor činnosti": "Sociální zabezpečení a   dávky",
     "Kategorie use case": "Analýza audiovizuálních dat; Generování obsahu a chatboti úředníků; Optimalizace  úředních procesů"
@@ -436,7 +456,8 @@
     "Očekávané dopady": "zrychlení řízení přestupků a doručování rozhodnutí \nvyšší vymahatelnost pokut (lepší volba procesních kroků) \núspora pracovního času úředníků (automatizace rutinních úkonů) \ntransparentní a právně obhajitelné algoritmy rozhodování",
     "Vyhodnocení úspěšnosti": "Zatím nedostupné – projekt je ve fázi přípravy/pilotu. Navržené metriky: procento vymožených pokut, průměrná doba řízení, počet ručně řešených spisů vs. automatizovaných. (Inference z dostupných informací.)",
     "Poučení pro příští projekty": "jasná právní opora pro algoritmické kroky (aby „algoritmus“ nenahrazoval správní uvážení)\nvčasná definice datových toků a kvality vstupních dat \nzapojení městských částí a koordinace sdílených kompetencí\ntransparentnost a auditovatelnost modelů (možnost vysvětlení rozhodnutí)",
-    "Dokumentace": null,
+    "Zdroj": null,
+    "Označení zdroje": null,
     "Informace o zdroji a kontaktní osoba": "https://www.isvs.cz/prazsky-magistrat-pripravuje-novy-system-epokut/",
     "Obor činnosti": "Spravedlnost a volby",
     "Kategorie use case": "Optimalizace úředních procesů"
@@ -457,7 +478,8 @@
     "Očekávané dopady": "zvýšení kapacity příjmu tísňových volání\nzrychlení příjmu tísňového volání\nsnížení chybovosti způsobené lidským faktorem\nzrychlení nasazení sil a prostředků\nzefektivnění komunikace mezi složkami IZS",
     "Vyhodnocení úspěšnosti": "Systém má být otestován pilotně v reálném prostředí (Po úspěšném vyhodnocení bude vypracována metodika jeho praktického využití.)",
     "Poučení pro příští projekty": "Projekt není ukončen, závěrečná zpráva 1/2026",
-    "Dokumentace": "Identifikační kód projektu: VC20232025012\nNEN, otevřené nadlimitní řízení z 8/2022: zde,  Zadávací dokumentace: zde \nČíslo smlouvy: VC2023202501, Smlouva zde a dodatky zde a zde",
+    "Zdroj": null,
+    "Označení zdroje": null,
     "Informace o zdroji a kontaktní osoba": "Paedr. Jan Vykoukal (vedoucí odd. bezpečnostního výzkumu)\nNEN Irena Herainová, irena.herainova@mvcr.cz",
     "Obor činnosti": "Vnitřní věci a bezpečnost",
     "Kategorie use case": "Komunikace a klientský servis  (chatboti pro veřejnost); Predikce a  automatizované rozhodování"
@@ -478,7 +500,8 @@
     "Očekávané dopady": "snížení RMSE (root mean square error) predikce inflace během období vysoké inflace z 9,99 (analytici) na 7,94 (OpenAI o1) \nrychlejší odhad „aktuální“ inflace díky automatizaci",
     "Vyhodnocení úspěšnosti": "Testy ukázaly, že OpenAI o1 byl přesnější než hlavní model ČNB v období vysoké inflace, nicméně tradiční model zůstal lepší při návratu inflace k cíli. AI tedy doplňuje, nikoli nahrazuje, stávající přístupy analytiků.",
     "Poučení pro příští projekty": "LLM mohou včas signalizovat riziko růstu inflace; embeddings zefektivňují třídění položek. \n„black-box“ povaha modelů komplikuje vysvětlení predikcí\nvýkonnost se výrazně liší mezi různými LLM (OpenAI o1 vs. Grok 2)",
-    "Dokumentace": "https://www.cnb.cz/cs/o_cnb/cnblog/Prvni-vyuziti-AI-pri-prognozovani-inflace-v-CNB/",
+    "Zdroj": "https://www.cnb.cz/cs/o_cnb/cnblog/Prvni-vyuziti-AI-pri-prognozovani-inflace-v-CNB/",
+    "Označení zdroje": "Článek ČNB o využití AI při prognózování inflace",
     "Informace o zdroji a kontaktní osoba": "Informace o tomto projektu byly získány z veřejných zdrojů, konkrétně ze článků www.cnb.cz/cs/o_cnb/cnblog/Prvni-vyuziti-AI-pri-prognozovani-inflace-v-CNB a https://tradeoff.drbna.cz/zpravy/technologie/586-cnb-testuje-umelou-inteligenci-pro-presnejsi-prognozy-inflace.html.",
     "Obor činnosti": "Finance a daně",
     "Kategorie use case": "Analýza audiovizuálních dat; Predikce a  automatizované rozhodování"
@@ -499,7 +522,8 @@
     "Očekávané dopady": "zkrácení kolon a prodlev na řízené křižovatce\nplynulejší provoz\núspora času řidičů\nsnížení emisí \n(Konkrétní procenta zatím neuvedena – lze dopočítat \nz provozních dat po delším pilotu).",
     "Vyhodnocení úspěšnosti": "Zatím probíhá pilotní měření – článek uvádí, že AI „řídí lépe než program“, což naznačuje lepší výsledky v prvních testech. Konkrétní metriky (např. průměrná doba čekání, délka front) bude potřeba získat od TSK.",
     "Poučení pro příští projekty": "počítat s integrací do stávající infrastruktury SSZ a datových toků\nzajistit transparentní metriky úspěchu a kontinuální tuning modelu\nvyřešit otázky bezpečnosti a odpovědnosti při automatizovaném zásahu do provozu\nvčasné zapojení města, PČR a dispečinku pro změny signalizace",
-    "Dokumentace": "Smlouva - ELTODO x TSK\n\nhttps://www.etendry.cz/detail/761363-Jednotny-system-rizeni-dopravy-za-pomoci-multiagentnich-a-adaptivnich-systemu-s-prvky-umele-inteligence-%28MAS%29.html",
+    "Zdroj": "https://www.etendry.cz/detail/761363-Jednotny-system-rizeni-dopravy-za-pomoci-multiagentnich-a-adaptivnich-systemu-s-prvky-umele-inteligence-%28MAS%29.html",
+    "Označení zdroje": "Detail zakázky MAS na portálu eTendry",
     "Informace o zdroji a kontaktní osoba": "MAS - ČLÁNEK",
     "Obor činnosti": "Doprava",
     "Kategorie use case": "Monitoring, bezpečnost a dohled; Optimalizace  úředních procesů; Predikce a  automatizované rozhodování"
@@ -520,7 +544,8 @@
     "Očekávané dopady": "Popis dopadů",
     "Vyhodnocení úspěšnosti": "Popis vyhodnocení úspěčnosti.",
     "Poučení pro příští projekty": "příklady dobré a špatné praxe",
-    "Dokumentace": "odkaz",
+    "Zdroj": null,
+    "Označení zdroje": null,
     "Informace o zdroji a kontaktní osoba": "Zdroj",
     "Obor činnosti": "Doprava",
     "Kategorie use case": "Monitoring, bezpečnost a dohled; Optimalizace  úředních procesů; Predikce a  automatizované rozhodování"
