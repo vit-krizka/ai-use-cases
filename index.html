@@ -150,16 +150,11 @@
                 const response = await fetch("use-cases.json");
                 const useCases = await response.json();
 
+                const useCaseMap = new Map();
+
                 useCases.forEach(uc => {
                     const idStr = uc.id.toString().padStart(2, "0");
                     const sectionId = `usecase-${idStr}`;
-
-                    const li = document.createElement("li");
-                    const a = document.createElement("a");
-                    a.href = `#${sectionId}`;
-                    a.textContent = `${idStr} \u00A0${uc["Název projektu"]}`;
-                    li.appendChild(a);
-                    navList.appendChild(li);
 
                     const section = document.createElement("section");
                     section.id = sectionId;
@@ -194,6 +189,50 @@
                     html += `</div>`;
                     section.innerHTML = html;
                     main.appendChild(section);
+
+                    useCaseMap.set(uc.id, { idStr, sectionId, title: uc["Název projektu"] });
+                });
+
+                const categories = [
+                    { title: "Analýza audiovizuálních dat", start: 1, end: 5 },
+                    { title: "Generování obsahu a chatboti úředníků", start: 6, end: 11 },
+                    { title: "Komunikace\u202Fa\u202Fklientský\u202Fservis (chatboti pro veřejnost)", start: 12, end: 14 },
+                    { title: "Monitoring,\u202Fbezpečnost\u202Fa\u202Fdohled", start: 15, end: 17 },
+                    { title: "Optimalizace\u202Fúředních procesů", start: 18, end: 21 },
+                    { title: "Predikce a automatizované rozhodování", start: 22, end: 25 }
+                ];
+
+                categories.forEach(cat => {
+                    const li = document.createElement("li");
+                    const btn = document.createElement("button");
+                    btn.className = "category-toggle";
+                    btn.setAttribute("aria-expanded", "false");
+                    btn.innerHTML = `${cat.title}<span class="arrow">\u25B6</span>`;
+                    li.appendChild(btn);
+
+                    const subUl = document.createElement("ul");
+                    subUl.className = "subcategory";
+                    subUl.style.display = "none";
+
+                    for (let id = cat.start; id <= cat.end; id++) {
+                        const data = useCaseMap.get(id);
+                        if (!data) continue;
+                        const subLi = document.createElement("li");
+                        const a = document.createElement("a");
+                        a.href = `#${data.sectionId}`;
+                        a.textContent = `${data.idStr} \u00A0${data.title}`;
+                        subLi.appendChild(a);
+                        subUl.appendChild(subLi);
+                    }
+
+                    li.appendChild(subUl);
+                    navList.appendChild(li);
+
+                    btn.addEventListener("click", () => {
+                        const expanded = btn.getAttribute("aria-expanded") === "true";
+                        btn.setAttribute("aria-expanded", (!expanded).toString());
+                        subUl.style.display = expanded ? "none" : "block";
+                    });
                 });
 
                 const navLinks = sidebar.querySelectorAll("nav a");
@@ -212,7 +251,17 @@
 
                 const initialId = window.location.hash ? window.location.hash.substring(1) : sections[0].id;
                 const initialLink = sidebar.querySelector(`a[href='#${initialId}']`);
-                if (initialLink) setActiveLink(initialLink);
+                if (initialLink) {
+                    setActiveLink(initialLink);
+                    const sublist = initialLink.closest("ul.subcategory");
+                    if (sublist) {
+                        sublist.style.display = "block";
+                        const toggle = sublist.previousElementSibling;
+                        if (toggle && toggle.classList.contains("category-toggle")) {
+                            toggle.setAttribute("aria-expanded", "true");
+                        }
+                    }
+                }
                 showSection(initialId);
 
                 navLinks.forEach(link => {

@@ -164,6 +164,46 @@ nav a.active {
     color: #fff;
 }
 
+nav ul ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: none;
+}
+
+nav ul ul a {
+    padding-left: 2.75rem;
+}
+
+.category-toggle {
+    width: 100%;
+    text-align: left;
+    background: none;
+    border: none;
+    padding: 0.75rem 1.75rem;
+    font-size: 0.95rem;
+    cursor: pointer;
+    color: var(--text);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.category-toggle:hover,
+.category-toggle:focus {
+    background: var(--primary);
+    color: #fff;
+}
+
+.category-toggle .arrow {
+    display: inline-block;
+    transition: transform 0.2s;
+}
+
+.category-toggle[aria-expanded="true"] .arrow {
+    transform: rotate(90deg);
+}
+
 /* ===== Main content ===== */
 main {
     padding: 80px clamp(1rem, 4vw, 3rem) 3rem;
