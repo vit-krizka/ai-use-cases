@@ -184,8 +184,9 @@
                     html += `<dt>Vyhodnocení úspěšnosti</dt><dd>${uc["Vyhodnocení úspěšnosti"] || "-"}</dd>`;
                     html += `<dt>Poučení pro příští projekty</dt><dd>${uc["Poučení pro příští projekty"] || "-"}</dd>`;
                     html += `</dl>`;
-                    const docMatch = uc["Dokumentace"] && uc["Dokumentace"].match(/https?:\/\/\S+/);
-                    const docLink = docMatch ? `<a href="${docMatch[0]}" target="_blank" rel="noopener">odkaz</a>` : "-";
+                    const docLink = uc["Zdroj"]
+                        ? `<a href="${uc["Zdroj"]}" target="_blank" rel="noopener">${uc["Označení zdroje"] || uc["Zdroj"]}</a>`
+                        : "-";
                     html += `<div class="bottom-cards">`;
                     html += `<div class="card"><strong>Stav projektu</strong><span>${uc["Stav projektu"] || "-"}</span></div>`;
                     html += `<div class="card"><strong>Zdroj</strong><span>${docLink}</span></div>`;
