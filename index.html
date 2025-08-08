@@ -176,7 +176,7 @@
                     html += `<dl class="info-grid">`;
                     html += `<dt>Řešený problém</dt><dd>${uc["Řešený problém"] || "-"}</dd>`;
                     html += `<dt>Použité AI technologie</dt><dd><ul>` +
-                        [uc["Sloupec3"], uc["Sloupec2"]].filter(Boolean).map(t => `<li>${t}</li>`).join("") +
+                        (uc["Typ umělé inteligence"] ? uc["Typ umělé inteligence"].split("\n").filter(Boolean).map(t => `<li>${t}</li>`).join("") : "") +
                         `</ul></dd>`;
                     html += `<dt>Očekávané dopady</dt><dd><ul>` +
                         (uc["Očekávané dopady"] ? uc["Očekávané dopady"].split("\n").map(s => `<li>${s}</li>`).join("") : "") +
