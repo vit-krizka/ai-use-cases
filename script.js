@@ -91,21 +91,12 @@ async function initCatalog() {
       section.innerHTML = html;
       main.appendChild(section);
 
-      // Přiřazení use casu do kategorií
-      const ucCats = (uc['Kategorie use case'] || '')
-        .split(';')
-        .map((c) => c.trim())
-        .filter(Boolean);
+      // Přiřazení use casu do kategorie podle hlavní kategorie
+      const mainCat = (uc['Hlavní kategorie use case'] || '').trim();
 
-      let matched = false;
-      ucCats.forEach((c) => {
-        if (categoryMap.has(c)) {
-          categoryMap.get(c).push({ idStr, sectionId, title: uc['Název projektu'] });
-          matched = true;
-        }
-      });
-
-      if (!matched) {
+      if (mainCat && categoryMap.has(mainCat)) {
+        categoryMap.get(mainCat).push({ idStr, sectionId, title: uc['Název projektu'] });
+      } else {
         others.push({ idStr, sectionId, title: uc['Název projektu'] });
       }
     });
