@@ -1,0 +1,32 @@
+[
+  {
+    "id": "analyza-audiovizualnich-dat",
+    "title": "Analýza audiovizuálních dat",
+    "description": "Využití AI pro zpracování a vyhodnocení obrazových či zvukových informací."
+  },
+  {
+    "id": "generovani-obsahu-a-chatboti-uredniku",
+    "title": "Generování obsahu a chatboti úředníků",
+    "description": "Nástroje podporující úředníky při tvorbě textů nebo jako interní asistenti."
+  },
+  {
+    "id": "komunikace-a-klientske-sluzby",
+    "title": "Komunikace a klientský servis (chatboti pro veřejnost)",
+    "description": "Prostředky pro komunikaci s občany a automatizovaný zákaznický servis."
+  },
+  {
+    "id": "monitoring-bezpecnost-a-dohled",
+    "title": "Monitoring, bezpečnost a dohled",
+    "description": "Sledování a vyhodnocování bezpečnostních událostí pomocí AI."
+  },
+  {
+    "id": "optimalizace-urednich-procesu",
+    "title": "Optimalizace úředních procesů",
+    "description": "Zefektivnění administrativních činností a pracovních postupů."
+  },
+  {
+    "id": "predikce-a-automatizovane-rozhodovani",
+    "title": "Predikce a automatizované rozhodování",
+    "description": "Modely pro předpovědi a podporu rozhodovacích procesů."
+  }
+]

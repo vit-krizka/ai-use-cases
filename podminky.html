@@ -159,20 +159,7 @@
         <p><a href="podminky.html">Podmínky využití a ochrana osobních údajů</a></p>
     </footer>
 
-    <script>
-        document.addEventListener("DOMContentLoaded", () => {
-            const sidebar = document.getElementById("sidebar");
-            const menuBtn = document.getElementById("menuBtn");
-            menuBtn.addEventListener("click", () => {
-                sidebar.classList.toggle("open");
-            });
-
-            const footerLogo = document.querySelector(".footer-logo");
-            if (footerLogo) {
-                footerLogo.innerHTML = document.querySelector(".logo").innerHTML;
-            }
-        });
-    </script>
+        <script src="script.js"></script>
 </body>
 
 </html>
