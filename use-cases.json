@@ -3,7 +3,7 @@
     "id": 1,
     "Garant:": "Vojtěch Duraj",
     "Název projektu": "AI toolkit pro Digitální patologii (DPAIT)",
-    "Typ umělé inteligence": "deep learning nástroj PyTorch\nAutomatizace (RPA)\nHluboké učení (Deep Learning)",
+    "Typ umělé inteligence": "Automatizace (RPA)\nHluboké učení (Deep Learning)",
     "Hlavní kategorie use case": "Analýza audiovizuálních dat",
     "Krátký popis": "Projekt reaguje na rostoucí potřebu digitalizace a automatizace v medicíně, především v patologii, kde manuální vyhodnocení biopsií je časově náročné a vysoce náročné na odbornost. Cílem je zvýšit kvalitu a efektivitu diagnostiky, snížit chybovost a prodlevy v rozhodovacím procesu a podpořit lékaře inteligentními nástroji pro přesnější interpretaci výsledků.",
     "Řešený problém": "Manuální hodnocení histologických snímků je náročné na čas \na zkušenosti, často dochází k variabilitě mezi jednotlivými patologickými hodnoceními. Rostoucí počet vyšetřovaných vzorků překračuje kapacity manuálního zpracování. Nutnost standardizace diagnostických postupů pro zajištění konzistentní kvality péče. Potřeba rychlejších a spolehlivějších metod detekce malignit a dalších patologických jevů.",
@@ -38,7 +38,7 @@
     "Označení zdroje": "Zadávací dokumentace v systému TenderArena",
     "Informace o zdroji a kontaktní osoba": "Kontakt na straně zadavatele: Oddělení veřejných zakázek FNHK (zakazky@fnhk.cz ).\nKontakt na straně projektu/klinické části: Radiologická klinika FNHK.\nhttps://screenpoint-medical.com/news-coverage/transpara-ai-boosts-breast-cancer-detection-without-increasing-reading-time-study-finds/",
     "Obor činnosti": "Zdravotnictví",
-    "Kategorie use case": "Analýza audiovizuálních dat; Predikce a  automatizované rozhodování"
+    "Kategorie use case": "Analýza audiovizuálních dat; Predikce a automatizované rozhodování"
   },
   {
     "id": 3,
