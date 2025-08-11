@@ -140,6 +140,8 @@ footer .footer-logo svg {
     transition: transform 0.3s ease;
     grid-row: 2;
     grid-column: 1;
+    width: 260px;
+    box-sizing: border-box;
 }
 
 nav ul {
@@ -198,11 +200,15 @@ nav ul ul a {
 
 .category-toggle .arrow {
     display: inline-block;
-    transition: transform 0.2s;
+    transition: transform 0.3s ease;
 }
 
 .category-toggle[aria-expanded="true"] .arrow {
     transform: rotate(90deg);
+}
+
+nav ul li:last-child {
+    padding-bottom: 1rem;
 }
 
 /* ===== Main content ===== */
