@@ -500,4 +500,24 @@
     "Obor činnosti": "Doprava",
     "Kategorie use case": "Monitoring, bezpečnost a dohled; Optimalizace  úředních procesů; Predikce a  automatizované rozhodování"
   }
+    {
+    "id": 26,
+    "Garant:": "Vojtěch Duraj",
+    "Název projektu": "Název",
+    "Typ umělé inteligence": "AI\nAutomatizace (RPA); Počítačové vidění (Computer Vision)\nStrojové učení (ML)",
+    "Hlavní kategorie use case": "Predikce a automatizované rozhodování",
+    "Krátký popis": "Krátský popis",
+    "Řešený problém": "Popis řešeného problému.",
+    "Instituce": "Název instituce",
+    "Dodavatel": "Název dodavatele",
+    "Stav projektu": "Pilot / PoC",
+    "Očekávané dopady": "Popis dopadů",
+    "Vyhodnocení úspěšnosti": "Popis vyhodnocení úspěčnosti.",
+    "Poučení pro příští projekty": "příklady dobré a špatné praxe",
+    "Zdroj": null,
+    "Označení zdroje": null,
+    "Informace o zdroji a kontaktní osoba": "Zdroj",
+    "Obor činnosti": "Doprava",
+    "Kategorie use case": "Monitoring, bezpečnost a dohled; Optimalizace  úředních procesů; Predikce a  automatizované rozhodování"
+  }
 ]
