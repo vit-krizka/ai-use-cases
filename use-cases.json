@@ -22,7 +22,7 @@
   },
   {
     "id": 2,
-    "Garant:": "Vojtěch Duraj",
+    "Garant:": "Michael Kozubek",
     "Název projektu": "Umělá inteligence pro mamografická vyšetření vč. záruční a pozáruční servisní podpory",
     "Typ umělé inteligence": "computer vision / hluboké učení (detekce a klasifikace lézí)\nrozhodovací podpora radiologů (CADe/CADx)\nPočítačové vidění (Computer Vision); Computer-Aided Detection/Diagnosis (CADe/CADx)\nHluboké učení (Deep Learning)",
     "Hlavní kategorie use case": "Analýza audiovizuálních dat",
