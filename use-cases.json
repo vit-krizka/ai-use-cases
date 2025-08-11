@@ -1,7 +1,7 @@
 [
   {
     "id": 1,
-    "Garant:": "Vojtěch Duraj",
+    "Garant:": "Linda Berková",
     "Název projektu": "AI toolkit pro Digitální patologii (DPAIT)",
     "Typ umělé inteligence": "Automatizace (RPA)\nHluboké učení (Deep Learning)",
     "Hlavní kategorie use case": "Analýza audiovizuálních dat",
@@ -16,7 +16,7 @@
     "Poučení pro příští projekty": "Vývoj nástroje stále probíhá.",
     "Zdroj": "https://www.muni.cz/vyzkum/projekty/73713",
     "Označení zdroje": "Informace o projektu na webu Masarykovy univerzity",
-    "Informace o zdroji a kontaktní osoba": "RNDr. Vít Musil, Ph.D. , odborný asistent – Katedra teorie programování, Masarykova univerzita, vit.musil@mail.muni.cz",
+    "Informace o zdroji a kontaktní osoba": "RNDr. Vít Musil, Ph.D. , odborný asistent - Katedra teorie programování, Masarykova univerzita, vit.musil@mail.muni.cz",
     "Obor činnosti": "Zdravotnictví",
     "Kategorie use case": "Analýza audiovizuálních dat"
   },
@@ -29,7 +29,7 @@
     "Krátký popis": "Projekt zavádí certifikovaný software s umělou inteligencí pro podporu hodnocení mamografických snímků na Radiologické klinice Fakultní nemocnice Hradec Králové. Cílem je zvýšit senzitivitu a specificitu screeningu karcinomu prsu, urychlit třídění snímků a snížit počet zbytečných doplňkových vyšetření.",
     "Řešený problém": "Tradiční dvojí čtení mamografií je časově náročné, a přesto může vést k přehlédnutí části nádorů nebo naopak k falešně pozitivním nálezům. AI systém provádí automatickou analýzu snímků, prioritizuje rizikové případy a pomáhá radiologům zaměřit se na vyšetření s vyšším skóre rizika.",
     "Instituce": "Fakultní nemocnice Hradec Králové",
-    "Dodavatel": "FOMEI s.r.o. (IČO 46504869) – distributor systému Transpara (ScreenPoint Medical)",
+    "Dodavatel": "FOMEI s.r.o. (IČO 46504869) - distributor systému Transpara (ScreenPoint Medical)",
     "Stav projektu": "Produkce",
     "Očekávané dopady": "+15–20 % více zachycených zhoubných nádorů oproti standardnímu postupu\nredukce falešně pozitivních nálezů a s tím souvisejících doplňkových vyšetření\nzrychlení čtení snímků a zvýšení průchodnosti pracoviště\ntransparentní metriky a auditovatelnost procesu hodnocení",
     "Vyhodnocení úspěšnosti": "Úspěšnost bude sledována porovnáním senzitivity/specificity před a po implementaci, změnou detekční míry (počet karcinomů na 1000 vyšetření), počtem doplňkových vyšetření a průměrným časem čtení snímku. První roční audit vyhodnotí dosažení cílů a případně upraví pracovní postupy.",
@@ -483,26 +483,6 @@
   {
     "id": 25,
     "Garant:": "Vojtěch Duraj",
-    "Název projektu": "Název",
-    "Typ umělé inteligence": "AI\nAutomatizace (RPA); Počítačové vidění (Computer Vision)\nStrojové učení (ML)",
-    "Hlavní kategorie use case": "Predikce a automatizované rozhodování",
-    "Krátký popis": "Krátský popis",
-    "Řešený problém": "Popis řešeného problému.",
-    "Instituce": "Název instituce",
-    "Dodavatel": "Název dodavatele",
-    "Stav projektu": "Pilot / PoC",
-    "Očekávané dopady": "Popis dopadů",
-    "Vyhodnocení úspěšnosti": "Popis vyhodnocení úspěčnosti.",
-    "Poučení pro příští projekty": "příklady dobré a špatné praxe",
-    "Zdroj": null,
-    "Označení zdroje": null,
-    "Informace o zdroji a kontaktní osoba": "Zdroj",
-    "Obor činnosti": "Doprava",
-    "Kategorie use case": "Monitoring, bezpečnost a dohled; Optimalizace  úředních procesů; Predikce a  automatizované rozhodování"
-  },
-  {
-    "id": 26,
-    "Garant:": "Vojtěch Art",
     "Název projektu": "Název",
     "Typ umělé inteligence": "AI\nAutomatizace (RPA); Počítačové vidění (Computer Vision)\nStrojové učení (ML)",
     "Hlavní kategorie use case": "Predikce a automatizované rozhodování",
