@@ -10,7 +10,7 @@
     "Instituce": "Masarykova univerzita",
     "Sloupec1": "Masarykova univerzita",
     "Dodavatel": "In-house vývoj",
-    "Stav projektu": "Pilot / PoC",
+    "Stav projektu": "Nápad / záměr",
     "Očekávané dopady": "vývoj AI modelů pro digitální patologii čelí nedostatku specializovaných nástrojů rozšiřujících PyTorch, což vede k neefektivitě a opakujícím se chybám \ntento projekt si klade za cíl vytvořit univerzální knihovnu pro strojové učení v digitální patologii, která usnadní práci s velkými obrazovými daty prostřednictvím modulů pro předzpracování dat, augmentaci dat, výpočet metrik a rekonstrukci dat \nknihovna bude vycházet z nástrojů vytvořených v RationAI a bude zveřejněna pod licencí MIT na GitHub",
     "Vyhodnocení úspěšnosti": "Vývoj nástroje stále probíhá.",
     "Poučení pro příští projekty": "Vývoj nástroje stále probíhá.",
