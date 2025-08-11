@@ -499,10 +499,10 @@
     "Informace o zdroji a kontaktní osoba": "Zdroj",
     "Obor činnosti": "Doprava",
     "Kategorie use case": "Monitoring, bezpečnost a dohled; Optimalizace  úředních procesů; Predikce a  automatizované rozhodování"
-  }
-    {
+  },
+  {
     "id": 26,
-    "Garant:": "Vojtěch Duraj",
+    "Garant:": "Vojtěch Art",
     "Název projektu": "Název",
     "Typ umělé inteligence": "AI\nAutomatizace (RPA); Počítačové vidění (Computer Vision)\nStrojové učení (ML)",
     "Hlavní kategorie use case": "Predikce a automatizované rozhodování",
