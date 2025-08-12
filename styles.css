@@ -307,7 +307,7 @@ h2 {
     content: "■";
     position: absolute;
     left: 0;       /* pevně vlevo od začátku textu */
-    top: 50%;
+    top: 0; /* zarovnání nahoře na první řádku */
     transform: translateY(-50%);
     color: rgb(54, 133, 55);
     font-size: 1em;
