@@ -438,3 +438,41 @@ h2 {
         margin-bottom: 0;
     }
 }
+
+/* ===== Category popup ===== */
+.category-popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 2000;
+}
+
+.category-popup .popup-content {
+    background: #fff;
+    padding: 1.5rem;
+    max-width: 400px;
+    width: 90%;
+    border-radius: 4px;
+    position: relative;
+    text-align: center;
+}
+
+.category-popup .popup-close {
+    position: absolute;
+    top: 0.25rem;
+    right: 0.25rem;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.category-popup h3 {
+    margin-top: 0;
+}
