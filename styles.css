@@ -352,15 +352,24 @@ h2 {
         display: block;
     }
 
-    /* Nepotlačuj logo/ikony na mobilu */
+    /* zobraz logo a ikony stejně jako na desktopu */
     .topbar .logo {
-        display: flex; /* nebo inline-flex, podle toho, jak to máš na desktopu */
+        display: flex;  /* nebo inline-flex podle desktopu */
         align-items: center;
     }
 
-    /* Odsazení pod H1 v topbaru */
+    /* odsazení pod h1 v topbaru */
     .topbar h1 {
-        margin-bottom: 1rem; /* případně víc, podle potřeby */
+        margin-bottom: 1rem !important;
+    }
+
+    /* pokud jsou ikony mimo logo, zajisti aby byly viditelné */
+    .icon,
+    .topbar .icon-wrapper,
+    .topbar svg {
+        display: inline-block !important;
+        opacity: 1 !important;
+        visibility: visible !important;
     }
 
     .info-grid {
