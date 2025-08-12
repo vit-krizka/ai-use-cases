@@ -349,7 +349,7 @@ h2 {
     }
 
     .hamburger {
-        display: block;
+        display: block !important;
     }
 
     /* zobraz logo a ikony stejně jako na desktopu */
