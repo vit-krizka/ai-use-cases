@@ -301,8 +301,7 @@ h2 {
     position: relative;
     padding-left: 1.5em;
     color: inherit;
-    /* Odstraň případné flexboxy, pokud jsou */
-    display: block;
+    display: inline-block;
     vertical-align: top;
 }
 
