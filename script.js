@@ -44,6 +44,8 @@ const isAdmin = new URLSearchParams(window.location.search).get('admin') === 'tr
     const useCases = await casesRes.json();
     const categories = await categoriesRes.json();
 
+    const categoryDescriptions = new Map(categories.map((c) => [c.title, c.description]));
+
     // Mapování kategorií -> seznam use casů
     const categoryMap = new Map();
     categories.forEach((cat) => categoryMap.set(cat.title, []));
@@ -66,7 +68,12 @@ const isAdmin = new URLSearchParams(window.location.search).get('admin') === 'tr
       html += `<li><span class="icon" aria-hidden="true">&#x1F3DB;&#xFE0E;</span><b>Instituce</b>: ${uc['Instituce'] || '-'}</li>`;
       html += `<li><span class="icon" aria-hidden="true">&#x1F6E0;&#xFE0E;</span><b>Dodavatel</b>: ${uc['Dodavatel'] || '-'}</li>`;
       html += `<li><span class="icon" aria-hidden="true">&#x1F4BC;&#xFE0E;</span><b>Obor činnosti</b>: ${uc['Obor činnosti'] || '-'}</li>`;
-      html += `<li><span class="icon" aria-hidden="true">&#x1F5C2;&#xFE0E;</span><b>Kategorie use case</b>: ${uc['Hlavní kategorie use case'] || '-'}</li>`;
+      const mainCategoryFull = uc['Hlavní kategorie use case'] || '-';
+      const mainCategoryBase = mainCategoryFull.split('(')[0].trim();
+      const categoryHtml = categoryDescriptions.has(mainCategoryBase)
+        ? `<a href="#" class="category-link" data-category="${mainCategoryBase}">${mainCategoryFull}</a>`
+        : mainCategoryFull;
+      html += `<li><span class="icon" aria-hidden="true">&#x1F5C2;&#xFE0E;</span><b>Kategorie use case</b>: ${categoryHtml}</li>`;
       html += '</ul>';
 
 
@@ -143,6 +150,30 @@ const isAdmin = new URLSearchParams(window.location.search).get('admin') === 'tr
         others.push({ idStr, sectionId, title: uc['Název projektu'] });
       }
     });
+
+    // Reakce na odkazy kategorií
+    const popup = document.getElementById('category-popup');
+    const popupTitle = popup?.querySelector('h3');
+    const popupDesc = popup?.querySelector('p');
+    const popupClose = popup?.querySelector('.popup-close');
+    if (popup && popupTitle && popupDesc && popupClose) {
+      popupClose.addEventListener('click', () => {
+        popup.style.display = 'none';
+      });
+
+      document.querySelectorAll('.category-link').forEach((link) => {
+        const cat = link.getAttribute('data-category');
+        const desc = categoryDescriptions.get(cat);
+        const showPopup = (e) => {
+          e.preventDefault();
+          popupTitle.textContent = cat;
+          popupDesc.textContent = desc || '';
+          popup.style.display = 'flex';
+        };
+        link.addEventListener('mouseenter', showPopup);
+        link.addEventListener('click', showPopup);
+      });
+    }
 
     // Vytvoření navigace z kategorií
     categories.forEach((cat) => {
