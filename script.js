@@ -121,7 +121,7 @@ async function initCatalog() {
       html += '<div class="bottom-cards">';
       html += `<div class="card"><strong>Stav projektu</strong><span>${uc['Stav projektu'] || '-'}</span></div>`;
       html += `<div class="card"><strong>Zdroj</strong><span>${docLink}</span></div>`;
-      html += `<div class="card"><strong>Kontaktní osoba</strong>${contactInfo}</div>`;
+      html += `<div class="card"><strong>Kontaktní osoba</strong><span>${contactInfo}</span></div>`;
       html += '</div>';
 
       section.innerHTML = html;
