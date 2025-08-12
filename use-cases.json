@@ -86,6 +86,7 @@
     "Garant:": "Michael Kozubek",
     "Název projektu": "DROMAS (Agricultural Crop Monitoring and Farming Management Service) a poskytování služeb analýzy zpracování dat (SAMAS)",
     "Typ umělé inteligence": "Strojové učení (machine learning)\nPočítačové vidění (computer vision)\nPrediktivní analýzy",
+    "Hlavní kategorie use case": "Analýza audiovizuálních dat",
     "Krátký popis": "Projekt zajišťuje zpracování a vyhodnocování satelitních dat v reálném čase a průběžný monitoring zemědělských plodin a aktivit pomocí automatizovaných algoritmů nad satelitními snímky. Umožňuje veřejné správě (zejména SZIF) automaticky kontrolovat plnění dotačních podmínek bez nutnosti fyzických kontrol na místě. Cílem je zvýšit efektivitu a přesnost agendy zemědělských dotací, snížit administrativní zátěž farmářů i kontrolorů a zároveň zpřesnit rozhodování při vyplácení prostředků z veřejných fondů. Systém integruje data ze satelitů Sentinel, AI a vizualizace změn na úrovni konkrétních parcel.",
     "Řešený problém": "Projekt řeší nízkou efektivitu a nákladnost ručních kontrol zemědělských dotací. Tradiční systém vyžadoval fyzické výjezdy a náročné papírování. DROMAS umožňuje včasné zjištění, zda farmáři plní podmínky dotací (např. osetí, pokosení nebo obhospodařování pozemků), a to bez nutnosti osobních kontrol. Kontextem je přechod k plně digitálnímu monitoringu v souladu s evropským rámcem „Checks by Monitoring“.",
     "Instituce": "Státní zemědělský intervenční fond (SZIF) ve spolupráci s Ministerstvem zemědělství (MZe)",
