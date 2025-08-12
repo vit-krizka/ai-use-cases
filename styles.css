@@ -352,8 +352,15 @@ h2 {
         display: block;
     }
 
+    /* Nepotlačuj logo/ikony na mobilu */
     .topbar .logo {
-        display: none;
+        display: flex; /* nebo inline-flex, podle toho, jak to máš na desktopu */
+        align-items: center;
+    }
+
+    /* Odsazení pod H1 v topbaru */
+    .topbar h1 {
+        margin-bottom: 1rem; /* případně víc, podle potřeby */
     }
 
     .info-grid {
