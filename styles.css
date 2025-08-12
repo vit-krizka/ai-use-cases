@@ -370,8 +370,22 @@ h2 {
 
     /* odsazení pod h1 v topbaru */
     .topbar h1 {
-        margin-bottom: 30px !important;
-    }
+  display: flex;
+  align-items: center;
+  gap: 8px; /* vzdálenost mezi ikonou a textem nadpisu */
+  margin-bottom: 0.5em;
+}
+
+.topbar h1::after {
+  content: ":";
+  margin-left: 4px;
+  margin-right: 12px; /* odsazení za dvojtečkou */
+}
+
+.topbar p {
+  margin-left: calc( var(--icon-width, 24px) + 20px );
+  /* odsazení textu o šířku ikony + mezery, uprav podle potřeby */
+}
 
     /* pokud jsou ikony mimo logo, zajisti aby byly viditelné */
     .icon,
