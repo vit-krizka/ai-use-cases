@@ -79,9 +79,16 @@ async function initCatalog() {
       html += `<dt>Poučení pro příští projekty</dt><dd>${uc['Poučení pro příští projekty'] || '-'}</dd>`;
       html += '</dl>';
 
-      const docLink = uc['Zdroj']
-        ? `<a href="${uc['Zdroj']}" target="_blank" rel="noopener">${uc['Označení zdroje'] || uc['Zdroj']}</a>`
-        : '-';
+      const docLink = (() => {
+  if (!uc['Zdroj']) return '-';
+
+  // Rozdělíme URL podle čárky nebo nového řádku (podle potřeby)
+  const urls = uc['Zdroj'].split(/[\n,]+/).map(s => s.trim()).filter(Boolean);
+
+  return urls
+    .map(url => `<a href="${url}" target="_blank" rel="noopener">${uc['Označení zdroje'] || url}</a>`)
+    .join('<br>');
+})();
 
       const contactInfo = uc['Informace o zdroji a kontaktní osoba']
   ? (() => {
