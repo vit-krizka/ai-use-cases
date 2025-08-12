@@ -79,15 +79,33 @@ async function initCatalog() {
       html += `<dt>Poučení pro příští projekty</dt><dd>${uc['Poučení pro příští projekty'] || '-'}</dd>`;
       html += '</dl>';
 
-      const docLink = uc['Zdroj']
-        ? `<a href="${uc['Zdroj']}" target="_blank" rel="noopener">${uc['Označení zdroje'] || uc['Zdroj']}</a>`
-        : '-';
+      const docLink = (() => {
+  if (!uc['Zdroj']) return '-';
+
+  // Rozdělíme URL podle čárky nebo nového řádku (podle potřeby)
+  const urls = Array.isArray(uc['Zdroj']) ? uc['Zdroj'] : uc['Zdroj'].split(/[\n,]+/).map(s => s.trim()).filter(Boolean);
+
+// Podobně pro Označení zdroje
+  const labels = uc['Označení zdroje']
+    ? (Array.isArray(uc['Označení zdroje'])
+        ? uc['Označení zdroje']
+        : uc['Označení zdroje'].split(/[\n,]+/).map(s => s.trim()))
+    : [];
+
+  return urls
+    .map((url, i) => {
+      // pokud je label na pozici i, použij ho, jinak použij url
+      const label = labels[i] || url;
+      return `<a href="${url}" target="_blank" rel="noopener">${label}</a>`;
+    })
+    .join('<br>');
+})();
 
       const contactInfo = uc['Informace o zdroji a kontaktní osoba']
   ? (() => {
       const parts = uc['Informace o zdroji a kontaktní osoba'].split('\n').map(s => s.trim()).filter(Boolean);
 
-      if (parts.length === 0) return '<p>-</p>';
+      if (parts.length === 0) return '-';
 
       const linkPart = parts[parts.length - 1]; // poslední řádek = odkaz
       const textPart = parts.slice(0, -1).join('<br />'); // vše před tím = text
@@ -96,14 +114,14 @@ async function initCatalog() {
         ? `<a href="${linkPart}" target="_blank" rel="noopener">${uc['Označení kontaktní osoby'] || linkPart}</a>`
         : linkPart; // kdyby poslední řádek nebyl URL
 
-      return `<p>${textPart}${textPart && linkHtml ? '<br />' : ''}${linkHtml}</p>`;
+      return `${textPart}${textPart && linkHtml ? '<br />' : ''}${linkHtml}`;
     })()
         : '<p>-</p>';
 
       html += '<div class="bottom-cards">';
       html += `<div class="card"><strong>Stav projektu</strong><span>${uc['Stav projektu'] || '-'}</span></div>`;
       html += `<div class="card"><strong>Zdroj</strong><span>${docLink}</span></div>`;
-      html += `<div class="card"><strong>Kontaktní osoba</strong>${contactInfo}</div>`;
+      html += `<div class="card"><strong>Kontaktní osoba</strong><span>${contactInfo}</span></div>`;
       html += '</div>';
 
       section.innerHTML = html;
