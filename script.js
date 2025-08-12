@@ -33,6 +33,8 @@ async function initCatalog() {
   const main = document.querySelector('main');
   if (!sidebar || !navList || !main) return; // Jsme na jiné stránce
 
+const isAdmin = new URLSearchParams(window.location.search).get('admin') === 'true';
+
   try {
     // Načtení dat paralelně
     const [casesRes, categoriesRes] = await Promise.all([
@@ -49,12 +51,17 @@ async function initCatalog() {
 
     // Vytvoření sekcí pro jednotlivé use case
     useCases.forEach((uc) => {
-      const idStr = uc.id.toString().padStart(2, '0');
-      const sectionId = `usecase-${idStr}`;
-      const section = document.createElement('section');
-      section.id = sectionId;
+  const idStr = uc.id.toString().padStart(2, '0');
+  const sectionId = `usecase-${idStr}`;
+  const section = document.createElement('section');
+  section.id = sectionId;
 
-      let html = `<h2>${uc['Název projektu']}</h2>`;
+      let title = uc['Název projektu'];
+  if (isAdmin && uc['Garant']) {
+    title += ` <span style="color: gray; font-weight: normal;">(${uc['Garant']})</span>`;
+  }
+  let html = `<h2>${title}</h2>`;
+
       html += '<ul class="meta">';
       html += `<li><span class="icon" aria-hidden="true">&#x1F3DB;&#xFE0E;</span><b>Instituce</b>: ${uc['Instituce'] || '-'}</li>`;
       html += `<li><span class="icon" aria-hidden="true">&#x1F6E0;&#xFE0E;</span><b>Dodavatel</b>: ${uc['Dodavatel'] || '-'}</li>`;
