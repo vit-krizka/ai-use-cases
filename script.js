@@ -105,7 +105,7 @@ async function initCatalog() {
   ? (() => {
       const parts = uc['Informace o zdroji a kontaktní osoba'].split('\n').map(s => s.trim()).filter(Boolean);
 
-      if (parts.length === 0) return '<p>-</p>';
+      if (parts.length === 0) return '-';
 
       const linkPart = parts[parts.length - 1]; // poslední řádek = odkaz
       const textPart = parts.slice(0, -1).join('<br />'); // vše před tím = text
@@ -114,7 +114,7 @@ async function initCatalog() {
         ? `<a href="${linkPart}" target="_blank" rel="noopener">${uc['Označení kontaktní osoby'] || linkPart}</a>`
         : linkPart; // kdyby poslední řádek nebyl URL
 
-      return `<p>${textPart}${textPart && linkHtml ? '<br />' : ''}${linkHtml}</p>`;
+      return `${textPart}${textPart && linkHtml ? '<br />' : ''}${linkHtml}`;
     })()
         : '<p>-</p>';
 
