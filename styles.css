@@ -299,20 +299,22 @@ h2 {
 
 .info-grid ul li {
     position: relative;
-    padding-left: 1.5em; /* místo pro čtvereček mimo text */
+    padding-left: 1.5em;
     color: inherit;
+    /* Odstraň případné flexboxy, pokud jsou */
+    display: block;
+    vertical-align: top;
 }
 
 .info-grid ul li::before {
     content: "■";
     position: absolute;
-    left: 0;       /* pevně vlevo od začátku textu */
-    top: 0; /* zarovnání nahoře na první řádku */
-    transform: translateY(-50%);
+    left: 0;
+    top: 0.2em; /* doladit podle potřeby */
     color: rgb(54, 133, 55);
     font-size: 1em;
     line-height: 1;
-    pointer-events: none; /* čtvereček nezasahuje do klikání */
+    pointer-events: none;
 }
 
 .info-grid dd:last-of-type {
