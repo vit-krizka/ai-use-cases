@@ -291,11 +291,27 @@ h2 {
     margin: 0 0 1rem 0;
 }
 
+/* Upravené ul uvnitř info-grid pro zelené čtverečky pouze na odrážce */
 .info-grid ul {
-   padding-inline-start: 20px;
-   list-style-type: square;
-   list-style-position: inside;
-   color: rgb(54, 133, 55);
+    padding-inline-start: 20px;
+    list-style: none; /* vypne defaultní odrážky */
+}
+
+.info-grid ul li {
+    position: relative;
+    padding-left: 1.2em; /* prostor pro čtvereček */
+    color: inherit; /* zachová barvu textu */
+}
+
+.info-grid ul li::before {
+    content: "■"; /* plný čtvereček */
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    color: rgb(54, 133, 55); /* zelený čtvereček */
+    font-size: 1em;
+    line-height: 1;
 }
 
 .info-grid dd:last-of-type {
