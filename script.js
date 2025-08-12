@@ -82,10 +82,22 @@ async function initCatalog() {
         ? `<a href="${uc['Zdroj']}" target="_blank" rel="noopener">${uc['Označení zdroje'] || uc['Zdroj']}</a>`
         : '-';
 
+      const contactInfo = uc['Informace o zdroji a kontaktní osoba']
+        ? uc['Informace o zdroji a kontaktní osoba']
+            .split('\n')
+            .map((part) => {
+              const trimmed = part.trim();
+              return trimmed.startsWith('http://') || trimmed.startsWith('https://')
+                ? `<p><a href="${trimmed}" target="_blank" rel="noopener">${trimmed}</a></p>`
+                : `<p>${trimmed}</p>`;
+            })
+            .join('')
+        : '<p>-</p>';
+
       html += '<div class="bottom-cards">';
       html += `<div class="card"><strong>Stav projektu</strong><span>${uc['Stav projektu'] || '-'}</span></div>`;
       html += `<div class="card"><strong>Zdroj</strong><span>${docLink}</span></div>`;
-      html += `<div class="card"><strong>Kontaktní osoba</strong><span>${uc['Informace o zdroji a kontaktní osoba'] || '-'}</span></div>`;
+      html += `<div class="card"><strong>Kontaktní osoba</strong>${contactInfo}</div>`;
       html += '</div>';
 
       section.innerHTML = html;
