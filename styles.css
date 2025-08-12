@@ -293,25 +293,28 @@ h2 {
 
 /* Upravené ul uvnitř info-grid pro zelené čtverečky pouze na odrážce */
 .info-grid ul {
-    padding-inline-start: 20px;
+    padding-inline-start: 0; /* zrušíme odsazení defaultního ul */
     list-style: none; /* vypne defaultní odrážky */
 }
 
 .info-grid ul li {
     position: relative;
-    padding-left: 1.2em; /* prostor pro čtvereček */
-    color: inherit; /* zachová barvu textu */
+    padding-left: 1.5em;
+    color: inherit;
+    /* Odstraň případné flexboxy, pokud jsou */
+    display: block;
+    vertical-align: top;
 }
 
 .info-grid ul li::before {
-    content: "■"; /* plný čtvereček */
+    content: "■";
     position: absolute;
     left: 0;
-    top: 50%;
-    transform: translateY(-50%);
-    color: rgb(54, 133, 55); /* zelený čtvereček */
+    top: 0.2em; /* doladit podle potřeby */
+    color: rgb(54, 133, 55);
     font-size: 1em;
     line-height: 1;
+    pointer-events: none;
 }
 
 .info-grid dd:last-of-type {
