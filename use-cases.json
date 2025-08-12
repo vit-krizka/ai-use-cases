@@ -75,11 +75,11 @@
     "Očekávané dopady": "výrazná úspora času oproti ručnímu přepisu díky automatizovanému workflow\nrychlejší zveřejňování stenografických záznamů a vyšší transparentnost, (inference z nasazení v PSP; zdroj uvádí nahrazení ručního přepisu)\nzvýšení dostupnosti obsahu (titulky, překlady pro cizojazyčné publikum a osoby se sluchovým postižením)\nmožnost fulltextového vyhledávání v audio archivech\nsnížení personální zátěže stenografů (část práce nahrazena AI, zůstává editace)\npřístupnost – titulky/překlady pro osoby se sluchovým postižením či cizojazyčné publikum",
     "Vyhodnocení úspěšnosti": "Projekt je v ostrém provozu; ruční stenografie byla nahrazena automatizovaným přepisem s editací. Doporučené metriky: průměrný čas publikace přepisu po skončení jednání; přesnost po korektuře (% chyb); počet hodin lidské editace na 1 hodinu záznamu. (Konkrétní KPI nebyly veřejně zveřejněny.)",
     "Poučení pro příští projekty": "kvalitu výrazně zvyšuje lidská kontrola a průběžné doplňování doménové terminologie\nje nutné ošetřit ochranu osobních údajů a bezpečný přenos záznamů\nintegrace do workflow (nahrávání streamu, plánování, publikace) je klíčová pro reálné úspory\npočítejte s variabilní kvalitou záznamů (hluk, vzdálenost mikrofonu); je třeba technicky zajistit kvalitní audio",
-    "Zdroj": "https://nen.nipez.cz/verejne-zakazky/detail-zakazky/N006-23-V00024436",
-    "Označení zdroje": "Detail veřejné zakázky v systému NEN",
-    "Informace o zdroji a kontaktní osoba": "Kancelář Poslanecké sněmovny, \ne‑mail: posta@psp.cz, tel. 257 171 717.\nDodavatel: NEWTON Technologies, a.s., podpora@beey.io\nhttps://advokatnidenik.cz/2024/10/16/umela-inteligence-nove-pomaha-se-zaznamy-z-jednani-poslanecke-snemovny/",
+    "Zdroj": "https://nen.nipez.cz/verejne-zakazky/detail-zakazky/N006-23-V00024436\nhttps://advokatnidenik.cz/2024/10/16/umela-inteligence-nove-pomaha-se-zaznamy-z-jednani-poslanecke-snemovny/",
+    "Označení zdroje": "Detail veřejné zakázky v systému NEN\nUmělá inteligence nově pomáhá se záznamy z jednání Poslanecké sněmovny",
+    "Informace o zdroji a kontaktní osoba": "Kancelář Poslanecké sněmovny, \ne-mail: posta@psp.cz, tel. 257 171 717.\nDodavatel: NEWTON Technologies, a.s., podpora@beey.io\n",
     "Obor činnosti": "Spravedlnost a volby",
-    "Kategorie use case": "Analýza audiovizuálních dat; Generování obsahu a chatboti úředníků; Optimalizace  úředních procesů"
+    "Kategorie use case": "Analýza audiovizuálních dat; Generování obsahu a chatboti úředníků; Optimalizace úředních procesů"
   },
   {
     "id": 5,
