@@ -83,15 +83,20 @@ async function initCatalog() {
         : '-';
 
       const contactInfo = uc['Informace o zdroji a kontaktní osoba']
-        ? uc['Informace o zdroji a kontaktní osoba']
-            .split('\n')
-            .map((part) => {
-              const trimmed = part.trim();
-              return trimmed.startsWith('http://') || trimmed.startsWith('https://')
-                ? `<p><a href="${trimmed}" target="_blank" rel="noopener">${trimmed}</a></p>`
-                : `<p>${trimmed}</p>`;
-            })
-            .join('')
+  ? (() => {
+      const parts = uc['Informace o zdroji a kontaktní osoba'].split('\n').map(s => s.trim()).filter(Boolean);
+
+      if (parts.length === 0) return '<p>-</p>';
+
+      const linkPart = parts[parts.length - 1]; // poslední řádek = odkaz
+      const textPart = parts.slice(0, -1).join('<br />'); // vše před tím = text
+
+      const linkHtml = (linkPart.startsWith('http://') || linkPart.startsWith('https://'))
+        ? `<a href="${linkPart}" target="_blank" rel="noopener">${uc['Označení kontaktní osoby'] || linkPart}</a>`
+        : linkPart; // kdyby poslední řádek nebyl URL
+
+      return `<p>${textPart}${textPart && linkHtml ? '<br />' : ''}${linkHtml}</p>`;
+    })()
         : '<p>-</p>';
 
       html += '<div class="bottom-cards">';
