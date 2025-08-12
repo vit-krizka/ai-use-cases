@@ -1,7 +1,7 @@
 [
   {
     "id": 1,
-    "Garant:": "Linda Berková",
+    "Garant": "Linda Berková",
     "Název projektu": "AI toolkit pro Digitální patologii (DPAIT)",
     "Typ umělé inteligence": "Automatizace (RPA)\nHluboké učení (Deep Learning)",
     "Hlavní kategorie use case": "Analýza audiovizuálních dat",
@@ -22,7 +22,7 @@
   },
   {
     "id": 2,
-    "Garant:": "Michael Kozubek",
+    "Garant": "Michael Kozubek",
     "Název projektu": "Umělá inteligence pro mamografická vyšetření vč. záruční a pozáruční servisní podpory",
     "Typ umělé inteligence": "Počítačové vidění (computer vision)\nHluboké učení (deep learning)\nComputer-Aided Detection/Diagnosis (CADe/CADx)",
     "Hlavní kategorie use case": "Analýza audiovizuálních dat",
@@ -43,7 +43,7 @@
   },
   {
     "id": 3,
-    "Garant:": "Klára Mrázková",
+    "Garant": "Klára Mrázková",
     "Název projektu": "Carebot - Diagnostika pacientů pomocí umělé inteligence \nv nemocnicích Moravskoslezského kraje",
     "Typ umělé inteligence": "Počítačové vidění (computer vision)\nHluboké učení (deep learning)\nGenerativní AI",
     "Hlavní kategorie use case": "Analýza audiovizuálních dat",
@@ -63,7 +63,7 @@
   },
   {
     "id": 4,
-    "Garant:": "Vojtěch Duraj",
+    "Garant": "Vojtěch Duraj",
     "Název projektu": "Automatizované přepisovací pracoviště - nasazení platformy Beey pro přepis jednání Poslanecké sněmovny (ASR řešení NEWTON Technologies, a.s.).",
     "Typ umělé inteligence": "Rozpoznávání řeči (ASR) \nZpracování přirozeného jazyka (NLP);\nStrojové učení (machine learning)",
     "Hlavní kategorie use case": "Analýza audiovizuálních dat",
@@ -83,7 +83,7 @@
   },
   {
     "id": 5,
-    "Garant:": "Michael Kozubek",
+    "Garant": "Michael Kozubek",
     "Název projektu": "DROMAS (Agricultural Crop Monitoring and Farming Management Service) a poskytování služeb analýzy zpracování dat (SAMAS)",
     "Typ umělé inteligence": "Strojové učení (machine learning)\nPočítačové vidění (computer vision)\nPrediktivní analýzy",
     "Hlavní kategorie use case": "Analýza audiovizuálních dat",
@@ -103,7 +103,7 @@
   },
   {
     "id": 6,
-    "Garant:": "Alice Binderová",
+    "Garant": "Alice Binderová",
     "Název projektu": "Asistent pro tvorbu slovníků dle metodiky popisu dat",
     "Typ umělé inteligence": "LLM\nChatboti a virtuální asistenti\nStrojové učení (machine learning)\nGenerativní AI",
     "Hlavní kategorie use case": "Generování obsahu a chatboti úředníků",
@@ -123,7 +123,7 @@
   },
   {
     "id": 7,
-    "Garant:": "Vojtěch Duraj",
+    "Garant": "Vojtěch Duraj",
     "Název projektu": "AI asistent pro dlouhodobé řízení ISVS",
     "Typ umělé inteligence": "Generativní AI\nAgent\nChatboti a virtuální asistenti; Zpracování přirozeného jazyka (NLP)\nGenerativní AI; Velké jazykové modely (LLM)",
     "Hlavní kategorie use case": "Generování obsahu a chatboti úředníků",
@@ -143,7 +143,7 @@
   },
   {
     "id": 8,
-    "Garant:": "Vojtěch Duraj",
+    "Garant": "Vojtěch Duraj",
     "Název projektu": "AI asistent pro tvorbu informační koncepce (malé) obce",
     "Typ umělé inteligence": "Generativní AI\nAgent\nZpracování přirozeného jazyka (NLP); Chatboti a virtuální asistenti\nGenerativní AI; Velké jazykové modely (LLM)",
     "Hlavní kategorie use case": "Generování obsahu a chatboti úředníků",
@@ -163,7 +163,7 @@
   },
   {
     "id": 9,
-    "Garant:": "Vojtěch Duraj",
+    "Garant": "Vojtěch Duraj",
     "Název projektu": "Předvyplnění formulářů pomocí AI",
     "Typ umělé inteligence": "LLM (velké jazykové modely)\ngenerativní AI\nChatGPT\nZpracování přirozeného jazyka (NLP); Chatboti a virtuální asistenti\nGenerativní AI; Velké jazykové modely (LLM)",
     "Hlavní kategorie use case": "Generování obsahu a chatboti úředníků",
@@ -183,7 +183,7 @@
   },
   {
     "id": 10,
-    "Garant:": "Vojtěch Duraj",
+    "Garant": "Vojtěch Duraj",
     "Název projektu": "Chatbot Adam – inteligentní asistent auditorů MF",
     "Typ umělé inteligence": "zpracování přirozeného jazyka (NLP)\nodpovědi na otázky z dokumentů (QA)\ntransparentní citace zdrojů\nZpracování přirozeného jazyka (NLP); Automatizace (RPA); Chatboti a virtuální asistenti\nStrojové učení (ML); Generativní AI; Velké jazykové modely (LLM)",
     "Hlavní kategorie use case": "Generování obsahu a chatboti úředníků",
@@ -203,7 +203,7 @@
   },
   {
     "id": 11,
-    "Garant:": "Vojtěch Duraj",
+    "Garant": "Vojtěch Duraj",
     "Název projektu": "AI agent pro správní řízení",
     "Typ umělé inteligence": "LLM, generativní AI, strojové učení, analýza textu a dokumentů, embedding pro analýzu judikaturu a precedenty\nZpracování přirozeného jazyka (NLP); Robotika a autonomní systémy; Automatizace (RPA); Chatboti a virtuální asistenti\nStrojové učení (ML); Generativní AI; Velké jazykové modely (LLM)",
     "Hlavní kategorie use case": "Generování obsahu a chatboti úředníků",
@@ -223,7 +223,7 @@
   },
   {
     "id": 12,
-    "Garant:": "Vojtěch Duraj",
+    "Garant": "Vojtěch Duraj",
     "Název projektu": "Chatbot pro správu dokumentů a komunikaci s občany \n– MČ Praha 6",
     "Typ umělé inteligence": "velké jazykové modely (LLM), NLP, chatbot\nZpracování přirozeného jazyka (NLP); Chatboti a virtuální asistenti\nVelké jazykové modely (LLM)",
     "Hlavní kategorie use case": "Komunikace a klientský servis",
@@ -243,7 +243,7 @@
   },
   {
     "id": 13,
-    "Garant:": "Vojtěch Duraj",
+    "Garant": "Vojtěch Duraj",
     "Název projektu": "Chatbot Justína - Ministerstvo spravedlnosti",
     "Typ umělé inteligence": "chatbot\ngenerativní AI (pro tvorbu odpovědí na různé dotazy)\npotenciálně strojové učení k analýze dotazů a jejich kategorizaci\nChatboti a virtuální asistenti; Zpracování přirozeného jazyka (NLP)\nStrojové učení (ML); Generativní AI",
     "Hlavní kategorie use case": "Komunikace a klientský servis",
@@ -263,7 +263,7 @@
   },
   {
     "id": 14,
-    "Garant:": "Vojtěch Duraj",
+    "Garant": "Vojtěch Duraj",
     "Název projektu": "Kontaktní centrum veřejné správy",
     "Typ umělé inteligence": "Generativní AI \nLLM\nChatboti a virtuální asistenti\nGenerativní AI; Velké jazykové modely (LLM)",
     "Hlavní kategorie use case": "Komunikace a klientský servis",
@@ -283,7 +283,7 @@
   },
   {
     "id": 15,
-    "Garant:": "Vojtěch Duraj",
+    "Garant": "Vojtěch Duraj",
     "Název projektu": "Automatizované pokutování parkování v Praze 8 pomocí AI systému Emil",
     "Typ umělé inteligence": "computer vision (počítačové vidění) pro rozpoznávání SPZ (státních poznávacích značek) z obrazového záznamu městské kamery nebo vozidla technické kontroly\nstrojové učení (machine learning) pro vyhodnocování pravidelnosti chyb a automatizaci klasifikace přestupků, např. dle typu zóny nebo délky stání\npravidlový expertní systém + NLP / RPA pro automatizované generování výzev k úhradě pokuty a předání k vymáhání\n\nEmil je schopný samostatně komunikovat se systémem spisové služby (datové schránky, interní evidence).\nZpracování přirozeného jazyka (NLP); Počítačové vidění (Computer Vision); Automatizace (RPA)\nStrojové učení (ML); Symbolická AI (GOFAI); Generativní AI",
     "Hlavní kategorie use case": "Monitoring, bezpečnost a dohled",
@@ -303,7 +303,7 @@
   },
   {
     "id": 16,
-    "Garant:": "Vojtěch Duraj",
+    "Garant": "Vojtěch Duraj",
     "Název projektu": "Monitorování a reakce na bezpečnostní incidenty a podpora SOC (AI nástroje eSKa cloudu)",
     "Typ umělé inteligence": "Strojové učení pro detekci anomálií a korelaci událostí\nNLP/LLM pro generování doporučených postupů a shrnutí incidentů\nPrediktivní analýza rizik (scoring událostí dle dopadu a pravděpodobnosti)\nZpracování přirozeného jazyka (NLP); Doporučovací systémy; Prediktivní analýzy\nStrojové učení (ML); Velké jazykové modely (LLM)",
     "Hlavní kategorie use case": "Monitoring, bezpečnost a dohled",
@@ -323,7 +323,7 @@
   },
   {
     "id": 17,
-    "Garant:": "Vojtěch Duraj",
+    "Garant": "Vojtěch Duraj",
     "Název projektu": "CYBERTHREATS – Využití umělé inteligence při obraně proti kybernetickým útokům",
     "Typ umělé inteligence": "strojové učení\nexpertní systémy \nbehaviorální analýza\nneuronové sítě\nAutomatizace (RPA)\nStrojové učení (ML); Hluboké učení (Deep Learning); Symbolická AI (GOFAI)",
     "Hlavní kategorie use case": "Monitoring, bezpečnost a dohled",
@@ -343,7 +343,7 @@
   },
   {
     "id": 18,
-    "Garant:": "Vojtěch Duraj",
+    "Garant": "Vojtěch Duraj",
     "Název projektu": "Digitalizace správy dokumentů a využívání umělé inteligence na Ministerstvu vnitra (MV)",
     "Typ umělé inteligence": "bude upřesněno\nZpracování přirozeného jazyka (NLP); Automatizace (RPA)\nStrojové učení (ML); Velké jazykové modely (LLM)",
     "Hlavní kategorie use case": "Optimalizace úředních procesů",
@@ -363,7 +363,7 @@
   },
   {
     "id": 19,
-    "Garant:": "Vojtěch Duraj",
+    "Garant": "Vojtěch Duraj",
     "Název projektu": "AI aplikace pro správu interních řídicích dokumentů VS",
     "Typ umělé inteligence": "LLM\nRAG\nZpracování přirozeného jazyka (NLP)\nVelké jazykové modely (LLM); Generativní AI",
     "Hlavní kategorie use case": "Optimalizace úředních procesů",
@@ -383,7 +383,7 @@
   },
   {
     "id": 20,
-    "Garant:": "Vojtěch Duraj",
+    "Garant": "Vojtěch Duraj",
     "Název projektu": "AI VISOR – kontrola příloh (MPSV)",
     "Typ umělé inteligence": "OCR / Computer Vision (rozpoznání obsahu dokumentů)\nKlasifikace a pravidlové/ML modely pro kontrolu správnosti a relevance příloh\nPravděpodobně využití služeb Microsoft Azure AI (dle architektury v prezentaci).\nZpracování přirozeného jazyka (NLP); Automatizace (RPA); Počítačové vidění (Computer Vision)\nStrojové učení (ML); Symbolická AI (GOFAI)",
     "Hlavní kategorie use case": "Optimalizace úředních procesů",
@@ -403,7 +403,7 @@
   },
   {
     "id": 21,
-    "Garant:": "Vojtěch Duraj",
+    "Garant": "Vojtěch Duraj",
     "Název projektu": "ePokuty – AI systém pro správu dopravních přestupků hl. m. Prahy",
     "Typ umělé inteligence": "strojové učení / prediktivní modely (výběr nejefektivnějších kroků v řízení) \nrozhodovací podpora založená na teorii her \nautomatizace workflow (RPA prvky) \nanalýza dat a dokumentů (klasifikace případů, doporučení postupu\nPrediktivní analýzy; Automatizace (RPA)\nStrojové učení (ML)",
     "Hlavní kategorie use case": "Optimalizace úředních procesů",
@@ -423,7 +423,7 @@
   },
   {
     "id": 22,
-    "Garant:": "Vojtěch Duraj",
+    "Garant": "Vojtěch Duraj",
     "Název projektu": "Tísňové volání: \n(Vývoj a aplikace strukturovaného analytického příjmu tísňového volání s využitím umělé inteligence (AI)“ v rámci Programu bezpečnostního výzkumu pro potřeby státu \n2022–2027)",
     "Typ umělé inteligence": "strojové učení (machine learning) –trénink modelu na reálných datech z tísňového volání\nemoční analýza hlasu (sentiment analysis)\nsystémy na převod řeči na text (speech-to-text technologie)\nZpracování přirozeného jazyka (NLP); Rozpoznávání řeči; Automatizace (RPA)\nStrojové učení (ML)",
     "Hlavní kategorie use case": "Predikce a automatizované rozhodování",
@@ -443,7 +443,7 @@
   },
   {
     "id": 23,
-    "Garant:": "Vojtěch Duraj",
+    "Garant": "Vojtěch Duraj",
     "Název projektu": "Využití AI při prognózování inflace v ČNB",
     "Typ umělé inteligence": "generativní AI, LLM – využívány API modelů OpenAI o1 a x.AI (Grok 2) pro roční výhled CPI\nstrojové učení – embeddings a klasické machine learning algoritmy pro nowcasting\nPrediktivní analýzy\nStrojové učení (ML); Generativní AI; Velké jazykové modely (LLM)",
     "Hlavní kategorie use case": "Predikce a automatizované rozhodování",
@@ -463,7 +463,7 @@
   },
   {
     "id": 24,
-    "Garant:": "Vojtěch Duraj",
+    "Garant": "Vojtěch Duraj",
     "Název projektu": "Jednotný systém řízení dopravy za pomoci multiagentních \na adaptivních systémů s prvky umělé inteligence (MAS)",
     "Typ umělé inteligence": "Adaptivní řízení na bázi multiagentních systémů, strojové učení (pravděpodobně reinforcement learning/optimalizační algoritmy), datová analytika nad provozními daty.\nAutomatizace (RPA); Počítačové vidění (Computer Vision)\nStrojové učení (ML)",
     "Hlavní kategorie use case": "Predikce a automatizované rozhodování",
@@ -483,7 +483,7 @@
   },
   {
     "id": 25,
-    "Garant:": "Vojtěch Duraj",
+    "Garant": "Vojtěch Duraj",
     "Název projektu": "Název",
     "Typ umělé inteligence": "AI\nAutomatizace (RPA); Počítačové vidění (Computer Vision)\nStrojové učení (ML)",
     "Hlavní kategorie use case": "Predikce a automatizované rozhodování",
