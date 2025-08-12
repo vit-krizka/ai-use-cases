@@ -360,7 +360,7 @@ h2 {
 
     /* odsazení pod h1 v topbaru */
     .topbar h1 {
-        margin-bottom: 1rem !important;
+        margin-bottom: 30px !important;
     }
 
     /* pokud jsou ikony mimo logo, zajisti aby byly viditelné */
