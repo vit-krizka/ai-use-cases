@@ -83,10 +83,21 @@ async function initCatalog() {
   if (!uc['Zdroj']) return '-';
 
   // Rozdělíme URL podle čárky nebo nového řádku (podle potřeby)
-  const urls = uc['Zdroj'].split(/[\n,]+/).map(s => s.trim()).filter(Boolean);
+  const urls = Array.isArray(uc['Zdroj']) ? uc['Zdroj'] : uc['Zdroj'].split(/[\n,]+/).map(s => s.trim()).filter(Boolean);
+
+// Podobně pro Označení zdroje
+  const labels = uc['Označení zdroje']
+    ? (Array.isArray(uc['Označení zdroje'])
+        ? uc['Označení zdroje']
+        : uc['Označení zdroje'].split(/[\n,]+/).map(s => s.trim()))
+    : [];
 
   return urls
-    .map(url => `<a href="${url}" target="_blank" rel="noopener">${uc['Označení zdroje'] || url}</a>`)
+    .map((url, i) => {
+      // pokud je label na pozici i, použij ho, jinak použij url
+      const label = labels[i] || url;
+      return `<a href="${url}" target="_blank" rel="noopener">${label}</a>`;
+    })
     .join('<br>');
 })();
 
