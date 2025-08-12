@@ -55,12 +55,12 @@ async function initCatalog() {
       section.id = sectionId;
 
       let html = `<h2>${uc['Název projektu']}</h2>`;
-html += '<ul class="meta">';
-html += `<li><span class="icon" aria-hidden="true">&#x1F3DB;&#xFE0E;</span><b>Instituce</b>: ${uc['Instituce'] || '-'}</li>`;
-html += `<li><span class="icon" aria-hidden="true">&#x1F6E0;&#xFE0E;</span><b>Dodavatel</b>: ${uc['Dodavatel'] || '-'}</li>`;
-html += `<li><span class="icon" aria-hidden="true">&#x1F4BC;&#xFE0E;</span><b>Obor činnosti</b>: ${uc['Obor činnosti'] || '-'}</li>`;
-html += `<li><span class="icon" aria-hidden="true">&#x1F5C2;&#xFE0E;</span><b>Kategorie use case</b>: ${uc['Hlavní kategorie use case'] || '-'}</li>`;
-html += '</ul>';
+      html += '<ul class="meta">';
+      html += `<li><span class="icon" aria-hidden="true">&#x1F3DB;&#xFE0E;</span><b>Instituce</b>: ${uc['Instituce'] || '-'}</li>`;
+      html += `<li><span class="icon" aria-hidden="true">&#x1F6E0;&#xFE0E;</span><b>Dodavatel</b>: ${uc['Dodavatel'] || '-'}</li>`;
+      html += `<li><span class="icon" aria-hidden="true">&#x1F4BC;&#xFE0E;</span><b>Obor činnosti</b>: ${uc['Obor činnosti'] || '-'}</li>`;
+      html += `<li><span class="icon" aria-hidden="true">&#x1F5C2;&#xFE0E;</span><b>Kategorie use case</b>: ${uc['Hlavní kategorie use case'] || '-'}</li>`;
+      html += '</ul>';
 
 
       if (uc['Krátký popis']) {
