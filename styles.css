@@ -107,8 +107,7 @@ body.single-column {
 
 footer {
     display: flex;
-    justify-content: space-between; /* rozestupy mezi bloky */
-    align-items: flex-start;
+    flex-direction: column;
     background: #2E2D2C;
     color: white;
     padding: 2rem 1rem;
@@ -131,8 +130,8 @@ footer .footer-logo {
 
 footer .footer-logo svg,
 footer .footer-logo img {
-    width: 120px;   /* šířka loga */
-    height: 36px;   /* výška loga */
+    width: 200px;   /* šířka loga */
+    height: 60px;   /* výška loga */
     object-fit: contain; /* zachování proporcí u obrázků */
 }
 
@@ -145,25 +144,25 @@ footer h2 {
     color: white !important;
 }
 
-.gov-footer__main {
-    background-color: #f8f8f8;
-    padding: 20px;
+.footer-columns {
+  display: flex;
+  gap: 1rem;
 }
 
-.gov-list--plain {
+.footer-bottom {
+    border-top: 1px solid #ffffff;
+    text-align: center;
+    margin-top: 1.5rem;
+    padding-top: 1rem;
+    font-size: 0.8rem;
+}
+
+.footer-social {
     list-style: none;
     padding: 0;
-    margin: 0;
-    display: flex;       /* pro rozložení do řady */
-    gap: 20px;           /* mezery mezi položkami */
-}
-
-.footer-columns {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr); /* tři sloupce */
-  gap: 1rem; /* mezery mezi sloupci */
-  list-style: none; /* odstraní odrážky */
-  padding: 0;
+    margin: 0.5rem 0 0;
+    display: flex;
+    gap: 0.5rem;
 }
 
 /* ===== Sidebar ===== */
