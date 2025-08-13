@@ -123,14 +123,14 @@ footer .footer-block {
     margin: 0 1rem;
 }
 
-footer .footer-brand {
+footer .footer-logo {
     display: flex;
     justify-content: center;
     margin-bottom: 0.5rem;
 }
 
-footer .footer-brand svg,
-footer .footer-brand img {
+footer .footer-logo svg,
+footer .footer-logo img {
     width: 120px;   /* šířka loga */
     height: 36px;   /* výška loga */
     object-fit: contain; /* zachování proporcí u obrázků */
