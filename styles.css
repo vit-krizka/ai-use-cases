@@ -293,27 +293,23 @@ h2 {
 
 /* Upravené ul uvnitř info-grid pro zelené čtverečky pouze na odrážce */
 .info-grid ul {
-    padding-inline-start: 0; /* zrušíme odsazení defaultního ul */
-    list-style: none; /* vypne defaultní odrážky */
+    padding-inline-start: 0;
+    list-style: none;
 }
 
 .info-grid ul li {
-    position: relative;
-    padding-left: 1.5em; /* místo pro čtvereček */
     color: #000; /* text vždy černý */
-    display: block; /* blokové zarovnání pro víceryádkový text */
-    vertical-align: top;
 }
 
 .info-grid ul li::before {
-    content: "■"; /* plný čtvereček */
-    position: absolute;
-    left: 0;
-    top: 1em;
-    color: rgb(54, 133, 55); /* zelený čtvereček */
-    font-size: 0.6em; /* menší velikost čtverečku */
+    content: "■";
+    color: rgb(54, 133, 55);
+    display: inline-block;
+    width: 1em;          /* rezerva pro čtvereček */
+    margin-left: -1em;   /* čtvereček vleze do prostoru před text */
+    font-size: 0.75em;   /* menší čtvereček */
     line-height: 1;
-    pointer-events: none;
+    vertical-align: baseline; /* zarovná k první řádce textu */
 }
 
 .info-grid dd:last-of-type {
