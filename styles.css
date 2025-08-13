@@ -106,13 +106,14 @@ body.single-column {
 }
 
 footer {
-    background: var(--secondary);
-    text-align: center;
-    padding: 2rem 1rem;
-    margin-top: 2rem;
-    font-size: 0.9rem;
     grid-column: 1 / -1;
     grid-row: 3;
+    background: #2E2D2C; /* nová barva */
+    text-align: center;
+    padding: 2rem 1rem;
+    font-size: 0.9rem;
+    position: relative;
+    color: white;
 }
  
 footer .footer-logo {
