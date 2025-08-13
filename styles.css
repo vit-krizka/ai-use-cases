@@ -314,7 +314,7 @@ h2 {
     font-size: 0.6em; /* menší velikost čtverečku */
     line-height: 1;
     pointer-events: none;
-}}
+}
 
 .info-grid dd:last-of-type {
     margin-bottom: 0;
