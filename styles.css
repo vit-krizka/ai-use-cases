@@ -137,11 +137,6 @@ footer .footer-logo img {
     object-fit: contain; /* zachování proporcí u obrázků */
 }
 
-footer .footer-logo .logo-text {
-    font-size: 1.1rem;
-    font-weight: bold;
-    color: white;
-}
 
 footer a {
     color: white;
