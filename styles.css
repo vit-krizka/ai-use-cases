@@ -125,6 +125,8 @@ footer .footer-block {
 footer .footer-logo {
     display: flex;
     justify-content: flex-start; /* zarovnání doleva */
+    align-items: center;
+    gap: 1rem;
     margin-bottom: 0.5rem;
 }
 
@@ -133,6 +135,12 @@ footer .footer-logo img {
     width: 200px;   /* šířka loga */
     height: 60px;   /* výška loga */
     object-fit: contain; /* zachování proporcí u obrázků */
+}
+
+footer .footer-logo .logo-text {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: white;
 }
 
 footer a {

@@ -18,8 +18,12 @@ function initCommon() {
   const footerLogo = document.querySelector('.footer-logo');
   const logo = document.querySelector('.logo');
   if (footerLogo && logo) {
-    // Stejné logo v hlavičce i patičce
+    // Stejné logo v hlavičce i patičce doplněné o text jako na dia.gov.cz
     footerLogo.innerHTML = logo.innerHTML;
+    const logoText = document.createElement('span');
+    logoText.className = 'logo-text';
+    logoText.textContent = 'Digitální a informační agentura';
+    footerLogo.appendChild(logoText);
   }
 }
 
