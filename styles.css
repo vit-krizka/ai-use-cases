@@ -128,6 +128,12 @@ footer .footer-logo svg {
     height: 36px;
 }
 
+/* odkazy ve footeru */
+footer a {
+    color: white;        /* stejná barva jako text */
+    text-decoration: underline; /* podtržení */
+}
+
 /* ===== Sidebar ===== */
 #sidebar {
     background: var(--secondary);
