@@ -132,19 +132,21 @@ const isAdmin = new URLSearchParams(window.location.search).get('admin') === 'tr
     })()
         : '<p>-</p>';
 
-      html += '<div class="bottom-cards">';
+      let html = '<div class="bottom-cards">';
 html += `<div class="card"><strong>Stav projektu</strong><span>${uc['Stav projektu'] || '-'}</span></div>`;
 html += `<div class="card"><strong>Zdroj</strong><span>${docLink}</span></div>`;
-// karta pro admina
-html += `<div id="adminCard" class="card"><strong>Kontaktní osoba</strong><span>${contactInfo}</span></div>`;
+
+// karta pro admina – přidá se jen pokud je admin=true
+const params = new URLSearchParams(window.location.search);
+if (params.get('admin') === 'true') {
+    html += `<div class="card"><strong>Kontaktní osoba</strong><span>${contactInfo}</span></div>`;
+}
+
 html += '</div>';
 
-// po vložení HTML do stránky
-const params = new URLSearchParams(window.location.search);
-if (params.get('admin') !== 'true') {
-    const adminCard = document.getElementById('adminCard');
-    if (adminCard) adminCard.style.display = 'none';
-}
+// vložení do stránky
+document.getElementById('someContainer').innerHTML = html;
+
 
       section.innerHTML = html;
       main.appendChild(section);
