@@ -314,14 +314,19 @@ h2 {
   vertical-align: top;   /* aby text s ikonou byl nahoře */
 }
 
-.card {
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  padding: 1em;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-  background-color: #fff; /* přebije f9f9f9, pokud chceš světlejší kartu */
-  max-width: 400px;       /* nebo podle potřeby */
-  margin: 1em 0;
+.table-meta.card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;       /* mezera mezi řádky */
+  flex: 1 1 200px;    /* možnost škálování */
+  background: #f0f0f0;
+  border-radius: 4px;
+  padding: 1rem;
+}
+
+.table-meta.card td b {
+  font-size: 0.95rem;
+  color: var(--primary);
 }
 
 .highlight {
