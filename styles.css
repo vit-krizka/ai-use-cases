@@ -145,6 +145,27 @@ footer h2 {
     color: white !important;
 }
 
+.gov-footer__main {
+    background-color: #f8f8f8;
+    padding: 20px;
+}
+
+.gov-list--plain {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;       /* pro rozložení do řady */
+    gap: 20px;           /* mezery mezi položkami */
+}
+
+.footer-columns {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* tři sloupce */
+  gap: 1rem; /* mezery mezi sloupci */
+  list-style: none; /* odstraní odrážky */
+  padding: 0;
+}
+
 /* ===== Sidebar ===== */
 #sidebar {
     background: var(--secondary);
