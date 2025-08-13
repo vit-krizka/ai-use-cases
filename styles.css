@@ -106,32 +106,36 @@ body.single-column {
 }
 
 footer {
-    grid-column: 1 / -1;
-    grid-row: 3;
-    background: #2E2D2C; /* nová barva */
-    text-align: center;
+    display: flex;
+    justify-content: space-between; /* rozestupy mezi bloky */
+    align-items: flex-start;
+    background: #2E2D2C;
+    color: white;
     padding: 2rem 1rem;
     font-size: 0.9rem;
-    position: relative;
-    color: white;
+    grid-column: 1 / -1;
+    grid-row: 3;
 }
- 
+
+footer .footer-block {
+    flex: 1;
+    margin: 0 1rem;
+}
+
 footer .footer-logo {
-    margin-bottom: 0.5rem;
     display: flex;
     justify-content: center;
-    color: var(--primary);
+    margin-bottom: 0.5rem;
 }
- 
+
 footer .footer-logo svg {
     width: 120px;
     height: 36px;
 }
 
-/* odkazy ve footeru */
 footer a {
-    color: white;        /* stejná barva jako text */
-    text-decoration: underline; /* podtržení */
+    color: white;
+    text-decoration: underline;
 }
 
 /* ===== Sidebar ===== */
