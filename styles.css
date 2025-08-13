@@ -363,6 +363,14 @@ h2 {
         transform: translateX(0);
     }
 
+    #sidebar .arrow {        /* nebo konkrétní třída šipky */
+        display: inline-block;
+        vertical-align: middle;
+        margin-left: 0.5em;
+        width: 1em;
+        height: auto;
+    }
+
     main {
         grid-column: 1;
     }
