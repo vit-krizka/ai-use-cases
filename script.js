@@ -64,17 +64,52 @@ const isAdmin = new URLSearchParams(window.location.search).get('admin') === 'tr
   }
   let html = `<h2>${title}</h2>`;
 
-      html += '<ul class="meta">';
-      html += `<li><span class="icon" aria-hidden="true">&#x1F3DB;&#xFE0E;</span><b>Instituce</b> ${uc['Instituce'] || '-'}</li>`;
-      html += `<li><span class="icon" aria-hidden="true">&#x1F6E0;&#xFE0E;</span><b>Dodavatel</b> ${uc['Dodavatel'] || '-'}</li>`;
-      html += `<li><span class="icon" aria-hidden="true">&#x1F4BC;&#xFE0E;</span><b>Obor činnosti</b> ${uc['Obor činnosti'] || '-'}</li>`;
-      const mainCategoryFull = uc['Hlavní kategorie use case'] || '-';
-      const mainCategoryBase = mainCategoryFull.split('(')[0].trim();
-      const categoryHtml = categoryDescriptions.has(mainCategoryBase)
-        ? `<a href="#" class="category-link" data-category="${mainCategoryBase}">${mainCategoryFull}</a>`
-        : mainCategoryFull;
-      html += `<li><span class="icon" aria-hidden="true">&#x1F5C2;&#xFE0E;</span><b>Kategorie use case</b> ${categoryHtml}</li>`;
-      html += '</ul>';
+      html += '<table style="border-collapse: collapse; border: none;">';
+
+html += `
+<tr>
+  <td style="border: none; padding: 0.2em;">
+    <span class="icon" aria-hidden="true">&#x1F3DB;&#xFE0E;</span>
+  </td>
+  <td style="border: none; padding: 0.2em;"><b>Instituce</b></td>
+  <td style="border: none; padding: 0.2em;">${uc['Instituce'] || '-'}</td>
+</tr>`;
+
+html += `
+<tr>
+  <td style="border: none; padding: 0.2em;">
+    <span class="icon" aria-hidden="true">&#x1F6E0;&#xFE0E;</span>
+  </td>
+  <td style="border: none; padding: 0.2em;"><b>Dodavatel</b></td>
+  <td style="border: none; padding: 0.2em;">${uc['Dodavatel'] || '-'}</td>
+</tr>`;
+
+html += `
+<tr>
+  <td style="border: none; padding: 0.2em;">
+    <span class="icon" aria-hidden="true">&#x1F4BC;&#xFE0E;</span>
+  </td>
+  <td style="border: none; padding: 0.2em;"><b>Obor činnosti</b></td>
+  <td style="border: none; padding: 0.2em;">${uc['Obor činnosti'] || '-'}</td>
+</tr>`;
+
+const mainCategoryFull = uc['Hlavní kategorie use case'] || '-';
+const mainCategoryBase = mainCategoryFull.split('(')[0].trim();
+const categoryHtml = categoryDescriptions.has(mainCategoryBase)
+  ? `<a href="#" class="category-link" data-category="${mainCategoryBase}">${mainCategoryFull}</a>`
+  : mainCategoryFull;
+
+html += `
+<tr>
+  <td style="border: none; padding: 0.2em;">
+    <span class="icon" aria-hidden="true">&#x1F5C2;&#xFE0E;</span>
+  </td>
+  <td style="border: none; padding: 0.2em;"><b>Kategorie use case</b></td>
+  <td style="border: none; padding: 0.2em;">${categoryHtml}</td>
+</tr>`;
+
+html += '</table>';
+
 
 
       if (uc['Krátký popis']) {
