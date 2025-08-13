@@ -299,18 +299,18 @@ h2 {
 
 .info-grid ul li {
     position: relative;
-    padding-left: 1.5em;
-    color: inherit;
-    display: inline-block;
+    padding-left: 1.5em; /* místo pro čtvereček */
+    color: #000; /* text vždy černý */
+    display: block; /* blokové zarovnání pro víceryádkový text */
     vertical-align: top;
 }
 
 .info-grid ul li::before {
-    content: "■";
+    content: "■"; /* plný čtvereček */
     position: absolute;
     left: 0;
-    top: 0.2em; /* doladit podle potřeby */
-    color: rgb(54, 133, 55);
+    top: 0.2em; /* posun dolů pro zarovnání s první řádkou */
+    color: rgb(54, 133, 55); /* zelený čtvereček */
     font-size: 1em;
     line-height: 1;
     pointer-events: none;
