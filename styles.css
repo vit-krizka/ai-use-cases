@@ -104,7 +104,7 @@ body.single-column {
     height: 28px;
     stroke: #fff;
 }
-
+/* ===== Footer ===== */
 footer {
     display: flex;
     flex-direction: column;
@@ -411,6 +411,11 @@ h2 {
 
     main {
         grid-column: 1;
+    }
+
+    .footer-columns {
+        flex-direction: column; /* prvky pod sebe */
+        align-items: flex-start; /* zarovná doleva */
     }
 
     footer {
