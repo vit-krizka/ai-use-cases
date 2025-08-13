@@ -65,15 +65,15 @@ const isAdmin = new URLSearchParams(window.location.search).get('admin') === 'tr
   let html = `<h2>${title}</h2>`;
 
       html += '<ul class="meta">';
-      html += `<li><span class="icon" aria-hidden="true">&#x1F3DB;&#xFE0E;</span><b>Instituce</b>: ${uc['Instituce'] || '-'}</li>`;
-      html += `<li><span class="icon" aria-hidden="true">&#x1F6E0;&#xFE0E;</span><b>Dodavatel</b>: ${uc['Dodavatel'] || '-'}</li>`;
-      html += `<li><span class="icon" aria-hidden="true">&#x1F4BC;&#xFE0E;</span><b>Obor činnosti</b>: ${uc['Obor činnosti'] || '-'}</li>`;
+      html += `<li><span class="icon" aria-hidden="true">&#x1F3DB;&#xFE0E;</span><b>Instituce</b> ${uc['Instituce'] || '-'}</li>`;
+      html += `<li><span class="icon" aria-hidden="true">&#x1F6E0;&#xFE0E;</span><b>Dodavatel</b> ${uc['Dodavatel'] || '-'}</li>`;
+      html += `<li><span class="icon" aria-hidden="true">&#x1F4BC;&#xFE0E;</span><b>Obor činnosti</b> ${uc['Obor činnosti'] || '-'}</li>`;
       const mainCategoryFull = uc['Hlavní kategorie use case'] || '-';
       const mainCategoryBase = mainCategoryFull.split('(')[0].trim();
       const categoryHtml = categoryDescriptions.has(mainCategoryBase)
         ? `<a href="#" class="category-link" data-category="${mainCategoryBase}">${mainCategoryFull}</a>`
         : mainCategoryFull;
-      html += `<li><span class="icon" aria-hidden="true">&#x1F5C2;&#xFE0E;</span><b>Kategorie use case</b>: ${categoryHtml}</li>`;
+      html += `<li><span class="icon" aria-hidden="true">&#x1F5C2;&#xFE0E;</span><b>Kategorie use case</b> ${categoryHtml}</li>`;
       html += '</ul>';
 
 
