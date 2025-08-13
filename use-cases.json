@@ -500,5 +500,26 @@
     "Informace o zdroji a kontaktní osoba": "Zdroj",
     "Obor činnosti": "Doprava",
     "Kategorie use case": "Monitoring, bezpečnost a dohled; Optimalizace  úředních procesů; Predikce a  automatizované rozhodování"
-  }
+  },
+  {
+  "id": 26,
+  "Garant:": "Vojtěch Duraj",
+  "Název projektu": "Generativní AI pro podporu odborných a administrativních úkolů v centrální bance",
+  "Typ umělé inteligence": "generativní AI (velký jazykový model GPT-4o)\nAutomatizace znalostní práce\nHluboké učení (Deep Learning)",
+  "Hlavní kategorie use case": "Optimalizace úředních procesů",
+  "Krátký popis": "Projekt realizovaný v Národní bance Slovenska testoval dopady nasazení generativní AI na výkon zaměstnanců při plnění různorodých úkolů. Pomocí randomizovaného experimentu byla měřena kvalita a rychlost zpracování 14 obecných a 2 odborně specifických úloh, přičemž zaměstnanci měli nebo neměli k dispozici GPT-4o. Cílem bylo ověřit, zda AI dokáže zlepšit výkonnost a podpořit redesign práce v organizaci.",
+  "Řešený problém": "Ve znalostních institucích, jako je centrální banka, je značná část pracovní doby věnována náročným analytickým a administrativním úkolům. Tyto úlohy mohou být časově náročné, variabilní kvalitou výstupu a zatěžující pro lidské kapacity. Potřebné je ověřit, zda generativní AI dokáže pomoci při tvorbě textů, analýze dat a odborných výstupech a jaký má dopad na různé úrovně kvalifikace zaměstnanců.",
+  "Instituce": "Národní banka Slovenska",
+  "Sloupec1": "Národní banka Slovenska",
+  "Dodavatel": "Interní implementace s využitím GPT-4o",
+  "Stav projektu": "Pilot / PoC",
+  "Očekávané dopady": "Zvýšení kvality výstupů až o 44 % a snížení času plnění úkolů o 21 %. Největší zlepšení kvality zaznamenali méně zkušení pracovníci, zatímco vysoce kvalifikovaní pracovníci získali významné časové úspory. Při optimalizaci přerozdělení úkolů v organizaci by bylo možné dosáhnout až o 7,3 % vyšší celkové efektivity.",
+  "Vyhodnocení úspěšnosti": "Randomizovaný experiment prokázal statisticky významné zlepšení výkonu. Výsledky byly publikovány a potvrzují přínosy generativní AI pro ne-rutinní úkoly a znalostní práci.",
+  "Poučení pro příští projekty": "Generativní AI má nejvyšší přidanou hodnotu u ne-rutinních, odborně náročných úkolů. Pro maximalizaci přínosu je vhodné upravit alokaci úkolů mezi pracovníky podle jejich profilu a schopností spolupracovat s AI. Implementace by měla zahrnovat školení a jasné procesy využití.",
+  "Zdroj": "https://cepr.org/voxeu/columns/task-based-returns-generative-ai-evidence-central-bank",
+  "Označení zdroje": "VoxEU – Task-based returns to generative AI: Evidence from a central bank",
+  "Informace o zdroji a kontaktní osoba": "Autoři studie: Aleš Maršál a Patryk Perkowski",
+  "Obor činnosti": "Veřejná správa / Finance",
+  "Kategorie use case": "Optimalizace úředních procesů; Generování obsahu a chatboti úředníků"
+}
 ]
