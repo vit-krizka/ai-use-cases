@@ -186,8 +186,17 @@ const isAdmin = new URLSearchParams(window.location.search).get('admin') === 'tr
     const popupDesc = popup?.querySelector('p');
     const popupClose = popup?.querySelector('.popup-close');
     if (popup && popupTitle && popupDesc && popupClose) {
-      popupClose.addEventListener('click', () => {
+      const hidePopup = () => {
         popup.style.display = 'none';
+      };
+      popupClose.addEventListener('click', hidePopup);
+
+      // Zavření při kliknutí mimo obsah
+      popup.addEventListener('click', (e) => {
+        if (e.target === popup) hidePopup();
+      });
+      document.addEventListener('click', (e) => {
+        if (popup.style.display === 'flex' && !popup.contains(e.target)) hidePopup();
       });
 
       document.querySelectorAll('.category-link').forEach((link) => {
@@ -195,11 +204,11 @@ const isAdmin = new URLSearchParams(window.location.search).get('admin') === 'tr
         const desc = categoryDescriptions.get(cat);
         const showPopup = (e) => {
           e.preventDefault();
+          e.stopPropagation();
           popupTitle.textContent = cat;
           popupDesc.textContent = desc || '';
           popup.style.display = 'flex';
         };
-        link.addEventListener('mouseenter', showPopup);
         link.addEventListener('click', showPopup);
       });
     }
