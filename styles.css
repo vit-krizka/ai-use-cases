@@ -309,12 +309,12 @@ h2 {
     content: "■"; /* plný čtvereček */
     position: absolute;
     left: 0;
-    top: 0.2em; /* posun dolů pro zarovnání s první řádkou */
+    top: 0.35em; /* lehký posun dolů */
     color: rgb(54, 133, 55); /* zelený čtvereček */
-    font-size: 1em;
+    font-size: 0.75em; /* menší velikost čtverečku */
     line-height: 1;
     pointer-events: none;
-}
+}}
 
 .info-grid dd:last-of-type {
     margin-bottom: 0;
