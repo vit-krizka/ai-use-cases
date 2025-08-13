@@ -115,6 +115,7 @@ footer {
     font-size: 0.9rem;
     grid-column: 1 / -1;
     grid-row: 3;
+    position: relative; /* zajistí správné vrstvení */
 }
 
 footer .footer-block {
