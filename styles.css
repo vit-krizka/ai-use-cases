@@ -302,6 +302,18 @@ h2 {
     font-size: 1.1rem;
 }
 
+.table-meta {
+  border-collapse: collapse;
+  margin-bottom: 1em; /* odsazení od dalšího obsahu */
+  background-color: #f9f9f9; /* zachování podbarvení */
+}
+
+.table-meta td {
+  border: none;          /* žádné rámečky */
+  padding: 0.3em 0.5em;  /* mezera uvnitř buněk */
+  vertical-align: top;   /* aby text s ikonou byl nahoře */
+}
+
 .highlight {
     background: #f9f9f9;
     border-left: 4px solid var(--primary);
