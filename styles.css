@@ -139,6 +139,10 @@ footer a {
     text-decoration: underline;
 }
 
+footer h2 {
+    color: white !important;
+}
+
 /* ===== Sidebar ===== */
 #sidebar {
     background: var(--secondary);
