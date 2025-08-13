@@ -105,28 +105,50 @@ body.single-column {
     stroke: #fff;
 }
 
-footer {
-    background: var(--secondary);
-    text-align: center;
-    padding: 2rem 1rem;
-    margin-top: 2rem;
-    font-size: 0.9rem;
-    grid-column: 1 / -1;
-    grid-row: 3;
-    background: #2E2D2C;
-    position: relative; /* zajistí správné vrstvení */
+.gov-footer {
+  background-color: #f8f9fa;
+  padding: 2rem;
+  font-family: Arial, sans-serif;
+  color: #333;
 }
 
-footer .footer-logo {
-    margin-bottom: 0.5rem;
-    display: flex;
-    justify-content: center;
-    color: var(--primary);
+.gov-footer__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1rem;
 }
 
-footer .footer-logo svg {
-    width: 120px;
-    height: 36px;
+.gov-footer__main {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.gov-footer__description {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.gov-footer__logo {
+  max-width: 80px;
+}
+
+@media (min-width: 768px) {
+  .gov-footer__logo {
+    max-width: 120px;
+  }
+}
+
+.print\:hidden {
+  display: block;
+}
+
+@media print {
+  .print\:hidden {
+    display: none;
+  }
 }
 
 /* ===== Sidebar ===== */
