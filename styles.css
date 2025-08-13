@@ -147,6 +147,8 @@ footer h2 {
 .footer-columns {
   display: flex;
   gap: 1rem;
+  justify-content: flex-start; /* zarovnání doleva */
+  align-items: flex-start;     /* zarovnání nahoře, aby to bylo srovnané i vertikálně */
 }
 
 .footer-bottom {
