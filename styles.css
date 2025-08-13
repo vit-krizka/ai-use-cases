@@ -388,6 +388,7 @@ h2 {
         grid-template-columns: 1fr;
     }
 
+    /* Sidebar chování */
     #sidebar {
         position: fixed;
         left: 0;
@@ -409,7 +410,12 @@ h2 {
         height: auto;
     }
 
+    /* Main a Footer chování */
     main {
+        grid-column: 1;
+    }
+
+    footer {
         grid-column: 1;
     }
 
@@ -418,10 +424,7 @@ h2 {
         align-items: flex-start; /* zarovná doleva */
     }
 
-    footer {
-        grid-column: 1;
-    }
-
+    /* Topbar chování */
     .hamburger {
         display: block !important;
         background: none;
@@ -444,24 +447,24 @@ h2 {
 
     /* odsazení pod h1 v topbaru */
     .topbar h1 {
-  display: flex;
-  align-items: center;
-  gap: 8px; /* vzdálenost mezi ikonou a textem nadpisu */
-  margin-bottom: 0.5em;
-}
+        display: flex;
+        align-items: center;
+        gap: 8px; /* vzdálenost mezi ikonou a textem nadpisu */
+        margin-bottom: 0.5em;
+    }
 
-.topbar h1::after {
-  content: ":";
-  margin-left: 4px;
-  margin-right: 12px; /* odsazení za dvojtečkou */
-}
+    .topbar h1::after {
+        content: ":";
+        margin-left: 4px;
+        margin-right: 12px; /* odsazení za dvojtečkou */
+    }
 
-.topbar p {
-  margin-left: calc( var(--icon-width, 24px) + 20px );
-  /* odsazení textu o šířku ikony + mezery, uprav podle potřeby */
-}
+    .topbar p {
+        margin-left: calc( var(--icon-width, 24px) + 20px );
+        /* odsazení textu o šířku ikony + mezery, uprav podle potřeby */
+    }
 
-    /* pokud jsou ikony mimo logo, zajisti aby byly viditelné */
+    /* Ikony */
     .icon,
     .topbar .icon-wrapper,
     .topbar svg {
