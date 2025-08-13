@@ -129,9 +129,11 @@ footer .footer-logo {
     margin-bottom: 0.5rem;
 }
 
-footer .footer-logo svg {
-    width: 120px;
-    height: 36px;
+footer .footer-logo svg,
+footer .footer-logo img {
+    width: 120px;   /* šířka loga */
+    height: 36px;   /* výška loga */
+    object-fit: contain; /* zachování proporcí u obrázků */
 }
 
 footer a {
