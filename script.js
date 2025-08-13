@@ -131,20 +131,19 @@ const isAdmin = new URLSearchParams(window.location.search).get('admin') === 'tr
       return `${textPart}${textPart && linkHtml ? '<br />' : ''}${linkHtml}`;
     })()
         : '<p>-</p>';
-
+ 
       html += '<div class="bottom-cards">';
-      html += <div class="card"><strong>Stav projektu</strong><span>${uc['Stav projektu'] || '-'}</span></div>;
-      html += <div class="card"><strong>Zdroj</strong><span>${docLink}</span></div>;
-      html += <div class="card"><strong>Kontaktní osoba</strong><span>${contactInfo}</span></div>;
+      html += `<div class="card"><strong>Stav projektu</strong><span>${uc['Stav projektu'] || '-'}</span></div>`;
+      html += `<div class="card"><strong>Zdroj</strong><span>${docLink}</span></div>`;
+      html += `<div class="card"><strong>Kontaktní osoba</strong><span>${contactInfo}</span></div>`;
       html += '</div>';
-
-
+ 
       section.innerHTML = html;
       main.appendChild(section);
-
+ 
       // Přiřazení use casu do kategorie podle hlavní kategorie
       const mainCat = (uc['Hlavní kategorie use case'] || '').trim();
-
+ 
       if (mainCat && categoryMap.has(mainCat)) {
         categoryMap.get(mainCat).push({ idStr, sectionId, title: uc['Název projektu'] });
       } else {
