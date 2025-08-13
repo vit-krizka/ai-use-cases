@@ -146,7 +146,7 @@ footer a {
     text-decoration: underline;
 }
 
-footer h2 {
+footer h3 {
     color: white !important;
 }
 
@@ -278,6 +278,12 @@ section.active {
 h2 {
     margin-top: 0;
     font-size: 1.7rem;
+    color: var(--primary);
+}
+
+h3 {
+    margin-top: 0;
+    font-size: 1.4rem;
     color: var(--primary);
 }
 
