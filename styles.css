@@ -124,7 +124,7 @@ footer .footer-block {
 
 footer .footer-logo {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start; /* zarovnání doleva */
     margin-bottom: 0.5rem;
 }
 
@@ -147,8 +147,6 @@ footer h2 {
 .footer-columns {
   display: flex;
   gap: 1rem;
-  justify-content: flex-start; /* zarovnání doleva */
-  align-items: flex-start;     /* zarovnání nahoře, aby to bylo srovnané i vertikálně */
 }
 
 .footer-bottom {
