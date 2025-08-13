@@ -309,7 +309,7 @@ h2 {
     content: "■"; /* plný čtvereček */
     position: absolute;
     left: 0;
-    top: 0.2em; /* posun blíž k hornímu okraji, aby seděl k první řádce */
+    top: 0.45em; /* necháváme tvůj původní posun dolů */
     color: rgb(54, 133, 55); /* zelený čtvereček */
     font-size: 0.65em; /* menší velikost čtverečku */
     line-height: 1;
