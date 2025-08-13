@@ -138,9 +138,7 @@ footer .footer-logo img {
 }
 
 footer .footer-logo .logo-text {
-    font-size: 1.1rem;
-    font-weight: bold;
-    color: white;
+    display: none;
 }
 
 footer a {
