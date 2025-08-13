@@ -166,6 +166,11 @@ footer h2 {
   padding: 0;
 }
 
+.container {
+    display: flex;
+    flex: 1; /* roztáhne container na výšku mezi header a footer */
+}
+
 /* ===== Sidebar ===== */
 #sidebar {
     background: var(--secondary);
