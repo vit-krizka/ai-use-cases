@@ -198,9 +198,11 @@ nav ul ul a {
     color: #fff;
 }
 
+/* Šipky */
 .category-toggle .arrow {
     display: inline-block;
     transition: transform 0.3s ease;
+    margin-left: 15px; /* odsazení šipky od textu */
 }
 
 .category-toggle[aria-expanded="true"] .arrow {
