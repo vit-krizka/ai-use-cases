@@ -64,7 +64,7 @@ const isAdmin = new URLSearchParams(window.location.search).get('admin') === 'tr
   }
   let html = `<h2>${title}</h2>`;
 
-      html += '<table class="table-meta">';
+      html += '<table class="table-meta card">';
 
       html += `
       <tr>
