@@ -342,7 +342,6 @@ h2 {
     padding-left: 1.4em; /* prostor pro čtvereček */
     color: #000; /* text vždy černý */
     display: block; /* blokové zarovnání pro víceryádkový text */
-    vertical-align: top;
 }
 
 .info-grid ul li::before {
