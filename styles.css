@@ -107,46 +107,34 @@ body.single-column {
 
 .gov-footer {
   background-color: #f8f9fa;
-  padding: 2rem;
+  padding: 20px;
   font-family: Arial, sans-serif;
   color: #333;
 }
 
 .gov-footer__content {
   display: flex;
-  flex-direction: column;
   justify-content: space-between;
-  gap: 1rem;
-}
-
-.gov-footer__main {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.gov-footer__description {
-  display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
+  align-items: center;
 }
 
 .gov-footer__logo {
-  max-width: 80px;
+  width: 80px;
+  height: auto;
 }
 
 @media (min-width: 768px) {
   .gov-footer__logo {
-    max-width: 120px;
+    width: 120px;
   }
 }
 
-.print\:hidden {
+.print-hidden {
   display: block;
 }
 
 @media print {
-  .print\:hidden {
+  .print-hidden {
     display: none;
   }
 }
