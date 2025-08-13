@@ -197,7 +197,7 @@ const isAdmin = new URLSearchParams(window.location.search).get('admin') === 'tr
         const subLi = document.createElement('li');
         const a = document.createElement('a');
         a.href = `#${data.sectionId}`;
-        a.textContent = `${data.idStr} \u00A0${data.title}`;
+        a.textContent = `${data.title}`;
         subLi.appendChild(a);
         subUl.appendChild(subLi);
       });
@@ -230,7 +230,7 @@ const isAdmin = new URLSearchParams(window.location.search).get('admin') === 'tr
         const subLi = document.createElement('li');
         const a = document.createElement('a');
         a.href = `#${data.sectionId}`;
-        a.textContent = `${data.idStr} \u00A0${data.title}`;
+        a.textContent = `${data.title}`;
         subLi.appendChild(a);
         subUl.appendChild(subLi);
       });
