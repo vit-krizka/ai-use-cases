@@ -104,6 +104,7 @@ body.single-column {
 
 /* jednoduché animace zobrazení/skrývání */
 .popup[aria-hidden="false"] { display: block; animation: popIn .18s ease-out; }
+.popup[aria-hidden="true"] { display: none; }
 @keyframes popIn { from { transform: translateY(4px); opacity: .0; } to { transform: translateY(0); opacity: 1; } }
 
 /* ===== Top bar ===== */
