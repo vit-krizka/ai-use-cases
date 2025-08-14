@@ -34,6 +34,7 @@ body.single-column {
   position: fixed;
   bottom: 1rem;
   right: 1rem;
+  max-width: 420px;
   background-color: #368537;
   color: #fff;
   padding: 16px 18px 18px 18px;
