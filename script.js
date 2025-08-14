@@ -334,27 +334,51 @@ const isAdmin = new URLSearchParams(window.location.search).get('admin') === 'tr
  * Jednoduchý informační banner s možností schování na 2 minuty.
  */
 function initInfoBanner() {
-  const banner = document.getElementById('info-banner');
-  if (!banner) return; // Banner je pouze na indexu
-  const bannerClose = banner.querySelector('.popup-close');
-  let bannerTimer;
+  const POPUP_ID = 'ai-tip-popup';
+  const SHOW_DELAY_MS = 30_000;          // 30 s po načtení
+  const RESHOW_AFTER_CLOSE_MS = 180_000;  // 3 min po zavření
+  const KEY_LAST_DISMISS = 'aiTipPopup:lastDismiss';
+  const el = document.getElementById(POPUP_ID);
+  if (!el) return;
 
-  const showBanner = () => {
-    banner.style.display = 'block';
-  };
+  const closeBtn = el.querySelector('.popup-close');
 
-  const hideBanner = () => {
-    banner.style.display = 'none';
-    if (bannerTimer) clearTimeout(bannerTimer);
-    bannerTimer = setTimeout(showBanner, 120000); // Zobrazit znovu za 2 minuty
-  };
+  function now() { return Date.now(); }
+  function lastDismissAt() {
+    const n = Number(localStorage.getItem(KEY_LAST_DISMISS));
+    return isNaN(n) ? 0 : n;
+  }
 
-  bannerClose.addEventListener('click', hideBanner);
+  function canShow() {
+    return now() - lastDismissAt() >= RESHOW_AFTER_CLOSE_MS;
+  }
+
+  function showPopup() {
+    if (!canShow()) return;          // respektuj 3 min pauzu
+    el.setAttribute('aria-hidden', 'false');
+  }
+
+  function hidePopup() {
+    el.setAttribute('aria-hidden', 'true');
+    localStorage.setItem(KEY_LAST_DISMISS, String(now()));
+    clearTimeout(pendingTimer);
+  }
+
+  closeBtn.addEventListener('click', hidePopup);
+
   document.addEventListener('keydown', (e) => {
-    if (e.key === 'Escape') {
-      hideBanner();
+    if (e.key === 'Escape' && el.getAttribute('aria-hidden') !== 'true') {
+      hidePopup();
     }
   });
+
+  let pendingTimer = setTimeout(showPopup, SHOW_DELAY_MS);
+
+  if (!canShow()) {
+    const msLeft = RESHOW_AFTER_CLOSE_MS - (now() - lastDismissAt());
+    clearTimeout(pendingTimer);
+    pendingTimer = setTimeout(showPopup, Math.max(msLeft, 1));
+  }
 }
 
 // Start po načtení DOMu
