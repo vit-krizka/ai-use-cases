@@ -81,20 +81,19 @@ body.single-column {
 /* mobilní zarovnání – dole uprostřed, širší */
 @media (max-width: 640px) {
   .popup {
+    position: fixed;      /* pevné pozicování vůči oknu */
     left: 12px;
     right: 12px;
     bottom: 16px;
-    top: auto;                 /* zruší top zarovnání */
+    top: auto;            /* zruší zarovnání shora */
     max-width: none;
-    position: relative;       /* pro pozicování X */
+    margin: 0 auto;       /* zarovnání uprostřed */
   }
 
-  /* wrapper pro obsah textu */
   .popup .popup-content {
-    padding: 12px 12px 12px 12px; /* stejné odsazení zleva i zprava */
+    padding: 12px;
   }
 
-  /* tlačítko X */
   .popup .popup-close {
     position: absolute;
     top: 6px;
