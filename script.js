@@ -350,6 +350,11 @@ function initInfoBanner() {
   };
 
   bannerClose.addEventListener('click', hideBanner);
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') {
+      hideBanner();
+    }
+  });
 }
 
 // Start po načtení DOMu
