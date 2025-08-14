@@ -6,6 +6,9 @@
     --secondary: #f2f6fa;
     --text: #1a1a1a;
     --sidebar-width: 300px;
+    --popup-green: #2ea043;
+    --popup-radius: 10px;
+    --popup-shadow: 0 10px 20px rgba(0,0,0,.25);
 }
 
 html {
@@ -29,14 +32,17 @@ body.single-column {
 /* ===== Info popup ===== */
 .popup {
   position: fixed;
-  bottom: 1rem;
-  right: 1rem;
-  background-color: #368537;
-  color: white;
-  padding: 16px;
-  border-radius: 6px;
-  max-width: 400px;
-  z-index: 1000;
+  top: 20px;
+  right: 24px;
+  max-width: 420px;
+  background: var(--popup-green);
+  color: #fff;
+  padding: 16px 18px 18px 18px;
+  border-radius: var(--popup-radius);
+  box-shadow: var(--popup-shadow);
+  line-height: 1.35;
+  z-index: 2147483000;
+  display: none;                /* řízeno JS */
 }
 
 .popup a {
@@ -56,7 +62,6 @@ body.single-column {
   display: flex;           /* flexbox centrování */
   align-items: center;     /* vertikální střed */
   justify-content: center; /* horizontální střed */
-  padding: 8px;           /* větší klikací plocha */
   cursor: pointer;
   border-radius: 50%;     /* kulatá klikací zóna */
   transition: background-color 0.2s ease, transform 0.2s ease;
@@ -73,6 +78,25 @@ body.single-column {
   width: 20px;
   height: 20px;
 }
+/* mobilní zarovnání – dole uprostřed, širší */
+@media (max-width: 640px) {
+  .popup {
+    left: 12px;
+    right: 12px;
+    bottom: 16px;
+    top: auto;                 /* zruší top zarovnání */
+    max-width: none;
+    padding-right: 54px;       /* místo pro X */
+  }
+  .popup .popup-close {
+    top: 6px;
+    right: 6px;
+  }
+}
+
+/* jednoduché animace zobrazení/skrývání */
+.popup[aria-hidden="false"] { display: block; animation: popIn .18s ease-out; }
+@keyframes popIn { from { transform: translateY(4px); opacity: .0; } to { transform: translateY(0); opacity: 1; } }
 
 /* ===== Top bar ===== */
 .topbar {
