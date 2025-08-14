@@ -81,25 +81,19 @@ body.single-column {
 /* mobilní zarovnání – dole uprostřed, širší */
 @media (max-width: 640px) {
   .popup {
-    position: fixed;      /* pevné pozicování vůči oknu */
     left: 12px;
     right: 12px;
     bottom: 16px;
-    top: auto;            /* zruší zarovnání shora */
+    top: auto;                 /* zruší top zarovnání */
     max-width: none;
-    margin: 0 auto;       /* zarovnání uprostřed */
+    padding-right: 54px;       /* místo pro X */
   }
-
-  .popup .popup-content {
-    padding: 12px;
-  }
-
   .popup .popup-close {
-    position: absolute;
     top: 6px;
     right: 6px;
   }
 }
+
 
 /* jednoduché animace zobrazení/skrývání */
 .popup[aria-hidden="false"] { display: block; animation: popIn .18s ease-out; }
