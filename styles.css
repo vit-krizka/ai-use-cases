@@ -32,10 +32,9 @@ body.single-column {
 /* ===== Info popup ===== */
 .popup {
   position: fixed;
-  top: 20px;
-  right: 24px;
-  max-width: 420px;
-  background: var(--popup-green);
+  bottom: 1rem;
+  right: 1rem;
+  background-color: #368537;
   color: #fff;
   padding: 16px 18px 18px 18px;
   border-radius: var(--popup-radius);
