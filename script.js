@@ -331,12 +331,12 @@ const isAdmin = new URLSearchParams(window.location.search).get('admin') === 'tr
 }
 
 /**
- * Jednoduchý informační banner s možností schování na 2 minuty.
+ * Jednoduchý informační banner s možností schování na 3 minuty.
  */
 function initInfoBanner() {
   const POPUP_ID = 'ai-tip-popup';
   const SHOW_DELAY_MS = 30_000;          // 30 s po načtení
-  const RESHOW_AFTER_CLOSE_MS = 180_000;  // 3 min po zavření
+  const RESHOW_AFTER_CLOSE_MS = 180_000; // 3 min po zavření
   const KEY_LAST_DISMISS = 'aiTipPopup:lastDismiss';
   const el = document.getElementById(POPUP_ID);
   if (!el) return;
@@ -375,8 +375,10 @@ function initInfoBanner() {
     }
   });
 
+  // první zobrazení popupu po SHOW_DELAY_MS
   let pendingTimer = setTimeout(showPopup, SHOW_DELAY_MS);
 
+  // pokud už byl popup zavřen nedávno, naplánuj ho až po zbývajícím čase
   if (!canShow()) {
     const msLeft = RESHOW_AFTER_CLOSE_MS - (now() - lastDismissAt());
     clearTimeout(pendingTimer);
