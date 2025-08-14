@@ -86,9 +86,17 @@ body.single-column {
     bottom: 16px;
     top: auto;                 /* zruší top zarovnání */
     max-width: none;
-    padding-right: 54px;       /* místo pro X */
+    position: relative;       /* pro pozicování X */
   }
+
+  /* wrapper pro obsah textu */
+  .popup .popup-content {
+    padding: 12px 12px 12px 12px; /* stejné odsazení zleva i zprava */
+  }
+
+  /* tlačítko X */
   .popup .popup-close {
+    position: absolute;
     top: 6px;
     right: 6px;
   }
