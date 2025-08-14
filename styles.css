@@ -47,13 +47,44 @@ body.single-column {
 
 .info-banner .banner-close {
     position: absolute;
-    top: 4px;
-    right: 4px;
-    background: none;
+    top: 8px;
+    right: 8px;
+    width: 44px;
+    height: 44px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
     border: none;
-    color: #fff;
-    font-size: 1rem;
+    background: transparent;
     cursor: pointer;
+    padding: 0;
+    line-height: 1;
+    color: #fff;
+}
+
+.info-banner .banner-close-icon {
+    width: 24px;
+    height: 24px;
+    color: #fff;
+}
+
+.info-banner .banner-close:hover .banner-close-icon,
+.info-banner .banner-close:focus .banner-close-icon,
+.info-banner .banner-close:active .banner-close-icon {
+    filter: brightness(0.9);
+    transform: scale(1.05);
+}
+
+.info-banner .banner-close:focus {
+    outline: 2px solid rgba(255, 255, 255, 0.8);
+    outline-offset: 2px;
+}
+
+@media (max-width: 420px) {
+    .info-banner .banner-close {
+        top: 6px;
+        right: 6px;
+    }
 }
 
 /* ===== Top bar ===== */
