@@ -336,7 +336,7 @@ const isAdmin = new URLSearchParams(window.location.search).get('admin') === 'tr
 function initInfoBanner() {
   const banner = document.getElementById('info-banner');
   if (!banner) return; // Banner je pouze na indexu
-  const bannerClose = banner.querySelector('.banner-close');
+  const bannerClose = banner.querySelector('.popup-close');
   let bannerTimer;
 
   const showBanner = () => {

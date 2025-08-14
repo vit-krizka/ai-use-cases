@@ -26,69 +26,47 @@ body.single-column {
     min-height: 100vh;
 }
 
-/* ===== Info banner ===== */
-.info-banner {
-    position: fixed;
-    bottom: 1rem;
-    right: 1rem;
-    background: var(--primary);
-    color: #fff;
-    padding: 1rem 2rem 1rem 1.25rem;
-    border-radius: 4px;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
-    max-width: 300px;
-    z-index: 1000;
+/* ===== Info popup ===== */
+.popup {
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+  background-color: #28a745; /* zelená z tvého obrázku */
+  color: white;
+  padding: 16px;
+  border-radius: 6px;
+  max-width: 400px;
+  z-index: 1000;
 }
 
-.info-banner a {
-    color: #fff;
-    text-decoration: underline;
+.popup a {
+  color: white;
+  text-decoration: underline;
 }
 
-.info-banner .banner-close {
-    position: absolute;
-    top: 8px;
-    right: 8px;
-    width: 44px;
-    height: 44px;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    border: none;
-    background: transparent;
-    cursor: pointer;
-    padding: 0;
-    line-height: 1;
-    color: #fff;
+/* Zavírací tlačítko */
+.popup .popup-close {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  background: transparent;
+  border: none;
+  padding: 8px;           /* větší klikací plocha */
+  cursor: pointer;
+  border-radius: 50%;     /* kulatá klikací zóna */
+  transition: background-color 0.2s ease, transform 0.2s ease;
 }
 
-.info-banner .banner-close-icon {
-    width: 24px;
-    height: 24px;
-    color: #fff;
+.popup .popup-close:hover {
+  background-color: rgba(255, 255, 255, 0.15);
+  transform: scale(1.1); /* mírné zvětšení na hover */
 }
 
-.info-banner .banner-close-icon path {
-    fill: currentColor;
-}
-
-.info-banner .banner-close:hover .banner-close-icon,
-.info-banner .banner-close:focus .banner-close-icon,
-.info-banner .banner-close:active .banner-close-icon {
-    filter: brightness(0.9);
-    transform: scale(1.05);
-}
-
-.info-banner .banner-close:focus {
-    outline: 2px solid rgba(255, 255, 255, 0.8);
-    outline-offset: 2px;
-}
-
-@media (max-width: 420px) {
-    .info-banner .banner-close {
-        top: 6px;
-        right: 6px;
-    }
+/* SVG ikona */
+.popup .popup-close svg {
+  display: block;
+  width: 20px;
+  height: 20px;
 }
 
 /* ===== Top bar ===== */
