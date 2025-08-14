@@ -68,6 +68,10 @@ body.single-column {
     color: #fff;
 }
 
+.info-banner .banner-close-icon path {
+    fill: currentColor;
+}
+
 .info-banner .banner-close:hover .banner-close-icon,
 .info-banner .banner-close:focus .banner-close-icon,
 .info-banner .banner-close:active .banner-close-icon {
@@ -596,6 +600,7 @@ h3 {
     border: none;
     font-size: 1.5rem;
     cursor: pointer;
+    color: #fff;
 }
 
 .category-popup h3 {
