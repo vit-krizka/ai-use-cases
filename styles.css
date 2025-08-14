@@ -51,6 +51,11 @@ body.single-column {
   right: 8px;
   background: transparent;
   border: none;
+  width: 36px;             /* pevná šířka kolečka */
+  height: 36px;            /* pevná výška kolečka */
+  display: flex;           /* flexbox centrování */
+  align-items: center;     /* vertikální střed */
+  justify-content: center; /* horizontální střed */
   padding: 8px;           /* větší klikací plocha */
   cursor: pointer;
   border-radius: 50%;     /* kulatá klikací zóna */
