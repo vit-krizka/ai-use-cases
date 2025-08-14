@@ -362,6 +362,9 @@ function initInfoBanner() {
     el.setAttribute('aria-hidden', 'true');
     localStorage.setItem(KEY_LAST_DISMISS, String(now()));
     clearTimeout(pendingTimer);
+
+    // naplánovat znovu zobrazení popupu po RESHOW_AFTER_CLOSE_MS
+    pendingTimer = setTimeout(showPopup, RESHOW_AFTER_CLOSE_MS);
   }
 
   closeBtn.addEventListener('click', hidePopup);
