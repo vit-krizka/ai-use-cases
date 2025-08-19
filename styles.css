@@ -86,7 +86,7 @@ body.single-column {
     display: flex;
     align-items: center;
     gap: 1rem;
-    padding:0 1rem 0 0;
+    padding: 0 1rem;
     z-index: 1000;
     grid-column: 1 / -1;
     grid-row: 1;
@@ -102,13 +102,11 @@ body.single-column {
     display: flex;
     align-items: center;
     color: #fff;
-    margin-left: 0;
 }
 
 .logo svg {
     width: 120px;
     height: 36px;
-    display: block;
 }
 
 .hamburger {
