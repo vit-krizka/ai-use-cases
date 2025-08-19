@@ -494,7 +494,7 @@
     "Stav projektu": "Pilot / PoC",
     "Očekávané dopady": "Zkrácení doby čekání na křižovatkách\nSnížení emisí CO₂ díky plynulejšímu provozu\nZvýšení bezpečnosti (AI detekuje neobvyklé situace, např. vozidla v protisměru)\nNižší náklady na infrastrukturu a údržbu (oproti tradičním chytrým semaforům)",
     "Vyhodnocení úspěšnosti": "Pilotní nasazení v Brně a obci Želešice prokázalo, že systém dokáže samostatně vyhodnocovat dopravní toky a adaptovat se na lokální prostředí. První výsledky ukazují lepší plynulost dopravy a snížení tranzitní zátěže kamionů v centrech obcí. Města potvrdila, že systém je škálovatelný i do dalších lokalit.",
-    "Poučení pro příští projekty": "příklady dobré a špatné praxe",
+    "Poučení pro příští projekty": "Příklady dobré a špatné praxe",
     "Zdroj": "https://www.businessinfo.cz/clanky/cesko-chce-byt-lidrem-v-chytrych-resenich-pro-mesta-a-obce-startupum-rozda-dva-miliony-eur/?utm_source=chatgpt.com",
     "Označení zdroje": "Česko chce být lídrem v chytrých řešeních pro města a obce. Startupům rozdá dva miliony eur",
     "Informace o zdroji a kontaktní osoba": "Robert Pinkas, CEO VisionCraft",
@@ -545,7 +545,7 @@
   "id": 28,
   "Garant": "Martin Kukla",
   "Název projektu": "PID Halo",
-  "Typ umělé inteligence": "voicebot\nchatbot\nreal-time plánovací algoritmy na cloudovém základu",
+  "Typ umělé inteligence": "Voicebot\nChatbot\nReal-time plánovací algoritmy na cloudovém základu",
   "Hlavní kategorie use case": "Predikce a automatizované rozhodování",
   "Krátký popis": "Takzvaná poptávková doprava je koncept dopravy, který nepracuje s fixními trasami, jízdními řády nebo časy jako klasická linková doprava. Umožňuje zcela dynamickou tvorbu tras, které jsou vytvořeny na míru cestujícím podle jejich poptávky. V zahraničí je tento koncept známý jako „demand responsive transport“ nebo „transport on demand“. V celém konceptu hrají zásadní roli technologie. Ty mají na starosti sběr a zpracování poptávek od cestujících a jejich přeměnu v konkrétní optimalizované trasy, a to vše v reálném čase. Efektivní realizaci konceptu poptávkové dopravy umožňuje rozvoj technologií, jako jsou voicebotové a chatbotové služby nebo pokročilé algoritmy na plánování tras, založené na umělé inteligenci.",
   "Řešený problém": "Optimalizovaná trasa veřejné dopravy dle požadavků cestujících.",
@@ -600,6 +600,27 @@
   "Informace o zdroji a kontaktní osoba": "jan.horinek@pcr.cz",
   "Obor činnosti": "Vnitřní věci a bezpečnost",
   "Kategorie use case": "Analýza audiovizuálních dat; Monitoring, bezpečnost a dohled; Optimalizace úředních procesů"
+},
+{
+  "id": 31,
+  "Garant": "Martina Bártů",
+  "Název projektu": "Nástroje proti hlasovým deepfakes",
+  "Typ umělé inteligence": "Strojové učení\nGenerativní AI\nPosílení stávajících systémů pro rozpoznávání řečníka\nDetekce umělého nebo upraveného hlasu",
+  "Hlavní kategorie use case": "Analýza audiovizuálních dat",
+  "Krátký popis": "Vývoj systému kombinujícího hlasovou biometrii a identifikaci umělého hlasu. Projekt reaguje na aktuální hrozbu, kdy se s rozvojem systémů na modifikaci a syntézu hlasu množí útoky na systémy a osoby pomocí AI a cílené úpravy hlasového výstupu text-to-speech na konkrétní hlas. Aktivity projektu jsou zaměřeny na tři oblasti: zvýšení odolnosti hlasových biometrických systémů vůči útokům typu deepfakes spoofing, vytvoření nástrojů umožňujících boj proti škodlivému použití hlasových deepfakes a vyhodnocení schopnosti lidí rozpoznat hlasové deepfakes a nalezení způsobů, jak zvýšit bezpečnostní povědomí cílových uživatelů o této problematice.",
+  "Řešený problém": "Projekt přispěje k odhalování pokusů o páchání kriminality. Deepfakes jsou novou aplikací umělé inteligence s významným dopadem na počítačovou bezpečnost. Jejich tvorba je stále snazší a tyto nástroje lze využít k oklamání jednotlivců i organizací, zejména v kombinaci s taktikami sociálního inženýrství, jako je phishing.",
+  "Instituce": "Ministerstvo vnitra",
+  "Dodavatel": "FIT VUT v Brně, Phonexia s.r.o.",
+  "Stav projektu": "Nápad / záměr",
+  "Očekávané dopady": "Zvýšení bezpečnosti a odhalování kriminality\nEfektivnější odhalování pokusů o kriminalitu využívající syntetizovaný hlas (např. podvody, phishing)\nAdaptace na rychlý vývoj deepfake technologií\nZvýšení povědomí veřejnosti - osvěta a schopnost kriticky vyhodnocovat audio obsah\nEtický a odpovědný přístup k AI - využití AI ve prospěch celé společnosti",
+  "Vyhodnocení úspěšnosti": "Projekt ještě nebyl realizován. Předpokládané metriky úspěšnosti: False Acceptance Rate (FAR) - podíl falešně akceptovaných podvržených hlasů; False Rejection Rate (FRR) - podíl zamítnutí autentických hlasů; Rychlost detekce - schopnost reagovat na rychlý vývoj deepfake technologií; Metodika pro lidské rozpoznání - testování schopnosti lidí detekovat deepfake hlasy a účinnost osvěty.",
+  "Poučení pro příští projekty": "",
+  "Zdroj": "https://www.idnes.cz/zpravy/domaci/umela-inteligence-ministerstvo-vnitra-spoluprace-vysoka-skola-deepfake-rozpoznani.A240116_094710_domaci_vank, https://www.vut.cz/vav/projekty/detail/35470, https://smlouvy.gov.cz/smlouva/27156303",
+  "Označení zdroje": "Ministerstvo vnitra: nástroje proti deepfakes",
+  "Informace o zdroji a kontaktní osoba": "Kudla Radim, Ing.",
+  "Obor činnosti": "Vnitřní věci a bezpečnost",
+  "Kategorie use case": "Analýza audiovizuálních dat; Monitoring, bezpečnost a dohled; Optimalizace úředních procesů"
 }
+
 
 ]
