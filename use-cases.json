@@ -582,7 +582,7 @@
   "Kategorie use case": "Generování obsahu a chatboti úředníků; Komunikace a klientský servis; Školství a vzdělávání"
 },
 {
-  "id": null,
+  "id": 30,
   "Garant": "Martin Kukla",
   "Název projektu": "AI See",
   "Typ umělé inteligence": "Semi-automatizované a weakly supervised učení\nProstorovo-časové relace\nIndexovaná vyhledávání",
@@ -601,6 +601,4 @@
   "Obor činnosti": "Vnitřní věci a bezpečnost",
   "Kategorie use case": "Analýza audiovizuálních dat; Monitoring, bezpečnost a dohled; Optimalizace úředních procesů"
 }
-
-
 ]
