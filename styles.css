@@ -78,6 +78,10 @@ body.single-column {
   height: 20px;
 }
 
+#ai-tip-popup .popup-close svg {
+  stroke: #fff;
+}
+
 /* ===== Top bar ===== */
 .topbar {
     position: fixed;
