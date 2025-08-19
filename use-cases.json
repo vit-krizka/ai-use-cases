@@ -681,7 +681,49 @@
   "Informace o zdroji a kontaktní osoba": "Ivana Macnarová, Fakulta informačních technologií ČVUT, ivana.macnarova@fit.cvut.cz",
   "Obor činnosti": "Životní prostředí a zemědělství",
   "Kategorie use case": "Monitoring, bezpečnost a dohled; Predikce a automatizované rozhodování"
+},
+{
+  "id": 35,
+  "Garant": "Michal Kozubek",
+  "Název projektu": "AI National Skilling Plan",
+  "Typ umělé inteligence": "Základy AI",
+  "Hlavní kategorie use case": "Optimalizace úředních procesů",
+  "Krátký popis": "Iniciativa zaměřená na školení více než 350 000 lidí v oblasti umělé inteligence, s cílem podpořit digitální transformaci České republiky.",
+  "Řešený problém": "Nedostatek kvalifikovaných pracovníků v oblasti umělé inteligence.",
+  "Instituce": "Ministerstvo průmyslu a obchodu ČR, Úřad vlády, Úřad práce ČR",
+  "Dodavatel": "Microsoft, Univerzita Karlova, Česká asociace umělé inteligence",
+  "Stav projektu": "Produkce",
+  "Očekávané dopady": "Zvýšení digitálních dovedností pracovní síly\nPodpora implementace AI ve veřejné správě\nZvýšení konkurenceschopnosti ČR v oblasti AI",
+  "Vyhodnocení úspěšnosti": "Projekt je v probíhající fázi; konkrétní metriky úspěšnosti zatím nejsou dostupné.",
+  "Poučení pro příští projekty": "Důležitost spolupráce mezi veřejným a soukromým sektorem při implementaci AI do veřejné správy.",
+  "Zdroj": "https://mpo.gov.cz/cz/rozcestnik/pro-media/tiskove-zpravy/microsoft-spousti-ai-national-skilling-plan-v-cr-v_prvni-fazi-projektu-investuje-pres-10-milionu-korun-do-vzdelavani-vice-nez-350-000-lidi--288281/",
+  "Označení zdroje": "Oficiální zpráva MPO o AI National Skilling Plan",
+  "Informace o zdroji a kontaktní osoba": "MPO",
+  "Obor činnosti": "Práce a zaměstnanost",
+  "Kategorie use case": "Optimalizace úředních procesů; Školství a vzdělávání"
+},
+{
+  "id": 36,
+  "Garant": "Michal Kozubek",
+  "Název projektu": "Monitoring klimatických změn a stavu ekosystémů pomocí AI",
+  "Typ umělé inteligence": "Strojové učení\nDeep learning\nAnalýza časových řad",
+  "Hlavní kategorie use case": "Monitoring, bezpečnost a dohled",
+  "Krátký popis": "Projekt realizovaný Západočeskou univerzitou v Plzni se zaměřuje na sledování změn klimatu a stavu ekosystémů za využití satelitních snímků, dronů, terénních senzorů a metod umělé inteligence. Cílem je poskytovat aktuální a přesná data pro vědecký výzkum, ochranu přírody a podporu rozhodování v environmentální politice.",
+  "Řešený problém": "Tradiční metody monitoringu klimatu a ekosystémů jsou často pomalé a nepokrývají dostatečně velká území. Projekt tento problém řeší využitím AI k automatizovanému zpracování a vyhodnocení velkých objemů dat, čímž umožňuje rychlejší reakci na změny v přírodě.",
+  "Instituce": "Západočeská univerzita v Plzni (ZČU)",
+  "Dodavatel": "Interní univerzitní tým, případně partneři z výzkumných projektů",
+  "Stav projektu": "Produkce",
+  "Očekávané dopady": "Rychlejší detekce environmentálních změn\nLepší predikce klimatických trendů\nEfektivnější ochrana ohrožených ekosystémů",
+  "Vyhodnocení úspěšnosti": "Projekt je aktivně realizován, AI modely úspěšně detekují změny vegetace a teplotní anomálie na základě kombinace satelitních a senzorových dat. Výsledky jsou využívány pro vědecké publikace a konzultace s orgány ochrany přírody.",
+  "Poučení pro příští projekty": "Kvalitní data z více zdrojů zvyšují spolehlivost predikcí. Spolupráce mezi klimatology a datovými vědci je klíčová. Potřeba dlouhodobého financování pro udržení kontinuálního sběru dat",
+  "Zdroj": "https://info.zcu.cz/Kdyz-slova-dostanou-souradnice--Vedci-a-vedkyne-ze-ZCU-spojili-filozofii--matematiku-a-AI/clanek.jsp?id=8293",
+  "Označení zdroje": "Článek ZČU o výzkumu propojujícím AI, klimatologii a ekosystémy",
+  "Informace o zdroji a kontaktní osoba": "ZČU Plzeň - Fakulta aplikovaných věd (kontakt neuveden veřejně)",
+  "Obor činnosti": "Životní prostředí a zemědělství",
+  "Kategorie use case": "Monitoring, bezpečnost a dohled; Predikce a automatizované rozhodování"
 }
+
+
 
 
 
