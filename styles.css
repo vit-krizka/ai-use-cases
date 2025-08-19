@@ -167,23 +167,24 @@ footer .footer-block {
 }
 
 footer .footer-logo {
-    display: flex;
-    justify-content: flex-start; /* zarovnání doleva */
-    align-items: center;
-    gap: 1rem;
-    margin-bottom: 0.5rem;
+  display: block;
+  margin-bottom: 0.5rem;
 }
 
 footer .footer-logo svg,
 footer .footer-logo img {
-    width: 200px;   /* šířka loga */
-    height: 60px;   /* výška loga */
-    object-fit: contain; /* zachování proporcí u obrázků */
+  width: 200px;
+  height: 60px;
+  object-fit: contain;
+  display: block;       /* logo zabere vlastní řádek */
+  margin-bottom: 0.5rem;/* (volitelné) mezera pod logem */
 }
 
 footer .footer-logo .logo-text {
-    display: none;
+  display: block;       /* text se zobrazí */
+  margin-left: 0;       /* žádné odsazení zleva */
 }
+
 
 footer a {
     color: white;
@@ -609,7 +610,7 @@ h3 {
     border: none;
     font-size: 1.5rem;
     cursor: pointer;
-    color: #000;
+    color: #fff;
 }
 
 .category-popup h3 {
