@@ -620,7 +620,26 @@
   "Informace o zdroji a kontaktní osoba": "Kudla Radim, Ing.",
   "Obor činnosti": "Vnitřní věci a bezpečnost",
   "Kategorie use case": "Analýza audiovizuálních dat; Monitoring, bezpečnost a dohled; Optimalizace úředních procesů"
+},
+{
+  "id": 32,
+  "Garant": "Martina Bártů",
+  "Název projektu": "Eagle.one: Autonomní helikoptéra chytá nežádoucí drony",
+  "Typ umělé inteligence": "Strojové učení\nComputer Vision",
+  "Hlavní kategorie use case": "Monitoring, bezpečnost a dohled",
+  "Krátký popis": "Eagle.one je autonomní dronový systém („lovec dronů“) vyvíjený ČVUT s podporou Eagle.one s.r.o. a Fly4Future. Je navržen pro detekci, sledování a zachycení narušujících dronů pomocí palubní umělé inteligence, 3D LiDARu a dalších senzorů. Systém je zcela autonomní — vzlétne, detekuje cíle, predikuje jejich trajektorii a zachycuje je do sítě, aniž by došlo k destrukci nebo riziku pro okolí.",
+  "Řešený problém": "Ochrana vzdušného prostoru před nežádoucími drony. Letiště, elektrárny, věznice, silové složky, ale i ochrana důležitých osob — všude tam najde uplatnění robotický „lovec“ Eagle.one. Dokáže zachytit i rychle letící cíle pohybující se po obtížně predikovatelných trajektoriích.",
+  "Instituce": "Zatím nepoptána veřejnou institucí (Vězeňská služba ČR poskytla prostor pro testování a má zájem stroje používat, Letiště Praha zvažuje nákup)",
+  "Dodavatel": "FEL ČVUT; EAGLE.ONE s.r.o.; Fly4Future",
+  "Stav projektu": "Nápad / záměr",
+  "Očekávané dopady": "Ochrana kritické infrastruktury a VIP osob\nMinimalizace rizika destruktivních zásahů (bezpečné přistání a forenzní analýza)\nExtrémně rychlá reakce a přesnost zachycení\nŠiroká adaptabilita díky modulární konstrukci a open API",
+  "Vyhodnocení úspěšnosti": "Stroj (20 kg, 8 vrtulí, rychlost přes 100 km/h) zvládá odchyt cílů do 70 km/h a dronů až 20 kg. Oproti konkurenci dokáže lovit i rychle letící cíle s nepředvídatelnou trajektorií. Testy prokázaly schopnost nasazení do výšek několika kilometrů s výdrží až 40 minut.",
+  "Poučení pro příští projekty": "Poptávka po autonomních lovcích dronů je vysoká, dodací lhůta je několik měsíců.",
+  "Zdroj": "https://fel.cvut.cz/cs/informacni-servis/pro-media/tiskove-zpravy/36137-roboticky-lovec-s-umelou-inteligenci-posouva-hranice-robotiky-ochrani-kritickou-infrastrukturu-pred-utoky-dronu, https://ct24.ceskatelevize.cz/clanek/veda/cesky-roboticky-dravec-s-ai-ochrani-pred-drony-dulezite-stavby-353827, https://eagle.one/cs/, https://www.novinky.cz/clanek/internet-a-pc-cesi-vymysleli-stroj-ktery-lovi-nepratelske-drony-40492453, https://mrs.fel.cvut.cz/projects/eagle-one",
+  "Označení zdroje": "Oficiální stránky projektu Eagle.one a související mediální články",
+  "Informace o zdroji a kontaktní osoba": "doc. Ing. Martin Saska, Dr. rer. nat.",
+  "Obor činnosti": "Vnitřní věci a bezpečnost",
+  "Kategorie use case": "Analýza audiovizuálních dat; Monitoring, bezpečnost a dohled; Predikce a automatizované rozhodování"
 }
-
 
 ]
