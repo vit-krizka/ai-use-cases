@@ -13,6 +13,18 @@ function initCommon() {
     menuBtn.addEventListener('click', () => {
       sidebar.classList.toggle('open');
     });
+
+    // Zavření menu při kliknutí mimo něj na mobilu
+    document.addEventListener('click', (e) => {
+      if (
+        window.innerWidth <= 768 &&
+        sidebar.classList.contains('open') &&
+        !sidebar.contains(e.target) &&
+        !menuBtn.contains(e.target)
+      ) {
+        sidebar.classList.remove('open');
+      }
+    });
   }
 
   const footerLogo = document.querySelector('.footer-logo');
