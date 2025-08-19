@@ -137,23 +137,16 @@ footer {
 
 footer .footer-block {
     flex: 1;
-    margin:0 0 0 0;
+    margin: 0 1rem;
 }
 
 footer .footer-logo {
     display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  gap: 1rem;
-  margin: 0;           /* žádné odsazení zleva */
-  padding: 0;          /* nově: žádný padding */
-  margin-bottom: 0.5rem;
+    justify-content: flex-start; /* zarovnání doleva */
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 0.5rem;
 }
-footer .footer-logo img {
-  display: block;       /* přidáno – zruší inline mezeru */
-  margin-left: 0;       /* přidáno – absolutně zarovnáno k okraji */
-}
-
 
 footer .footer-logo svg,
 footer .footer-logo img {
