@@ -661,7 +661,28 @@
   "Informace o zdroji a kontaktní osoba": "prof. PhDr. RNDr. Nikola Hynek, Ph.D., M.A.",
   "Obor činnosti": "Spravedlnost a volby",
   "Kategorie use case": "Analýza audiovizuálních dat; Generování obsahu a chatboti úředníků; Komunikace a klientský servis; Monitoring, bezpečnost a dohled; Optimalizace úředních procesů; Predikce a automatizované rozhodování"
+},
+{
+  "id": 34,
+  "Garant": "Michal Kozubek",
+  "Název projektu": "GeoAI pro životní prostředí, zemědělství a územní plánování (projekty PoliRuralPlus a ALIANCE)",
+  "Typ umělé inteligence": "Strojové učení\nDeep learning\nComputer vision, analýza geoprostorových dat",
+  "Hlavní kategorie use case": "Predikce a automatizované rozhodování",
+  "Krátký popis": "Projekt vyvíjí a aplikuje metody geoprostorové umělé inteligence (GeoAI) pro monitoring životního prostředí, podporu rozhodování v zemědělství, lesnictví a územním plánování. Realizátorem je Fakulta informačních technologií ČVUT ve spolupráci se sdružením Plan4all. Výstupy zahrnují datové platformy propojující satelitní snímky, mapové podklady a AI algoritmy pro predikce a detekce změn v krajině.",
+  "Řešený problém": "Tradiční monitorovací systémy pro životní prostředí a územní plánování často neumožňují rychlou reakci na aktuální změny. Projekt řeší tento problém nasazením AI modelů, které dokáží automaticky zpracovat a vyhodnotit velké objemy geoprostorových dat v téměř reálném čase.",
+  "Instituce": "Fakulta informačních technologií ČVUT",
+  "Dodavatel": "Projektové konsorcium v rámci Horizon Europe (interní + partnerské organizace)",
+  "Stav projektu": "Produkce",
+  "Očekávané dopady": "Přesnější a rychlejší detekce změn v krajině\nPodpora udržitelného hospodaření v zemědělství a lesnictví\nEfektivnější krizové řízení při ekologických haváriích\nLepší plánování využití území",
+  "Vyhodnocení úspěšnosti": "Projekt aktivně běží a generuje výstupy využitelné v praxi (mapové aplikace, analytické nástroje). Pilotní nasazení prokázala schopnost AI přesně identifikovat změny v krajině na základě satelitních snímků.",
+  "Poučení pro příští projekty": "Klíčová je dostupnost kvalitních satelitních a mapových dat\nSpolupráce s lokálními uživateli zvyšuje praktickou využitelnost\nIntegrovaný přístup propojující více zdrojů dat zvyšuje přesnost modelů",
+  "Zdroj": "https://fit.cvut.cz/cs/media-a-pr/tiskove-zpravy/21576-celosvetove-unikatni-metody-ai-projektu-poliruralplus-a-aliance-prinasi-revoluci-do-zemedelstvi-ochrany-zivotniho-prostredi-a-uzemniho-planovani",
+  "Označení zdroje": "Oficiální zpráva ČVUT FIT k projektům PoliRuralPlus a ALIANCE",
+  "Informace o zdroji a kontaktní osoba": "Ivana Macnarová, Fakulta informačních technologií ČVUT, ivana.macnarova@fit.cvut.cz",
+  "Obor činnosti": "Životní prostředí a zemědělství",
+  "Kategorie use case": "Monitoring, bezpečnost a dohled; Predikce a automatizované rozhodování"
 }
+
 
 
 ]
