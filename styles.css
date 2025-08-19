@@ -6,9 +6,6 @@
     --secondary: #f2f6fa;
     --text: #1a1a1a;
     --sidebar-width: 300px;
-    --popup-green: #2ea043;
-    --popup-radius: 10px;
-    --popup-shadow: 0 10px 20px rgba(0,0,0,.25);
 }
 
 html {
@@ -34,15 +31,12 @@ body.single-column {
   position: fixed;
   bottom: 1rem;
   right: 1rem;
-  max-width: 420px;
   background-color: #368537;
-  color: #fff;
-  padding: 16px 18px 18px 18px;
-  border-radius: var(--popup-radius);
-  box-shadow: var(--popup-shadow);
-  line-height: 1.35;
-  z-index: 2147483000;
-  display: none;                /* řízeno JS */
+  color: white;
+  padding: 16px;
+  border-radius: 6px;
+  max-width: 400px;
+  z-index: 1000;
 }
 
 .popup a {
@@ -62,6 +56,7 @@ body.single-column {
   display: flex;           /* flexbox centrování */
   align-items: center;     /* vertikální střed */
   justify-content: center; /* horizontální střed */
+  padding: 8px;           /* větší klikací plocha */
   cursor: pointer;
   border-radius: 50%;     /* kulatá klikací zóna */
   transition: background-color 0.2s ease, transform 0.2s ease;
@@ -78,27 +73,6 @@ body.single-column {
   width: 20px;
   height: 20px;
 }
-/* mobilní zarovnání – dole uprostřed, širší */
-@media (max-width: 640px) {
-  .popup {
-    left: 12px;
-    right: 12px;
-    bottom: 16px;
-    top: auto;                 /* zruší top zarovnání */
-    max-width: none;
-    padding-right: 54px;       /* místo pro X */
-  }
-  .popup .popup-close {
-    top: 6px;
-    right: 6px;
-  }
-}
-
-
-/* jednoduché animace zobrazení/skrývání */
-.popup[aria-hidden="false"] { display: block; animation: popIn .18s ease-out; }
-.popup[aria-hidden="true"] { display: none; }
-@keyframes popIn { from { transform: translateY(4px); opacity: .0; } to { transform: translateY(0); opacity: 1; } }
 
 /* ===== Top bar ===== */
 .topbar {
@@ -167,24 +141,23 @@ footer .footer-block {
 }
 
 footer .footer-logo {
-  display: block;
-  margin-bottom: 0.5rem;
+    display: flex;
+    justify-content: flex-start; /* zarovnání doleva */
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 0.5rem;
 }
 
 footer .footer-logo svg,
 footer .footer-logo img {
-  width: 200px;
-  height: 60px;
-  object-fit: contain;
-  display: block;       /* logo zabere vlastní řádek */
-  margin-bottom: 0.5rem;/* (volitelné) mezera pod logem */
+    width: 200px;   /* šířka loga */
+    height: 60px;   /* výška loga */
+    object-fit: contain; /* zachování proporcí u obrázků */
 }
 
 footer .footer-logo .logo-text {
-  display: block;       /* text se zobrazí */
-  margin-left: 0;       /* žádné odsazení zleva */
+    display: none;
 }
-
 
 footer a {
     color: white;
