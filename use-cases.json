@@ -641,6 +641,27 @@
   "Informace o zdroji a kontaktní osoba": "doc. Ing. Martin Saska, Dr. rer. nat.",
   "Obor činnosti": "Vnitřní věci a bezpečnost",
   "Kategorie use case": "Analýza audiovizuálních dat; Monitoring, bezpečnost a dohled; Predikce a automatizované rozhodování"
+},
+{
+  "id": 33,
+  "Garant": "Martina Bártů",
+  "Název projektu": "CZDEMOS4AI: sociálně-odpovědný multiagentní AI avatar pro posílení demokracie",
+  "Typ umělé inteligence": "LLM\nGenerativní AI",
+  "Hlavní kategorie use case": "Generování obsahu a chatboti úředníků",
+  "Krátký popis": "Cílem interdisciplinárního projektu CZDEMOS4AI je výzkum celospolečenských dopadů aplikace umělé inteligence v nové fázi vývoje demokracie označované jako „otevřená“ (open democracy), jejížmi atributy jsou dialog o hodnotách, transparentnost a participace veřejnosti. Projekt vyvíjí sociálně odpovědného multiagentního AI avatara navrženého podle principů otevřené demokracie. Během pěti let mají vzniknout AI asistenti se zaměřením na historicko-edukační oblast, bezpečnostně-mediální oblast, práci s právními texty a podporu duševního zdraví.",
+  "Řešený problém": "Projekt reaguje na obtížnost dosažení souladu mezi velkými jazykovými modely a národními etickými a právními standardy. Cílem je, aby AI technologie sloužila cílům, preferencím a etickým principům jednotlivců i společnosti, a tím posílila odolnost institucí.",
+  "Instituce": "FSV UK",
+  "Dodavatel": "Univerzita Karlova; IPSOS, s.r.o.; Ústav státu a práva AV ČR, v. v. i.; prg.ai, z. s.; MAMA AI; Coolma, s.r.o.; Česká tisková kancelář; Masarykova univerzita; PHYSTER TECHNOLOGY, a.s.",
+  "Stav projektu": "Nápad / záměr",
+  "Očekávané dopady": "Efektivnější výkon veřejné správy\nZvýšení odolnosti společnosti",
+  "Vyhodnocení úspěšnosti": "Projekt poběží v letech 2025-2029.",
+  "Poučení pro příští projekty": "",
+  "Zdroj": "https://prg.ai/umela-inteligence-ve-sluzbach-obcanu/, https://science.fsv.cuni.cz/projekt/prospesny-multiagentni-ai-avatar-v-male-demokraticke-spolecnosti-czdemos4ai/",
+  "Označení zdroje": "Projektová stránka CZDEMOS4AI",
+  "Informace o zdroji a kontaktní osoba": "prof. PhDr. RNDr. Nikola Hynek, Ph.D., M.A.",
+  "Obor činnosti": "Spravedlnost a volby",
+  "Kategorie use case": "Analýza audiovizuálních dat; Generování obsahu a chatboti úředníků; Komunikace a klientský servis; Monitoring, bezpečnost a dohled; Optimalizace úředních procesů; Predikce a automatizované rozhodování"
 }
+
 
 ]
