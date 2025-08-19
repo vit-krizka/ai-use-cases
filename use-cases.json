@@ -615,8 +615,8 @@
   "Očekávané dopady": "Zvýšení bezpečnosti a odhalování kriminality\nEfektivnější odhalování pokusů o kriminalitu využívající syntetizovaný hlas (např. podvody, phishing)\nAdaptace na rychlý vývoj deepfake technologií\nZvýšení povědomí veřejnosti - osvěta a schopnost kriticky vyhodnocovat audio obsah\nEtický a odpovědný přístup k AI - využití AI ve prospěch celé společnosti",
   "Vyhodnocení úspěšnosti": "Projekt ještě nebyl realizován. Předpokládané metriky úspěšnosti: False Acceptance Rate (FAR) - podíl falešně akceptovaných podvržených hlasů; False Rejection Rate (FRR) - podíl zamítnutí autentických hlasů; Rychlost detekce - schopnost reagovat na rychlý vývoj deepfake technologií; Metodika pro lidské rozpoznání - testování schopnosti lidí detekovat deepfake hlasy a účinnost osvěty.",
   "Poučení pro příští projekty": "",
-  "Zdroj": "https://www.idnes.cz/zpravy/domaci/umela-inteligence-ministerstvo-vnitra-spoluprace-vysoka-skola-deepfake-rozpoznani.A240116_094710_domaci_vank, https://www.vut.cz/vav/projekty/detail/35470, https://smlouvy.gov.cz/smlouva/27156303",
-  "Označení zdroje": "Ministerstvo vnitra: nástroje proti deepfakes",
+  "Zdroj": "https://www.idnes.cz/zpravy/domaci/umela-inteligence-ministerstvo-vnitra-spoluprace-vysoka-skola-deepfake-rozpoznani.A240116_094710_domaci_vank, https://www.vut.cz/vav/projekty/detail/35470",
+  "Označení zdroje": "Vnitro reaguje na hrozby umělé inteligence. Chystá nástroj proti deepfakes, Ministerstvo vnitra: nástroje proti deepfakes, ",
   "Informace o zdroji a kontaktní osoba": "Kudla Radim, Ing.",
   "Obor činnosti": "Vnitřní věci a bezpečnost",
   "Kategorie use case": "Analýza audiovizuálních dat; Monitoring, bezpečnost a dohled; Optimalizace úředních procesů"
