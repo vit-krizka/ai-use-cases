@@ -7,26 +7,26 @@
   {
     "id": "generovani-obsahu-a-chatboti-uredniku",
     "title": "Generování obsahu a chatboti úředníků",
-    "description": "Nástroje podporující úředníky při tvorbě textů nebo jako interní asistenti."
+    "description": "V této kategorii se AI nástroje využívají pro generování textových výstupů, podporu rozhodování a asistenci při administrativní práci. Úředníkům pomáhají například s návrhy dokumentů, vytvářením úředních rozhodnutí, vyhledáváním relevantních právních předpisů nebo zpracováním podkladů. Nejčastěji jde o implementaci velkých jazykových modelů (LLM), chatbotů či nástrojů pro extrakci informací z textu."
   },
   {
     "id": "komunikace-a-klientsky-servis",
     "title": "Komunikace a klientský servis",
-    "description": "Prostředky pro komunikaci s občany a automatizovaný zákaznický servis."
+    "description": "Tato kapitola se věnuje využití AI nástrojů pro přímou komunikaci s veřejností. Chatboti, hlasoví asistenti nebo inteligentní formuláře napomáhají občanům orientovat se ve veřejných službách, zjišťovat informace nebo elektronicky komunikovat s úřady. Umělá inteligence zde přispívá ke zvýšení dostupnosti služeb, snižování bariér při používání digitálních nástrojů a k posílení transparentnosti veřejné správy."
   },
   {
     "id": "monitoring-bezpecnost-a-dohled",
     "title": "Monitoring, bezpečnost a dohled",
-    "description": "Sledování a vyhodnocování bezpečnostních událostí pomocí AI."
+    "description": "Tato kategorie se zaměřuje na využití umělé inteligence v oblastech, kde je třeba sledovat a vyhodnocovat velké objemy dat v reálném čase. Může jít o sledování bezpečnostních incidentů, detekci kybernetických útoků, kontrolu dodržování pravidel nebo identifikaci rizikových situací ve veřejném prostoru. Díky schopnosti AI detekovat vzorce a anomálie lze včas reagovat na potenciální hrozby a zároveň optimalizovat dohledové a inspekční procesy."
   },
   {
     "id": "optimalizace-urednich-procesu",
     "title": "Optimalizace úředních procesů",
-    "description": "Zefektivnění administrativních činností a pracovních postupů."
+    "description": "Umělá inteligence může významně přispět ke zjednodušení, zrychlení a automatizaci vnitřních procesů úřadů. Tato oblast zahrnuje například kontrolu správnosti podkladů, klasifikaci dokumentů, automatické přiřazování úkolů, správu agend nebo revizi souladu dokumentace s pravidly. AI tak pomáhá snižovat rutinní administrativní zátěž, zlepšuje kvalitu výstupů a umožňuje zaměstnancům veřejné správy věnovat se odbornější práci."
   },
   {
     "id": "predikce-a-automatizovane-rozhodovani",
     "title": "Predikce a automatizované rozhodování",
-    "description": "Modely pro předpovědi a podporu rozhodovacích procesů."
+    "description": "V této kategorii je AI využívána k podpoře nebo přímo k provedení rozhodnutí na základě analýzy dat. Jde o oblasti, kde je třeba předvídat budoucí vývoj (např. poptávku, zatížení, rizika) nebo kde lze částečně nahradit lidské rozhodování opakujícími se algoritmickými postupy. Klíčový je důraz na transparentnost, vysvětlitelnost a právní rámec automatizace."
   }
 ]
