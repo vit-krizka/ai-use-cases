@@ -540,5 +540,67 @@
     "Informace o zdroji a kontaktní osoba": "Zdroj",
     "Obor činnosti": "Doprava",
     "Kategorie use case": "Monitoring, bezpečnost a dohled; Optimalizace  úředních procesů; Predikce a  automatizované rozhodování"
-  }
+  },
+  {
+  "id": 28,
+  "Garant": "Martin Kukla",
+  "Název projektu": "PID Halo",
+  "Typ umělé inteligence": "voicebot\nchatbot\nreal-time plánovací algoritmy na cloudovém základu",
+  "Hlavní kategorie use case": "Predikce a automatizované rozhodování",
+  "Krátký popis": "Takzvaná poptávková doprava je koncept dopravy, který nepracuje s fixními trasami, jízdními řády nebo časy jako klasická linková doprava. Umožňuje zcela dynamickou tvorbu tras, které jsou vytvořeny na míru cestujícím podle jejich poptávky. V zahraničí je tento koncept známý jako „demand responsive transport“ nebo „transport on demand“. V celém konceptu hrají zásadní roli technologie. Ty mají na starosti sběr a zpracování poptávek od cestujících a jejich přeměnu v konkrétní optimalizované trasy, a to vše v reálném čase. Efektivní realizaci konceptu poptávkové dopravy umožňuje rozvoj technologií, jako jsou voicebotové a chatbotové služby nebo pokročilé algoritmy na plánování tras, založené na umělé inteligenci.",
+  "Řešený problém": "Optimalizovaná trasa veřejné dopravy dle požadavků cestujících.",
+  "Instituce": "Středočeský kraj",
+  "Dodavatel": "Není známo",
+  "Stav projektu": "Pilot / PoC",
+  "Očekávané dopady": "Zatraktivnění veřejné dopravy - flexibilita v časech a lokalitách, kde běžné linky nefungují\nVíce cestujících ve veřejné dopravě, méně v autech - odlehčení parkovišť a snížení automobilové dopravy\nEfektivnější využití veřejných financí a snížení emisí - menší vozidla, nižší spotřeba, úspora nákladů\nÚspora nedostatkových řidičů autobusů - stačí řidičský průkaz skupiny B",
+  "Vyhodnocení úspěšnosti": "Projekt je zatím v pilotním režimu, metriky úspěšnosti budou vyhodnoceny v průběhu testování.",
+  "Poučení pro příští projekty": "",
+  "Zdroj": "https://www.halopid.cz/",
+  "Označení zdroje": "Oficiální web projektu PID Haló",
+  "Informace o zdroji a kontaktní osoba": "Integrovaná doprava středočeského kraje, tel. +420 720 025 631",
+  "Obor činnosti": "Doprava",
+  "Kategorie use case": "Generování obsahu a chatboti úředníků; Komunikace a klientský servis; Predikce a automatizované rozhodování"
+},
+{
+  "id": 29,
+  "Garant": "Martin Kukla",
+  "Název projektu": "DIGI Havel",
+  "Typ umělé inteligence": "LLM (jazykový model)\nEdukativní databáze\nHlas\nAnimace\nModerace",
+  "Hlavní kategorie use case": "Generování obsahu a chatboti úředníků",
+  "Krátký popis": "První digitální osobnost, která už přes rok pomáhá učitelům při výuce na českých školách - seznamte se s DigiHavlem! DigiHavel je digitální člověk inspirovaný osobou prvního českého prezidenta Václava Havla a jeho úkolem je pomoci žákům na druhém stupni základních škol objevovat demokracii. To vše interaktivní a zábavnou formou. DigiHavel ve výuce vystupuje v různých rolích - v roli učitele, spolužáka i slavné osobnosti. Žáci s ním mohou komunikovat formou chatu s různými možnostmi kladení otázek.",
+  "Řešený problém": "DigiHavel podporuje žáky při učení se o demokracii a jejích principech, poznávají společně rozdíly mezi demokracií a totalitou, prozkoumávají základní lidská práva, řeší společně aktuální společenské problémy a v neposlední řadě také objevují svět umělé inteligence. Učitel má k dispozici metodické listy pro pět kompletních hodin výuky občanské výchovy zpracované odborníky z Pedagogické fakulty Masarykovy Univerzity dle Kompetenčního modelu pro odpovědné občanství.",
+  "Instituce": "Konrad-Adenauer-Stiftung (KAS) -podpora a koordinace; Alpha Industries - vývoj a technologická realizace; Katedra občanské výchovy Pedagogické fakulty MUNI - didaktická spolupráce",
+  "Dodavatel": "Alpha Industries s.r.o.",
+  "Stav projektu": "Produkce",
+  "Očekávané dopady": "Pomoc ve školství",
+  "Vyhodnocení úspěšnosti": "Pilotní fáze proběhla (během roku 2022) ve vybraných školách. Zpětná vazba byla pozitivní - často se objevily termíny „zábavné“ a „odlišné“. Od ledna 2023 byl projekt otevřen dalším školám. Zapojují se postupně podle zájmu a s ohledem na kapacity a rozpočet. Žáci se někdy zapojují i mimo výuku, zkoušejí si chat s DigiHavlem samostatně.",
+  "Poučení pro příští projekty": "",
+  "Zdroj": "https://odpovedneobcanstvi.cz/digihavel/",
+  "Označení zdroje": "Oficiální stránka projektu DigiHavel",
+  "Informace o zdroji a kontaktní osoba": "https://odpovedneobcanstvi.cz/kontakt/",
+  "Obor činnosti": "Školství, věda a výzkum",
+  "Kategorie use case": "Generování obsahu a chatboti úředníků; Komunikace a klientský servis; Školství a vzdělávání"
+},
+{
+  "id": null,
+  "Garant": "Martin Kukla",
+  "Název projektu": "AI See",
+  "Typ umělé inteligence": "Semi-automatizované a weakly supervised učení\nProstorovo-časové relace\nIndexovaná vyhledávání",
+  "Hlavní kategorie use case": "Analýza audiovizuálních dat",
+  "Krátký popis": "Softwarový expertní vyhledávač pro videa a fotografie založený na umělé inteligenci. Primárně určený pro nasazení během odhalování a vyšetřování závažné organizované trestné činnosti Policií ČR.",
+  "Řešený problém": "Odhalování zločinu prostřednictvím efektivní analýzy vizuálních dat.",
+  "Instituce": "Ministerstvo vnitra",
+  "Dodavatel": "FIT VUT v Brně, ÚTIA AV ČR",
+  "Stav projektu": "Nápad / záměr",
+  "Očekávané dopady": "Detekce objektů zájmu ve fotografiích a videích s využitím prostorovo-časových vztahů, atributů a indexovaných vazeb\nUmožnění trénování AI modelů přímo v prostředí Policie ČR za pomoci semi-automatizovaného a weakly supervised learningu\nInteraktivní rozhraní pro uživatele reflektující potřeby forenzní praxe (od zadávání dotazů až po evaluaci výsledků)\nPostupný vývoj ve třech fázích s pravidelnou zpětnou vazbou a tvorbou testovacích videí\nVýzkumná zpráva hodnotící využití AI z hlediska etiky, právního rámce a lidských práv",
+  "Vyhodnocení úspěšnosti": "",
+  "Poučení pro příští projekty": "",
+  "Zdroj": "https://aisee.utia.cas.cz/",
+  "Označení zdroje": "Oficiální stránka projektu AI See",
+  "Informace o zdroji a kontaktní osoba": "jan.horinek@pcr.cz",
+  "Obor činnosti": "Vnitřní věci a bezpečnost",
+  "Kategorie use case": "Analýza audiovizuálních dat; Monitoring, bezpečnost a dohled; Optimalizace úředních procesů"
+}
+
+
 ]
