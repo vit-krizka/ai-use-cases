@@ -39,6 +39,10 @@ body.single-column {
   z-index: 1000;
 }
 
+.popup[aria-hidden="true"] {
+  display: none;
+}
+
 .popup a {
   color: white;
   text-decoration: underline;
@@ -583,7 +587,7 @@ h3 {
     border: none;
     font-size: 1.5rem;
     cursor: pointer;
-    color: #fff;
+    color: #000;
 }
 
 .category-popup h3 {
