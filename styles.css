@@ -113,8 +113,9 @@ body.single-column {
 }
 
 .logo svg {
-    width: 120px;
+    width: 100%;
     height: 36px;
+    margin: 0px 12px;
 }
 
 .hamburger {
@@ -158,8 +159,8 @@ footer .footer-logo {
 
 footer .footer-logo svg,
 footer .footer-logo img {
-    width: 200px;   /* šířka loga */
-    height: 60px;   /* výška loga */
+    width: 120px;   /* šířka loga */
+    height: 100%;   /* výška loga */
     object-fit: contain; /* zachování proporcí u obrázků */
 }
 
@@ -509,12 +510,16 @@ h3 {
         align-items: center;
     }
 
+    .logo svg {
+        margin: 0px;
+    }
+
     /* odsazení pod h1 v topbaru */
     .topbar h1 {
         display: flex;
         align-items: center;
         gap: 8px; /* vzdálenost mezi ikonou a textem nadpisu */
-        margin-bottom: 0.5em;
+        /* margin-bottom: 0.5em; */
     }
 
     .topbar h1::after {
