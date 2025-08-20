@@ -224,7 +224,7 @@ footer h3 {
     transition: transform 0.3s ease;
     grid-row: 2;
     grid-column: 1;
-    max-width: 260px
+    max-width: 260px;
     box-sizing: border-box;
 }
 
