@@ -1,11 +1,11 @@
 /* Styl blízký dia.gov.cz – hlavní zelená #368537 */
 
 :root {
-    --primary: rgb(54, 133, 55);
+    --primary: rgb(32, 115, 21);
     /* DIA green */
     --secondary: #f2f6fa;
     --text: #1a1a1a;
-    --sidebar-width: 300px;
+    --sidebar-width: 260px;
 }
 
 html {
@@ -26,6 +26,19 @@ body.single-column {
     min-height: 100vh;
 }
 
+main a,
+main a:visited {
+  color: rgb(32, 115, 21);
+  text-decoration: underline;
+}
+
+main a:hover,
+main a:active {
+  color: rgb(32, 115, 21);
+  text-decoration: none;
+}
+
+
 /* ===== Info popup ===== */
 .popup {
   position: fixed;
@@ -34,7 +47,7 @@ body.single-column {
   background-color: #368537;
   color: white;
   padding: 16px;
-  border-radius: 6px;
+  border-radius: 12px;
   max-width: 400px;
   z-index: 1000;
 }
@@ -322,7 +335,7 @@ h3 {
     font-size: 0.9rem;
     color: #555;
     background: #f0f0f0;
-    border-radius: 4px;
+    border-radius: 12px;
 }
 
 .meta li {
@@ -359,7 +372,7 @@ h3 {
   gap: 0.25rem;       /* mezera mezi řádky */
   flex: 1 1 200px;    /* možnost škálování */
   background: #f0f0f0;
-  border-radius: 4px;
+  border-radius: 12px;
   padding: 1rem;
 }
 
@@ -373,7 +386,12 @@ h3 {
     border-left: 4px solid var(--primary);
     padding: 1rem;
     border-radius: 4px;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
+}
+
+
+.highlight p {
+margin: 0;
 }
 
 
@@ -383,7 +401,7 @@ h3 {
     gap: 0.5rem 1rem;
     margin-bottom: 2rem;
     background: #f9f9f9;
-    border-radius: 4px;
+    border-radius: 12px;
     padding: 1rem;
 }
 
@@ -435,7 +453,7 @@ h3 {
 .bottom-cards .card {
     flex: 1 1 200px;
     background: #f0f0f0;
-    border-radius: 4px;
+    border-radius: 12px;
     padding: 1rem;
     display: flex;
     flex-direction: column;
@@ -544,11 +562,12 @@ h3 {
 
     .info-grid {
         display: block;
-        padding: 0;
+        padding: 16px;
     }
 
     .info-grid dt {
-        margin-top: 1rem;
+        margin-top: 1.5rem;
+        margin-bottom: 0.5rem;
     }
 
     .info-grid dt:first-of-type {
@@ -583,7 +602,7 @@ h3 {
     padding: 1.5rem;
     max-width: 400px;
     width: 90%;
-    border-radius: 4px;
+    border-radius: 12px;
     position: relative;
     text-align: center;
 }
