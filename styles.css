@@ -16,9 +16,15 @@ html {
 body {
     margin: 0;
     display: grid;
-    grid-template-columns: var(--sidebar-width) 1fr;
+    grid-template-columns: auto 1fr;
     grid-template-rows: auto 1fr auto;
     min-height: 100vh;
+}
+
+#sidebar {
+  width: auto;                      /* nechá ho roztáhnout podle obsahu */
+  min-width: var(--sidebar-width);  /* základní šířka (např. 260px) */
+  transition: width 0.3s ease;      /* plynulá animace při rozbalení */
 }
 
 body.single-column {
