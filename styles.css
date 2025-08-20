@@ -21,12 +21,6 @@ body {
     min-height: 100vh;
 }
 
-#sidebar {
-  width: auto;                      /* nechá ho roztáhnout podle obsahu */
-  min-width: var(--sidebar-width);  /* základní šířka (např. 260px) */
-  transition: width 0.3s ease;      /* plynulá animace při rozbalení */
-}
-
 body.single-column {
     display: block;
     min-height: 100vh;
@@ -230,7 +224,8 @@ footer h3 {
     transition: transform 0.3s ease;
     grid-row: 2;
     grid-column: 1;
-    width: 260px;
+    width: auto;                      /* nechá ho roztáhnout podle obsahu */
+    min-width: var(--sidebar-width);  /* základní šířka (např. 260px) */
     box-sizing: border-box;
 }
 
