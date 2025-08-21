@@ -467,10 +467,7 @@ margin: 0;
 /* ===== Mobile ===== */
 @media (max-width: 768px) {
     body {
-        display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: 1fr auto; /* main + footer */
-        min-height: 100vh;
     }
 
     /* Sidebar chování */
