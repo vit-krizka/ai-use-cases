@@ -499,13 +499,8 @@ margin: 0;
     }
 
     /* Main a Footer chování */
-    main {
-        margin-left: 0;   /* default, když je sidebar zasunutý */
-        transition: margin-left 0.3s ease;
-        padding-bottom: 1rem;
-    }
-
-    footer {
+    main, footer {
+        /* zůstávají na svém místě */
         position: relative;
         z-index: 1;
     }
@@ -519,6 +514,9 @@ margin: 0;
     .hamburger {
         display: block;
         z-index: 1100; /* nad sidebar */
+        cursor: pointer;
+        background: none;
+        border: none;
     }
 
     .hamburger svg {
