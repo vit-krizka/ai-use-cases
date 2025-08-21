@@ -472,18 +472,21 @@ margin: 0;
 
     /* Sidebar chování */
     #sidebar {
-        position: relative; /* místo fixed */
-        height: auto;       /* výška podle obsahu */
-        transform: none;    /* žádný posun zleva */
-        overflow: visible;  /* aby se obsah mohl natáhnout */
-        width: 100%;        /* zabere celou šířku */
-        z-index: auto;
-        padding-bottom: 1rem; /* prostor nad footerem */
-        transition: none;   /* nebo můžeš nechat */
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: var(--sidebar-width);
+        max-height: calc(100vh - var(--footer-height, 60px)); /* nenechá footer překrýt */
+        overflow-y: auto;
+        background: var(--secondary);
+        transform: translateX(-100%);
+        transition: transform 0.3s ease;
+        z-index: 999;
+        padding: 1rem 0;
     }
 
     #sidebar.open {
-        transform: none;
+        transform: translateX(0);
     }
 
     #sidebar .arrow {        /* nebo konkrétní třída šipky */
@@ -497,10 +500,14 @@ margin: 0;
     /* Main a Footer chování */
     main {
         grid-column: 1;
+        margin-left: 0; /* sidebar je fixed, main se nerozšiřuje */
+        padding-bottom: 1rem; /* aby obsah nebyl hned u footeru */
     }
 
     footer {
         grid-column: 1;
+        position: relative; /* zůstane dole */
+        z-index: 1;
     }
 
     .footer-columns {
