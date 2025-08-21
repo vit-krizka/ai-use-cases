@@ -482,6 +482,7 @@ margin: 0;
         z-index: 999;
         background: var(--secondary);
         padding: 1rem 0;
+        padding-bottom: 3rem; /* přidáno, aby poslední položky nezasahovaly do footeru */
         transition: transform 0.3s ease;
     }
 
