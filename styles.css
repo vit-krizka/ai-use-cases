@@ -476,7 +476,7 @@ margin: 0;
         left: 0;
         top: 0;
         width: var(--sidebar-width);
-        height: calc(100vh - var(--footer-height, 60px)); /* nedosahuje na footer */
+        max-height: calc(100vh - var(--footer-height, 60px)); /* nedosahuje na footer */
         overflow-y: auto; /* umožní scroll uvnitř sidebaru */
         transform: translateX(-100%);
         z-index: 999;
