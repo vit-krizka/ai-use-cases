@@ -475,9 +475,14 @@ margin: 0;
         position: fixed;
         left: 0;
         top: 0;
+        height: 100vh;       /* full height */
+        overflow-y: auto;    /* scroll pokud obsah přesáhne výšku */
         width: var(--sidebar-width);
         transform: translateX(-100%);
         z-index: 999;
+        background: var(--secondary);
+        padding: 1rem 0;
+        transition: transform 0.3s ease;
     }
 
     #sidebar.open {
