@@ -472,13 +472,11 @@ margin: 0;
 
     /* Sidebar chování */
     #sidebar {
-        position: relative; /* není fixed */
-        width: 100%;        /* zabírá šířku */
-        max-height: none;   /* necháme obsah expandovat */
-        overflow: visible;  /* obsah může růst */
-        transform: none;    /* žádný posun */
+        position: relative; /* už není fixed */
+        width: 100%;
+        overflow: visible;
+        transform: none; /* žádný slide */
         transition: none;
-        z-index: auto;
         padding-bottom: 1rem;
     }
 
@@ -496,7 +494,6 @@ margin: 0;
 
     /* Main a Footer chování */
     main {
-        grid-column: 1;
         margin-left: 0;
         padding-bottom: 1rem;
     }
