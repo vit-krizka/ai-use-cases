@@ -466,32 +466,28 @@ margin: 0;
 
 /* ===== Mobile ===== */
 @media (max-width: 768px) {
-    body {
-        display: grid;
-        grid-template-columns: 1fr;
-    }
 
-    /* Sidebar chování */
+    /* Sidebar */
     #sidebar {
         position: fixed;
-        left: 0;
         top: 0;
-        height: 100vh;       /* full height */
-        overflow-y: auto;    /* scroll pokud obsah přesáhne výšku */
-        width: var(--sidebar-width);
-        transform: translateX(-100%);
-        z-index: 999;
+        left: 0;
+        width: var(--sidebar-width, 250px);
+        height: 100vh;
         background: var(--secondary);
-        padding: 1rem 0;
-        padding-bottom: 3rem; /* přidáno, aby poslední položky nezasahovaly do footeru */
+        padding: 1rem;
+        padding-bottom: 3rem; /* aby poslední položky nezasahovaly do footeru */
+        transform: translateX(-100%);
         transition: transform 0.3s ease;
+        overflow-y: auto;
+        z-index: 1000;
     }
 
     #sidebar.open {
-        transform: translateX(0); /* vysunutý */
+        transform: translateX(0);
     }
 
-    #sidebar .arrow {        /* nebo konkrétní třída šipky */
+    #sidebar .arrow {
         display: inline-block;
         vertical-align: middle;
         margin-left: 0.5em;
@@ -499,23 +495,45 @@ margin: 0;
         height: auto;
     }
 
-    /* Main a Footer chování */
-    main, footer {
-        grid-column: 1;
+    /* Main */
+    main {
+        width: 100%;
+        position: relative; /* zůstává pod sidebar */
+        z-index: 1;
+        padding-bottom: 4rem; /* prostor pro footer, pokud je vysunutý */
+    }
+
+    /* Footer */
+    footer {
+        position: fixed;      /* vysunutí footeru přes obsah */
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        z-index: 900;         /* pod sidebarem */
+        transition: transform 0.3s ease;
+        background: var(--footer-bg, #fff);
+    }
+
+    footer.collapsed {
+        transform: translateY(100%); /* skryje footer dolů */
+    }
+
+    footer.expanded {
+        transform: translateY(0);    /* vysune footer nahoru */
     }
 
     .footer-columns {
-        flex-direction: column; /* prvky pod sebe */
-        align-items: flex-start; /* zarovná doleva */
+        flex-direction: column;
+        align-items: flex-start;
     }
 
-    /* Topbar chování */
+    /* Topbar */
     .hamburger {
         display: block !important;
         background: none;
         border: none;
         cursor: pointer;
-        z-index: 1000; /* aby bylo nad ostatním */
+        z-index: 1100; /* nad sidebar a footer */
     }
 
     .hamburger svg {
@@ -524,33 +542,29 @@ margin: 0;
         stroke: #fff;
     }
 
-    /* zobraz logo a ikony stejně jako na desktopu */
     .topbar .logo {
-        display: flex;  /* nebo inline-flex podle desktopu */
+        display: flex;
         align-items: center;
     }
 
     .logo svg {
-        margin: 0px;
+        margin: 0;
     }
 
-    /* odsazení pod h1 v topbaru */
     .topbar h1 {
         display: flex;
         align-items: center;
-        gap: 8px; /* vzdálenost mezi ikonou a textem nadpisu */
-        /* margin-bottom: 0.5em; */
+        gap: 8px;
     }
 
     .topbar h1::after {
         content: ":";
         margin-left: 4px;
-        margin-right: 12px; /* odsazení za dvojtečkou */
+        margin-right: 12px;
     }
 
     .topbar p {
         margin-left: calc( var(--icon-width, 24px) + 20px );
-        /* odsazení textu o šířku ikony + mezery, uprav podle potřeby */
     }
 
     /* Ikony */
@@ -562,6 +576,7 @@ margin: 0;
         visibility: visible !important;
     }
 
+    /* Info grid */
     .info-grid {
         display: block;
         padding: 16px;
