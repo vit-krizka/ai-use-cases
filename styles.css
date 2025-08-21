@@ -500,9 +500,7 @@ margin: 0;
 
     /* Main a Footer chování */
     main, footer {
-        /* zůstávají na svém místě */
-        position: relative;
-        z-index: 1;
+        grid-column: 1;
     }
 
     .footer-columns {
@@ -512,11 +510,11 @@ margin: 0;
 
     /* Topbar chování */
     .hamburger {
-        display: block;
-        z-index: 1100; /* nad sidebar */
-        cursor: pointer;
+        display: block !important;
         background: none;
         border: none;
+        cursor: pointer;
+        z-index: 1000; /* aby bylo nad ostatním */
     }
 
     .hamburger svg {
