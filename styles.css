@@ -467,6 +467,7 @@ margin: 0;
 /* ===== Mobile ===== */
 @media (max-width: 768px) {
     body {
+        display: grid;
         grid-template-columns: 1fr;
     }
 
@@ -500,8 +501,8 @@ margin: 0;
     /* Main a Footer chování */
     main {
         margin-left: 0;   /* default, když je sidebar zasunutý */
-        padding-bottom: 1rem;
         transition: margin-left 0.3s ease;
+        padding-bottom: 1rem;
     }
 
     footer {
@@ -516,11 +517,8 @@ margin: 0;
 
     /* Topbar chování */
     .hamburger {
-        display: block !important;
-        background: none;
-        border: none;
-        cursor: pointer;
-        z-index: 1000; /* aby bylo nad ostatním */
+        display: block;
+        z-index: 1100; /* nad sidebar */
     }
 
     .hamburger svg {
