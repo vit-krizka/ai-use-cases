@@ -472,22 +472,18 @@ margin: 0;
 
     /* Sidebar chování */
     #sidebar {
-        position: fixed;
-        left: 0;
-        top: 0;
-        height: 100vh;       /* full height */
-        overflow-y: auto;    /* scroll pokud obsah přesáhne výšku */
-        width: var(--sidebar-width);
-        transform: translateX(-100%);
-        z-index: 999;
-        background: var(--secondary);
-        padding: 1rem 0;
-        padding-bottom: 3rem; /* přidáno, aby poslední položky nezasahovaly do footeru */
-        transition: transform 0.3s ease;
+        position: relative; /* místo fixed */
+        height: auto;       /* výška podle obsahu */
+        transform: none;    /* žádný posun zleva */
+        overflow: visible;  /* aby se obsah mohl natáhnout */
+        width: 100%;        /* zabere celou šířku */
+        z-index: auto;
+        padding-bottom: 1rem; /* prostor nad footerem */
+        transition: none;   /* nebo můžeš nechat */
     }
 
     #sidebar.open {
-        transform: translateX(0);
+        transform: none;
     }
 
     #sidebar .arrow {        /* nebo konkrétní třída šipky */
