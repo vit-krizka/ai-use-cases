@@ -504,7 +504,7 @@
   {
   "id": 26,
   "Garant": "Vít Křížka",
-  "Název projektu": "ChatGPT pro podporu odborných a administrativních úkolů v centrální bance",
+  "Název projektu": "ChatGPT v centrální bance",
   "Typ umělé inteligence": "Generativní AI (velký jazykový model GPT-4o)\nAutomatizace znalostní práce\nHluboké učení (Deep Learning)",
   "Hlavní kategorie use case": "Optimalizace úředních procesů",
   "Krátký popis": "Projekt realizovaný v Národní bance Slovenska testoval dopady nasazení generativní AI na výkon zaměstnanců při plnění různorodých úkolů. Pomocí randomizovaného experimentu byla měřena kvalita a rychlost zpracování 14 obecných a 2 odborně specifických úloh, přičemž zaměstnanci měli nebo neměli k dispozici GPT-4o. Cílem bylo ověřit, zda AI dokáže zlepšit výkonnost a podpořit redesign práce v organizaci.",
@@ -524,7 +524,7 @@
   {
   "id": 27,
   "Garant": "Kateřina Vrbová",
-  "Název projektu": "Inteligentní chatbot pro metodiku na úseku územního plánování",
+  "Název projektu": "Chatbot pro územní plánování",
   "Typ umělé inteligence": "LLM",
   "Hlavní kategorie use case": "Komunikace a klientský servis",
   "Krátký popis": "Projekt řeší metodickou podporu pro agendu územního plánování. Chatbot má být schopen asistovat pracovníkům veřejné správy, projektantům i veřejnosti při orientaci v oblasti územního plánování na základě Generativní AI pro pokrytí otevřených otázek (pouze pro pracovníky na úseku územního plánování) a předpřipravených, věcně správných odpovědí (obecné dotazy s jednoznačnou odpovědí).",
@@ -625,7 +625,7 @@
 {
   "id": 32,
   "Garant": "Martina Bártů",
-  "Název projektu": "Eagle.one: Autonomní helikoptéra chytá nežádoucí drony",
+  "Název projektu": "Eagle.one",
   "Typ umělé inteligence": "Strojové učení\nComputer Vision",
   "Hlavní kategorie use case": "Monitoring, bezpečnost a dohled",
   "Krátký popis": "Eagle.one je autonomní dronový systém („lovec dronů“) vyvíjený ČVUT s podporou Eagle.one s.r.o. a Fly4Future. Je navržen pro detekci, sledování a zachycení narušujících dronů pomocí palubní umělé inteligence, 3D LiDARu a dalších senzorů. Systém je zcela autonomní — vzlétne, detekuje cíle, predikuje jejich trajektorii a zachycuje je do sítě, aniž by došlo k destrukci nebo riziku pro okolí.",
@@ -645,7 +645,7 @@
 {
   "id": 33,
   "Garant": "Martina Bártů",
-  "Název projektu": "CZDEMOS4AI: sociálně-odpovědný multiagentní AI avatar pro posílení demokracie",
+  "Název projektu": "CZDEMOS4AI",
   "Typ umělé inteligence": "LLM\nGenerativní AI",
   "Hlavní kategorie use case": "Generování obsahu a chatboti úředníků",
   "Krátký popis": "Cílem interdisciplinárního projektu CZDEMOS4AI je výzkum celospolečenských dopadů aplikace umělé inteligence v nové fázi vývoje demokracie označované jako „otevřená“ (open democracy), jejímž atributy jsou dialog o hodnotách, transparentnost a participace veřejnosti. Projekt vyvíjí sociálně odpovědného multiagentního AI avatara navrženého podle principů otevřené demokracie. Během pěti let mají vzniknout AI asistenti se zaměřením na historicko-edukační oblast, bezpečnostně-mediální oblast, práci s právními texty a podporu duševního zdraví.",
@@ -665,7 +665,7 @@
 {
   "id": 34,
   "Garant": "Michal Kozubek",
-  "Název projektu": "GeoAI pro životní prostředí, zemědělství a územní plánování (projekty PoliRuralPlus a ALIANCE)",
+  "Název projektu": "GeoAI",
   "Typ umělé inteligence": "Strojové učení\nDeep learning\nComputer vision, analýza geoprostorových dat",
   "Hlavní kategorie use case": "Predikce a automatizované rozhodování",
   "Krátký popis": "Projekt vyvíjí a aplikuje metody geoprostorové umělé inteligence (GeoAI) pro monitoring životního prostředí, podporu rozhodování v zemědělství, lesnictví a územním plánování. Realizátorem je Fakulta informačních technologií ČVUT ve spolupráci se sdružením Plan4all. Výstupy zahrnují datové platformy propojující satelitní snímky, mapové podklady a AI algoritmy pro predikce a detekce změn v krajině.",
