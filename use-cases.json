@@ -23,7 +23,7 @@
   {
     "id": 2,
     "Garant": "Vojtěch Duraj",
-    "Název projektu": "Umělá inteligence pro mamografická vyšetření vč. záruční a pozáruční servisní podpory",
+    "Název projektu": "Umělá inteligence pro mamografická vyšetření",
     "Typ umělé inteligence": "Počítačové vidění (computer vision)\nHluboké učení (deep learning)\nComputer-Aided Detection/Diagnosis (CADe/CADx)",
     "Hlavní kategorie use case": "Analýza audiovizuálních dat",
     "Krátký popis": "Projekt zavádí certifikovaný software s umělou inteligencí pro podporu hodnocení mamografických snímků na Radiologické klinice Fakultní nemocnice Hradec Králové. Cílem je zvýšit senzitivitu a specificitu screeningu karcinomu prsu, urychlit třídění snímků a snížit počet zbytečných doplňkových vyšetření.",
@@ -44,7 +44,7 @@
   {
     "id": 3,
     "Garant": "Klára Mrázková",
-    "Název projektu": "Carebot - Diagnostika pacientů pomocí umělé inteligence \nv nemocnicích Moravskoslezského kraje",
+    "Název projektu": "Carebot",
     "Typ umělé inteligence": "Počítačové vidění (computer vision)\nHluboké učení (deep learning)\nGenerativní AI",
     "Hlavní kategorie use case": "Analýza audiovizuálních dat",
     "Krátký popis": "Projekt využívá AI systém Carebot pro automatickou analýzu rentgenových snímků hrudníku v reálném čase. Umělá inteligence napomáhá lékařům s detekcí abnormalit a tvorbou předpřipravených lékařských zpráv. Cílem je zvýšit přesnost a rychlost diagnóz, snížit zátěž zdravotnického personálu a zefektivnit poskytování péče.",
@@ -64,7 +64,7 @@
   {
     "id": 4,
     "Garant": "Vojtěch Duraj",
-    "Název projektu": "Automatizované přepisovací pracoviště - nasazení platformy Beey pro přepis jednání Poslanecké sněmovny (ASR řešení NEWTON Technologies, a.s.).",
+    "Název projektu": "Automatizované přepisovací pracoviště",
     "Typ umělé inteligence": "Rozpoznávání řeči (ASR) \nZpracování přirozeného jazyka (NLP);\nStrojové učení (machine learning)",
     "Hlavní kategorie use case": "Analýza audiovizuálních dat",
     "Krátký popis": "Projekt zavádí automatický přepis audio/video záznamů z parlamentních jednání do textu prostřednictvím cloudové aplikace Beey. Technologie rozpoznávání řeči na bázi hlubokých neuronových sítí převádí řeč do textu ve více než 30 jazycích, provádí automatickou interpunkci a detekuje změny mluvčích; výstup je následně kontrolován a publikován pověřenými úředníky.",
@@ -84,7 +84,7 @@
   {
     "id": 5,
     "Garant": "Michal Kozubek",
-    "Název projektu": "DROMAS (Agricultural Crop Monitoring and Farming Management Service) a poskytování služeb analýzy zpracování dat (SAMAS)",
+    "Název projektu": "DROMAS / SAMAS",
     "Typ umělé inteligence": "Strojové učení (machine learning)\nPočítačové vidění (computer vision)\nPrediktivní analýzy",
     "Hlavní kategorie use case": "Analýza audiovizuálních dat",
     "Krátký popis": "Projekt zajišťuje zpracování a vyhodnocování satelitních dat v reálném čase a průběžný monitoring zemědělských plodin a aktivit pomocí automatizovaných algoritmů nad satelitními snímky. Umožňuje veřejné správě (zejména SZIF) automaticky kontrolovat plnění dotačních podmínek bez nutnosti fyzických kontrol na místě. Cílem je zvýšit efektivitu a přesnost agendy zemědělských dotací, snížit administrativní zátěž farmářů i kontrolorů a zároveň zpřesnit rozhodování při vyplácení prostředků z veřejných fondů. Systém integruje data ze satelitů Sentinel, AI a vizualizace změn na úrovni konkrétních parcel.",
@@ -184,7 +184,7 @@
   {
     "id": 10,
     "Garant": "Klára Mrázková",
-    "Název projektu": "Chatbot Adam - inteligentní asistent auditorů MF",
+    "Název projektu": "Chatbot Adam",
     "Typ umělé inteligence": "Zpracování přirozeného jazyka (NLP)\nChatboti a virtuální asistenti\nStrojové učení (machine learning)\nGenerativní AI\nLLM",
     "Hlavní kategorie use case": "Generování obsahu a chatboti úředníků",
     "Krátký popis": "Chatbot Adam, vyvinutý společně s CIIRC ČVUT, pomáhá auditorům Auditního orgánu Ministerstva financí (AO MF) při kontrolách čerpání dotací a grantů. Díky pochopení přirozeného jazyka poskytuje rychlé a přesné odpovědi na základě dokumentů a transparentně uvádí citace ze zdrojové dokumentace. Cílem je výrazně zefektivnit a zpřesnit kontrolní proces.",
@@ -224,7 +224,7 @@
   {
     "id": 12,
     "Garant": "Vojtěch Duraj",
-    "Název projektu": "Chatbot pro správu dokumentů a komunikaci s občany \n- MČ Praha 6",
+    "Název projektu": "Chatbot pro správu dokumentů a komunikaci s občany",
     "Typ umělé inteligence": "LLM\nZpracování přirozeného jazyka (NLP)\nChatboti a virtuální asistenti",
     "Hlavní kategorie use case": "Komunikace a klientský servis",
     "Krátký popis": "Pilotní nasazení AI asistenta typu chatbot pro pomoc občanům i úředníkům. Projekt zahrnuje vyhledávání v dokumentech, návrhy usnesení, přepis zvuku z jednání na text, automatizované shrnutí případů a transparentní přístup k datům radnice. Nasazen v rámci projektu CommuniCity.",
@@ -244,7 +244,7 @@
   {
     "id": 13,
     "Garant": "Viktor Švec",
-    "Název projektu": "Chatbot Justína - Ministerstvo spravedlnosti",
+    "Název projektu": "Chatbot Justína",
     "Typ umělé inteligence": "Chatboti a virtuální asistenti\nGenerativní AI\nStrojové učení (machine learning)\nZpracování přirozeného jazyka(NLP)",
     "Hlavní kategorie use case": "Komunikace a klientský servis",
     "Krátký popis": "Chatbot Justína byl spuštěn v srpnu 2024 jako součást probíhající modernizace informačního systému Veřejných rejstříků (ISVR). Projekt si klade za cíl zmodernizovat celý systém ISVR a přinést vyšší efektivitu při práci soudů a notářů, kteří jsou jeho hlavními uživateli. Justína zajišťuje, že je systém plně přístupný veřejnosti, spolehlivý, moderní a dostupný odkudkoli.",
@@ -284,7 +284,7 @@
   {
     "id": 15,
     "Garant": "Lucie Lejčková",
-    "Název projektu": "Automatizované pokutování parkování v Praze 8 pomocí AI systému Emil",
+    "Název projektu": "Automatizované pokutování parkování AI systém Emil",
     "Typ umělé inteligence":"Computer vision (počítačové vidění)\nStrojové učení (machine learning)\nGenerativní AI\nAutomatizace (RPA)\nZpracování přirozeného jazyka (NLP)\nSymbolická AI (GOFAI - good old-fashioned artificial intelligence",
     "Hlavní kategorie use case": "Monitoring, bezpečnost a dohled",
     "Krátký popis": "Praha 8 nasadila AI systém přezdívaný „Emil“ pro automatizované zpracování dopravních přestupků v zónách placeného stání. Systém zpracovává obrazové záznamy \nz kontrolních vozidel městské policie, identifikuje vozidla podle SPZ a generuje výzvy k úhradě pokut bez nutnosti zásahu úředníka. „Emil“ tak zajišťuje automatizované odbavení tisíců přestupků měsíčně a výrazně odlehčuje pracovníkům odboru dopravy od rutinní administrativy.",
@@ -304,7 +304,7 @@
   {
     "id": 16,
     "Garant": "Vojtěch Duraj",
-    "Název projektu": "Monitorování a reakce na bezpečnostní incidenty a podpora SOC (AI nástroje eSKa cloudu)",
+    "Název projektu": "Monitorování a reakce na bezpečnostní incidenty a podpora SOC",
     "Typ umělé inteligence": "Strojové učení (machine learning)\nZpracování přirozeného jazyka (NLP)\nPrediktivní analýzy\nGenerativní AI\nLLM\n",
     "Hlavní kategorie use case": "Monitoring, bezpečnost a dohled",
     "Krátký popis": "Nástroj umělé inteligence v rámci eSKa cloudu pro kontinuální monitoring aktivit v infrastruktuře. Automaticky koreluje jednotlivé signály a alarmy, navrhuje kroky reakce a podporuje týmy SOC/CSIRT při řešení incidentů. Cílem je zrychlit detekci hrozeb, standardizovat reakce a minimalizovat dopady bezpečnostních incidentů na provoz veřejné správy.",
@@ -324,7 +324,7 @@
   {
     "id": 17,
     "Garant": "Vojtěch Duraj",
-    "Název projektu": "CYBERTHREATS - Využití umělé inteligence při obraně proti kybernetickým útokům",
+    "Název projektu": "CYBERTHREATS",
     "Typ umělé inteligence": "Strojové učení\nHluboké učení (deep learning)\nSymbolická AI (GOFAI)\nAutomatizace (RPA)",
     "Hlavní kategorie use case": "Monitoring, bezpečnost a dohled",
     "Krátký popis": "Cílem projektu je vývoj a nasazení prototypu systému nástrojů pro detekci kybernetických útoků v reálném čase. Systém analyzuje síťový provoz včetně šifrovaných dat pomocí umělé inteligence a postranních kanálů. Je schopen detekovat kompromitace i v rozsáhlé síťové infrastruktuře, přičemž propojuje data z více nasazení a zajišťuje jejich korelaci.",
@@ -344,7 +344,7 @@
   {
     "id": 18,
     "Garant": "Viktor Švec",
-    "Název projektu": "Digitalizace správy dokumentů a využívání umělé inteligence na Ministerstvu vnitra (MV)",
+    "Název projektu": "Digitalizace správy dokumentů a využívání umělé inteligence",
     "Typ umělé inteligence": "Zpracování přirozeného jazyka (NLP)\nAutomatizace rozhodování (RPA)\nStrojové učení (machine learning)",
     "Hlavní kategorie use case": "Optimalizace úředních procesů",
     "Krátký popis": "Využití AI ve spisové službě, zejména při přijímání a rozdělování podání doručených MV. Očekávaný přínos bude spočívat ve významné úspoře času, usnadnění práce a také v eliminaci možnosti přidělení dokumentu věcně nepříslušnému adresátovi, a tím i nežádoucím průtahům při jeho vyřizování.",
@@ -384,7 +384,7 @@
   {
     "id": 20,
     "Garant": "Vojtěch Duraj",
-    "Název projektu": "AI VISOR - kontrola příloh (MPSV)",
+    "Název projektu": "AI VISOR",
     "Typ umělé inteligence": "Počítačové vidění (computer vision)\nAutomatizace (RPA)\nZpracování přirozeného jazyka (NLP)\nSymbolická AI (GOFAI) - gold old-fashioned artficial intellingence",
     "Hlavní kategorie use case": "Optimalizace úředních procesů",
     "Krátký popis": "Nástroj využívající umělou inteligenci automaticky kontroluje přílohy, které občané nahrávají k online formulářům MPSV (např. v Klientské zóně/Jendovi). Systém vyhodnocuje, zda dokument skutečně obsahuje požadovanou informaci, je čitelný a patří ke správné agendě, a podezřelé soubory předává k manuální kontrole. Cílem je zrychlit zpracování žádostí a snížit chybovost i administrativní zátěž úředníků.",
@@ -404,7 +404,7 @@
   {
     "id": 21,
     "Garant": "Vojtěch Duraj",
-    "Název projektu": "ePokuty - AI systém pro správu dopravních přestupků hl. m. Prahy",
+    "Název projektu": "ePokuty",
     "Typ umělé inteligence": "Strojové učení (machine learning)\nPrediktivní analýzy\nAutomatizace (RPA)",
     "Hlavní kategorie use case": "Optimalizace úředních procesů",
     "Krátký popis": "Magistrát hl. m. Prahy připravuje systém, který pomocí metod umělé inteligence a teorie her optimalizuje proces doručování a vymáhání pokut za dopravní přestupky. Cílem je zrychlit a zefektivnit správní řízení, snížit administrativní zátěž úředníků a zvýšit vymahatelnost uložených sankcí.",
@@ -424,7 +424,7 @@
   {
     "id": 22,
     "Garant": "Amálka Počarovská",
-    "Název projektu": "Tísňové volání:(Vývoj a aplikace strukturovaného analytického příjmu tísňového volání s využitím umělé inteligence (AI)“ v rámci Programu bezpečnostního výzkumu pro potřeby státu 2022-2027)",
+    "Název projektu": "Tísňové volání",
     "Typ umělé inteligence": "Strojové učení (machine learning)\nRozpoznávání řeči\nZpracování přirozeného jazyka (NLP)\nPrediktivní analýzy",
     "Hlavní kategorie use case": "Predikce a automatizované rozhodování",
     "Krátký popis": "Cílem je vyvinout automatizovaný systém, který zefektivní příjem tísňového volání na operačních střediscích Policie ČR. Systém využije analýzu hlasových výstupů, emoční analýzu hovorů a strojové učení k: rozpoznání emocí volajícího, rozpoznání typu události, strukturovanému přepisu hovoru, návrhu vhodných otázek podle typu oznámení, zajištění interoperability s dalšími složkami IZS. Systém bude zaveden jako modul stávajícího systému operačního řízení Policie ČR a propojen s nástrojem pro predikci pohřešovaných osob (software Kassandra).",
@@ -464,7 +464,7 @@
   {
     "id": 24,
     "Garant": "Vojtěch Duraj",
-    "Název projektu": "Jednotný systém řízení dopravy za pomoci multiagentních a adaptivních systémů s prvky umělé inteligence (MAS)",
+    "Název projektu": "MAS",
     "Typ umělé inteligence": "Strojové učení (machine learning)\nAutomatizace (RPA)\nPočítačové vidění (Computer Vision)",
     "Hlavní kategorie use case": "Predikce a automatizované rozhodování",
     "Krátký popis": "Technická správa komunikací hl. m. Prahy, a.s. testuje a zavádí AI pro adaptivní řízení světelných signalizačních zařízení. První křižovatka v Praze (pilot) už běží v režimu, kde AI podle aktuálních dat optimalizuje signální plány a zkracuje kolony oproti původnímu programu.",
@@ -483,7 +483,7 @@
   },
   {
     "id": 25,
-    "Garant": "Klára Mrázková - TYGR",
+    "Garant": "Klára Mrázková",
     "Název projektu": "Chytré křižovatky",
     "Typ umělé inteligence": "Strojové učení (prediktivní modely dopravního toku)\nComputer vision (rozpoznávání a klasifikace vozidel)\nEdge computing (lokální zpracování dat s minimální potřebou přenosu)",
     "Hlavní kategorie use case": "Predikce a automatizované rozhodování",
