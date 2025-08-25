@@ -547,7 +547,7 @@
   "Garant": "Martin Kukla",
   "Název projektu": "PID Halo",
   "Typ umělé inteligence": "Voicebot\nChatbot\nReal-time plánovací algoritmy na cloudovém základu",
-  "Hlavní kategorie use case": "Predikce a automatizované rozhodování",
+  "Hlavní kategorie use case": "Komunikace a klientský servis",
   "Krátký popis": "Takzvaná poptávková doprava je koncept dopravy, který nepracuje s fixními trasami, jízdními řády nebo časy jako klasická linková doprava. Umožňuje zcela dynamickou tvorbu tras, které jsou vytvořeny na míru cestujícím podle jejich poptávky. V zahraničí je tento koncept známý jako „demand responsive transport“ nebo „transport on demand“. V celém konceptu hrají zásadní roli technologie. Ty mají na starosti sběr a zpracování poptávek od cestujících a jejich přeměnu v konkrétní optimalizované trasy, a to vše v reálném čase. Efektivní realizaci konceptu poptávkové dopravy umožňuje rozvoj technologií, jako jsou voicebotové a chatbotové služby nebo pokročilé algoritmy na plánování tras, založené na umělé inteligenci.",
   "Řešený problém": "Optimalizovaná trasa veřejné dopravy dle požadavků cestujících.",
   "Instituce": "Středočeský kraj",
