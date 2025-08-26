@@ -84,17 +84,17 @@ const isAdmin = new URLSearchParams(window.location.search).get('admin') === 'tr
 
       html += `
       <tr>
-      <td><span class="icon" aria-hidden="true">&#x1F3DB;&#xFE0E;</span></td>
+      <td><img src="buildings.svg" alt="Instituce" class="table-icon" width="16" height="16"></td>
       <td><b>Instituce</b></td>
       <td>${uc['Instituce'] || '-'}</td>
       </tr>
       <tr>
-      <td><span class="icon" aria-hidden="true">&#x1F6E0;&#xFE0E;</span></td>
+      <td><img src="contact-plus.svg" alt="Instituce" class="table-icon" width="16" height="16"></td>
       <td><b>Dodavatel</b></td>
       <td>${uc['Dodavatel'] || '-'}</td>
       </tr>
       <tr>
-      <td><span class="icon" aria-hidden="true">&#x1F4BC;&#xFE0E;</span></td>
+      <td><img src="edit-box.svg" alt="Instituce" class="table-icon" width="16" height="16"></td>
       <td><b>Obor činnosti</b></td>
       <td>${uc['Obor činnosti'] || '-'}</td>
       </tr>`;
@@ -107,7 +107,7 @@ const isAdmin = new URLSearchParams(window.location.search).get('admin') === 'tr
 
       html += `
       <tr>
-      <td><span class="icon" aria-hidden="true">&#x1F5C2;&#xFE0E;</span></td>
+      <td><img src="flag.svg" alt="Instituce" class="table-icon" width="16" height="16"></td>
       <td><b>Kategorie use case</b></td>
       <td>${categoryHtml}</td>
       </tr>`;
