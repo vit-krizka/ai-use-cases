@@ -98,13 +98,13 @@ main a:active {
 /* ===== Download ikona ===== */
 .download-btn {
   position: fixed;
-  top: 100px;      /* vzdálenost od horního okraje */
+  top: 60px;      /* vzdálenost od horního okraje */
   right: 20px;     /* vzdálenost od pravého okraje */
-  background: #368537;
+  background: #FFFFFF;
   color: white;
   border-radius: 50%;
-  width: 80px;
-  height: 80px;
+  width: 60px;
+  height: 60px;
   display: flex;
   align-items: center;
   justify-content: center;
