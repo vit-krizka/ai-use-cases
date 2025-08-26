@@ -95,6 +95,31 @@ main a:active {
   stroke: #fff;
 }
 
+/* ===== Download ikona ===== */
+.download-btn {
+  position: fixed;
+  top: 100px;      /* vzdálenost od horního okraje */
+  right: 20px;     /* vzdálenost od pravého okraje */
+  background: #368537;
+  color: white;
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 28px;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+  transition: background 0.3s;
+  text-decoration: none;
+  z-index: 1100;   /* nad pop-up */
+}
+
+.download-btn:hover {
+  background: #368537;
+}
+
 /* ===== Top bar ===== */
 .topbar {
     position: fixed;
@@ -593,10 +618,11 @@ margin: 0;
     right: 0;
     bottom: 0;
     display: none;
-    align-items: center;
-    justify-content: center;
+    align-items: flex-end; /* místo center – zarovná k dolnímu okraji */
+    justify-content: center; /* horizontální střed */
     background: rgba(0, 0, 0, 0.5);
     z-index: 2000;
+    padding-bottom: 1rem; /* mezera od spodního okraje, mobil-friendly */
 }
 
 .category-popup .popup-content {
@@ -607,6 +633,7 @@ margin: 0;
     border-radius: 12px;
     position: relative;
     text-align: center;
+    box-sizing: border-box;
 }
 
 .category-popup .popup-close {
@@ -622,4 +649,10 @@ margin: 0;
 
 .category-popup h3 {
     margin-top: 0;
+}
+
+.download-btn {
+        bottom: 1rem;   /* zarovnání ke spodnímu okraji */
+        right: 1rem;
+        z-index: 2100;  /* nad category-popup (má 2000) */
 }
