@@ -145,7 +145,7 @@
     "id": 8,
     "Garant": "Tomáš Šedivec, Tomáš Kroupa",
     "Název projektu": "AI asistent pro tvorbu informační koncepce (malé) obce",
-    "Typ umělé inteligence": "Generativní AI\nLLM\nZpracování přirozeného jazyka (NLP); Chatboti a virtuální asistenti",
+    "Typ umělé inteligence": "Generativní AI\nLLM\nZpracování přirozeného jazyka (NLP)\nChatboti a virtuální asistenti",
     "Hlavní kategorie use case": "Generování obsahu a chatboti úředníků",
     "Krátký popis": "Vytvoření nástroje formou AI asistenta na straně úřadu (starosta, IT...), který interaktivní a iterovanou formou pomůže vyplnit osnovu vzorové informační koncepce úřadu. Známé informace dokáže načíst z externích zdrojů. Jedná se o experimentální vývoj, v případě úspěšného ověření bude překlopen do ostrého vývoje a veřejně publikován. Na realizaci se bude podílet OHA v rámci projektu IKOVS a tým KC.",
     "Řešený problém": "Obce nemají dostatek personálních ani technických kapacit pro tvorbu strategických dokumentů. Nástroj nemá za cíl jim vygenerovat dokument, ale sadou otázek a doporučení je dovést k cíli, tedy informační koncepci, která popisuje jejich IT a jeho rozvoj.",
