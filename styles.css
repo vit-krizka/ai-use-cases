@@ -578,14 +578,38 @@ margin: 0;
     }
 
     .footer-project {
-        flex-direction: column;
-        text-align: center; /* na mobilu klidně doprostřed */
+        flex-direction: column;      /* oba sloupce pod sebe */
+        align-items: center;         /* centrování celé sekce */
+        text-align: center;          /* texty uprostřed */
+        gap: 0;                      /* odstraníme gap mezi sloupci */
     }
     .footer-project > div {
         max-width: 100%;
     }
     .footer-project .row {
         justify-content: center;
+    }
+
+    .footer-project .col-lg-4,
+    .footer-project .col-lg-8 {
+        width: 100%;                 /* každý blok zabere celou šířku */
+        max-width: none;
+    }
+
+    .footer-project .col-lg-8 {
+        margin-top: 1rem;   /* menší mezera od log k textu */
+    }
+
+    .footer-project .logos {
+        flex-direction: column;      /* loga pod sebou */
+        gap: 1rem;                   /* menší mezera mezi logy */
+        justify-content: center;     /* centrování log */
+        align-items: center;
+    }
+
+    .footer-project .logos img {
+        max-width: 80%;              /* aby se loga vešla a nebyla moc velká */
+        height: auto;
     }
 
     /* Topbar chování */
