@@ -494,7 +494,7 @@
     "Stav projektu": "Pilot / PoC",
     "Očekávané dopady": "Zkrácení doby čekání na křižovatkách\nSnížení emisí CO₂ díky plynulejšímu provozu\nZvýšení bezpečnosti (AI detekuje neobvyklé situace, např. vozidla v protisměru)\nNižší náklady na infrastrukturu a údržbu (oproti tradičním chytrým semaforům)",
     "Vyhodnocení úspěšnosti": "Pilotní nasazení v Brně a obci Želešice prokázalo, že systém dokáže samostatně vyhodnocovat dopravní toky a adaptovat se na lokální prostředí. První výsledky ukazují lepší plynulost dopravy a snížení tranzitní zátěže kamionů v centrech obcí. Města potvrdila, že systém je škálovatelný i do dalších lokalit.",
-    "Poučení pro příští projekty": "Příklady dobré a špatné praxe",
+    "Poučení pro příští projekty": "Nezbytné je zajistit kvalitní datové vstupy (kamerové úhly, senzory). Edge computing snižuje náklady a zvyšuje akceptaci ze strany měst. Doporučeno zapojit veřejnost (informování občanů o přínosech, např. menší zácpy, čistší vzduch).Spolupráce s akademií (Masarykova univerzita) posiluje validitu a inovativnost řešení.",
     "Zdroj": "https://www.businessinfo.cz/clanky/cesko-chce-byt-lidrem-v-chytrych-resenich-pro-mesta-a-obce-startupum-rozda-dva-miliony-eur/?utm_source=chatgpt.com",
     "Označení zdroje": "Chytré křižovatky",
     "Informace o zdroji a kontaktní osoba": "Robert Pinkas, CEO VisionCraft",
