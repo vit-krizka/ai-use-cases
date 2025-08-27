@@ -38,61 +38,59 @@ main a:active {
   text-decoration: none;
 }
 
-
-/* ===== Info popup ===== */
+/* ===== Popup / informační banner ===== */
 .popup {
   position: fixed;
   bottom: 1rem;
-  right: 1rem;
+  left: 50%;
+  transform: translateX(-50%);
+  display: none;
+  z-index: 2000;
+
+  max-width: 600px;    /* omezení maximální šířky */
+  width: 90%;          /* procentuální šířka pro větší popup */
+  box-sizing: border-box;
+}
+
+/* Popup se zobrazí, když má aria-hidden=false */
+.popup[aria-hidden="false"] {
+  display: block;
+}
+
+.popup .popup-content {
   background-color: #368537;
   color: white;
   padding: 16px;
   border-radius: 12px;
-  max-width: 400px;
-  z-index: 1000;
+  position: relative; /* nutné pro absolutní pozici křížku */
+  box-sizing: border-box;
 }
 
-.popup[aria-hidden="true"] {
-  display: none;
-}
-
-.popup a {
-  color: white;
-  text-decoration: underline;
-}
-
-/* Zavírací tlačítko */
 .popup .popup-close {
   position: absolute;
   top: 8px;
   right: 8px;
   background: transparent;
   border: none;
-  width: 36px;             /* pevná šířka kolečka */
-  height: 36px;            /* pevná výška kolečka */
-  display: flex;           /* flexbox centrování */
-  align-items: center;     /* vertikální střed */
-  justify-content: center; /* horizontální střed */
-  padding: 8px;           /* větší klikací plocha */
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: white;
   cursor: pointer;
-  border-radius: 50%;     /* kulatá klikací zóna */
-  transition: background-color 0.2s ease, transform 0.2s ease;
+  line-height: 1;
 }
 
-.popup .popup-close:hover {
-  background-color: rgba(255, 255, 255, 0.15);
-  transform: scale(1.1); /* mírné zvětšení na hover */
+/* Hypertextový odkaz uvnitř informačního popupu */
+.popup .popup-content a {
+    color: white;                 /* barva textu */
+    text-decoration: underline;   /* zachová podtržení */
+    background-color: #368537;    /* stejné jako pozadí popupu */
+    padding: 0 0.1em;             /* lehce zvětší klikací oblast */
+    border-radius: 2px;
+    transition: background 0.2s;  /* jemný hover efekt */
 }
 
-/* SVG ikona */
-.popup .popup-close svg {
-  display: block;
-  width: 20px;
-  height: 20px;
-}
-
-#ai-tip-popup .popup-close svg {
-  stroke: #fff;
+.popup .popup-content a:hover {
+    background-color: rgba(255,255,255,0.2); /* jemné zvýraznění při hover */
 }
 
 /* ===== Download ikona ===== */
@@ -613,23 +611,22 @@ margin: 0;
 /* ===== Category popup ===== */
 .category-popup {
     position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    display: none;
-    align-items: flex-end; /* místo center – zarovná k dolnímu okraji */
+    inset: 0; /* zkratka pro top:0; right:0; bottom:0; left:0; */
+    display: flex;
+    align-items: flex-end;   /* k dolnímu okraji */
     justify-content: center; /* horizontální střed */
     background: rgba(0, 0, 0, 0.5);
     z-index: 2000;
-    padding-bottom: 1rem; /* mezera od spodního okraje, mobil-friendly */
+    padding-bottom: 1rem;
+    box-sizing: border-box;
 }
 
 .category-popup .popup-content {
     background: #fff;
     padding: 1.5rem;
     max-width: 400px;
-    width: 90%;
+    width: 100%;        /* aby se chovala pružně */
+    margin: 0 1rem;     /* místo fixních 90%, líp centruje */
     border-radius: 12px;
     position: relative;
     text-align: center;
