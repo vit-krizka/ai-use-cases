@@ -156,21 +156,16 @@ async function initCatalog() {
   const isAdmin = new URLSearchParams(window.location.search).get('admin') === 'true';
 
   try {
-    const [casesRes, categoriesRes] = await Promise.all([fetch('use-cases.json'), fetch('categories.json')]);
+    const [casesRes, categoriesRes] = await Promise.all([
+      fetch('use-cases.json'),
+      fetch('categories.json')
+    ]);
     const useCases = await casesRes.json();
     const categories = await categoriesRes.json();
 
     const categoryDescriptions = new Map(categories.map(c => [c.title, c.description]));
     const categoryMap = new Map(categories.map(c => [c.title, []]));
     const others = [];
-
-    // Render sekcí
-    useCases.forEach(uc => {
-      const { section, category, idStr, title, sectionId } = createUseCaseSection(uc, isAdmin, categoryDescriptions);
-      main.appendChild(section);
-      if (categoryMap.has(category)) categoryMap.get(category).push({ idStr, sectionId, title });
-      else others.push({ idStr, sectionId, title });
-    });
 
     // Render sekcí
     useCases.forEach(uc => {
@@ -187,10 +182,19 @@ async function initCatalog() {
       const popupText = categoryPopup.querySelector('p');
       const popupClose = categoryPopup.querySelector('.popup-close');
 
+      // zavření křížkem
       popupClose.addEventListener('click', () => {
         categoryPopup.setAttribute('aria-hidden', 'true');
       });
 
+      // zavření kliknutím mimo obsah
+      categoryPopup.addEventListener('click', (e) => {
+        if (e.target === categoryPopup) {
+          categoryPopup.setAttribute('aria-hidden', 'true');
+        }
+      });
+
+      // otevření popupu po kliknutí na kategorii
       const categoryLinks = document.querySelectorAll('.category-link');
       categoryLinks.forEach(link => {
         link.addEventListener('click', e => {

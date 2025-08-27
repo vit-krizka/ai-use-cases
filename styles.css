@@ -613,7 +613,7 @@ margin: 0;
     position: fixed;
     inset: 0;
     display: none; /* skrytý zpočátku */
-    align-items: center;   /* ← změna z flex-end na center */
+    align-items: center;   /* vertikální střed */
     justify-content: center; /* horizontální střed */
     background: rgba(0, 0, 0, 0.5);
     z-index: 2000;
@@ -628,9 +628,9 @@ margin: 0;
 .category-popup .popup-content {
     background: #fff;
     padding: 1.5rem;
-    max-width: 400px;
-    width: 100%;        /* aby se chovala pružně */
-    margin: 0 1rem;     /* místo fixních 90%, líp centruje */
+    max-width: 600px;  /* sjednoceno s běžným popupem */
+    width: 90%;        /* procentuální šířka pro větší popup */
+    margin: 0 1rem;    /* centrum horizontálně */
     border-radius: 12px;
     position: relative;
     text-align: center;
