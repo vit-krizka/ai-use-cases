@@ -172,6 +172,37 @@ async function initCatalog() {
       else others.push({ idStr, sectionId, title });
     });
 
+    // Render sekcí
+    useCases.forEach(uc => {
+      const { section, category, idStr, title, sectionId } = createUseCaseSection(uc, isAdmin, categoryDescriptions);
+      main.appendChild(section);
+      if (categoryMap.has(category)) categoryMap.get(category).push({ idStr, sectionId, title });
+      else others.push({ idStr, sectionId, title });
+    });
+
+    // --- Kód pro popup kategorií ---
+    const categoryPopup = document.getElementById('category-popup');
+    if (categoryPopup) {
+      const popupTitle = categoryPopup.querySelector('h3');
+      const popupText = categoryPopup.querySelector('p');
+      const popupClose = categoryPopup.querySelector('.popup-close');
+
+      popupClose.addEventListener('click', () => {
+        categoryPopup.setAttribute('aria-hidden', 'true');
+      });
+
+      const categoryLinks = document.querySelectorAll('.category-link');
+      categoryLinks.forEach(link => {
+        link.addEventListener('click', e => {
+          e.preventDefault();
+          const cat = link.dataset.category;
+          popupTitle.textContent = link.textContent;
+          popupText.textContent = categoryDescriptions.get(cat) || '';
+          categoryPopup.setAttribute('aria-hidden', 'false');
+        });
+      });
+    }
+
     // Vytvoření navigace
     const buildCategoryNav = (catTitle, items) => {
       const li = document.createElement('li');

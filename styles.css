@@ -612,13 +612,17 @@ margin: 0;
 .category-popup {
     position: fixed;
     inset: 0; /* zkratka pro top:0; right:0; bottom:0; left:0; */
-    display: flex;
+    display: none; /* ← důležité: skryjeme popup zpočátku */
     align-items: flex-end;   /* k dolnímu okraji */
     justify-content: center; /* horizontální střed */
     background: rgba(0, 0, 0, 0.5);
     z-index: 2000;
     padding-bottom: 1rem;
     box-sizing: border-box;
+}
+
+.category-popup[aria-hidden="false"] {
+    display: flex; /* ← zobrazíme popup jen když má aria-hidden="false" */
 }
 
 .category-popup .popup-content {
@@ -649,7 +653,8 @@ margin: 0;
 }
 
 .download-btn {
-        bottom: 1rem;   /* zarovnání ke spodnímu okraji */
-        right: 1rem;
-        z-index: 2100;  /* nad category-popup (má 2000) */
+    bottom: 1rem;   /* zarovnání ke spodnímu okraji */
+    right: 1rem;
+    z-index: 2100;  /* nad category-popup (má 2000) */
 }
+
