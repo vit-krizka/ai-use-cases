@@ -234,6 +234,51 @@ footer h3 {
     gap: 0.5rem;
 }
 
+.footer-project {
+    display: flex;
+    justify-content: flex-start;  /* zarovnání vlevo stejně jako footer-columns */
+    align-items: flex-start;
+    gap: 4rem;                    /* mezera mezi levým a pravým blokem */
+    margin-top: 2rem;
+    padding: 0 1rem;              /* stejné odsazení od okrajů jako footer-columns */
+    flex-wrap: wrap;               /* aby se na mobilu seskládalo pod sebe */
+}
+
+.footer-project .col-lg-4 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;      /* obsah vlevo */
+    text-align: left;
+}
+
+.footer-project .col-lg-8 {
+    flex: 1;
+    max-width: 700px;
+    text-align: left;
+}
+
+/* loga */
+.footer-project .logos {
+    display: flex;
+    gap: 2rem;                     /* rozestupy mezi logy */
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: flex-start;   /* loga vlevo */
+    margin-top: 1rem;
+}
+
+.footer-project .logos img {
+    max-height: 50px;
+    object-fit: contain;
+}
+
+/* texty */
+.footer-project h3,
+.footer-project p {
+    color: white;
+    margin-bottom: 0.5rem;
+}
+
 /* ===== Sidebar ===== */
 #sidebar {
     background: var(--secondary);
@@ -530,6 +575,17 @@ margin: 0;
     .footer-columns {
         flex-direction: column; /* prvky pod sebe */
         align-items: flex-start; /* zarovná doleva */
+    }
+
+    .footer-project {
+        flex-direction: column;
+        text-align: center; /* na mobilu klidně doprostřed */
+    }
+    .footer-project > div {
+        max-width: 100%;
+    }
+    .footer-project .row {
+        justify-content: center;
     }
 
     /* Topbar chování */
