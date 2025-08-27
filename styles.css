@@ -611,13 +611,13 @@ margin: 0;
 /* ===== Category popup ===== */
 .category-popup {
     position: fixed;
-    inset: 0; /* zkratka pro top:0; right:0; bottom:0; left:0; */
-    display: none; /* ← důležité: skryjeme popup zpočátku */
-    align-items: flex-end;   /* k dolnímu okraji */
+    inset: 0;
+    display: none; /* skrytý zpočátku */
+    align-items: center;   /* ← změna z flex-end na center */
     justify-content: center; /* horizontální střed */
     background: rgba(0, 0, 0, 0.5);
     z-index: 2000;
-    padding-bottom: 1rem;
+    padding-bottom: 0; /* odstraníme spodní odsazení */
     box-sizing: border-box;
 }
 
