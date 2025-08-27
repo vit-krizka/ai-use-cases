@@ -165,7 +165,7 @@ main a:active {
 .hamburger svg {
     width: 28px;
     height: 28px;
-    stroke: #fff;
+    stroke: #2E2D2C;
 }
 /* ===== Footer ===== */
 footer {
@@ -664,7 +664,7 @@ margin: 0;
     .hamburger svg {
         width: 28px;
         height: 28px;
-        stroke: #fff;
+        stroke: #2E2D2C;
     }
 
     /* zobraz logo a ikony stejně jako na desktopu */
