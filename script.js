@@ -9,6 +9,7 @@ function initCommon() {
 
   if (sidebar && menuBtn) {
     menuBtn.addEventListener('click', () => sidebar.classList.toggle('open'));
+
     document.addEventListener('click', (e) => {
       if (
         window.innerWidth <= 768 &&
@@ -44,9 +45,11 @@ function initInfoBanner() {
   if (!el) return;
 
   const closeBtn = el.querySelector('.popup-close');
+
   const now = () => Date.now();
   const lastDismissAt = () => Number(localStorage.getItem(KEY_LAST_DISMISS)) || 0;
   const canShow = () => now() - lastDismissAt() >= RESHOW_AFTER_CLOSE_MS;
+
   let pendingTimer;
 
   const showPopup = () => {
@@ -72,39 +75,6 @@ function initInfoBanner() {
     const msLeft = RESHOW_AFTER_CLOSE_MS - (now() - lastDismissAt());
     pendingTimer = setTimeout(showPopup, Math.max(msLeft, 1));
   }
-}
-
-/** ======================
- *  Popup pro kategorie use case
- *  ====================== */
-function initCategoryPopup(categoryDescriptions) {
-  const popupId = 'category-popup';
-  let popup = document.getElementById(popupId);
-  if (!popup) {
-    popup = document.createElement('div');
-    popup.id = popupId;
-    popup.className = 'category-popup';
-    popup.setAttribute('aria-hidden', 'true');
-    document.body.appendChild(popup);
-  }
-
-  const closePopup = () => popup.setAttribute('aria-hidden', 'true');
-
-  document.addEventListener('click', (e) => {
-    const link = e.target.closest('.category-link');
-    if (!link) return;
-    e.preventDefault();
-    const category = link.dataset.category;
-    const desc = categoryDescriptions.get(category) || 'Bez popisu';
-    popup.innerHTML = `<button class="popup-close">×</button><p>${desc}</p>`;
-    popup.setAttribute('aria-hidden', 'false');
-    const btnClose = popup.querySelector('.popup-close');
-    if (btnClose) btnClose.addEventListener('click', closePopup);
-  });
-
-  document.addEventListener('keydown', (e) => {
-    if (e.key === 'Escape' && popup.getAttribute('aria-hidden') !== 'true') closePopup();
-  });
 }
 
 /** ======================
@@ -272,9 +242,6 @@ async function initCatalog() {
       history.replaceState(null, '', `#${id}`);
       if (window.innerWidth <= 768) sidebar.classList.remove('open');
     }));
-
-    // Inicializace popupu kategorií až po vykreslení sekcí
-    initCategoryPopup(categoryDescriptions);
 
   } catch (e) {
     console.error('Chyba při načítání use casů:', e);
