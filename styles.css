@@ -214,8 +214,18 @@ footer h3 {
 }
 
 .footer-columns {
-  display: flex;
-  gap: 1rem;
+    display: flex;
+    justify-content: flex-start;  /* bloky začínají vlevo */
+    gap: 2rem;                    /* mezery mezi bloky */
+    max-width: 1200px;            /* stejná šířka jako footer-project */
+    margin: 0 auto;               /* centrování celé sekce */
+    padding: 0 1rem;              /* odsazení od okrajů */
+    flex-wrap: wrap;
+}
+
+.footer-columns .footer-block {
+    flex: 1 1 0;                  /* bloky vyplní dostupný prostor */
+    min-width: 200px;             /* aby na mobilu šly pod sebe */
 }
 
 .footer-bottom {
@@ -236,12 +246,15 @@ footer h3 {
 
 .footer-project {
     display: flex;
-    justify-content: flex-start;  /* zarovnání vlevo stejně jako footer-columns */
+    justify-content: center;    /* celé centrované */
     align-items: flex-start;
-    gap: 4rem;                    /* mezera mezi levým a pravým blokem */
+    gap: 4rem;
     margin-top: 2rem;
-    padding: 0 1rem;              /* stejné odsazení od okrajů jako footer-columns */
-    flex-wrap: wrap;               /* aby se na mobilu seskládalo pod sebe */
+    padding: 0 1rem;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .footer-project .col-lg-4 {
@@ -260,11 +273,10 @@ footer h3 {
 /* loga */
 .footer-project .logos {
     display: flex;
-    gap: 2rem;                     /* rozestupy mezi logy */
+    gap: 2rem;
     flex-wrap: nowrap;
     align-items: center;
-    justify-content: flex-start;   /* loga vlevo */
-    margin-top: 1rem;
+    justify-content: flex-start;
 }
 
 .footer-project .logos img {
@@ -572,17 +584,31 @@ margin: 0;
         grid-column: 1;
     }
 
+    .footer-container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 1rem;
+        width: 100%;
+    }
+
     .footer-columns {
-        flex-direction: column; /* prvky pod sebe */
-        align-items: flex-start; /* zarovná doleva */
+        display: flex;
+        justify-content: flex-start; /* nebo center, podle vizuálu */
+        gap: 2rem;
+        flex-wrap: wrap;
+        max-width: 1200px; /* stejné jako .footer-project */
+        margin-left: auto;
+        margin-right: auto;
+        padding: 0 1rem;
     }
 
     .footer-project {
-        flex-direction: column;      /* oba sloupce pod sebe */
-        align-items: center;         /* centrování celé sekce */
-        text-align: center;          /* texty uprostřed */
-        gap: 0;                      /* odstraníme gap mezi sloupci */
+        display: flex;
+        flex-direction: column;
+        align-items: center;   /* centrování jednotlivých bloků */
+        gap: 1rem;             /* mezera mezi sloupci */
     }
+
     .footer-project > div {
         max-width: 100%;
     }
@@ -592,8 +618,9 @@ margin: 0;
 
     .footer-project .col-lg-4,
     .footer-project .col-lg-8 {
-        width: 100%;                 /* každý blok zabere celou šířku */
-        max-width: none;
+        width: 90%;
+        margin: 0 auto;        /* centrování uvnitř sekce */
+        max-width: 100%;
     }
 
     .footer-project .col-lg-8 {
@@ -601,15 +628,27 @@ margin: 0;
     }
 
     .footer-project .logos {
-        flex-direction: column;      /* loga pod sebou */
-        gap: 1rem;                   /* menší mezera mezi logy */
-        justify-content: center;     /* centrování log */
-        align-items: center;
+        display: flex;
+        flex-direction: column;  /* loga pod sebou */
+        gap: 1rem;               /* menší mezera mezi logy */
+        align-items: flex-start; /* zarovnání vlevo */
+        justify-content: flex-start;
     }
 
     .footer-project .logos img {
-        max-width: 80%;              /* aby se loga vešla a nebyla moc velká */
-        height: auto;
+        max-width: 120px;        /* pevná šířka loga */
+        width: 100%;             /* loga se vejdou do svého bloku */
+        height: auto;            /* zachování proporcí */
+        object-fit: contain;
+    }
+
+    /* Footer bottom */
+    .footer-bottom {
+        max-width: 1200px;    /* stejná šířka jako footer-columns */
+        margin-left: auto;
+        margin-right: auto;   /* centrování */
+        padding: 0 1rem;      /* odsazení od okrajů */
+        text-align: center;
     }
 
     /* Topbar chování */
