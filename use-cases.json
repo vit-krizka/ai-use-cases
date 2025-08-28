@@ -108,7 +108,7 @@
     "Typ umělé inteligence": "LLM\nChatboti a virtuální asistenti\nStrojové učení (Machine Learning)\nGenerativní AI",
     "Hlavní kategorie use case": "Generování obsahu a chatboti úředníků",
     "Krátký popis": "Poskytnutí asistence při tvorbě slovníků v podobě vygenerování návrhů pro nové pojmy z legislativních zdrojů či pro vylepšení těch existujících. LLM bude integrováno do rozhraní informačního systému pro tvorbu slovníků (ISMD - Informační systém modelování dat), který s ní bude komunikovat pomocí předpřipravených promptů. Systém je určen pro pracovníky veřejné správy.",
-    "Řešený problém": "Urychlit tvorbu slovníků dle metodiky popisu dat - zejména v prvních iteracích…",
+    "Řešený problém": "Potřeba usnadnit, případně i urychlit, tvorbu slovníků dle metodiky popisu dat - zejména v prvních iteracích, kdy občas tvůrci neví, s čím a jak začít. Zvětšit ochotu úřadů slovníky tvořit.",
     "Instituce": "Digitální a informační agentura",
     "Dodavatel": "DIA",
     "Stav projektu": "Pilot / PoC",
