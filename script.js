@@ -219,7 +219,6 @@ async function initCatalog() {
 
       const subUl = document.createElement('ul');
       subUl.className = 'subcategory';
-      subUl.style.display = 'none';
       items.forEach(item => {
         const subLi = document.createElement('li');
         const a = document.createElement('a');
@@ -233,7 +232,6 @@ async function initCatalog() {
       btn.addEventListener('click', () => {
         const expanded = btn.getAttribute('aria-expanded') === 'true';
         btn.setAttribute('aria-expanded', String(!expanded));
-        subUl.style.display = expanded ? 'none' : 'block';
       });
 
       return li;
@@ -249,6 +247,12 @@ async function initCatalog() {
     const setActiveLink = link => {
       navLinks.forEach(l => l.classList.remove('active'));
       link.classList.add('active');
+
+      const sublist = link.closest('ul.subcategory');
+      if (sublist) {
+          const toggle = sublist.previousElementSibling;
+          if (toggle?.classList.contains('category-toggle')) toggle.setAttribute('aria-expanded', 'true');
+      }
     };
 
     const showSection = id => {
@@ -261,12 +265,6 @@ async function initCatalog() {
     const initialLink = sidebar.querySelector(`a[href='#${initialId}']`);
     if (initialLink) {
       setActiveLink(initialLink);
-      const sublist = initialLink.closest('ul.subcategory');
-      if (sublist) {
-        sublist.style.display = 'block';
-        const toggle = sublist.previousElementSibling;
-        if (toggle?.classList.contains('category-toggle')) toggle.setAttribute('aria-expanded', 'true');
-      }
     }
     showSection(initialId);
 
@@ -291,4 +289,13 @@ document.addEventListener('DOMContentLoaded', () => {
   initCommon();
   initCatalog();
   initInfoBanner();
+});
+
+window.addEventListener('hashchange', function () {
+    const initialId = window.location.hash ? window.location.hash.substring(1) : sections[0]?.id;
+    const sidebar = document.getElementById('sidebar');
+    const initialLink = sidebar.querySelector(`a[href='#${initialId}']`);
+    if (initialLink) {
+        initialLink.click();
+    }
 });

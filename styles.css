@@ -775,3 +775,11 @@ margin: 0;
     z-index: 2100;  /* nad category-popup (má 2000) */
 }
 
+#usecase-list .subcategory {
+    display: block;
+}
+
+#usecase-list .category-toggle[aria-expanded|="false"]+.subcategory {
+    display: none;
+}
+
