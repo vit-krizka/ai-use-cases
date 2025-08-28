@@ -21,6 +21,27 @@ body {
     min-height: 100vh;
 }
 
+.skip-link {
+    position: absolute;
+    left: -9999px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+
+.skip-link:focus {
+    left: 0;
+    top: 0;
+    width: auto;
+    height: auto;
+    overflow: visible;
+    background: #fff;
+    color: var(--text);
+    padding: 1rem;
+    z-index: 1000;
+}
+
 body.single-column {
     display: block;
     min-height: 100vh;
