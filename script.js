@@ -80,14 +80,14 @@ function initInfoBanner() {
 /** ======================
  *  Pomocné funkce pro katalog
  *  ====================== */
-function createUseCaseSection(uc, isAdmin, categoryDescriptions) {
+function createUseCaseSection(uc, showAuthor, categoryDescriptions) {
   const idStr = uc.id.toString().padStart(2, '0');
   const sectionId = `usecase-${idStr}`;
   const section = document.createElement('section');
   section.id = sectionId;
 
   let title = uc['Název projektu'];
-  if (isAdmin && uc['Garant']) title += ` <span style="color: gray; font-weight: normal;">(${uc['Garant']})</span>`;
+  if (showAuthor && uc['Autor']) title += ` <span style="color: gray; font-weight: normal;">(${uc['Autor']})</span>`;
 
   let html = `<h2>${title}</h2><table class="table-meta card">
     <tr><td><img src="icons/buildings.svg" alt="Instituce" class="table-icon" width="16" height="16"></td><td><b>Instituce</b></td><td>${uc['Instituce'] || '-'}</td></tr>
@@ -124,7 +124,7 @@ function createUseCaseSection(uc, isAdmin, categoryDescriptions) {
     <div class="card"><strong>Stav projektu</strong><span>${uc['Stav projektu'] || '-'}</span></div>
     <div class="card"><strong>Zdroj</strong><span>${docLink}</span></div>`;
 
-  if (isAdmin) {
+  if (showAuthor) {
     const contactInfo = uc['Informace o zdroji a kontaktní osoba']
       ? (() => {
           const parts = uc['Informace o zdroji a kontaktní osoba'].split('\\n').map(s => s.trim()).filter(Boolean);
@@ -153,7 +153,7 @@ async function initCatalog() {
   const main = document.querySelector('main');
   if (!sidebar || !navList || !main) return;
 
-  const isAdmin = new URLSearchParams(window.location.search).get('admin') === 'true';
+  const showAuthor = new URLSearchParams(window.location.search).get('autor') === 'true';
 
   try {
     const [casesRes, categoriesRes] = await Promise.all([
@@ -169,7 +169,7 @@ async function initCatalog() {
 
     // Render sekcí
     useCases.forEach(uc => {
-      const { section, category, idStr, title, sectionId } = createUseCaseSection(uc, isAdmin, categoryDescriptions);
+      const { section, category, idStr, title, sectionId } = createUseCaseSection(uc, showAuthor, categoryDescriptions);
       main.appendChild(section);
       if (categoryMap.has(category)) categoryMap.get(category).push({ idStr, sectionId, title });
       else others.push({ idStr, sectionId, title });
