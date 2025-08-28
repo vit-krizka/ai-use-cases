@@ -221,6 +221,7 @@ footer h3 {
     margin: 0 auto;               /* centrování celé sekce */
     padding: 0 1rem;              /* odsazení od okrajů */
     flex-wrap: wrap;
+    box-sizing: border-box;       /* zahrnout padding do šířky */
 }
 
 .footer-columns .footer-block {
@@ -586,21 +587,17 @@ margin: 0;
     }
 
     .footer-container {
-        max-width: 1200px;
+        max-width: 100%; /* roztáhne container přes celou šířku mobilu */
+        padding: 0 1rem; /* zachová odsazení od okrajů */
         margin: 0 auto;
-        padding: 0 1rem;
         width: 100%;
+        box-sizing: border-box; /* zahrnout padding do šířky */
     }
 
     .footer-columns {
-        display: flex;
-        justify-content: flex-start; /* nebo center, podle vizuálu */
-        gap: 2rem;
-        flex-wrap: wrap;
-        max-width: 1200px; /* stejné jako .footer-project */
-        margin-left: auto;
-        margin-right: auto;
-        padding: 0 1rem;
+        max-width: 100%;          /* aby se na mobilu roztáhlo na šířku obrazovky */
+        padding: 0 1rem;          /* zachová odsazení od okrajů */
+        justify-content: center;  /* volitelně centrování bloků na mobilu */
     }
 
     .footer-project {
