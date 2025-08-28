@@ -108,13 +108,13 @@ function createUseCaseSection(uc, showAuthor, categoryDescriptions) {
 
   let html = `<h2><span class="download-btn-guard"></span>${title}</h2><table class="table-meta card">
     <tbody>
-      <tr><td><img src="icons/buildings.svg" alt="Instituce" class="table-icon" width="16" height="16"></td><th scope="row">Instituce</th><td>${uc['Instituce'] || '-'}</td></tr>
-      <tr><td><img src="icons/contact-plus.svg" alt="Dodavatel" class="table-icon" width="16" height="16"></td><th scope="row">Dodavatel</th><td>${uc['Dodavatel'] || '-'}</td></tr>
-      <tr><td><img src="icons/edit-box.svg" alt="Obor" class="table-icon" width="16" height="16"></td><th scope="row">Obor činnosti</th><td>${uc['Obor činnosti'] || '-'}</td></tr>
+      <tr><td><img src="icons/buildings.svg" alt="Instituce" class="table-icon" width="16" height="16"></td><th scope="row">Instituce</th><td>${uc['Instituce'] || '—'}</td></tr>
+      <tr><td><img src="icons/contact-plus.svg" alt="Dodavatel" class="table-icon" width="16" height="16"></td><th scope="row">Dodavatel</th><td>${uc['Dodavatel'] || '—'}</td></tr>
+      <tr><td><img src="icons/edit-box.svg" alt="Obor" class="table-icon" width="16" height="16"></td><th scope="row">Obor činnosti</th><td>${uc['Obor činnosti'] || '—'}</td></tr>
       <tr><td><img src="icons/flag.svg" alt="Kategorie" class="table-icon" width="16" height="16"></td><th scope="row">Kategorie use case</th><td>${
       categoryDescriptions.has(uc['Hlavní kategorie use case']?.split('(')[0].trim())
         ? `<a href="#" class="category-link" data-category="${uc['Hlavní kategorie use case'].split('(')[0].trim()}">${uc['Hlavní kategorie use case']}</a>`
-        : uc['Hlavní kategorie use case'] || '-'
+        : uc['Hlavní kategorie use case'] || '—'
       }</td></tr>
     </tbody>
   </table>`;
@@ -124,23 +124,23 @@ function createUseCaseSection(uc, showAuthor, categoryDescriptions) {
   }
 
   html += `<dl class="info-grid">
-    <dt>Řešený problém</dt><dd>${uc['Řešený problém'] || '-'}</dd>
+    <dt>Řešený problém</dt><dd>${uc['Řešený problém'] || '—'}</dd>
     <dt>Použité AI technologie</dt><dd><ul>${(uc['Typ umělé inteligence'] || '').split('\n').filter(Boolean).map(t => `<li>${t}</li>`).join('')}</ul></dd>
     <dt>Očekávané dopady</dt><dd><ul>${(uc['Očekávané dopady'] || '').split('\n').filter(Boolean).map(s => `<li>${s}</li>`).join('')}</ul></dd>
-    <dt>Vyhodnocení úspěšnosti</dt><dd>${uc['Vyhodnocení úspěšnosti'] || '-'}</dd>
-    <dt>Poučení pro příští projekty</dt><dd>${uc['Poučení pro příští projekty'] || '-'}</dd>
+    <dt>Vyhodnocení úspěšnosti</dt><dd>${uc['Vyhodnocení úspěšnosti'] || '—'}</dd>
+    <dt>Poučení pro příští projekty</dt><dd>${uc['Poučení pro příští projekty'] || '—'}</dd>
   </dl>`;
 
   // Zdroje
   const docLink = (() => {
-    if (!uc['Zdroj']) return '-';
+    if (!uc['Zdroj']) return '—';
     const urls = Array.isArray(uc['Zdroj']) ? uc['Zdroj'] : uc['Zdroj'].split(/[\n,]+/).map(s => s.trim()).filter(Boolean);
     const labels = uc['Označení zdroje'] ? (Array.isArray(uc['Označení zdroje']) ? uc['Označení zdroje'] : uc['Označení zdroje'].split(/[\n,]+/).map(s => s.trim())) : [];
     return urls.map((url, i) => `<a href="${url}" target="_blank" rel="noopener">${labels[i] || url}</a>`).join('<br>');
   })();
 
   html += `<div class="bottom-cards">
-    <div class="card"><strong>Stav projektu</strong><span>${uc['Stav projektu'] || '-'}</span></div>
+    <div class="card"><strong>Stav projektu</strong><span>${uc['Stav projektu'] || '—'}</span></div>
     <div class="card"><strong>Zdroj</strong><span>${docLink}</span></div>`;
 
   if (showAuthor) {
