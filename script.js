@@ -69,13 +69,9 @@ function initInfoBanner() {
 
   let pendingTimer;
 
-  let lastFocused;
-
   const showPopup = () => {
     if (!canShow()) return;
-    lastFocused = document.activeElement;
     el.setAttribute('aria-hidden', 'false');
-    if (closeBtn) closeBtn.focus();
   };
 
   const hidePopup = () => {
@@ -83,7 +79,6 @@ function initInfoBanner() {
     localStorage.setItem(KEY_LAST_DISMISS, String(now()));
     clearTimeout(pendingTimer);
     pendingTimer = setTimeout(showPopup, RESHOW_AFTER_CLOSE_MS);
-    if (lastFocused && typeof lastFocused.focus === 'function') lastFocused.focus();
   };
 
   if (closeBtn) closeBtn.addEventListener('click', hidePopup);
@@ -97,31 +92,6 @@ function initInfoBanner() {
     const msLeft = RESHOW_AFTER_CLOSE_MS - (now() - lastDismissAt());
     pendingTimer = setTimeout(showPopup, Math.max(msLeft, 1));
   }
-}
-
-/** ======================
- *  Zamknutí fokusu v popupu
- *  ====================== */
-function trapFocus(container) {
-  const selectors = 'a[href], button:not([disabled]), textarea, input, select, [tabindex]:not([tabindex="-1"])';
-  const focusables = Array.from(container.querySelectorAll(selectors));
-  if (!focusables.length) return () => {};
-  const first = focusables[0];
-  const last = focusables[focusables.length - 1];
-
-  function handle(e) {
-    if (e.key !== 'Tab') return;
-    if (e.shiftKey && document.activeElement === first) {
-      e.preventDefault();
-      last.focus();
-    } else if (!e.shiftKey && document.activeElement === last) {
-      e.preventDefault();
-      first.focus();
-    }
-  }
-
-  container.addEventListener('keydown', handle);
-  return () => container.removeEventListener('keydown', handle);
 }
 
 /** ======================
@@ -229,42 +199,34 @@ async function initCatalog() {
     // --- Kód pro popup kategorií ---
     const categoryPopup = document.getElementById('category-popup');
     if (categoryPopup) {
-        const popupTitle = categoryPopup.querySelector('h3');
-        const popupText = categoryPopup.querySelector('p');
-        const popupClose = categoryPopup.querySelector('.popup-close');
-        let lastFocusedElement;
-        let removeTrap;
+      const popupTitle = categoryPopup.querySelector('h3');
+      const popupText = categoryPopup.querySelector('p');
+      const popupClose = categoryPopup.querySelector('.popup-close');
 
-        const closePopup = () => {
+      // zavření křížkem
+      popupClose.addEventListener('click', () => {
+        categoryPopup.setAttribute('aria-hidden', 'true');
+      });
+
+      // zavření kliknutím mimo obsah
+      categoryPopup.addEventListener('click', (e) => {
+        if (e.target === categoryPopup) {
           categoryPopup.setAttribute('aria-hidden', 'true');
-          if (removeTrap) removeTrap();
-          if (lastFocusedElement) lastFocusedElement.focus();
-        };
+        }
+      });
 
-        popupClose.addEventListener('click', closePopup);
-
-        categoryPopup.addEventListener('click', (e) => {
-          if (e.target === categoryPopup) closePopup();
+      // otevření popupu po kliknutí na kategorii
+      const categoryLinks = document.querySelectorAll('.category-link');
+      categoryLinks.forEach(link => {
+        link.addEventListener('click', e => {
+          e.preventDefault();
+          const cat = link.dataset.category;
+          popupTitle.textContent = link.textContent;
+          popupText.textContent = categoryDescriptions.get(cat) || '';
+          categoryPopup.setAttribute('aria-hidden', 'false');
         });
-
-        categoryPopup.addEventListener('keydown', (e) => {
-          if (e.key === 'Escape') closePopup();
-        });
-
-        const categoryLinks = document.querySelectorAll('.category-link');
-        categoryLinks.forEach(link => {
-          link.addEventListener('click', e => {
-            e.preventDefault();
-            const cat = link.dataset.category;
-            popupTitle.textContent = link.textContent;
-            popupText.textContent = categoryDescriptions.get(cat) || '';
-            categoryPopup.setAttribute('aria-hidden', 'false');
-            lastFocusedElement = document.activeElement;
-            removeTrap = trapFocus(categoryPopup);
-            popupClose.focus();
-          });
-        });
-      }
+      });
+    }
 
     // Vytvoření navigace
     const buildCategoryNav = (catTitle, items) => {
