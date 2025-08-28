@@ -153,7 +153,8 @@ async function initCatalog() {
   const main = document.querySelector('main');
   if (!sidebar || !navList || !main) return;
 
-  const showAuthor = new URLSearchParams(window.location.search).get('autor') === 'true';
+  const urlParams = new URLSearchParams(window.location.search);
+  const showAuthor = urlParams.get('autor') === 'true' || urlParams.get('admin') === 'true';
 
   try {
     const [casesRes, categoriesRes] = await Promise.all([
