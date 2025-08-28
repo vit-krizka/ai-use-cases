@@ -207,12 +207,12 @@
     "Název projektu": "AI agent pro správní řízení",
     "Typ umělé inteligence": "LLM\nGenerativní AI\nStrojové učení (Machine Learning)\nZpracování přirozeného jazyka (NLP)\nChatboti a virtuální asistenti",
     "Hlavní kategorie use case": "Generování obsahu a chatboti úředníků",
-    "Krátký popis": "Projekt má za cíl vyvinout AI nástroj, který bude sloužit jako interaktivní asistent úředníka v rámci správního řízení. V první fázi se bude jednat o agendu dle ZOP - přestupkového řízení. Na základě vstupních údajů ze spisu bude nástroj schopen identifikovat typ a předmět řízení, určit účastníky řízení a zároveň provede úředníka jednotlivými fázemi řízení. Vedle toho poskytne návrhy dalších procesních úkonů a připraví podklady pro rozhodnutí včetně jejich odůvodnění. Nástroj nemá nahradit uvážení úředníka a plně automatizovat rozhodování v rámci správního řízení. Výsledkem projektu bude základní modul, který bude rozšiřitelný o další agendy (aktuálně jsou s příslušnými ministerstvy vytipovány následující agendy: živnostenská, kácení dřevin mimo les a dopravní přestupky. Primárně vyvinutý model bude nasazen pro testování na minimálně pěti obecních úřadech, které vyjádřily ochotu spoluúčasti.",
+    "Krátký popis": "Projekt má za cíl vyvinout AI nástroj, který bude sloužit jako interaktivní asistent úředníka v rámci správního řízení. V první fázi se bude jednat o agendu dle zákona č. 250/2016 Sb., o odpovědnosti za přestupky a řízení o nich. Na základě vstupních údajů ze spisu bude nástroj schopen identifikovat typ a předmět řízení, určit účastníky řízení a zároveň provede úředníka jednotlivými fázemi řízení. Vedle toho poskytne návrhy dalších procesních úkonů a připraví podklady pro rozhodnutí včetně jejich odůvodnění. Nástroj nemá nahradit uvážení úředníka a plně automatizovat rozhodování v rámci správního řízení. Výsledkem projektu bude základní modul, který bude rozšiřitelný o další agendy (aktuálně jsou s příslušnými ministerstvy vytipovány následující agendy: živnostenská, kácení dřevin mimo les a dopravní přestupky. Primárně vyvinutý model bude nasazen pro testování na minimálně pěti obecních úřadech, které vyjádřily ochotu spoluúčasti.",
     "Řešený problém": "Dlouhodobě přetrvává potřeba zvýšit efektivitu a snížit administrativní zátěž ve veřejné správě, zejména v souvislosti \ns časovou náročností, opakujícími se rutinními úkony \na chybovostí způsobenou složitostí právního prostředí \na objemem agendy. Digitální asistent by měl přispět \nk efektivnějšímu zpracování spisů tím, že:\npomůže s formulací skutkových vět a odůvodnění\nusnadní práci s právními předpisy a judikaturou (včetně jejich citace)\npodpoří analýzu textů a syntézu relevantních informací\nposkytne asistenci při přípravě jednotlivých úkonů \nve správním řízení",
     "Instituce": "Ministerstvo vnitra",
     "Dodavatel": null,
     "Stav projektu": "Nápad / záměr",
-    "Očekávané dopady": "Zrychlení procesu správního řízení\nSnížení administrativní zátěže úředníka\nSnížení chybovosti \nZvýšení konzistence rozhodnutí a odůvodnění díky návrhům formulací z judikatury\nAutomatické sledování lhůt v rámci řízení",
+    "Očekávané dopady": "Zrychlení procesu správního řízení\nSnížení administrativní zátěže úředníka\nSnížení chybovosti \nAutomatické sledování lhůt v rámci řízení",
     "Vyhodnocení úspěšnosti": "Projekt je ve fázi mapování procesů a přípravy podkladů pro zadávací dokumentaci veřejné zakázky.",
     "Poučení pro příští projekty": "Při budoucím nasazení na další subjekty je nutné počítat s přirozenou rezistencí vůči automatizaci a pracovat s ní prostřednictvím pozitivní podpory shora. Platforma by zároveň měla obsahovat prvky, které uživatele vedou k aktivní interakci s rozhraním a brání pasivní důvěře v poskytnutý výstup.",
     "Zdroj": null,
@@ -739,14 +739,69 @@
   "Zdroj": "https://crr.gov.cz/ai-muze-vyrazne-zvysit-efektivitu-uredniku-ukazal-seminar-crr/",
   "Označení zdroje": "Anakonda",
   "Informace o zdroji a kontaktní osoba": "Miloš Šenkýř - vedoucí oddělení rozvoje (z článku), za KC Viktor Švec, Delivery manager",
+  "Obor činnosti": "Jiné - Evropská politika podpory a strukturální fondy",
+  "Kategorie use case": "Monitoring, bezpečnost a dohled; Predikce a automatizované rozhodování"
+},
+{
+  "id": 38,
+  "Garant": "Vojtěch Duraj",
+  "Název projektu": "Detekce a analýza poškození vozovek pomocí AI",
+  "Typ umělé inteligence": "Počítačové vidění (Computer Vision)\nHluboké učení (Deep Learning)\nKonvoluční neuronové sítě (CNN)",
+  "Hlavní kategorie use case": "Predikce a automatizované rozhodování",
+  "Krátký popis": "Projekt spočívá ve využití na míru vyvinuté konvoluční neuronové sítě (CNN) pro automatizovanou analýzu laserových snímků povrchu silnic. Model umělé inteligence detekuje a s vysokou přesností klasifikuje mikroskopická poškození vozovky do několika kategorií závažnosti. Výstupem je objektivní a detailní datový podklad, který umožňuje efektivně plánovat, prioritizovat a alokovat zdroje na údržbu a opravy silniční sítě, což vede k významným časovým a finančním úsporám.",
+  "Řešený problém": "Tradiční diagnostika stavu vozovek se opírala o manuální zpracování dat z měřicích vozů, což bylo extrémně časově náročné a nákladné. Tento proces byl navíc zatížen značnou subjektivitou a nepřesností závislou na jednotlivých zpracovatelích, což znemožňovalo udržet konzistentní kvalitu hodnocení při větších objemech dat. Projekt tento problém řeší nasazením objektivního, rychlého a škálovatelného AI modelu, který nahrazuje zdlouhavou lidskou práci.",
+  "Instituce": "Zákazník: VARS BRNO; Koncoví uživatelé: Ředitelství silnic a dálnic ČR (ŘSD), krajské správy a údržby silnic.",
+  "Dodavatel": "Aricoma Systems",
+  "Stav projektu": "Nápad / záměr",
+  "Očekávané dopady": "Optimalizace údržby: Automatizované vyhodnocení a doporučení úseků silnic, které potřebují naléhavou údržbu\nNákladová efektivita: Snížení nákladů spojených s lidskou inspekcí a analýzou\nZlepšení bezpečnosti: Rychlá a včasná detekce problematických míst vede ke zvýšení bezpečnosti provozu",
+  "Vyhodnocení úspěšnosti": "Je v provozu a už přináší konkrétní výsledky: posuzování žádostí je zkráceno o cca 2 hodiny, což vede k ročním úsporám v tisících hodin. Detekce metodických odchylek zvyšuje kvalitu kontrol. Cíle jsou viditelně plněny a projekt pokračuje dále.",
+  "Poučení pro příští projekty": "Důvěra a kompetence uživatelů je klíčová - investice do interní vzdělávací AI Akademie přinesla úspěch.Bezpečnost a regulace - AI nástroje musí splňovat kybernetickou bezpečnost, GDPR a interní směrnice.Nástroj, ne náhrada - AI by neměla rozhodovat, ale asistovat; lidský dozor zůstává zásadní.Interní know-how poskytuje větší flexibilitu a bezpečnost než externí dodavatelé.",
+  "Zdroj": "https://crr.gov.cz/ai-muze-vyrazne-zvysit-efektivitu-uredniku-ukazal-seminar-crr/",
+  "Označení zdroje": "Anakonda",
+  "Informace o zdroji a kontaktní osoba": "Miloš Šenkýř - vedoucí oddělení rozvoje (z článku), za KC Viktor Švec, Delivery manager",
   "Obor činnosti": "Životní prostředí a zemědělství",
   "Kategorie use case": "Monitoring, bezpečnost a dohled; Predikce a automatizované rozhodování"
+},
+{
+  "id": 39,
+  "Garant": "Vojtěch Duraj",
+  "Název projektu": "Podpora životního cyklu veřejných zakázek pomocí AI",
+  "Typ umělé inteligence": "Zpracování přirozeného jazyka (NLP)\nVelké jazykové modely (LLM)\nGenerativní AI, Strojové učení",
+  "Hlavní kategorie use case": "Analýza dokumentů a dat",
+  "Krátký popis": "Projekt si klade za cíl plně podpořit životní cyklus veřejné zakázky od jejího záměru až po kontrolu plnění. Účelem je zefektivnit, zrychlit a zvýšit transparentnost celého procesu. Systém interaktivně pomáhá úředníkům sestavit bezchybnou zadávací dokumentaci, následně podporuje hodnotící komisi při automatizované kontrole a srovnání nabídek. V poslední fázi funguje jako neustálý interní auditor, který monitoruje data v registru smluv a proaktivně upozorňuje na rizika, nesrovnalosti nebo končící platnosti smluv",
+  "Řešený problém": "Proces zadávání veřejných zakázek je administrativně velmi náročný, svázaný složitou legislativou a náchylný k formálním i věcným chybám.  To vede k rizikům zrušení řízení, průtahům a neefektivnímu vynakládání veřejných prostředků. Manuální kontrola a audit smluv jsou pouze namátkové. AI systém tento problém adresuje automatizací rutinních a kontrolních činností, čímž snižuje chybovost, uvolňuje kapacity zaměstnanců pro odbornou práci a umožňuje trvalý dohled nad všemi zakázkami.",
+  "Instituce": "Veřejný zadavatel (např. ministerstvo, kraj, obec)",
+  "Dodavatel": "Aricoma Systems",
+  "Stav projektu": "Pilot / PoC (Interní)",
+  "Očekávané dopady": "Zkrácení času potřebného na přípravu zadávací dokumentace\nSnížení počtu formálních chyb v nabídkách i v postupu zadavatele\nZvýšení objektivity a transparentnosti při hodnocení nabídek\nProaktivní identifikace rizik (podezření na dělení zakázek, nevýhodné smluvní klauzule)",
+  "Vyhodnocení úspěšnosti": "Úspěšnost PoC je hodnocována metrikami jako: průměrná doba přípravy zadávacího řízení, počet zrušených řízení z důvodu pochybení zadavatele, počet odhalených rizik automatickým auditorem za kvartál a kvalitativní hodnocení přínosu systému ze strany zaměstnanců",
+  "Poučení pro příští projekty": "AI je podpůrný nástroj - finální odpovědnost za zákonnost postupu nese zadavatel. Nutnost neustálé aktualizace systému v souladu se změnami legislativy a rozhodovací praxe. Zajištění vysoké úrovně kybernetické a datové bezpečnosti, zejména u neveřejných částí nabídek.",
+  "Zdroj": null,
+  "Označení zdroje": null,
+  "Informace o zdroji a kontaktní osoba": "-",
+  "Obor činnosti": "Veřejné zakázky a hospodářská soutěž",
+  "Kategorie use case": "Monitoring, bezpečnost a dohled; Analýza dokumentů a dat Generování obsahu;Optimalizace procesůa zdrojů; Predikce a rozhodovací podpora"
+},
+{
+  "id": 40,
+  "Garant": "Vojtěch Duraj",
+  "Název projektu": "Znalostní báze a AI asistent pro interní ICT systémy",
+  "Typ umělé inteligence": "Zpracování přirozeného jazyka (NLP)\nVelké jazykové modely (LLM)\nGenerativní AI",
+  "Hlavní kategorie use case": "Komunikace a klientský servis (chatboti pro veřejnost)",
+  "Krátký popis": "Projekt se zaměřuje na vytvoření centrální, (živé) znalostní báze pro veškeré interní softwarové nástroje, aplikace a agendové systémy úřadu. Tato báze je zpřístupněna zaměstnancům prostřednictvím inteligentního AI asistenta, který plní dvě hlavní role: jako chatbot 24/7 odpovídá v přirozeném jazyce na dotazy uživatelů i administrátorů a jako interaktivní tutor generuje návody a tutoriály pro efektivní zaškolení a onboarding.",
+  "Řešený problém": "Zaměstnanci ve veřejné správě pracují s řadou složitých ICT systémů, jejichž dokumentace je často roztříštěná, ne vždy aktuální nebo těžko dostupná. To vede k neefektivitě, častým dotazům na IT oddělení a zdlouhavému zaškolování nových kolegů. AI asistent tento problém řeší centralizací veškerých znalostí a jejich okamžitým zpřístupněním v interaktivní a srozumitelné formě, čímž snižuje zátěž IT podpory a zvyšuje digitální gramotnost zaměstnanců.",
+  "Instituce": null,
+  "Dodavatel": "Aricoma Systems",
+  "Stav projektu": "Nápad / záměr",
+  "Očekávané dopady": "Snížení počtu rutinních dotazů a ticketů na IT helpdesk (odhad o 30-50 %)\nZrychlení řešení problémů a hledání informací pro zaměstnance\nZefektivnění a zkrácení doby pro zaškolení nových zaměstnanců\nZajištění konzistentní a vždy aktuální dokumentace k interním systémům",
+  "Vyhodnocení úspěšnosti": "Úspěšnost by byla měřena poměrem dotazů vyřešených chatbotem vůči dotazům eskalovaným na lidskou podporu, průměrným časem potřebným k nalezení řešení uživatelem a prostřednictvím pravidelných průzkumů spokojenosti zaměstnanců s kvalitou a dostupností IT podpory.",
+  "Poučení pro příští projekty": "Kvalita AI asistenta je přímo závislá na kvalitě a aktuálnosti podkladové znalostní báze. Musí být zaveden proces pro neustálou aktualizaci dokumentace při každé změně systémů. Systém musí umožňovat snadnou eskalaci problému na živého pracovníka IT podpory, pokud si AI neví rady. Doporučuje se pilotní nasazení na jeden či dva klíčové systémy před celoplošným rozšířením.",
+  "Zdroj": null,
+  "Označení zdroje": null,
+  "Informace o zdroji a kontaktní osoba": "-",
+  "Obor činnosti": "Jiné: Interní IT podpora a správa znalostí",
+  "Kategorie use case": "Komunikace a klientský servis; Analýza dokumentů a dat;Generování obsahu;Optimalizace procesůa zdrojů"
 }
-
-
-
-
-
 
 
 
