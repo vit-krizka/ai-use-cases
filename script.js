@@ -137,14 +137,17 @@ function createUseCaseSection(uc, showAuthor, categoryDescriptions) {
   if (showAuthor && uc['Autor']) title += ` <span style="color: gray; font-weight: normal;">(${uc['Autor']})</span>`;
 
   let html = `<h2>${title}</h2><table class="table-meta card">
-    <tr><td><img src="icons/buildings.svg" alt="Instituce" class="table-icon" width="16" height="16"></td><td><b>Instituce</b></td><td>${uc['Instituce'] || '-'}</td></tr>
-    <tr><td><img src="icons/contact-plus.svg" alt="Dodavatel" class="table-icon" width="16" height="16"></td><td><b>Dodavatel</b></td><td>${uc['Dodavatel'] || '-'}</td></tr>
-    <tr><td><img src="icons/edit-box.svg" alt="Obor" class="table-icon" width="16" height="16"></td><td><b>Obor činnosti</b></td><td>${uc['Obor činnosti'] || '-'}</td></tr>
-    <tr><td><img src="icons/flag.svg" alt="Kategorie" class="table-icon" width="16" height="16"></td><td><b>Kategorie use case</b></td><td>${
+    <caption>Informace o projektu</caption>
+    <tbody>
+      <tr><td><img src="icons/buildings.svg" alt="Instituce" class="table-icon" width="16" height="16"></td><th scope="row">Instituce</th><td>${uc['Instituce'] || '-'}</td></tr>
+      <tr><td><img src="icons/contact-plus.svg" alt="Dodavatel" class="table-icon" width="16" height="16"></td><th scope="row">Dodavatel</th><td>${uc['Dodavatel'] || '-'}</td></tr>
+      <tr><td><img src="icons/edit-box.svg" alt="Obor" class="table-icon" width="16" height="16"></td><th scope="row">Obor činnosti</th><td>${uc['Obor činnosti'] || '-'}</td></tr>
+      <tr><td><img src="icons/flag.svg" alt="Kategorie" class="table-icon" width="16" height="16"></td><th scope="row">Kategorie use case</th><td>${
       categoryDescriptions.has(uc['Hlavní kategorie use case']?.split('(')[0].trim())
         ? `<a href="#" class="category-link" data-category="${uc['Hlavní kategorie use case'].split('(')[0].trim()}">${uc['Hlavní kategorie use case']}</a>`
         : uc['Hlavní kategorie use case'] || '-'
-    }</td></tr>
+      }</td></tr>
+    </tbody>
   </table>`;
 
   if (uc['Krátký popis']) {
