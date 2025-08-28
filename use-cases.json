@@ -1,7 +1,7 @@
 [
   {
     "id": 1,
-    "Garant": "Linda Berková",
+    "Autor": "Linda Berková",
     "Název projektu": "AI toolkit pro Digitální patologii",
     "Typ umělé inteligence": "Automatizace (RPA)\nHluboké učení (Deep Learning)",
     "Hlavní kategorie use case": "Analýza audiovizuálních dat",
@@ -22,7 +22,7 @@
   },
   {
     "id": 2,
-    "Garant": "Vojtěch Duraj",
+    "Autor": "Vojtěch Duraj",
     "Název projektu": "Umělá inteligence pro mamografická vyšetření",
     "Typ umělé inteligence": "Počítačové vidění (Computer Vision)\nHluboké učení (Deep Learning)\nComputer-Aided Detection/Diagnosis (CADe/CADx)",
     "Hlavní kategorie use case": "Analýza audiovizuálních dat",
@@ -43,7 +43,7 @@
   },
   {
     "id": 3,
-    "Garant": "Klára Mrázková",
+    "Autor": "Klára Mrázková",
     "Název projektu": "Carebot",
     "Typ umělé inteligence": "Počítačové vidění (Computer Vision)\nHluboké učení (Deep Learning)\nGenerativní AI",
     "Hlavní kategorie use case": "Analýza audiovizuálních dat",
@@ -63,7 +63,7 @@
   },
   {
     "id": 4,
-    "Garant": "Vojtěch Duraj",
+    "Autor": "Vojtěch Duraj",
     "Název projektu": "Automatizované přepisovací pracoviště",
     "Typ umělé inteligence": "Rozpoznávání řeči (ASR) \nZpracování přirozeného jazyka (NLP);\nStrojové učení (Machine Learning)\nAutomatizace (RPA)",
     "Hlavní kategorie use case": "Analýza audiovizuálních dat",
@@ -83,7 +83,7 @@
   },
   {
     "id": 5,
-    "Garant": "Michal Kozubek",
+    "Autor": "Michal Kozubek",
     "Název projektu": "DROMAS / SAMAS",
     "Typ umělé inteligence": "Strojové učení (Machine Learning)\nPočítačové vidění (Computer Vision)\nPrediktivní analýzy",
     "Hlavní kategorie use case": "Analýza audiovizuálních dat",
@@ -103,7 +103,7 @@
   },
   {
     "id": 6,
-    "Garant": "Alice Binderová",
+    "Autor": "Alice Binderová",
     "Název projektu": "Asistent pro tvorbu slovníků dle metodiky popisu dat",
     "Typ umělé inteligence": "LLM\nChatboti a virtuální asistenti\nStrojové učení (Machine Learning)\nGenerativní AI",
     "Hlavní kategorie use case": "Generování obsahu a chatboti úředníků",
@@ -123,7 +123,7 @@
   },
   {
     "id": 7,
-    "Garant": "Tomáš Šedivec",
+    "Autor": "Tomáš Šedivec",
     "Název projektu": "AI asistent pro dlouhodobé řízení ISVS",
     "Typ umělé inteligence": "Generativní AI\nLLM\nChatboti a virtuální asistenti\nZpracování přirozeného jazyka (NLP)",
     "Hlavní kategorie use case": "Generování obsahu a chatboti úředníků",
@@ -143,7 +143,7 @@
   },
   {
     "id": 8,
-    "Garant": "Tomáš Šedivec, Tomáš Kroupa",
+    "Autor": "Tomáš Šedivec, Tomáš Kroupa",
     "Název projektu": "AI asistent pro tvorbu informační koncepce (malé) obce",
     "Typ umělé inteligence": "Generativní AI\nLLM\nZpracování přirozeného jazyka (NLP)\nChatboti a virtuální asistenti",
     "Hlavní kategorie use case": "Generování obsahu a chatboti úředníků",
@@ -163,7 +163,7 @@
   },
   {
     "id": 9,
-    "Garant": "Jan Petr",
+    "Autor": "Jan Petr",
     "Název projektu": "Předvyplnění formulářů pomocí AI",
     "Typ umělé inteligence": "LLM\nGenerativní AI\nZpracování přirozeného jazyka (NLP)\nChatboti a virtuální asistenti",
     "Hlavní kategorie use case": "Komunikace a klientský servis",
@@ -183,7 +183,7 @@
   },
   {
     "id": 10,
-    "Garant": "Klára Mrázková",
+    "Autor": "Klára Mrázková",
     "Název projektu": "Chatbot Adam",
     "Typ umělé inteligence": "Zpracování přirozeného jazyka (NLP)\nChatboti a virtuální asistenti\nStrojové učení (Machine Learning)\nGenerativní AI\nLLM",
     "Hlavní kategorie use case": "Generování obsahu a chatboti úředníků",
@@ -203,7 +203,7 @@
   },
   {
     "id": 11,
-    "Garant": "Lucie Olivová",
+    "Autor": "Lucie Olivová",
     "Název projektu": "AI agent pro správní řízení",
     "Typ umělé inteligence": "LLM\nGenerativní AI\nStrojové učení (Machine Learning)\nZpracování přirozeného jazyka (NLP)\nChatboti a virtuální asistenti",
     "Hlavní kategorie use case": "Generování obsahu a chatboti úředníků",
@@ -223,7 +223,7 @@
   },
   {
     "id": 12,
-    "Garant": "Vojtěch Duraj",
+    "Autor": "Vojtěch Duraj",
     "Název projektu": "Chatbot pro správu dokumentů a komunikaci s občany",
     "Typ umělé inteligence": "LLM\nZpracování přirozeného jazyka (NLP)\nChatboti a virtuální asistenti",
     "Hlavní kategorie use case": "Komunikace a klientský servis",
@@ -243,7 +243,7 @@
   },
   {
     "id": 13,
-    "Garant": "Viktor Švec",
+    "Autor": "Viktor Švec",
     "Název projektu": "Chatbot Justína",
     "Typ umělé inteligence": "Chatboti a virtuální asistenti\nGenerativní AI\nStrojové učení (Machine Learning)\nZpracování přirozeného jazyka(NLP)",
     "Hlavní kategorie use case": "Komunikace a klientský servis",
@@ -263,7 +263,7 @@
   },
   {
     "id": 14,
-    "Garant": "Robert Valčuha",
+    "Autor": "Robert Valčuha",
     "Název projektu": "Kontaktní centrum veřejné správy",
     "Typ umělé inteligence": "Generativní AI \nLLM\nChatboti a virtuální asistenti",
     "Hlavní kategorie use case": "Komunikace a klientský servis",
@@ -283,7 +283,7 @@
   },
   {
     "id": 15,
-    "Garant": "Lucie Lejčková",
+    "Autor": "Lucie Lejčková",
     "Název projektu": "AI systém Emil",
     "Typ umělé inteligence":"Computer vision (Počítačové Vidění)\nStrojové učení (Machine Learning)\nGenerativní AI\nAutomatizace (RPA)\nZpracování přirozeného jazyka (NLP)\nSymbolická AI",
     "Hlavní kategorie use case": "Monitoring, bezpečnost a dohled",
@@ -303,7 +303,7 @@
   },
   {
     "id": 16,
-    "Garant": "Vojtěch Duraj",
+    "Autor": "Vojtěch Duraj",
     "Název projektu": "Monitorování a reakce na bezpečnostní incidenty a podpora SOC",
     "Typ umělé inteligence": "Strojové učení (machine learning)\nZpracování přirozeného jazyka (NLP)\nPrediktivní analýzy\nGenerativní AI\nLLM\n",
     "Hlavní kategorie use case": "Monitoring, bezpečnost a dohled",
@@ -323,7 +323,7 @@
   },
   {
     "id": 17,
-    "Garant": "Vojtěch Duraj",
+    "Autor": "Vojtěch Duraj",
     "Název projektu": "CYBERTHREATS",
     "Typ umělé inteligence": "Strojové učení\nHluboké učení (Deep Learning)\nSymbolická AI (GOFAI)\nAutomatizace (RPA)",
     "Hlavní kategorie use case": "Monitoring, bezpečnost a dohled",
@@ -343,7 +343,7 @@
   },
   {
     "id": 18,
-    "Garant": "Viktor Švec",
+    "Autor": "Viktor Švec",
     "Název projektu": "Digitalizace správy dokumentů a využívání umělé inteligence",
     "Typ umělé inteligence": "Zpracování přirozeného jazyka (NLP)\nAutomatizace rozhodování (RPA)\nStrojové učení (Machine Learning)",
     "Hlavní kategorie use case": "Optimalizace úředních procesů",
@@ -363,7 +363,7 @@
   },
   {
     "id": 19,
-    "Garant": "Martin Bahenský",
+    "Autor": "Martin Bahenský",
     "Název projektu": "AI aplikace pro správu interních řídicích dokumentů VS",
     "Typ umělé inteligence": "LLM\nZpracování přirozeného jazyka (NLP)\nGenerativní AI",
     "Hlavní kategorie use case": "Optimalizace úředních procesů",
@@ -383,7 +383,7 @@
   },
   {
     "id": 20,
-    "Garant": "Vojtěch Duraj",
+    "Autor": "Vojtěch Duraj",
     "Název projektu": "AI VISOR",
     "Typ umělé inteligence": "Počítačové vidění (Computer Vision)\nAutomatizace (RPA)\nZpracování přirozeného jazyka (NLP)\nSymbolická AI (GOFAI)",
     "Hlavní kategorie use case": "Optimalizace úředních procesů",
@@ -403,7 +403,7 @@
   },
   {
     "id": 21,
-    "Garant": "Vojtěch Duraj",
+    "Autor": "Vojtěch Duraj",
     "Název projektu": "ePokuty",
     "Typ umělé inteligence": "Strojové učení (Machine Learning)\nPrediktivní analýzy\nAutomatizace (RPA)",
     "Hlavní kategorie use case": "Optimalizace úředních procesů",
@@ -423,7 +423,7 @@
   },
   {
     "id": 22,
-    "Garant": "Amálka Počarovská",
+    "Autor": "Amálka Počarovská",
     "Název projektu": "Tísňové volání",
     "Typ umělé inteligence": "Strojové učení (Machine Learning)\nRozpoznávání řeči\nZpracování přirozeného jazyka (NLP)\nPrediktivní analýzy",
     "Hlavní kategorie use case": "Predikce a automatizované rozhodování",
@@ -443,7 +443,7 @@
   },
   {
     "id": 23,
-    "Garant": "Vojtěch Duraj",
+    "Autor": "Vojtěch Duraj",
     "Název projektu": "Využití AI při prognózování inflace v ČNB",
     "Typ umělé inteligence": "Generativní AI\nLLM\nStrojové učení (Machine Learning)\nPrediktivní analýzy",
     "Hlavní kategorie use case": "Predikce a automatizované rozhodování",
@@ -463,7 +463,7 @@
   },
   {
     "id": 24,
-    "Garant": "Vojtěch Duraj",
+    "Autor": "Vojtěch Duraj",
     "Název projektu": "MAS",
     "Typ umělé inteligence": "Strojové učení (Machine Learning)\nAutomatizace (RPA)\nPočítačové vidění (Computer Vision)",
     "Hlavní kategorie use case": "Predikce a automatizované rozhodování",
@@ -483,7 +483,7 @@
   },
   {
     "id": 25,
-    "Garant": "Klára Mrázková",
+    "Autor": "Klára Mrázková",
     "Název projektu": "Chytré křižovatky",
     "Typ umělé inteligence": "Strojové učení\nComputer vision\nEdge computing",
     "Hlavní kategorie use case": "Predikce a automatizované rozhodování",
@@ -503,7 +503,7 @@
   },
   {
   "id": 26,
-  "Garant": "Vojtěch Duraj",
+  "Autor": "Vojtěch Duraj",
   "Název projektu": "ChatGPT v centrální bance",
   "Typ umělé inteligence": "Generativní AI (Velký jazykový model GPT-4o)\nAutomatizace znalostní práce\nHluboké učení (Deep Learning)",
   "Hlavní kategorie use case": "Optimalizace úředních procesů",
@@ -523,7 +523,7 @@
 },
   {
   "id": 27,
-  "Garant": "Kateřina Vrbová",
+  "Autor": "Kateřina Vrbová",
   "Název projektu": "Chatbot pro územní plánování",
   "Typ umělé inteligence": "LLM",
   "Hlavní kategorie use case": "Komunikace a klientský servis",
@@ -544,7 +544,7 @@
 
   {
   "id": 28,
-  "Garant": "Martin Kukla",
+  "Autor": "Martin Kukla",
   "Název projektu": "PID Halo",
   "Typ umělé inteligence": "Voicebot\nChatbot\nReal-time plánovací algoritmy na cloudovém základu",
   "Hlavní kategorie use case": "Komunikace a klientský servis",
@@ -564,7 +564,7 @@
 },
 {
   "id": 29,
-  "Garant": "Martin Kukla",
+  "Autor": "Martin Kukla",
   "Název projektu": "DIGI Havel",
   "Typ umělé inteligence": "LLM (Jazykový Model)\nEdukativní databáze\nHlas\nAnimace\nModerace",
   "Hlavní kategorie use case": "Generování obsahu a chatboti úředníků",
@@ -584,7 +584,7 @@
 },
 {
   "id": 30,
-  "Garant": "Martin Kukla",
+  "Autor": "Martin Kukla",
   "Název projektu": "AI See",
   "Typ umělé inteligence": "Semi-automatizované a weakly supervised učení\nProstorovo-časové relace\nIndexovaná vyhledávání",
   "Hlavní kategorie use case": "Analýza audiovizuálních dat",
@@ -604,7 +604,7 @@
 },
 {
   "id": 31,
-  "Garant": "Martina Bártů",
+  "Autor": "Martina Bártů",
   "Název projektu": "Nástroje proti hlasovým deepfakes",
   "Typ umělé inteligence": "Strojové učení\nGenerativní AI\nPosílení stávajících systémů pro rozpoznávání řečníka\nDetekce umělého nebo upraveného hlasu",
   "Hlavní kategorie use case": "Analýza audiovizuálních dat",
@@ -624,7 +624,7 @@
 },
 {
   "id": 32,
-  "Garant": "Martina Bártů",
+  "Autor": "Martina Bártů",
   "Název projektu": "Eagle.one",
   "Typ umělé inteligence": "Strojové učení\nComputer Vision",
   "Hlavní kategorie use case": "Monitoring, bezpečnost a dohled",
@@ -644,7 +644,7 @@
 },
 {
   "id": 33,
-  "Garant": "Martina Bártů",
+  "Autor": "Martina Bártů",
   "Název projektu": "CZDEMOS4AI",
   "Typ umělé inteligence": "LLM\nGenerativní AI",
   "Hlavní kategorie use case": "Generování obsahu a chatboti úředníků",
@@ -664,7 +664,7 @@
 },
 {
   "id": 34,
-  "Garant": "Michal Kozubek",
+  "Autor": "Michal Kozubek",
   "Název projektu": "GeoAI",
   "Typ umělé inteligence": "Strojové učení\nDeep learning\nComputer vision, analýza geoprostorových dat",
   "Hlavní kategorie use case": "Predikce a automatizované rozhodování",
@@ -684,7 +684,7 @@
 },
 {
   "id": 35,
-  "Garant": "Michal Kozubek",
+  "Autor": "Michal Kozubek",
   "Název projektu": "AI National Skilling Plan",
   "Typ umělé inteligence": "Základy AI",
   "Hlavní kategorie use case": "Optimalizace úředních procesů",
@@ -704,7 +704,7 @@
 },
 {
   "id": 36,
-  "Garant": "Michal Kozubek",
+  "Autor": "Michal Kozubek",
   "Název projektu": "Monitoring klimatických změn a stavu ekosystémů pomocí AI",
   "Typ umělé inteligence": "Strojové učení\nDeep learning\nAnalýza časových řad",
   "Hlavní kategorie use case": "Monitoring, bezpečnost a dohled",
@@ -724,7 +724,7 @@
 },
 {
   "id": 37,
-  "Garant": "Viktor Švec",
+  "Autor": "Viktor Švec",
   "Název projektu": "Anakonda",
   "Typ umělé inteligence": "Strojové učení\nDeep learning\nAnalýza časových řad",
   "Hlavní kategorie use case": "Optimalizace úředních procesů",
@@ -744,7 +744,7 @@
 },
 {
   "id": 38,
-  "Garant": "Vojtěch Duraj",
+  "Autor": "Vojtěch Duraj",
   "Název projektu": "Detekce a analýza poškození vozovek pomocí AI",
   "Typ umělé inteligence": "Počítačové vidění (Computer Vision)\nHluboké učení (Deep Learning)\nKonvoluční neuronové sítě (CNN)",
   "Hlavní kategorie use case": "Predikce a automatizované rozhodování",
@@ -764,7 +764,7 @@
 },
 {
   "id": 39,
-  "Garant": "Vojtěch Duraj",
+  "Autor": "Vojtěch Duraj",
   "Název projektu": "Podpora životního cyklu veřejných zakázek pomocí AI",
   "Typ umělé inteligence": "Zpracování přirozeného jazyka (NLP)\nVelké jazykové modely (LLM)\nGenerativní AI, Strojové učení",
   "Hlavní kategorie use case": "Analýza audiovizuálních dat",
@@ -784,7 +784,7 @@
 },
 {
   "id": 40,
-  "Garant": "Vojtěch Duraj",
+  "Autor": "Vojtěch Duraj",
   "Název projektu": "Znalostní báze a AI asistent pro interní ICT systémy",
   "Typ umělé inteligence": "Zpracování přirozeného jazyka (NLP)\nVelké jazykové modely (LLM)\nGenerativní AI",
   "Hlavní kategorie use case": "Komunikace a klientský servis",
