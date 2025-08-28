@@ -269,7 +269,7 @@ async function initCatalog() {
       const btn = document.createElement('button');
       btn.className = 'category-toggle';
       btn.setAttribute('aria-expanded', 'false');
-      btn.innerHTML = `${catTitle}<span class="arrow">▶</span>`;
+      btn.innerHTML = `${catTitle}<span class="arrow" aria-hidden="true">▶</span>`;
       li.appendChild(btn);
 
       const subUl = document.createElement('ul');
