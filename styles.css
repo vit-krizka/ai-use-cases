@@ -100,6 +100,11 @@ main a:active {
   line-height: 1;
 }
 
+.popup .popup-close:focus {
+  outline: 2px solid #fff;
+  outline-offset: 2px;
+}
+
 /* Hypertextový odkaz uvnitř informačního popupu */
 .popup .popup-content a {
     color: white;                 /* barva textu */
@@ -133,6 +138,11 @@ main a:active {
   transition: background 0.3s;
   text-decoration: none;
   z-index: 1100;   /* nad pop-up */
+}
+
+.download-btn:focus {
+  outline: 2px solid var(--primary);
+  outline-offset: 2px;
 }
 
 .download-btn:hover {
@@ -187,6 +197,11 @@ main a:active {
     width: 28px;
     height: 28px;
     stroke: #2E2D2C;
+}
+
+.hamburger:focus {
+    outline: 2px solid var(--primary);
+    outline-offset: 2px;
 }
 /* ===== Footer ===== */
 footer {
@@ -784,6 +799,11 @@ margin: 0;
     font-size: 1.5rem;
     cursor: pointer;
     color: #000;
+}
+
+.category-popup .popup-close:focus {
+    outline: 2px solid var(--primary);
+    outline-offset: 2px;
 }
 
 .category-popup h3 {
