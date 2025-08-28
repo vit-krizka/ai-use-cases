@@ -653,6 +653,16 @@ margin: 0;
     }
 
     /* Topbar chování */
+    .topbar {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start; /* logo vlevo, text vedle */
+        padding: 0 1rem;
+        width: 100%;
+        box-sizing: border-box;
+        overflow: hidden; /* zabrání horizontálnímu scrollu */
+    }
+    
     .hamburger {
         display: block !important;
         background: none;
@@ -679,21 +689,11 @@ margin: 0;
 
     /* odsazení pod h1 v topbaru */
     .topbar h1 {
-        display: flex;
-        align-items: center;
-        gap: 8px; /* vzdálenost mezi ikonou a textem nadpisu */
-        /* margin-bottom: 0.5em; */
-    }
-
-    .topbar h1::after {
-        content: ":";
-        margin-left: 4px;
-        margin-right: 12px; /* odsazení za dvojtečkou */
-    }
-
-    .topbar p {
-        margin-left: calc( var(--icon-width, 24px) + 20px );
-        /* odsazení textu o šířku ikony + mezery, uprav podle potřeby */
+        flex-grow: 1; /* text zabere zbytek dostupného prostoru */
+        font-size: 1rem; /* uprav velikost pro mobil */
+        margin: 0 0 0 0.5rem; /* malý odstup od loga */
+        white-space: normal; /* umožní zalomení textu na více řádků */
+        word-break: break-word; /* zalomí dlouhé slova */
     }
 
     /* Ikony */
