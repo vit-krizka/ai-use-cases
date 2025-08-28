@@ -477,7 +477,7 @@ h3 {
   background-color: #f9f9f9; /* zachování podbarvení */
 }
 
-.table-meta td {
+.table-meta td, .table-meta th {
   border: none;          /* žádné rámečky */
   padding: 0.3em 0.5em;  /* mezera uvnitř buněk */
   vertical-align: top;   /* aby text s ikonou byl nahoře */
@@ -493,7 +493,8 @@ h3 {
   padding: 1rem;
 }
 
-.table-meta.card td b {
+.table-meta.card th {
+  text-align: left;
   font-size: 0.95rem;
   color: var(--primary);
 }

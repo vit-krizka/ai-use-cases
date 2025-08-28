@@ -107,7 +107,6 @@ function createUseCaseSection(uc, showAuthor, categoryDescriptions) {
   if (showAuthor && uc['Autor']) title += ` <span style="color: gray; font-weight: normal;">(${uc['Autor']})</span>`;
 
   let html = `<h2>${title}</h2><table class="table-meta card">
-    <caption>Informace o projektu</caption>
     <tbody>
       <tr><td><img src="icons/buildings.svg" alt="Instituce" class="table-icon" width="16" height="16"></td><th scope="row">Instituce</th><td>${uc['Instituce'] || '-'}</td></tr>
       <tr><td><img src="icons/contact-plus.svg" alt="Dodavatel" class="table-icon" width="16" height="16"></td><th scope="row">Dodavatel</th><td>${uc['Dodavatel'] || '-'}</td></tr>
