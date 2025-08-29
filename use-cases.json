@@ -753,12 +753,12 @@
   "Instituce": "Zákazník: VARS BRNO; Koncoví uživatelé: Ředitelství silnic a dálnic ČR (ŘSD), krajské správy a údržby silnic.",
   "Dodavatel": "Aricoma Systems",
   "Stav projektu": "Nápad / záměr",
-  "Očekávané dopady": "Optimalizace údržby: Automatizované vyhodnocení a doporučení úseků silnic, které potřebují naléhavou údržbu\nNákladová efektivita: Snížení nákladů spojených s lidskou inspekcí a analýzou\nZlepšení bezpečnosti: Rychlá a včasná detekce problematických míst vede ke zvýšení bezpečnosti provozu",
-  "Vyhodnocení úspěšnosti": "Je v provozu a už přináší konkrétní výsledky: posuzování žádostí je zkráceno o cca 2 hodiny, což vede k ročním úsporám v tisících hodin. Detekce metodických odchylek zvyšuje kvalitu kontrol. Cíle jsou viditelně plněny a projekt pokračuje dále.",
-  "Poučení pro příští projekty": "Důvěra a kompetence uživatelů je klíčová -  investice do interní vzdělávací AI Akademie přinesla úspěch.Bezpečnost a regulace  - AI nástroje musí splňovat kybernetickou bezpečnost, GDPR a interní směrnice.Nástroj, ne náhrada - AI by neměla rozhodovat, ale asistovat; lidský dozor zůstává zásadní.Interní know-how poskytuje větší flexibilitu a bezpečnost než externí dodavatelé.",
+  "Očekávané dopady": "Optimalizace údržby: Automatizované vyhodnocení a doporučení úseků silnic, které potřebují naléhavou údržbu\nNákladová efektivita: Snížení nákladů spojených s lidskou inspekcí a analýzou\nZlepšení bezpečnosti: Rychlá a včasná detekce problematických míst vede ke zvýšení bezpečnosti provozu",
+  "Vyhodnocení úspěšnosti": "Je v provozu a už přináší konkrétní výsledky: posuzování žádostí je zkráceno o cca 2 hodiny, což vede k ročním úsporám v tisících hodin. Detekce metodických odchylek zvyšuje kvalitu kontrol. Cíle jsou viditelně plněny a projekt pokračuje dále.",
+  "Poučení pro příští projekty": "Důvěra a kompetence uživatelů je klíčová – investice do interní vzdělávací AI Akademie přinesla úspěch. Bezpečnost a regulace – AI nástroje musí splňovat kybernetickou bezpečnost, GDPR a interní směrnice.Nástroj, ne náhrada – AI by neměla rozhodovat, ale asistovat; lidský dozor zůstává zásadní. Interní know-how poskytuje větší flexibilitu a bezpečnost než externí dodavatelé.",
   "Zdroj": null,
   "Označení zdroje": null,
-  "Informace o zdroji a kontaktní osoba": "-",
+  "Informace o zdroji a kontaktní osoba": null,
   "Obor činnosti": "Životní prostředí a zemědělství",
   "Kategorie use case": "Monitoring, bezpečnost a dohled; Predikce a automatizované rozhodování"
 },
@@ -768,19 +768,19 @@
   "Název projektu": "Podpora životního cyklu veřejných zakázek pomocí AI",
   "Typ umělé inteligence": "Zpracování přirozeného jazyka (NLP)\nVelké jazykové modely (LLM)\nGenerativní AI, Strojové učení",
   "Hlavní kategorie use case": "Analýza audiovizuálních dat",
-  "Krátký popis": "Projekt si klade za cíl plně podpořit životní cyklus veřejné zakázky od jejího záměru až po kontrolu plnění. Účelem je zefektivnit, zrychlit a zvýšit transparentnost celého procesu. Systém interaktivně pomáhá úředníkům sestavit bezchybnou zadávací dokumentaci, následně podporuje hodnotící komisi při automatizované kontrole a srovnání nabídek. V poslední fázi funguje jako neustálý interní auditor, který monitoruje data v registru smluv a proaktivně upozorňuje na rizika, nesrovnalosti nebo končící platnosti smluv",
-  "Řešený problém": "Proces zadávání veřejných zakázek je administrativně velmi náročný, svázaný složitou legislativou a náchylný k formálním i věcným chybám.  To vede k rizikům zrušení řízení, průtahům a neefektivnímu vynakládání veřejných prostředků. Manuální kontrola a audit smluv jsou pouze namátkové. AI systém tento problém adresuje automatizací rutinních a kontrolních činností, čímž snižuje chybovost, uvolňuje kapacity zaměstnanců pro odbornou práci a umožňuje trvalý dohled nad všemi zakázkami.",
+  "Krátký popis": "Projekt si klade za cíl plně podpořit životní cyklus veřejné zakázky od jejího záměru až po kontrolu plnění. Účelem je zefektivnit, zrychlit a zvýšit transparentnost celého procesu. Systém interaktivně pomáhá úředníkům sestavit bezchybnou zadávací dokumentaci, následně podporuje hodnotící komisi při automatizované kontrole a srovnání nabídek. V poslední fázi funguje jako neustálý interní auditor, který monitoruje data v registru smluv a proaktivně upozorňuje na rizika, nesrovnalosti nebo končící platnosti smluv",
+  "Řešený problém": "Proces zadávání veřejných zakázek je administrativně velmi náročný, svázaný složitou legislativou a náchylný k formálním i věcným chybám. To vede k rizikům zrušení řízení, průtahům a neefektivnímu vynakládání veřejných prostředků. Manuální kontrola a audit smluv jsou pouze namátkové. AI systém tento problém adresuje automatizací rutinních a kontrolních činností, čímž snižuje chybovost, uvolňuje kapacity zaměstnanců pro odbornou práci a umožňuje trvalý dohled nad všemi zakázkami.",
   "Instituce": null,
   "Dodavatel": "Aricoma Systems",
   "Stav projektu": "Pilot / PoC (Interní)",
-  "Očekávané dopady": "Zkrácení času potřebného na přípravu zadávací dokumentace\nSnížení počtu formálních chyb v nabídkách i v postupu zadavatele\nZvýšení objektivity a transparentnosti při hodnocení nabídek\nProaktivní identifikace rizik (podezření na dělení zakázek, nevýhodné smluvní klauzule)",
-  "Vyhodnocení úspěšnosti": "Úspěšnost PoC je hodnocována metrikami jako: průměrná doba přípravy zadávacího řízení, počet zrušených řízení z důvodu pochybení zadavatele, počet odhalených rizik automatickým auditorem za kvartál a kvalitativní hodnocení přínosu systému ze strany zaměstnanců",
-  "Poučení pro příští projekty": "AI je podpůrný nástroj - finální odpovědnost za zákonnost postupu nese zadavatel. Nutnost neustálé aktualizace systému v souladu se změnami legislativy a rozhodovací praxe. Zajištění vysoké úrovně kybernetické a datové bezpečnosti, zejména u neveřejných částí nabídek.",
+  "Očekávané dopady": "Zkrácení času potřebného na přípravu zadávací dokumentace\nSnížení počtu formálních chyb v nabídkách i v postupu zadavatele\nZvýšení objektivity a transparentnosti při hodnocení nabídek\nProaktivní identifikace rizik (podezření na dělení zakázek, nevýhodné smluvní klauzule)",
+  "Vyhodnocení úspěšnosti": "Úspěšnost PoC je hodnocována metrikami jako: průměrná doba přípravy zadávacího řízení, počet zrušených řízení z důvodu pochybení zadavatele, počet odhalených rizik automatickým auditorem za kvartál a kvalitativní hodnocení přínosu systému ze strany zaměstnanců",
+  "Poučení pro příští projekty": "AI je podpůrný nástroj – finální odpovědnost za zákonnost postupu nese zadavatel. Nutnost neustálé aktualizace systému v souladu se změnami legislativy a rozhodovací praxe. Zajištění vysoké úrovně kybernetické a datové bezpečnosti, zejména u neveřejných částí nabídek.",
   "Zdroj": null,
   "Označení zdroje": null,
   "Informace o zdroji a kontaktní osoba": null,
   "Obor činnosti": "Veřejné zakázky a hospodářská soutěž",
-  "Kategorie use case": "Monitoring, bezpečnost a dohled; Analýza dokumentů a dat Generování obsahu;Optimalizace procesůa zdrojů; Predikce a rozhodovací podpora"
+  "Kategorie use case": "Monitoring, bezpečnost a dohled; Analýza dokumentů a dat Generování obsahu; Optimalizace procesůa zdrojů; Predikce a rozhodovací podpora"
 },
 {
   "id": 40,
@@ -788,21 +788,18 @@
   "Název projektu": "Znalostní báze a AI asistent pro interní ICT systémy",
   "Typ umělé inteligence": "Zpracování přirozeného jazyka (NLP)\nVelké jazykové modely (LLM)\nGenerativní AI",
   "Hlavní kategorie use case": "Komunikace a klientský servis",
-  "Krátký popis": "Projekt se zaměřuje na vytvoření centrální, (živé) znalostní báze pro veškeré interní softwarové nástroje, aplikace a agendové systémy úřadu. Tato báze je zpřístupněna zaměstnancům prostřednictvím inteligentního AI asistenta, který plní dvě hlavní role: jako chatbot 24/7 odpovídá v přirozeném jazyce na dotazy uživatelů i administrátorů a jako interaktivní tutor generuje návody a tutoriály pro efektivní zaškolení a onboarding.",
-  "Řešený problém": "Zaměstnanci ve veřejné správě pracují s řadou složitých ICT systémů, jejichž dokumentace je často roztříštěná, ne vždy aktuální nebo těžko dostupná. To vede k neefektivitě, častým dotazům na IT oddělení a zdlouhavému zaškolování nových kolegů. AI asistent tento problém řeší centralizací veškerých znalostí a jejich okamžitým zpřístupněním v interaktivní a srozumitelné formě, čímž snižuje zátěž IT podpory a zvyšuje digitální gramotnost zaměstnanců.",
+  "Krátký popis": "Projekt se zaměřuje na vytvoření centrální, (živé) znalostní báze pro veškeré interní softwarové nástroje, aplikace a agendové systémy úřadu. Tato báze je zpřístupněna zaměstnancům prostřednictvím inteligentního AI asistenta, který plní dvě hlavní role: jako chatbot 24/7 odpovídá v přirozeném jazyce na dotazy uživatelů i administrátorů a jako interaktivní tutor generuje návody a tutoriály pro efektivní zaškolení a onboarding.",
+  "Řešený problém": "Zaměstnanci ve veřejné správě pracují s řadou složitých ICT systémů, jejichž dokumentace je často roztříštěná, ne vždy aktuální nebo těžko dostupná. To vede k neefektivitě, častým dotazům na IT oddělení a zdlouhavému zaškolování nových kolegů. AI asistent tento problém řeší centralizací veškerých znalostí a jejich okamžitým zpřístupněním v interaktivní a srozumitelné formě, čímž snižuje zátěž IT podpory a zvyšuje digitální gramotnost zaměstnanců.",
   "Instituce": null,
   "Dodavatel": "Aricoma Systems",
   "Stav projektu": "Nápad / záměr",
-  "Očekávané dopady": "Snížení počtu rutinních dotazů a ticketů na IT helpdesk (odhad o 30-50%)\nZrychlení řešení problémů a hledání informací pro zaměstnance\nZefektivnění a zkrácení doby pro zaškolení nových zaměstnanců\nZajištění konzistentní a vždy aktuální dokumentace k interním systémům",
-  "Vyhodnocení úspěšnosti": "Úspěšnost by byla měřena poměrem dotazů vyřešených chatbotem vůči dotazům eskalovaným na lidskou podporu, průměrným časem potřebným k nalezení řešení uživatelem a prostřednictvím pravidelných průzkumů spokojenosti zaměstnanců s kvalitou a dostupností IT podpory.",
+  "Očekávané dopady": "Snížení počtu rutinních dotazů a ticketů na IT helpdesk (odhad o 30–50 %)\nZrychlení řešení problémů a hledání informací pro zaměstnance\nZefektivnění a zkrácení doby pro zaškolení nových zaměstnanců\nZajištění konzistentní a vždy aktuální dokumentace k interním systémům",
+  "Vyhodnocení úspěšnosti": "Úspěšnost by byla měřena poměrem dotazů vyřešených chatbotem vůči dotazům eskalovaným na lidskou podporu, průměrným časem potřebným k nalezení řešení uživatelem a prostřednictvím pravidelných průzkumů spokojenosti zaměstnanců s kvalitou a dostupností IT podpory.",
   "Poučení pro příští projekty": "Kvalita AI asistenta je přímo závislá na kvalitě a aktuálnosti podkladové znalostní báze. Musí být zaveden proces pro neustálou aktualizaci dokumentace při každé změně systémů. Systém musí umožňovat snadnou eskalaci problému na živého pracovníka IT podpory, pokud si AI neví rady. Doporučuje se pilotní nasazení na jeden či dva klíčové systémy před celoplošným rozšířením.",
   "Zdroj": null,
   "Označení zdroje": null,
   "Informace o zdroji a kontaktní osoba": null,
   "Obor činnosti": "Jiné: Interní IT podpora a správa znalostí",
-  "Kategorie use case": "Komunikace a klientský servis; Analýza dokumentů a dat;Generování obsahu;Optimalizace procesůa zdrojů"
+  "Kategorie use case": "Komunikace a klientský servis; Analýza dokumentů a dat; Generování obsahu;Optimalizace procesů a zdrojů"
 }
-
-
-
 ]
