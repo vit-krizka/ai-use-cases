@@ -277,7 +277,10 @@ async function initCatalog() {
     const showSection = id => {
       sections.forEach(s => s.classList.remove('active'));
       const target = document.getElementById(id);
-      if (target) target.classList.add('active');
+      if (target) {
+          target.classList.add('active');
+          target.scrollIntoView();
+      }
     };
 
     const initialId = window.location.hash ? window.location.hash.substring(1) : sections[0]?.id;
