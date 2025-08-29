@@ -449,6 +449,7 @@ main {
 }
 
 section {
+    scroll-margin-top: 80px;
     display: none;
     /* show only selected */
 }
