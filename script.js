@@ -1,40 +1,5 @@
 'use strict';
 
-// NEW – obsah vložené poznámky pod odkaz „Katalog use-cases“
-const NOTE_HTML = `
-  <strong>Tip:</strong> Zde může být krátká poznámka k&nbsp;katalogu use-cases
-  (metodika, kontakt, odkaz na formulář apod.). Přizpůsob tento text podle potřeby.
-`;
-
-// NEW – funkce, která blok vloží a styluje
-function insertUsecasesNote() {
-  if (document.getElementById('usecases-note')) return;
-
-  const target = Array.from(document.querySelectorAll('a,button')).find(el => {
-    const text = (el.textContent || '').trim().toLowerCase();
-    const href = (el.getAttribute('href') || '').toLowerCase();
-    return text === 'katalog use-cases' ||
-           (text.includes('katalog') && text.includes('use')) ||
-           href.includes('project.html');
-  });
-  if (!target) return;
-
-  const wrapper = document.createElement('div');
-  wrapper.id = 'usecases-note';
-  wrapper.innerHTML = `<p class="usecases-note__text">${NOTE_HTML}</p>`;
-  target.insertAdjacentElement('afterend', wrapper);
-
-  if (!document.getElementById('usecases-note-style')) {
-    const style = document.createElement('style');
-    style.id = 'usecases-note-style';
-    style.textContent = `
-      #usecases-note {max-width:600px; margin:1em 0;}
-      #usecases-note .usecases-note__text {margin:0;}
-    `;
-    document.head.appendChild(style);
-  }
-}
-
 /** ======================
  *  Společné prvky stránek
  *  ====================== */
@@ -90,7 +55,7 @@ function initCommon() {
  *  ====================== */
 function initInfoBanner() {
   const POPUP_ID = 'ai-tip-popup';
-  the SHOW_DELAY_MS = 3000;
+  const SHOW_DELAY_MS = 3000;
   const RESHOW_AFTER_CLOSE_MS = 180000;
   const KEY_LAST_DISMISS = 'aiTipPopup:lastDismiss';
   const el = document.getElementById(POPUP_ID);
@@ -166,6 +131,7 @@ function createUseCaseSection(uc, showAuthor, categoryDescriptions) {
     <dt>Poučení pro příští projekty</dt><dd>${uc['Poučení pro příští projekty'] || '—'}</dd>
   </dl>`;
 
+  // Zdroje
   const docLink = (() => {
     if (!uc['Zdroj']) return '—';
     const urls = Array.isArray(uc['Zdroj']) ? uc['Zdroj'] : uc['Zdroj'].split(/[\n,]+/).map(s => s.trim()).filter(Boolean);
@@ -180,7 +146,7 @@ function createUseCaseSection(uc, showAuthor, categoryDescriptions) {
   if (showAuthor) {
     const contactInfo = uc['Informace o zdroji a kontaktní osoba']
       ? (() => {
-          const parts = uc['Informace o zdroji a kontaktní osoba'].split('\n').map(s => s.trim()).filter(Boolean);
+          const parts = uc['Informace o zdroji a kontaktní osoba'].split('\\n').map(s => s.trim()).filter(Boolean);
           if (!parts.length) return '-';
           const linkPart = parts.pop();
           const textPart = parts.join('<br />');
@@ -221,6 +187,7 @@ async function initCatalog() {
     const categoryMap = new Map(categories.map(c => [c.title, []]));
     const others = [];
 
+    // Render sekcí
     useCases.forEach(uc => {
       const { section, category, idStr, title, sectionId } = createUseCaseSection(uc, showAuthor, categoryDescriptions);
       main.appendChild(section);
@@ -228,22 +195,26 @@ async function initCatalog() {
       else others.push({ idStr, sectionId, title });
     });
 
+    // --- Kód pro popup kategorií ---
     const categoryPopup = document.getElementById('category-popup');
     if (categoryPopup) {
       const popupTitle = categoryPopup.querySelector('h3');
       const popupText = categoryPopup.querySelector('p');
       const popupClose = categoryPopup.querySelector('.popup-close');
 
+      // zavření křížkem
       popupClose.addEventListener('click', () => {
         categoryPopup.setAttribute('aria-hidden', 'true');
       });
 
+      // zavření kliknutím mimo obsah
       categoryPopup.addEventListener('click', (e) => {
         if (e.target === categoryPopup) {
           categoryPopup.setAttribute('aria-hidden', 'true');
         }
       });
 
+      // otevření popupu po kliknutí na kategorii
       const categoryLinks = document.querySelectorAll('.category-link');
       categoryLinks.forEach(link => {
         link.addEventListener('click', e => {
@@ -256,6 +227,7 @@ async function initCatalog() {
       });
     }
 
+    // Vytvoření navigace
     const buildCategoryNav = (catTitle, items) => {
       const li = document.createElement('li');
       const btn = document.createElement('button');
@@ -287,6 +259,7 @@ async function initCatalog() {
     categories.forEach(cat => navList.appendChild(buildCategoryNav(cat.title, categoryMap.get(cat.title))));
     if (others.length) navList.appendChild(buildCategoryNav('Ostatní', others));
 
+    // Aktivace sekce dle hash
     const navLinks = sidebar.querySelectorAll('nav a');
     const sections = document.querySelectorAll('main section');
 
@@ -296,8 +269,8 @@ async function initCatalog() {
 
       const sublist = link.closest('ul.subcategory');
       if (sublist) {
-        const toggle = sublist.previousElementSibling;
-        if (toggle?.classList.contains('category-toggle')) toggle.setAttribute('aria-expanded', 'true');
+          const toggle = sublist.previousElementSibling;
+          if (toggle?.classList.contains('category-toggle')) toggle.setAttribute('aria-expanded', 'true');
       }
     };
 
@@ -305,8 +278,8 @@ async function initCatalog() {
       sections.forEach(s => s.classList.remove('active'));
       const target = document.getElementById(id);
       if (target) {
-        target.classList.add('active');
-        target.scrollIntoView();
+          target.classList.add('active');
+          target.scrollIntoView();
       }
     };
 
@@ -338,18 +311,13 @@ document.addEventListener('DOMContentLoaded', () => {
   initCommon();
   initCatalog();
   initInfoBanner();
-  insertUsecasesNote();                                   // NEW – první vložení
-  new MutationObserver(insertUsecasesNote).observe(       // NEW – znovuvložení po přerenderování
-    document.body,
-    { childList: true, subtree: true }
-  );
 });
 
 window.addEventListener('hashchange', function () {
-  const initialId = window.location.hash ? window.location.hash.substring(1) : sections[0]?.id;
-  const sidebar = document.getElementById('sidebar');
-  const initialLink = sidebar.querySelector(`a[href='#${initialId}']`);
-  if (initialLink) {
-    initialLink.click();
-  }
+    const initialId = window.location.hash ? window.location.hash.substring(1) : sections[0]?.id;
+    const sidebar = document.getElementById('sidebar');
+    const initialLink = sidebar.querySelector(`a[href='#${initialId}']`);
+    if (initialLink) {
+        initialLink.click();
+    }
 });
