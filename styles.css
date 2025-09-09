@@ -678,13 +678,6 @@ margin: 0;
         grid-template-columns: 1fr;
     }
 
-    /* Banner */
-    .hero-banner {
-        gap: 1rem;
-        padding: 0.5rem 1rem;
-        }
-    }
-
     /* Sidebar chování */
     #sidebar {
         position: fixed;
