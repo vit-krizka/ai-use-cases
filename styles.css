@@ -163,7 +163,6 @@ h2 .download-btn-guard {
     display: inline-block;
     width: 45px;
     height: 45px;
-    float: right;
 }
 
 .download-btn:focus {
@@ -321,7 +320,7 @@ footer h3 {
 
 .footer-project > div {
     display: flex;
-    flex-direction: column
+    flex-direction: column;
     gap: 1ex;
 }
 
