@@ -366,13 +366,14 @@ footer p, footer h3, footer a {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  gap: 2rem;
+  gap: 15rem;                  /* menší mezera mezi textem a obrázkem */
   margin: 2rem auto;
   max-width: 1200px;
-  padding: 1rem;
-  background-color: #F0F0F0; /* podbarvení banneru */
-  border-radius: 16px;       /* zakulacené rohy */
-  overflow: hidden;           /* aby obsah zůstal uvnitř zaoblení */
+  padding: 0.5rem 10rem;       /* méně paddingu nahoře a dole */
+  background-color: #F0F0F0;  /* podbarvení banneru */
+  border-radius: 16px;
+  overflow: hidden;
+  min-height: 100px;          /* zmenšeno z 125px */
 }
 
 .hero-image {
@@ -385,6 +386,7 @@ footer p, footer h3, footer a {
   height: 100%;
   object-fit: cover;
   border-radius: 12px;
+  min-height: 125px;
 }
 
 .hero-text {
@@ -399,6 +401,7 @@ footer p, footer h3, footer a {
 .hero-text p {
   margin-bottom: 1.5rem;
   line-height: 1.6;
+  font-weight: bold;
 }
 
 .btn-primary,
@@ -412,7 +415,6 @@ footer p, footer h3, footer a {
   border-radius: 6px;
   text-decoration: none;
 }
-
 
 /* ===== Sidebar ===== */
 #sidebar {
@@ -674,6 +676,13 @@ margin: 0;
 @media (max-width: 768px) {
     body {
         grid-template-columns: 1fr;
+    }
+
+    /* Banner */
+    .hero-banner {
+        gap: 1rem;
+        padding: 0.5rem 1rem;
+        }
     }
 
     /* Sidebar chování */
