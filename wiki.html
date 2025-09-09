@@ -117,21 +117,61 @@
     <div class="content">
     <main id="main">
         <section class="active">
-            <h2>Prohlášení o přístupnosti</h2>
-            <p>Webové stránky <strong>egovai.dia.gov.cz</strong> byla navržena s ohledem na co možná nejvyšší uživatelský komfort, přehlednost a přístupnost. Digitální a informační agentura se zavazuje k zpřístupnění své internetové stránky v souladu se Zákonem č. 99/2019 Sb., o přístupnosti internetových stránek a mobilních aplikací a o změně Zákona č. 365/2000 Sb., o informačních systémech veřejné správy a o změně některých dalších zákonů, ve znění pozdějších předpisů, který provádí Směrnici Evropského parlamentu a Rady (EU) 2016/2102 ze dne 26. října 2016 o přístupnosti internetových stránek a mobilních aplikací.</p>
-            <p>Toto prohlášení o přístupnosti se vztahuje na internetové stránky <strong>egovai.dia.gov.cz</strong>.</p>
-            <h3>Stav souladu</h3>
-            <p>Tato internetová stránka je plně v souladu se zákonem č. 99/2019 Sb., o přístupnosti internetových stránek a mobilních aplikací a o změně zákona č. 365/2000 Sb., o informačních systémech veřejné správy a o změně některých dalších zákonů, ve znění pozdějších předpisů.</p>
-            <h3>Vypracování tohoto prohlášení o přístupnosti</h3>
-            <p>Prohlášení o přístupnosti bylo vypracováno dne 14. srpna 2025. Pro vypracování tohoto prohlášení byla použita metoda vlastního posouzení.</p>
-            <h3>Zpětná vazba a kontaktní údaje</h3>
-            <p>Stále pracujeme na tom, aby byly tyto stránky přístupné všem uživatelům. Pokud narazíte na jakýkoli problém, dejte nám prosím vědět. Pro sdělení námětů, postřehů či informací o problémech se zobrazováním těchto stránek prosím využijte e-mail <a href="mailto:posta@dia.gov.cz">posta@dia.gov.cz</a>.</p>
-            <h3>Postupy pro prosazování práva</h3>
-            <p>V případě neuspokojivé odpovědi na oznámení nebo žádost zaslanou v souladu s čl. 7 odst. 1 písm. b) směrnice o přístupnosti internetových stránek a mobilních aplikací kontaktujte příslušný orgán pro prosazování práva:</p>
-            <p>Digitální a informační agentura</p>
-            <p>Na Vápence 915/14</p>
-            <p>130 00 Praha 3</p>
-            <p>e-mail: <a href="mailto:pristupnost@dia.gov.cz">pristupnost@dia.gov.cz</a></p>
+            <h2>Co znamená <em>AI use case</em></h2>
+        <p>
+          Use case popisuje konkrétní nasazení umělé inteligence ve veřejném sektoru – tj. kdo je garantem, jaký problém řeší, jaký typ AI je využit a v jakém stavu realizace se projekt nachází. Smyslem katalogu je shromažďovat ověřené příklady použití, aby se z nich dalo vycházet při plánování dalších projektů.
+        </p>
+
+        <h2>Struktura dat o use casu</h2>
+        <p>Každý záznam je uložen v&nbsp;souboru <code>use-cases.json</code> a obsahuje zejména tato pole:</p>
+        <ul>
+          <li>ID – unikátní identifikátor</li>
+          <li>Garant – osoba odpovědná za projekt</li>
+          <li>Název projektu</li>
+          <li>Typ umělé inteligence</li>
+          <li>Hlavní kategorie use case</li>
+          <li>Krátký popis a Řešený problém</li>
+          <li>Instituce a případně <code>Dodavatel</code></li>
+          <li>Stav projektu (např. pilot, produkce)</li>
+          <li>Očekávané dopady, Vyhodnocení úspěšnosti, Poučení pro příští projekty</li>
+          <li>Zdroj, Označení zdroje, Informace o zdroji a kontaktní osoba</li>
+          <li>Obor činnosti, Kategorie use case</li>
+          <li>pomocné pole Sloupec1 (pokud je potřeba další interní údaj)</li>
+        </ul>
+
+        <h2>Kategorizace use cases</h2>
+        <p>
+          Use cases jsou řazeny do tematických skupin, které se zobrazují i na webové stránce katalogu. Seznam kategorií je definován v&nbsp;souboru <code>categories.json</code>.
+        </p>
+        <p>
+          Při generování levého menu se u každého záznamu bere v potaz pole <strong><code>Hlavní kategorie use case</code></strong>. Podle jeho hodnoty se use case přiřadí do odpovídající kategorie v&nbsp;menu. Pokud hodnota <code>Hlavní kategorie use case</code> neodpovídá žádné kategorii uvedené v&nbsp;<code>categories.json</code>, zařadí se use case automaticky do zbytkové kategorie <strong>„Ostatní“</strong>.
+        </p>
+        <p>Aktuální seznam kategorií:</p>
+        <ol>
+          <li>Analýza audiovizuálních dat</li>
+          <li>Generování obsahu a chatboti úředníků</li>
+          <li>Komunikace a klientský servis (chatboti pro veřejnost)</li>
+          <li>Monitoring, bezpečnost a dohled</li>
+          <li>Optimalizace úředních procesů</li>
+          <li>Predikce a automatizované rozhodování</li>
+        </ol>
+
+        <h2>Jaká data o use casu sbíráme</h2>
+        <p>
+          Pro každý projekt je vhodné vyplnit všechny výše uvedené atributy. Kromě základního popisu a stavu realizace se zaměřujeme také na:
+        </p>
+        <ul>
+          <li>konkrétní problém, který AI řeší, a očekávané přínosy,</li>
+          <li>použitou technologii (např. RPA, hluboké učení, LLM),</li>
+          <li>kontaktní osobu a zdroj informací pro ověření,</li>
+          <li>poučení nebo doporučení, která mohou pomoci dalším institucím.</li>
+        </ul>
+        <p>
+          Takto strukturovaná data umožňují jednotné vyhledávání, porovnávání projektů a sdílení zkušeností v rámci veřejné správy.
+        </p>
+      </section>
+    </main>
+  </div>
         </section>
     </main>
     </div>
