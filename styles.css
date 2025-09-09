@@ -371,6 +371,9 @@ footer p, footer h3, footer a {
   margin: 2rem auto;
   max-width: 1200px;
   padding: 1rem;
+  background-color: #F0F0F0; /* podbarvení banneru */
+  border-radius: 16px;       /* zakulacené rohy */
+  overflow: hidden;           /* aby obsah zůstal uvnitř zaoblení */
 }
 
 .hero-image {
@@ -399,20 +402,16 @@ footer p, footer h3, footer a {
   line-height: 1.6;
 }
 
-.btn-primary {
+.btn-primary,
+.btn-primary a {
   display: inline-block;
   padding: 0.75rem 1.5rem;
   font-size: 1rem;
   font-weight: 600;
-  background-color: #0050b3;
-  color: #fff;
+  background-color: #207315 !important; /* zelená */
+  color: #ffffff !important;            /* bílý text */
   border-radius: 6px;
   text-decoration: none;
-  transition: background 0.3s;
-}
-
-.btn-primary:hover {
-  background-color: #003d80;
 }
 
 
