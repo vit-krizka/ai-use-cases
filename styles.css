@@ -366,7 +366,7 @@ footer p, footer h3, footer a {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  gap: 10rem;
+  gap: 0 clamp(107px, 15%, 8em);
   margin: 2rem auto;
   max-width: 1200px;
   background-color: #F0F0F0; /* podbarvení banneru */
@@ -388,6 +388,7 @@ footer p, footer h3, footer a {
 
 .hero-text {
   flex: 1 1 300px;
+  padding: 2rem 0;
 }
 
 .hero-text h2 {
@@ -690,8 +691,11 @@ margin: 0;
 
   .hero-banner {
     background-color: #f0f0f0; /* příklad */
-    gap: 1rem;
     text-align: center;
+  }
+
+  .hero-banner .hero-image img {
+      max-width: 500px;
   }
 
     /* Sidebar chování */
