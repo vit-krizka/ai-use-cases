@@ -87,6 +87,10 @@ main a:active {
   text-decoration: none;
 }
 
+address {
+    font-style: normal;
+}
+
 /* ===== Popup / informační banner ===== */
 .popup {
   position: fixed;
