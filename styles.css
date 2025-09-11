@@ -21,17 +21,10 @@ body {
     background: #f5f5f5;
 }
 
-footer > div, footer > .footer-container, body > main, body#project-page > div.content, body > .topbar > div {
+body > header > div, body > footer > div, body > main > div,
+body#project-page > div.content {
     margin: 0 auto;
-    max-width: 80rem;
-}
-
-.topbar > div {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-    grid-column: 1 / -1;
-    grid-row: 1;
+    max-width: 75rem;
 }
 
 .content {
@@ -188,7 +181,7 @@ h2 .download-btn-guard {
 }
 
 /* ===== Top bar ===== */
-.topbar {
+body > header {
     position: fixed;
     top: 0;
     width: 100%;
@@ -199,16 +192,23 @@ h2 .download-btn-guard {
     z-index: 1000;
 }
 
-.topbar h1 {
+body > header > div {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+body > header h1 {
     margin: 0;
     font-size: 1.1rem;
     font-weight: 600;
 }
 
-.topbar h1 a {
+body > header h1 a {
     text-decoration: none;
     color: inherit;
 }
+
 
 .logo {
     display: flex;
@@ -240,25 +240,46 @@ h2 .download-btn-guard {
     outline: 2px solid var(--primary);
     outline-offset: 2px;
 }
+
 /* ===== Footer ===== */
 footer {
+    font-size: 0.9rem;
+    color: white;
+    background: #2E2D2C;
+}
+
+footer p, footer h3, footer a {
+    color: inherit;
+}
+
+footer a {
+    text-decoration: underline;
+}
+
+footer > div {
     display: flex;
     flex-direction: column;
-    background: #2E2D2C;
-    color: white;
-    padding: 2rem 1rem;
-    font-size: 0.9rem;
-    grid-column: 1 / -1;
-    grid-row: 3;
-    position: relative;
+    gap: 2rem;
+    padding: 2rem 3rem; /* udělat obsah patičky užší */
+    box-sizing: border-box;
 }
 
-footer .footer-block {
+/* řádky patičky */
+footer > div > section,
+footer > div > div {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem 3rem;
+    justify-content: space-around;
+}
+
+/* bloky uvnitř řádku */
+footer > div .footer-block {
     flex: 1;
-    margin: 0 1rem;
+    min-width: 250px;
 }
 
-footer .footer-logo {
+footer .footer-contacts .footer-logo {
     display: flex;
     justify-content: flex-start; /* zarovnání doleva */
     align-items: flex-start;
@@ -266,112 +287,72 @@ footer .footer-logo {
     margin-bottom: 0.5rem;
 }
 
-footer .footer-logo svg,
-footer .footer-logo img {
+footer .footer-contacts .footer-logo svg,
+footer .footer-contacts .footer-logo img {
     width: 120px;   /* šířka loga */
     height: 100%;   /* výška loga */
     object-fit: contain; /* zachování proporcí u obrázků */
 }
 
-footer .footer-logo .logo-text {
+footer .footer-contacts .footer-logo .logo-text {
     display: none;
 }
 
-footer a {
-    color: white;
-    text-decoration: underline;
-}
-
-footer h3 {
-    color: white !important;
-}
-
-.footer-columns {
-    display: flex;
-    gap: 2rem;                    /* mezery mezi bloky */
-    margin: 0 auto;               /* centrování celé sekce */
-    padding: 0 1rem;              /* odsazení od okrajů */
-    flex-wrap: wrap;
-    box-sizing: border-box;       /* zahrnout padding do šířky */
-}
-
-.footer-columns .footer-block {
-    align-items: center;
-    justify-content: center;
-    flex: 1 1 0;                  /* bloky vyplní dostupný prostor */
-    min-width: 200px;             /* aby na mobilu šly pod sebe */
-}
-
-.footer-bottom {
-    border-top: 1px solid #ffffff;
-    text-align: center;
-    margin-top: 1.5rem;
-    padding-top: 1rem;
-    font-size: 0.8rem;
-}
-
-.footer-social {
+footer .footer-contacts .footer-social {
     list-style: none;
     padding: 0;
     margin: 0.5rem 0 0;
     display: flex;
-    gap: 0.5rem;
-    flex-wrap: wrap
-}
-
-.footer-project {
-    display: block;
-    justify-content: center;    /* celé centrované */
-    align-items: flex-start;
-    gap: 4rem;
-    margin-top: 2rem;
-    padding: 0 2rem;
     flex-wrap: wrap;
-    margin-left: auto;
-    margin-right: auto;
+    gap: 0.5rem;
 }
 
-.footer-project > div {
+footer .footer-project {
+    display: block;
+}
+
+footer .footer-project > div {
     display: flex;
-    flex-direction: column;
-    gap: 1ex;
+    gap: 1rem;
+    align-items: center;
+}
+footer .footer-project .logos {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 16px;
 }
 
-.footer-project div:nth-of-type(1) {
+footer .footer-project .footer-block:nth-of-type(1) {
     flex: 1.35;
 }
 
-.footer-project div:nth-of-type(2) {
+footer .footer-project .footer-block:nth-of-type(2) {
     flex: 1;
-    min-width: 20em;
+    @media(min-width: 768px) {
+        min-width: 30em;
+    }
 }
 
-
-/* loga */
-.footer-project .logos {
-    display: flex;
-    gap: 2rem;
-    flex-wrap: wrap;
-    align-items: flex-start;
-    justify-content: center;
-    margin: 0 12px;
-}
-
-.footer-project .logos img {
+footer .footer-project .logos img {
     max-height: 50px;
     object-fit: contain;
 }
 
-.footer-project p {
+footer .footer-project p {
     margin: 0;
 }
 
-.footer-project p+p {
+footer .footer-project p+p {
     margin-top: 1ex;
 }
 
-footer p, footer h3, footer a {
-    color: white;
+footer .footer-bottom p {
+    font-size: 0.8rem;
+    border-top: 1px solid #ffffff;
+    padding-top: 1rem;
 }
 
 /* ===== Banner ===== */
@@ -534,13 +515,13 @@ main {
     background: #f5f5f5;
 }
 
-body#project-page section {
+body#project-page .content section {
     scroll-margin-top: 80px;
     display: none;
     /* show only selected */
 }
 
-body#project-page section.active {
+body#project-page .content section.active {
     display: block;
 }
 
@@ -738,88 +719,44 @@ h3 {
         height: auto;
     }
 
-    /* Main a Footer chování */
-    main {
-        grid-column: 1;
-    }
-
-    footer {
-        grid-column: 1;
-    }
-
-    .footer-container {
-        max-width: 100%; /* roztáhne container přes celou šířku mobilu */
-        padding: 0 1rem; /* zachová odsazení od okrajů */
-        margin: 0 auto;
-        width: 100%;
-        box-sizing: border-box; /* zahrnout padding do šířky */
-    }
-
-    .footer-columns {
-        max-width: 100%;          /* aby se na mobilu roztáhlo na šířku obrazovky */
-        padding: 0 1rem;          /* zachová odsazení od okrajů */
-        justify-content: center;  /* volitelně centrování bloků na mobilu */
-    }
-
-    .footer-project {
-        display: flex;
+    footer .footer-project div {
         flex-direction: column;
-        align-items: center;   /* centrování jednotlivých bloků */
-        gap: 1rem;             /* mezera mezi sloupci */
     }
 
-    .footer-project > div {
-        max-width: 100%;
+    footer .footer-project div.footer-block.logos {
         flex-direction: column;
-        gap: 1rem;
-        align-items: center;
-    }
-    
-    .footer-project .row {
-        justify-content: center;
     }
 
-    .footer-project > div {
-        width: 90%;
-        margin: 0 auto;        /* centrování uvnitř sekce */
-        max-width: 100%;
+    footer .footer-project .logos img {
+        max-width: 120px;
     }
 
-    .footer-project .col-lg-8 {
-        margin-top: 1rem;   /* menší mezera od log k textu */
-    }
-
-    .footer-project .logos {
-        display: flex;
-        flex-direction: column;  /* loga pod sebou */
-        gap: 1rem;               /* menší mezera mezi logy */
-        align-items: flex-start; /* zarovnání vlevo */
-        justify-content: flex-start;
-    }
-
-    .footer-project .logos img {
-        max-width: 120px;        /* pevná šířka loga */
-        width: 100%;             /* loga se vejdou do svého bloku */
-        height: auto;            /* zachování proporcí */
-        object-fit: contain;
-    }
-
-    /* Footer bottom */
-    .footer-bottom {
-        max-width: 1200px;    /* stejná šířka jako footer-columns */
-        margin-left: auto;
-        margin-right: auto;   /* centrování */
-        padding: 0 1rem;      /* odsazení od okrajů */
-        text-align: center;
-    }
-
-    .topbar, .topbar > div {
+    body > header, body > header > div {
         display: flex;
         align-items: center;
         justify-content: flex-start; /* logo vlevo, text vedle */
         width: 100%;
         box-sizing: border-box;
         overflow: hidden; /* zabrání horizontálnímu scrollu */
+    }
+
+    /* zobraz logo a ikony stejně jako na desktopu */
+    body > header .logo {
+        display: flex;  /* nebo inline-flex podle desktopu */
+        align-items: center;
+    }
+
+    .logo svg {
+        margin: 0px;
+    }
+
+    /* odsazení pod h1 v topbaru */
+    body > header h1 {
+        flex-grow: 1; /* text zabere zbytek dostupného prostoru */
+        font-size: 1rem; /* uprav velikost pro mobil */
+        margin: 0 0 0 0.5rem; /* malý odstup od loga */
+        white-space: normal; /* umožní zalomení textu na více řádků */
+        word-break: break-word; /* zalomí dlouhé slova */
     }
 
     .hamburger {
@@ -836,29 +773,10 @@ h3 {
         stroke: #2E2D2C;
     }
 
-    /* zobraz logo a ikony stejně jako na desktopu */
-    .topbar .logo {
-        display: flex;  /* nebo inline-flex podle desktopu */
-        align-items: center;
-    }
-
-    .logo svg {
-        margin: 0px;
-    }
-
-    /* odsazení pod h1 v topbaru */
-    .topbar h1 {
-        flex-grow: 1; /* text zabere zbytek dostupného prostoru */
-        font-size: 1rem; /* uprav velikost pro mobil */
-        margin: 0 0 0 0.5rem; /* malý odstup od loga */
-        white-space: normal; /* umožní zalomení textu na více řádků */
-        word-break: break-word; /* zalomí dlouhé slova */
-    }
-
     /* Ikony */
     .icon,
-    .topbar .icon-wrapper,
-    .topbar svg {
+    body > header .icon-wrapper,
+    body > header svg {
         display: inline-block !important;
         opacity: 1 !important;
         visibility: visible !important;
