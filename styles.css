@@ -686,6 +686,48 @@ h3 {
     color: var(--primary);
 }
 
+/* Kontejner s filtry nad tabulkou */
+#filtr-container {
+    display: flex;
+    flex-wrap: wrap;    /* nezalamovat */
+    gap: 1.5em;            /* mezery mezi jednotlivými filtry */
+    margin-bottom: 1.5em; /* odsazení od tabulky */
+    align-items: center;
+    justify-content: flex-start; /* zarovnat doleva */
+}
+
+#filtr-container > div {
+    display: flex;
+    align-items: baseline;
+    justify-content: flex-start;
+
+}
+
+/* Každý filtr (label + prvek) vedle sebe */
+#filtr-container label {
+    margin-right: 1ex;
+    font-weight: 600;
+    white-space: nowrap;  /* aby se label nezalamoval */
+    color: #1a1a1a;
+}
+
+#filtr-container input,
+#filtr-container select {
+    padding: 0.5em 0.75em;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    max-width: 20em;
+}
+
+/* Zvýraznění po focusu (v barvách DIA) */
+#filtr-container input:focus,
+#filtr-container select:focus {
+    border-color: #368537;
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(54,133,55,0.2);
+}
+
 /* ===== Mobile ===== */
 @media (max-width: 768px) {
     body {
@@ -821,6 +863,15 @@ h3 {
       justify-content: center !important;
       gap: 0.5rem;
     }
+
+    #filtr-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    #filtr-container label {
+        min-width: 8em;
+    }
 }
 
 /* ===== Category popup ===== */
@@ -878,4 +929,42 @@ h3 {
 
 #usecase-list .category-toggle[aria-expanded|="false"]+.subcategory {
     display: none;
+}
+
+#table-overview-container {
+    margin: 2em auto;
+}
+
+/* Styl pro tabulku */
+ table {
+     border-collapse: collapse;
+     table-layout: fixed; /* Zajistí pevné rozložení sloupců */
+     width: 100%; /* Nebo jiná pevná/maximální šířka */
+     margin: 0 auto;
+}
+table tr[data-show="false"] {
+    display: none;
+}
+
+table tr:nth-child(odd of [data-show="true"]) {
+    background-color: #f9f9f9;
+}
+
+table tr:nth-child(even of [data-show="true"]) {
+    background-color: #ffffff;
+}
+
+/* Záhlaví */
+table th, table td {
+    padding: 0.8em;
+    text-align: left;
+    border-bottom: 1px solid #ccc;
+}
+
+table#table-overview tr > * {
+   width: 25%;
+}
+
+table#table-overview tr > *:first-child {
+    width: 50%;
 }
