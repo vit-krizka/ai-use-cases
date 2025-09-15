@@ -732,9 +732,9 @@ h3 {
 
 #filtr-container > div {
     display: flex;
+    flex: 1;
     align-items: baseline;
     justify-content: flex-start;
-
 }
 
 /* Každý filtr (label + prvek) vedle sebe */
@@ -747,11 +747,12 @@ h3 {
 
 #filtr-container input,
 #filtr-container select {
+    flex: 1;
+    max-width: 20em;
     padding: 0.5em 0.75em;
     border: 1px solid #ccc;
     border-radius: 6px;
     font-size: 0.9rem;
-    max-width: 20em;
 }
 
 /* Zvýraznění po focusu (v barvách DIA) */
@@ -901,10 +902,17 @@ h3 {
     #filtr-container {
         flex-direction: column;
         align-items: flex-start;
+        width: 100%;
     }
 
     #filtr-container label {
         min-width: 8em;
+    }
+
+    #filtr-container > div,
+    #filtr-container > div #filtr-container select,
+    #filtr-container > div #filtr-container input {
+        width: 100%;
     }
 }
 
