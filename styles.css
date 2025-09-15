@@ -9,7 +9,8 @@
 }
 
 html {
-    font-family: "Inter", "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-family: "Roboto", "Noto Sans", sans-serif;
+    line-height: 150%;
     color: var(--text);
 }
 
@@ -25,6 +26,11 @@ body > header > div, body > footer > div, body > main > div,
 body#project-page > div.content {
     margin: 0 auto;
     max-width: 75rem;
+}
+
+main, header, footer {
+    box-sizing: border-box;
+    padding: 0 clamp(1rem, 4vw, 3rem);
 }
 
 .content {
@@ -167,8 +173,9 @@ address {
 
 h2 .download-btn-guard {
     display: inline-block;
-    width: 45px;
-    height: 45px;
+    width: 22px;
+    height: 22px;
+    float: right;
 }
 
 .download-btn:focus {
@@ -186,30 +193,29 @@ body > header {
     top: 0;
     width: 100%;
     height: 103px;
-    padding: 0 1rem;
     background: #ffffff;
     color: #2E2D2C;
     z-index: 1000;
-    
 }
 
 body > header > div {
     display: flex;
-    align-items: center;
-    gap: 1rem;
     height: 100%;
+    margin: 0 auto;
 }
 
 body > header h1 {
+    display: flex;
+    box-sizing: border-box;
+    height: 100%;
     margin: 0;
+    padding: 4px 0;
     font-size: 1.1rem;
     font-weight: 600;
-    height: 100%;
 }
 
 body > header h1 img {
     height: 100%;
-    display: flex;
 }
 
 body > header h1 a {
@@ -235,6 +241,7 @@ body > header h1 a {
     border: none;
     cursor: pointer;
     display: none;
+    margin-right: 12px;
     /* mobile only */
 }
 
@@ -379,11 +386,13 @@ footer .footer-bottom p {
 .hero-image {
   flex: 1 1 300px;
   min-height: 200px;
+  text-align: center;
 }
 
 .hero-image img {
   width: 100%;
   height: 100%;
+  max-width: 450px;
   object-fit: cover;
   border-radius: 12px;
 }
@@ -467,7 +476,7 @@ footer .footer-bottom p {
     background: var(--secondary);
     border-right: 1px solid #d9e2ec;
     overflow-y: visible;   /* ať se nezalamuje uvnitř */
-    padding: 56px 0 1rem;
+    padding: 103px 0 1rem;
     /* for fixed topbar */
     position: relative;
     top: 0;
@@ -549,12 +558,15 @@ nav ul li:last-child {
 
 /* ===== Main content ===== */
 main {
-    padding: 127px clamp(1rem, 4vw, 3rem) 3rem;
-    /* offset for topbar */
+    padding-top: 127px;  /* offset for header */
+    padding-bottom: 3rem;
     overflow-y: auto;
+    background: #f5f5f5;
+}
+
+body#project-page main {
     grid-row: 2;
     grid-column: 2;
-    background: #f5f5f5;
 }
 
 body#project-page .content section {
@@ -570,12 +582,14 @@ body#project-page .content section.active {
 h2 {
     margin-top: 0;
     font-size: 1.7rem;
+    line-height: 120%;
     color: var(--primary);
 }
 
 h3 {
     margin-top: 0;
     font-size: 1.25rem;
+    line-height: 120%;
     color: var(--primary);
 }
 
@@ -732,9 +746,9 @@ h3 {
 
 #filtr-container > div {
     display: flex;
+    flex: 1;
     align-items: baseline;
     justify-content: flex-start;
-
 }
 
 /* Každý filtr (label + prvek) vedle sebe */
@@ -747,11 +761,13 @@ h3 {
 
 #filtr-container input,
 #filtr-container select {
+    flex: 1;
+    max-width: 20em;
     padding: 0.5em 0.75em;
     border: 1px solid #ccc;
     border-radius: 6px;
     font-size: 0.9rem;
-    max-width: 20em;
+    color: inherit; /* Apple workaround */
 }
 
 /* Zvýraznění po focusu (v barvách DIA) */
@@ -901,10 +917,17 @@ h3 {
     #filtr-container {
         flex-direction: column;
         align-items: flex-start;
+        width: 100%;
     }
 
     #filtr-container label {
         min-width: 8em;
+    }
+
+    #filtr-container > div,
+    #filtr-container > div #filtr-container select,
+    #filtr-container > div #filtr-container input {
+        width: 100%;
     }
 }
 
