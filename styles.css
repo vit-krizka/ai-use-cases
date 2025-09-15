@@ -799,6 +799,7 @@ h3 {
         position: fixed;
         left: 0;
         top: 0;
+        padding-top: 56px;
         width: var(--sidebar-width);
         max-height: calc(100vh - var(--footer-height, 60px)); /* nedosahuje na footer */
         overflow-y: auto; /* umožní scroll uvnitř sidebaru */
