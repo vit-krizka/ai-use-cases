@@ -937,6 +937,15 @@ h3 {
     #filtr-container > div input {
         width: 100%;
     }
+
+    #table-overview td:first-child {
+        font-size: 100%;
+    }
+    #table-overview td {
+        font-size: 80%;
+        padding-right: 6px;
+        padding-left: 6px;
+    }
 }
 
 /* ===== Category popup ===== */
