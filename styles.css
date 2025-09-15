@@ -404,6 +404,9 @@ footer .footer-bottom p {
   font-weight: bold;
 }
 
+
+
+
 .btn-primary,
 .btn-primary a {
   display: inline-block;
@@ -427,6 +430,37 @@ footer .footer-bottom p {
   text-decoration: none;
   transition: background-color 0.2s ease;
 }
+.btn-tertiary {
+  display: inline-flex;               /* pro zarovnání ikony a textu */
+  align-items: center;
+  gap: 0.5rem;                        /* mezera mezi ikonou a textem */
+  padding: 0.75rem 1.5rem;            /* stejné jako btn-primary */
+  font-size: 1rem;                    /* stejné jako btn-primary */
+  font-weight: 600;
+  border-radius: 6px;                 /* stejné jako btn-primary */
+  background-color: #ffffff;          /* bílé pozadí */
+  color: #207315;                     /* zelený text */
+  border: 2px solid #207315;          /* zelený rámeček */
+  text-decoration: none;
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+
+.btn-tertiary img {
+  height: 20px;
+  width: 20px;
+  display: block;
+}
+
+.btn-tertiary:hover {
+  background-color: #207315;          /* inverze na hover */
+  color: #ffffff;
+}
+
+.btn-tertiary:hover img {
+  filter: brightness(0) invert(1);    /* ikona zbělá */
+}
+
 
 /* ===== Sidebar ===== */
 #sidebar {
