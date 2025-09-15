@@ -241,6 +241,7 @@ body > header h1 a {
     border: none;
     cursor: pointer;
     display: none;
+    margin-right: 12px;
     /* mobile only */
 }
 
