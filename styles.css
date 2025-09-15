@@ -908,6 +908,43 @@ table tr:nth-child(even of [data-show="true"]) {
     background-color: #ffffff;
 }
 
+/* Kontejner s filtry nad tabulkou */
+#filtr-container {
+    display: flex;
+    flex-wrap: nowrap;    /* nezalamovat */
+    gap: 1em;             /* mezery mezi jednotlivými filtry */
+    margin-bottom: 1.5em; /* odsazení od tabulky */
+    align-items: center;
+    justify-content: flex-start; /* zarovnat doleva */
+    overflow-x: auto;     /* když by se nevešly, zobrazí se horizontální scroll */
+}
+
+/* Každý filtr (label + prvek) vedle sebe */
+#filtr-container label {
+    margin-right: 0.5em;
+    font-weight: 600;
+    white-space: nowrap;  /* aby se label nezalamoval */
+    color: #1a1a1a;
+}
+
+/* Inputy a selecty sjednocené */
+#filtr-container input,
+#filtr-container select {
+    padding: 0.5em 0.75em;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    min-width: 180px;
+}
+
+/* Zvýraznění po focusu (v barvách DIA) */
+#filtr-container input:focus,
+#filtr-container select:focus {
+    border-color: #368537;
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(54,133,55,0.2);
+}
+
 /* Záhlaví */
 table th, table td {
     padding: 0.8em;
