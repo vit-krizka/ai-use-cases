@@ -69,9 +69,11 @@ function vytvorFiltry(stavy, obory) {
             optionElement.textContent = option;
             selectElement.appendChild(optionElement);
         });
-
         selectElement.addEventListener("change", aplikujFiltr);
-        return [labelElement, selectElement];
+
+        const containerElement = document.createElement("div");
+        containerElement.append(labelElement, selectElement)
+        return containerElement;
     }
 
     function vytvorInputFiltr(id, label, placeholder = "") {
@@ -84,16 +86,19 @@ function vytvorFiltry(stavy, obory) {
         inputElement.id = id;
         inputElement.placeholder = placeholder;
         inputElement.addEventListener("input", aplikujFiltr);
-        return [labelElement, inputElement];
+
+        const containerElement = document.createElement("div");
+        containerElement.append(labelElement, inputElement)
+        return containerElement;
     }
 
     const filtrDiv = document.createElement("div");
     filtrDiv.id = "filtr-container";
 
     [
-        ... vytvorInputFiltr('filtr-nazev', "Název projektu", "Hledat…"),
-        ... vytvorSelectFiltr("filtr-stav", "Stav projektu", stavy),
-        ... vytvorSelectFiltr("filtr-obor", "Obor činnosti", obory)
+        vytvorInputFiltr('filtr-nazev', "Název projektu", "Hledat…"),
+        vytvorSelectFiltr("filtr-stav", "Stav projektu", stavy),
+        vytvorSelectFiltr("filtr-obor", "Obor činnosti", obory)
     ].forEach(element => {
         filtrDiv.appendChild(element);
     });
