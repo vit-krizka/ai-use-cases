@@ -9,7 +9,8 @@
 }
 
 html {
-    font-family: "Inter", "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-family: "Roboto", "Noto Sans", sans-serif;
+    line-height: 150%;
     color: var(--text);
 }
 
@@ -570,12 +571,14 @@ body#project-page .content section.active {
 h2 {
     margin-top: 0;
     font-size: 1.7rem;
+    line-height: 120%;
     color: var(--primary);
 }
 
 h3 {
     margin-top: 0;
     font-size: 1.25rem;
+    line-height: 120%;
     color: var(--primary);
 }
 
