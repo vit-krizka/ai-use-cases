@@ -926,8 +926,8 @@ h3 {
     }
 
     #filtr-container > div,
-    #filtr-container > div #filtr-container select,
-    #filtr-container > div #filtr-container input {
+    #filtr-container > div select,
+    #filtr-container > div input {
         width: 100%;
     }
 }
