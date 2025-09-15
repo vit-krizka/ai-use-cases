@@ -38,16 +38,6 @@ function initCommon() {
       }
     });
   }
-
-  const footerLogo = document.querySelector('.footer-logo');
-  const logo = document.querySelector('.logo');
-  if (footerLogo && logo) {
-    footerLogo.innerHTML = logo.innerHTML;
-    const logoText = document.createElement('span');
-    logoText.className = 'logo-text';
-    logoText.textContent = 'Digitální a informační agentura';
-    footerLogo.appendChild(logoText);
-  }
 }
 
 /** ======================
