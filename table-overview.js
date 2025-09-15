@@ -18,7 +18,10 @@ function vykresliTabulku(data, klice) {
         hlavicka.appendChild(th);
     });
 
-    data.forEach(objekt => {
+    const sortedData = Array.from(data).sort(
+        (a, b) => a["Název projektu"].localeCompare(b["Název projektu"], "cs")
+    );
+    sortedData.forEach(objekt => {
         const radek = tabulka.insertRow();
 
         // Nastavení datových atributů
