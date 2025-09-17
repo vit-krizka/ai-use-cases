@@ -229,7 +229,7 @@ h2 .download-btn-guard {
 }
 
 /* ===== Top bar ===== */
-body > header {
+body > header.gov-header {
     position: fixed;
     top: 0;
     width: 100%;
@@ -239,30 +239,52 @@ body > header {
     z-index: 1000;
 }
 
-body > header > div {
+body > header.gov-header > .gov-header__content {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
     height: 100%;
     margin: 0 auto;
+    padding: 0 2rem;
 }
 
-body > header h1 {
+body > header.gov-header h1.gov-header__logo {
     display: flex;
-    box-sizing: border-box;
     height: 100%;
     margin: 0;
-    padding: 4px 0;
-    font-size: 1.1rem;
-    font-weight: 600;
 }
 
-body > header h1 img {
+body > header.gov-header h1.gov-header__logo img {
     height: 100%;
+    max-height: 80px;
 }
 
-body > header h1 a {
+body > header.gov-header h1.gov-header__logo a {
+    display: flex;
+    align-items: center;
     text-decoration: none;
     color: inherit;
 }
+
+body > header.gov-header nav.gov-header__navigation ul {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+body > header.gov-header nav.gov-header__navigation a {
+    text-decoration: none;
+    color: #2E2D2C;
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+body > header.gov-header nav.gov-header__navigation a:hover {
+    color: #207315;
+}
+
 
 
 .logo {
