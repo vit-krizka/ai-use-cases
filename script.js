@@ -87,14 +87,13 @@ function initInfoBanner() {
 /** ======================
  *  Pomocné funkce pro katalog
  *  ====================== */
-function createUseCaseSection(uc, showAuthor, categoryDescriptions) {
+function createUseCaseSection(uc, categoryDescriptions) {
   const idStr = uc.id.toString().padStart(2, '0');
   const sectionId = `usecase-${idStr}`;
   const section = document.createElement('section');
   section.id = sectionId;
 
   let title = uc['Název projektu'];
-  if (showAuthor && uc['Autor']) title += ` <span style="color: gray; font-weight: normal;">(${uc['Autor']})</span>`;
 
   let html = `<h2><span class="download-btn-guard"></span>${title}</h2><table class="table-meta card">
     <tbody>
@@ -133,20 +132,6 @@ function createUseCaseSection(uc, showAuthor, categoryDescriptions) {
     <div class="card"><strong>Stav projektu</strong><span>${uc['Stav projektu'] || '—'}</span></div>
     <div class="card"><strong>Zdroj</strong><span>${docLink}</span></div>`;
 
-  if (showAuthor) {
-    const contactInfo = uc['Informace o zdroji a kontaktní osoba']
-      ? (() => {
-          const parts = uc['Informace o zdroji a kontaktní osoba'].split('\\n').map(s => s.trim()).filter(Boolean);
-          if (!parts.length) return '-';
-          const linkPart = parts.pop();
-          const textPart = parts.join('<br />');
-          const linkHtml = linkPart.startsWith('http') ? `<a href="${linkPart}" target="_blank" rel="noopener">${uc['Označení kontaktní osoby'] || linkPart}</a>` : linkPart;
-          return `${textPart}${textPart && linkHtml ? '<br />' : ''}${linkHtml}`;
-        })()
-      : '-';
-    html += `<div class="card"><strong>Kontaktní osoba</strong><span>${contactInfo}</span></div>`;
-  }
-
   html += '</div>';
   section.innerHTML = html;
 
@@ -163,7 +148,6 @@ async function initCatalog() {
   if (!sidebar || !navList || !main) return;
 
   const urlParams = new URLSearchParams(window.location.search);
-  const showAuthor = urlParams.get('autor') === 'true' || urlParams.get('admin') === 'true';
 
   try {
     const [casesRes, categoriesRes] = await Promise.all([
@@ -179,7 +163,7 @@ async function initCatalog() {
 
     // Render sekcí
     useCases.forEach(uc => {
-      const { section, category, idStr, title, sectionId } = createUseCaseSection(uc, showAuthor, categoryDescriptions);
+      const { section, category, idStr, title, sectionId } = createUseCaseSection(uc, categoryDescriptions);
       main.appendChild(section);
       if (categoryMap.has(category)) categoryMap.get(category).push({ idStr, sectionId, title });
       else others.push({ idStr, sectionId, title });

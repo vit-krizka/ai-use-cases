@@ -1,6 +1,7 @@
 [
   {
     "id": 1,
+    "Autor": "Linda Berková",
     "Název projektu": "AI toolkit pro Digitální patologii",
     "Typ umělé inteligence": "Automatizace (RPA)\nHluboké učení (Deep Learning)",
     "Hlavní kategorie use case": "Analýza audiovizuálních dat",
@@ -15,11 +16,13 @@
     "Poučení pro příští projekty": "Vývoj nástroje stále probíhá.",
     "Zdroj": "https://www.muni.cz/vyzkum/projekty/73713",
     "Označení zdroje": "AI toolkit pro Digitální patologii",
+    "Informace o zdroji a kontaktní osoba": "RNDr. Vít Musil, Ph.D., odborný asistent — Katedra teorie programování, Masarykova univerzita <a href=\"mailto:vit.musil@mail.muni.cz\">vit.musil@mail.muni.cz</a>",
     "Obor činnosti": "Zdravotnictví",
     "Kategorie use case": "Analýza audiovizuálních dat"
   },
   {
     "id": 2,
+    "Autor": "Vojtěch Duraj",
     "Název projektu": "Umělá inteligence pro mamografická vyšetření",
     "Typ umělé inteligence": "Počítačové vidění (Computer Vision)\nHluboké učení (Deep Learning)\nComputer-Aided Detection/Diagnosis (CADe/CADx)",
     "Hlavní kategorie use case": "Analýza audiovizuálních dat",
@@ -33,12 +36,14 @@
     "Poučení pro příští projekty": "AI je podpůrný nástroj – finální odpovědnost nese lékař, nutné právní a procesní ošetření. Nastavit kybernetickou a datovou bezpečnost včetně logování a audit trailu. Definovat metriky úspěchu a průběžně je vyhodnocovat. Zajistit školení personálu.",
     "Zdroj": "https://www.fomei.cz/produkty/umela-inteligence-transpara/",
     "Označení zdroje": "Umělá inteligence pro mamografická vyšetření",
+    "Informace o zdroji a kontaktní osoba": "Kontakt na straně zadavatele: Oddělení veřejných zakázek FNHK (zakazky@fnhk.cz ).\nKontakt na straně projektu/klinické části: Radiologická klinika FNHK.\nhttps://screenpoint-medical.com/news-coverage/transpara-ai-boosts-breast-cancer-detection-without-increasing-reading-time-study-finds/",
     "Označení kontaktní osoby": "Transpara AI boosts breast cancer detection without increasing reading time, study finds",
     "Obor činnosti": "Zdravotnictví",
     "Kategorie use case": "Analýza audiovizuálních dat; Predikce a automatizované rozhodování"
   },
   {
     "id": 3,
+    "Autor": "Klára Mrázková",
     "Název projektu": "Carebot",
     "Typ umělé inteligence": "Počítačové vidění (Computer Vision)\nHluboké učení (Deep Learning)\nGenerativní AI",
     "Hlavní kategorie use case": "Analýza audiovizuálních dat",
@@ -52,11 +57,13 @@
     "Poučení pro příští projekty": "Potřeba úzké spolupráce s lékaři při vývoji a validaci\nAI je efektivní nástroj pro řešení nedostatku personálu\ndůvěryhodnost systému podporuje certifikace jako zdravotnický prostředek\nkvalitní tréninková data a zpětná vazba jsou klíčové \npro přesnost",
     "Zdroj": "https://www.businessinfo.cz/clanky/v-moravskoslezskem-kraji-pomaha-v-nemocnicich-s-diagnostikou-a-lecbou-umela-inteligence-a-virtualni-realita/",
     "Označení zdroje": "Carebot",
+    "Informace o zdroji a kontaktní osoba": "Informace o tomto projektu byly získány z veřejných zdrojů",
     "Obor činnosti": "Zdravotnictví",
     "Kategorie use case": "Analýza audiovizuálních dat; Generování obsahu a chatboti úředníků; Optimalizace úředních procesů"
   },
   {
     "id": 4,
+    "Autor": "Vojtěch Duraj",
     "Název projektu": "Automatizované přepisovací pracoviště",
     "Typ umělé inteligence": "Rozpoznávání řeči (ASR) \nZpracování přirozeného jazyka (NLP);\nStrojové učení (Machine Learning)\nAutomatizace (RPA)",
     "Hlavní kategorie use case": "Analýza audiovizuálních dat",
@@ -70,11 +77,13 @@
     "Poučení pro příští projekty": "Kvalitu výrazně zvyšuje lidská kontrola a průběžné doplňování doménové terminologie. Je nutné ošetřit ochranu osobních údajů a bezpečný přenos záznamů. Integrace do workflow (nahrávání streamu, plánování, publikace) je klíčová pro reálné úspory. Počítejte s variabilní kvalitou záznamů (hluk, vzdálenost mikrofonu); je třeba technicky zajistit kvalitní audio",
     "Zdroj": "https://advokatnidenik.cz/2024/10/16/umela-inteligence-nove-pomaha-se-zaznamy-z-jednani-poslanecke-snemovny/",
     "Označení zdroje": "Automatizované přepisovací pracoviště",
+    "Informace o zdroji a kontaktní osoba": "Kancelář Poslanecké sněmovny, \ne-mail: posta@psp.cz, tel. 257 171 717.\nDodavatel: NEWTON Technologies, a.s., podpora@beey.io\n",
     "Obor činnosti": "Spravedlnost a volby",
     "Kategorie use case": "Analýza audiovizuálních dat; Generování obsahu a chatboti úředníků; Optimalizace úředních procesů"
   },
   {
     "id": 5,
+    "Autor": "Michal Kozubek",
     "Název projektu": "DROMAS / SAMAS",
     "Typ umělé inteligence": "Strojové učení (Machine Learning)\nPočítačové vidění (Computer Vision)\nPrediktivní analýzy",
     "Hlavní kategorie use case": "Analýza audiovizuálních dat",
@@ -88,11 +97,13 @@
     "Poučení pro příští projekty": "Nutnost dostatečně kvalitního školení uživatelů (SZIF, farmáři). Včasná komunikace s příjemci dotací o výstupech systému. Kombinace AI a manuální validace (např. fotodokumentace) zvyšuje spolehlivost. Chybná detekce některých plodin (vojtěška, travní směsi) vyžaduje další trénink modelů\npřínosná je spolupráce s ESA a sdílení know-how v rámci EU. Poučení pro ve veřejné zakázky: Nastavit jasná akceptační kritéria pro kvalitu algoritmů předem (např. per-crop accuracy, vyhnout se vendor lockinu – požadovat otevřenou dokumentaci, možnost převodu kódu a dat, zajistit interní kapacity na validaci výsledků a správu datového workflow, počítat s legislativními změnami SZP (CAP) – flexibilita procesů i smluv",
     "Zdroj": "https://business.esa.int/projects/dromas",
     "Označení zdroje": "DROMAS",
+    "Informace o zdroji a kontaktní osoba": "marie.hakova@gisat.cz\nprojektový garant SZIF (dle VZ)",
     "Obor činnosti": "Životní prostředí a zemědělství",
     "Kategorie use case": "Analýza audiovizuálních dat; Monitoring, bezpečnost a dohled; Optimalizace úředních procesů; Predikce a automatizované rozhodování"
   },
   {
     "id": 6,
+    "Autor": "Alice Binderová",
     "Název projektu": "Asistent pro tvorbu slovníků dle metodiky popisu dat",
     "Typ umělé inteligence": "LLM\nChatboti a virtuální asistenti\nStrojové učení (Machine Learning)\nGenerativní AI",
     "Hlavní kategorie use case": "Generování obsahu a chatboti úředníků",
@@ -106,11 +117,13 @@
     "Poučení pro příští projekty": "Důraz při vývoji by měl být kladen na pečlivou přípravu promptů (včetně přesné definice problému, kontextu, příkladů a očekávaného výstupu) a přípravě kvalitních vstupních dat. Klíčové je si uvědomit, jaké silné a slabé stránky LLM mají a nechat je pracovat jen na té části problému, na kterou se hodí.",
     "Zdroj": "https://data.gov.cz/popis-dat/",
     "Označení zdroje": "Popis dat",
+    "Informace o zdroji a kontaktní osoba": "Alice Binderová, DIA",
     "Obor činnosti": "Jiné:  Veřejná správa",
     "Kategorie use case": "Analýza audiovizuálních dat; Generování obsahu a chatboti úředníků"
   },
   {
     "id": 7,
+    "Autor": "Tomáš Šedivec",
     "Název projektu": "AI asistent pro dlouhodobé řízení ISVS",
     "Typ umělé inteligence": "Generativní AI\nLLM\nChatboti a virtuální asistenti\nZpracování přirozeného jazyka (NLP)",
     "Hlavní kategorie use case": "Generování obsahu a chatboti úředníků",
@@ -124,11 +137,13 @@
     "Poučení pro příští projekty": null,
     "Zdroj": null,
     "Označení zdroje": null,
+    "Informace o zdroji a kontaktní osoba": null,
     "Obor činnosti": "E-government",
     "Kategorie use case": "Analýza audiovizuálních dat; Generování obsahu a chatboti úředníků; Komunikace a klientský servis  (chatboti pro veřejnost)"
   },
   {
     "id": 8,
+    "Autor": "Tomáš Šedivec, Tomáš Kroupa",
     "Název projektu": "AI asistent pro tvorbu informační koncepce (malé) obce",
     "Typ umělé inteligence": "Generativní AI\nLLM\nZpracování přirozeného jazyka (NLP)\nChatboti a virtuální asistenti",
     "Hlavní kategorie use case": "Generování obsahu a chatboti úředníků",
@@ -142,11 +157,13 @@
     "Poučení pro příští projekty": "Potřeba identifikace zdrojů vstupních informací, potřeba kvalitních vstupních dat z veřejných zdrojů, potřeba napojení na veřejná API systémů, které poskytují / měly by poskytopvat vstupní data. V případě obcí jsou to informace týkající se povinností obcí vyplývající z legislativy, působení v agendách VS, publikování služeb VS, budování ISVS. Totéž platí v obecné míře pro OVS.",
     "Zdroj": "https://archi.gov.cz/znalostni_baze:ik_ovs",
     "Označení zdroje": "AI asistent pro tvorbu informační koncepce (malé) obce",
+    "Informace o zdroji a kontaktní osoba": null,
     "Obor činnosti": "E-government",
     "Kategorie use case": "Analýza audiovizuálních dat; Generování obsahu a chatboti úředníků; Komunikace a klientský servis  (chatboti pro veřejnost)"
   },
   {
     "id": 9,
+    "Autor": "Jan Petr",
     "Název projektu": "Předvyplnění formulářů pomocí AI",
     "Typ umělé inteligence": "LLM\nGenerativní AI\nZpracování přirozeného jazyka (NLP)\nChatboti a virtuální asistenti",
     "Hlavní kategorie use case": "Komunikace a klientský servis",
@@ -160,11 +177,13 @@
     "Poučení pro příští projekty": "Byla potvrzena nutnost přesně definovat datovou strukturu a nápovědu ke každému poli. Kritická je validace výstupního JSON a kontrola správného mapování na cílový formulář.",
     "Zdroj": "https://digitalniagentura-my.sharepoint.com/:p:/g/personal/jan_petr_dia_gov_cz/ET_gD-DABoZDucTYDixLbigBW7InjmYfQOPV0exbhCJxuQ?rtime=A7bff5vk3Ug",
     "Označení zdroje": "Vyplňování zjednodušených formulářů pomocí AI (POC)",
+    "Informace o zdroji a kontaktní osoba": "Jan Petr, Digitální a informační agentura, <a href='tel:+420602392480'>602 392 480</a>, <a href='mailto:jan.petr@dia.gov.cz'>jan.petr@dia.gov.cz</a><br>Phil Lázníček, Digitální a informační agentura, <a href='mailto:phil.laznicek@dia.gov.cz'>phil.laznicek@dia.gov.cz</a>",
     "Obor činnosti": "Veřejná správa",
     "Kategorie use case": "Generování obsahu a chatboti úředníků; Komunikace a klientský servis  (chatboti pro veřejnost); Optimalizace úředních procesů"
   },
   {
     "id": 10,
+    "Autor": "Klára Mrázková",
     "Název projektu": "Chatbot Adam",
     "Typ umělé inteligence": "Zpracování přirozeného jazyka (NLP)\nChatboti a virtuální asistenti\nStrojové učení (Machine Learning)\nGenerativní AI\nLLM",
     "Hlavní kategorie use case": "Generování obsahu a chatboti úředníků",
@@ -178,11 +197,13 @@
     "Poučení pro příští projekty": "Důležitost bezpečnosti a spolehlivosti (neodpovídá, když nezná), viz zásady designu AI\ntransparentnost díky odkazu na zdrojové dokumenty\núspěch díky vlivu akademicko-veřejného partnerství (CIIRC & MF)\nmožnost multiplatformního rozšíření do dalších resortů",
     "Zdroj": "https://www.mfcr.cz/cs/ministerstvo/media/tiskove-zpravy/2025/chatbot-adam-z-dilny-cvut-ciirc-pomaha-auditnimu-o-59766",
     "Označení zdroje": "Chatbot Adam",
+    "Informace o zdroji a kontaktní osoba": "Informace o tomto projektu byly získány z veřejných zdrojů.\nVedoucí vývoje: Ing. Jan Šedivý, Ph.D. (CIIRC).",
     "Obor činnosti": "Finance a daně",
     "Kategorie use case": "Analýza audiovizuálních dat; Generování obsahu a chatboti úředníků; Optimalizace úředních procesů"
   },
   {
     "id": 11,
+    "Autor": "Lucie Olivová",
     "Název projektu": "AI agent pro správní řízení",
     "Typ umělé inteligence": "LLM\nGenerativní AI\nStrojové učení (Machine Learning)\nZpracování přirozeného jazyka (NLP)\nChatboti a virtuální asistenti",
     "Hlavní kategorie use case": "Generování obsahu a chatboti úředníků",
@@ -196,11 +217,13 @@
     "Poučení pro příští projekty": "Při budoucím nasazení na další subjekty je nutné počítat s přirozenou rezistencí vůči automatizaci a pracovat s ní prostřednictvím pozitivní podpory shora. Platforma by zároveň měla obsahovat prvky, které uživatele vedou k aktivní interakci s rozhraním a brání pasivní důvěře v poskytnutý výstup.",
     "Zdroj": null,
     "Označení zdroje": null,
+    "Informace o zdroji a kontaktní osoba": "Konzultace OKC / Kristián Malina (<a href='mailto:kristian.malina@mv.gov.cz'>kristian.malina@mv.gov.cz</a>) OKC DIA (Viktor Švec) <a href='mailto:viktor.svec@dia.gov.cz'>viktor.svec@dia.gov.cz</a>",
     "Obor činnosti": "Doprava; Vnitřní věci a bezpečnost; Životní prostředí a zemědělství",
     "Kategorie use case": "Analýza audiovizuálních dat; Generování obsahu a chatboti úředníků; Optimalizace úředních procesů; Predikce a automatizované rozhodování"
   },
   {
     "id": 12,
+    "Autor": "Vojtěch Duraj",
     "Název projektu": "Chatbot pro správu dokumentů a komunikaci s občany",
     "Typ umělé inteligence": "LLM\nZpracování přirozeného jazyka (NLP)\nChatboti a virtuální asistenti",
     "Hlavní kategorie use case": "Komunikace a klientský servis",
@@ -214,11 +237,13 @@
     "Poučení pro příští projekty": "Nutnost participativního vývoje (zapojení úředníků a politiků), zajištění GDPR kompatibility a bezpečnosti dat, replikovatelnost v dalších obcích a městských částech.",
     "Zdroj": "https://asociace.ai/praha-6-nasazuje-ai-chatbota-od-citymind-projekt-financovany-evropskou-komisi-tak-setri-cas-uradu-i-obcanum/?utm_source=chatgpt.com",
     "Označení zdroje": "Chatbot pro správu dokumentů a komunikaci s občany",
+    "Informace o zdroji a kontaktní osoba": "<a href=\"mailto:denisa.pevna@operator-ict.cz\">denisa.pevna@operator-ict.cz</a>; Václav Kožený, místostarosta MČ Praha 6, <a href=\"mailto:vkozeny@praha6.cz\">vkozeny@praha6.cz</a>; Vladimír Šuvarina KITT 6, <a href=\"mailto:vsuvarina@praha6.cz\">vsuvarina@praha6.cz</a>",
     "Obor činnosti": "Jiné: Městská správa (eGovernment)",
     "Kategorie use case": "Analýza audiovizuálních dat; Komunikace a klientský servis  (chatboti pro veřejnost)"
   },
   {
     "id": 13,
+    "Autor": "Viktor Švec",
     "Název projektu": "Chatbot Justína",
     "Typ umělé inteligence": "Chatboti a virtuální asistenti\nGenerativní AI\nStrojové učení (Machine Learning)\nZpracování přirozeného jazyka(NLP)",
     "Hlavní kategorie use case": "Komunikace a klientský servis",
@@ -232,11 +257,13 @@
     "Poučení pro příští projekty": "Hlavní fokus na často kladené dotazy, rozdělení odpovědností \nriziko nesprávného nasměrování dotazů – vyžaduje průběžné ladění NLP modelů\npravidelné sledování kvality odpovědí, uživatelské spokojenosti\npřipravit na přechod do cloudového prostředí, větší zapojení agenta",
     "Zdroj": "https://msp.gov.cz/web/msp/rozcestnik/-/clanek/nov%C3%BD-zam%C4%9Bstnanec-na-ministerstvu-spravedlnosti-chatbot-just%C3%ADna, ",
     "Označení zdroje": "Chatbot Justína",
+    "Informace o zdroji a kontaktní osoba": "Jana Šístková, <a href=\"mailto:jana.sistkova@msp.justice.cz\">jana.sistkova@msp.justice.cz</a>, Oddělení řízení služeb, Ministerstvo spravedlnosti",
     "Obor činnosti": "Spravedlnost a volby",
     "Kategorie use case": "Analýza audiovizuálních dat; Komunikace a klientský servis  (chatboti pro veřejnost); Optimalizace  úředních procesů"
   },
   {
     "id": 14,
+    "Autor": "Robert Valčuha",
     "Název projektu": "Kontaktní centrum veřejné správy",
     "Typ umělé inteligence": "Generativní AI \nLLM\nChatboti a virtuální asistenti",
     "Hlavní kategorie use case": "Komunikace a klientský servis",
@@ -250,11 +277,13 @@
     "Poučení pro příští projekty": "Bude vyhodnoceno v rámci fáze realizace.",
     "Zdroj": null,
     "Označení zdroje": null,
+    "Informace o zdroji a kontaktní osoba": "Radim Valčuha, radim.valcuha@dia.gov.cz",
     "Obor činnosti": "Jiné: Podpora výše uvedených služeb/agend ve správě DIA",
     "Kategorie use case": "Komunikace a klientský servis (chatboti pro veřejnost)"
   },
   {
     "id": 15,
+    "Autor": "Lucie Lejčková",
     "Název projektu": "AI systém Emil",
     "Typ umělé inteligence": "Computer vision (Počítačové Vidění)\nStrojové učení (Machine Learning)\nGenerativní AI\nAutomatizace (RPA)\nZpracování přirozeného jazyka (NLP)\nSymbolická AI",
     "Hlavní kategorie use case": "Monitoring, bezpečnost a dohled",
@@ -268,11 +297,13 @@
     "Poučení pro příští projekty": "I jednoduchá automatizace rutinní agendy přináší vysokou efektivitu. Důležité je nastavení kvalitních vstupních dat (foto/video dokumentace). Transparentní nastavení procesů v rozhodovacím řetězci systému. Nutnost komunikace s veřejností kvůli akceptaci AI ve správním řízení",
     "Zdroj": "https://m.praha8.cz/v-praze-8-resi-prestupky-za-spatne-parkovani-softwarovy-robot-1.html",
     "Označení zdroje": "AI systém Emil",
+    "Informace o zdroji a kontaktní osoba": "Informace čerpány z mediálních článků (např. CzechCrunch, Technet.cz) a tiskových zpráv MČ Praha 8. Přímý kontakt na Městský úřad Praha 8 – Odbor dopravy.",
     "Obor činnosti": "Doprava",
     "Kategorie use case": "Analýza audiovizuálních dat; Generování obsahu a chatboti úředníků; Monitoring, bezpečnost a dohled; Optimalizace úředních procesů"
   },
   {
     "id": 16,
+    "Autor": "Vojtěch Duraj",
     "Název projektu": "Monitorování a reakce na bezpečnostní incidenty a podpora SOC",
     "Typ umělé inteligence": "Strojové učení (machine learning)\nZpracování přirozeného jazyka (NLP)\nPrediktivní analýzy\nGenerativní AI\nLLM\n",
     "Hlavní kategorie use case": "Monitoring, bezpečnost a dohled",
@@ -286,11 +317,13 @@
     "Poučení pro příští projekty": "Jasně definovat integrační rozhraní na SIEM, ticketing a log management. Nastavit governance a odpovědnosti – AI doporučuje, člověk rozhoduje. Pravidelně revidovat a trénovat modely na nová data/hrozby. Standardizovat playbooky napříč institucemi VS. Zajistit školení SOC/CSIRT týmů na práci s AI nástroji",
     "Zdroj": null,
     "Označení zdroje": null,
+    "Informace o zdroji a kontaktní osoba": "Kontaktní osoba: Cloudová kancelář MIRRI (kontakt bude doplněn – např. <a href=\"mailto:cloud@mirri.gov.sk\">cloud@mirri.gov.sk</a>)",
     "Obor činnosti": "Vnitřní věci a bezpečnost",
     "Kategorie use case": "Analýza audiovizuálních dat; Monitoring, bezpečnost a dohled"
   },
   {
     "id": 17,
+    "Autor": "Vojtěch Duraj",
     "Název projektu": "CYBERTHREATS",
     "Typ umělé inteligence": "Strojové učení\nHluboké učení (Deep Learning)\nSymbolická AI (GOFAI)\nAutomatizace (RPA)",
     "Hlavní kategorie use case": "Monitoring, bezpečnost a dohled",
@@ -304,11 +337,13 @@
     "Poučení pro příští projekty": "Nutnost vlastního vývoje z důvodu strategické autonomie. Zajištění kompatibility s existujícími systémy (např. IBM QRadar). Náročnost na specializované znalosti a infrastrukturu (FPGA, síťová bezpečnost)",
     "Zdroj": "https://nen.nipez.cz/profily-zadavatelu-platne/p:pzp:query=ministerstvo%20obrany/detail-profilu/MO/uzavrene-zakazky/p:pzvz:query=kyber;puvz:query=kyber/detail-zakazky/N006-21-V00021516/zadavaci-dokumentace/p:pzd:page=2",
     "Označení zdroje": "CYBERTHREATS",
+    "Informace o zdroji a kontaktní osoba": "Ministerstvo obrany ČR<br>Věra Pavlíčková (<a href=\"mailto:pavlickovav@army.cz\">pavlickovav@army.cz</a>) tel: <a href=\"tel:+420973225091\">+420 973 225 091</a>",
     "Obor činnosti": "Obrana",
     "Kategorie use case": "Monitoring, bezpečnost a dohled; Predikce a automatizované rozhodování"
   },
   {
     "id": 18,
+    "Autor": "Viktor Švec",
     "Název projektu": "Digitalizace správy dokumentů a využívání umělé inteligence",
     "Typ umělé inteligence": "Zpracování přirozeného jazyka (NLP)\nAutomatizace rozhodování (RPA)\nStrojové učení (Machine Learning)",
     "Hlavní kategorie use case": "Optimalizace úředních procesů",
@@ -322,11 +357,13 @@
     "Poučení pro příští projekty": null,
     "Zdroj": null,
     "Označení zdroje": null,
+    "Informace o zdroji a kontaktní osoba": "KC DIA (Viktor Švec) <a href=\"mailto:viktor.svec@dia.gov.cz\">viktor.svec@dia.gov.cz</a><br>Martin Vaněk, <a href=\"mailto:martin.vanek@mv.gov.cz\">martin.vanek@mv.gov.cz</a>, Oddělní projektového řízení, Ministerstvo vnitra.",
     "Obor činnosti": "Vnitřní věci a bezpečnost",
     "Kategorie use case": "Analýza audiovizuálních dat; Optimalizace úředních procesů; Predikce a automatizované rozhodování"
   },
   {
     "id": 19,
+    "Autor": "Martin Bahenský",
     "Název projektu": "AI aplikace pro správu interních řídicích dokumentů VS",
     "Typ umělé inteligence": "LLM\nZpracování přirozeného jazyka (NLP)\nGenerativní AI",
     "Hlavní kategorie use case": "Optimalizace úředních procesů",
@@ -340,11 +377,13 @@
     "Poučení pro příští projekty": null,
     "Zdroj": null,
     "Označení zdroje": null,
+    "Informace o zdroji a kontaktní osoba": "Martin Bahenský, Digitální a informační agentura, KŘÚ",
     "Obor činnosti": "Jiné: Veřejná správa",
     "Kategorie use case": "Analýza audiovizuálních dat; Generování obsahu a chatboti úředníků; Komunikace a klientský servis  (chatboti pro veřejnost); Optimalizace úředních procesů"
   },
   {
     "id": 20,
+    "Autor": "Vojtěch Duraj",
     "Název projektu": "AI VISOR",
     "Typ umělé inteligence": "Počítačové vidění (Computer Vision)\nAutomatizace (RPA)\nZpracování přirozeného jazyka (NLP)\nSymbolická AI (GOFAI)",
     "Hlavní kategorie use case": "Optimalizace úředních procesů",
@@ -358,11 +397,13 @@
     "Poučení pro příští projekty": "Jasně definovat akceptační kritéria (co je „správná“ příloha) a mít kvalitní trénovací dataset. Zapojení uživatelů (úředníků) do ladění pravidel a workflow – aby se minimalizovala zbytečná eskalace. Proaktivní monitoring kvality modelu a rychlé iterace (MLOps). Vyřešit licenční a bezpečnostní aspekty při využití cloudových AI služeb (Azure).",
     "Zdroj": "https://news.microsoft.com/cs-cz/2024/11/06/data-a-umela-inteligence-mpsv-a-microsoft-poradaji-prvni-globalni-hackathon-pro-verejny-sektor/",
     "Označení zdroje": "AI VISOR",
+    "Informace o zdroji a kontaktní osoba": null,
     "Obor činnosti": "Sociální zabezpečení a dávky",
     "Kategorie use case": "Analýza audiovizuálních dat; Generování obsahu a chatboti úředníků; Optimalizace úředních procesů"
   },
   {
     "id": 21,
+    "Autor": "Vojtěch Duraj",
     "Název projektu": "ePokuty",
     "Typ umělé inteligence": "Strojové učení (Machine Learning)\nPrediktivní analýzy\nAutomatizace (RPA)",
     "Hlavní kategorie use case": "Optimalizace úředních procesů",
@@ -376,11 +417,13 @@
     "Poučení pro příští projekty": "Jasná právní opora pro algoritmické kroky (aby „algoritmus“ nenahrazoval správní uvážení). Včasná definice datových toků a kvality vstupních dat. Zapojení městských částí a koordinace sdílených kompetencí. Transparentnost a auditovatelnost modelů (možnost vysvětlení rozhodnutí)",
     "Zdroj": "https://www.isvs.cz/prazsky-magistrat-pripravuje-novy-system-epokut/",
     "Označení zdroje": "ePokuty",
+    "Informace o zdroji a kontaktní osoba": null,
     "Obor činnosti": "Spravedlnost a volby",
     "Kategorie use case": "Optimalizace úředních procesů"
   },
   {
     "id": 22,
+    "Autor": "Amálka Počarovská",
     "Název projektu": "Tísňové volání",
     "Typ umělé inteligence": "Strojové učení (Machine Learning)\nRozpoznávání řeči\nZpracování přirozeného jazyka (NLP)\nPrediktivní analýzy",
     "Hlavní kategorie use case": "Predikce a automatizované rozhodování",
@@ -394,11 +437,13 @@
     "Poučení pro příští projekty": "Projekt není ukončen, závěrečná zpráva 1/2026",
     "Zdroj": "https://nen.nipez.cz/verejne-zakazky/detail-zakazky/N006-22-V00019986",
     "Označení zdroje": "Tísňové volání ",
+    "Informace o zdroji a kontaktní osoba": "Paedr. Jan Vykoukal (vedoucí odd. bezpečnostního výzkumu)<br>NEN Irena Herainová, <a href=\"mailto:irena.herainova@mvcr.cz\">irena.herainova@mvcr.cz</a>",
     "Obor činnosti": "Vnitřní věci a bezpečnost",
     "Kategorie use case": "Komunikace a klientský servis  (chatboti pro veřejnost); Predikce a automatizované rozhodování"
   },
   {
     "id": 23,
+    "Autor": "Vojtěch Duraj",
     "Název projektu": "Využití AI při prognózování inflace v ČNB",
     "Typ umělé inteligence": "Generativní AI\nLLM\nStrojové učení (Machine Learning)\nPrediktivní analýzy",
     "Hlavní kategorie use case": "Predikce a automatizované rozhodování",
@@ -412,11 +457,13 @@
     "Poučení pro příští projekty": "LLM mohou včas signalizovat riziko růstu inflace. Embeddings zefektivňují třídění položek. „Black-box“ povaha modelů komplikuje vysvětlení predikcí. Výkonnost se výrazně liší mezi různými LLM (OpenAI o1 vs. Grok 2)",
     "Zdroj": "https://www.cnb.cz/cs/o_cnb/cnblog/Prvni-vyuziti-AI-pri-prognozovani-inflace-v-CNB/",
     "Označení zdroje": "Využití AI při prognózování inflace v ČNB",
+    "Informace o zdroji a kontaktní osoba": "Informace o tomto projektu byly získány z veřejných zdrojů",
     "Obor činnosti": "Finance a daně",
     "Kategorie use case": "Analýza audiovizuálních dat; Predikce a automatizované rozhodování"
   },
   {
     "id": 24,
+    "Autor": "Vojtěch Duraj",
     "Název projektu": "MAS",
     "Typ umělé inteligence": "Strojové učení (Machine Learning)\nAutomatizace (RPA)\nPočítačové vidění (Computer Vision)",
     "Hlavní kategorie use case": "Predikce a automatizované rozhodování",
@@ -430,11 +477,13 @@
     "Poučení pro příští projekty": "Počítat s integrací do stávající infrastruktury SSZ a datových toků\nzajistit transparentní metriky úspěchu a kontinuální tuning modelu\nvyřešit otázky bezpečnosti a odpovědnosti při automatizovaném zásahu do provozu\nvčasné zapojení města, PČR a dispečinku pro změny signalizace",
     "Zdroj": "https://zdopravy.cz/praha-nasadila-na-prvni-krizovatku-umelou-inteligenci-ridi-dopravu-lepe-nez-program-226659/#:~:text=Technick%C3%A1%20spr%C3%A1va%20komunikac%C3%AD%20",
     "Označení zdroje": "MAS",
+    "Informace o zdroji a kontaktní osoba": null,
     "Obor činnosti": "Doprava",
     "Kategorie use case": "Monitoring, bezpečnost a dohled; Optimalizace úředních procesů; Predikce a automatizované rozhodování"
   },
   {
     "id": 25,
+    "Autor": "Klára Mrázková",
     "Název projektu": "Chytré křižovatky",
     "Typ umělé inteligence": "Strojové učení\nComputer vision\nEdge computing",
     "Hlavní kategorie use case": "Predikce a automatizované rozhodování",
@@ -448,11 +497,13 @@
     "Poučení pro příští projekty": "Nezbytné je zajistit kvalitní datové vstupy (kamerové úhly, senzory). Edge computing snižuje náklady a zvyšuje akceptaci ze strany měst. Doporučeno zapojit veřejnost (informování občanů o přínosech, např. menší zácpy, čistší vzduch). Spolupráce s akademií (Masarykova univerzita) posiluje validitu a inovativnost řešení.",
     "Zdroj": "https://www.businessinfo.cz/clanky/cesko-chce-byt-lidrem-v-chytrych-resenich-pro-mesta-a-obce-startupum-rozda-dva-miliony-eur/?utm_source=chatgpt.com",
     "Označení zdroje": "Chytré křižovatky",
+    "Informace o zdroji a kontaktní osoba": "Robert Pinkas, CEO VisionCraft",
     "Obor činnosti": "Doprava",
     "Kategorie use case": "Monitoring,bezpečnost a dohled; Optimalizace úředních procesů; Predikce a automatizované rozhodování"
   },
   {
     "id": 26,
+    "Autor": "Vojtěch Duraj",
     "Název projektu": "ChatGPT v centrální bance",
     "Typ umělé inteligence": "Generativní AI (Velký jazykový model GPT-4o)\nAutomatizace znalostní práce\nHluboké učení (Deep Learning)",
     "Hlavní kategorie use case": "Optimalizace úředních procesů",
@@ -466,11 +517,13 @@
     "Poučení pro příští projekty": "Generativní AI má nejvyšší přidanou hodnotu u ne-rutinních, odborně náročných úkolů. Pro maximalizaci přínosu je vhodné upravit alokaci úkolů mezi pracovníky podle jejich profilu a schopností spolupracovat s AI. Implementace by měla zahrnovat školení a jasné procesy využití.",
     "Zdroj": "https://cepr.org/voxeu/columns/task-based-returns-generative-ai-evidence-central-bank",
     "Označení zdroje": "ChatGPT v centrální bance",
+    "Informace o zdroji a kontaktní osoba": "Autoři studie: Aleš Maršál a Patryk Perkowski",
     "Obor činnosti": "Finance a daně",
     "Kategorie use case": "Optimalizace úředních procesů; Generování obsahu a chatboti úředníků"
   },
   {
     "id": 27,
+    "Autor": "Vojtěch Duraj",
     "Název projektu": "Chatbot pro územní plánování",
     "Typ umělé inteligence": "LLM",
     "Hlavní kategorie use case": "Komunikace a klientský servis",
@@ -484,11 +537,13 @@
     "Poučení pro příští projekty": null,
     "Zdroj": null,
     "Označení zdroje": null,
+    "Informace o zdroji a kontaktní osoba": "Ministerstvo pro místní rozvoj, odbor územně správní, Kateřina Vrbová (katerina.vrbova@mmr.gov.cz)",
     "Obor činnosti": "Územní plánování, stavební řízení a evidence nemovitostí",
     "Kategorie use case": "Analýza dokumentů a dat; Komunikace a klientský servis"
   },
   {
     "id": 28,
+    "Autor": "Martin Kukla",
     "Název projektu": "PID Halo",
     "Typ umělé inteligence": "Voicebot\nChatbot\nReal-time plánovací algoritmy na cloudovém základu",
     "Hlavní kategorie use case": "Komunikace a klientský servis",
@@ -502,11 +557,13 @@
     "Poučení pro příští projekty": "",
     "Zdroj": "https://www.halopid.cz/",
     "Označení zdroje": "PID Haló",
+    "Informace o zdroji a kontaktní osoba": "Integrovaná doprava středočeského kraje, tel. +420 720 025 631",
     "Obor činnosti": "Doprava",
     "Kategorie use case": "Generování obsahu a chatboti úředníků; Komunikace a klientský servis; Predikce a automatizované rozhodování"
   },
   {
     "id": 29,
+    "Autor": "Martin Kukla",
     "Název projektu": "DIGI Havel",
     "Typ umělé inteligence": "LLM (Jazykový Model)\nEdukativní databáze\nHlas\nAnimace\nModerace",
     "Hlavní kategorie use case": "Generování obsahu a chatboti úředníků",
@@ -520,11 +577,13 @@
     "Poučení pro příští projekty": "",
     "Zdroj": "https://odpovedneobcanstvi.cz/digihavel/",
     "Označení zdroje": "Oficiální stránka projektu DigiHavel",
+    "Informace o zdroji a kontaktní osoba": "https://odpovedneobcanstvi.cz/kontakt/",
     "Obor činnosti": "Školství, věda a výzkum",
     "Kategorie use case": "Generování obsahu a chatboti úředníků; Komunikace a klientský servis; Školství a vzdělávání"
   },
   {
     "id": 30,
+    "Autor": "Martin Kukla",
     "Název projektu": "AI See",
     "Typ umělé inteligence": "Semi-automatizované a weakly supervised učení\nProstorovo-časové relace\nIndexovaná vyhledávání",
     "Hlavní kategorie use case": "Analýza audiovizuálních dat",
@@ -538,11 +597,13 @@
     "Poučení pro příští projekty": null,
     "Zdroj": "https://aisee.utia.cas.cz/",
     "Označení zdroje": "AI See",
+    "Informace o zdroji a kontaktní osoba": "jan.horinek@pcr.cz",
     "Obor činnosti": "Vnitřní věci a bezpečnost",
     "Kategorie use case": "Analýza audiovizuálních dat; Monitoring, bezpečnost a dohled; Optimalizace úředních procesů"
   },
   {
     "id": 31,
+    "Autor": "Martina Bártů",
     "Název projektu": "Nástroje proti hlasovým deepfakes",
     "Typ umělé inteligence": "Strojové učení\nGenerativní AI\nPosílení stávajících systémů pro rozpoznávání řečníka\nDetekce umělého nebo upraveného hlasu",
     "Hlavní kategorie use case": "Analýza audiovizuálních dat",
@@ -556,11 +617,13 @@
     "Poučení pro příští projekty": "",
     "Zdroj": "https://www.idnes.cz/zpravy/domaci/umela-inteligence-ministerstvo-vnitra-spoluprace-vysoka-skola-deepfake-rozpoznani.A240116_094710_domaci_vank, https://www.vut.cz/vav/projekty/detail/35470",
     "Označení zdroje": "Nástroje proti hlasovým deepfakes (I.), Nástroje proti hlasovým deepfakes (II.)",
+    "Informace o zdroji a kontaktní osoba": "Kudla Radim, Ing.",
     "Obor činnosti": "Vnitřní věci a bezpečnost",
     "Kategorie use case": "Analýza audiovizuálních dat; Monitoring, bezpečnost a dohled; Optimalizace úředních procesů"
   },
   {
     "id": 32,
+    "Autor": "Martina Bártů",
     "Název projektu": "Eagle.one",
     "Typ umělé inteligence": "Strojové učení\nComputer Vision",
     "Hlavní kategorie use case": "Monitoring, bezpečnost a dohled",
@@ -574,11 +637,13 @@
     "Poučení pro příští projekty": "Poptávka po autonomních lovcích dronů je vysoká, dodací lhůta je několik měsíců.",
     "Zdroj": "https://fel.cvut.cz/cs/informacni-servis/pro-media/tiskove-zpravy/36137-roboticky-lovec-s-umelou-inteligenci-posouva-hranice-robotiky-ochrani-kritickou-infrastrukturu-pred-utoky-dronu",
     "Označení zdroje": "Eagle.one",
+    "Informace o zdroji a kontaktní osoba": "doc. Ing. Martin Saska, Dr. rer. nat.",
     "Obor činnosti": "Vnitřní věci a bezpečnost",
     "Kategorie use case": "Analýza audiovizuálních dat; Monitoring, bezpečnost a dohled; Predikce a automatizované rozhodování"
   },
   {
     "id": 33,
+    "Autor": "Martina Bártů",
     "Název projektu": "CZDEMOS4AI",
     "Typ umělé inteligence": "LLM\nGenerativní AI",
     "Hlavní kategorie use case": "Generování obsahu a chatboti úředníků",
@@ -592,11 +657,13 @@
     "Poučení pro příští projekty": "",
     "Zdroj": "https://prg.ai/umela-inteligence-ve-sluzbach-obcanu/, https://science.fsv.cuni.cz/projekt/prospesny-multiagentni-ai-avatar-v-male-demokraticke-spolecnosti-czdemos4ai/",
     "Označení zdroje": "CZDEMOS4AI (I.), CZDEMOS4AI (II.)",
+    "Informace o zdroji a kontaktní osoba": "prof. PhDr. RNDr. Nikola Hynek, Ph.D., M.A.",
     "Obor činnosti": "Spravedlnost a volby",
     "Kategorie use case": "Analýza audiovizuálních dat; Generování obsahu a chatboti úředníků; Komunikace a klientský servis; Monitoring, bezpečnost a dohled; Optimalizace úředních procesů; Predikce a automatizované rozhodování"
   },
   {
     "id": 34,
+    "Autor": "Michal Kozubek",
     "Název projektu": "GeoAI",
     "Typ umělé inteligence": "Strojové učení\nDeep learning\nComputer vision, analýza geoprostorových dat",
     "Hlavní kategorie use case": "Predikce a automatizované rozhodování",
@@ -610,11 +677,13 @@
     "Poučení pro příští projekty": "Klíčová je dostupnost kvalitních satelitních a mapových dat\nSpolupráce s lokálními uživateli zvyšuje praktickou využitelnost\nIntegrovaný přístup propojující více zdrojů dat zvyšuje přesnost modelů",
     "Zdroj": "https://fit.cvut.cz/cs/media-a-pr/tiskove-zpravy/21576-celosvetove-unikatni-metody-ai-projektu-poliruralplus-a-aliance-prinasi-revoluci-do-zemedelstvi-ochrany-zivotniho-prostredi-a-uzemniho-planovani",
     "Označení zdroje": "GeoAI",
+    "Informace o zdroji a kontaktní osoba": "Ivana Macnarová, Fakulta informačních technologií ČVUT, ivana.macnarova@fit.cvut.cz",
     "Obor činnosti": "Životní prostředí a zemědělství",
     "Kategorie use case": "Monitoring, bezpečnost a dohled; Predikce a automatizované rozhodování"
   },
   {
     "id": 35,
+    "Autor": "Michal Kozubek",
     "Název projektu": "AI National Skilling Plan",
     "Typ umělé inteligence": "Základy AI",
     "Hlavní kategorie use case": "Optimalizace úředních procesů",
@@ -628,11 +697,13 @@
     "Poučení pro příští projekty": "Důležitost spolupráce mezi veřejným a soukromým sektorem při implementaci AI do veřejné správy.",
     "Zdroj": "https://mpo.gov.cz/cz/rozcestnik/pro-media/tiskove-zpravy/microsoft-spousti-ai-national-skilling-plan-v-cr-v_prvni-fazi-projektu-investuje-pres-10-milionu-korun-do-vzdelavani-vice-nez-350-000-lidi--288281/",
     "Označení zdroje": "Oficiální zpráva MPO o AI National Skilling Plan",
+    "Informace o zdroji a kontaktní osoba": "MPO",
     "Obor činnosti": "Práce a zaměstnanost",
     "Kategorie use case": "Optimalizace úředních procesů; Školství a vzdělávání"
   },
   {
     "id": 36,
+    "Autor": "Michal Kozubek",
     "Název projektu": "Monitoring klimatických změn a stavu ekosystémů pomocí AI",
     "Typ umělé inteligence": "Strojové učení\nDeep learning\nAnalýza časových řad",
     "Hlavní kategorie use case": "Monitoring, bezpečnost a dohled",
@@ -646,11 +717,13 @@
     "Poučení pro příští projekty": "Kvalitní data z více zdrojů zvyšují spolehlivost predikcí. Spolupráce mezi klimatology a datovými vědci je klíčová. Potřeba dlouhodobého financování pro udržení kontinuálního sběru dat",
     "Zdroj": "https://info.zcu.cz/Kdyz-slova-dostanou-souradnice--Vedci-a-vedkyne-ze-ZCU-spojili-filozofii--matematiku-a-AI/clanek.jsp?id=8293",
     "Označení zdroje": "AI National Skilling Plan",
+    "Informace o zdroji a kontaktní osoba": "ZČU Plzeň – Fakulta aplikovaných věd (kontakt neuveden veřejně)",
     "Obor činnosti": "Životní prostředí a zemědělství",
     "Kategorie use case": "Monitoring, bezpečnost a dohled; Predikce a automatizované rozhodování"
   },
   {
     "id": 37,
+    "Autor": "Viktor Švec",
     "Název projektu": "Anakonda",
     "Typ umělé inteligence": "Strojové učení\nDeep learning\nAnalýza časových řad",
     "Hlavní kategorie use case": "Optimalizace úředních procesů",
@@ -664,11 +737,13 @@
     "Poučení pro příští projekty": "Důvěra a kompetence uživatelů je klíčová – investice do interní vzdělávací AI Akademie přinesla úspěch. Bezpečnost a regulace – AI nástroje musí splňovat kybernetickou bezpečnost, GDPR a interní směrnice. Nástroj, ne náhrada – AI by neměla rozhodovat, ale asistovat; lidský dozor zůstává zásadní. Interní know-how poskytuje větší flexibilitu a bezpečnost než externí dodavatelé.",
     "Zdroj": "https://crr.gov.cz/ai-muze-vyrazne-zvysit-efektivitu-uredniku-ukazal-seminar-crr/",
     "Označení zdroje": "Anakonda",
+    "Informace o zdroji a kontaktní osoba": "Miloš Šenkýř – vedoucí oddělení rozvoje (z článku), za KC Viktor Švec, Delivery manager",
     "Obor činnosti": "Jiné: Evropská politika podpory a strukturální fondy",
     "Kategorie use case": "Monitoring, bezpečnost a dohled; Predikce a automatizované rozhodování"
   },
   {
     "id": 38,
+    "Autor": "Vojtěch Duraj",
     "Název projektu": "Detekce a analýza poškození vozovek pomocí AI",
     "Typ umělé inteligence": "Počítačové vidění (Computer Vision)\nHluboké učení (Deep Learning)\nKonvoluční neuronové sítě (CNN)",
     "Hlavní kategorie use case": "Predikce a automatizované rozhodování",
@@ -682,11 +757,13 @@
     "Poučení pro příští projekty": "Důvěra a kompetence uživatelů je klíčová – investice do interní vzdělávací AI Akademie přinesla úspěch. Bezpečnost a regulace – AI nástroje musí splňovat kybernetickou bezpečnost, GDPR a interní směrnice. Nástroj, ne náhrada – AI by neměla rozhodovat, ale asistovat; lidský dozor zůstává zásadní. Interní know-how poskytuje větší flexibilitu a bezpečnost než externí dodavatelé.",
     "Zdroj": null,
     "Označení zdroje": null,
+    "Informace o zdroji a kontaktní osoba": null,
     "Obor činnosti": "Životní prostředí a zemědělství",
     "Kategorie use case": "Monitoring, bezpečnost a dohled; Predikce a automatizované rozhodování"
   },
   {
     "id": 39,
+    "Autor": "Vojtěch Duraj",
     "Název projektu": "Podpora životního cyklu veřejných zakázek pomocí AI",
     "Typ umělé inteligence": "Zpracování přirozeného jazyka (NLP)\nVelké jazykové modely (LLM)\nGenerativní AI, Strojové učení",
     "Hlavní kategorie use case": "Analýza audiovizuálních dat",
@@ -700,11 +777,13 @@
     "Poučení pro příští projekty": "AI je podpůrný nástroj – finální odpovědnost za zákonnost postupu nese zadavatel. Nutnost neustálé aktualizace systému v souladu se změnami legislativy a rozhodovací praxe. Zajištění vysoké úrovně kybernetické a datové bezpečnosti, zejména u neveřejných částí nabídek.",
     "Zdroj": null,
     "Označení zdroje": null,
+    "Informace o zdroji a kontaktní osoba": null,
     "Obor činnosti": "Veřejné zakázky a hospodářská soutěž",
     "Kategorie use case": "Monitoring, bezpečnost a dohled; Analýza dokumentů a dat Generování obsahu; Optimalizace procesůa zdrojů; Predikce a rozhodovací podpora"
   },
   {
     "id": 40,
+    "Autor": "Vojtěch Duraj",
     "Název projektu": "Znalostní báze a AI asistent pro interní ICT systémy",
     "Typ umělé inteligence": "Zpracování přirozeného jazyka (NLP)\nVelké jazykové modely (LLM)\nGenerativní AI",
     "Hlavní kategorie use case": "Komunikace a klientský servis",
@@ -718,6 +797,7 @@
     "Poučení pro příští projekty": "Kvalita AI asistenta je přímo závislá na kvalitě a aktuálnosti podkladové znalostní báze. Musí být zaveden proces pro neustálou aktualizaci dokumentace při každé změně systémů. Systém musí umožňovat snadnou eskalaci problému na živého pracovníka IT podpory, pokud si AI neví rady. Doporučuje se pilotní nasazení na jeden či dva klíčové systémy před celoplošným rozšířením.",
     "Zdroj": null,
     "Označení zdroje": null,
+    "Informace o zdroji a kontaktní osoba": null,
     "Obor činnosti": "Jiné: Interní IT podpora a správa znalostí",
     "Kategorie use case": "Komunikace a klientský servis; Analýza dokumentů a dat; Generování obsahu;Optimalizace procesů a zdrojů"
   }
