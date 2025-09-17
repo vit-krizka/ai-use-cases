@@ -739,12 +739,12 @@ h3 {
 }
 
 .info-grid ul li::before {
-    content: "■"; /* plný čtvereček */
+    content: "●"; /* plné kolečko */
     position: absolute;
     left: 0;
     top: 0.45em; /* necháváme tvůj původní posun dolů */
-    color: rgb(54, 133, 55); /* zelený čtvereček */
-    font-size: 0.65em; /* menší velikost čtverečku */
+    color: #368537; /* zelené kolečko */
+    font-size: 0.75em; /* menší velikost čtverečku */
     line-height: 1;
     pointer-events: none;
 }
