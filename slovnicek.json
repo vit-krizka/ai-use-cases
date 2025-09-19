@@ -1,0 +1,62 @@
+[
+  {
+    "id": "umele-inteligence",
+    "preferredName": "Umělá inteligence",
+    "czechName": "Umělá inteligence",
+    "englishName": "Artificial Intelligence",
+    "definition": "Soubor metod a systémů, které napodobují nebo rozšiřují schopnosti lidské inteligence prostřednictvím algoritmů, modelů a dat.",
+    "tag": "základní pojem",
+    "officialExplanation": "Umělá inteligence zahrnuje širokou škálu technologií od pravidlových systémů přes strojové učení až po hluboké neuronové sítě. Ve veřejné správě může pomáhat automatizovat rutinní činnosti, analyzovat velké objemy dat nebo podporovat rozhodování úředníků.",
+    "example": "Například automatizovaný systém pro analýzu digitalizovaných dokumentů, který dokáže rozpoznat typ podání a doporučit další postup zpracování."
+  },
+  {
+    "id": "ai-act",
+    "preferredName": "Artificial Intelligence Act",
+    "czechName": "Zákon o umělé inteligenci",
+    "englishName": "Artificial Intelligence Act",
+    "definition": "Nařízení Evropské unie, které stanovuje pravidla pro vývoj, nasazení a používání systémů umělé inteligence na jednotném trhu EU.",
+    "tag": "legální definice",
+    "officialExplanation": "AI Act zavádí povinnosti pro poskytovatele i uživatele AI podle úrovně rizika. Orgány veřejné správy musí identifikovat, zda jejich systém spadá do kategorie vysokého rizika a zajistit odpovídající dokumentaci, správu dat i dohled.",
+    "example": "Při zavedení systému automatizovaného rozhodování o nároku na sociální dávky musí úřad provést posouzení rizik, vést záznamy o datech a umožnit lidský dohled, aby splnil požadavky AI Act."
+  },
+  {
+    "id": "strojove-uceni",
+    "preferredName": "Strojové učení",
+    "czechName": "Strojové učení",
+    "englishName": "Machine Learning",
+    "definition": "Podmnožina umělé inteligence, která využívá algoritmy k učení se vzorům v datech a zlepšování výkonu bez explicitního naprogramování všech pravidel.",
+    "tag": "technický pojem",
+    "officialExplanation": "Modely strojového učení se trénují na historických datech a následně předpovídají nebo klasifikují nové případy. Ve veřejné správě se používají například pro predikci zatížení pracovišť, kontrolu kvality nebo detekci anomálií.",
+    "example": "Krajský úřad využívá model strojového učení k odhadu počtu žádostí o řidičské průkazy v jednotlivých týdnech a optimalizuje rozvrh úředníků."
+  },
+  {
+    "id": "sprava-dat",
+    "preferredName": "Správa dat",
+    "czechName": "Správa dat",
+    "englishName": "Data Governance",
+    "definition": "Soubor procesů, rolí a politik, které zajišťují kvalitu, bezpečnost a dostupnost dat po celou dobu jejich životního cyklu.",
+    "tag": "organizační pojem",
+    "officialExplanation": "Správa dat je klíčová pro spolehlivost systémů AI. Orgány veřejné správy musí znát původ dat, mít nastavená práva přístupu a pravidelně kontrolovat, zda data odpovídají účelu a právním požadavkům.",
+    "example": "Ministerstvo zavádí katalog datových sad a jasně stanovuje, kdo je správcem údajů potřebných pro algoritmus na vyhodnocování žádostí o dotace."
+  },
+  {
+    "id": "predsudky-v-ai",
+    "preferredName": "AI Bias",
+    "czechName": "Předsudky v umělé inteligenci",
+    "englishName": "AI Bias",
+    "definition": "Systematická odchylka ve výstupech algoritmů, která vzniká vlivem zkreslených dat, modelů nebo způsobu nasazení a vede k nespravedlivým výsledkům.",
+    "tag": "etický pojem",
+    "officialExplanation": "Předsudky mohou způsobovat diskriminaci jednotlivců nebo skupin. Úřady musí monitorovat chování systémů, hodnotit datové sady z hlediska reprezentativnosti a zavádět kontrolní mechanismy pro korekce výsledků.",
+    "example": "Algoritmus pro přidělování sociálních bytů je pravidelně auditován, aby se ověřilo, zda neznevýhodňuje určité věkové nebo etnické skupiny."
+  },
+  {
+    "id": "privacy-by-design",
+    "preferredName": "Privacy by Design",
+    "czechName": "Ochrana soukromí již v návrhu",
+    "englishName": "Privacy by Design",
+    "definition": "Princip tvorby systémů, kdy je ochrana osobních údajů začleněna do návrhu procesů, technologií i správy dat od samého počátku.",
+    "tag": "právní a etický princip",
+    "officialExplanation": "Instituce musí při plánování řešení AI zvažovat minimalizaci zpracování osobních údajů, zavádět pseudonymizaci, auditovatelnost a kontrolu přístupu. Privacy by Design je požadavkem GDPR a podporuje důvěru veřejnosti.",
+    "example": "Při vývoji chatbotu pro komunikaci s občany jsou osobní údaje okamžitě pseudonymizovány a logy se uchovávají jen po dobu nezbytnou pro vyřízení podání."
+  }
+]

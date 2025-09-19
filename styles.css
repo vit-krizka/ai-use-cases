@@ -1459,3 +1459,77 @@ table#table-overview tr>* {
 table#table-overview tr>*:first-child {
     width: 50%;
 }
+
+.glossary-table-wrapper {
+    margin-top: 1.5rem;
+    overflow-x: auto;
+}
+
+.glossary-table {
+    table-layout: auto;
+    min-width: 100%;
+}
+
+.glossary-table td:first-child {
+    width: clamp(14rem, 30%, 20rem);
+    font-weight: 600;
+}
+
+.glossary-table a {
+    color: var(--primary);
+    text-decoration: none;
+}
+
+.glossary-table a:hover,
+.glossary-table a:focus {
+    text-decoration: underline;
+}
+
+.glossary-tag {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.25rem 0.6rem;
+    border-radius: 999px;
+    background-color: rgba(32, 115, 21, 0.1);
+    color: var(--primary);
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+.glossary-entry {
+    max-width: 900px;
+}
+
+.glossary-back {
+    display: inline-flex;
+    gap: 0.35rem;
+    align-items: center;
+    margin-bottom: 1rem;
+    color: var(--primary);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.glossary-back:hover,
+.glossary-back:focus {
+    text-decoration: underline;
+}
+
+.glossary-definition {
+    font-size: 1.1rem;
+    font-weight: 500;
+    margin-bottom: 0.75rem;
+}
+
+.glossary-alt-name {
+    color: #4f4f4f;
+    margin-top: 0;
+}
+
+.glossary-section {
+    margin-top: 2rem;
+}
+
+.glossary-section h3 {
+    margin-bottom: 0.5rem;
+}
