@@ -4,40 +4,62 @@
  *  Společné prvky stránek
  *  ====================== */
 function initCommon() {
-  const sidebar = document.getElementById('sidebar');
   const menuBtn = document.getElementById('menuBtn');
+  const mobileNav = document.getElementById('mobile-nav');
 
-  if (sidebar && menuBtn) {
-    sidebar.setAttribute('aria-hidden', 'true');
-    menuBtn.setAttribute('aria-expanded', 'false');
+  if (menuBtn && mobileNav) {
+    const setNavState = (open) => {
+      mobileNav.classList.toggle('open', open);
+      mobileNav.setAttribute('aria-hidden', String(!open));
+      menuBtn.setAttribute('aria-expanded', String(open));
+    };
+
+    setNavState(false);
 
     menuBtn.addEventListener('click', () => {
-      const isOpen = sidebar.classList.toggle('open');
-      menuBtn.setAttribute('aria-expanded', String(isOpen));
-      sidebar.setAttribute('aria-hidden', String(!isOpen));
+      const isOpen = mobileNav.classList.contains('open');
+      setNavState(!isOpen);
     });
 
     document.addEventListener('click', (e) => {
       if (
         window.innerWidth <= 768 &&
-        sidebar.classList.contains('open') &&
-        !sidebar.contains(e.target) &&
+        mobileNav.classList.contains('open') &&
+        !mobileNav.contains(e.target) &&
         !menuBtn.contains(e.target)
       ) {
-        sidebar.classList.remove('open');
-        menuBtn.setAttribute('aria-expanded', 'false');
-        sidebar.setAttribute('aria-hidden', 'true');
+        setNavState(false);
       }
     });
 
     document.addEventListener('keydown', (e) => {
-      if (e.key === 'Escape' && sidebar.classList.contains('open')) {
-        sidebar.classList.remove('open');
-        menuBtn.setAttribute('aria-expanded', 'false');
-        sidebar.setAttribute('aria-hidden', 'true');
+      if (e.key === 'Escape' && mobileNav.classList.contains('open')) {
+        setNavState(false);
+        menuBtn.focus();
       }
     });
+
+    window.addEventListener('resize', () => {
+      if (window.innerWidth > 768) setNavState(false);
+    });
+
+    mobileNav.addEventListener('click', (e) => {
+      const link = e.target.closest('a');
+      if (link) setNavState(false);
+    });
   }
+}
+
+function setupDisclosure(button, target) {
+  if (!button || !target) return;
+  button.setAttribute('aria-expanded', button.getAttribute('aria-expanded') || 'false');
+  if (!target.hasAttribute('hidden')) target.hidden = true;
+
+  button.addEventListener('click', () => {
+    const expanded = button.getAttribute('aria-expanded') === 'true';
+    button.setAttribute('aria-expanded', String(!expanded));
+    target.hidden = expanded;
+  });
 }
 
 /** ======================
@@ -145,9 +167,13 @@ async function initCatalog() {
   const sidebar = document.getElementById('sidebar');
   const navList = document.getElementById('usecase-list');
   const main = document.querySelector('main');
-  if (!sidebar || !navList || !main) return;
+  const mobileCatalogList = document.getElementById('mobile-catalog-list');
+  const mobileCatalogToggle = document.querySelector('[data-toggle="mobile-catalog-list"]');
+  const isProjectPage = document.body.id === 'project-page';
 
-  const urlParams = new URLSearchParams(window.location.search);
+  const needsDesktopCatalog = Boolean(sidebar && navList && main && isProjectPage);
+  const needsMobileCatalog = Boolean(mobileCatalogList);
+  if (!needsDesktopCatalog && !needsMobileCatalog) return;
 
   try {
     const [casesRes, categoriesRes] = await Promise.all([
@@ -161,118 +187,189 @@ async function initCatalog() {
     const categoryMap = new Map(categories.map(c => [c.title, []]));
     const others = [];
 
-    // Render sekcí
     useCases.forEach(uc => {
       const { section, category, idStr, title, sectionId } = createUseCaseSection(uc, categoryDescriptions);
-      main.appendChild(section);
-      if (categoryMap.has(category)) categoryMap.get(category).push({ idStr, sectionId, title });
-      else others.push({ idStr, sectionId, title });
+      if (needsDesktopCatalog) main.appendChild(section);
+      const entry = { idStr, sectionId, title };
+      if (categoryMap.has(category)) categoryMap.get(category).push(entry);
+      else others.push(entry);
     });
 
-    // --- Kód pro popup kategorií ---
-    const categoryPopup = document.getElementById('category-popup');
-    if (categoryPopup) {
-      const popupTitle = categoryPopup.querySelector('h3');
-      const popupText = categoryPopup.querySelector('p');
-      const popupClose = categoryPopup.querySelector('.popup-close');
+    if (needsDesktopCatalog) {
+      const categoryPopup = document.getElementById('category-popup');
+      if (categoryPopup) {
+        const popupTitle = categoryPopup.querySelector('h3');
+        const popupText = categoryPopup.querySelector('p');
+        const popupClose = categoryPopup.querySelector('.popup-close');
 
-      // zavření křížkem
-      popupClose.addEventListener('click', () => {
-        categoryPopup.setAttribute('aria-hidden', 'true');
-      });
-
-      // zavření kliknutím mimo obsah
-      categoryPopup.addEventListener('click', (e) => {
-        if (e.target === categoryPopup) {
-          categoryPopup.setAttribute('aria-hidden', 'true');
+        if (popupClose) {
+          popupClose.addEventListener('click', () => {
+            categoryPopup.setAttribute('aria-hidden', 'true');
+          });
         }
-      });
 
-      // otevření popupu po kliknutí na kategorii
-      const categoryLinks = document.querySelectorAll('.category-link');
-      categoryLinks.forEach(link => {
-        link.addEventListener('click', e => {
-          e.preventDefault();
-          const cat = link.dataset.category;
-          popupTitle.textContent = link.textContent;
-          popupText.textContent = categoryDescriptions.get(cat) || '';
-          categoryPopup.setAttribute('aria-hidden', 'false');
+        categoryPopup.addEventListener('click', (e) => {
+          if (e.target === categoryPopup) {
+            categoryPopup.setAttribute('aria-hidden', 'true');
+          }
         });
+
+        const categoryLinks = document.querySelectorAll('.category-link');
+        categoryLinks.forEach(link => {
+          link.addEventListener('click', e => {
+            e.preventDefault();
+            const cat = link.dataset.category;
+            popupTitle.textContent = link.textContent;
+            popupText.textContent = categoryDescriptions.get(cat) || '';
+            categoryPopup.setAttribute('aria-hidden', 'false');
+          });
+        });
+      }
+
+      const buildCategoryNav = (catTitle, items) => {
+        const li = document.createElement('li');
+        const btn = document.createElement('button');
+        btn.className = 'category-toggle';
+        btn.setAttribute('aria-expanded', 'false');
+        btn.innerHTML = `${catTitle}<span class="arrow" aria-hidden="true">▶</span>`;
+        li.appendChild(btn);
+
+        const subUl = document.createElement('ul');
+        subUl.className = 'subcategory';
+        items.forEach(item => {
+          const subLi = document.createElement('li');
+          const a = document.createElement('a');
+          a.href = `#${item.sectionId}`;
+          a.textContent = item.title;
+          subLi.appendChild(a);
+          subUl.appendChild(subLi);
+        });
+        li.appendChild(subUl);
+
+        btn.addEventListener('click', () => {
+          const expanded = btn.getAttribute('aria-expanded') === 'true';
+          btn.setAttribute('aria-expanded', String(!expanded));
+        });
+
+        return li;
+      };
+
+      categories.forEach(cat => {
+        const items = categoryMap.get(cat.title) || [];
+        navList.appendChild(buildCategoryNav(cat.title, items));
       });
-    }
+      if (others.length) navList.appendChild(buildCategoryNav('Ostatní', others));
 
-    // Vytvoření navigace
-    const buildCategoryNav = (catTitle, items) => {
-      const li = document.createElement('li');
-      const btn = document.createElement('button');
-      btn.className = 'category-toggle';
-      btn.setAttribute('aria-expanded', 'false');
-      btn.innerHTML = `${catTitle}<span class="arrow" aria-hidden="true">▶</span>`;
-      li.appendChild(btn);
+      const navLinks = sidebar.querySelectorAll('nav a');
+      const sections = main.querySelectorAll('section');
 
-      const subUl = document.createElement('ul');
-      subUl.className = 'subcategory';
-      items.forEach(item => {
-        const subLi = document.createElement('li');
-        const a = document.createElement('a');
-        a.href = `#${item.sectionId}`;
-        a.textContent = item.title;
-        subLi.appendChild(a);
-        subUl.appendChild(subLi);
-      });
-      li.appendChild(subUl);
+      const setActiveLink = link => {
+        navLinks.forEach(l => l.classList.remove('active'));
+        link.classList.add('active');
 
-      btn.addEventListener('click', () => {
-        const expanded = btn.getAttribute('aria-expanded') === 'true';
-        btn.setAttribute('aria-expanded', String(!expanded));
-      });
-
-      return li;
-    };
-
-    categories.forEach(cat => navList.appendChild(buildCategoryNav(cat.title, categoryMap.get(cat.title))));
-    if (others.length) navList.appendChild(buildCategoryNav('Ostatní', others));
-
-    // Aktivace sekce dle hash
-    const navLinks = sidebar.querySelectorAll('nav a');
-    const sections = document.querySelectorAll('main section');
-
-    const setActiveLink = link => {
-      navLinks.forEach(l => l.classList.remove('active'));
-      link.classList.add('active');
-
-      const sublist = link.closest('ul.subcategory');
-      if (sublist) {
+        const sublist = link.closest('ul.subcategory');
+        if (sublist) {
           const toggle = sublist.previousElementSibling;
           if (toggle?.classList.contains('category-toggle')) toggle.setAttribute('aria-expanded', 'true');
-      }
-    };
+        }
+      };
 
-    const showSection = id => {
-      sections.forEach(s => s.classList.remove('active'));
-      const target = document.getElementById(id);
-      if (target) {
+      const showSection = id => {
+        sections.forEach(s => s.classList.remove('active'));
+        const target = document.getElementById(id);
+        if (target) {
           target.classList.add('active');
           target.scrollIntoView();
-      }
-    };
+        }
+      };
 
-    const initialId = window.location.hash ? window.location.hash.substring(1) : sections[0]?.id;
-    const initialLink = sidebar.querySelector(`a[href='#${initialId}']`);
-    if (initialLink) {
-      setActiveLink(initialLink);
+      const handleHashChange = () => {
+        const targetId = window.location.hash ? window.location.hash.substring(1) : sections[0]?.id;
+        if (!targetId) return;
+        const targetLink = sidebar.querySelector(`a[href='#${targetId}']`);
+        if (targetLink) setActiveLink(targetLink);
+        showSection(targetId);
+      };
+
+      handleHashChange();
+
+      navLinks.forEach(link => link.addEventListener('click', e => {
+        e.preventDefault();
+        const id = link.getAttribute('href').substring(1);
+        setActiveLink(link);
+        showSection(id);
+        history.replaceState(null, '', `#${id}`);
+      }));
+
+      window.addEventListener('hashchange', handleHashChange);
     }
-    showSection(initialId);
 
-    navLinks.forEach(link => link.addEventListener('click', e => {
-      e.preventDefault();
-      const id = link.getAttribute('href').substring(1);
-      setActiveLink(link);
-      showSection(id);
-      history.replaceState(null, '', `#${id}`);
-      if (window.innerWidth <= 768) sidebar.classList.remove('open');
-    }));
+    if (needsMobileCatalog) {
+      mobileCatalogList.innerHTML = '';
+      const slugify = (str) => str
+        .toLowerCase()
+        .normalize('NFD')
+        .replace(/[\u0300-\u036f]/g, '')
+        .replace(/[^a-z0-9]+/g, '-')
+        .replace(/^-+|-+$/g, '');
 
+      const linkBase = isProjectPage ? '#' : 'project.html#';
+      mobileCatalogList.hidden = true;
+
+      const buildMobileCategory = (catTitle, items) => {
+        if (!items.length) return null;
+        const li = document.createElement('li');
+        li.className = 'mobile-nav__submenu-item';
+
+        const btn = document.createElement('button');
+        btn.type = 'button';
+        btn.className = 'mobile-nav__submenu-toggle';
+        btn.setAttribute('aria-expanded', 'false');
+
+        const label = document.createElement('span');
+        label.textContent = catTitle;
+        const chevron = document.createElement('span');
+        chevron.className = 'mobile-nav__chevron';
+        chevron.setAttribute('aria-hidden', 'true');
+        chevron.textContent = '▸';
+        btn.append(label, chevron);
+
+        const subUl = document.createElement('ul');
+        subUl.className = 'mobile-nav__submenu';
+        subUl.hidden = true;
+        const subId = `mobile-cat-${slugify(catTitle)}-${items[0].idStr}`;
+        subUl.id = subId;
+        btn.setAttribute('aria-controls', subId);
+
+        items.forEach(item => {
+          const caseLi = document.createElement('li');
+          caseLi.className = 'mobile-nav__submenu-item';
+          const caseLink = document.createElement('a');
+          caseLink.href = `${linkBase}${item.sectionId}`;
+          caseLink.textContent = item.title;
+          caseLi.appendChild(caseLink);
+          subUl.appendChild(caseLi);
+        });
+
+        li.append(btn, subUl);
+        setupDisclosure(btn, subUl);
+        return li;
+      };
+
+      categories.forEach(cat => {
+        const items = categoryMap.get(cat.title) || [];
+        const node = buildMobileCategory(cat.title, items);
+        if (node) mobileCatalogList.appendChild(node);
+      });
+      if (others.length) {
+        const node = buildMobileCategory('Ostatní', others);
+        if (node) mobileCatalogList.appendChild(node);
+      }
+
+      if (mobileCatalogToggle) {
+        setupDisclosure(mobileCatalogToggle, mobileCatalogList);
+      }
+    }
   } catch (e) {
     console.error('Chyba při načítání use casů:', e);
   }
@@ -285,13 +382,4 @@ document.addEventListener('DOMContentLoaded', () => {
   initCommon();
   initCatalog();
   initInfoBanner();
-});
-
-window.addEventListener('hashchange', function () {
-    const initialId = window.location.hash ? window.location.hash.substring(1) : sections[0]?.id;
-    const sidebar = document.getElementById('sidebar');
-    const initialLink = sidebar.querySelector(`a[href='#${initialId}']`);
-    if (initialLink) {
-        initialLink.click();
-    }
 });

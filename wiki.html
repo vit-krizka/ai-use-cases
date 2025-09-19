@@ -15,6 +15,14 @@
   <a href="#main" class="skip-link">Přeskočit na obsah</a>
   <header>
     <div>
+      <button class="hamburger" id="menuBtn" aria-label="Menu" aria-controls="mobile-nav" aria-expanded="false">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+             stroke-linejoin="round">
+          <line x1="3" y1="12" x2="21" y2="12"></line>
+          <line x1="3" y1="6" x2="21" y2="6"></line>
+          <line x1="3" y1="18" x2="21" y2="18"></line>
+        </svg>
+      </button>
       <h1>
         <a href="/">
           <img src="logos/katalog_AI.svg" alt="DIA: Katalog využití AI ve veřejném sektoru">
@@ -22,6 +30,42 @@
       </h1>
     </div>
   </header>
+
+  <nav class="main-nav" aria-label="Hlavní navigace">
+    <div class="main-nav__container">
+      <ul class="main-nav__list">
+        <li><a class="main-nav__link" href="project.html">Katalog</a></li>
+        <li><a class="main-nav__link" href="ai-gramotnost.html">AI gramotnost</a></li>
+        <li><a class="main-nav__link" href="ai-compliance.html">AI compliance</a></li>
+        <li><a class="main-nav__link" href="clanky.html">Články</a></li>
+        <li><a class="main-nav__link" href="slovnicek.html">Slovníček</a></li>
+        <li><a class="main-nav__link" href="wiki.html" aria-current="page">Přidat use case</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div id="mobile-nav" class="mobile-nav" aria-hidden="true">
+    <nav aria-label="Hlavní menu (mobilní)">
+      <ul class="mobile-nav__list">
+        <li class="mobile-nav__item mobile-nav__item--catalog">
+          <div class="mobile-nav__item-header">
+            <a href="project.html">Katalog</a>
+            <button type="button" class="mobile-nav__toggle" aria-expanded="false" aria-controls="mobile-catalog-list"
+                    data-toggle="mobile-catalog-list">
+              <span class="visually-hidden">Rozbalit položky Katalog</span>
+              <span aria-hidden="true" class="mobile-nav__chevron">▸</span>
+            </button>
+          </div>
+          <ul class="mobile-nav__submenu" id="mobile-catalog-list" hidden></ul>
+        </li>
+        <li class="mobile-nav__item"><a href="ai-gramotnost.html">AI gramotnost</a></li>
+        <li class="mobile-nav__item"><a href="ai-compliance.html">AI compliance</a></li>
+        <li class="mobile-nav__item"><a href="clanky.html">Články</a></li>
+        <li class="mobile-nav__item"><a href="slovnicek.html">Slovníček</a></li>
+        <li class="mobile-nav__item"><a href="wiki.html" aria-current="page">Přidat use case</a></li>
+      </ul>
+    </nav>
+  </div>
 
 
   <main id="main">

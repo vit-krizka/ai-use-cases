@@ -1,10 +1,9 @@
 <!DOCTYPE html>
 <html lang="cs">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Katalog využití umělé inteligence ve veřejném sektoru</title>
+    <title>Články – Katalog využití umělé inteligence ve veřejném sektoru</title>
     <link rel="icon" type="image/png" href="https://www.dia.gov.cz/favicon-96x96.png?v2" sizes="96x96">
     <link rel="icon" type="image/svg+xml" href="https://www.dia.gov.cz/favicon.svg?v2">
     <link rel="shortcut icon" href="https://www.dia.gov.cz/favicon.ico?v2">
@@ -12,7 +11,7 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 
-<body id="project-page">
+<body>
   <a href="#main" class="skip-link">Přeskočit na obsah</a>
   <header>
     <div>
@@ -35,10 +34,10 @@
   <nav class="main-nav" aria-label="Hlavní navigace">
     <div class="main-nav__container">
       <ul class="main-nav__list">
-        <li><a class="main-nav__link" href="project.html" aria-current="page">Katalog</a></li>
+        <li><a class="main-nav__link" href="project.html">Katalog</a></li>
         <li><a class="main-nav__link" href="ai-gramotnost.html">AI gramotnost</a></li>
         <li><a class="main-nav__link" href="ai-compliance.html">AI compliance</a></li>
-        <li><a class="main-nav__link" href="clanky.html">Články</a></li>
+        <li><a class="main-nav__link" href="clanky.html" aria-current="page">Články</a></li>
         <li><a class="main-nav__link" href="slovnicek.html">Slovníček</a></li>
         <li><a class="main-nav__link" href="wiki.html">Přidat use case</a></li>
       </ul>
@@ -50,7 +49,7 @@
       <ul class="mobile-nav__list">
         <li class="mobile-nav__item mobile-nav__item--catalog">
           <div class="mobile-nav__item-header">
-            <a href="project.html" aria-current="page">Katalog</a>
+            <a href="project.html">Katalog</a>
             <button type="button" class="mobile-nav__toggle" aria-expanded="false" aria-controls="mobile-catalog-list"
                     data-toggle="mobile-catalog-list">
               <span class="visually-hidden">Rozbalit položky Katalog</span>
@@ -61,22 +60,46 @@
         </li>
         <li class="mobile-nav__item"><a href="ai-gramotnost.html">AI gramotnost</a></li>
         <li class="mobile-nav__item"><a href="ai-compliance.html">AI compliance</a></li>
-        <li class="mobile-nav__item"><a href="clanky.html">Články</a></li>
+        <li class="mobile-nav__item"><a href="clanky.html" aria-current="page">Články</a></li>
         <li class="mobile-nav__item"><a href="slovnicek.html">Slovníček</a></li>
         <li class="mobile-nav__item"><a href="wiki.html">Přidat use case</a></li>
       </ul>
     </nav>
   </div>
 
-
-    <div class="content">
-    <aside id="sidebar">
-        <nav aria-label="Přehled use casů">
-            <ul id="usecase-list"></ul>
-        </nav>
-    </aside>
-    <main id="main"></main>
+  <main id="main">
+    <div>
+      <section class="main-content">
+        <h2>Články a inspirace</h2>
+        <p>Připravili jsme ukázkové články, které ilustrují možné příspěvky do připravované rubriky.</p>
+        <article class="card" style="margin-bottom: 1.5rem; padding: 1.5rem;">
+          <h3>Transformace služeb pro občany pomocí AI</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque eget massa ac velit sollicitudin
+            condimentum. Vestibulum eget arcu vitae lectus ullamcorper cursus sed vitae lorem. Aenean consequat
+            malesuada turpis, eu aliquet lorem dapibus nec.
+          </p>
+          <p><a href="#">Pokračovat ve čtení</a></p>
+        </article>
+        <article class="card" style="margin-bottom: 1.5rem; padding: 1.5rem;">
+          <h3>Jak nastavit governance pro AI projekty</h3>
+          <p>
+            Nulla facilisi. Integer finibus, erat quis pulvinar ultricies, ipsum lacus dignissim nisi, non fermentum
+            sapien mi sit amet neque. Donec non est sit amet augue dignissim auctor. Cras sit amet libero mi.
+          </p>
+          <p><a href="#">Pokračovat ve čtení</a></p>
+        </article>
+        <article class="card" style="padding: 1.5rem;">
+          <h3>Odpovědné využití dat ve veřejné správě</h3>
+          <p>
+            Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem
+            aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+          </p>
+          <p><a href="#">Pokračovat ve čtení</a></p>
+        </article>
+      </section>
     </div>
+  </main>
 
   <footer>
     <div>
@@ -90,7 +113,7 @@
         <section class="footer-block">
           <h3>Informace</h3>
           <p><a href="podminky.html">Podmínky využití a ochrana osobních údajů</a></p>
-          <p><a href="https://www.dia.gov.cz/cs/prohlaseni-o-pristupnosti" target="_blank" rel="noopener noreferrer">Prohlášení o přístupnosti</a></p>
+          <p><a href="https://www.dia.gov.cz/cs/prohlaseni-o-pristupnosti" target="_blank" rel="noopener noreferrer">Prohlášení o&nbsp;přístupnosti</a></p>
         </section>
         <section class="footer-block">
           <h3>Kontakty</h3>
@@ -114,7 +137,7 @@
             <img src="logos/dia_logo.svg" alt="DIA logo">
           </div>
           <div class="footer-block">
-            <p>Vytvořeno v rámci projektu ROPIM – Reforma pro optimalizaci, implementaci a metodické řízení
+            <p>Vytvořeno v&nbsp;rámci projektu ROPIM – Reforma pro optimalizaci, implementaci a metodické řízení
               digitalizovaných služeb vč. jejich kapacitního plánování a komunikaci klientům veřejné správy,
               financovaného Evropskou unií NextGeneration.</p>
             <p>REG. Č.: CZ.31.5.0/0.0/.0./23_106/0008503</p>
@@ -122,34 +145,12 @@
         </div>
       </section>
       <div class="footer-bottom">
-        <p>2025 © Digitální a informační agentura • Informace jsou poskytovány v souladu se zákonem č. 106/1999 Sb.</p>
+        <p>2025 © Digitální a informační agentura • Informace jsou poskytovány v&nbsp;souladu se zákonem č.&nbsp;106/1999&nbsp;Sb.</p>
       </div>
     </div>
   </footer>
 
-<div id="ai-tip-popup" class="popup" aria-hidden="true">
-  <div class="popup-content">
-    <button class="popup-close" aria-label="Close">&times;</button>
-    <p>Máte tip na inspirativní projekt s AI ve veřejném sektoru?
-    Přidejte svůj příspěvek <a href="https://docs.google.com/forms/d/e/1FAIpQLSeMnjLBUkiFR6cAExs28azQ6emrvqm1ptWcizBmWRx2Om3ejQ/viewform?usp=dialog" target="_blank" rel="noopener">zde</a> a my jej rádi zařadíme do katalogu.
-</p>
-  </div>
-</div>
-
-<div id="category-popup" class="category-popup" aria-hidden="true" role="dialog">
-  <div class="popup-content">
-    <button class="popup-close" aria-label="Zavřít">&times;</button>
-    <h3></h3>
-    <p></p>
-  </div>
-</div>
-
-    <!-- Stáhnout PDF tlačítko – zůstane nad pop-up okny -->
-<a href="PDF/AI_use-cases.pdf" id="downloadBtn" class="download-btn" title="Stáhnout PDF" target="_blank" rel="noopener noreferrer">
-  <img src="icons/download_.svg" alt="Stáhnout PDF" width="20" height="20">
-</a>
-
-<script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
 
 </html>
