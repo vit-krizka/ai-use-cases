@@ -1,0 +1,52 @@
+[
+  {
+    "id": "algoritmicka-transparentnost",
+    "preferovany_nazev": "Algoritmická transparentnost",
+    "cesky_nazev": "Algoritmická transparentnost",
+    "anglicky_nazev": "Algorithmic transparency",
+    "tag": "Princip odpovědné AI",
+    "definice": "Schopnost popsat a doložit, jak algoritmus pracuje s daty a jakými kroky dospívá k výsledku.",
+    "vysvetleni": "Transparentní postupy usnadňují kontrolu rozhodnutí systémů umělé inteligence a podporují důvěru občanů i vedení úřadu. V praxi to znamená vést dokumentaci o datech, použitých modelech, jejich verzích i o změnách v čase.",
+    "priklad": "Ministerstvo zveřejní stručný popis fungování nástroje, který doporučuje dávky sociální podpory, aby kontrolní orgány i veřejnost rozuměly základním pravidlům, podle nichž se doporučení vytváří."
+  },
+  {
+    "id": "large-language-model",
+    "preferovany_nazev": "Large Language Model",
+    "cesky_nazev": "velký jazykový model",
+    "anglicky_nazev": "Large Language Model",
+    "tag": "Technický pojem",
+    "definice": "Typ modelu strojového učení schopný zpracovávat a generovat text na základě statistických vzorů získaných z rozsáhlých datových korpusů.",
+    "vysvetleni": "Modely jako GPT nebo LLaMA lze využít pro asistenty, sumarizaci dokumentů či návrhy odpovědí. Úředníci by měli vědět, že jde o nástroj, který potřebuje správné zadání a přezkoumání výsledků člověkem.",
+    "priklad": "Úřad práce používá LLM k přípravě návrhů odpovědí na opakující se dotazy veřejnosti. Úředník návrh zkontroluje a doplní o konkrétní informace před odesláním."
+  },
+  {
+    "id": "zpracovani-osobnich-udaju",
+    "preferovany_nazev": "Zpracování osobních údajů",
+    "cesky_nazev": "Zpracování osobních údajů",
+    "anglicky_nazev": "Processing of personal data",
+    "tag": "Legální definice",
+    "definice": "Jakákoli operace nebo soubor operací s osobními údaji, jako je shromažďování, zaznamenávání, strukturování, uchování, přizpůsobení nebo pozměnění.",
+    "vysvetleni": "Každý projekt využívající AI musí mít jasně vymezené, které údaje zpracovává, na základě jakého právního titulu a jak jsou chráněny. Transparentní evidence zpracování je podmínkou souladu s GDPR.",
+    "priklad": "Magistrát vede evidenci všech kroků při zpracování žádostí o sociální služby. Pokud systém AI třídí žádosti podle naléhavosti, zaznamenává se, jaké osobní údaje využívá a jak dlouho jsou uchovávány."
+  },
+  {
+    "id": "data-governance",
+    "preferovany_nazev": "Data Governance",
+    "cesky_nazev": "správa dat",
+    "anglicky_nazev": "Data Governance",
+    "tag": "Proces řízení",
+    "definice": "Soubor pravidel, rolí a postupů, které zajišťují kvalitní, bezpečné a odpovědné nakládání s daty v organizaci.",
+    "vysvetleni": "Dobrá správa dat určuje, kdo je zodpovědný za konkrétní datové sady, jak se schvalují změny a jak se kontroluje kvalita. Bez ní se AI projekty snadno opírají o neaktuální nebo neúplná data.",
+    "priklad": "Krajský úřad zavedl roli správce dat pro oblast dopravy. Ten garantuje, že data o dopravní infrastruktuře jsou pravidelně aktualizována a dostupná pro projekty predikce dopravních kolon." 
+  },
+  {
+    "id": "regulatory-sandbox",
+    "preferovany_nazev": "Regulatory Sandbox",
+    "cesky_nazev": "regulační pískoviště",
+    "anglicky_nazev": "Regulatory Sandbox",
+    "tag": "Politický nástroj",
+    "definice": "Kontrolované prostředí, ve kterém mohou instituce testovat inovativní technologie za dohledu regulátora a s dočasně uvolněnými pravidly.",
+    "vysvetleni": "Sandbox pomáhá úřadům ověřit nové AI služby, aniž by hned musely splnit všechny regulatorní požadavky. Součástí je jasný plán, jak testování vyhodnotit a jak přejít do standardního režimu.",
+    "priklad": "Úřad vyzkoušel chatbot poskytující daňové informace v sandboxu vedeném ministerstvem financí. Po ověření bezpečnosti a kvality odpovědí získal projekt souhlas k rozšíření do ostrého provozu."
+  }
+]
