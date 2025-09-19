@@ -1459,6 +1459,7 @@ table#table-overview tr>* {
 table#table-overview tr>*:first-child {
     width: 50%;
 }
+
 /* ===== Slovníček ===== */
 .glossary-overview {
     display: flex;
