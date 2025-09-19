@@ -1,14 +1,15 @@
 <!DOCTYPE html>
 <html lang="cs">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Katalog využití umělé inteligence ve veřejném sektoru</title>
-    <link rel="icon" type="image/png" href="https://www.dia.gov.cz/favicon-96x96.png?v2" sizes="96x96">
-    <link rel="icon" type="image/svg+xml" href="https://www.dia.gov.cz/favicon.svg?v2">
-    <link rel="shortcut icon" href="https://www.dia.gov.cz/favicon.ico?v2">
-    <link rel="apple-touch-icon" sizes="180x180" href="https://www.dia.gov.cz/apple-touch-icon.png?v2">
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Katalog využití umělé inteligence ve veřejném sektoru</title>
+  <link rel="icon" type="image/png" href="https://www.dia.gov.cz/favicon-96x96.png?v2" sizes="96x96">
+  <link rel="icon" type="image/svg+xml" href="https://www.dia.gov.cz/favicon.svg?v2">
+  <link rel="shortcut icon" href="https://www.dia.gov.cz/favicon.ico?v2">
+  <link rel="apple-touch-icon" sizes="180x180" href="https://www.dia.gov.cz/apple-touch-icon.png?v2">
+  <link rel="stylesheet" href="styles.css">
 </head>
 
 <body id="main-page">
@@ -17,7 +18,7 @@
     <div class="header-bar">
       <button class="hamburger" id="menuBtn" aria-label="Menu" aria-controls="mobile-menu" aria-expanded="false">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-             stroke-linejoin="round">
+          stroke-linejoin="round">
           <line x1="3" y1="12" x2="21" y2="12"></line>
           <line x1="3" y1="6" x2="21" y2="6"></line>
           <line x1="3" y1="18" x2="21" y2="18"></line>
@@ -38,7 +39,7 @@
         <li><a href="ai-compliance.html">AI compliance</a></li>
         <li><a href="clanky.html">Články</a></li>
         <li><a href="slovnicek.html">Slovníček</a></li>
-        <li><a href="wiki.html" class="main-nav__cta">Přidat use case</a></li>
+        <li><a href="wiki.html">Přidat use case</a></li>
       </ul>
     </div>
   </nav>
@@ -48,14 +49,16 @@
     <div class="mobile-menu__panel" role="dialog" aria-modal="true">
       <div class="mobile-menu__header">
         <span>Menu</span>
-        <button class="mobile-menu__close" type="button" data-mobile-menu-close aria-label="Zavřít menu">&times;</button>
+        <button class="mobile-menu__close" type="button" data-mobile-menu-close
+          aria-label="Zavřít menu">&times;</button>
       </div>
       <nav aria-label="Hlavní menu">
         <ul class="mobile-menu__list">
           <li class="mobile-menu__item mobile-menu__item--catalog">
             <div class="mobile-menu__row">
               <a href="project.html">Katalog</a>
-              <button class="mobile-menu__toggle" type="button" aria-expanded="false" aria-controls="mobile-catalog-list">
+              <button class="mobile-menu__toggle" type="button" aria-expanded="false"
+                aria-controls="mobile-catalog-list">
                 <span class="sr-only">Rozbalit menu katalogu</span>
                 <span aria-hidden="true">▶</span>
               </button>
@@ -72,50 +75,56 @@
     </div>
   </div>
 
- <main id="main">
+  <main id="main">
     <div>
-    <section>
-    <div  class="hero-banner">
-      <div class="hero-image">
-        <img src="logos/hp_logo.png" alt="Budoucnost je digitální">
-      </div>
-      <div class="hero-text">
-        <h2>Katalog využití AI ve veřejném sektoru_</h2>
-        <p>DIA představuje úspěšné příklady AI praxe ve veřejném sektoru_</p>
-        <a href="project.html" class="btn-primary">Přejít do katalogu use cases</a>
-        <p></p>
-        <a href="PDF/AI_use-cases.pdf" id="btn-tertiary" class="btn-tertiary" title="Stáhnout katalog" target="_blank" rel="noreferrer nofollow">
-  <img src="icons/download_.svg" alt="Stáhnout katalog" width="20" height="20">
-  <span>Stáhnout katalog</span>
-</a>
+      <section>
+        <div class="hero-banner">
+          <div class="hero-image">
+            <img src="logos/hp_logo.png" alt="Budoucnost je digitální">
+          </div>
+          <div class="hero-text">
+            <h2>Katalog využití AI ve veřejném sektoru_</h2>
+            <p>DIA představuje úspěšné příklady AI praxe ve veřejném sektoru_</p>
+            <a href="project.html" class="btn-primary">Přejít do katalogu use cases</a>
+            <p></p>
+            <a href="PDF/AI_use-cases.pdf" id="btn-tertiary" class="btn-tertiary" title="Stáhnout katalog"
+              target="_blank" rel="noreferrer nofollow">
+              <img src="icons/download_.svg" alt="Stáhnout katalog" width="20" height="20">
+              <span>Stáhnout katalog</span>
+            </a>
 
 
-      </div>
-    </div>
-    <div class="main-content">
-      <h2>K čemu slouží katalog_</h2>
-      <p>Umělá inteligence postupně proměňuje způsob, jakým stát funguje – od zdravotnictví a dopravy, přes bezpečnost a
-        dohled, až po každodenní komunikaci úřadů s občany. Tento katalog přináší přehled konkrétních projektů, které
-        dokazují, že AI už není jen vizí budoucnosti, ale reálným nástrojem, který dnes pomáhá veřejné správě lépe
-        fungovat. Najdete zde desítky příkladů, jež ukazují, jak lze díky moderním technologiím zefektivnit procesy,
-        snížit administrativní zátěž a zlepšit dostupnost služeb pro občany.</p>
-      <p>Cílem projektu je ukázat, jak rozmanité jsou způsoby využití AI a jaký mají skutečný dopad – od rychlejší
-        diagnostiky nemocí v nemocnicích, přes automatizované přepisy parlamentních jednání, až po chytré chatboty,
-        kteří usnadňují občanům komunikaci s úřady. Tyto příklady zároveň slouží jako inspirace a know-how pro další
-        instituce, které hledají nové cesty k digitalizaci a inovacím.</p>
-      <p>Projekt není jen souborem technologických řešení. Je také mapou zkušeností, která ukazuje, co se osvědčilo, kde
-        je potřeba opatrnost a jak nastavit odpovědné využívání AI v prostředí veřejné správy. Katalog dává nahlédnout,
-        které projekty jsou už dnes v ostrém provozu, které se testují v pilotním režimu a jaké mají očekávané přínosy
-        do budoucna.</p>
-      <p>Umělá inteligence se tak stává jedním z klíčových nástrojů pro modernizaci veřejného sektoru. Přispívá
-        k efektivnějšímu fungování státu, transparentnějšímu rozhodování a dostupnějším službám pro všechny občany.
-        Tento katalog je prvním krokem k systematickému mapování a sdílení zkušeností, na jejichž základě může česká
-        veřejná správa stavět svou digitální budoucnost.</p>
-    </div>
-    <div><a href="wiki.html" class="btn-secondary" aria-label="Přidat use case">Přidat use case</a></div>
-    </section>
-    <div id="table-overview-container"></div>
-    <script src="table-overview.js"></script>
+          </div>
+        </div>
+        <div class="main-content">
+          <h2>K čemu slouží katalog_</h2>
+          <p>Umělá inteligence postupně proměňuje způsob, jakým stát funguje – od zdravotnictví a dopravy, přes
+            bezpečnost a
+            dohled, až po každodenní komunikaci úřadů s občany. Tento katalog přináší přehled konkrétních projektů,
+            které
+            dokazují, že AI už není jen vizí budoucnosti, ale reálným nástrojem, který dnes pomáhá veřejné správě lépe
+            fungovat. Najdete zde desítky příkladů, jež ukazují, jak lze díky moderním technologiím zefektivnit procesy,
+            snížit administrativní zátěž a zlepšit dostupnost služeb pro občany.</p>
+          <p>Cílem projektu je ukázat, jak rozmanité jsou způsoby využití AI a jaký mají skutečný dopad – od rychlejší
+            diagnostiky nemocí v nemocnicích, přes automatizované přepisy parlamentních jednání, až po chytré chatboty,
+            kteří usnadňují občanům komunikaci s úřady. Tyto příklady zároveň slouží jako inspirace a know-how pro další
+            instituce, které hledají nové cesty k digitalizaci a inovacím.</p>
+          <p>Projekt není jen souborem technologických řešení. Je také mapou zkušeností, která ukazuje, co se osvědčilo,
+            kde
+            je potřeba opatrnost a jak nastavit odpovědné využívání AI v prostředí veřejné správy. Katalog dává
+            nahlédnout,
+            které projekty jsou už dnes v ostrém provozu, které se testují v pilotním režimu a jaké mají očekávané
+            přínosy
+            do budoucna.</p>
+          <p>Umělá inteligence se tak stává jedním z klíčových nástrojů pro modernizaci veřejného sektoru. Přispívá
+            k efektivnějšímu fungování státu, transparentnějšímu rozhodování a dostupnějším službám pro všechny občany.
+            Tento katalog je prvním krokem k systematickému mapování a sdílení zkušeností, na jejichž základě může česká
+            veřejná správa stavět svou digitální budoucnost.</p>
+        </div>
+        <div><a href="wiki.html" class="btn-secondary" aria-label="Přidat use case">Přidat use case</a></div>
+      </section>
+      <div id="table-overview-container"></div>
+      <script src="table-overview.js"></script>
     </div>
   </main>
 
@@ -131,17 +140,22 @@
         <section class="footer-block">
           <h3>Informace</h3>
           <p><a href="podminky.html">Podmínky využití a ochrana osobních údajů</a></p>
-          <p><a href="https://www.dia.gov.cz/cs/prohlaseni-o-pristupnosti" target="_blank" rel="noopener noreferrer">Prohlášení o přístupnosti</a></p>
+          <p><a href="https://www.dia.gov.cz/cs/prohlaseni-o-pristupnosti" target="_blank"
+              rel="noopener noreferrer">Prohlášení o přístupnosti</a></p>
         </section>
         <section class="footer-block">
           <h3>Kontakty</h3>
           <p><a href="mailto:kc@dia.gov.cz">kc@dia.gov.cz</a></p>
           <ul class="footer-social">
-            <li><a href="https://www.facebook.com/digitalniainformacniagentura" target="_blank" rel="noreferrer nofollow">Facebook</a></li>
-            <li><a href="https://www.instagram.com/agentura_dia/" target="_blank" rel="noreferrer nofollow">Instagram</a></li>
+            <li><a href="https://www.facebook.com/digitalniainformacniagentura" target="_blank"
+                rel="noreferrer nofollow">Facebook</a></li>
+            <li><a href="https://www.instagram.com/agentura_dia/" target="_blank"
+                rel="noreferrer nofollow">Instagram</a></li>
             <li><a href="https://x.com/agentura_dia" target="_blank" rel="noreferrer nofollow">X</a></li>
-            <li><a href="https://www.youtube.com/@agentura_dia" target="_blank" rel="noreferrer nofollow">YouTube</a></li>
-            <li><a href="https://www.linkedin.com/company/digitalniainformacniagentura" target="_blank" rel="noreferrer nofollow">LinkedIn</a></li>
+            <li><a href="https://www.youtube.com/@agentura_dia" target="_blank" rel="noreferrer nofollow">YouTube</a>
+            </li>
+            <li><a href="https://www.linkedin.com/company/digitalniainformacniagentura" target="_blank"
+                rel="noreferrer nofollow">LinkedIn</a></li>
           </ul>
         </section>
       </div>
@@ -170,4 +184,5 @@
 
   <script src="script.js"></script>
 </body>
+
 </html>
