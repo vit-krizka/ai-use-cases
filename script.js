@@ -151,6 +151,70 @@ function initInfoBanner() {
 }
 
 /** ======================
+ *  Počítadlo use casů
+ *  ====================== */
+function initUsecaseCounter() {
+  const counter = document.querySelector('.usecase-counter');
+  if (!counter) return;
+
+  const valueEl = counter.querySelector('[data-counter-value]');
+  const targetValue = Number(counter.dataset.target);
+  if (!valueEl || !Number.isFinite(targetValue)) return;
+
+  const format = value => new Intl.NumberFormat('cs-CZ').format(Math.round(value));
+  const prefersReducedMotion = typeof window.matchMedia === 'function' &&
+    window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  const revealFinalValue = () => {
+    valueEl.textContent = format(targetValue);
+    counter.classList.add('usecase-counter--active');
+  };
+
+  if (prefersReducedMotion) {
+    revealFinalValue();
+    return;
+  }
+
+  let hasAnimated = false;
+
+  const animate = () => {
+    if (hasAnimated) return;
+    hasAnimated = true;
+    counter.classList.add('usecase-counter--active');
+
+    const duration = 2000;
+    const startValue = 0;
+    const startTime = performance.now();
+
+    const step = now => {
+      const progress = Math.min((now - startTime) / duration, 1);
+      const eased = 1 - Math.pow(1 - progress, 3);
+      const current = startValue + (targetValue - startValue) * eased;
+      valueEl.textContent = format(current);
+      if (progress < 1) requestAnimationFrame(step);
+      else valueEl.textContent = format(targetValue);
+    };
+
+    requestAnimationFrame(step);
+  };
+
+  if ('IntersectionObserver' in window) {
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          animate();
+          observer.disconnect();
+        }
+      });
+    }, { threshold: 0.4 });
+
+    observer.observe(counter);
+  } else {
+    animate();
+  }
+}
+
+/** ======================
  *  Pomocné funkce pro katalog
  *  ====================== */
 function createUseCaseSection(uc, categoryDescriptions) {
@@ -399,4 +463,5 @@ document.addEventListener('DOMContentLoaded', () => {
   initCommon();
   initCatalog();
   initInfoBanner();
+  initUsecaseCounter();
 });
