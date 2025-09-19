@@ -1,42 +1,94 @@
 'use strict';
 
+let openMobileMenu = () => {};
+let closeMobileMenu = () => {};
+
 /** ======================
  *  Společné prvky stránek
  *  ====================== */
 function initCommon() {
-  const sidebar = document.getElementById('sidebar');
   const menuBtn = document.getElementById('menuBtn');
+  const mobileMenu = document.getElementById('mobile-menu');
+  const mobileCatalogToggle = mobileMenu?.querySelector('.mobile-menu__item--catalog .mobile-menu__toggle');
+  const mobileCatalogList = document.getElementById('mobile-catalog-list');
 
-  if (sidebar && menuBtn) {
-    sidebar.setAttribute('aria-hidden', 'true');
+  if (menuBtn && mobileMenu) {
+    const panel = mobileMenu.querySelector('.mobile-menu__panel');
+    const closeTriggers = mobileMenu.querySelectorAll('[data-mobile-menu-close]');
+    const menuLinks = mobileMenu.querySelectorAll('.mobile-menu__list a');
+
+    const isOpen = () => mobileMenu.getAttribute('aria-hidden') === 'false';
+
+    const baseCloseMobileMenu = () => {
+      mobileMenu.setAttribute('aria-hidden', 'true');
+      menuBtn.setAttribute('aria-expanded', 'false');
+    };
+
+    openMobileMenu = () => {
+      mobileMenu.setAttribute('aria-hidden', 'false');
+      menuBtn.setAttribute('aria-expanded', 'true');
+    };
+
+    closeMobileMenu = baseCloseMobileMenu;
+
     menuBtn.setAttribute('aria-expanded', 'false');
-
     menuBtn.addEventListener('click', () => {
-      const isOpen = sidebar.classList.toggle('open');
-      menuBtn.setAttribute('aria-expanded', String(isOpen));
-      sidebar.setAttribute('aria-hidden', String(!isOpen));
+      if (isOpen()) closeMobileMenu();
+      else openMobileMenu();
     });
 
-    document.addEventListener('click', (e) => {
-      if (
-        window.innerWidth <= 768 &&
-        sidebar.classList.contains('open') &&
-        !sidebar.contains(e.target) &&
-        !menuBtn.contains(e.target)
-      ) {
-        sidebar.classList.remove('open');
-        menuBtn.setAttribute('aria-expanded', 'false');
-        sidebar.setAttribute('aria-hidden', 'true');
+    closeTriggers.forEach(el => el.addEventListener('click', () => closeMobileMenu()));
+    menuLinks.forEach(link => link.addEventListener('click', () => {
+      if (window.innerWidth <= 768) closeMobileMenu();
+    }));
+
+    document.addEventListener('click', event => {
+      if (!isOpen() || !panel) return;
+      if (!panel.contains(event.target) && !menuBtn.contains(event.target)) closeMobileMenu();
+    });
+
+    document.addEventListener('keydown', event => {
+      if (event.key === 'Escape' && isOpen()) {
+        closeMobileMenu();
+        menuBtn.focus();
       }
     });
 
-    document.addEventListener('keydown', (e) => {
-      if (e.key === 'Escape' && sidebar.classList.contains('open')) {
-        sidebar.classList.remove('open');
-        menuBtn.setAttribute('aria-expanded', 'false');
-        sidebar.setAttribute('aria-hidden', 'true');
-      }
+    window.addEventListener('resize', () => {
+      if (window.innerWidth > 768 && isOpen()) closeMobileMenu();
     });
+  }
+
+  if (mobileCatalogToggle && mobileCatalogList && mobileMenu) {
+    const mobileCatalogLink = mobileMenu.querySelector('.mobile-menu__item--catalog > .mobile-menu__row > a');
+
+    const setCatalogExpanded = shouldExpand => {
+      mobileCatalogToggle.setAttribute('aria-expanded', String(shouldExpand));
+      mobileCatalogList.hidden = !shouldExpand;
+    };
+
+    setCatalogExpanded(false);
+
+    mobileCatalogToggle.addEventListener('click', () => {
+      const expanded = mobileCatalogToggle.getAttribute('aria-expanded') === 'true';
+      setCatalogExpanded(!expanded);
+    });
+
+    if (mobileCatalogLink) {
+      mobileCatalogLink.addEventListener('click', event => {
+        const expanded = mobileCatalogToggle.getAttribute('aria-expanded') === 'true';
+        if (!expanded) {
+          event.preventDefault();
+          setCatalogExpanded(true);
+        }
+      });
+    }
+
+    const originalClose = closeMobileMenu;
+    closeMobileMenu = () => {
+      originalClose();
+      setCatalogExpanded(false);
+    };
   }
 }
 
@@ -142,12 +194,15 @@ function createUseCaseSection(uc, categoryDescriptions) {
  *  Navigace a katalog
  *  ====================== */
 async function initCatalog() {
-  const sidebar = document.getElementById('sidebar');
-  const navList = document.getElementById('usecase-list');
-  const main = document.querySelector('main');
-  if (!sidebar || !navList || !main) return;
+  const desktopNav = document.getElementById('usecase-list');
+  const mobileNav = document.getElementById('mobile-catalog-list');
+  if (!desktopNav && !mobileNav) return;
 
-  const urlParams = new URLSearchParams(window.location.search);
+  const main = document.querySelector('main');
+  const isCatalogPage = document.body.id === 'project-page';
+  const navTargets = [];
+  if (desktopNav) navTargets.push({ element: desktopNav, variant: 'desktop' });
+  if (mobileNav) navTargets.push({ element: mobileNav, variant: 'mobile' });
 
   try {
     const [casesRes, categoriesRes] = await Promise.all([
@@ -161,13 +216,23 @@ async function initCatalog() {
     const categoryMap = new Map(categories.map(c => [c.title, []]));
     const others = [];
 
-    // Render sekcí
-    useCases.forEach(uc => {
-      const { section, category, idStr, title, sectionId } = createUseCaseSection(uc, categoryDescriptions);
-      main.appendChild(section);
-      if (categoryMap.has(category)) categoryMap.get(category).push({ idStr, sectionId, title });
-      else others.push({ idStr, sectionId, title });
-    });
+    if (isCatalogPage && main) {
+      useCases.forEach(uc => {
+        const { section, category, idStr, title, sectionId } = createUseCaseSection(uc, categoryDescriptions);
+        main.appendChild(section);
+        if (categoryMap.has(category)) categoryMap.get(category).push({ idStr, sectionId, title });
+        else others.push({ idStr, sectionId, title });
+      });
+    } else {
+      useCases.forEach(uc => {
+        const category = uc['Hlavní kategorie use case']?.trim() || 'Ostatní';
+        const idStr = uc.id.toString().padStart(2, '0');
+        const sectionId = `usecase-${idStr}`;
+        const title = uc['Název projektu'];
+        if (categoryMap.has(category)) categoryMap.get(category).push({ idStr, sectionId, title });
+        else others.push({ idStr, sectionId, title });
+      });
+    }
 
     // --- Kód pro popup kategorií ---
     const categoryPopup = document.getElementById('category-popup');
@@ -201,77 +266,107 @@ async function initCatalog() {
       });
     }
 
-    // Vytvoření navigace
-    const buildCategoryNav = (catTitle, items) => {
+    const buildCategoryNav = (catTitle, items, variant) => {
+      if (!items.length) return null;
       const li = document.createElement('li');
       const btn = document.createElement('button');
-      btn.className = 'category-toggle';
+      btn.type = 'button';
       btn.setAttribute('aria-expanded', 'false');
+      if (variant === 'desktop') btn.className = 'category-toggle';
+      else btn.className = 'mobile-menu__category-toggle';
       btn.innerHTML = `${catTitle}<span class="arrow" aria-hidden="true">▶</span>`;
       li.appendChild(btn);
 
       const subUl = document.createElement('ul');
-      subUl.className = 'subcategory';
+      if (variant === 'desktop') {
+        subUl.className = 'subcategory';
+      } else {
+        subUl.className = 'mobile-menu__submenu';
+        subUl.hidden = true;
+      }
+
       items.forEach(item => {
         const subLi = document.createElement('li');
         const a = document.createElement('a');
-        a.href = `#${item.sectionId}`;
+        const href = isCatalogPage ? `#${item.sectionId}` : `project.html#${item.sectionId}`;
+        a.href = href;
         a.textContent = item.title;
         subLi.appendChild(a);
         subUl.appendChild(subLi);
       });
+
       li.appendChild(subUl);
 
       btn.addEventListener('click', () => {
         const expanded = btn.getAttribute('aria-expanded') === 'true';
         btn.setAttribute('aria-expanded', String(!expanded));
+        if (variant === 'mobile') subUl.hidden = expanded;
       });
 
       return li;
     };
 
-    categories.forEach(cat => navList.appendChild(buildCategoryNav(cat.title, categoryMap.get(cat.title))));
-    if (others.length) navList.appendChild(buildCategoryNav('Ostatní', others));
+    navTargets.forEach(({ element, variant }) => {
+      element.innerHTML = '';
+      categories.forEach(cat => {
+        const list = buildCategoryNav(cat.title, categoryMap.get(cat.title) || [], variant);
+        if (list) element.appendChild(list);
+      });
+      if (others.length) {
+        const list = buildCategoryNav('Ostatní', others, variant);
+        if (list) element.appendChild(list);
+      }
+    });
 
-    // Aktivace sekce dle hash
-    const navLinks = sidebar.querySelectorAll('nav a');
-    const sections = document.querySelectorAll('main section');
+    const sections = isCatalogPage && main ? Array.from(main.querySelectorAll('section')) : [];
+    const navLinks = Array.from(document.querySelectorAll('#usecase-list a[href^="#"], #mobile-catalog-list a[href^="#"]'));
 
     const setActiveLink = link => {
       navLinks.forEach(l => l.classList.remove('active'));
       link.classList.add('active');
 
-      const sublist = link.closest('ul.subcategory');
-      if (sublist) {
-          const toggle = sublist.previousElementSibling;
-          if (toggle?.classList.contains('category-toggle')) toggle.setAttribute('aria-expanded', 'true');
+      const sublist = link.parentElement?.parentElement;
+      const toggle = sublist?.previousElementSibling;
+      if (toggle instanceof HTMLElement) {
+        toggle.setAttribute('aria-expanded', 'true');
+        if (toggle.classList.contains('mobile-menu__category-toggle') && sublist instanceof HTMLElement) {
+          sublist.hidden = false;
+        }
       }
     };
 
     const showSection = id => {
+      if (!isCatalogPage || !id) return;
       sections.forEach(s => s.classList.remove('active'));
       const target = document.getElementById(id);
       if (target) {
-          target.classList.add('active');
-          target.scrollIntoView();
+        target.classList.add('active');
+        target.scrollIntoView();
       }
     };
 
-    const initialId = window.location.hash ? window.location.hash.substring(1) : sections[0]?.id;
-    const initialLink = sidebar.querySelector(`a[href='#${initialId}']`);
-    if (initialLink) {
-      setActiveLink(initialLink);
-    }
-    showSection(initialId);
+    if (isCatalogPage && sections.length) {
+      const initialId = window.location.hash ? window.location.hash.substring(1) : sections[0].id;
+      const initialLink = document.querySelector(`#usecase-list a[href='#${initialId}'], #mobile-catalog-list a[href='#${initialId}']`);
+      if (initialLink) setActiveLink(initialLink);
+      showSection(initialId);
 
-    navLinks.forEach(link => link.addEventListener('click', e => {
-      e.preventDefault();
-      const id = link.getAttribute('href').substring(1);
-      setActiveLink(link);
-      showSection(id);
-      history.replaceState(null, '', `#${id}`);
-      if (window.innerWidth <= 768) sidebar.classList.remove('open');
-    }));
+      navLinks.forEach(link => link.addEventListener('click', e => {
+        e.preventDefault();
+        const id = link.getAttribute('href').substring(1);
+        setActiveLink(link);
+        showSection(id);
+        history.replaceState(null, '', `#${id}`);
+        if (window.innerWidth <= 768) closeMobileMenu();
+      }));
+
+      window.addEventListener('hashchange', () => {
+        const targetId = window.location.hash ? window.location.hash.substring(1) : sections[0]?.id;
+        if (!targetId) return;
+        const targetLink = document.querySelector(`#usecase-list a[href='#${targetId}']`);
+        if (targetLink) targetLink.dispatchEvent(new Event('click', { bubbles: true }));
+      });
+    }
 
   } catch (e) {
     console.error('Chyba při načítání use casů:', e);
@@ -285,13 +380,4 @@ document.addEventListener('DOMContentLoaded', () => {
   initCommon();
   initCatalog();
   initInfoBanner();
-});
-
-window.addEventListener('hashchange', function () {
-    const initialId = window.location.hash ? window.location.hash.substring(1) : sections[0]?.id;
-    const sidebar = document.getElementById('sidebar');
-    const initialLink = sidebar.querySelector(`a[href='#${initialId}']`);
-    if (initialLink) {
-        initialLink.click();
-    }
 });
