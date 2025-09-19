@@ -521,6 +521,11 @@ body > header h1 a {
     list-style: none;
     margin: 0;
     padding: 0 0 0.5rem 0;
+    display: none;
+}
+
+.mobile-menu__submenu--open {
+    display: block;
 }
 
 .mobile-menu__submenu li > a {

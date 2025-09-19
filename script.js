@@ -62,9 +62,23 @@ function initCommon() {
   if (mobileCatalogToggle && mobileCatalogList && mobileMenu) {
     const mobileCatalogLink = mobileMenu.querySelector('.mobile-menu__item--catalog > .mobile-menu__row > a');
 
+    const collapseNestedMobileLists = () => {
+      const nestedToggles = mobileCatalogList.querySelectorAll('.mobile-menu__category-toggle[aria-expanded="true"]');
+      nestedToggles.forEach(toggle => toggle.setAttribute('aria-expanded', 'false'));
+      mobileCatalogList
+        .querySelectorAll('.mobile-menu__submenu')
+        .forEach(sublist => {
+          if (sublist === mobileCatalogList) return;
+          sublist.hidden = true;
+          sublist.classList.remove('mobile-menu__submenu--open');
+        });
+    };
+
     const setCatalogExpanded = shouldExpand => {
       mobileCatalogToggle.setAttribute('aria-expanded', String(shouldExpand));
       mobileCatalogList.hidden = !shouldExpand;
+      mobileCatalogList.classList.toggle('mobile-menu__submenu--open', shouldExpand);
+      if (!shouldExpand) collapseNestedMobileLists();
     };
 
     setCatalogExpanded(false);
@@ -299,8 +313,12 @@ async function initCatalog() {
 
       btn.addEventListener('click', () => {
         const expanded = btn.getAttribute('aria-expanded') === 'true';
-        btn.setAttribute('aria-expanded', String(!expanded));
-        if (variant === 'mobile') subUl.hidden = expanded;
+        const nextExpanded = !expanded;
+        btn.setAttribute('aria-expanded', String(nextExpanded));
+        if (variant === 'mobile') {
+          subUl.hidden = !nextExpanded;
+          subUl.classList.toggle('mobile-menu__submenu--open', nextExpanded);
+        }
       });
 
       return li;
@@ -331,6 +349,7 @@ async function initCatalog() {
         toggle.setAttribute('aria-expanded', 'true');
         if (toggle.classList.contains('mobile-menu__category-toggle') && sublist instanceof HTMLElement) {
           sublist.hidden = false;
+          sublist.classList.add('mobile-menu__submenu--open');
         }
       }
     };
