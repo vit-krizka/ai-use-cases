@@ -1,0 +1,52 @@
+[
+  {
+    "slug": "umela-inteligence",
+    "preferredName": "Umělá inteligence",
+    "alternateName": "Artificial Intelligence",
+    "tag": "základní pojem",
+    "definition": "Systém, který je navržen tak, aby samostatně analyzoval data, vyvozoval závěry a generoval doporučení nebo akce s cílem plnit určené úkoly.",
+    "officialExplanation": "Umělá inteligence je zastřešující pojem pro technologie, které napodobují kognitivní funkce člověka. Ve veřejné správě pomáhá zrychlit rozhodování, zlepšit služby občanům a podpořit analytickou práci úředníků.",
+    "example": "Například klasifikátor příchozích podnětů, který rozpoznává typ žádosti a směřuje ji příslušnému útvaru, využívá AI k automatické interpretaci obsahu.",
+    "article": "Systémy AI mohou být založeny na pravidlech, strojovém učení nebo kombinaci obojího. Důležité je sledovat transparentnost a vysvětlitelnost výsledků, aby úředníci uměli obhájit svá rozhodnutí." 
+  },
+  {
+    "slug": "machine-learning",
+    "preferredName": "Machine learning",
+    "alternateName": "Strojové učení",
+    "tag": "technický pojem",
+    "definition": "Soubor algoritmů, které se zlepšují analýzou dat bez toho, aby musely být explicitně naprogramovány pro každý krok rozhodování.",
+    "officialExplanation": "Modely strojového učení se trénují na historických datech a učí se z nich hledat vzory. Úředníkům to umožňuje automatizovat úkoly, které by jinak vyžadovaly manuální kontrolu nebo rozsáhlé zkušenosti.",
+    "example": "Systém pro odhalování duplicitních podání využívá strojové učení ke srovnání různých formulářů a upozorňuje na podezřele podobné žádosti.",
+    "article": "Výběr vhodného algoritmu závisí na typu problému a dostupných datech. Je třeba sledovat kvalitu dat, aby výsledky nebyly zkreslené a nevedly k diskriminaci." 
+  },
+  {
+    "slug": "generativni-ai",
+    "preferredName": "Generativní umělá inteligence",
+    "alternateName": "Generative AI",
+    "tag": "technický pojem",
+    "definition": "AI systémy, které vytvářejí nový obsah – text, obrázky, zvuk nebo kód – na základě naučených vzorů z existujících dat.",
+    "officialExplanation": "Generativní AI lze využít pro přípravu návrhů dokumentů, sumarizaci spisů nebo tvorbu vizuálních materiálů. Vždy je však nutná lidská kontrola a schválení výstupu.",
+    "example": "Chatbot pro interní podporu úředníků generuje návrhy odpovědí na často kladené dotazy a úředník pouze upraví výsledný text.",
+    "article": "Tyto modely mohou omylem vytvářet nepravdivé informace. Doporučuje se zavést kontrolní mechanismy, logování generovaných výstupů a školení, jak s nástrojem bezpečně pracovat." 
+  },
+  {
+    "slug": "data-protection-impact-assessment",
+    "preferredName": "Data Protection Impact Assessment",
+    "alternateName": "Posouzení vlivu na ochranu osobních údajů",
+    "tag": "legální definice",
+    "definition": "Proces podle čl. 35 GDPR, který vyhodnocuje rizika plánovaného zpracování osobních údajů a navrhuje opatření k jejich zmírnění.",
+    "officialExplanation": "DPIA pomáhá úřadům posoudit, zda je plánované využití AI v souladu s ochranou soukromí. Je povinné, pokud může zpracování představovat vysoké riziko pro práva a svobody fyzických osob.",
+    "example": "Před nasazením systému, který automaticky vyhodnocuje rizikovost žadatelů o sociální dávky, úřad provede DPIA a zmapuje, jaké údaje se zpracovávají a kdo k nim má přístup.",
+    "article": "Součástí DPIA je popis zpracování, analýza nezbytnosti a proporcionality, identifikace rizik a návrh technických a organizačních opatření. Výstup musí být průkazně archivován a pravidelně aktualizován." 
+  },
+  {
+    "slug": "data-governance",
+    "preferredName": "Data governance",
+    "alternateName": "Řízení dat",
+    "tag": "organizační pojem",
+    "definition": "Soubor procesů a pravidel, které zajišťují kvalitu, bezpečnost a dostupnost dat v organizaci.",
+    "officialExplanation": "Dobré řízení dat stanovuje odpovědnosti za správu datových sad, nastavuje standardy a umožňuje úředníkům důvěřovat datům, která používají pro rozhodování a trénink AI modelů.",
+    "example": "Ministerstvo stanoví datového správce pro registr smluv, který dohlíží na kvalitu dat a pravidelně reportuje chyby k nápravě.",
+    "article": "Data governance zahrnuje katalog datových zdrojů, pravidla pro přístup a sdílení i koordinaci s kybernetickou bezpečností. Bez něj nelze dlouhodobě udržet důvěryhodnost AI řešení." 
+  }
+]

@@ -1459,3 +1459,121 @@ table#table-overview tr>* {
 table#table-overview tr>*:first-child {
     width: 50%;
 }
+
+.table-wrapper {
+    margin-block: 2rem 3rem;
+    overflow-x: auto;
+}
+
+.glossary-table {
+    min-width: 640px;
+    border: 1px solid #d9d9d9;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.glossary-table th {
+    background-color: var(--primary-light, #f0f6ff);
+    font-weight: 600;
+    color: var(--primary-dark, #003b8e);
+}
+
+.glossary-table td a {
+    color: var(--primary-dark, #003b8e);
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.glossary-table td a:hover,
+.glossary-table td a:focus {
+    text-decoration: underline;
+}
+
+.glossary-tag {
+    display: inline-block;
+    margin-top: 0.75rem;
+    padding: 0.2rem 0.75rem;
+    border-radius: 999px;
+    background: #edf2ff;
+    color: #193778;
+    font-size: 0.85rem;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+}
+
+.lead {
+    font-size: 1.1rem;
+    color: #42526e;
+    max-width: 720px;
+}
+
+.glossary-entry {
+    max-width: 920px;
+    margin: 0 auto 4rem;
+    display: grid;
+    gap: 1.5rem;
+}
+
+.glossary-entry section {
+    background: #f9fbff;
+    border: 1px solid #dce6ff;
+    border-radius: 12px;
+    padding: 1.5rem;
+    box-shadow: 0 6px 16px rgba(25, 55, 120, 0.08);
+}
+
+.glossary-entry section h3 {
+    margin-top: 0;
+    color: #193778;
+}
+
+.glossary-entry__back {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+    font-weight: 600;
+    color: var(--primary-dark, #003b8e);
+    text-decoration: none;
+}
+
+.glossary-entry__back:hover,
+.glossary-entry__back:focus {
+    text-decoration: underline;
+}
+
+.glossary-entry__names {
+    margin: 0;
+    line-height: 1.6;
+    color: #42526e;
+}
+
+.glossary-entry .glossary-tag {
+    margin-top: 0;
+    align-self: flex-start;
+}
+
+.glossary-entry p {
+    margin-top: 0.75rem;
+    margin-bottom: 0;
+}
+
+@media (max-width: 768px) {
+    .glossary-entry {
+        gap: 1.25rem;
+    }
+
+    .glossary-entry section {
+        padding: 1.25rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .glossary-table {
+        min-width: 100%;
+    }
+
+    .lead {
+        font-size: 1rem;
+    }
+}
