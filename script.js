@@ -9,7 +9,9 @@ let closeMobileMenu = () => {};
 function initCommon() {
   const menuBtn = document.getElementById('menuBtn');
   const mobileMenu = document.getElementById('mobile-menu');
-  const mobileCatalogToggle = mobileMenu?.querySelector('.mobile-menu__item--catalog .mobile-menu__toggle');
+  const mobileCatalogItem = mobileMenu?.querySelector('.mobile-menu__item--catalog');
+  const mobileCatalogToggle = mobileCatalogItem?.querySelector('.mobile-menu__toggle');
+  const mobileCatalogLink = mobileCatalogItem?.querySelector('.mobile-menu__row > a');
   const mobileCatalogList = document.getElementById('mobile-catalog-list');
 
   if (menuBtn && mobileMenu) {
@@ -58,12 +60,33 @@ function initCommon() {
   }
 
   if (mobileCatalogToggle && mobileCatalogList) {
-    mobileCatalogToggle.setAttribute('aria-expanded', mobileCatalogToggle.getAttribute('aria-expanded') || 'false');
-    mobileCatalogList.hidden = true;
-    mobileCatalogToggle.addEventListener('click', () => {
+    const setCatalogExpanded = expanded => {
+      mobileCatalogToggle.setAttribute('aria-expanded', String(expanded));
+      mobileCatalogList.hidden = !expanded;
+      mobileCatalogItem?.classList.toggle('mobile-menu__item--expanded', expanded);
+    };
+
+    setCatalogExpanded(false);
+
+    const toggleCatalog = () => {
       const expanded = mobileCatalogToggle.getAttribute('aria-expanded') === 'true';
-      mobileCatalogToggle.setAttribute('aria-expanded', String(!expanded));
-      mobileCatalogList.hidden = expanded;
+      setCatalogExpanded(!expanded);
+    };
+
+    mobileCatalogToggle.addEventListener('click', toggleCatalog);
+
+    if (mobileCatalogLink) {
+      mobileCatalogLink.addEventListener('click', event => {
+        if (window.innerWidth > 768) return;
+        const expanded = mobileCatalogToggle.getAttribute('aria-expanded') === 'true';
+        if (expanded) return;
+        event.preventDefault();
+        setCatalogExpanded(true);
+      });
+    }
+
+    window.addEventListener('resize', () => {
+      if (window.innerWidth > 768) setCatalogExpanded(false);
     });
   }
 }
