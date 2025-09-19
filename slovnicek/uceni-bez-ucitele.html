@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="cs">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Učení bez učitele – Slovníček | Katalog využití AI ve veřejném sektoru</title>
+  <link rel="icon" type="image/png" href="https://www.dia.gov.cz/favicon-96x96.png?v2" sizes="96x96">
+  <link rel="icon" type="image/svg+xml" href="https://www.dia.gov.cz/favicon.svg?v2">
+  <link rel="shortcut icon" href="https://www.dia.gov.cz/favicon.ico?v2">
+  <link rel="apple-touch-icon" sizes="180x180" href="https://www.dia.gov.cz/apple-touch-icon.png?v2">
+  <link rel="stylesheet" href="../styles.css">
+</head>
+
+<body>
+  <a href="#main" class="skip-link">Přeskočit na obsah</a>
+  <header>
+    <div class="header-bar">
+      <button class="hamburger" id="menuBtn" aria-label="Menu" aria-controls="mobile-menu" aria-expanded="false">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+          stroke-linejoin="round">
+          <line x1="3" y1="12" x2="21" y2="12"></line>
+          <line x1="3" y1="6" x2="21" y2="6"></line>
+          <line x1="3" y1="18" x2="21" y2="18"></line>
+        </svg>
+      </button>
+      <h1>
+        <a href="/">
+          <img src="../logos/katalog_AI.svg" alt="DIA: Katalog využití AI ve veřejném sektoru">
+        </a>
+      </h1>
+    </div>
+  </header>
+  <nav class="main-nav" aria-label="Hlavní menu">
+    <div class="main-nav__inner">
+      <ul class="main-nav__list">
+        <li><a href="../project.html">Katalog</a></li>
+        <li><a href="../ai-gramotnost.html">AI gramotnost</a></li>
+        <li><a href="../ai-compliance.html">AI compliance</a></li>
+        <li><a href="../clanky.html">Články</a></li>
+        <li><a href="../slovnicek.html" aria-current="page">Slovníček</a></li>
+        <li><a href="../wiki.html">Přidat use case</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div id="mobile-menu" class="mobile-menu" aria-hidden="true">
+    <div class="mobile-menu__overlay" data-mobile-menu-close></div>
+    <div class="mobile-menu__panel" role="dialog" aria-modal="true">
+      <div class="mobile-menu__header">
+        <span>Menu</span>
+        <button class="mobile-menu__close" type="button" data-mobile-menu-close aria-label="Zavřít menu">&times;</button>
+      </div>
+      <nav aria-label="Hlavní menu">
+        <ul class="mobile-menu__list">
+          <li class="mobile-menu__item mobile-menu__item--catalog">
+            <div class="mobile-menu__row">
+              <a href="../project.html">Katalog</a>
+              <button class="mobile-menu__toggle" type="button" aria-expanded="false"
+                aria-controls="mobile-catalog-list">
+                <span class="sr-only">Rozbalit menu katalogu</span>
+                <span aria-hidden="true">▶</span>
+              </button>
+            </div>
+            <ul id="mobile-catalog-list" class="mobile-menu__submenu" hidden></ul>
+          </li>
+          <li class="mobile-menu__item"><a href="../ai-gramotnost.html">AI gramotnost</a></li>
+          <li class="mobile-menu__item"><a href="../ai-compliance.html">AI compliance</a></li>
+          <li class="mobile-menu__item"><a href="../clanky.html">Články</a></li>
+          <li class="mobile-menu__item"><a href="../slovnicek.html" aria-current="page">Slovníček</a></li>
+          <li class="mobile-menu__item"><a href="../wiki.html">Přidat use case</a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+
+  <main id="main">
+    <div>
+      <article class="glossary-entry">
+        <header class="glossary-entry__header">
+          <p class="glossary-entry__tag">technický pojem</p>
+          <h2>Učení bez učitele</h2>
+          <p class="glossary-entry__alt-name">Anglicky: Unsupervised learning</p>
+        </header>
+        <section>
+          <h3>Co říká definice</h3>
+          <p>Učení bez učitele (unsupervised learning) je typ strojového učení, kdy model trénuje na neoznačených datech – nemá předem dané správné odpovědi. Snaží se v datech nalézt skryté struktury, podobnosti nebo rozdělení do skupin. Typickými úlohami učení bez učitele jsou shlukování (clustering), kdy model rozdělí data do skupin s podobnými vlastnostmi, nebo hledání anomálií (detekce odlehlých hodnot).</p>
+        </section>
+        <section>
+          <h3>Vysvětlení pro úředníky</h3>
+          <p>Tady se počítač učí sám, bez toho aniž bychom mu řekli, jak vypadá správná odpověď. Představme si krabici s mixem ovoce a zeleniny. Modelu jen ukážeme všechny obrázky, ale neřekneme, co je co. Model začne hledat, co je si podobné – třeba zjistí, že má dvě hlavní skupiny: kulaté červené věci (jablka a rajčata) a zelené podlouhlé věci (okurky a banány) atd. Prostě sám v datech najde skupiny či vzory, aniž by věděl jejich jména či správné odpovědi.</p>
+        </section>
+        <section>
+          <h3>Příklad z praxe</h3>
+          <p>Učení bez učitele se používá třeba pro zákaznickou segmentaci: firma vezme data o svých zákaznících (bez jakýchkoli štítků) a nechá algoritmus, aby sám rozdělil zákazníky do skupin s podobným chováním (například jedna skupina často nakupuje levné zboží, jiná skupina drahé zboží sporadicky atd.).</p>
+        </section>
+        <nav class="glossary-entry__back">
+          <a href="../slovnicek.html">&larr; Zpět na Slovníček</a>
+        </nav>
+      </article>
+    </div>
+  </main>
+
+  <footer>
+    <div>
+      <div class="footer-contacts">
+        <div class="footer-block">
+          <a href="https://dia.gov.cz" class="footer-logo" target="_blank" rel="noopener noreferrer">
+            <img src="../logos/dia_logo.svg" alt="Digitální a informační agentura">
+          </a>
+          <p>Katalog spravuje Digitální a informační agentura.</p>
+        </div>
+        <section class="footer-block">
+          <h3>Informace</h3>
+          <p><a href="../podminky.html">Podmínky využití a ochrana osobních údajů</a></p>
+          <p><a href="https://www.dia.gov.cz/cs/prohlaseni-o-pristupnosti" target="_blank" rel="noopener noreferrer">Prohlášení
+              o&nbsp;přístupnosti</a></p>
+        </section>
+        <section class="footer-block">
+          <h3>Kontakty</h3>
+          <p><a href="mailto:kc@dia.gov.cz">kc@dia.gov.cz</a></p>
+          <ul class="footer-social">
+            <li><a href="https://www.facebook.com/digitalniainformacniagentura" target="_blank"
+                rel="noreferrer nofollow">Facebook</a></li>
+            <li><a href="https://www.instagram.com/agentura_dia/" target="_blank" rel="noreferrer nofollow">Instagram</a></li>
+            <li><a href="https://x.com/agentura_dia" target="_blank" rel="noreferrer nofollow">X</a></li>
+            <li><a href="https://www.youtube.com/@agentura_dia" target="_blank" rel="noreferrer nofollow">YouTube</a></li>
+            <li><a href="https://www.linkedin.com/company/digitalniainformacniagentura" target="_blank"
+                rel="noreferrer nofollow">LinkedIn</a></li>
+          </ul>
+        </section>
+      </div>
+      <section class="footer-project">
+        <h3>Portál využití AI ve veřejném sektoru vám přináší</h3>
+        <div>
+          <div class="footer-block logos">
+            <img src="../logos/EU_logo.png" alt="EU logo">
+            <img src="../logos/NPO_logo.png" alt="NPO logo">
+            <img src="../logos/ictu_logo.png" alt="ICTÚ logo">
+            <img src="../logos/dia_logo.svg" alt="DIA logo">
+          </div>
+          <div class="footer-block">
+            <p>Vytvořeno v&nbsp;rámci projektu ROPIM – Reforma pro optimalizaci, implementaci a metodické řízení
+              digitalizovaných služeb vč. jejich kapacitního plánování a komunikaci klientům veřejné správy,
+              financovaného Evropskou unií NextGeneration.</p>
+            <p>REG. Č.: CZ.31.5.0/0.0/.0./23_106/0008503</p>
+          </div>
+        </div>
+      </section>
+      <div class="footer-bottom">
+        <p>2025 © Digitální a informační agentura • Informace jsou poskytovány v&nbsp;souladu se zákonem č.&nbsp;106/1999&nbsp;Sb.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../script.js"></script>
+</body>
+
+</html>

@@ -1584,3 +1584,198 @@ table#table-overview tr>* {
 table#table-overview tr>*:first-child {
     width: 50%;
 }
+
+/* ===== Slovníček ===== */
+.glossary-overview {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.table-wrapper {
+    overflow-x: auto;
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
+}
+
+.glossary-table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 480px;
+}
+
+.glossary-table caption {
+    text-align: left;
+    font-weight: 600;
+    padding: 1.25rem 1.5rem 0.5rem;
+    color: var(--text);
+}
+
+.glossary-table thead th {
+    background: var(--secondary);
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.glossary-table th,
+.glossary-table td {
+    padding: 1rem 1.5rem;
+    border-bottom: 1px solid #e0e5eb;
+    vertical-align: top;
+}
+
+.glossary-table th {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 0.75rem;
+    flex-wrap: wrap;
+    row-gap: 0.35rem;
+}
+
+.glossary-table tbody tr:last-child td,
+.glossary-table tbody tr:last-child th {
+    border-bottom: none;
+}
+
+.glossary-table th a {
+    color: var(--dark);
+    font-weight: 600;
+    text-decoration: none;
+    flex: 1;
+    display: inline-flex;
+    flex-wrap: wrap;
+    gap: 0.25rem;
+    align-items: baseline;
+}
+
+.glossary-table th a:hover {
+    text-decoration: underline;
+}
+
+.glossary-table th .glossary-chip {
+    margin-bottom: 0;
+    white-space: nowrap;
+    margin-left: auto;
+    align-self: flex-start;
+}
+
+.glossary-table .glossary-alt-name {
+    color: #6c757d;
+    font-style: italic;
+    font-weight: 400;
+}
+
+.glossary-table td p {
+    margin: 0;
+    line-height: 1.55;
+}
+
+.glossary-chip {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.75rem;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    background: rgba(32, 115, 21, 0.1);
+    color: var(--dark);
+    border-radius: 999px;
+    padding: 0.25rem 0.75rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.glossary-entry {
+    background: #fff;
+    border-radius: 20px;
+    padding: clamp(1.5rem, 4vw, 3rem);
+    margin-block: 2rem 3rem;
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.08);
+}
+
+.glossary-entry__header {
+    margin-bottom: 1.75rem;
+}
+
+.glossary-entry__tag {
+    display: inline-flex;
+    align-items: center;
+    background: rgba(32, 115, 21, 0.1);
+    color: var(--dark);
+    padding: 0.3rem 0.85rem;
+    border-radius: 999px;
+    font-size: 0.75rem;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin: 0 0 0.75rem;
+}
+
+.glossary-entry__header h2 {
+    margin: 0;
+    font-size: clamp(1.75rem, 3vw, 2.25rem);
+}
+
+.glossary-entry__alt-name {
+    margin: 0.25rem 0 0;
+    color: #555;
+    font-style: italic;
+}
+
+.glossary-entry section {
+    margin-bottom: 1.75rem;
+}
+
+.glossary-entry section:last-of-type {
+    margin-bottom: 2.5rem;
+}
+
+.glossary-entry__back {
+    border-top: 1px solid #e0e5eb;
+    padding-top: 1.5rem;
+    display: flex;
+}
+
+.glossary-entry__back a {
+    font-weight: 600;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: #fff;
+    background: var(--primary);
+    padding: 0.6rem 1.25rem;
+    border-radius: 999px;
+    box-shadow: 0 6px 16px rgba(32, 115, 21, 0.18);
+    transition: background 0.2s ease, box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+.glossary-entry__back a:hover,
+.glossary-entry__back a:focus-visible {
+    background: #1a5b10;
+    box-shadow: 0 10px 24px rgba(32, 115, 21, 0.25);
+    transform: translateY(-1px);
+}
+
+.glossary-entry__back a:focus-visible {
+    outline: 3px solid rgba(0, 0, 0, 0.2);
+    outline-offset: 3px;
+}
+
+@media (max-width: 768px) {
+    .glossary-table {
+        min-width: 100%;
+    }
+
+    .glossary-table th,
+    .glossary-table td {
+        padding: 0.85rem 1rem;
+    }
+
+    .glossary-entry {
+        margin-block: 1.5rem 2.5rem;
+        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+    }
+}
