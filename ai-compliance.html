@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Katalog využití umělé inteligence ve veřejném sektoru</title>
+  <title>AI compliance – Katalog využití umělé inteligence ve veřejném sektoru</title>
   <link rel="icon" type="image/png" href="https://www.dia.gov.cz/favicon-96x96.png?v2" sizes="96x96">
   <link rel="icon" type="image/svg+xml" href="https://www.dia.gov.cz/favicon.svg?v2">
   <link rel="shortcut icon" href="https://www.dia.gov.cz/favicon.ico?v2">
@@ -12,7 +12,7 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 
-<body id="project-page">
+<body>
   <a href="#main" class="skip-link">Přeskočit na obsah</a>
   <header>
     <div class="header-bar">
@@ -34,9 +34,9 @@
   <nav class="main-nav" aria-label="Hlavní menu">
     <div class="main-nav__inner">
       <ul class="main-nav__list">
-        <li><a href="project.html" aria-current="page">Katalog</a></li>
+        <li><a href="project.html">Katalog</a></li>
         <li><a href="ai-gramotnost.html">AI gramotnost</a></li>
-        <li><a href="ai-compliance.html">AI compliance</a></li>
+        <li><a href="ai-compliance.html" aria-current="page">AI compliance</a></li>
         <li><a href="clanky.html">Články</a></li>
         <li><a href="slovnicek.html">Slovníček</a></li>
         <li><a href="wiki.html">Přidat use case</a></li>
@@ -56,7 +56,7 @@
         <ul class="mobile-menu__list">
           <li class="mobile-menu__item mobile-menu__item--catalog">
             <div class="mobile-menu__row">
-              <a href="project.html" aria-current="page">Katalog</a>
+              <a href="project.html">Katalog</a>
               <button class="mobile-menu__toggle" type="button" aria-expanded="false"
                 aria-controls="mobile-catalog-list">
                 <span class="sr-only">Rozbalit menu katalogu</span>
@@ -66,7 +66,7 @@
             <ul id="mobile-catalog-list" class="mobile-menu__submenu" hidden></ul>
           </li>
           <li class="mobile-menu__item"><a href="ai-gramotnost.html">AI gramotnost</a></li>
-          <li class="mobile-menu__item"><a href="ai-compliance.html">AI compliance</a></li>
+          <li class="mobile-menu__item"><a href="ai-compliance.html" aria-current="page">AI compliance</a></li>
           <li class="mobile-menu__item"><a href="clanky.html">Články</a></li>
           <li class="mobile-menu__item"><a href="slovnicek.html">Slovníček</a></li>
           <li class="mobile-menu__item"><a href="wiki.html">Přidat use case</a></li>
@@ -76,14 +76,28 @@
   </div>
 
 
-  <div class="content">
-    <aside id="sidebar">
-      <nav aria-label="Přehled use casů">
-        <ul id="usecase-list"></ul>
-      </nav>
-    </aside>
-    <main id="main"></main>
-  </div>
+  <main id="main">
+    <div>
+      <section class="main-content">
+        <h2>Co je AI compliance</h2>
+        <p>
+          AI compliance označuje soulad využití umělé inteligence s právními předpisy, etickými principy a interními
+          pravidly organizace. Zaměřuje se na zajištění transparentnosti, ochrany dat, férovosti a odpovědnosti při
+          návrhu, zavádění i provozu AI řešení.
+        </p>
+        <p>
+          V praxi zahrnuje vyhodnocování rizik, nastavování kontrolních mechanismů, vedení dokumentace i pravidelný
+          audit
+          modelů. Důležitou roli hrají také školení zaměstnanců a jasně stanovené kompetence za správu algoritmů.
+        </p>
+        <p>
+          Pro veřejnou správu je AI compliance nezbytná k ochraně práv občanů a zachování důvěry v digitální služby.
+          Pomáhá
+          propojit inovace s legislativními požadavky a zajistit, že AI projekty jsou dlouhodobě udržitelné.
+        </p>
+      </section>
+    </div>
+  </main>
 
   <footer>
     <div>
@@ -138,31 +152,6 @@
       </div>
     </div>
   </footer>
-
-  <div id="ai-tip-popup" class="popup" aria-hidden="true">
-    <div class="popup-content">
-      <button class="popup-close" aria-label="Close">&times;</button>
-      <p>Máte tip na inspirativní projekt s AI ve veřejném sektoru?
-        Přidejte svůj příspěvek <a
-          href="https://docs.google.com/forms/d/e/1FAIpQLSeMnjLBUkiFR6cAExs28azQ6emrvqm1ptWcizBmWRx2Om3ejQ/viewform?usp=dialog"
-          target="_blank" rel="noopener">zde</a> a my jej rádi zařadíme do katalogu.
-      </p>
-    </div>
-  </div>
-
-  <div id="category-popup" class="category-popup" aria-hidden="true" role="dialog">
-    <div class="popup-content">
-      <button class="popup-close" aria-label="Zavřít">&times;</button>
-      <h3></h3>
-      <p></p>
-    </div>
-  </div>
-
-  <!-- Stáhnout PDF tlačítko – zůstane nad pop-up okny -->
-  <a href="PDF/AI_use-cases.pdf" id="downloadBtn" class="download-btn" title="Stáhnout PDF" target="_blank"
-    rel="noopener noreferrer">
-    <img src="icons/download_.svg" alt="Stáhnout PDF" width="20" height="20">
-  </a>
 
   <script src="script.js"></script>
 </body>
