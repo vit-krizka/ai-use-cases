@@ -1,0 +1,362 @@
+[
+    {
+        "český název": "umělá inteligence",
+        "anglický název": "artificial intelligence",
+        "preferovaný název": "CZ",
+        "odborná definice": "Umělá inteligence (anglicky AI – Artificial Intelligence) označuje oblast vědy, která se zabývá tvorbou strojů vykazujících známky inteligentního chování:contentReference[oaicite:0]{index=0}. V informatice se UI někdy definuje jako inteligentní agent, tedy zařízení, které vnímá své prostředí a podniká kroky k úspěšnému dosažení stanovených cílů:contentReference[oaicite:1]{index=1}:contentReference[oaicite:2]{index=2}.",
+        "příznak": "technický pojem",
+        "zjednodušené vysvětlení": "Jinými slovy, jde o to, aby počítače dokázaly dělat \"chytré\" úkoly podobně jako lidé – například se učit, rozhodovat nebo řešit problémy. Dnes se s umělou inteligencí setkáváme běžně, třeba v mobilních telefonech (fotografování s pomocí AI, hlasoví asistenti Siri či Google Asistent) nebo při automatickém rozpoznávání obličeje pro odemknutí zařízení.",
+        "příklad": "Například personalizované doporučování filmů na internetu nebo asistent v telefonu, který rozumí hlasovým povelům, jsou projevy umělé inteligence v praxi."
+    },
+    {
+        "český název": "automatizace",
+        "anglický název": "automation",
+        "preferovaný název": "CZ",
+        "odborná definice": "Automatizace je proces nahrazování nebo zjednodušování lidských činností stroji či technologiemi:contentReference[oaicite:3]{index=3}. V praxi to znamená využití samočinných řídicích systémů k ovládání zařízení a procesů, typicky za účelem zvýšení efektivity, přesnosti a rychlosti prováděných úkolů:contentReference[oaicite:4]{index=4}.",
+        "příznak": "",
+        "zjednodušené vysvětlení": "Automatizace znamená, že rutinní nebo opakované úkoly místo lidí vykonávají stroje nebo počítačové programy. Cílem je, aby práce probíhala rychleji a s menší chybovostí – například výrobní linka, kde robotické rameno samo montuje díly, místo aby to dělal člověk ručně.",
+        "příklad": "Běžným příkladem automatizace je termostat, který automaticky zapíná a vypíná topení podle nastavené teploty, nebo robotická linka v továrně, kde roboti skládají produkty bez přímého zásahu člověka."
+    },
+    {
+        "český název": "zpracování přirozeného jazyka",
+        "anglický název": "Natural Language Processing (NLP)",
+        "preferovaný název": "EN",
+        "odborná definice": "Zpracování přirozeného jazyka (anglicky Natural Language Processing, NLP) je interdisciplinární obor na pomezí lingvistiky a informatiky (umělé inteligence). Zabývá se analýzou a generováním textu nebo mluvené řeči tak, aby jim počítač rozuměl a dokázal je smysluplně zpracovat:contentReference[oaicite:5]{index=5}. Typickými úlohami NLP jsou například strojový překlad, odpovídání na otázky nebo automatická korektura textu:contentReference[oaicite:6]{index=6}.",
+        "příznak": "technický pojem",
+        "zjednodušené vysvětlení": "NLP umožňuje počítačům \"rozumět\" lidskému jazyku. Díky tomu dokážou třeba přeložit větu z jednoho jazyka do druhého, odpovědět na otázku položenou ve větě, nebo zjistit, jestli je napsaný text třeba pozitivní nebo negativní (analýza sentimentu).",
+        "příklad": "Praktickým příkladem NLP je automatický překladač (například Google Překladač), který převede českou větu do angličtiny, nebo hlasový asistent, který porozumí mluvenému dotazu a poskytne odpověď."
+    },
+    {
+        "český název": "strojové učení",
+        "anglický název": "machine learning",
+        "preferovaný název": "CZ",
+        "odborná definice": "Strojové učení je podoblast umělé inteligence, která se zaměřuje na algoritmy a modely umožňující počítačovým systémům zlepšovat své chování na základě dat a zkušeností namísto explicitního naprogramování:contentReference[oaicite:7]{index=7}:contentReference[oaicite:8]{index=8}. Model se během trénování učí odhalovat vzory v datech a následně dokáže predikovat či rozhodovat i o nových vstupních datech.",
+        "příznak": "technický pojem",
+        "zjednodušené vysvětlení": "Jde o to, že počítač se z příkladů sám naučí, jak řešit nějaký úkol. Nedáme mu tedy přesná pravidla, ale ukážeme mu spoustu dat (např. obrázky koček a psů s popisky) a on se naučí rozpoznávat, co je kočka a co pes. Čím více dat a zpětné vazby dostane, tím lepší v daném úkolu je.",
+        "příklad": "Například filtrování nevyžádané pošty (spamu) ve vašem e-mailu využívá strojové učení – systém se naučil z mnoha příkladů emailů, které byly označeny jako spam nebo ne, a podle toho dokáže nové e-maily automaticky roztřídit."
+    },
+    {
+        "český název": "hluboké učení",
+        "anglický název": "deep learning",
+        "preferovaný název": "CZ",
+        "odborná definice": "Hluboké učení (anglicky deep learning) je typ strojového učení založený na umělých neuronových sítích s mnoha vrstvami (odtud \"hluboké\"):contentReference[oaicite:9]{index=9}. Tyto hluboké neuronové sítě se dokáží naučit velmi složité vzory a reprezentace v datech hierarchicky – vyšší vrstvy sítě postupně navazují na výstupy nižších vrstev a umožňují tak počítači porozumět komplexním charakteristikám vstupních dat (např. rozpoznávat objekty na obrázcích či porozumět kontextu vět).",
+        "příznak": "technický pojem",
+        "zjednodušené vysvětlení": "Hluboké učení využívá umělé \"mozky\" – neuronové sítě – které mají hodně mezivrstev. Díky nim se počítač učí velmi složité věci. Například dokáže poznat, co je na fotce, nebo překládat věty, protože v těchto vrstvách se naučí rozpoznat tvary, barvy, slova a jejich význam v různých úrovních detailu.",
+        "příklad": "Když dáte počítači tisíce fotek koček a psů a on se je naučí rozlišit, pravděpodobně použil hlubokou neuronovou síť. Takový model pak dokáže správně určit, zda je na nové fotce kočka nebo pes, díky hlubokému učení."
+    },
+    {
+        "český název": "expertní systém",
+        "anglický název": "expert system",
+        "preferovaný název": "CZ",
+        "odborná definice": "Expertní systém je počítačový program navržený tak, aby poskytoval odborné rady či rozhodnutí v určité specifické oblasti na úrovni lidského experta:contentReference[oaicite:10]{index=10}. Typicky obsahuje bázi znalostí (souhrn pravidel a faktů daného oboru) a inferenční stroj, který z těchto znalostí a zadaných vstupů odvodí závěry nebo doporučení pro daný problém.",
+        "příznak": "technický pojem",
+        "zjednodušené vysvětlení": "Jde o chytrý program, který napodobuje myšlení odborníka v nějaké oblasti. Má v sobě uložené znalosti (pravidla a fakta) jako by měl člověk v hlavě, a umí podle nich radit nebo rozhodovat. Takový systém může třeba lékařům pomáhat s diagnostikou – do programu se zadají symptomy pacienta a on navrhne, jaká nemoc to může být, podobně jako by to udělal zkušený doktor.",
+        "příklad": "Klasickým příkladem expertního systému byl systém MYCIN z 70. let, který lékařům pomáhal diagnostikovat bakteriální infekce a doporučoval vhodná antibiotika na základě zadaných příznaků a laboratorních výsledků."
+    },
+    {
+        "český název": "počítačové vidění",
+        "anglický název": "computer vision",
+        "preferovaný název": "CZ",
+        "odborná definice": "Počítačové vidění je oblast umělé inteligence, která se zaměřuje na umožnění počítačům interpretovat a chápat vizuální svět (obrázky a videa) podobně jako člověk. Zahrnuje metody pro zpracování a analýzu digitálních obrazů za účelem rozpoznávání objektů, detekce událostí či získávání informací z vizuálních dat:contentReference[oaicite:11]{index=11}:contentReference[oaicite:12]{index=12}. Pomocí trénovacích dat se modely počítačového vidění naučí identifikovat konkrétní objekty v obrazech a vyhodnocovat jejich význam v kontextu.",
+        "příznak": "technický pojem",
+        "zjednodušené vysvětlení": "Počítačové vidění umožňuje počítačům \"dívat se\" na obrázky nebo video a rozumět, co na nich je. Například díky tomu dokáže mobil rozpoznat vaši tvář, když ho odemykáte, nebo samořiditelné auto vidí, kde je na silnici překážka. Počítač se tohle naučí tak, že mu ukážeme spoustu obrázků s popisem, co na nich je, a on si zapamatuje vzory.",
+        "příklad": "Typickým příkladem počítačového vidění je funkce \"rozpoznání obličeje\" na fotografiích – software pozná, kde na fotce jsou obličeje lidí a dokáže je třeba automaticky označit nebo zaostřit. Dalším příkladem je systém v samořídicím autě, který pomocí kamer identifikuje jízdní pruhy, chodce či dopravní značky."
+    },
+    {
+        "český název": "inteligentní agent",
+        "anglický název": "intelligent agent",
+        "preferovaný název": "CZ",
+        "odborná definice": "Inteligentní agent je autonomní entita (softwarová nebo hardwarová), která vnímá své okolní prostředí senzory a na základě toho v prostředí jedná pomocí aktuátorů tak, aby dosáhla svých cílů:contentReference[oaicite:13]{index=13}. Klíčovými vlastnostmi inteligentního agentu jsou autonomie (jedná samostatně bez neustálého dohledu člověka), proaktivita (sleduje cíle) a reaktivita (reaguje na změny prostředí).",
+        "příznak": "technický pojem",
+        "zjednodušené vysvětlení": "Představte si \"virtuálního robota\" nebo program, který sám rozhoduje a něco dělá ve svém prostředí. Například automatický vysavač je agent – má senzory (nárazníky, kamery) na vnímání místnosti a aktuátory (kolečka, kartáče) na úklid. Sám se rozhodne kam jet a co uklidit, aby splnil cíl (vyluxovat byt), aniž by ho člověk přímo řídil.",
+        "příklad": "Softwareový agent může být program na burze, který sám analyzuje trh a provádí obchody podle nastaveného cíle (např. maximalizovat zisk). V reálném světě je příkladem agentu třeba autonomní robot v továrně, který se pohybuje po skladě a převáží zboží na základě vlastního vnímání překážek a cílů."
+    },
+    {
+        "český název": "chatbot",
+        "anglický název": "chatbot",
+        "preferovaný název": "EN",
+        "odborná definice": "Chatbot je počítačový program navržený pro simulaci přirozené konverzace s uživatelem:contentReference[oaicite:14]{index=14}. Využívá technologie zpracování přirozeného jazyka k porozumění dotazům a generování odpovědí. Chatboti mohou fungovat textově (např. v chatovacích oknech) i hlasově a často se využívají pro zákaznickou podporu, informační služby nebo jako virtuální asistenti.",
+        "příznak": "technický pojem",
+        "zjednodušené vysvětlení": "Chatbot je v podstatě program, se kterým si povídáte podobně jako s člověkem. Když mu napíšete nebo řeknete otázku, on odpoví. Je naprogramovaný tak, aby rozuměl běžné řeči a uměl reagovat. Může vám například pomoci na webu s výběrem produktu tím, že se ho v chatu ptáte na informace, a on vám je dává.",
+        "příklad": "Příkladem chatbota je třeba automatický asistent na webových stránkách banky, který odpovídá na dotazy typu \"Jak si změním heslo?\". Nebo slavný ChatGPT, se kterým si můžete povídat o čemkoli a on na vaše otázky reaguje souvislými odpověďmi."
+    },
+    {
+        "český název": "velký jazykový model",
+        "anglický název": "Large Language Model (LLM)",
+        "preferovaný název": "EN",
+        "odborná definice": "Velký jazykový model (Large Language Model, LLM) je pokročilý model zpracování přirozeného jazyka s velmi velkým počtem parametrů, trénovaný na rozsáhlých objemech textových dat:contentReference[oaicite:15]{index=15}. Díky své velikosti a komplexitě dokáže LLM rozumět složitým jazykovým vstupům a generovat souvislé a kontextově relevantní texty. Mezi příklady LLM patří modely jako GPT-4, které vynikají ve vytváření textu na základě zadaných podnětů.",
+        "příznak": "technický pojem",
+        "zjednodušené vysvětlení": "Jedná se o velmi velký počítačový \"mozek\" na texty. Byl naučen z obrovského množství textů (třeba téměř celého internetu) a díky tomu umí pokračovat v textu nebo odpovídat na otázky tak, že to často zní, jako by psal člověk. Když mu zadáte větu nebo otázku, dovede vygenerovat smysluplnou odpověď, protože má v sobě statisticky odpozorované vzory jazyka.",
+        "příklad": "ChatGPT je příklad velkého jazykového modelu – když mu položíte otázku v češtině, dokáže vám odpovědět plynule česky, protože byl natrénován na ohromném množství textů a naučil se strukturu a slovní zásobu jazyka."
+    },
+    {
+        "český název": "velký multimodální model",
+        "anglický název": "Large Multimodal Model (LMM)",
+        "preferovaný název": "EN",
+        "odborná definice": "Velký multimodální model (LMM) je model umělé inteligence, který dokáže zpracovávat a generovat více než jeden typ dat (neboli modality), typicky kombinaci textu a dalších médií (např. obrazů či zvuku):contentReference[oaicite:16]{index=16}:contentReference[oaicite:17]{index=17}. Na rozdíl od čistě jazykových modelů (LLM) může LMM přijímat vstupy ve formě textu i obrázků a podle toho vytvářet odpovídající výstupy. Příkladem LMM je model schopný odpovídat na dotazy k obrázku (popíše obsah fotografie apod.).",
+        "příznak": "technický pojem",
+        "zjednodušené vysvětlení": "Zatímco běžný velký jazykový model pracuje jen s textem, multimodální model umí navíc i obrázky nebo další typy vstupů. Znamená to, že takový model můžete třeba požádat, aby popsal, co je na přiložené fotce, a on to zvládne – protože kromě čtení textu \"vidí\" i obraz. Je to jako kdyby měl AI model nejen čtenářské schopnosti, ale i oči a uši.",
+        "příklad": "Model GPT-4 ve verzi s vizuálním vstupem je multimodální – uživatel mu může ukázat obrázek (např. fotografii složeného nábytku) a zeptat se, jak ten nábytek smontovat, a model dokáže analyzovat obrázek a poradit."
+    },
+    {
+        "český název": "token",
+        "anglický název": "token",
+        "preferovaný název": "EN",
+        "odborná definice": "Token v kontextu zpracování jazyka představuje sekvenci znaků (typicky část slova, celé slovo nebo znak) považovanou za jednotku textu pro model AI:contentReference[oaicite:18]{index=18}. Jazykové modely pracují s textem právě na úrovni tokenů – například slovo \"kočka\" může být jedním tokenem, zatímco složené slovo nebo věta se rozdělí na více tokenů. Tokenizace je proces převodu textu do posloupnosti tokenů, se kterými pak model operuje.",
+        "příznak": "technický pojem",
+        "zjednodušené vysvětlení": "Token je jednoduše řečeno kousek textu, se kterým pracuje AI model. Model si totiž věty nejprve rozřeže na malé části – tokeny. Někdy je jeden token celé slovo (u krátkých slov jako \"a\", \"pes\"), jindy jen část slova (u delších nebo složených slov). Počítač pak už nevidí text jako písmenka, ale jako sérii těchto tokenů – čísel, která je reprezentují.",
+        "příklad": "Věta \"Kočka leze dírou\" by se při tokenizaci mohla rozdělit na tokeny [\"Kočka\", \"le\", \"ze\", \" \", \"dí\", \"rou\"] v závislosti na použité metodě. Model pak zpracovává tuto sekvenci tokenů místo původního textu."
+    },
+    {
+        "český název": "vektor",
+        "anglický název": "vector",
+        "preferovaný název": "CZ",
+        "odborná definice": "Vektor v AI kontextu označuje seznam čísel (uspořádanou číselnou reprezentaci), který slouží k matematickému vyjádření datového prvku. Modely strojového učení převádějí vstupy jako slova, obrázky či jiná data do vektorů tak, aby s nimi mohly efektivně počítat. Například slovo může být reprezentováno vektorem reálných čísel (embedding), kde každé číslo nese určitou informaci o znacích či významu slova v daném kontextu.",
+        "příznak": "technický pojem",
+        "zjednodušené vysvětlení": "Vektor si můžeme představit jako řadu čísel, něco jako souřadnice. Pro počítač je vše číslo, a tak i složitější věci (slovo, fotku) převede na sadu čísel – vektor. Když má třeba AI rozlišit obrázky koček a psů, každý obrázek nejprve převede na vektor čísel (např. popisující různé rysy obrázku) a podle těchto čísel pak rozhoduje.",
+        "příklad": "Slovo \"král\" může být v jazykovém modelu reprezentováno vektorem, například [0.25, -0.14, 0.88, ...] (mnohodimenzionální bod v prostoru). Podobně obrázek 28x28 pixelů (např. číslice) lze chápat jako vektor 784 čísel (světelnost jednotlivých pixelů) pro účely výpočtů neuronové sítě."
+    },
+    {
+        "český název": "vektorová databáze",
+        "anglický název": "vector database",
+        "preferovaný název": "CZ",
+        "odborná definice": "Vektorová databáze je specializovaný úložný systém navržený pro ukládání a vyhledávání dat ve formě vektorových reprezentací. Umožňuje efektivně uchovávat vektorové reprezentace (embeddingy) objektů a poskytuje operace, jako je vyhledání nejbližších sousedů – tedy najít v databázi vektory nejpodobnější zadanému vektoru:contentReference[oaicite:19]{index=19}. V praxi se vektorové databáze používají například pro vyhledávání podobných obrázků či dokumentů na základě jejich vektorového vyjádření obsahu.",
+        "příznak": "technický pojem",
+        "zjednodušené vysvětlení": "Je to databáze, která neukládá jen běžné tabulky s čísly a texty, ale hlavně dlouhé seznamy čísel – vektory. Díky tomu se v ní dá rychle najít třeba obrázek, který je nejpodobnější jinému obrázku, nebo text s podobným významem jako zadaný text. Vektorová databáze je optimalizovaná na takovéto \"podobnostní\" vyhledávání podle významu, ne jen podle přesné shody slov.",
+        "příklad": "Pokud máme vektorovou databázi s embeddingy receptů (každý recept reprezentovaný vektorem podle obsahu), můžeme do ní zadat vektor reprezentující například \"těstoviny s rajčaty\" a databáze nám vrátí recepty, které jsou tomuto vektoru (tomuto jídlu) nejblíže – tedy podobná jídla."
+    },
+    {
+        "český název": "embedding (vnoření)",
+        "anglický název": "embedding",
+        "preferovaný název": "EN",
+        "odborná definice": "Embedding (česky vnoření) označuje transformaci nějakého objektu (slova, věty, obrázku apod.) do podoby číselného vektoru tak, aby tento vektor zachycoval klíčové vlastnosti či význam původního objektu:contentReference[oaicite:20]{index=20}. Výsledný vektor (embedding) leží v mnohorozměrném prostoru, kde lze sémantickou podobnost dvou objektů posuzovat například vzdáleností jejich vektorů – podobné objekty mají vektory blízko u sebe.",
+        "příznak": "technický pojem",
+        "zjednodušené vysvětlení": "Embedding je způsob, jak převést třeba slovo nebo obrázek na čísla, kterým počítač rozumí. Uděláme z něj seznam čísel (vektor), který v sobě nese informace o významu. Například slova \"král\" a \"královna\" mají embeddingy (vektory) blízko sebe, protože jsou si významově podobná. Pro počítač je pak snadnější s takovými číselnými reprezentacemi pracovat a porovnávat je.",
+        "příklad": "Slovo \"pes\" může mít embedding jako vektor 300 čísel, a slovo \"kočka\" jiný 300-rozměrný vektor. Protože psi a kočky jsou si jako pojmy blízké, bude vzdálenost těchto dvou vektorů menší než třeba vzdálenost vektorů \"pes\" a \"auto\". Vektorové reprezentace (embeddingy) tak zachycují vztahy mezi slovy."
+    },
+    {
+        "český název": "use case (případ užití)",
+        "anglický název": "use case",
+        "preferovaný název": "EN",
+        "odborná definice": "Use case znamená konkrétní scénář nebo způsob využití technologie či systému k dosažení určitého cíle. Jde o popis, jak uživatel nebo organizace může prakticky použít dané řešení v reálné situaci. V oblasti IT a AI se pojem use case používá k ilustraci aplikace technologie – např. use case umělé inteligence ve státní správě může být automatická klasifikace dokumentů na úřadě.",
+        "příznak": "",
+        "zjednodušené vysvětlení": "Je to vlastně příklad toho, k čemu se něco používá. Když se řekne \"use case\" nějaké technologie, myslí se tím konkrétní případ, jak tu technologii využít. Například pro AI ve zdravotnictví může být use case \"automatické vyhodnocení rentgenových snímků\" – tedy konkrétní způsob, jak tam AI pomáhá.",
+        "příklad": "Use case pro chatbot ve veřejné správě: elektronický asistent na webu úřadu, který odpovídá občanům na časté dotazy (například jak požádat o nový pas). To je konkrétní případ užití AI chatbota v praxi."
+    },
+    {
+        "český název": "černá skříňka (black box)",
+        "anglický název": "black box",
+        "preferovaný název": "EN",
+        "odborná definice": "Pojem \"black box\" (černá skříňka) označuje systém nebo model, u něhož nejsou z vnějšího pohledu srozumitelné vnitřní mechanismy rozhodování. U AI se tak označují např. složité modely (jako hluboké neuronové sítě), kde víme, jaké vstupy jdou dovnitř a jaké výstupy ven, ale je obtížné vysvětlit, proč model dal konkrétní výsledek. Black-box modely tedy postrádají transparentnost ohledně svého vnitřního fungování.",
+        "příznak": "technický pojem",
+        "zjednodušené vysvětlení": "Řekneme-li o nějaké AI, že je to \"černá skříňka\", myslíme tím, že nevíme, co se uvnitř ní přesně děje. Vidíme jen, co do ní dáme a co z ní vyleze, ale nerozumíme tomu, jak k tomu výsledku dospěla. Je to podobné, jako kdybyste měli zázračnou krabičku: zmáčknete tlačítko (vstup) a vypadne odpověď (výstup), ale netušíte, jak to uvnitř spočítala.",
+        "příklad": "Složitá neuronová síť, která rozhoduje o poskytnutí úvěru, může být pro bankéře \"černou skříňkou\" – oni vidí jen doporučení schválit či zamítnout úvěr, ale nedokáží jednoduše vysvětlit, proč k takovému rozhodnutí AI došla."
+    },
+    {
+        "český název": "Turingův stroj",
+        "anglický název": "Turing machine",
+        "preferovaný název": "CZ",
+        "odborná definice": "Turingův stroj je teoretický model počítače, který vymyslel britský matematik Alan Turing. Slouží k formálnímu popisu algoritmů a výpočetních procesů v teorii vyčíslitelnosti:contentReference[oaicite:21]{index=21}. Klasický Turingův stroj se skládá z nekonečné pásky rozdělené na buňky (které fungují jako paměť) a řídicí jednotky se seznamem pravidel. Řídicí jednotka může na pásce číst symboly, zapisovat je a posouvat pásku doleva nebo doprava podle předem daných pravidel (programu). Přestože je to abstrakce, Turingův stroj dokáže modelovat jakýkoli algoritmus, a je proto základním konceptem teoretické informatiky.",
+        "příznak": "technický pojem",
+        "zjednodušené vysvětlení": "Je to myšlenkový model počítače. Představte si nekonečně dlouhou pásku papíru (paměť) a jednoduchého robota, který po ní jezdí, umí číst políčka na pásce, psát na ně a posunovat se. Robot má přesný seznam instrukcí, co má dělat v různých situacích. To je Turingův stroj. I když takový stroj fyzicky neexistuje, pomáhá nám pochopit, co počítače teoreticky dokážou spočítat.",
+        "příklad": "Turingův stroj je teoretický, takže nemá konkrétní praktický příklad jako zařízení. Můžeme ho ale přirovnat k velmi jednoduchému počítači: například proužek papíru s čísly a člověk s tužkou, který podle přesných instrukcí postupně ta čísla maže a zapisuje další – to by byla manuální simulace Turingova stroje."
+    },
+    {
+        "český název": "kávový test",
+        "anglický název": "coffee test",
+        "preferovaný název": "CZ",
+        "odborná definice": "Kávový test je neformální zkouška navržená spoluzakladatelem Apple Stevem Wozniakem, která má prověřit skutečnou obecnou inteligenci robota. Robot úspěšně projde kávovým testem, pokud dokáže vstoupit do libovolné cizí domácnosti, najít v ní kuchyň a uvařit v ní kávu, aniž by měl předem jakékoli konkrétní instrukce o uspořádání té domácnosti:contentReference[oaicite:22]{index=22}. Na rozdíl od Turingova testu (test inteligence v konverzaci) se kávový test zaměřuje na fyzické a praktické schopnosti umělé obecné inteligence v reálném světě.",
+        "příznak": "",
+        "zjednodušené vysvětlení": "Jednoduše: robot by zvládl sám přijít k vám domů a udělat si kafe. Musel by najít kuchyň, najít kávovar, vodu, kávu, hrnek – a připravit kávu, aniž mu někdo napoví, kde co je. To je obrovsky těžký úkol i pro pokročilé roboty, takže kdyby to nějaký zvládl, říkáme, že prošel kávovým testem a je opravdu hodně inteligentní a všestranný.",
+        "příklad": "Zatím neexistuje robot, který by kávový test spolehlivě zvládal. Je to spíše myšlenkový experiment: představme si domácího humanoidního robota, kterému řeknete \"udělej mi kávu\" a on sám vše najde a připraví – takový robot by splnil kávový test."
+    },
+    {
+        "český název": "CAPTCHA",
+        "anglický název": "CAPTCHA (Completely Automated Public Turing test to tell Computers and Humans Apart)",
+        "preferovaný název": "EN",
+        "odborná definice": "CAPTCHA je automatizovaný test typu challenge-response, jehož cílem je odlišit lidského uživatele od počítačového programu (bota):contentReference[oaicite:23]{index=23}. Typická CAPTCHA úloha vyžaduje, aby uživatel provedl něco, co je pro člověka snadné, ale pro stroj obtížné – např. opsal zkreslený text z obrázku, identifikoval objekty na několika fotografiích nebo vyřešil jednoduchý vizuální úkol. Používá se jako bezpečnostní opatření na webových stránkách k zamezení automatizovaného spamu či zneužívání služeb.",
+        "příznak": "technický pojem",
+        "zjednodušené vysvětlení": "CAPTCHA je ta otravná \"kontrola, zda nejste robot\" na internetu. Třeba vám ukáže obrázek s rozmazanými písmeny a vy je musíte opsat, nebo zaškrtnout všechna políčka, kde je semafor. Pro člověka je to snadné, ale pro automatický program těžké. Takže tím web zjistí, že u počítače sedí člověk a ne robot.",
+        "příklad": "Když se registrujete do nové e-mailové služby, může vás to na konci požádat o vyřešení CAPTCHA – například přepsat písmena z deformovaného obrázku – abyste dokázali, že nejste automatický skript pokoušející se hromadně zakládat účty."
+    },
+    {
+        "český název": "zpětnovazební smyčka",
+        "anglický název": "feedback loop",
+        "preferovaný název": "CZ",
+        "odborná definice": "Zpětnovazební smyčka je proces, při kterém se výstupy systému vracejí zpět na vstup a ovlivňují další chování systému. Systém tak může na základě vlastní výstupní odezvy upravovat svůj stav nebo chování. V řízení a v AI to umožňuje samoregulaci – například regulator (termostat) porovnává výstup (aktuální teplotu) s požadovanou hodnotou a na základě rozdílu (zpětné vazby) zapíná či vypíná topení.",
+        "příznak": "technický pojem",
+        "zjednodušené vysvětlení": "Je to kruh: co vyjde ven, to se vrátí dovnitř a ovlivní to, co bude příště. Příklad je termostat – měří teplotu v místnosti (výstup systému – teplota) a podle toho buď zapne nebo vypne topení (zásah do vstupu systému), čímž tu teplotu zase ovlivní. V kontextu AI může jít třeba o situaci, kdy výsledek modelu je znovu použit ke zpřesnění jeho dalšího rozhodování.",
+        "příklad": "Internetové sociální sítě vytvářejí zpětnovazební smyčky: jakmile začnete klikat na určitý typ obsahu, algoritmus vám ho ukazuje více (zpětná vazba), čímž vy ještě více klikáte na podobný obsah a systém se utvrzuje v tom, co vám má servírovat."
+    },
+    {
+        "český název": "učení s učitelem",
+        "anglický název": "supervised learning",
+        "preferovaný název": "CZ",
+        "odborná definice": "Učení s učitelem (supervised learning) je přístup strojového učení, při kterém model trénujeme na trénovacích datech obsahujících vstupy i správné výstupy (tzv. označená data). Model postupně upravuje své parametry tak, aby pro dané vstupy produkoval co nejpřesněji požadované výstupy. Supervizované učení se používá např. pro klasifikaci (model se učí z příkladů přiřazovat vstupům kategorie) či regresi (predikci číselné hodnoty).",
+        "příznak": "technický pojem",
+        "zjednodušené vysvětlení": "Tohle je učení stylem \"s předlohou\". Představte si, že učíte počítač rozpoznávat ovoce: ukazujete mu obrázek jablka a řeknete \"tohle je jablko\", pak obrázek hrušky a řeknete \"tohle je hruška\", a tak dál pro spoustu obrázků. Počítač (model) má u každého obrázku i tu správnou odpověď (to je ten \"učitel\") a podle toho se ladí, aby příště u nového obrázku dokázal správně říct, co na něm je.",
+        "příklad": "Příkladem učení s učitelem je trénování emailového filtru spamu: vezmeme tisíce emailů označených jako \"spam\" nebo \"nespam\" a tímto označením (učitelem) učíme model rozlišovat, do které kategorie nové emaily patří."
+    },
+    {
+        "český název": "učení bez učitele",
+        "anglický název": "unsupervised learning",
+        "preferovaný název": "CZ",
+        "odborná definice": "Učení bez učitele (unsupervised learning) je typ strojového učení, kdy model trénuje na neoznačených datech – nemá předem dané správné odpovědi. Snaží se v datech nalézt skryté struktury, podobnosti nebo rozdělení do skupin. Typickými úlohami učení bez učitele jsou shlukování (clustering), kdy model rozdělí data do skupin s podobnými vlastnostmi, nebo hledání anomálií (detekce odlehlých hodnot).",
+        "příznak": "technický pojem",
+        "zjednodušené vysvětlení": "Tady se počítač učí sám, bez toho aniž bychom mu řekli, jak vypadá správná odpověď. Představme si krabici s mixem ovoce a zeleniny. Modelu jen ukážeme všechny obrázky, ale neřekneme, co je co. Model začne hledat, co je si podobné – třeba zjistí, že má dvě hlavní skupiny: kulaté červené věci (jablka a rajčata) a zelené podlouhlé věci (okurky a banány) atd. Prostě sám v datech najde skupiny či vzory, aniž by věděl jejich jména či správné odpovědi.",
+        "příklad": "Učení bez učitele se používá třeba pro zákaznickou segmentaci: firma vezme data o svých zákaznících (bez jakýchkoli štítků) a nechá algoritmus, aby sám rozdělil zákazníky do skupin s podobným chováním (například jedna skupina často nakupuje levné zboží, jiná skupina drahé zboží sporadicky atd.)."
+    },
+    {
+        "český název": "prompt",
+        "anglický název": "prompt",
+        "preferovaný název": "EN",
+        "odborná definice": "Prompt v prostředí generativní AI označuje vstupní instrukci nebo otázku, kterou uživatel zadá modelu umělé inteligence, aby vyvolal požadovanou odpověď či výsledek:contentReference[oaicite:24]{index=24}. Prompt je formulován v přirozeném jazyce (případně s určitými zvláštními značkami či klíčovými slovy) a kvalita a formulace promptu zásadně ovlivňuje kvalitu generovaného výstupu modelu.",
+        "příznak": "technický pojem",
+        "zjednodušené vysvětlení": "Prompt je jednoduše to, co napíšete (nebo řeknete) AI modelu, aby něco udělal. Je to vaše zadání. Když používáte třeba ChatGPT, prompt je ta věta nebo otázka, kterou mu položíte. Model pak na základě promptu vygeneruje odpověď. Když prompt změníte nebo upřesníte, dostanete jinou odpověď – proto je důležité umět prompt správně formulovat.",
+        "příklad": "Příkladem promptu může být: \"Napiš tříodstavcový dopis s žádostí o omluvu z jednání, formálním stylem.\" – to je instrukce, na kterou model vygeneruje výsledný dopis. Pokud by byl prompt jednoduše \"omluva z jednání\", model by nemusel pochopit detaily formy, proto se prompty obvykle formulují co nejjasněji."
+    },
+    {
+        "český název": "inženýrství promptů",
+        "anglický název": "prompt engineering",
+        "preferovaný název": "EN",
+        "odborná definice": "Inženýrství promptů (anglicky prompt engineering) je postup a disciplína spočívající v navrhování, testování a optimalizaci vstupních dotazů (promptů) pro generativní modely AI tak, aby tyto modely poskytovaly co nejlepší a nejpřesnější výstupy. Zahrnuje techniky, jak formulovat instrukce, dávat modelu kontext, příklady nebo jiná vodítka v promptu, aby model porozuměl úloze a vygeneroval požadovaný výsledek. Prompt engineering se stal důležitým zejména s nástupem velkých jazykových modelů, kde drobné změny v zadání mohou výrazně ovlivnit kvalitu odpovědi.",
+        "příznak": "technický pojem",
+        "zjednodušené vysvětlení": "Jde o umění a techniku, jak správně \"mluvit\" na AI model. Když chcete od chytrého modelu dostat dobrou odpověď, musíte mu umět chytře položit otázku – a to není vždy triviální. Prompt engineering znamená vymýšlet nejlepší možnou formulaci dotazu: třeba přidat kontext, rozdělit složitý úkol na více částí nebo uvést příklad, aby model pochopil, co přesně po něm chceme. Je to vlastně takové šperkování zadání pro AI.",
+        "příklad": "Řekněme, že chcete od AI recept na dort. Jednoduchý prompt by mohl být \"Dej mi recept na čokoládový dort.\" Ale prompt engineering by ho vylepšil: \"Jsi šéfcukrář. Napiš prosím podrobný recept na nadýchaný čokoládový dort s polevou, včetně seznamu surovin a kroků, v bodech.\" – takový promyšlený prompt pravděpodobně přinese lepší strukturovanou odpověď."
+    },
+    {
+        "český název": "neuronová síť",
+        "anglický název": "neural network",
+        "preferovaný název": "CZ",
+        "odborná definice": "Umělá neuronová síť je výpočetní model inspirovaný strukturou a fungováním biologických neuronů v mozku. Skládá se z umělých neuronů (výpočetních jednotek) propojených váhami. Neuronová síť je obvykle organizována do vrstev: vstupní vrstva přijímá data, jednu či více skrytých vrstev, které data zpracovávají a extrahují z nich příznaky, a výstupní vrstvu, která poskytuje výsledky:contentReference[oaicite:25]{index=25}. Trénování neuronové sítě spočívá v úpravě vah spojení mezi neurony tak, aby síť pro dané vstupy dávala správné výstupy.",
+        "příznak": "technický pojem",
+        "zjednodušené vysvětlení": "Neuronová síť je program složený z mnoha malých propojených výpočetních \"uzlů\" (neurony), podobně jako je mozek složený z neuronů biologických. Tyto uzly spolu komunikují a ovlivňují se čísly (vahami spojů). Když do sítě pošleme například obrázek (jako sadu čísel), signál postupně prochází sítí a každá vrstva z něj něco \"vyzobe\" – třeba jedna najde hrany, další tvary – až poslední vrstva řekne výsledek (např. \"na obrázku je kočka\").",
+        "příklad": "Neuronové sítě pohánějí spoustu dnešních AI aplikací. Například rozpoznávání psaného textu (písmen) na poště: obrázek každého psaného směrovacího čísla projde neuronovou sítí, která nakonec vyhodí číslice v digitální podobě. Síť se to naučila z mnoha příkladů ručně psaných čísel."
+    },
+    {
+        "český název": "generativní AI",
+        "anglický název": "generative AI",
+        "preferovaný název": "EN",
+        "odborná definice": "Generativní umělá inteligence označuje takové modely AI, které jsou navrženy k vytváření nového obsahu – ať už psaného textu, obrázků, hudby či jiných médií – na základě naučených vzorů z trénovacích dat:contentReference[oaicite:26]{index=26}. Generativní AI dokáže na vstupní zadání (prompt) vygenerovat originální výstup, který dodržuje kontext a styl požadovaný uživatelem. Příklady generativní AI zahrnují velké jazykové modely (generující text) nebo modely typu GAN a difuzní modely (generující obrazy či zvuk).",
+        "příznak": "technický pojem",
+        "zjednodušené vysvětlení": "Tohle je druh AI, který něco tvoří. Když mu dáte pokyn, sám vytvoří nové věci – třeba napíše článek, namaluje obrázek nebo složí melodii. Učí se z obrovského množství existujících dat (textů, obrázků), a pak umí generovat podobný obsah. Když například generativní AI viděla milion obrázků koček, dokáže na přání vygenerovat úplně nový obrázek kočky, který vypadá realisticky, i když taková kočka nikdy neexistovala.",
+        "příklad": "ChatGPT, který vám dokáže napsat originální odpověď nebo povídku, je generativní AI zaměřená na text. Obdobně DALL-E nebo Stable Diffusion jsou generativní modely, které na textový popis (např. \"kočka na kole v impresionistickém stylu\") vygenerují nový obrázek odpovídající popisu."
+    },
+    {
+        "český název": "bias (algoritmická předpojatost)",
+        "anglický název": "bias (algorithmic bias)",
+        "preferovaný název": "EN",
+        "odborná definice": "V kontextu AI znamená pojem bias systémovou odchylku nebo zkreslení v chování modelu, které vyplývá z nevhodných či nevyvážených trénovacích dat nebo ze zaujatosti v návrhu algoritmu:contentReference[oaicite:27]{index=27}. Algoritmický bias se projevuje tak, že model dává přednost nebo znevýhodňuje určité skupiny nebo vlastnosti (např. pohlaví, etnikum) bez legitimního důvodu, pouze na základě vzorů v datech. Důsledkem mohou být nespravedlivé či diskriminační rozhodnutí AI systému.",
+        "příznak": "společenský fenomén",
+        "zjednodušené vysvětlení": "Bias znamená, že AI má v sobě nějaký \"skrytý předsudek\". Například pokud naučíme model z dat, kde byly určité skupiny lidí opomíjeny nebo vykresleny negativně, model to přejme. Pak může třeba překladač automaticky překládat slovo \"doktor\" v mužském rodě a \"sestra\" v ženském, i když to není univerzálně pravda – protože v trénovacích textech to tak častěji bylo. Bias je problém, kdy AI není nestranná, ale nakloněná jedním směrem kvůli datům.",
+        "příklad": "Face-recognition AI (rozpoznávání obličejů) bylo vytrénováno hlavně na fotkách světlých tváří, a pak hůře rozpoznávalo tváře lidí s tmavší pletí – to je reálný příklad biasu, kdy model měl výrazně vyšší chybovost pro jednu skupinu lidí kvůli nevyváženým datům."
+    },
+    {
+        "český název": "vysvětlitelná AI",
+        "anglický název": "Explainable AI (XAI)",
+        "preferovaný název": "EN",
+        "odborná definice": "Vysvětlitelná umělá inteligence (XAI, z angl. Explainable AI) je přístup k AI kladoucí důraz na to, aby modely a jejich rozhodnutí byly pro lidi srozumitelné a mohli jsme pochopit důvody, proč AI k určitému výsledku došla:contentReference[oaicite:28]{index=28}. Cílem XAI je vyvinout takové modely nebo metody (např. LIME, SHAP, heatmapy pro neur. sítě), které umožní nahlédnout do vnitřního fungování AI \"černých skříněk\" a vysvětlit jejich rozhodovací procesy. To zvyšuje důvěru uživatelů v AI a umožňuje odhalit případné chyby či bias.",
+        "příznak": "technický pojem",
+        "zjednodušené vysvětlení": "Vysvětlitelná AI znamená, že AI není jako neprostupná magie, ale že dokáže ukázat a zdůvodnit, proč udělala to, co udělala. Například místo aby jen řekla \"nepovolím ti půjčku\", vysvětlitelná AI by mohla dodat: \"protože tvůj příjem je nízký a už máš jiný úvěr\". Jsou to metody, jak udělat rozhodování AI průhlednější. Díky tomu mohou lidé AI více věřit a taky si všimnout, když AI někde dělá chybu.",
+        "příklad": "Příklad vysvětlitelné AI: systém pro rozpoznávání obrázků diagnostikuje nemoc z rentgenového snímku a zároveň zvýrazní oblast snímku, která ho k té diagnóze vedla (např. zakroužkuje skvrnu na plicích). Tím lékař vidí, na základě čeho AI usoudila svůj závěr."
+    },
+    {
+        "český název": "RAG (retrieval-augmented generation)",
+        "anglický název": "Retrieval-Augmented Generation (RAG)",
+        "preferovaný název": "EN",
+        "odborná definice": "RAG (Retrieval-Augmented Generation) je metoda, která kombinuje velký generativní jazykový model s externí znalostní databází, aby se zvýšila aktuálnost a přesnost jeho odpovědí. Při RAG přístupu model nejprve dostane k dotazu uživatele relevantní informace vyhledané v databázi znalostí (retrieval) a teprve poté generuje finální odpověď s odkazem na tyto dodatečné informace:contentReference[oaicite:29]{index=29}. Tím se překonává omezení jazykových modelů, které by jinak odpovídaly jen na základě statických dat ze svého tréninku – RAG umožňuje zahrnout aktuální či specializované znalosti bez nutnosti model přeučovat.",
+        "příznak": "technický pojem",
+        "zjednodušené vysvětlení": "RAG je způsob, jak přimět AI nejdříve si něco dohledat a pak odpovědět. Když se AI na něco zeptáte, tak se nejprve podívá do nějaké knihovny nebo databáze, najde si k tématu informace, a teprve pak z nich složí odpověď. Díky tomu může odpovídat podle nejnovějších nebo přesných dat, i když je sama neznávala. Je to, jako kdyby se nejdřív poradila s encyklopedií a pak vám odpověděla.",
+        "příklad": "Pokud položíte AI dotaz \"Co je hlavním městem Bhútánu?\" a použije se RAG, model napřed prohledá znalostní bázi (třeba aktualizovanou Wikipedii) a zjistí \"hlavní město Bhútánu je Thimphu\" a pak vygeneruje odpověď: \"Hlavním městem Bhútánu je Thimphu.\" Tím je zajištěno, že odpověď vychází z aktuálních dat."
+    },
+    {
+        "český název": "trénovací data",
+        "anglický název": "training data",
+        "preferovaný název": "CZ",
+        "odborná definice": "Trénovací data jsou datová sada, na které se AI model učí. V případě učení s učitelem obsahují vstupy a k nim přiřazené správné výstupy (označení), které slouží jako vzor, podle nějž model své parametry přizpůsobuje:contentReference[oaicite:30]{index=30}. Kvalita a reprezentativnost trénovacích dat zásadně ovlivňuje schopnost modelu generalizovat – model se z nich snaží pochopit obecné vzory, aby mohl správně reagovat i na nové, dříve neviděné vstupy.",
+        "příznak": "technický pojem",
+        "zjednodušené vysvětlení": "To jsou ta data, kterými AI \"krmíme\" při učení. Představují příklady, ze kterých se model učí. Když chceme naučit AI rozeznávat psy a kočky, trénovací data budou stovky fotek psů (označené jako \"pes\") a stovky fotek koček (označené \"kočka\"). Model je prožene a nastaví si podle nich své vnitřní parametry. Čím lepší a rozmanitější trénovací data jsou, tím líp se model naučí.",
+        "příklad": "Trénovací data pro překladatelský model mohou být tisíce vět v angličtině a jejich oficiální překlady do češtiny. Model je na těchto dvojicích vět natrénován, aby se naučil překládat."
+    },
+    {
+        "český název": "testovací data",
+        "anglický název": "test data",
+        "preferovaný název": "CZ",
+        "odborná definice": "Testovací data jsou samostatná datová sada použitá k ověření výkonu a generalizačních schopností AI modelu po natrénování. Model testovací data předtím při učení neviděl. Testovací sada obsahuje typově stejná data jako tréninková (např. vstupy a odpovídající správné výstupy), ale slouží výhradně k měření toho, jak dobře si model vede na nových příkladech:contentReference[oaicite:31]{index=31}. Výsledky modelu na testovacích datech indikují, zda se model nepřeučil (nenaučil se jen nazpaměť trénovací příklady) a jakou má reálnou přesnost či chybu.",
+        "příznak": "technický pojem",
+        "zjednodušené vysvětlení": "To je sada příkladů, kterou si schováme bokem a nepoužijeme ji při učení. Až AI naučíme na trénovacích datech, dáme jí tyhle nové testovací příklady, abychom viděli, jestli opravdu umí řešit obecně ten úkol, nebo se jen naučila zpaměti trénovací data. Když model na testovacích datech uspěje, znamená to, že se naučil princip a ne jen nazpaměť konkrétní případy.",
+        "příklad": "Uvažujme opět model na rozpoznávání psů a koček. Trénujeme ho na určité sadě fotek psů a koček, ale pak ho otestujeme na jiných fotkách psů a koček, které během učení neviděl (to jsou testovací data). Pokud si vede dobře i na nich, test dopadl úspěšně – model se to naučil obecně."
+    },
+    {
+        "český název": "algoritmus",
+        "anglický název": "algorithm",
+        "preferovaný název": "CZ",
+        "odborná definice": "Algoritmus je přesný postup nebo návod, kterým lze vyřešit daný typ úlohy krok za krokem:contentReference[oaicite:32]{index=32}. V informatice se algoritmus typicky vyjadřuje ve formě sekvence instrukcí či pravidel pro zpracování vstupních dat a dosažení požadovaného výsledku. Algoritmy mohou být jednoduché (např. recept na seřazení čísel) nebo velmi komplexní (např. algoritmus pro trénování neuronové sítě).",
+        "příznak": "technický pojem",
+        "zjednodušené vysvětlení": "Jednoduše řečeno, algoritmus je \"recept\" pro počítač, jak má něco udělat. Je to seznam kroků. Když budete mít algoritmus na upečení dortu, budou tam kroky jako: 1) smíchej mouku, cukr a vejce, 2) předehřej troubu, 3) nalij těsto do formy, atd. Počítačové algoritmy dělají to samé, jen místo dortu řeší výpočetní problémy – ale princip je stejný: přesný soupis kroků k cíli.",
+        "příklad": "Známým algoritmem je třeba Eukleidův algoritmus pro nalezení největšího společného dělitele dvou čísel. Ten říká: dokud se ta dvě čísla nerovnají, nahraď to větší z nich rozdílem obou čísel; nakonec budeš mít největšího dělitele. To je konkrétní příklad jasně daného postupu – algoritmu."
+    },
+    {
+        "český název": "halucinace AI",
+        "anglický název": "AI hallucination",
+        "preferovaný název": "CZ",
+        "odborná definice": "Halucinace v kontextu AI označuje jev, kdy model umělé inteligence (zejména velký jazykový model) generuje výrok či odpověď, která zní přesvědčivě a sebevědomě, avšak není pravdivá ani fakticky podložená:contentReference[oaicite:33]{index=33}. Model si tak obrazně \"vymyslí\" neexistující fakta nebo nesprávné informace. Halucinace jsou důsledkem statistické povahy generativních modelů – model může vytvořit obsah, který nebyl v trénovacích datech, a nic mu nebrání v tom, aby byl fakticky chybný.",
+        "příznak": "technický pojem",
+        "zjednodušené vysvětlení": "Když AI sebejistě tvrdí něco, co není pravda, říká se tomu halucinace. Například se zeptáte AI: \"Kdo vynalezl perpetuum mobile?\" a ona odpoví smyšleným, ale uvěřitelně znějícím příběhem s konkrétním jménem vynálezce, rokem a detailem – a přitom je to celé výmysl. AI nemá úmysl lhát, jen sestaví odpověď, která statisticky dává smysl, ale fakticky nesedí.",
+        "příklad": "Uživatel: \"Kolik má člověk srdcí?\" AI model (halucinace): \"Člověk má dvě srdce, jedno pumpuje krev do horní poloviny těla a druhé do dolní.\" – Tato odpověď je sebevědomá a zní odborně, ale je naprosto chybná. Model \"halucinoval\" nepravdivou informaci."
+    },
+    {
+        "český název": "digitální asistent",
+        "anglický název": "digital assistant (virtual assistant)",
+        "preferovaný název": "CZ",
+        "odborná definice": "Digitální (virtuální) asistent je AI aplikace, která pomáhá uživateli komunikovat se zařízením a plnit různé úkoly prostřednictvím přirozené konverzace. Typicky využívá rozpoznávání hlasu a zpracování přirozeného jazyka k porozumění pokynům a umí reagovat hlasem nebo textem. Příklady digitálních asistentů jsou hlasoví asistenti jako Siri, Alexa nebo Google Asistent, kteří dokáží zodpovídat dotazy, nastavovat upomínky, ovládat chytrá zařízení apod.:contentReference[oaicite:34]{index=34}:contentReference[oaicite:35]{index=35}.",
+        "příznak": "technický pojem",
+        "zjednodušené vysvětlení": "To je program v telefonu či počítači, se kterým můžete mluvit nebo psát a on vám pomáhá – jako takový elektronický pomocník. Například se zeptáte \"Jaké bude dnes počasí?\" a on vám odpoví předpověď. Nebo mu řeknete \"pusť mi hudbu\" a on spustí vaši oblíbenou písničku. Je to, jako byste měli osobního asistenta v digitální podobě, který je stále po ruce.",
+        "příklad": "Siri v iPhonu je digitální asistent: můžete jí hlasem říct \"Zavolej mámě\" a Siri porozumí a vytočí telefonní číslo maminky. Podobně Alexa od Amazonu vám doma na povel rozsvítí světla nebo objedná něco z internetu. Tyto asistenty rozumějí řeči a reagují na ni."
+    },
+    {
+        "český název": "poskytovatel",
+        "anglický název": "provider",
+        "preferovaný název": "CZ",
+        "odborná definice": "„Poskytovatel“ je v kontextu AI Act definován jako fyzická nebo právnická osoba, orgán veřejné moci, agentura nebo jiný subjekt, který vyvíjí nebo nechá vyvinout systém umělé inteligence za účelem jeho uvedení na trh nebo do provozu pod svým jménem nebo ochrannou známkou, a to ať už za úplatu nebo zdarma:contentReference[oaicite:36]{index=36}. Poskytovatel tedy nese primární odpovědnost za uvedení AI systému na trh a za soulad systému s právními požadavky.",
+        "příznak": "legální definice",
+        "zjednodušené vysvětlení": "Poskytovatel je jednoduše ten, kdo AI systém vytvoří a nabízí ho dál (prodává nebo poskytuje). Například firma, která vyvine software s umělou inteligencí a dá ho na trh pod svou značkou, je poskytovatelem toho AI systému.",
+        "příklad": "Příklad: Společnost vyvinula AI aplikaci pro rozpoznávání obličeje a nabízí ji dalším firmám – v rámci zákona je tato společnost poskytovatelem AI systému."
+    },
+    {
+        "český název": "Evropský úřad pro umělou inteligenci",
+        "anglický název": "European Artificial Intelligence Office",
+        "preferovaný název": "CZ",
+        "odborná definice": "Evropský úřad pro umělou inteligenci (European AI Office) je nově zřízený orgán v rámci Evropské komise, který slouží jako centrum odborných znalostí pro oblast umělé inteligence v EU. Úřad hraje klíčovou roli při implementaci evropského Aktu o umělé inteligenci – zejména v dohledu nad systémy obecné AI – a podporuje vývoj a používání důvěryhodné AI v souladu s hodnotami EU:contentReference[oaicite:37]{index=37}:contentReference[oaicite:38]{index=38}. Zároveň má Úřad za úkol chránit před riziky spojenými s AI a zajišťovat jednotný a efektivní přístup EU k regulaci a inovacím v AI napříč členskými státy.",
+        "příznak": "legální definice",
+        "zjednodušené vysvětlení": "Je to speciální úřad na úrovni EU, který se stará o to, aby se umělá inteligence v Evropě rozvíjela bezpečně a férově. Funguje jako hlavní expert a dozor – pomáhá hlídat dodržování pravidel (AI Act), radí vládám členských zemí ohledně AI a podporuje spolupráci a sdílení znalostí. Dá se říct, že je to takový \"AI dohledový úřad\" pro celou Evropu.",
+        "příklad": "Evropský úřad pro AI například bude sbírat informace o nových velkých AI modelech (jako GPT-4) a posuzovat jejich rizika. Bude také spolupracovat s národními úřady, třeba když někde v EU nastane problém s nebezpečným použitím AI, tento úřad pomůže koordinovat řešení."
+    },
+    {
+        "český název": "zavádějící subjekt",
+        "anglický název": "deployer (user of an AI system)",
+        "preferovaný název": "CZ",
+        "odborná definice": "„Zavádějící subjekt“ (deployer) je dle AI Act jakákoli fyzická nebo právnická osoba, orgán veřejné moci, agentura nebo jiný subjekt, který používá systém umělé inteligence ve výkonu své činnosti nebo pravomoci (mimo osobní neprofesionální činnost):contentReference[oaicite:39]{index=39}. Deployer je tedy uživatel AI systému v praxi – ten, kdo ho nasazuje do svého procesu či služby a nese odpovědnost za jeho použití v daném kontextu.",
+        "příznak": "legální definice",
+        "zjednodušené vysvětlení": "Zavádějící subjekt znamená ten, kdo AI skutečně používá ve své práci nebo službách (nasazuje ji). Je to uživatel AI systému v terénu, ne běžný občan pro domácí použití, ale třeba firma nebo úřad, který implementuje AI do svého provozu. Například banka, která využije AI pro posuzování žádostí o úvěr, je zavádějící subjekt – nasadila AI systém do praxe.",
+        "příklad": "Městský úřad začne používat AI nástroj na automatickou analýzu podnětů od občanů. V rámci legislativy EU je tento úřad zavádějícím subjektem, protože nasadil AI systém do své úřední činnosti."
+    },
+    {
+        "český název": "dovozce",
+        "anglický název": "importer",
+        "preferovaný název": "CZ",
+        "odborná definice": "„Dovozce“ je podle AI Act každá fyzická nebo právnická osoba usazená v EU, která uvede na unijní trh systém umělé inteligence pocházející od poskytovatele ze třetí země:contentReference[oaicite:40]{index=40}. Dovozce má povinnost zajistit, že dovážený AI systém splňuje požadavky evropské legislativy (podobně jako dovozce zboží ručí za soulad produktu s normami). Dovozce je tedy článkem, který přivádí zahraniční AI systém na trh EU pod svou odpovědností.",
+        "příznak": "legální definice",
+        "zjednodušené vysvětlení": "Dovozce je ten, kdo přiveze AI systém do EU ze zahraničí a začne ho tu nabízet. Například pokud čínská firma vyvine AI software a evropská firma ho sem dováží a prodává, tak ta evropská firma je dovozcem a musí hlídat, že ten AI systém splňuje evropské předpisy.",
+        "příklad": "Firma sídlící v ČR importuje AI zařízení (např. chytrý zdravotnický přístroj s AI) od výrobce z USA a distribuuje ho po EU – tato česká firma je v roli dovozce a musí zajistit, že zařízení splňuje požadavky Aktu o AI, než ho uvede na trh."
+    },
+    {
+        "český název": "distributor",
+        "anglický název": "distributor",
+        "preferovaný název": "CZ",
+        "odborná definice": "„Distributor“ je dle AI Act každý subjekt v dodavatelském řetězci (usazený v EU), který zpřístupňuje systém umělé inteligence na trhu, aniž by sám byl poskytovatelem nebo dovozcem:contentReference[oaicite:41]{index=41}. Distributor tedy přeprodává nebo rozšiřuje AI systém dál ke koncovým uživatelům, ale nezasahuje do jeho návrhu ani ho neimportuje ze třetích zemí. Má však povinnost ověřit, že na systému jsou potřebná označení (např. CE značka) a že k němu existuje požadovaná dokumentace, a nesmí distribuovat systém, o němž ví nebo by měl vědět, že nevyhovuje právním požadavkům.",
+        "příznak": "legální definice",
+        "zjednodušené vysvětlení": "Distributor je prostředník – není to ten, kdo AI systém vytvořil, ani ten, kdo ho přivezl ze zahraničí, ale ten, kdo ho prostě dál prodává nebo dodává zákazníkům. Například velkoobchod nebo e-shop, který prodává AI software od jiných firem, funguje jako distributor. Musí se ale ujistit, že ten produkt má všechny náležitosti a není vadný z hlediska práva.",
+        "příklad": "Velká IT distribuční firma koupí AI kamerový systém od českého poskytovatele a dodává ho městům po celé EU. Tato firma vystupuje jako distributor – nevyvinula to, ale šíří to na trhu, a musí třeba kontrolovat, že výrobce dodal prohlášení o shodě a označení CE k systému."
+    }
+]

@@ -151,6 +151,119 @@ function initInfoBanner() {
 }
 
 /** ======================
+ *  Počítadlo use casů
+ *  ====================== */
+function initUseCaseCounter() {
+  const counter = document.querySelector('.usecase-counter');
+  const numberWrapper = counter?.querySelector('.usecase-counter__number-wrapper');
+  const numberEl = numberWrapper?.querySelector('.usecase-counter__number');
+  if (!counter || !numberWrapper || !numberEl) return;
+
+  const formatter = new Intl.NumberFormat('cs-CZ');
+  const prefersReducedMotion = typeof window.matchMedia === 'function'
+    ? window.matchMedia('(prefers-reduced-motion: reduce)').matches
+    : false;
+  const fallbackTarget = Number(numberEl.dataset.target);
+  const hasFallback = Number.isFinite(fallbackTarget) && fallbackTarget >= 0;
+  let targetValue = hasFallback ? fallbackTarget : null;
+  let hasAnimated = false;
+  let hasIntersected = !('IntersectionObserver' in window);
+
+  numberEl.textContent = formatter.format(0);
+
+  const applyValue = value => {
+    numberEl.textContent = formatter.format(value);
+    if (prefersReducedMotion) return;
+    numberWrapper.classList.remove('is-flipping');
+    void numberWrapper.offsetWidth;
+    numberWrapper.classList.add('is-flipping');
+    numberEl.addEventListener('animationend', () => {
+      numberWrapper.classList.remove('is-flipping');
+    }, { once: true });
+  };
+
+  const animate = target => {
+    if (hasAnimated || !Number.isFinite(target) || target < 0) return;
+    hasAnimated = true;
+
+    const duration = 2400;
+    const start = performance.now();
+    const easeOutCubic = t => 1 - Math.pow(1 - t, 3);
+    let lastValue = 0;
+
+    const update = now => {
+      const elapsed = now - start;
+      const progress = Math.min(elapsed / duration, 1);
+      const eased = easeOutCubic(progress);
+      const value = Math.round(target * eased);
+
+      if (value !== lastValue) {
+        applyValue(value);
+        lastValue = value;
+      }
+
+      if (progress < 1) {
+        requestAnimationFrame(update);
+      } else if (lastValue !== target) {
+        applyValue(target);
+      }
+    };
+
+    requestAnimationFrame(update);
+  };
+
+  const tryAnimate = () => {
+    if (!hasAnimated && hasIntersected && Number.isFinite(targetValue)) {
+      animate(targetValue);
+    }
+  };
+
+  if ('IntersectionObserver' in window) {
+    const observer = new IntersectionObserver((entries, obs) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          hasIntersected = true;
+          tryAnimate();
+          obs.disconnect();
+        }
+      });
+    }, { threshold: 0.35 });
+
+    observer.observe(counter);
+  } else {
+    tryAnimate();
+  }
+
+  const fetchActualCount = async () => {
+    try {
+      const response = await fetch('use-cases.json', { cache: 'no-store' });
+      if (!response.ok) throw new Error(`Request failed: ${response.status}`);
+      const data = await response.json();
+      if (Array.isArray(data)) return data.length;
+      if (data && typeof data === 'object') {
+        if (Array.isArray(data.cases)) return data.cases.length;
+        if (typeof data.total === 'number') return data.total;
+      }
+    } catch (error) {
+      console.warn('Nepodařilo se načíst počet use casů:', error);
+    }
+    return null;
+  };
+
+  fetchActualCount().then(count => {
+    if (Number.isFinite(count) && count >= 0) {
+      targetValue = count;
+      numberEl.dataset.target = String(count);
+    } else if (hasFallback) {
+      targetValue = fallbackTarget;
+    } else {
+      targetValue = 0;
+    }
+    tryAnimate();
+  });
+}
+
+/** ======================
  *  Pomocné funkce pro katalog
  *  ====================== */
 function createUseCaseSection(uc, categoryDescriptions) {
@@ -398,5 +511,6 @@ async function initCatalog() {
 document.addEventListener('DOMContentLoaded', () => {
   initCommon();
   initCatalog();
+  initUseCaseCounter();
   initInfoBanner();
 });
