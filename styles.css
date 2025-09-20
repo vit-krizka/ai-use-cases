@@ -1767,6 +1767,12 @@ table#table-overview tr>*:first-child {
     border-radius: 12px;
 }
 
+.glossary-image-aside {
+    float: right;
+    margin: 0 0 1rem 1.5rem;
+    max-width: 40%;
+}
+
 .glossary-entry .glossary-table thead th {
     display: table-cell;
     text-align: left;
