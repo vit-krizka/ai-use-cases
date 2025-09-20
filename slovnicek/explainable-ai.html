@@ -31,14 +31,15 @@
       </h1>
     </div>
   </header>
-  <nav class="main-nav" aria-label="Hlavní menu">
+      <nav class="main-nav" aria-label="Hlavní menu">
     <div class="main-nav__inner">
       <ul class="main-nav__list">
         <li><a href="../project.html">Katalog</a></li>
         <li><a href="../ai-gramotnost.html">AI gramotnost</a></li>
         <li><a href="../ai-compliance.html">AI compliance</a></li>
+        <li><a href="../prompt-inzenyrstvi.html">Prompt inženýrství</a></li>
         <li><a href="../clanky.html">Články</a></li>
-        <li><a href="../slovnicek.html" aria-current="page">Slovníček</a></li>
+        <li><a href="../slovnicek.html">Slovníček</a></li>
         <li><a href="../wiki.html">Přidat use case</a></li>
       </ul>
     </div>
@@ -56,8 +57,7 @@
           <li class="mobile-menu__item mobile-menu__item--catalog">
             <div class="mobile-menu__row">
               <a href="../project.html">Katalog</a>
-              <button class="mobile-menu__toggle" type="button" aria-expanded="false"
-                aria-controls="mobile-catalog-list">
+              <button class="mobile-menu__toggle" type="button" aria-expanded="false" aria-controls="mobile-catalog-list">
                 <span class="sr-only">Rozbalit menu katalogu</span>
                 <span aria-hidden="true">▶</span>
               </button>
@@ -66,6 +66,7 @@
           </li>
           <li class="mobile-menu__item"><a href="../ai-gramotnost.html">AI gramotnost</a></li>
           <li class="mobile-menu__item"><a href="../ai-compliance.html">AI compliance</a></li>
+          <li class="mobile-menu__item"><a href="../prompt-inzenyrstvi.html">Prompt inženýrství</a></li>
           <li class="mobile-menu__item"><a href="../clanky.html">Články</a></li>
           <li class="mobile-menu__item"><a href="../slovnicek.html" aria-current="page">Slovníček</a></li>
           <li class="mobile-menu__item"><a href="../wiki.html">Přidat use case</a></li>
@@ -77,27 +78,45 @@
   <main id="main">
     <div>
       <article class="glossary-entry">
-        <header class="glossary-entry__header">
+      <header class="glossary-entry__header">
           <p class="glossary-entry__tag">technický pojem</p>
           <h2>Explainable AI (XAI)</h2>
           <p class="glossary-entry__alt-name">Česky: Vysvětlitelná AI</p>
         </header>
-        <section>
-          <h3>Co říká definice</h3>
-          <p>Vysvětlitelná umělá inteligence (XAI, z angl. Explainable AI) je přístup k AI kladoucí důraz na to, aby modely a jejich rozhodnutí byly pro lidi srozumitelné a mohli jsme pochopit důvody, proč AI k určitému výsledku došla. Cílem XAI je vyvinout takové modely nebo metody (např. LIME, SHAP, heatmapy pro neur. sítě), které umožní nahlédnout do vnitřního fungování AI &quot;černých skříněk&quot; a vysvětlit jejich rozhodovací procesy. To zvyšuje důvěru uživatelů v AI a umožňuje odhalit případné chyby či bias.</p>
-        </section>
-        <section>
-          <h3>Vysvětlení pro úředníky</h3>
-          <p>Vysvětlitelná AI znamená, že AI není jako neprostupná magie, ale že dokáže ukázat a zdůvodnit, proč udělala to, co udělala. Například místo aby jen řekla &quot;nepovolím ti půjčku&quot;, vysvětlitelná AI by mohla dodat: &quot;protože tvůj příjem je nízký a už máš jiný úvěr&quot;. Jsou to metody, jak udělat rozhodování AI průhlednější. Díky tomu mohou lidé AI více věřit a taky si všimnout, když AI někde dělá chybu.</p>
-        </section>
-        <section>
-          <h3>Příklad z praxe</h3>
-          <p>Příklad vysvětlitelné AI: systém pro rozpoznávání obrázků diagnostikuje nemoc z rentgenového snímku a zároveň zvýrazní oblast snímku, která ho k té diagnóze vedla (např. zakroužkuje skvrnu na plicích). Tím lékař vidí, na základě čeho AI usoudila svůj závěr.</p>
-        </section>
-        <nav class="glossary-entry__back">
-          <a href="../slovnicek.html">&larr; Zpět na Slovníček</a>
-        </nav>
-      </article>
+
+      <section>
+        <p>Pojem Explainable AI (XAI) se ve veřejné správě objevuje stále častěji a může rozhodnout o tom, zda digitalizační projekt uspěje. Když úředník rozumí, co Explainable AI (XAI) znamená a jak ovlivňuje jeho agendu, dokáže lépe plánovat kroky a předejít zbytečným rizikům.</p>
+      </section>
+      <section class="highlight">
+        <p>Vysvětlitelná umělá inteligence (XAI, z angl. Explainable AI) je přístup k AI kladoucí důraz na to, aby modely a jejich rozhodnutí byly pro lidi srozumitelné a mohli jsme pochopit důvody, proč AI k určitému výsledku došla. Cílem XAI je vyvinout takové modely nebo metody (např. LIME, SHAP, heatmapy pro neur. sítě), které umožní nahlédnout do vnitřního fungování AI &quot;černých skříněk&quot; a vysvětlit jejich rozhodovací procesy. To zvyšuje důvěru uživatelů v AI a umožňuje odhalit případné chyby či bias.</p>
+      </section>
+      <section>
+        <h3>Jak to funguje</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer non gravida lectus, sed fermentum risus. Vestibulum eu neque at sapien vulputate gravida at ac orci.</p>
+      </section>
+      <section>
+        <h3>Co si odnést</h3>
+        <p>Praesent eget purus sed nulla facilisis imperdiet. Nulla facilisi. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+      </section>
+      <section class="ai-gramotnost">
+        <h3>AI GRAMOTNOST</h3>
+        <h4>Proč bych tomu měl rozumět?</h4>
+        <p>Porozumění tomu, co znamená Explainable AI (XAI), posiluje schopnost úředníků vyhodnocovat, kdy a jak má být daný pojem využit v AI projektech. Bez této znalosti je obtížné posoudit přiměřenost zadání i požadavků na dodavatele.</p>
+        <p>Když úředník dokáže vysvětlit Explainable AI (XAI) kolegům nebo vedení, rozvíjí tím kulturu sdílení znalostí a podporuje odpovědné rozhodování o technologiích. AI gramotnost není jen o technických detailech, ale o schopnosti zasadit Explainable AI (XAI) do širšího kontextu veřejné služby.</p>
+        <p>Schopnost pracovat s pojmem Explainable AI (XAI) posiluje důvěru občanů v digitální služby státu. Úředník, který chápe jeho význam, umí lépe vysvětlit postupy a obhájit, že AI nástroje slouží veřejnému zájmu.</p>
+      </section>
+      <section>
+        <h3>Související pojmy</h3>
+        <ul>
+            <li><a href="black-box.html">Black box</a></li>
+            <li><a href="umela-inteligence.html">Umělá inteligence</a></li>
+            <li><a href="strojove-uceni.html">Strojové učení</a></li>
+        </ul>
+      </section>
+      <nav class="glossary-entry__back">
+        <a href="../slovnicek.html" aria-label="Zpět na slovníček">&larr; zpět na slovníček</a>
+      </nav>
+    </article>
     </div>
   </main>
 
