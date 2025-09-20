@@ -1642,6 +1642,8 @@ table#table-overview tr>*:first-child {
     gap: 0.75rem;
     flex-wrap: wrap;
     row-gap: 0.35rem;
+    align-items: center;
+
 }
 
 .glossary-table tbody tr:last-child td,
@@ -1653,21 +1655,29 @@ table#table-overview tr>*:first-child {
     color: var(--dark);
     font-weight: 600;
     text-decoration: none;
-    flex: 1;
+    /* flex: 1; */
     display: inline-flex;
     flex-wrap: wrap;
     gap: 0.25rem;
-    align-items: baseline;
+    align-items: center;
 }
 
-.glossary-table th a:hover {
+.glossary-link {
+    text-decoration: none;
+}
+
+.glossary-link:hover .glossary-title {
     text-decoration: underline;
+}
+
+.glossary-link:hover .glossary-alt-name {
+    text-decoration: none;
 }
 
 .glossary-table th .glossary-chip {
     margin-bottom: 0;
     white-space: nowrap;
-    margin-left: auto;
+    /* margin-left: auto; */
     align-self: flex-start;
 }
 
@@ -1783,6 +1793,10 @@ table#table-overview tr>*:first-child {
         width: 100%;
     }
 
+    .glossary-table__definition-col {
+        display: none;
+    }
+
     .glossary-table tbody tr {
         display: block;
         border-bottom: 1px solid #e0e5eb;
@@ -1796,7 +1810,7 @@ table#table-overview tr>*:first-child {
     .glossary-table th,
     .glossary-table td {
         display: block;
-        width: 100%;
+        /* width: 100%; */
         padding: 0.85rem 1rem;
     }
 
