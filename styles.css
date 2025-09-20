@@ -1607,6 +1607,14 @@ table#table-overview tr>*:first-child {
     min-width: 480px;
 }
 
+.glossary-table__term-col {
+    width: 30%;
+}
+
+.glossary-table__definition-col {
+    width: 70%;
+}
+
 .glossary-table caption {
     text-align: left;
     font-weight: 600;
@@ -1768,12 +1776,41 @@ table#table-overview tr>*:first-child {
 
 @media (max-width: 768px) {
     .glossary-table {
-        min-width: 100%;
+        min-width: 0;
+    }
+
+    .glossary-table col {
+        width: 100%;
+    }
+
+    .glossary-table tbody tr {
+        display: block;
+        border-bottom: 1px solid #e0e5eb;
+        padding: 0.5rem 0;
+    }
+
+    .glossary-table tbody tr:last-child {
+        border-bottom: none;
     }
 
     .glossary-table th,
     .glossary-table td {
+        display: block;
+        width: 100%;
         padding: 0.85rem 1rem;
+    }
+
+    .glossary-table th {
+        padding-bottom: 0.35rem;
+        display: block;
+    }
+
+    .glossary-table th .glossary-chip {
+        margin-left: 0;
+    }
+
+    .glossary-table td {
+        padding-top: 0;
     }
 
     .glossary-entry {
