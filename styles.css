@@ -1187,7 +1187,7 @@ h3 {
 }
 
 .ai-gramotnost h3 {
-    font-size: clamp(1.2rem, 2.4vw, 1.6rem);
+    font-size: 24px;
     letter-spacing: 0.06em;
     text-transform: uppercase;
     margin-bottom: 0.5rem;
@@ -1195,8 +1195,9 @@ h3 {
 }
 
 .ai-gramotnost h4 {
-    font-size: clamp(1.1rem, 2.1vw, 1.4rem);
-    margin-bottom: 0.75rem;
+    font-size: 16px;
+    margin: 0;
+    font-style: italic;
 }
 
 .ai-gramotnost p {
@@ -1782,7 +1783,7 @@ table#table-overview tr>*:first-child {
 }
 
 .glossary-entry section {
-    margin-bottom: 1.75rem;
+    margin-bottom: 2.75rem;
 }
 
 .glossary-entry section:last-of-type {
