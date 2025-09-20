@@ -1116,10 +1116,12 @@ h3 {
         transform: rotateX(-82deg);
         filter: brightness(0.85);
     }
+
     60% {
         transform: rotateX(16deg);
         filter: brightness(1.02);
     }
+
     100% {
         transform: rotateX(0deg);
         filter: brightness(1);
@@ -1586,11 +1588,11 @@ table#table-overview tr>*:first-child {
 }
 
 /* ===== Slovníček ===== */
-.glossary-overview {
+/* .glossary-overview {
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
-}
+} */
 
 .table-wrapper {
     overflow-x: auto;
@@ -1621,7 +1623,7 @@ table#table-overview tr>*:first-child {
 .glossary-table th,
 .glossary-table td {
     padding: 1rem 1.5rem;
-    border-bottom: 1px solid #e0e5eb;
+    border-bottom: none;
     vertical-align: top;
 }
 
