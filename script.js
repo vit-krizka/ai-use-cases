@@ -166,12 +166,14 @@ function initUseCaseCounter() {
   const fallbackTarget = Number(numberEl.dataset.target);
   const hasFallback = Number.isFinite(fallbackTarget) && fallbackTarget >= 0;
   let targetValue = hasFallback ? fallbackTarget : null;
+  let currentValue = hasFallback ? fallbackTarget : 0;
   let hasAnimated = false;
   let hasIntersected = !('IntersectionObserver' in window);
 
-  numberEl.textContent = formatter.format(0);
+  numberEl.textContent = formatter.format(currentValue);
 
   const applyValue = value => {
+    currentValue = value;
     numberEl.textContent = formatter.format(value);
     if (prefersReducedMotion) return;
     numberWrapper.classList.remove('is-flipping');
@@ -251,6 +253,8 @@ function initUseCaseCounter() {
   };
 
   fetchActualCount().then(count => {
+    const previousValue = currentValue;
+
     if (Number.isFinite(count) && count >= 0) {
       targetValue = count;
       numberEl.dataset.target = String(count);
@@ -259,7 +263,20 @@ function initUseCaseCounter() {
     } else {
       targetValue = 0;
     }
-    tryAnimate();
+
+    if (targetValue !== previousValue) {
+      if (prefersReducedMotion) {
+        applyValue(targetValue);
+        hasAnimated = true;
+      } else if (hasAnimated) {
+        hasAnimated = false;
+        tryAnimate();
+      } else {
+        tryAnimate();
+      }
+    } else {
+      tryAnimate();
+    }
   });
 }
 
