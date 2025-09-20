@@ -1759,6 +1759,37 @@ table#table-overview tr>*:first-child {
     margin-bottom: 2.5rem;
 }
 
+.glossary-entry .ai-gramotnost {
+    background: linear-gradient(135deg, rgba(32, 115, 21, 0.08), rgba(32, 115, 21, 0.02));
+    border: 1px solid rgba(32, 115, 21, 0.25);
+    border-radius: 16px;
+    padding: clamp(1.5rem, 3vw, 2.25rem);
+    margin-block: 2.5rem;
+    box-shadow: 0 10px 28px rgba(32, 115, 21, 0.12);
+}
+
+.glossary-entry .ai-gramotnost h3 {
+    margin-top: 0;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    font-size: 0.95rem;
+    color: var(--primary);
+}
+
+.glossary-entry .ai-gramotnost h4 {
+    margin-top: 0.5rem;
+    font-size: clamp(1.2rem, 2.4vw, 1.5rem);
+    color: var(--dark);
+}
+
+.glossary-entry .ai-gramotnost p {
+    margin-bottom: 1rem;
+}
+
+.glossary-entry .ai-gramotnost section {
+    margin-bottom: 0;
+}
+
 .glossary-entry .glossary-image {
     display: block;
     max-width: 100%;
@@ -1796,6 +1827,7 @@ table#table-overview tr>*:first-child {
     border-top: 1px solid #e0e5eb;
     padding-top: 1.5rem;
     display: flex;
+    justify-content: center;
 }
 
 .glossary-entry__back a {
