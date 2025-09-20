@@ -1031,9 +1031,14 @@ h3 {
 }
 
 .usecase-counter {
-    margin: clamp(2.5rem, 6vw, 4rem) 0;
-    padding: clamp(2.75rem, 7vw, 4.5rem) clamp(1.25rem, 5vw, 3rem);
+    margin-block: clamp(2rem, 5vw, 3.25rem);
+    padding: clamp(2rem, 6vw, 3.25rem) clamp(1rem, 4vw, 2.5rem);
     background: #f4f5f7;
+    font-family: "Noto Sans", "Roboto", "Roboto Web", sans-serif;
+    position: relative;
+    left: 50%;
+    width: 100vw;
+    transform: translateX(-50%);
 }
 
 .usecase-counter__inner {
@@ -1049,16 +1054,17 @@ h3 {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    flex-wrap: nowrap;
-    gap: clamp(0.75rem, 2.5vw, 1.5rem);
+    flex-wrap: wrap;
+    gap: clamp(0.5rem, 2vw, 1rem);
     margin: 0;
-    font-size: clamp(1.15rem, 1.5vw + 1rem, 2.05rem);
+    font-size: clamp(1.05rem, 1vw + 0.95rem, 1.75rem);
     font-weight: 600;
-    color: rgba(24, 24, 24, 0.92);
+    color: rgba(24, 24, 24, 0.9);
+    text-align: center;
 }
 
 .usecase-counter__headline-text {
-    white-space: nowrap;
+    white-space: normal;
 }
 
 .usecase-counter__number-wrapper {
@@ -1066,13 +1072,13 @@ h3 {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    padding: clamp(0.45rem, 1.5vw, 0.7rem) clamp(1.1rem, 4vw, 1.8rem);
-    border-radius: 16px;
-    background: linear-gradient(160deg, #ffffff, #f3f3f3 70%, #ffffff);
-    box-shadow: 0 24px 45px -30px rgba(22, 31, 38, 0.55), 0 14px 24px -24px rgba(22, 31, 38, 0.35);
-    border: 1px solid rgba(12, 24, 35, 0.08);
+    padding: clamp(0.4rem, 1.2vw, 0.65rem) clamp(0.9rem, 3vw, 1.5rem);
+    border-radius: 12px;
+    background: linear-gradient(160deg, #ffffff, #f3f3f3 65%, #ffffff);
+    box-shadow: 0 18px 32px -26px rgba(22, 31, 38, 0.4), 0 10px 20px -22px rgba(22, 31, 38, 0.25);
+    border: 1px solid rgba(12, 24, 35, 0.06);
     perspective: 1000px;
-    min-width: clamp(5ch, 8vw, 7ch);
+    min-width: clamp(4.5ch, 6vw, 6.5ch);
 }
 
 .usecase-counter__number-wrapper::before,
@@ -1098,11 +1104,11 @@ h3 {
 .usecase-counter__number {
     position: relative;
     display: block;
-    font-size: clamp(2.4rem, 7vw, 4.5rem);
+    font-size: clamp(2rem, 6vw, 3.75rem);
     font-weight: 700;
     line-height: 1;
     color: var(--primary);
-    text-shadow: 0 14px 30px rgba(31, 65, 42, 0.25);
+    text-shadow: 0 10px 22px rgba(31, 65, 42, 0.22);
     transform-origin: center;
     will-change: transform;
 }
@@ -1138,22 +1144,27 @@ h3 {
 .usecase-counter__note {
     margin: 0 auto;
     max-width: 42ch;
-    font-size: clamp(0.95rem, 0.8vw + 0.9rem, 1.1rem);
+    font-size: clamp(0.95rem, 0.6vw + 0.9rem, 1.05rem);
     color: rgba(24, 24, 24, 0.7);
 }
 
 @media (max-width: 600px) {
     .usecase-counter {
-        padding-inline: clamp(1rem, 6vw, 1.75rem);
+        padding: clamp(1.5rem, 8vw, 2.5rem) clamp(1.25rem, 7vw, 2rem);
     }
 
     .usecase-counter__headline {
-        gap: clamp(0.5rem, 3vw, 0.9rem);
-        font-size: clamp(1rem, 4vw + 0.6rem, 1.5rem);
+        flex-direction: column;
+        gap: clamp(0.4rem, 3vw, 0.8rem);
+        font-size: clamp(1rem, 2vw + 0.85rem, 1.35rem);
     }
 
     .usecase-counter__number {
-        font-size: clamp(2.2rem, 12vw, 3.5rem);
+        font-size: clamp(2.1rem, 10vw, 3.2rem);
+    }
+
+    .usecase-counter__headline-text {
+        text-align: center;
     }
 }
 
