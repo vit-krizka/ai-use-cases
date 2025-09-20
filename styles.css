@@ -1177,6 +1177,34 @@ h3 {
     margin: 0;
 }
 
+.ai-gramotnost {
+    background: #f2f8f0;
+    border: 1px solid #c8e1c1;
+    border-radius: 12px;
+    padding: 1.75rem;
+    margin: 2.5rem 0;
+    box-shadow: 0 12px 24px rgba(32, 115, 21, 0.08);
+}
+
+.ai-gramotnost h3 {
+    margin-top: 0;
+    color: var(--primary);
+    letter-spacing: 0.08em;
+}
+
+.ai-gramotnost h4 {
+    margin-top: 0.75rem;
+    color: #1a5b10;
+}
+
+.ai-gramotnost p {
+    margin-bottom: 1rem;
+}
+
+.ai-gramotnost section:last-child p:last-child {
+    margin-bottom: 0;
+}
+
 .info-grid {
     display: grid;
     grid-template-columns: 120px 1fr;
@@ -1796,6 +1824,7 @@ table#table-overview tr>*:first-child {
     border-top: 1px solid #e0e5eb;
     padding-top: 1.5rem;
     display: flex;
+    justify-content: center;
 }
 
 .glossary-entry__back a {
