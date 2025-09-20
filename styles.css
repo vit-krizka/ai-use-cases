@@ -1032,8 +1032,9 @@ h3 {
 
 .usecase-counter {
     position: relative;
-    margin: 5rem auto;
-    padding: 45px;
+    isolation: isolate;
+    margin: clamp(2.5rem, 6vw, 3.75rem) auto;
+    padding: clamp(2rem, 5vw, 3rem) clamp(1.5rem, 4vw, 2.5rem);
     background: none;
 }
 
@@ -1051,25 +1052,23 @@ h3 {
     text-align: center;
     display: flex;
     flex-direction: column;
-    gap: 50px;
+    gap: clamp(1.5rem, 4vw, 2.5rem);
 }
 
 .usecase-counter__headline {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    flex-wrap: nowrap;
-    /* gap: clamp(0.75rem, 2.5vw, 1.5rem); */
+    flex-wrap: wrap;
     margin: 0;
-    font-size: 38px;
-    gap: 1rem;
-    /* font-size: clamp(1.15rem, 1.5vw + 1rem, 2.05rem); */
+    gap: clamp(0.5rem, 2vw, 1rem);
+    font-size: clamp(1.4rem, 2.4vw, 2.1rem);
     font-weight: 600;
     color: rgba(24, 24, 24, 0.92);
 }
 
 .usecase-counter__headline-text {
-    white-space: nowrap;
+    white-space: normal;
 }
 
 .usecase-counter__number-wrapper {
@@ -1077,13 +1076,13 @@ h3 {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    padding: 12px 0px;
-    border-radius: 16px;
+    padding: 8px 0;
+    border-radius: 12px;
     background: linear-gradient(160deg, #ffffff, #f3f3f3 70%, #ffffff);
-    box-shadow: 0 24px 45px -30px rgba(22, 31, 38, 0.55), 0 14px 24px -24px rgba(22, 31, 38, 0.35);
+    box-shadow: 0 18px 32px -28px rgba(22, 31, 38, 0.45), 0 10px 20px -22px rgba(22, 31, 38, 0.25);
     border: 1px solid rgba(12, 24, 35, 0.08);
     perspective: 1000px;
-    min-width: clamp(5ch, 8vw, 7ch);
+    min-width: clamp(5ch, 7vw, 6ch);
 }
 
 .usecase-counter__number-wrapper::before,
@@ -1109,13 +1108,15 @@ h3 {
 .usecase-counter__number {
     position: relative;
     display: block;
-    font-size: clamp(2.4rem, 7vw, 4.5rem);
+    font-size: clamp(2rem, 6vw, 3.5rem);
     font-weight: 700;
     line-height: 1;
     color: var(--primary);
-    text-shadow: 0 14px 30px rgba(31, 65, 42, 0.25);
+    text-shadow: 0 12px 26px rgba(31, 65, 42, 0.2);
     transform-origin: center;
     will-change: transform;
+    font-family: "Roboto Mono", "Roboto", "Roboto Web", sans-serif;
+    font-variant-numeric: tabular-nums;
 }
 
 .usecase-counter__number-wrapper.is-flipping .usecase-counter__number {
@@ -1142,22 +1143,25 @@ h3 {
 .usecase-counter__note {
     margin: 0 auto;
     max-width: 42ch;
-    font-size: 32px;
+    font-size: clamp(1.1rem, 2vw, 1.5rem);
     color: var(--primary);
 }
 
 @media (max-width: 600px) {
     .usecase-counter {
-        padding-inline: clamp(1rem, 6vw, 1.75rem);
+        padding: clamp(1.5rem, 6vw, 2rem) clamp(1rem, 5vw, 1.75rem);
     }
 
     .usecase-counter__headline {
-        gap: clamp(0.5rem, 3vw, 0.9rem);
-        font-size: clamp(1rem, 4vw + 0.6rem, 1.5rem);
+        font-size: clamp(1.1rem, 5vw, 1.6rem);
     }
 
     .usecase-counter__number {
-        font-size: clamp(2.2rem, 12vw, 3.5rem);
+        font-size: clamp(1.9rem, 14vw, 3rem);
+    }
+
+    .usecase-counter__note {
+        font-size: clamp(1rem, 4.5vw, 1.3rem);
     }
 }
 
