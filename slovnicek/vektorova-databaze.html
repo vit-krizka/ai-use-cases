@@ -94,8 +94,8 @@
 
         <section class="highlight">
           <p>Vektorová databáze je specializovaný úložný systém pro ukládání a vyhledávání dat ve formě vektorových
-            reprezentací (embeddingů).
-            Každý objekt (např. text, obrázek, zvuk) je převeden na vektor čísel a spolu s metadaty uložen do databáze.
+            reprezentací (<a href="embedding.html">embeddingů</a>).
+            Každý objekt (např. text, obrázek, zvuk) je převeden na <a href="vektor.html">vektor</a> čísel a spolu s metadaty uložen do databáze.
             Základní funkcí je vyhledávání „nejbližších sousedů“ – tedy vektorů, které jsou nejpodobnější zadanému
             vektoru podle určité metriky podobnosti (např. kosinové). Vektorové databáze se používají k vyhledávání
             podobných textů, obrázků, videí či jiných nestrukturovaných dat podle jejich významu, nikoli jen podle shody
@@ -119,7 +119,7 @@
           <h3>Jak fungují vektorové databáze?</h3>
           <p>Pro jednoduchost si představme <strong>prostor pouze se 2 rozměry</strong>: <em>počet nohou</em> a
             <em>velikost těla</em>.
-            Každé zvíře je bod – vektor <code>[počet končetin, velikost tvora]</code>. Zvířata s podobnými vlastnostmi
+            Každé zvíře je bod – <a href="vektor.html">vektor</a> <code>[počet končetin, velikost tvora]</code>. Zvířata s podobnými vlastnostmi
             budou
             blízko u
             sebe.
@@ -170,7 +170,7 @@
           <pre><code>vec("strýc") = [12.4, 232.1, -323.7, 0.8, ... , 41.2]</code></pre>
 
           <p>Každá souřadnice sama o sobě není interpretovatelná člověkem. Pro nás je embedding
-            <em>černou skříňkou</em> – vidíme vstup (slovo, věta) a výstup (vektor), ale nemůžeme
+            <a href="black-box.html"><em>černou skříňkou</em></a> – vidíme vstup (slovo, věta) a výstup (vektor), ale nemůžeme
             přímo říct, co znamená „souřadnice č. 347“. Přesto tato skrytá reprezentace
             zachovává užitečné vztahy mezi pojmy.
           </p>
@@ -186,9 +186,9 @@
             („pes“ – „kočka“, „město“ – „vesnice“) se proto v embeddingovém prostoru ocitají
             blízko sebe, zatímco odlišná („pes“ – „letadlo“) leží daleko.</p>
 
-          <p>Embeddingy vycházejí z <strong>tokenů</strong>, tedy jednotek textu, které model dokáže zpracovat.
+          <p>Embeddingy vycházejí z <a href="token.html"><strong>tokenů</strong></a>, tedy jednotek textu, které model dokáže zpracovat.
             Token obvykle odpovídá slovu nebo části slova (např. „učit“, „-el“, „na“). Model přiřadí
-            embedding každému tokenu a z jejich kombinace pak vytvoří embedding celé věty, odstavce
+            embedding každému <a href="token.html">tokenu</a> a z jejich kombinace pak vytvoří embedding celé věty, odstavce
             nebo dokumentu. Díky tomu lze vyhledávat nejen jednotlivá slova, ale i celé texty podle
             jejich významu.</p>
 
