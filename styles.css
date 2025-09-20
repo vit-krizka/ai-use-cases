@@ -1320,8 +1320,7 @@ h3 {
 
 /* ===== Mobile ===== */
 /* malá hlavička na mobilu, bez ohledu na orientaci portrait, landscape */
-@media (max-width: 768px),
-(max-height: 768px) {
+@media (max-width: 768px) {
     :root {
         --header-height: 56px;
         --nav-height: 0px;

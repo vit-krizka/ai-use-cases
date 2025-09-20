@@ -78,11 +78,11 @@
   <main id="main">
     <div>
       <article class="glossary-entry">
-        <header class="glossary-entry__header">
+        <div class="glossary-entry__header">
           <p class="glossary-entry__tag">technický pojem</p>
           <h2>Vektorová databáze</h2>
           <p class="glossary-entry__alt-name">Vector database</p>
-        </header>
+        </div>
 
         <section>
           <p>Představte si, že nehledáte dokument podle přesných slov, ale podle <strong>významu</strong>. Napíšete
@@ -93,10 +93,13 @@
         </section>
 
         <section class="highlight">
-          <p>Vektorová databáze je specializovaný úložný systém navržený pro ukládání a vyhledávání dat ve formě vektorů
-            (tzv. <strong>embeddingů</strong>). Ukládá dvojici: <em>vektor</em> (dlouhý seznam čísel) +
-            <em>metadata</em> (např. název dokumentu, URL, typ, čas). Základní operací je vyhledání „nejbližších
-            sousedů“ – nalezení vektorů nejpodobnějších zadanému vektoru podle zvolené metriky podobnosti.
+          <p>Vektorová databáze je specializovaný úložný systém pro ukládání a vyhledávání dat ve formě vektorových
+            reprezentací (embeddingů).
+            Každý objekt (např. text, obrázek, zvuk) je převeden na vektor čísel a spolu s metadaty uložen do databáze.
+            Základní funkcí je vyhledávání „nejbližších sousedů“ – tedy vektorů, které jsou nejpodobnější zadanému
+            vektoru podle určité metriky podobnosti (např. kosinové). Vektorové databáze se používají k vyhledávání
+            podobných textů, obrázků, videí či jiných nestrukturovaných dat podle jejich významu, nikoli jen podle shody
+            slov.
           </p>
         </section>
 
@@ -106,47 +109,29 @@
             hledat „texty s podobným významem“ nebo „obrázky podobné tomuto“. Vektorová databáze doplňuje stávající
             systémy o schopnost pracovat s nestrukturovanými daty (text, obrázky, zvuk, video) přes jejich číselnou
             reprezentaci.</p>
+          <p>Umělá inteligence si nerozumí s běžnými databázemi, ale rozumí vektorovým. Proto se vektorové databáze
+            často používají jako
+            základ pro AI aplikace, například chatovací roboty, které odpovídají na otázky na základě velkého množství
+            dokumentů.</p>
         </section>
 
         <section>
-          <h3>Jak fungují vektory a embeddingy</h3>
-          <p><strong>Embedding</strong> je hustý vektor reálných čísel o desítkách až tisících rozměrů (např. 384, 768,
-            1536…). Model strojového učení převede vstup (větu, odstavec, obrázek) do bodu v tomto prostoru tak, aby si
-            významově podobné vstupy byly <em>blízko</em> a odlišné <em>daleko</em>.</p>
-          <p>Pipeline v praxi:</p>
-          <ol>
-            <li>Vstupní data → čištění, dělení na menší „chunky“.</li>
-            <li>Každý chunk → embedding (vektor).</li>
-            <li>Uložení do vektorové DB: <code>[vektor] + [metadata + odkaz na zdroj]</code>.</li>
-            <li>Dotaz uživatele → přepočet na vektor → vyhledání nejbližších sousedů.</li>
-            <li>Volitelně: re-ranking, filtrování podle metadat, kombinace s klíčovými slovy.</li>
-          </ol>
-        </section>
-
-        <section>
-          <h3>Jak vektorová databáze hledá podobnost</h3>
-          <p>Podobnost dvou vektorů se měří metrikami, nejčastěji <em>cosine similarity</em>, skalární součin (dot
-            product) nebo eukleidovská vzdálenost (L2). Pro rychlost se používá <strong>přibližné</strong> vyhledávání
-            nejbližších sousedů (ANN) a specializované indexy (např. HNSW, IVF-PQ). To umožní milisekundové dotazy i nad
-            miliony vektorů.</p>
-        </section>
-
-        <section>
-          <h3>Vysvětlení pro úředníky</h3>
-          <p>Je to databáze, která místo přesné shody slov vyhledává podle podobnosti významu. Umí tak rychle najít
-            dokumenty, části metodik či podání, která „říkají totéž jinými slovy“. Kromě vektorů uchovává i běžná
-            metadata a umožňuje nad nimi filtrovat (např. jen dokumenty z určité agendy nebo období).</p>
-        </section>
-
-        <section>
-          <h3>Příklad se zvířaty (2D vektorový prostor)</h3>
-          <p>Pro jednoduchost si představme prostor pouze se 2 rozměry: <em>počet nohou</em> a <em>velikost těla</em>.
-            Každé zvíře je bod – vektor <code>[nohy, velikost]</code>. Zvířata s podobnými vlastnostmi budou blízko u
-            sebe.</p>
+          <h3>Jak fungují vektorové databáze?</h3>
+          <p>Pro jednoduchost si představme <strong>prostor pouze se 2 rozměry</strong>: <em>počet nohou</em> a
+            <em>velikost těla</em>.
+            Každé zvíře je bod – vektor <code>[počet končetin, velikost tvora]</code>. Zvířata s podobnými vlastnostmi
+            budou
+            blízko u
+            sebe.
+          </p>
+          <img src="../images/vector-database.png" alt=" Příklad vektorové databáze v 2D prostoru"
+            class="glossary-image">
+          <p>Pokud bychom chtěli zvířata dle příkladu výše uložit ve vektorové databázi, mohli bychom je reprezentovat
+            následujícím způsobem:</p>
           <table class="glossary-table" aria-label="Příklad embeddingů zvířat v 2D">
             <thead>
               <tr>
-                <th scope="col">Zvíře (koncept)</th>
+                <th scope="col">Zvíře</th>
                 <th scope="col">Embedding vektor</th>
               </tr>
             </thead>
@@ -177,9 +162,55 @@
               </tr>
             </tbody>
           </table>
-          <p>V reálných systémech má vektor stovky až tisíce rozměrů a místo „počet nohou“ či „velikost“ kóduje jemné
-            významové rysy slov, vět nebo obrázků.</p>
+          <p>V reálných systémech má vektor stovky až tisíce rozměrů. Nelze si je snadno představit,
+            protože nejde o dvě konkrétní osy (např. „počet nohou“ a „velikost těla“), ale o stovky
+            čísel, která společně kódují jemné významové rysy slov, vět nebo obrázků. Jeden embedding
+            slova může vypadat například takto:</p>
+
+          <pre><code>vec("strýc") = [12.4, 232.1, -323.7, 0.8, ... , 41.2]</code></pre>
+
+          <p>Každá souřadnice sama o sobě není interpretovatelná člověkem. Pro nás je embedding
+            <em>černou skříňkou</em> – vidíme vstup (slovo, věta) a výstup (vektor), ale nemůžeme
+            přímo říct, co znamená „souřadnice č. 347“. Přesto tato skrytá reprezentace
+            zachovává užitečné vztahy mezi pojmy.
+          </p>
+
+          <p>Díky tomu fungují i <em>vektorové operace</em> a analogie:</p>
+
+          <pre><code>vec("strýc") - vec("muž") + vec("žena") ≈ vec("teta")</code></pre>
+
+          <pre><code>vec("král") - vec("muž") + vec("žena") ≈ vec("královna")</code></pre>
+
+          <p>Tyto vztahy vznikají díky tomu, že model strojového učení se učí ze statistických
+            souvislostí v obrovském množství textů. Významově blízká slova nebo pojmy
+            („pes“ – „kočka“, „město“ – „vesnice“) se proto v embeddingovém prostoru ocitají
+            blízko sebe, zatímco odlišná („pes“ – „letadlo“) leží daleko.</p>
+
+          <p>Embeddingy vycházejí z <strong>tokenů</strong>, tedy jednotek textu, které model dokáže zpracovat.
+            Token obvykle odpovídá slovu nebo části slova (např. „učit“, „-el“, „na“). Model přiřadí
+            embedding každému tokenu a z jejich kombinace pak vytvoří embedding celé věty, odstavce
+            nebo dokumentu. Díky tomu lze vyhledávat nejen jednotlivá slova, ale i celé texty podle
+            jejich významu.</p>
+
         </section>
+
+        <section>
+          <h3>Jak vektorová databáze hledá podobnost?</h3>
+          <p>Podobnost dvou vektorů se měří metrikami, nejčastěji <em>cosine similarity</em>, skalární součin (dot
+            product) nebo eukleidovská vzdálenost (L2). Pro rychlost se používá <strong>přibližné</strong> vyhledávání
+            nejbližších sousedů (ANN) a specializované indexy (např. HNSW, IVF-PQ). To umožní milisekundové dotazy i nad
+            miliony vektorů.</p>
+        </section>
+
+        <section>
+          <h3>Velmi zjednodušené vysvětlení pro úředníky</h3>
+          <p>Je to databáze, která místo přesné shody slov čí čísel vyhledává podle podobnosti významu. Umí tak rychle
+            najít
+            dokumenty, části metodik či podání, která „říkají totéž jinými slovy“. Kromě vektorů uchovává i běžná
+            metadata a umožňuje nad nimi filtrovat (např. jen dokumenty z určité agendy nebo období).</p>
+        </section>
+
+
 
         <section>
           <h3>Kdy ji využít ve veřejné správě</h3>
@@ -210,15 +241,6 @@
             <li><strong>Kvalita chunkování:</strong> příliš dlouhé/krátké úseky zhorší kvalitu výsledků.</li>
             <li><strong>Vyvážení přesnosti a rychlosti:</strong> ANN vrací aproximaci – dolaďte parametry indexu a
               re-ranking.</li>
-          </ul>
-        </section>
-
-        <section>
-          <h3>Bezpečnost a právo</h3>
-          <ul>
-            <li>Zvažte povahu dat (osobní, utajované, obchodní tajemství); nastavte přístupová práva a auditování.</li>
-            <li>Prověřte místo zpracování (EU/EEA), smluvní zpracovatele a přenosy do třetích zemí.</li>
-            <li>Udržujte <em>data lineage</em>: u každého vektoru mějte odkaz na zdroj a verzi embedding modelu.</li>
           </ul>
         </section>
 
