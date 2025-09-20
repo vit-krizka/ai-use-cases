@@ -101,8 +101,10 @@
             reprezentací (<a href="embedding.html">embeddingů</a>).
             Každý objekt (např. text, obrázek, zvuk) je převeden na <a href="vektor.html">vektor</a> čísel a spolu s
             metadaty uložen do databáze.
-            Základní funkcí je vyhledávání „nejbližších sousedů“ – tedy vektorů, které jsou nejpodobnější zadanému
-            vektoru podle určité metriky podobnosti (např. kosinové). Vektorové databáze se používají k vyhledávání
+            Základní funkcí je vyhledávání „nejbližších sousedů“ – tedy <a href="vektor.html">vektorů</a>, které jsou
+            nejpodobnější zadanému
+            <a href="vektor.html">vektoru</a> podle určité metriky podobnosti (např. kosinové). Vektorové databáze se
+            používají k vyhledávání
             podobných textů, obrázků, videí či jiných nestrukturovaných dat podle jejich významu, nikoli jen podle shody
             slov.
           </p>
@@ -110,13 +112,16 @@
 
         <section>
           <h3>Proč nestačí běžné databáze?</h3>
-          <p>Relační databáze (SQL) výborně pracují se strukturovanými tabulkami a přesnou shodou. Neumí však přirozeně
-            hledat „texty s podobným významem“ nebo „obrázky podobné tomuto“. Vektorová databáze doplňuje stávající
-            systémy o schopnost pracovat s nestrukturovanými daty (text, obrázky, zvuk, video) přes jejich číselnou
-            reprezentaci.</p>
-          <p>Umělá inteligence si nerozumí s běžnými databázemi, ale rozumí vektorovým. Proto se vektorové databáze
+          <p><strong>Relační databáze</strong> (např. SQL) výborně pracují se strukturovanými tabulkami a přesnou
+            shodou. Neumí však přirozeně
+            hledat „texty s podobným významem“ nebo „obrázky podobné tomuto“. Vektorové databáze doplňují stávající
+            systémy o schopnost pracovat s nestrukturovanými daty (texty, obrázky, zvuky, videa) přes jejich číselnou
+            reprezentaci (<a href="embedding.html">embedding</a>).</p>
+          <p><a href="umela-inteligence.html">Umělá inteligence</a> si nerozumí s běžnými databázemi, ale rozumí
+            vektorovým. Proto se vektorové databáze
             často používají jako
-            základ pro AI aplikace, například chatovací roboty, které odpovídají na otázky na základě velkého množství
+            základ pro AI aplikace, například <a href="chatbot.html">chatboty</a>, které odpovídají na otázky na základě
+            velkého množství
             dokumentů.</p>
         </section>
 
@@ -168,12 +173,11 @@
               </tr>
             </tbody>
           </table>
-          <p>V reálných systémech má vektor <strong>stovky až tisíce rozměrů</stron>. Nelze si je snadno představit,
-              protože nejde o dvě konkrétní osy (např. „počet nohou“ a „velikost těla“), ale o stovky
-              čísel, která společně kódují jemné významové rysy slov, vět nebo obrázků. Jeden embedding
-              slova může vypadat například takto:</p>
-
-          <pre><code>vec("strýc") = [12.4, 232.1, -323.7, 0.8, ... , 41.2]</code></pre>
+          <p>V reálných systémech má vektor <strong>stovky až tisíce rozměrů</strong>. Nelze si je snadno představit,
+            protože nejde o dvě konkrétní osy (např. „počet končetin" a „velikost tvora"), ale o stovky
+            čísel, která společně "kódují" jemné významové rysy slov, vět nebo obrázků. Jeden embedding
+            slova může vypadat například takto:</p>
+          <pre><code>vector("strýc") = [12.4, 232.1, -323.7, 0.8, ... , 41.2]</code></pre>
 
           <p>Každá souřadnice sama o sobě není interpretovatelná člověkem. Pro nás je embedding
             <a href="black-box.html">černou skříňkou</a> – vidíme vstup (slovo, věta) a výstup (vektor), ale
@@ -184,15 +188,15 @@
 
           <p>Díky tomu fungují i <strong>vektorové operace</strong> a analogie:</p>
 
-          <pre><code>vec("strýc") - vec("muž") + vec("žena") ≈ vec("teta")</code></pre>
+          <pre><code>vector("strýc") - vector("muž") + vector("žena") ≈ vector("teta")</code></pre>
 
-          <pre><code>vec("král") - vec("muž") + vec("žena") ≈ vec("královna")</code></pre>
+          <pre><code>vector("král") - vector("muž") + vector("žena") ≈ vector("královna")</code></pre>
 
           <p>Nemusí jít nutně pouze o vztah "muž - žena". Podobně lze zachytit i jiné významové
             vztahy, například "hlavní město - země" nebo "nástroj - činnost". Podívejme se na další příklad:</p>
-          <pre><code>vec("Paříž") - vec("Francie") + vec("Německo") ≈ vec("Berlín")</code></pre>
-          <pre><code>vec("auto") - vec("benzín") + vec("elektřina") ≈ vec("elektromobil")</code></pre>
-          <pre><code>vec("učitel") - vec("škola") + vec("nemocnice") ≈ vec("doktor")</code></pre>
+          <pre><code>vector("Paříž") - vector("Francie") + vector("Německo") ≈ vector("Berlín")</code></pre>
+          <pre><code>vector("auto") - vector("benzín") + vector("elektřina") ≈ vector("elektromobil")</code></pre>
+          <pre><code>vector("učitel") - vector("škola") + vector("nemocnice") ≈ vector("doktor")</code></pre>
           <p>Tyto vztahy nejsou explicitně naprogramované, ale vyplývají z kontextu, ve kterém se slova vyskytovala
             v <a href="trenovaci-data.html">trénovacích datech</a>. V tomto smyslu AI modely neprogramujeme, ale
             trénujeme.</p>
@@ -233,7 +237,8 @@
             </li>
           </ul>
 
-          <p>Protože vektory mají stovky až tisíce rozměrů, <strong>vyhledávání přesně</strong> by bylo
+          <p>Protože <a href="vektor.html">vektory</a> mají stovky až tisíce rozměrů, <strong>vyhledávání
+              přesně</strong> by bylo
             velmi pomalé. Proto se v praxi používá <strong>přibližné vyhledávání nejbližších sousedů (ANN)</strong>.
             To pracuje s chytrými indexy (např. HNSW, IVF-PQ), které rychle zužují prostor možných kandidátů.
             Díky nim je možné hledat během milisekund i mezi miliony vektorů.</p>
@@ -259,7 +264,8 @@
 
         <section>
           <h3>Jak to souvisí s AI a jazykovými modely?</h3>
-          <p>Velké jazykové modely (LLM) jako ChatGPT či Gemini dokážou generovat texty a odpovídat na otázky. Aby však
+          <p><a href="large-language-model-llm.html">Velké jazykové modely</a> jako ChatGPT či Gemini dokážou
+            generovat texty a odpovídat na otázky. Aby však
             mohly čerpat z konkrétních dokumentů, potřebují systém, který jim tyto dokumenty podle významu rychle
             vyhledá.
             Právě k tomu slouží vektorové databáze.</p>
