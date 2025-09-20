@@ -1177,6 +1177,43 @@ h3 {
     margin: 0;
 }
 
+.ai-gramotnost {
+    background: linear-gradient(135deg, rgba(32, 115, 21, 0.08), rgba(32, 115, 21, 0.02));
+    border: 1px solid rgba(32, 115, 21, 0.15);
+    border-radius: 12px;
+    padding: 1.75rem;
+    margin: 2.5rem 0;
+    box-shadow: 0 12px 30px rgba(32, 115, 21, 0.08);
+}
+
+.ai-gramotnost h3 {
+    margin-top: 0;
+    color: var(--primary);
+    font-size: clamp(1.25rem, 3vw, 1.5rem);
+    letter-spacing: 0.08em;
+}
+
+.ai-gramotnost h4 {
+    margin-top: 0.5rem;
+    font-size: clamp(1.1rem, 2.8vw, 1.3rem);
+}
+
+.ai-gramotnost section {
+    background: rgba(255, 255, 255, 0.6);
+    border-radius: 10px;
+    padding: 1rem 1.25rem;
+    margin-top: 1.25rem;
+    border: 1px dashed rgba(32, 115, 21, 0.2);
+}
+
+.ai-gramotnost p {
+    margin-bottom: 1rem;
+}
+
+.ai-gramotnost p:last-child {
+    margin-bottom: 0;
+}
+
 .info-grid {
     display: grid;
     grid-template-columns: 120px 1fr;
@@ -1796,6 +1833,7 @@ table#table-overview tr>*:first-child {
     border-top: 1px solid #e0e5eb;
     padding-top: 1.5rem;
     display: flex;
+    justify-content: center;
 }
 
 .glossary-entry__back a {
