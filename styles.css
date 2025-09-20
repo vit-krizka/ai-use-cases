@@ -1031,9 +1031,18 @@ h3 {
 }
 
 .usecase-counter {
+    position: relative;
     margin: 5rem auto;
     padding: 45px;
-    background: #e1e1e1;
+    background: none;
+}
+
+.usecase-counter::before {
+    content: "";
+    position: absolute;
+    inset: 0 calc(50% - 50vw);
+    background: #c5c5c5;
+    z-index: -1;
 }
 
 .usecase-counter__inner {
