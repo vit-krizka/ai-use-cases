@@ -1759,6 +1759,33 @@ table#table-overview tr>*:first-child {
     margin-bottom: 2.5rem;
 }
 
+.glossary-entry .glossary-image {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 1.5rem auto;
+    border-radius: 12px;
+}
+
+.glossary-entry .glossary-table thead th {
+    display: table-cell;
+    text-align: left;
+    vertical-align: bottom;
+    padding: 0.85rem 1.5rem;
+}
+
+.glossary-entry pre {
+    background: rgba(32, 115, 21, 0.08);
+    border-radius: 12px;
+    padding: 1rem 1.25rem;
+    overflow-x: auto;
+}
+
+.glossary-entry code {
+    color: var(--primary);
+    font-weight: 600;
+}
+
 .glossary-entry__back {
     border-top: 1px solid #e0e5eb;
     padding-top: 1.5rem;
@@ -1777,6 +1804,10 @@ table#table-overview tr>*:first-child {
     border-radius: 999px;
     box-shadow: 0 6px 16px rgba(32, 115, 21, 0.18);
     transition: background 0.2s ease, box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+.glossary-entry__back a:visited {
+    color: #fff;
 }
 
 .glossary-entry__back a:hover,
