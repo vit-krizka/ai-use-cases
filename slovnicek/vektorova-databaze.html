@@ -94,8 +94,9 @@
 
         <section class="highlight">
           <p>Vektorová databáze je specializovaný úložný systém pro ukládání a vyhledávání dat ve formě vektorových
-            reprezentací (embeddingů).
-            Každý objekt (např. text, obrázek, zvuk) je převeden na vektor čísel a spolu s metadaty uložen do databáze.
+            reprezentací (<a href="embedding.html" class="glossary-inline-link">embeddingů</a>).
+            Každý objekt (např. text, obrázek, zvuk) je převeden na <a href="vektor.html" class="glossary-inline-link">vektor</a>
+            čísel a spolu s metadaty uložen do databáze.
             Základní funkcí je vyhledávání „nejbližších sousedů“ – tedy vektorů, které jsou nejpodobnější zadanému
             vektoru podle určité metriky podobnosti (např. kosinové). Vektorové databáze se používají k vyhledávání
             podobných textů, obrázků, videí či jiných nestrukturovaných dat podle jejich významu, nikoli jen podle shody
@@ -119,7 +120,8 @@
           <h3>Jak fungují vektorové databáze?</h3>
           <p>Pro jednoduchost si představme <strong>prostor pouze se 2 rozměry</strong>: <em>počet nohou</em> a
             <em>velikost těla</em>.
-            Každé zvíře je bod – vektor <code>[počet končetin, velikost tvora]</code>. Zvířata s podobnými vlastnostmi
+            Každé zvíře je bod – <a href="vektor.html" class="glossary-inline-link">vektor</a>
+            <code>[počet končetin, velikost tvora]</code>. Zvířata s podobnými vlastnostmi
             budou
             blízko u
             sebe.
@@ -128,7 +130,7 @@
             class="glossary-image">
           <p>Pokud bychom chtěli zvířata dle příkladu výše uložit ve vektorové databázi, mohli bychom je reprezentovat
             následujícím způsobem:</p>
-          <table class="glossary-table" aria-label="Příklad embeddingů zvířat v 2D">
+          <table class="glossary-table glossary-table--simple" aria-label="Příklad embeddingů zvířat v 2D">
             <thead>
               <tr>
                 <th scope="col">Zvíře</th>
@@ -162,7 +164,7 @@
               </tr>
             </tbody>
           </table>
-          <p>V reálných systémech má vektor stovky až tisíce rozměrů. Nelze si je snadno představit,
+          <p>V reálných systémech má <a href="vektor.html" class="glossary-inline-link">vektor</a> stovky až tisíce rozměrů. Nelze si je snadno představit,
             protože nejde o dvě konkrétní osy (např. „počet nohou“ a „velikost těla“), ale o stovky
             čísel, která společně kódují jemné významové rysy slov, vět nebo obrázků. Jeden embedding
             slova může vypadat například takto:</p>
@@ -186,7 +188,8 @@
             („pes“ – „kočka“, „město“ – „vesnice“) se proto v embeddingovém prostoru ocitají
             blízko sebe, zatímco odlišná („pes“ – „letadlo“) leží daleko.</p>
 
-          <p>Embeddingy vycházejí z <strong>tokenů</strong>, tedy jednotek textu, které model dokáže zpracovat.
+          <p><a href="embedding.html" class="glossary-inline-link">Embeddingy</a> vycházejí z <strong><a href="token.html"
+                class="glossary-inline-link">tokenů</a></strong>, tedy jednotek textu, které model dokáže zpracovat.
             Token obvykle odpovídá slovu nebo části slova (např. „učit“, „-el“, „na“). Model přiřadí
             embedding každému tokenu a z jejich kombinace pak vytvoří embedding celé věty, odstavce
             nebo dokumentu. Díky tomu lze vyhledávat nejen jednotlivá slova, ale i celé texty podle
