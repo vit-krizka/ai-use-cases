@@ -112,620 +112,232 @@
           <div class="article-detail__header">
             <h1>Efektivní psaní promptů</h1>
           </div>
-          <div class="article-detail__body">
-            <h2>Úvod</h2>
-            <p><strong>Prompt inženýrství</strong> (angl. prompt engineering) je metodologie navrhování efektivních
-              vstupních požadavků či dotazů pro velké jazykové modely (LLM):contentReference[oaicite:0]{index=0}. Jde o
-              způsob, jak co nejlépe formulovat úkol pro umělou inteligenci (AI), aby její výstup odpovídal našim
-              očekáváním. Jinými slovy, prompt inženýrství nás učí, <em>jak správně „mluvit“ s AI</em>, aby nám poskytla
-              užitečné a relevantní odpovědi. Dnes se velké jazykové modely (např. OpenAI GPT-4) využívají v mnoha
-              oblastech – od školství a vědy přes podnikání až po státní správu – a mohou výrazně zefektivnit práci,
-              pomoci s analýzou velkého množství dat nebo automatizovat rutinní úkoly. Abychom však jejich potenciál
-              využili naplno, musíme vědět, jak správně formulovat pokyny, tedy prompty, které těmto modelům zadáváme.
-              Tato příručka vysvětluje základní principy prompt inženýrství a poskytuje praktické rady pro efektivní
-              práci s AI – konkrétně s jazykovými modely typu ChatGPT – zejména v kontextu veřejné správy.</p>
-            <h2>Základní pojmy</h2>
-            <p><strong>Jazykový model</strong> je AI systém (obvykle neuronová síť) naučený na obrovském množství
-              textových dat. Na základě zadaného vstupu dokáže generovat pokračování textu – odpovědi, které statisticky
-              dávají smysl. Příkladem je model GPT-4 od OpenAI, který pohání chatbota ChatGPT. Model funguje
-              pravděpodobnostně: predikuje, jaké slovo (resp. token) má s největší pravděpodobností následovat v daném
-              kontextu.</p>
-            <p><strong>Prompt</strong> je vstup, který uživatel modelu zadá – může to být otázka, příkaz, kus textu nebo
-              kombinace instrukcí a dat. Promptem v podstatě „programujeme“ chování modelu pomocí přirozeného jazyka.
-              Správné formulování promptu je klíčové pro získání kvalitního výstupu. Například můžeme modelu zadat
-              prompt ve formě otázky: <em>„Jaké je hlavní město Francie?“</em> nebo instrukce: <em>„Vysvětli princip
-                fotosyntézy jednoduchými slovy.“</em> Modelu je často jedno, jak prompt naformulujeme (otázkou či
-              neúplnou větou), důležité je, aby obsahoval vše potřebné k vyřešení úkolu.</p>
-            <p><strong>Token</strong> je jednotka textu, se kterou model pracuje. Může jít o celé slovo, část slova nebo
-              třeba jen znak. Model při zpracování promptu i generování odpovědi dělí text na tokeny. Například slovo
-              „<em>hamburger</em>“ může model interně rozdělit na tokeny „<em>ham</em>“, „<em>bur</em>“ a
-              „<em>ger</em>“. Naopak běžné krátké slovo jako „<em>kočka</em>“ může být jediný token. Obvykle platí, že
-              jeden token odpovídá přibližně 3/4 slovu; 100 tokenů je asi 75 slov a 2048 tokenů zhruba 1500
-              slov:contentReference[oaicite:1]{index=1}. Pro uživatele je důležité vědět, že každý model má omezenou
-              <em>kontextovou kapacitu</em> (tzv. délku kontextu) – tj. maximální počet tokenů vstupu + výstupu, které
-              dokáže zpracovat najednou. Starší verze modelů měly kontext kolem 2048 tokenů (~1,5 tisíce slov). Moderní
-              modely jako GPT-3.5 Turbo zvládají asi 4096 tokenů (cca 3 tisíce slov) a GPT-4 ve verzi 8K asi 8192
-              tokenů. Existují ale i modely s mnohem větším kontextem – například GPT-4o (nová generace GPT-4 „Omni“) a
-              jeho varianta GPT-4o mini podporují kontext o délce až ~128&nbsp;000
-              tokenů:contentReference[oaicite:2]{index=2}, což umožňuje nahrát i velmi rozsáhlé dokumenty.</p>
-            <h2>Volba nástroje a modelu</h2>
-            <p>Pro práci s jazykovými modely existuje více možností. Nejjednodušší je využít <strong>uživatelské
-                rozhraní</strong> některé služby – typicky webový chat, jako je <em>ChatGPT</em> od OpenAI. V chatovacím
-              rozhraní jednoduše zadáváme své prompty a model odpovídá. ChatGPT je dostupný v bezplatné verzi (s
-              omezeními) i v placené verzi <em>ChatGPT Plus</em>, která poskytuje přístup k pokročilejším modelům (např.
-              GPT-4) a funkcím. Další variantou je využití <strong>API</strong> – tedy rozhraní pro programový přístup k
-              modelům. API umožňuje integrovat modely do vlastních aplikací či skriptů a často vychází cenově
-              nejúsporněji (platí se jen za využité tokeny), vyžaduje to však určitou technickou znalost (práce s HTTP
-              požadavky, použití nástrojů jako Postman či programování).</p>
-            <p><strong>Výběr konkrétního modelu</strong> závisí na požadavcích a dostupnosti. V rámci ChatGPT máme k
-              dispozici několik modelů různé úrovně:</p>
-            <ul>
-              <li><strong>GPT-3.5 Turbo:</strong> donedávna výchozí bezplatný model, velmi rychlý, schopný každodenní
-                konverzace, ale méně přesný v komplikovaných úkolech. (Aktuálně jej OpenAI postupně nahrazuje
-                výkonnějšími modely.)</li>
-              <li><strong>GPT-4:</strong> pokročilý model s vyšší přesností a schopností komplexního uvažování. Byl
-                dostupný pouze předplatitelům (ChatGPT Plus). Je pomalejší a „dražší“ na provoz (počítají se tokeny),
-                ale podává výrazně lepší výsledky u náročných dotazů. Dnes je stále špičkový, ale byl dále vylepšen
-                modely GPT-4o.</li>
-              <li><strong>GPT-4o mini:</strong> odlehčená a rychlá verze nové generace GPT-4 <em>Omni</em>. Je
-                optimalizována pro běžné konverzace a dostupná i zdarma. Poskytuje chytřejší odpovědi než GPT-3.5 při
-                zachování vysoké rychlosti.</li>
-              <li><strong>GPT-4o:</strong> plná verze modelu <em>GPT-4 Omni</em>, která klade důraz na výkon a kvalitu.
-                Vyžaduje placený přístup. Má rozsáhlou znalostní bázi (trénována na více datech) a velmi široké
-                kontextové okno.</li>
-              <li><strong>GPT-4o with canvas:</strong> varianta GPT-4o rozšířená o schopnost zpracovávat vizuální
-                vstupy. Umožňuje nahrávat a analyzovat obrázky (tzv. multimodální model). Dostupná je pouze v placené
-                verzi a hodí se pro úlohy, kde kombinujeme text a obraz.</li>
-              <li><strong>GPT-o1 Preview:</strong> experimentální verze nadcházející generace modelu (tzv. GPT-5
-                preview). Má ještě vyšší přesnost a rychlost odpovědí, je dostupná pro platící uživatele v rámci
-                testování.</li>
-              <li><strong>GPT-o1 Mini:</strong> odlehčená verze experimentálního modelu o1 zaměřená na rychlost a nízké
-                náklady. Měla by být dostupná volně a slouží jako náhrada GPT-3.5 pro běžné použití s lepšími výsledky.
-              </li>
-            </ul>
-            <p>Každý model se tedy liší schopnostmi, rychlostí, požadavky na hardware a cenou. Při volbě je dobré
-              zvážit, co potřebujeme: pro jednoduché dotazy postačí základní model (např. GPT-4o mini), pro komplexní
-              analytické úlohy se vyplatí sáhnout po GPT-4 nebo jeho nástupcích. **Nejlevnější** variantou pro hromadné
-              využití je obvykle <strong>přímé volání API</strong> (např. modelu GPT-4) – ceny se pohybují v řádu centů
-              za tisíce tokenů. Avšak práce s API vyžaduje technické dovednosti (programování) a vlastní aplikaci, která
-              bude volání provádět. Pro jednotlivce a rychlé vyzkoušení tak zpravidla postačí webová aplikace (ChatGPT
-              rozhraní), pro integraci AI do informačních systémů nebo webů je vhodnější API.</p>
-            <h2>Parametry modelu</h2>
-            <p>Při práci s modely je užitečné znát hlavní <strong>parametry</strong> a omezení, které ovlivňují jejich
-              chování a použití:</p>
-            <ul>
-              <li><strong>Datum trénování (cut-off):</strong> Každý model byl natrénován na datech, která pokrývají
-                informace jen do určitého data. Např. původní GPT-4 má znalosti zhruba do září 2021. Novější model
-                GPT-4o mini má již informace aktualizované až do října 2023:contentReference[oaicite:3]{index=3}. To
-                znamená, že pokud se zeptáte na události po datu, ke kterému byl model natrénován, nebude o nich vědět –
-                ledaže má přístup k internetu (viz další bod) nebo mu informace dodáte vy. Vždy je dobré se modelu
-                zeptat, k jakému období sahají jeho znalosti.</li>
-              <li><strong>Přístup k internetu:</strong> Základní jazykové modely odpovídají čistě na základě svého
-                předtrénovaného znalostního korpusu a <em>nemají živý přístup k internetu</em>. Některé nástroje však
-                umožňují modelu hledat informace online – například Bing Chat (postavený na GPT-4) dokáže při odpovědi
-                provést webové vyhledávání. Také v rozhraní ChatGPT existoval experimentální mód „Browsing“, který
-                umožnil GPT-4 dočasně prohledat web, a lze očekávat další integrace. Obecně však platí, že pokud
-                potřebujeme aktuální data z internetu, je lepší je modelu dodat (zkopírovat text, nebo využít
-                specializovaný plugin). Samotný ChatGPT bez rozšíření neví nic o webových stránkách, které mu nepošlete.
-              </li>
-              <li><strong>Maximální počet tokenů:</strong> Jak už bylo zmíněno, model má omezenou délku
-                <em>kontextu</em> (součet tokenů promptu a odpovědi). Například GPT-4 (8K) zvládne přibližně 8192 tokenů
-                celkem – tedy pokud mu položíte velmi dlouhou otázku, zůstane méně prostoru pro odpověď. Model vás v
-                takovém případě upozorní, že kontext byl překročen. Řešením je prompt zkrátit nebo rozdělit problém na
-                části. Naopak GPT-4o s kontextem ~128k tokenů tuto hranici dramaticky posouvá a unese vstup o délce
-                stovek stran textu. Při formulaci promptu mějte na paměti kontextové limity – neposílejte zbytečně
-                dlouhé vstupy, pokud to není nutné.</li>
-              <li><strong>Teplota (temperature):</strong> Parametr nastavující míru náhodnosti při generování textu.
-                Hodnota se pohybuje v rozmezí 0 až 2 (někdy 0–1). Nízká teplota (např. 0 nebo 0.2) znamená, že model
-                bude výstup velmi deterministický – vždy zvolí nejpravděpodobnější pokračování (hodí se pro úlohy, kde
-                požadujeme jednoznačnou, faktickou odpověď). Vysoká teplota (např. 1.0 nebo více) zvyšuje nahodilost –
-                model může zvolit i méně pravděpodobná slova, čímž bude výstup kreativnější, pestřejší, ale také pokaždé
-                trochu jiný a potenciálně méně přesný fakticky. Pro většinu konverzačních úkolů je rozumná střední
-                hodnota okolo 0.7 (což je implicitní nastavení modelů v ChatGPT). U kreativity (generování příběhů,
-                nápadů) můžeme zkusit hodnotu zvýšit, naopak u matematických či faktografických dotazů je lepší ji
-                snižit.</li>
-              <li><strong>Top_p:</strong> Alternativní parametr k teplotě, označovaný také jako <em>nucleus
-                  sampling</em>. Určuje, z jaké množiny nejpravděpodobnějších pokračování model vybírá. Např. top_p =
-                0.9 znamená, že model vždy omezí výběr slov pouze na okruh těch, která dohromady tvoří 90%
-                pravděpodobnosti, a z nich náhodně vybírá další token. Nízké top_p (blížící se 0) vede k velmi
-                konzervativním a jednoznačným odpovědím, vysoké top_p (blížící se 1) umožní zahrnout i méně
-                pravděpodobná slova a tím generovat diverzifikovanější text. Parametry <code>temperature</code> a
-                <code>top_p</code> mají podobný účel – obecně se doporučuje ladit pouze jeden z nich, nikoli oba
-                současně:contentReference[oaicite:4]{index=4}. V chatovacím rozhraní ChatGPT tyto hodnoty přímo měnit
-                nelze (model má pevné nastavení), ale při využití API ano.</li>
-              <li><strong>Presence_penalty a frequency_penalty:</strong> Dva pokročilé parametry ovlivňující, jak často
-                se model opakuje. <em>Frequency penalty</em> penalizuje model za opakování konkrétních tokenů úměrně
-                tomu, kolikrát se už v textu vyskytly – vyšší hodnota tedy snižuje frekvenci opakování slov (užitečné
-                pro odstranění častých opakování nebo slovních tic). <em>Presence penalty</em> funguje podobně, ale
-                plošně – penalizuje už samotnou přítomnost určitého tokenu, ať už se objevil jednou nebo desetkrát. Tím
-                lze model motivovat k tomu, aby přinášel nové informace a nesklouzl stále k témuž. Kladná presence
-                penalty zvyšuje pravděpodobnost, že model zabrousí do nových témat, záporná naopak podporuje opakování a
-                setrvání u tématu. Tyto parametry se využijí např. při brainstormingu (kdy chceme co nejvíc originálních
-                nápadů) nebo naopak při potřebě konzistentního stylu. Oba parametry lze opět nastavit jen přes API. V
-                praxi se obvykle používají střídmě a zpravidla není třeba je měnit – pokud s výstupy nejste spokojeni,
-                efektivnější je upravit samotný prompt nebo použít iterativní přístup (viz dále), než zkoušet ladit tyto
-                penalizace.</li>
-            </ul>
-            <p>V rozhraní ChatGPT nejsou výše uvedené parametry (s výjimkou výběru modelu) uživateli přístupné – model
-              si je „nosí v sobě“. Při pokročilejší práci přes API či Playground (webové rozhraní na
-              platform.openai.com) však můžeme parametry nastavit ručně. Například pro maximalizaci kreativity by se
-              dalo použít <code>temperature=1.2</code>, <code>top_p=1</code>, naopak pro striktně fakta by bylo vhodné
-              <code>temperature=0</code>, <code>top_p=0.5</code> atd. Ve většině případů ale není třeba tyto hodnoty
-              měnit – správně zadaný prompt a vhodný výběr modelu bývají důležitější.</p>
-            <h2>Formulace promptu: zásady a tipy</h2>
-            <p>Formulovat dobrý prompt je často klíčové pro získání správné odpovědi. Ačkoli neexistuje jednoznačný
-              návod platný pro všechny situace, v praxi se osvědčilo dodržovat několik základních pravidel:</p>
-            <ol>
-              <li><strong>Srozumitelnost:</strong> Používejte jasný, jednoznačný a spisovný jazyk. Dejte si záležet na
-                správné gramatice i diakritice – model sice pravopis nehodnotí, ale dobře napsaný dotaz má menší riziko
-                nepochopení. Vyhýbejte se dvojznačným formulacím. Pokud některý termín může mít více významů, upřesněte,
-                jaký máte na mysli. Klidně uveďte i definici či kontext. Nebojte se prompt přeformulovat a zadat znovu,
-                pokud výsledek poprvé nebyl uspokojivý – někdy i drobná změna slovosledu nebo jiné slovo mohou vést k
-                lepší odpovědi. (Doporučuje se prompt různě obměňovat a pozorovat, jak to ovlivní výstup. Tento proces
-                postupného ladění je součástí prompt inženýrství.)</li>
-              <li><strong>Účel zadání:</strong> Jasně definujte, co od modelu chcete a k čemu výsledná informace bude
-                sloužit. Uveďte, jaký má být výstup – například zda očekáváte stručnou odpověď, podrobnou analýzu,
-                seznam bodů, doporučení, přehled literatury atd. Když model „pochopí“, čeho chcete dosáhnout, lépe
-                přizpůsobí odpověď. Je užitečné i naznačit modelu, jak má nad problémem uvažovat – např. <em>„Představ
-                  si, že jsi právník a tvým úkolem je...“</em> nebo <em>„Budeš vystupovat jako zkušený projektový
-                  manažer a poradíš mi...“</em>. Taková instrukce pomůže modelu zvolit správný tón a obsah (viz dále <a
-                  href="#persona">persona</a>). Dále můžete explicitně určit požadovaný formát odpovědi: <em>„Odpověz
-                  prosím v tabulce.“</em> nebo <em>„Vrať výstup ve formátu JSON.“</em> Čím přesněji popíšete svůj cíl,
-                tím větší šance, že jej model naplní.</li>
-              <li><strong>Styl textu:</strong> Definujte tón a styl, v jakém má model odpovídat. Chcete výklad formálním
-                úředním stylem, nebo spíše přátelský a jednoduchý tón? Má být text vážný, odborný, či zábavný? Uveďte to
-                v promptu. Např. <em>„Vysvětli to stylem jako pro úplného laika.“</em> nebo <em>„Napiš odpověď jazykem
-                  tiskové zprávy.“</em> Můžete modelu i přiřadit roli (viz persona níže): <em>„Odpověz jako zkušený
-                  historik.“</em> či <em>„Představ si, že jsi učitel matematiky...“</em>. Model pak odpověď stylizuje
-                podle zadané role. Dokonce lze požádat o napodobení konkrétního stylu nebo autora – <em>„Napiš to jako
-                  kdyby to psal Karel Čapek.“</em> Při použití specifického stylu ale dbejte, aby byl vhodný pro danou
-                cílovou skupinu (např. jiné formulace zvolíte pro odborníky a jiné pro veřejnost).</li>
-              <li><strong>Délka a rozsah:</strong> Uveďte, jak dlouhý má výstup být, případně jak detailní. Pokud
-                požadavek na délku nespecifikujete, model odpoví tak, jak uzná za vhodné – někdy velmi stručně, jindy
-                obšírně. Máte-li preferenci, řekněte to: <em>„Odpověz maximálně na 3 odstavce.“</em> nebo <em>„Sepiš cca
-                  5 bodů o nejdůležitějších zjištěních.“</em> Při složitějších úlohách může pomoci <strong>„víceúrovňový
-                  prompt“</strong> – např. požádat nejprve o stručnou odpověď jednou větou, pak o podrobnější odstavec,
-                a nakonec třeba o půlstránkové vysvětlení. Tím získáte různé úrovně detailu a můžete si vybrat. Obdobně
-                můžete model požádat, aby nejdříve něco vypsal a pak to společně zkrátíte či rozšíříte. Pamatujte, že
-                model ne vždy odhadne, kolik znaků či slov má napsat – jeho „počítání“ slov není stoprocentní. Když
-                chcete mít jistotu délky, raději to kontrolujte a případně model korigujte dodatečně.</li>
-              <li><strong>Kontext a informace navíc:</strong> Zajistěte, aby model měl k dispozici všechny informace
-                potřebné k zodpovězení vašeho dotazu. Model nemá žádné „tajné“ znalosti nad rámec toho, co měl v
-                trénovacích datech. Pokud se ptáte na něco specifického (např. firemní směrnice, obsah interního
-                dokumentu, detaily lokální vyhlášky), je nutné mu tyto informace dodat v promptu. Klidně prompt pojměte
-                jako krátké shrnutí problému: <em>„Máme tento a tento případ... (popis situace). Potřebujeme zjistit
-                  XYZ.“</em> Čím více relevantního kontextu poskytnete, tím lepší bude odpověď. U rozsáhlejších úloh je
-                vhodné postupovat iterativně (viz dále) – nejprve obecný dotaz, pak upřesňující otázky. Můžete také
-                nastavit scénář či prostředí: <em>„Představ si, že jsi úředník na stavebním úřadě a řešíš žádost o
-                  výjimku...“</em> – tím dodáte odpovědi potřebný rámec.</li>
-            </ol>
-            <p id="persona"><strong>Persona (role modelu):</strong> Pod pojmem <em>persona</em> rozumíme soubor
-              charakteristik, postojů a stylu komunikace, který můžeme modelu přisoudit. Jde o to, že model bude
-              odpovídat, jako kdyby byl určitým způsobem zaměřený nebo ztělesňoval určitou roli. Nastavení persony
-              pomáhá odpovědi dát konzistentní tón a perspektivu. Uživatelé se pak s chatbotem snadněji ztotožní a
-              výstupy jsou předvídatelnější. Persona může být odborná (např. „zkušený právník s praxí 20 let“), ale
-              třeba i stylizovaná jako konkrétní osoba nebo povolání („učitel fyziky vysvětlující látku“, „všeobecná
-              encyklopedie“ apod.). Personu často implikujeme přímo v promptu – např. <em>„Jsi asistent pro zákaznickou
-                podporu, který má empaticky a věcně reagovat na stížnosti.“</em> Model pak volí slova a informace tak,
-              aby odpovídaly této roli. Persona není kouzelný spínač vševědoucnosti – pokud modelu přiřadíte roli
-              „expert na zákoník práce“, bude se snažit tak vystupovat, ale stále je omezen svými skutečnými znalostmi.
-              Přesto může persona výrazně zvýšit užitečnost výstupu, protože model lépe pochopí, jaký druh odpovědi
-              očekáváte.</p>
-            <p><em>Smetí dovnitř, smetí ven.</em> V informatice platí, že kvalita výstupu je přímo úměrná kvalitě
-              vstupu. Pokud modelu poskytneme chybné nebo nesmyslné zadání, výsledkem bude stejně tak chybná či
-              nesmyslná odpověď. Této zásadě se často říká <em>garbage in, garbage out (GIGO)</em>. AI je zatím jen tak
-              „inteligentní“, jak inteligentní je její uživatel. Jinými slovy, model nám obvykle nedá lepší odpověď, než
-              jakou otázku položíme. Proto je pečlivá formulace promptu zásadní – vyplatí se nad ní strávit čas a
-              promyslet, jak nejlépe dotaz položit.</p>
-            <h2>Vstupy (typy vstupů)</h2>
-            <p>Jazykové modely přijímají různé typy vstupů, nejen prostý text. Nejčastěji ovšem vstup začíná jako
-              textový prompt, který může zahrnovat i další vložené informace.</p>
-            <ul>
-              <li><strong>Text:</strong> Základní a nejdůležitější typ vstupu. Většina promptů je textová – otázka,
-                zadání úkolu, seznam požadavků, úryvek textu k analýze atd. Text může být formátovaný (např. obsahovat
-                markdown nebo kód), model většinou formát ignoruje a soustředí se na obsah. U delších dotazů lze text
-                strukturovat do odstavců nebo bodů pro přehlednost.</li>
-              <li><strong>Soubory a přílohy:</strong> Některé platformy umožňují k promptu přiložit soubor (např. PDF
-                dokument, obrázek, datovou tabulku). ChatGPT Plus nabízí v režimu „Advanced Data Analysis“ možnost
-                nahrát soubor, který pak model může zpracovat (např. analyzovat tabulku v Excelu, přečíst text ze
-                souboru atd.). Bezplatná verze toto neumí přímo – tam je nutné obsah souboru zkopírovat do textu promptu
-                (pokud to jeho rozsah umožňuje). Obecně platí, že pokud potřebujete, aby model pracoval s obsahem
-                dokumentu, musíte mu ten obsah předložit (buď vložením textu, nebo použitím nástroje, který to umí). U
-                velkých souborů je nutné dát pozor na limit tokenů.</li>
-              <li><strong>Obrázky:</strong> Moderní multimodální modely (např. GPT-4 Vision, tj. „with canvas“) dokážou
-                jako vstup přijmout i obrázek. To znamená, že můžete nahrát např. fotografii, graf nebo snímek dokumentu
-                a modelu položit otázku k tomuto obrázku. Model umí obraz rozpoznat a popsat, extrahovat text (OCR) nebo
-                analyzovat obsah obrázku. Například lze nahrát graf a požádat: „Vysvětli, co ukazuje tento graf.“ Tato
-                funkce je dostupná jen u vybraných verzí modelů a v určitých aplikacích (ChatGPT ji testoval v beta
-                režimu). Jinak je nutné popsat obrázek slovy ručně.</li>
-              <li><strong>Audio (hlas):</strong> Některé AI nástroje umí přijímat hlasový vstup – např. mobilní aplikace
-                ChatGPT umožňuje namluvit dotaz. V takovém případě je však hlas nejprve převeden na text (typicky pomocí
-                jiného modelu, jako je OpenAI Whisper) a ten je teprve použit jako prompt pro jazykový model. Samotný
-                model GPT tedy audio přímo nezpracovává, ale lze jej použít v kombinaci se speech-to-text vrstvou.
-                Obdobně lze analyzovat audio soubory (přepis řeči, překlad atd.), pokud to platforma podporuje.</li>
-              <li><strong>Další vstupy:</strong> Existují i specializované vstupy, jako např. sekvence už proběhlé
-                konverzace (historie chatu), která modelu poskytuje kontext předchozích dotazů a odpovědí. V API OpenAI
-                lze také modelu poskytnout tzv. systémové instrukce – zvláštní zprávu, která nastaví celkové chování
-                (např. „Jsi asistent pro pomoc s IT problémy...“). Běžný uživatel se však setká hlavně s prostým
-                textovým zadáním v roli uživatele.</li>
-            </ul>
-            <p>Stručně řečeno, jako vstup do modelu můžeme použít jakýkoli textový obsah, případně obrázky či jiné formy
-              dat, pokud to konkrétní implementace umožňuje. Vždy je ale nutné dodržet limity modelu (délka vstupu v
-              tokenech, podporované formáty atd.).</p>
-            <h2>Výstupy modelu</h2>
-            <p>Velké jazykové modely dokážou generovat různé formy výstupu. Základní podobou je samozřejmě
-              <strong>text</strong>, ten ale může být dále strukturovaný či formátovaný podle potřeby:</p>
-            <ul>
-              <li><strong>Neformátovaný text:</strong> Nejčastější výstup – souvislý text, ať už věta, odstavec, nebo
-                vícestránková odpověď. Může jít o vysvětlení, popis, příběh, argumentaci… Pokud formát neupřesníme,
-                model zvolí ten, který považuje za vhodný.</li>
-              <li><strong>Formátovaný text:</strong> Model (zejména v prostředí ChatGPT) umí použít <em>Markdown</em>
-                syntaxi k formátování odpovědi – např. tučné či kurzívou zvýrazněné pasáže, nadpisy, odrážkové seznamy,
-                číslování, tabulky apod. Lze toho využít – pokud chcete hezky strukturovanou odpověď, můžete přímo v
-                promptu požádat: „Použij v odpovědi nadpisy a seznamy, kde to dává smysl.“ Model pak napíše výstup s
-                Markdown formátováním, které se na platformě vykreslí jako upravený text (nadpisy, odrážky…). Také kód
-                (viz níže) formátuje v blocích se syntax highlightingem. Formátovaný text se hodí pro přehlednost nebo
-                když chcete výsledný text někde publikovat.</li>
-              <li><strong>Seznamy, tabulky:</strong> Jak bylo zmíněno, model může vracet strukturované výstupy. Když
-                například požádáte: „Vypiš mi seznam 10 nejlidnatějších měst a jejich populaci v tabulce,“ model
-                pravděpodobně odpoví v podobě tabulky (využije Markdown syntax pro tabulku). Umí tedy vytvářet i více
-                sloupců, zarovnávat text apod. Podobně lze získat seznam bodů. Tyto formáty opět musíme v promptu
-                vyžádat, jinak model může data jen popsat slovně.</li>
-              <li><strong>Kód:</strong> Jazykové modely překvapivě dobře zvládají generování zdrojového kódu v různých
-                jazycích (Python, JavaScript, HTML, SQL, …). Pokud je výstupem kód, ChatGPT jej obvykle vloží do
-                formátovaného bloku s příslušným zvýrazněním syntaxe. Například požádáte-li: „Napiš funkci v Pythonu na
-                seřazení seznamu čísel,“ model vygeneruje kód funkce, často i s komentáři. ChatGPT (v módu Advanced Data
-                Analysis) dokáže kód i spouštět, takže umí např. přímo vykreslit graf nebo spočítat matematický příklad.
-                Model často sám nabídne využití Pythonu, pokud zadáte úlohu typu analýza dat nebo matematický problém –
-                spustí tzv. sandbox s Pythonem a vrátí výsledek. Kód lze také použít pro webové výstupy – model umí
-                vygenerovat např. HTML stránku, JSON strukturu atd. Je však třeba ověřit (a otestovat), že kód je
-                správný – model občas udělá chybu.</li>
-              <li><strong>Odkazy a citace:</strong> Někdy se stane, že model (je-li k tomu vybaven) dohledává informace
-                online a pak vygeneruje odpověď obsahující odkazy na zdroje nebo citace. Např. Bing Chat uvádí číselné
-                odkazy [1], [2] v textu a na konci odpovědi jsou uvedeny odkazy na webové stránky, odkud čerpal. ChatGPT
-                sám od sebe zdroje neuvádí (nemá je jak ověřit, pokud nemá přístup k internetu), ale můžete ho požádat,
-                aby si nějaké zdroje vymyslel – to však nedoporučujeme, protože model pak halucinuje (vymýšlí
-                neexistující citace). Spíše je vhodné, abyste důležité informace z výstupu sami ověřili v důvěryhodných
-                zdrojích (viz Bezpečnost níže). Každopádně pokud integrujete model s vyhledáváním, můžete získat
-                odpovědi obohacené o reference.</li>
-              <li><strong>Obrázky:</strong> Některé AI modely umí generovat i obrázkové výstupy (viz kapitola <em>Práce
-                  s obrázky</em>). Například v ChatGPT je integrován generátor DALL·E, kterého se můžete zeptat na
-                vytvoření obrázku. V textovém chatu pak jako odpověď obdržíte vygenerovaný obrázek. Taková funkce je ale
-                odlišná od běžného jazykového modelu – jde o samostatný modul. Pro účely této příručky se zaměříme
-                hlavně na textové výstupy, u obrázků viz samostatná část.</li>
-              <li><strong>Soubory:</strong> V některých případech může model vrátit soubor – například ChatGPT (přes
-                Advanced Data Analysis) umí vygenerovat výstup a nabídnout jej ke stažení jako .txt, .csv, .py (skript)
-                apod. Pokud jej požádáte „Vytvoř mi prosím jednoduchou prezentaci (např. 3 slidovou) v PowerPointu na
-                dané téma“, může dokonce vrátit soubor .pptx (záleží však na schopnostech nástroje a je to spíš
-                experimentální). Obecně ale výstupem bývá text, který si uživatel případně uloží do souboru sám.</li>
-            </ul>
-            <p>Je dobré vědět, že model lze do jisté míry „přinutit“ k požadovanému formátu výstupu právě tím, jak
-              prompt zformulujeme. Chcete-li tabulku, řekněte to v zadání. Když dostanete příliš dlouhou odpověď, můžete
-              požádat o shrnutí nebo omezení rozsahu. Pokud vám nevyhovuje styl, lze ho dodatečně změnit: např. „Mohl
-              bys tu odpověď přeformulovat jednodušším jazykem?“. Model většinou vyhoví a výstup upraví.</p>
-            <h2>Typy a techniky promptů</h2>
-            <p>Prompty můžeme rozlišovat podle různých hledisek. Níže uvádíme přehled několika základních kategorií
-              promptů a užitečných technik, jak s nimi pracovat.</p>
-            <h3>Prompty podle účelu</h3>
-            <p>Podle zamýšleného cíle dotazu lze rozlišit například tyto druhy promptů:</p>
-            <ul>
-              <li><strong>Validační prompt:</strong> Cílem je ověřit správnost či pravdivost určité informace nebo
-                postupu. Model zde žádáme, aby něco zkontroloval a potvrdil, zda je to správně, případně vyvrátil a
-                opravil. *Příklad:* <em>„Zkontroluj prosím, je následující tvrzení pravdivé: Všechny prvočísla jsou
-                  lichá.“</em> (Model by měl odhalit, že tvrzení není pravdivé, protože číslo 2 je prvočíslo a je sudé.)
-              </li>
-              <li><strong>Komparativní prompt:</strong> Slouží k porovnání dvou či více variant, hledisek nebo výsledků.
-                Model dostane pokyn srovnat možnosti, najít rozdíly, výhody a nevýhody, případně určit, která možnost je
-                lepší. *Příklad:* <em>„Porovnej výhody a nevýhody řešení A a řešení B pro správu dokumentů v
-                  úřadu.“</em> (Model by vyhodnotil oba přístupy a popsal jejich plusy a mínusy.)</li>
-              <li><strong>Explorační prompt:</strong> Cílem je široce prozkoumat otevřený problém nebo vygenerovat
-                nápady. Zadání nechává modelu volnost, aby „brainstormoval“ a nabídl různé úhly pohledu či možnosti
-                řešení. *Příklad:* <em>„Navrhni několik různých způsobů, jak by úřady mohly využít autonomního drona v
-                  praxi.“</em> (Model vygeneruje více nápadů využití dronů, aniž byste ho omezovali na jednu správnou
-                odpověď.)</li>
-              <li><strong>Kreativní prompt:</strong> Zadání, jehož účelem je nechat model tvořit – typicky generování
-                příběhu, analogie, vtipu, básně, sloganu apod. Model je vyzván k fantazii a kreativnímu zpracování.
-                *Příklad:* <em>„Napiš krátkou bajku o úředníkovi a chytré AI asistentce, z níž plyne ponaučení o
-                  spolupráci.“</em> (Model vytvoří originální příběh na zadané téma.)</li>
-            </ul>
-            <h3>Prompty podle struktury</h3>
-            <p>Z hlediska struktury a množství nápovědy v promptu rozlišujeme, kolik příkladů nebo vedení prompt
-              obsahuje:</p>
-            <ul>
-              <li><strong>Zero-shot prompt:</strong> Model nedostává žádný konkrétní příklad, pouze samotnou instrukci
-                nebo otázku. Musí tedy odpovědět čistě na základě svých vnitřních znalostí a porozumění zadání.
-                *Příklad:* Uživatel se zeptá: <em>„Jaké je hlavní město Francie?“</em> (Model nebyl naveden ukázkou
-                formátu odpovědi – jednoduše odpoví: „Paříž.“)</li>
-              <li><strong>One-shot prompt:</strong> Modelu je poskytnut jeden ukázkový příklad zadání a správné
-                odpovědi, na jehož základě má odpovědět na nový dotaz ve stejné formě. *Příklad:* Prompt obsahuje:
-                <em>„Příklad: Otázka: Kolik je 5 * 6? Odpověď: 30. Úkol: Otázka: Kolik je 7 * 8? Odpověď:“</em> (Model
-                doplní správnou odpověď „56“ podle vzoru z příkladu.)</li>
-              <li><strong>Few-shot prompt:</strong> Podobně jako one-shot, ale model dostane více příkladů (třeba 3–5)
-                vstupů a jejich správných odpovědí. Z toho si model lépe odvodí kontext, formát odpovědi i způsob řešení
-                úlohy. *Příklad:* Prompt obsahuje několik příkladů překladu: <em>„EN: Hello -> CZ: Dobrý den; EN: How
-                  are you? -> CZ: Jak se máš?“</em> a pak výzvu <em>„Úkol: EN: Good night -> CZ:“</em> (Model na základě
-                vzoru překladu odpoví: „Dobrou noc.“).</li>
-              <li><strong>Chain-of-thought prompt:</strong> Prompt, který obsahuje řetězec úvah nebo k tomu model přímo
-                vybízí. Znamená to, že model má při řešení úkolu postupovat krok za krokem a explicitně vypsat svůj
-                myšlenkový postup. Tato technika pomáhá zvýšit logickou koherenci a spolehlivost odpovědi, zejména u
-                komplexních úloh. *Příklad:* <em>„Vypočítej krok za krokem následující problém a vysvětli svůj postup:
-                  Martin má 10 jablek, polovinu z nich sní a pak dokoupí 8 dalších. Kolik má nyní jablek?“</em> (Model
-                napíše postup řešení bod po bodu – např. nejprve spočítá polovinu z 10 (5), odečte ji (zůstane 5), pak
-                přičte 8 – a dospěje k výsledku 13. Zároveň každý krok slovně okomentuje.)</li>
-            </ul>
-            <h3>Prompty podle způsobu použití</h3>
-            <p>Následující kategorizace zdůrazňuje, jakým způsobem se prompty používají v průběhu konverzace, často ve
-              více krocích:</p>
-            <ul>
-              <li><strong>Iterativní promptování:</strong> Promptování jako postupný proces – uživatel zadává modelu
-                sérii navazujících dotazů, přičemž každý další prompt vychází z předchozí odpovědi modelu. Cílem je
-                postupně zpřesňovat výstup nebo dopracovat detailnější řešení. Někdy se tomu říká progresivní
-                upřesňování. *Příklad:* Uživatel nejprve zadá: <em>„Navrhni osnovu dokumentu o kybernetické
-                  bezpečnosti.“</em> (Model vygeneruje základní osnovu.) Uživatel pokračuje: <em>„Teď podrobně rozepiš
-                  bod 2 té osnovy.“</em> (Model rozvede konkrétní bod.) Takto se střídavě doptáváte dále, dokud
-                nezískáte požadovanou úroveň detailu.</li>
-              <li><strong>Optimalizační prompt:</strong> Tento typ promptu slouží k vylepšení či zoptimalizování
-                předchozího výstupu. Uživatel předloží modelu již existující text (nebo kód) a dá instrukci, jak ho
-                upravit – například zkrátit, zpřesnit, učinit formálnějším apod. Model na základě nového promptu
-                <em>optimalizuje</em> svůj původní výstup. *Příklad:* Uživatel nechá model vygenerovat koncept dopisu a
-                následně zadá: <em>„Zkrať ten dopis na polovinu, ale zachovej všechny důležité informace.“</em> (Model
-                přeformuluje původní text do stručnější podoby se zachováním obsahu.)</li>
-              <li><strong>Korekční prompt:</strong> Cílem je opravit chyby či nedostatky v předchozí odpovědi. Uživatel
-                může upozornit na konkrétní omyl nebo obecně požádat model o revizi. Korekční prompt také může znamenat
-                zadání, kde model koriguje vstup od uživatele (např. gramatické chyby v textu). *Příklad:* Po předchozí
-                odpovědi modelu uživatel zadá: <em>„Tvoje odpověď obsahovala faktickou chybu – oprav prosím nepřesnosti
-                  a uveď správné údaje.“</em> (Model přezkoumá a opraví svou odpověď s ohledem na vytknuté chyby.) Nebo:
-                <em>„Oprav gramatické chyby v následující větě: ,Já du domuu.’“</em> (Model vrátí opravenou větu: „Já
-                jdu domů.“).</li>
-            </ul>
-            <h3>Další techniky promptování</h3>
-            <p>Kromě výše zmíněných existují i speciální techniky, které pomáhají z modelu získat lepší nebo
-              specifičtější odpovědi:</p>
-            <ul>
-              <li><strong>Role-playing prompt (převzetí role):</strong> Modelu je v promptu přidělena určitá role nebo
-                persona, aby vystupoval jako někdo konkrétní (např. odborník, historická postava, profese). Tím se
-                nasměruje styl, tón i obsah odpovědi. Výstupy pak bývají konzistentnější s danou rolí a často
-                detailnější v příslušné oblasti znalostí. *Příklad:* <em>„Představ si, že jsi zkušený lékař. Vysvětli mi
-                  prosím jednoduchými slovy, co znamenají výsledky tohoto krevního testu: ...“</em> (Model odpovídá,
-                jako by byl lékařem – odborně, ale srozumitelně laikovi.)</li>
-              <li><strong>Constrained prompt (omezené zadání):</strong> Prompt, který obsahuje specifická omezení nebo
-                pravidla pro odpověď. Může jít o limit na délku výstupu, požadavek na formát (např. odpověď pouze jedním
-                slovem, výstup ve formě JSON), styl (např. formální tón) nebo zákaz určitých informací. Cílem je přimět
-                model dodržet stanovené mantinely. *Příklad:* <em>„Shrň výše uvedený text maximálně do 50 slov.“</em>
-                (Model vygeneruje velmi stručné shrnutí dané limitem.) Další příklad: <em>„Odpovídej pouze ,ano’ nebo
-                  ,ne’: Je číslo 17 prvočíslo?“</em> (Model dodrží instrukci a odpoví pouze: „Ano.“)</li>
-              <li><strong>Reverse prompt (obrácené tázání):</strong> Při této technice se role dialogu obrací – model se
-                ptá místo toho, aby rovnou odpovídal. Používá se to buď když chceme, aby si model vyžádal upřesnění,
-                nebo jako cvičení, kdy model na základě odpovědi generuje vhodnou následující otázku. Reverzní interakce
-                může pomoci upřesnit zadání nebo odhalit, jak model chápe otázku. *Příklad:* Uživatel: <em>„Potřebuji
-                  poradit s nastavením domácí sítě.“</em> Model (místo okamžité rady nejprve položí doplňující dotaz):
-                <em>„Můžete prosím upřesnit, jaký typ routeru používáte a s čím konkrétně potřebujete pomoci?“</em></li>
-              <li><strong>Sokratovské promptování:</strong> Technika inspirovaná sokratovskou metodou. Model (případně
-                uživatel prostřednictvím promptu) klade doplňující otázky či zpochybňuje předchozí odpovědi, aby dospěl
-                k hlubšímu porozumění nebo odhalil případné omyly v uvažování. Model je tak veden k <em>sebereflexi</em>
-                nad svými výstupy. *Příklad:* Uživatel po obdržení odpovědi pokračuje otázkou: <em>„Na jakém předpokladu
-                  stojí tvé tvrzení? Je ten předpoklad vždy platný?“</em> (Model přehodnotí své závěry a buď je obhájí s
-                vysvětlením, nebo upraví. Tímto způsobem lze model vést k detailnějšímu zdůvodnění a odhalení skrytých
-                předpokladů.)</li>
-              <li><strong>Kontrastní promptování:</strong> U této techniky se modelu předloží dvě různé odpovědi nebo
-                varianty a prompt ho vyzve, aby je zhodnotil či porovnal. Model tak může určit, která varianta je lepší
-                a proč, nebo zkombinovat to nejlepší z obou. Tato metoda pomáhá získat kvalitnější výstup skrze
-                porovnání. *Příklad:* <em>„Zde jsou dvě možné odpovědi na dotaz. Varianta A: ... Varianta B: ... Která z
-                  nich je přesnější a proč?“</em> (Model provede analýzu a doporučí lepší variantu s odůvodněním.)</li>
-            </ul>
-            <h2>Pokročilé použití AI</h2>
-            <p>Ve složitějších či specializovaných scénářích lze jazykové modely využít nad rámec běžné konverzace. Níže
-              uvádíme několik pokročilých způsobů použití a tipů:</p>
-            <ul>
-              <li><strong>Hluboký výzkum a analýza:</strong> Model lze využít k podrobnému průzkumu nějakého tématu.
-                Například ho můžete požádat o přečtení a analýzu dlouhého textu (zákona, smlouvy, studie) – text je
-                potřeba buď vložit (pokud se vejde do kontextu), nebo rozdělit na části a nechat model postupně
-                zpracovat. Model může text shrnout, vyhledat v něm klíčové body, srovnat různé části mezi sebou, či
-                odpovídat na detailní dotazy k obsahu. Pro skutečně hlubokou analýzu dlouhých dokumentů se hodí modely s
-                rozšířeným kontextem (GPT-4o) nebo kombinace s nástroji pro vyhledávání (Retrieval-Augmented
-                Generation). Ve výzkumu může AI pomoci i s návrhy experimentů, rozborem dat (viz níže kód) či
-                generováním možných vysvětlení zjištěných jevů.</li>
-              <li><strong>Vzdělávání a výuka:</strong> AI asistent může posloužit jako trpělivý učitel nebo sparing
-                partner při učení. Studenti se mohou modelu ptát na vysvětlení látky, nechat si objasnit nejasnosti,
-                generovat cvičné příklady a testové otázky, nebo si od modelu nechat vysvětlit chyby v domácím úkolu.
-                Model dokáže látku převyprávět vlastními slovy, uvést příklady, přizpůsobit výklad úrovni tazatele. Lze
-                ho využít i pro sebetestování – požádat ho, ať nám položí otázky k danému tématu a pak zkontroluje naše
-                odpovědi. Učitelé mohou AI využít pro generování materiálů (kvízů, osnov, vysvětlujících textů) nebo
-                jako inspiraci. Je však nutné výstupy vždy ověřit, zda jsou správné (AI si může vymýšlet). Jako
-                interaktivní nástroj pro opakování a procvičování je ale AI velmi užitečná.</li>
-              <li><strong>Spouštění kódu a práce s daty:</strong> Některé jazykové modely (resp. aplikace nad nimi)
-                umožňují provádět i výpočty a spouštět programový kód. Například zmíněný režim Advanced Data Analysis v
-                ChatGPT umí spustit Python skripty. To otevírá možnost zadat modelu úkol jako: „Zde jsou data o
-                rozpočtu, udělej z nich graf a spočítej průměry...“ – model pak vygeneruje kód (např. s využitím
-                knihoven <code>pandas</code> a <code>matplotlib</code>), vykoná ho a vrátí výsledek (graf, tabulku,
-                čísla). Tím lze AI použít k automatizaci analýzy dat, ke zpracování větších souborů, převodům formátů
-                atd. Je dokonce možné nechat model napsat kód a ten pak stáhnout jako soubor. Při práci s kódem model
-                dodržuje vaše instrukce – můžete například říct „Napiš funkci, otestuj ji na těchto vstupních hodnotách
-                a ukaž výstup“. Pokud model nepotřebuje externí data, zvládne i složité výpočty. U komplikovaných
-                matematických úloh je někdy lepší využít specializované nástroje (např. Wolfram Alpha plugin), protože
-                jazykový model může při výpočtech chybovat. Ale pro běžné skriptovací úkoly je velmi schopný.</li>
-              <li><strong>Tvorba vlastního chatbota:</strong> Je možné si vytvořit specializovaného AI asistenta pro
-                konkrétní účel. V praxi to znamená připravit prompt (nebo sérii promptů), který modelu vštípí požadované
-                znalosti a styl. Např. můžete mít <em>chatbota pro právní poradenství k novému stavebnímu zákonu</em> –
-                poskytnete modelu plné znění zákona (pokud se vejde do tokenů, u rozsáhlých zákonů by pomohl model s
-                velkým kontextem), případně přidáte odkazy na důležité judikáty či metodiky. Poté formulujete uvítací
-                prompt typu: „Jsi právní asistent specializovaný na stavební právo. Uvnitř máš text zákona XYZ a
-                související předpisy. Uživateli budeš odpovídat citacemi z těchto podkladů…“. Takového chatbota lze
-                provozovat buď v rozhraní ChatGPT (vždy mu na začátku konverzace poslat kontext), nebo si naprogramovat
-                vlastní aplikaci volající API, která to udělá automaticky. Důležité je pak <strong>otestovat</strong>
-                jeho chování a iterativně prompt ladit, aby dával spolehlivé odpovědi. V praxi toto spadá do oblasti
-                tzv. RAG (Retrieval-Augmented Generation), kde se kombinuje vyhledávání ve vlastních datech s jazykovým
-                modelem.</li>
-              <li><strong>Zábava a experimenty (hry, simulace):</strong> LLM lze využít i pro volnočasové účely.
-                Uživatelé si s modely hrají tak, že je nechají simulovat různé hry nebo scénáře. Lze si zahrát slovní či
-                znalostní hry: například <em>„Hádej, na kterou osobnost myslím“</em> (model se ptá na otázky ano/ne),
-                nebo si s ním zahrát Piškvorky (model udržuje herní plán v textu). Někteří nastavují model do role
-                fiktivních postav a vedou s ním konverzace (např. historické osobnosti – „bavit se s Masarykem“ apod.).
-                Oblíbený experiment je tzv. „hloupý všeználek“ – model se nastaví, aby byl maximálně ochotný a sečtělý,
-                ale ne moc inteligentní: pak bude sebevědomě odpovídat i na nesmysly. To slouží jako připomínka, že
-                model může <em>halucinovat</em>. Podobné hraní rolí a her rozvíjí pochopení možností a limitů AI.
-                Samozřejmě, v pracovním prostředí nejde o prioritní využití, ale i úředník si může s AI vyzkoušet něco
-                zábavného, aby se s ní lépe sžil.</li>
-              <li><strong>Specifické formátování a triky:</strong> Pokročilí uživatelé někdy využívají nestandardní
-                postupy, jak z modelu dostat požadovaný výstup. Například mohou chtít, aby model odpověděl ve formátu
-                JSON nebo XML – to se hodí, pokud plánují výsledek dále automaticky zpracovat (např. importovat do
-                nějakého systému). Model to většinou zvládne, stačí jasně říct „odpověz pouze validním JSON“. Jiným
-                „trikem“ je pokus obejít některá omezení – uživatel třeba zadá celý prompt v podobě strukturovaných dat
-                nebo kódu, čímž někdy přiměje model sdělit i to, co by v běžné konverzaci odmítl. Tyto hacky ale mohou
-                porušovat podmínky použití a zejména v prostředí veřejné správy se nedoporučují. Nicméně vědět o
-                možnosti strukturovaného výstupu (JSON, HTML) je praktické. Také lze model instruovat, aby poskytl
-                výstup vhodný k dalšímu zpracování – např. „vygeneruj SQL příkazy pro vytvoření tabulky z těchto dat“.
-                Možnosti jsou široké; kreativní práce s formátem promptu i výstupu patří k pokročilému prompt
-                inženýrství.</li>
-            </ul>
-            <h2>Práce s obrázky</h2>
-            <p>Generativní modely umí kromě textu tvořit i obrázky (tzv. <em>text-to-image</em> modely jako DALL·E,
-              Midjourney, Stable Diffusion). V prostředí ChatGPT je dostupný modul DALL·E 3, kterému můžete zadat
-              textový popis a on vrátí vygenerovaný obrázek. Oproti textu však platí u obrázků několik odlišností a
-              omezení:</p>
-            <ul>
-              <li><strong>Limity generovaných obrázků:</strong> Modely nejsou vhodné pro přesné vizuální znázornění
-                textu nebo technických schémat. Například chtít po AI vygenerovat obrázek s konkrétním nápisem (textem)
-                většinou nevyjde – model text v obraze zkomolí. Podobně technické nákresy nebo mapy jsou problém,
-                protože AI generuje spíše esteticky než technicky přesně. Obrázky jsou skvělé pro ilustrace, koncepty,
-                umělecké pojetí, ale ne pro věrné grafy či diagramy (na ty je lepší je vytvořit ručně nebo pomocí
-                specializovaných nástrojů).</li>
-              <li><strong>Editace existujících obrázků:</strong> Některé platformy umožňují tzv. <em>inpainting</em> –
-                úpravu části obrázku pomocí AI. ChatGPT s DALL·E to umí, ale jen u obrázků, které sám vytvořil v
-                konverzaci. Nemůžete tedy nahrát vlastní fotografii a chtít změnit její část – to je z bezpečnostních
-                důvodů blokováno. U vygenerovaného obrázku však lze říct například „přidej do obrázku červené auto
-                vpravo dole“ a model obrázek znovu vykreslí s danou změnou. Musíte být velmi přesní v popisu, kterou
-                část a jak upravit. U nahraných (reálných) fotek jsou takové zásahy omezeny kvůli riziku zneužití
-                (deepfakes).</li>
-              <li><strong>Generování obrázků:</strong> Při tvorbě obrázku z popisu je klíčové napsat co nejkonkrétnější
-                <em>prompt pro generátor</em>. Zadejte, co má být na obrázku, v jakém stylu, jaká kompozice, barvy,
-                případně jaká technika (olejomalba, fotografie, 3D render…). Např. <em>„Fotografie staré knihovny v
-                  noci, v popředí sedí kočka na otevřené knize, tlumené teplé světlo lampy, realistický styl.“</em> Čím
-                detailnější a jasnější popis, tím větší šance, že výsledek bude odpovídat představám. Naopak vágní
-                prompt (např. „nakresli hezký obrázek města“) povede k nepředvídatelnému výsledku. Je dobré zmínit i co
-                na obrázku <em>nemá</em> být, pokud je to relevantní.</li>
-              <li><strong>Externí nástroje:</strong> Kromě integrovaného DALL·E existují i jiné generátory obrázků, jako
-                <em>Midjourney</em> nebo <em>Stable Diffusion</em>. Ty mohou dosahovat odlišného stylu či kvality.
-                Například Midjourney je oblíbený pro velmi detailní a esteticky působivé obrázky, ale funguje přes
-                platformu Discord a je nutné za něj platit. Pro účely rychlých ilustrací však často stačí DALL·E v
-                ChatGPT, který je (v rozumné míře) zahrnut v předplatném.</li>
-              <li><strong>Omezení a bezpečnost:</strong> Generátory mají zabudované filtry – nelze generovat explicitně
-                nevhodné obrázky, násilné scény, pornografii apod. Také je chráněno soukromí a práva – např. model
-                odmítne vygenerovat realistický obličej konkrétní žijící osoby (ochrana proti zneužití pro deepfake).
-                Pokud byste zkusili model použít k něčemu nelegálnímu nebo neetickému (např. identikit podezřelého podle
-                fotky, úprava fotografií osob), narazíte na limity. Při práci s obrázky tedy dbejte etických a právních
-                aspektů. Pro úřední použití obrázků navíc myslete i na autorské právo – viz níže v bezpečnostních
-                rizicích.</li>
-            </ul>
-            <p><em>Tip pro práci s grafikou:</em> Buďte maximálně konkrétní. Uveďte nejen <em>co</em> má být na obrázku,
-              ale i <em>jak</em> má obraz působit. Například místo „nakresli dům“ můžete zadat „detailní akvarelová
-              malba starého venkovského domu obklopeného zahradou za slunečného odpoledne“. Styl, atmosféra, perspektiva
-              – to vše lze v promptu popsat. Pokud výsledek neodpovídá, iterujte – upřesněte nebo změňte prompt a zkuste
-              generování znovu.</p>
-            <h2>Bezpečnost a rizika</h2>
-            <p>Nasazení AI v práci přináší nejen příležitosti, ale i určitá rizika. Je nutné znát limity modelů a
-              pracovat s jejich výstupy obezřetně:</p>
-            <ul>
-              <li><strong>Halucinace modelu:</strong> Model může s naprostou sebedůvěrou generovat odpovědi, které znějí
-                věrohodně, ale ve skutečnosti jsou nesprávné nebo zcela
-                vymyšlené:contentReference[oaicite:5]{index=5}:contentReference[oaicite:6]{index=6}. Tento jev se nazývá
-                „halucinace“. Např. model vám může uvést neexistující paragraf zákona, vymyšlenou statistiku nebo
-                smyšlený odkaz na článek. Nedělá to schválně – prostě statisticky pokračuje v textu, i když správná data
-                nemá. **Proto je nezbytné ke každému výstupu přistupovat kriticky a vše důležité ověřovat** z
-                nezávislých zdrojů:contentReference[oaicite:7]{index=7}:contentReference[oaicite:8]{index=8}. Zejména
-                pokud model použijete k získání faktických informací, nikdy je nepřebírejte bez potvrzení. V právním
-                kontextu dvojnásob platí, že AI nenese odpovědnost – vy ano.</li>
-              <li><strong>Bias a nevhodný obsah:</strong> Modely jsou trénované na obrovském korpusu textů z internetu,
-                což znamená, že mohou odrážet různé předsudky či stereotypy (<em>bias</em>) obsažené v datech. Někdy
-                mohou generovat i nevhodné formulace, i když se tomu snaží vyhnout. V kontextu úřadu je nutné dávat
-                pozor, aby generovaný text neobsahoval diskriminační, urážlivé či jinak nevhodné prvky. AI model sám
-                nemá koncept „etiky“ – řídí se jen pravidly, která do něj vložili tvůrci (filtry). Pokud by přesto
-                vygeneroval něco nevhodného, odpovědnost za použití takového výstupu nese uživatel. Vždy si výstup
-                přečtěte a zhodnoťte z hlediska korektnosti.</li>
-              <li><strong>Ověřování a zodpovědnost:</strong> Jak vyplývá z výše uvedeného – **výstupy AI nástrojů musí
-                uživatel vždy ověřit a přistupovat k nim kriticky. Nelze je nekriticky přejímat nebo
-                kopírovat**:contentReference[oaicite:9]{index=9}. Za správnost a relevanci použitých informací ručí ten,
-                kdo je svým jménem prezentuje (tj. člověk, ne AI):contentReference[oaicite:10]{index=10}. V prostředí
-                veřejné správy to znamená, že i když vám AI pomůže sepsat dokument či analýzu, konečnou odpovědnost za
-                její obsah nesete vy jako úředník. AI je jen asistent – nemůžete se na něj vymluvit, pokud by obsahoval
-                chybu.</li>
-              <li><strong>Ochrana citlivých dat:</strong> Velmi důležitým aspektem je <em>důvěrnost informací</em>. Do
-                veřejně dostupných AI systémů (jako je veřejný ChatGPT) byste neměli vkládat citlivé nebo osobní údaje,
-                pokud to není povoleno. Vámi zadaná data se totiž mohou ukládat na serverech provozovatele a potenciálně
-                být využita k dalšímu trénování (pokud s tím nesouhlasíte, je třeba použít placené řešení s možností
-                vypnutí ukládání konverzací). Je známý případ, kdy zaměstnanci omylem poskytli chatbotovi interní
-                informace firmy a ty se dostaly ven. **Nikdy proto do AI neposílejte utajované, osobní či jinak citlivé
-                informace**, pokud nemáte zajištěno, že jsou v bezpečí:contentReference[oaicite:11]{index=11}. Pro
-                interní data existují varianty nasazení AI on-premise (na vlastních serverech) nebo aspoň
-                prostřednictvím API s vypnutým logováním, ale to je na zvážení IT oddělení. Jako uživatel se řiďte
-                zásadou, že co zadáte veřejné AI, už nelze vzít zpět.</li>
-              <li><strong>Právní otázky a copyright:</strong> Generativní AI přináší nové výzvy z hlediska autorského
-                práva. Obsah, který model vygeneruje, může být někdy odvozen z trénovacích dat, která podléhají
-                copyrightu. Model sice netvoří přímé kopie, ale např. vygenerovaný text může být velmi podobný
-                existujícímu dílu, aniž by to bylo zjevné. U obrázků je situace ještě složitější – AI se „učila“ na
-                miliónech referenčních obrázků, a výsledné dílo tak může stylisticky napodobit konkrétní autory. Z
-                právního hlediska jsou AI výstupy zatím šedou zónou: nelze je snadno chránit copyrightem (autor je
-                nejasný), a zároveň nelze vyloučit, že porušují cizí copyright. **V praxi to znamená, že texty či
-                obrázky z AI byste měli používat opatrně** – např. pro interní podklady je to v pořádku, ale při
-                zveřejnění AI generovaného materiálu (třeba na webu úřadu) buďte obezřetní. Minimálně je vhodné uvést,
-                že byl použit AI nástroj. U kreativních výstupů (jako jsou návrhy sloganu, obrázky atd.) si dejte pozor,
-                abyste neporušili práva třetích stran, a raději nechte finální kontrolu na právním oddělení, pokud jde o
-                něco citlivého.</li>
-            </ul>
-            <p>V souhrnu: <strong>AI je mocný pomocník, ale vyžaduje kritické myšlení uživatele.</strong> Doporučuje se
-              výsledky křížově ověřovat, dávat modelu zpětnou vazbu a klást doplňující dotazy, aby se minimalizovaly
-              chyby. Níže uvádíme ještě konkrétní tipy, jak výstup modelu ověřit či vylepšit:</p>
-            <ul>
-              <li><strong>Validační dotaz po odpovědi:</strong> Pokud model něco vypíše (např. seznam), můžete navázat
-                promptem typu <em>„Ověř, zda výše uvedené obsahuje vše podstatné a zda je to správně.“</em> Model se
-                pokusí své předchozí tvrzení zhodnotit. Někdy tak odhalí vlastní opomenutí či chybky (ale nespoléhejte
-                se na to stoprocentně!).</li>
-              <li><strong>Zpětná vazba modelu a přeformulování:</strong> Když se vám odpověď nezdá, řekněte to. Např.
-                <em>„Ta druhá část odpovědi nedává smysl, můžeš to zkusit znovu a lépe vysvětlit...“</em> Model
-                zpravidla odpoví omluvou a pokusí se to napsat jinak. Můžete také upřesnit, co konkrétně chcete změnit
-                (tón, detailnost, strukturu) a model se tomu přizpůsobí – tomuto opakovanému upřesňování se někdy říká
-                <em>re-prompting</em> (opětovné promptování). Je to přirozená součást práce s AI.</li>
-              <li><strong>Kontrolní otázky:</strong> Chcete-li ověřit faktickou správnost, zeptejte se modelu znovu
-                jinak nebo položte doplňující otázku, jejíž odpověď znáte. Například pokud vám model vypsal paragrafy
-                zákona, zkuste se doptat: <em>„Platí stále ustanovení § X, nebo bylo novelizováno?“</em> – pokud by se
-                model začal plést, zbystřete. Také můžete stejný dotaz zkusit položit jinému modelu nebo nástroji (třeba
-                vyhledat odpověď klasicky na webu) a porovnat. Nespoléhejte jen na jediný výstup AI, hlavně u důležitých
-                věcí.</li>
-            </ul>
-            <h2>Praktické příklady z veřejné správy</h2>
-            <p>Na závěr uvádíme několik ukázek, jak by úředníci mohli využít AI asistenta při různých úkolech. Jde o
-              zjednodušené příklady interakce mezi uživatelem (úředníkem) a modelem:</p>
-            <h3>Rešerše právních norem</h3>
-            <p><em>Úkol:</em> Najít relevantní právní předpisy k danému tématu a získat k nim základní informace.</p>
-            <pre><code>Uživatel: Dobrý den, potřebuji zpracovat rešerši platných právních předpisů týkajících se ochrany osobních údajů v ČR a EU. Uveďte prosím klíčové zákony a nařízení a stručně popište, co upravují. Asistent: 1. <strong>Nařízení EU 2016/679 (GDPR)</strong> – Hlavní evropské nařízení o ochraně osobních údajů platné ve všech členských státech EU. Stanovuje pravidla pro zpracování osobních údajů, práva subjektů údajů a povinnosti správců, včetně možných sankcí za porušení. 2. <strong>Zákon č. 110/2019 Sb., o zpracování osobních údajů</strong> – Český prováděcí zákon k GDPR, který upřesňuje některé oblasti (např. věkové hranice u souhlasu dítěte, zřizuje Úřad pro ochranu osobních údajů a stanovuje jeho pravomoci). 3. <strong>Zákon č. 111/2019 Sb., o zpracování osobních údajů pro účely prevence kriminality</strong> – Zvláštní úprava pro oblast policejní a justiční spolupráce (transpozice tzv. Policejní směrnice EU 2016/680), která řeší ochranu osobních údajů v trestněprávní oblasti. </code></pre>
-            <h3>Příprava odůvodnění rozhodnutí</h3>
-            <p><em>Úkol:</em> Nechat si vygenerovat návrh odůvodnění k připravenému rozhodnutí, s důrazem na formální
-              styl a správné citace zákonů.</p>
-            <pre><code>Uživatel: Napiš prosím návrh odůvodnění správního rozhodnutí o <strong>zamítnutí žádosti o dotaci</strong> z důvodu nesplnění podmínek programu. Text by měl být formální, věcný a měl by odkazovat na příslušné právní předpisy. Asistent: <strong>Odůvodnění:</strong> Ministerstvo průmyslu a obchodu posoudilo Vaši žádost o dotaci v rámci programu XYZ a dospělo k závěru, že nesplňuje stanovené podmínky. Žadatel nedoložil povinné přílohy podle § 14 odst. 2 zákona č. 218/2000 Sb., o rozpočtových pravidlech, ve znění pozdějších předpisů, a zároveň projekt nesplňuje kritéria inovativnosti vyžadovaná čl. 3 odst. 1 písm. b) Nařízení vlády č. 123/2021 Sb. […] <em>(následuje detailní rozbor důvodů zamítnutí s odkazem na konkrétní body programu a legislativy)</em></code></pre>
-            <h3>Strojový překlad úředního textu</h3>
-            <p><em>Úkol:</em> Přeložit rychle úřední dokument nebo dopis do cizího jazyka (s vědomím, že bude třeba
-              kontrola překladatelem).</p>
-            <pre><code>Uživatel: Přelož do angličtiny následující větu z dopisu: „Na základě Vámi poskytnutých podkladů vydáváme rozhodnutí o <strong>zamítnutí</strong> Vaší žádosti.“ Asistent: Based on the documents you provided, we are issuing a decision to <strong>reject</strong> your application.</code></pre>
-            <p>(Model správně přeložil zvýrazněné slovo „zamítnutí“ jako „reject“ – v úřední angličtině by šlo i „denial
-              of your application“, ale překlad je srozumitelný. U delších textů by asistent přeložil celý odstavec či
-              dokument. Vždy je však vhodná následná kontrola překladatelem pro přesnou formulaci.)</p>
-            <h3>Shrnutí zákona</h3>
-            <p><em>Úkol:</em> Získat zhuštěný přehled klíčových bodů zákona v srozumitelné formě.</p>
-            <pre><code>Uživatel: Ve zkratce mi shrň hlavní body <strong>Zákona o ochraně spotřebitele (č. 634/1992 Sb.)</strong> – stačí jeden odstavec. Asistent: Zákon o ochraně spotřebitele vymezuje práva spotřebitelů a povinnosti prodávajících s cílem zajistit spravedlivé podmínky na trhu. Zakazuje nekalé obchodní praktiky a klamavou reklamu, stanoví povinnost pravdivě informovat o vlastnostech zboží a služeb, upravuje podmínky reklamací a odpovědnost za vady. Zákon také zřizuje dozor nad dodržováním těchto povinností (zejména Českou obchodní inspekcí) a umožňuje ukládat sankce při jejich porušení.</code></pre>
-            <h3>Generování osnovy prezentace</h3>
-            <p><em>Úkol:</em> Nechat si navrhnout osnovu/prezentaci k danému tématu, která poslouží jako výchozí bod.
-            </p>
-            <pre><code>Uživatel: Vytvoř osnovu pro prezentaci (cca 5 slidů) na téma <strong>„Kybernetická bezpečnost pro zaměstnance úřadu“</strong>. Každý slajd pojmenuj a připiš 2–3 odrážky, co na něm bude. Asistent: 1. **Úvod – Co je kybernetická bezpečnost** - Vysvětlení pojmu kybernetická bezpečnost a proč je důležitá pro úřady. - Stručná informace o rostoucích kyber hrozbách (hackeři, malware). 2. **Nejčastější hrozby** - Malware (viry, ransomware) a jak může ovlivnit naše systémy. - Phishing a sociální inženýrství – příklady podvodných e-mailů. 3. **Zásady bezpečného chování** - Používání silných hesel a jejich pravidelná obměna. - Obezřetnost při otevírání e-mailů a neznámých příloh; zásada „neklikat na neověřené“. 4. **Postupy při incidentu** - Co dělat, když zjistím napadení počítače nebo únik dat (koho kontaktovat). - Incident response plan – existuje plán reakce v rámci úřadu. 5. **Závěr – Doporučení a zdroje** - Shrnutí hlavních bodů: prevence je klíčová, každý zaměstnanec hraje roli. - Doporučení na další školení, interní příručky a kontakty na IT podporu.</code></pre>
-            <p>Na výše uvedené odpovědi by samozřejmě v praxi navazovala další interakce – např. upřesnění dotazu,
-              požadavek na detailnější informace, nebo naopak na zestručnění. Využití AI je iterativní proces: model nám
-              dá základ a my s ním dál „diskutujeme“, dokud nedosáhneme požadovaného výsledku.</p>
-            <hr />
-            <p>Věříme, že tato příručka poskytla užitečný přehled o prompt inženýrství a možnostech využití AI ve
-              veřejné správě. Klíčové je pamatovat na to, že <strong>AI je nástroj, jehož kvalita závisí na schopnostech
-                uživatele</strong>. Ptejte se jasně, přemýšlejte nad odpověďmi kriticky a nebojte se s AI
-              experimentovat. Při dodržení doporučených postupů může být AI asistentem, který zrychlí a zpříjemní vaši
-              práci, aniž by byla ohrožena její kvalita či důvěryhodnost.</p>
+          <div class="prompt-guide">
+            <aside class="prompt-guide__nav" aria-label="Navigace v příručce">
+              <h2>Obsah</h2>
+              <nav>
+                <ul>
+                  <li>
+                    <a class="prompt-guide__chapter-link" href="#uvod">Úvod</a>
+                  </li>
+                  <li>
+                    <details class="prompt-guide__details" open>
+                      <summary>
+                        <span>Volba nástroje a přístupů</span>
+                        <a class="prompt-guide__summary-link" href="#vyber-nastroje">Přejít</a>
+                      </summary>
+                      <ul>
+                        <li><a href="#prehled-nastroju">Přehled nástrojů</a></li>
+                        <li><a href="#volba-modelu">Výběr modelu</a></li>
+                        <li><a href="#integrace">Integrace do workflow</a></li>
+                      </ul>
+                    </details>
+                  </li>
+                  <li>
+                    <details class="prompt-guide__details">
+                      <summary>
+                        <span>Strukturovaný postup</span>
+                        <a class="prompt-guide__summary-link" href="#struktura-promptu">Přejít</a>
+                      </summary>
+                      <ul>
+                        <li><a href="#role">Roli popište jasně</a></li>
+                        <li><a href="#kontext">Zadejte kontext</a></li>
+                        <li><a href="#ukol">Specifikujte úkol</a></li>
+                        <li><a href="#format">Domluvte formát</a></li>
+                        <li><a href="#kontrola">Validujte výstup</a></li>
+                      </ul>
+                    </details>
+                  </li>
+                  <li>
+                    <details class="prompt-guide__details">
+                      <summary>
+                        <span>Techniky zvyšující kvalitu</span>
+                        <a class="prompt-guide__summary-link" href="#techniky">Přejít</a>
+                      </summary>
+                      <ul>
+                        <li><a href="#validacni-prompty">Validační prompty</a></li>
+                        <li><a href="#formaty">Práce s formáty</a></li>
+                        <li><a href="#iterativni-ladeni">Iterativní ladění</a></li>
+                        <li><a href="#nastroje-pro-spolupraci">Spolupráce s týmem</a></li>
+                      </ul>
+                    </details>
+                  </li>
+                  <li>
+                    <details class="prompt-guide__details">
+                      <summary>
+                        <span>Use cases veřejné správy</span>
+                        <a class="prompt-guide__summary-link" href="#use-cases">Přejít</a>
+                      </summary>
+                      <ul>
+                        <li><a href="#use-case-vzdelavani">Vzdělávání a školení</a></li>
+                        <li><a href="#use-case-preklady">Překlady</a></li>
+                        <li><a href="#use-case-rozhodnuti">Správní rozhodnutí</a></li>
+                        <li><a href="#use-case-reserse">Rešerše a analýzy</a></li>
+                        <li><a href="#use-case-shrnuti">Shrnutí dokumentů</a></li>
+                      </ul>
+                    </details>
+                  </li>
+                  <li>
+                    <details class="prompt-guide__details">
+                      <summary>
+                        <span>Tokeny, bezpečnost a evidence</span>
+                        <a class="prompt-guide__summary-link" href="#tokeny">Přejít</a>
+                      </summary>
+                      <ul>
+                        <li><a href="#prace-s-tokeny">Práce s tokeny</a></li>
+                        <li><a href="#bezpecnost">Bezpečnost dat</a></li>
+                        <li><a href="#sprava-zpetne-vazby">Správa zpětné vazby</a></li>
+                      </ul>
+                    </details>
+                  </li>
+                  <li>
+                    <a class="prompt-guide__chapter-link" href="#doporuceny-postup">Doporučený pracovní postup</a>
+                  </li>
+                </ul>
+              </nav>
+            </aside>
+            <div class="prompt-guide__content article-detail__body">
+              <h2 id="uvod">Úvod</h2>
+              <p><strong>Prompt inženýrství</strong> je praktická disciplína, která pomáhá formulovat zadání pro <a href="slovnicek/large-language-model.html">velké jazykové modely</a> a další generativní systémy tak, aby výstup přesně odpovídal potřebám člověka nebo organizace. Dobře napsaný prompt je rozdíl mezi inspirativní odpovědí a textem, který musíme celý přepisovat. Ve veřejné správě to znamená úsporu času při přípravě rešerší, tvorbě vzdělávacích materiálů i při komunikaci s občany.</p>
+              <p>V příručce kombinujeme vysvětlení základů se zkušenostmi z praxe. Najdete zde tipy pro výběr vhodného nástroje, osvědčené struktury promptů, specializované techniky i konkrétní příklady použití v úřadech. Doporučujeme mít po ruce také <a href="slovnicek.html">Slovníček pojmů</a>, kde jsou vysvětlené termíny jako token, kontextové okno nebo systémový prompt.</p>
 
+              <h2 id="vyber-nastroje">Volba nástroje a přístupů</h2>
+              <p>Než začnete psát prompty, zvažte, s jakým nástrojem budete pracovat. Rozhraní různých poskytovatelů se liší dostupnými modely, možnostmi sdílení i způsobem, jakým chrání data. Ve veřejné správě je klíčové prověřit smluvní podmínky, umístění dat a soulad s interními směrnicemi.</p>
+
+              <h3 id="prehled-nastroju">Přehled často využívaných nástrojů</h3>
+              <table class="prompt-guide__table">
+                <thead>
+                  <tr>
+                    <th>Nástroj</th>
+                    <th>Typ řešení</th>
+                    <th>Typické využití ve veřejné správě</th>
+                    <th>Poznámka</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>ChatGPT</td>
+                    <td>Webová aplikace, API</td>
+                    <td>Rychlé prototypování textů, rešerše, překlady</td>
+                    <td>Dostupné verze GPT-4o a GPT-4o mini, snadné sdílení konverzací</td>
+                  </tr>
+                  <tr>
+                    <td>Microsoft Copilot</td>
+                    <td>Integrace v M365, prohlížeč, API</td>
+                    <td>Psaní e-mailů, sumarizace dokumentů, práce v Teams</td>
+                    <td>Výhoda napojení na interní data organizace v rámci tenantů</td>
+                  </tr>
+                  <tr>
+                    <td>Grok</td>
+                    <td>Web, mobilní aplikace</td>
+                    <td>Monitoring aktuálních informací, tvorba odpovědí s citacemi</td>
+                    <td>Silný důraz na čerstvá data z internetu</td>
+                  </tr>
+                  <tr>
+                    <td>Perplexity</td>
+                    <td>Vyhledávač s LLM</td>
+                    <td>Rešerše legislativy, přehled trendů, rychlé srovnávací přehledy</td>
+                    <td>Každá odpověď obsahuje odkazy na zdroje</td>
+                  </tr>
+                  <tr>
+                    <td>Claude</td>
+                    <td>Web, API</td>
+                    <td>Citlivá práce s texty, dlouhé dokumenty</td>
+                    <td>Model Claude 3 nabízí velké kontextové okno a konzervativní tón</td>
+                  </tr>
+                  <tr>
+                    <td>Gemini</td>
+                    <td>Web, mobilní aplikace, API</td>
+                    <td>Multimodální úlohy, překlady, generování vizuálů</td>
+                    <td>Dobře funguje ve spojení se službami Google Workspace</td>
+                  </tr>
+                </tbody>
+              </table>
+
+              <h3 id="volba-modelu">Výběr modelu</h3>
+              <p>Volbu konkrétního <a href="slovnicek/large-language-model.html">modelu</a> přizpůsobte cíli. Ne vždy je nutné sáhnout po nejvýkonnějším modelu. Jednoduché textové úlohy zvládnou i menší modely (například GPT-4o mini nebo open-source Mixtral). Pokud potřebujete dlouhé analytické texty nebo práci s tabulkami, vyplatí se investovat do pokročilejší varianty, například GPT-4o či Claude 3. U multimodálních úloh (kombinace textu, obrázků nebo zvuku) využijte modely jako Gemini 1.5 nebo GPT-4o s funkcí analýzy obrázků.</p>
+              <p>Před použitím komerční služby si ověřte, jak pracuje s daty. Někteří poskytovatelé umožňují režim bez ukládání konverzací, případně nabízejí tzv. enterprise varianty, které garantují oddělené zpracování dat organizace. V interních prostředích lze nasadit i lokálně provozované modely (např. Llama 3, Aleph Alpha), které běží na serverech spravovaných organizací.</p>
+
+              <h3 id="integrace">Integrace do workflow</h3>
+              <p>Rozhodněte, zda budete s modelem komunikovat přímo v uživatelském rozhraní, nebo prostřednictvím API. Uživatelské rozhraní je vhodné pro rychlé experimentování a individuální práci. API se hodí pro automatizaci procesů, napojení na spisové služby nebo pro tvorbu vlastních chatbotů. V obou případech je dobré nastavit pravidla pro evidenci promptů a výstupů – usnadní to audit i sdílení osvědčených postupů.</p>
+
+              <h2 id="struktura-promptu">Strukturovaný postup psaní promptu</h2>
+              <p>Efektivní prompt má jasnou strukturu. Doporučujeme postupovat krok za krokem a každou část psát jako samostatný odstavec. Díky tomu je prompt přehledný a lépe se k němu vracíte při následných úpravách.</p>
+
+              <h3 id="role">1. Vyjasněte roli a zadání</h3>
+              <p>Začněte tím, že modelu sdělíte, v jaké roli má odpovídat a komu má pomoci. Stačí krátké představení úkolu a cílové skupiny. V prostředí veřejné správy často funguje formulace, která z modelu dělá asistenta úředníka nebo odborníka na konkrétní agendu.</p>
+              <pre class="prompt-example"><code>Jsi digitální asistent Ministerstva práce. Pomáháš srozumitelně vysvětlovat změny v legislativě zaměstnavatelům i zaměstnancům.</code></pre>
+
+              <h3 id="kontext">2. Přidejte kontext a data</h3>
+              <p>Bez kontextu model jen hádá. Uveďte klíčové informace, které má při odpovědi zohlednit – například popis situace, odkazy na dokumenty nebo výtah relevantních paragrafů. Pokud odkazujete na delší text, zvažte jeho rozdělení na části a postupné zadávání.</p>
+              <pre class="prompt-example"><code>Kontext: připravujeme informační leták o nové dávce "příspěvek na dojíždění". Zaměstnanec denně cestuje 35 km do práce a pečuje o dítě do 6 let.</code></pre>
+
+              <h3 id="ukol">3. Specifikujte úkol a rozsah</h3>
+              <p>Popište, co má AI udělat, jak dlouhý má být výstup a na co se má zaměřit. Vyhnete se tím zbytečnému doplňování detailů. Jasně formulovaný úkol také usnadňuje interní revizi.</p>
+              <pre class="prompt-example"><code>Úkol: vytvoř dvoustránkový text pro web úřadu práce. Struktura: úvodní odstavec, popis nároku, postup podání žádosti, kontakt na infolinku.</code></pre>
+
+              <h3 id="format">4. Nastavte formát výstupu</h3>
+              <p>Pokud potřebujete konkrétní formát (např. JSON, tabulku nebo Markdown), napište jej přímo do promptu. Model se bude snažit formát dodržet. U strojového zpracování přidejte i příklady validního výstupu.</p>
+              <pre class="prompt-example"><code>Výstup napiš v Markdown tabulce se sloupci: krok, popis, odpovědná osoba. Do tabulky zahrň maximálně 5 kroků.</code></pre>
+
+              <h3 id="kontrola">5. Zaveďte kontrolní kroky</h3>
+              <p>Součástí promptu může být také požadavek na sebehodnocení odpovědi. Požádejte model, aby shrnul, z jakých informací vycházel, nebo aby upozornil na nejasnosti. U kritických textů (např. rozhodnutí) je vhodné navazující validační kolo, které výstup porovná s checklistem.</p>
+              <pre class="prompt-example"><code>Před odevzdáním se zkontroluj: vypiš, které části textu vyžadují doplnění lidským pracovníkem a jaké zdroje by bylo vhodné ověřit.</code></pre>
+
+              <h2 id="techniky">Techniky zvyšující kvalitu</h2>
+              <p>Kromě základní struktury existují pokročilé techniky, které pomáhají zlepšit přesnost i konzistenci odpovědí. Hodí se zejména u složitějších úloh nebo při týmové spolupráci.</p>
+
+              <h3 id="validacni-prompty">Validační prompty</h3>
+              <p>Validační prompt je následný dotaz, který kontroluje kvalitu předchozí odpovědi. Může porovnávat výstup se seznamem kritérií, hledat chyby nebo navrhovat úpravy. V praxi veřejné správy se osvědčilo nechat model nejprve text vytvořit a v další zprávě jej nechat fungovat jako auditor.</p>
+              <pre class="prompt-example"><code>Zkontroluj předchozí text rozhodnutí. Ověř, zda obsahuje: právní základ, popis skutkového stavu, poučení o odvolání. Pokud něco chybí, navrhni doplnění.</code></pre>
+
+              <h3 id="formaty">Práce s formáty a strukturou</h3>
+              <p>Model lze vést k vytváření strukturovaných výstupů – tabulek, formulářů nebo checklistů. U složitějších formátů pomůže příklad správně vyplněné šablony. Díky tomu lze výstupy automaticky importovat do dalších systémů a zrychlit administrativu.</p>
+
+              <h3 id="iterativni-ladeni">Iterativní ladění</h3>
+              <p>Považujte prompt za návrh, který se průběžně vylepšuje. Po každé odpovědi si poznamenejte, co je potřeba změnit – přidat příklad, zpřesnit jazyk nebo upravit délku. Sdílený dokument s verzemi promptu pomáhá budovat organizační know-how a zamezuje opakovaným chybám.</p>
+
+              <h3 id="nastroje-pro-spolupraci">Spolupráce s týmem</h3>
+              <p>Při týmovém využití si stanovte, kdo prompt připravuje, kdo výstup kontroluje a kdo jej schvaluje. Osvědčilo se používat jednotnou šablonu promptů a evidovat je v interním úložišti (např. v nástroji pro správu úkolů). Každý prompt doplňte o odkaz na interní metodiku nebo <a href="slovnicek/prompt-inzenyrstvi.html">definice v Slovníčku</a>, aby bylo zřejmé, jaké termíny mají pracovníci používat.</p>
+
+              <h2 id="use-cases">Use cases z veřejné správy</h2>
+              <p>Techniky promptování je nejlepší osvojit si na konkrétních scénářích. Níže najdete inspiraci z praxe, kterou lze snadno přenést do vašeho úřadu.</p>
+
+              <h3 id="use-case-vzdelavani">Vzdělávání a interní školení</h3>
+              <p>Úřady často potřebují rychle vysvětlit nové procesy nebo legislativní změny. AI může připravit osnovu školení i návrhy cvičení. Promptujte konkrétní cílovou skupinu a požadované výstupy.</p>
+              <pre class="prompt-example"><code>Vytvoř osnovu tříhodinového školení pro nové zaměstnance krajského úřadu. Zaměř se na orientaci v agendě životního prostředí a přidej návrhy praktických úkolů.</code></pre>
+
+              <h3 id="use-case-preklady">Překlady a jazykové úpravy</h3>
+              <p>Modely zvládají překládat oficiální dokumenty a zároveň hlídat terminologii. Připojte glosář pojmů nebo odkaz na interní terminologický slovník, aby překlad odpovídal standardům organizace.</p>
+              <pre class="prompt-example"><code>Přelož následující informaci o dotacích do angličtiny. Zachovej oficiální tón a používej termíny z našeho glosáře: sustainable transport grant, regional authority, applicant.</code></pre>
+
+              <h3 id="use-case-rozhodnuti">Tvorba částí správních rozhodnutí</h3>
+              <p>AI může připravit podklady, které úředník následně upraví a schválí. Důležité je jasně označit, že výstup musí projít lidskou revizí a citlivé údaje anonymizovat.</p>
+              <pre class="prompt-example"><code>Na základě přiloženého shrnutí spisu navrhni strukturované odůvodnění rozhodnutí. Použij neutrální jazyk a vyznač místa, kde je nutná kontrola lidského odborníka.</code></pre>
+
+              <h3 id="use-case-reserse">Rešerše a analýzy</h3>
+              <p>Pro rychlé porovnání možností je vhodné zadat požadovaná kritéria a popsat, jak má model pracovat se zdroji. U rešerší vždy uveďte, že odpověď má obsahovat citace nebo odkazy.</p>
+              <pre class="prompt-example"><code>Zpracuj rešerši evropských dotačních programů pro energetické úspory ve veřejných budovách. Uveď název programu, výši podpory, datum uzávěrky a odkaz na oficiální web.</code></pre>
+
+              <h3 id="use-case-shrnuti">Shrnutí dokumentů</h3>
+              <p>Model lze využít k rychlému shrnutí rozsáhlých dokumentů, jako jsou strategie, výroční zprávy nebo zápisy z jednání. Přidejte kritéria, která má shrnutí pokrýt, aby se neztratily důležité body.</p>
+              <pre class="prompt-example"><code>Shrň přiložený zápis z jednání rady města do pěti odstavců. Zaměř se na přijatá usnesení, úkoly pro jednotlivé odbory a termíny plnění.</code></pre>
+
+              <h2 id="tokeny">Práce s tokeny, bezpečnost a evidence</h2>
+              <p>Odpovědi modelu ovlivňuje délka vstupu, způsob práce s daty i to, jak si poznamenáváte zpětnou vazbu. V této části najdete praktické tipy, jak mít vše pod kontrolou.</p>
+
+              <h3 id="prace-s-tokeny">Práce s tokeny</h3>
+              <p>Modely nepracují se slovy, ale s tokeny. Každý token reprezentuje část textu, což ovlivňuje cenu i maximální délku vstupu. Počet tokenů snadno spočítáte pomocí nástroje <a href="https://platform.openai.com/tokenizer" rel="noopener" target="_blank">ChatGPT Tokenizer</a>. Pokud se do limitu nevejdete, zkraťte prompt, rozdělte dokument na části nebo použijte model s větším kontextovým oknem.</p>
+
+              <h3 id="bezpecnost">Bezpečnost dat</h3>
+              <p>Před odesláním dat do externí služby se ujistěte, že neobsahují osobní údaje nebo tajné informace. Vhodnou praxí je anonimizace dokumentů a použití interně schválených účtů. U kritických procesů zvažte nasazení on-premise modelu nebo služby s certifikací požadovanou vaší institucí.</p>
+
+              <h3 id="sprava-zpetne-vazby">Správa zpětné vazby</h3>
+              <p>Každý prompt i výstup evidujte – například v interním sdíleném úložišti. Poznamenejte, jaké úpravy byly potřeba a jaká byla konečná kvalita odpovědi. Pomůže to při auditních stopách a umožní kolegům navázat na vaše zkušenosti.</p>
+
+              <h2 id="doporuceny-postup">Doporučený pracovní postup</h2>
+              <p>1) Definujte cíl a vyberte vhodný nástroj. 2) Připravte strukturovaný prompt včetně role, kontextu a požadovaného formátu. 3) Nechte model vytvořit návrh a následně jej validujte dalším kolem dotazů. 4) Výstup vždy zkontrolujte člověkem odpovědným za danou agendu. 5) Zaznamenejte zkušenosti do interní dokumentace, aby je mohli využít další kolegové.</p>
+            </div>
           </div>
         </article>
     </div>
