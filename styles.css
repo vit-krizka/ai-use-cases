@@ -952,6 +952,94 @@ h3 {
     color: var(--primary);
 }
 
+.ai-law-series {
+    display: grid;
+    gap: clamp(1.25rem, 4vw, 2rem);
+}
+
+@media (min-width: 768px) {
+    .ai-law-series {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+.ai-law-series .series-card {
+    background: #fff;
+    border-radius: 18px;
+    padding: clamp(1rem, 3vw, 1.75rem);
+    border: 1px solid rgba(32, 115, 21, 0.15);
+    box-shadow: 0 10px 24px -18px rgba(22, 31, 38, 0.4);
+}
+
+.ai-law-series .series-card h4 {
+    margin-top: 0;
+    color: var(--primary);
+}
+
+.ai-law-series .series-card ol {
+    margin: 0;
+    padding-left: 1.25rem;
+}
+
+.ai-law-resources {
+    margin-top: clamp(2rem, 6vw, 3rem);
+    padding: clamp(1.5rem, 5vw, 2.5rem);
+    border-radius: 20px;
+    background: linear-gradient(135deg, rgba(32, 115, 21, 0.08), rgba(255, 255, 255, 0.95));
+    border: 1px solid rgba(32, 115, 21, 0.2);
+    box-shadow: 0 18px 36px -28px rgba(22, 31, 38, 0.45);
+}
+
+.ai-law-resources__grid {
+    display: grid;
+    gap: clamp(1.25rem, 4vw, 2.25rem);
+    margin-top: clamp(1rem, 3vw, 1.5rem);
+}
+
+@media (min-width: 640px) {
+    .ai-law-resources__grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (min-width: 992px) {
+    .ai-law-resources__grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+}
+
+.ai-law-resources .resources-card {
+    background: #fff;
+    border-radius: 16px;
+    padding: clamp(1rem, 3vw, 1.75rem);
+    border: 1px solid rgba(32, 115, 21, 0.12);
+    box-shadow: 0 12px 28px -24px rgba(22, 31, 38, 0.35);
+}
+
+.ai-law-resources .resources-card h4 {
+    margin-top: 0;
+}
+
+.ai-law-resources .resources-card ul {
+    margin: 0;
+    padding-left: 1.2rem;
+}
+
+.ai-law-standards {
+    margin-top: clamp(1.75rem, 5vw, 2.5rem);
+    padding-top: clamp(1.25rem, 4vw, 1.75rem);
+    border-top: 1px solid rgba(32, 115, 21, 0.2);
+}
+
+.ai-law-standards h4 {
+    margin-top: 0;
+}
+
+.ai-law-standards ul {
+    margin: 0;
+    padding-left: 1.25rem;
+}
+
 .enum-h3 {
     counter-reset: h3-counter;
 }
