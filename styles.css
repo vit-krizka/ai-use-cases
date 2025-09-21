@@ -709,6 +709,108 @@ footer .footer-bottom p {
     padding-top: 1rem;
 }
 
+/* ===== AI gramotnost – doporučení ===== */
+.ai-literacy-upgrade {
+    margin-top: 3rem;
+}
+
+.ai-literacy-upgrade h3 {
+    font-size: clamp(1.5rem, 2vw + 1rem, 2.25rem);
+    margin-bottom: 1.5rem;
+}
+
+.ai-literacy-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1.5rem;
+}
+
+.ai-literacy-card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    padding: 1.75rem 1.5rem;
+    border-radius: 16px;
+    background: linear-gradient(135deg, #FFFFFF 0%, #F3F8F5 55%, #E0EEE6 100%);
+    color: inherit;
+    text-decoration: none;
+    box-shadow: 0 20px 40px -30px rgba(32, 115, 21, 0.45);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.ai-literacy-card:focus-visible {
+    outline: 3px solid #207315;
+    outline-offset: 4px;
+}
+
+.ai-literacy-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 22px 44px -26px rgba(32, 115, 21, 0.55);
+}
+
+.ai-literacy-card__icon {
+    width: 48px;
+    height: 48px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+    background: radial-gradient(circle at 30% 30%, rgba(32, 115, 21, 0.18), rgba(32, 115, 21, 0));
+}
+
+.ai-literacy-card__icon svg {
+    width: 100%;
+    height: 100%;
+}
+
+.ai-literacy-card__kicker {
+    margin: 0;
+    font-size: 1rem;
+    font-weight: 700;
+    color: #121212;
+}
+
+.ai-literacy-card__title {
+    margin: 0;
+    font-size: 1.05rem;
+    font-weight: 600;
+    color: #207315;
+}
+
+.ai-literacy-card--disabled {
+    cursor: not-allowed;
+    background: linear-gradient(135deg, #F7F8FA 0%, #EEF1F3 60%, #E3E7EB 100%);
+    box-shadow: none;
+    border: 1px dashed #C4CBD2;
+}
+
+.ai-literacy-card--disabled .ai-literacy-card__kicker {
+    color: #5E6770;
+}
+
+.ai-literacy-card--disabled .ai-literacy-card__title {
+    color: #8C939B;
+}
+
+.ai-literacy-card--disabled .ai-literacy-card__icon {
+    background: none;
+}
+
+@media (max-width: 600px) {
+    .ai-literacy-card {
+        padding: 1.5rem 1.25rem;
+    }
+
+    .ai-literacy-card__kicker {
+        font-size: 0.95rem;
+    }
+
+    .ai-literacy-card__title {
+        font-size: 1rem;
+    }
+}
+
 /* ===== Banner ===== */
 .hero-banner {
     display: flex;
