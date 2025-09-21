@@ -18,7 +18,7 @@
     <div class="header-bar">
       <button class="hamburger" id="menuBtn" aria-label="Menu" aria-controls="mobile-menu" aria-expanded="false">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-          stroke-linejoin="round">
+          stroke-linejoin="round" aria-hidden="true">
           <line x1="3" y1="12" x2="21" y2="12"></line>
           <line x1="3" y1="6" x2="21" y2="6"></line>
           <line x1="3" y1="18" x2="21" y2="18"></line>
@@ -47,9 +47,9 @@
 
   <div id="mobile-menu" class="mobile-menu" aria-hidden="true">
     <div class="mobile-menu__overlay" data-mobile-menu-close></div>
-    <div class="mobile-menu__panel" role="dialog" aria-modal="true">
+    <div class="mobile-menu__panel" role="dialog" aria-modal="true" aria-labelledby="mobile-menu-title">
       <div class="mobile-menu__header">
-        <span>Menu</span>
+        <span id="mobile-menu-title">Menu</span>
         <button class="mobile-menu__close" type="button" data-mobile-menu-close
           aria-label="Zavřít menu">&times;</button>
       </div>
@@ -76,7 +76,6 @@
     </div>
   </div>
 
-
   <main id="main">
     <div>
       <section class="main-content">
@@ -93,10 +92,122 @@
         </p>
         <p>
           Pro veřejnou správu je AI compliance nezbytná k ochraně práv občanů a zachování důvěry v digitální služby.
-          Pomáhá
-          propojit inovace s legislativními požadavky a zajistit, že AI projekty jsou dlouhodobě udržitelné.
+          Pomáhá propojit inovace s legislativními požadavky a zajistit, že AI projekty jsou dlouhodobě udržitelné.
         </p>
 
+        <hr>
+
+        <section aria-labelledby="serialy-nadpis">
+          <h3 id="serialy-nadpis">Seriály, které připravujeme</h3>
+          <p>Na průsečíku práva a technologií spouštíme dva dlouhodobé seriály. Články budeme zveřejňovat postupně.</p>
+
+          <div class="grid-2">
+            <section class="card">
+              <h4>AI a právo (populárně-naučné)</h4>
+              <ol>
+                <li><a href="/clanky/materialni-prameny-ai-prava.html">Materiální prameny AI práva</a></li>
+                <li>Formální prameny AI práva</li>
+                <li>AI právo jako samostatné právní odvětví?</li>
+                <li>Základní principy AI práva</li>
+                <li>Fyzická, právnická a elektronická osoba?</li>
+                <li>Akt o umělé inteligenci (AI Act)</li>
+                <li>AI a ochrana soukromí</li>
+                <li>Autonomní rozhodování</li>
+                <li>Generativní AI a autorské právo</li>
+                <li>AI a diskriminace</li>
+                <li>Odpovědnost za újmu způsobenou AI</li>
+                <li>Autonomní doprava</li>
+              </ol>
+            </section>
+
+            <section class="card">
+              <h4>AI compliance (odborné)</h4>
+              <ol>
+                <li>Řízení a odpovědnosti: role, pravomoci, RACI a „accountability by design“</li>
+                <li>Klasifikace a rizika: zákazané, vysokorizikové a ostatní systémy dle AI Act</li>
+                <li>Posouzení dopadů: AIA/DPIA a jejich provázání (GDPR čl. 35)</li>
+                <li>Řízení dat: kvalita, původ, datová linie a ochrana osobních údajů</li>
+                <li>Technická dokumentace a záznamy: co musí být dohledatelné a auditovatelné</li>
+                <li>Transparentnost a informování uživatelů v praxi (označování, oznámení, UX)</li>
+                <li>Lidský dohled a zásahy: návrh kontrolních bodů a „human-in-the-loop“</li>
+                <li>Kyberbezpečnost a robustnost: vazby na NIS2 a bezpečnostní testování</li>
+                <li>Posuzování shody, QMS a označení CE u vysokorizikových systémů</li>
+                <li>Povinnosti poskytovatelů GPAI/foundation modelů a kodex praxe</li>
+                <li>Monitoring po uvedení na trh, incidenty a hlášení dozorovým orgánům</li>
+                <li>Veřejné zakázky: jak poptat a smluvně zajistit AI compliance (ZZVZ)</li>
+                <li>Standardy a „best practice“: ISO/IEC 42001 (AIMS), CEN/CENELEC JTC 21</li>
+                <li>MLOps a životní cyklus modelu: metriky, verze, „model registry“, retraining</li>
+                <li>Vzdělávání a kultura: školení, AI gramotnost a interní metodiky</li>
+              </ol>
+            </section>
+          </div>
+        </section>
+
+        <hr>
+
+        <section aria-labelledby="zdroje-nadpis">
+          <h3 id="zdroje-nadpis">Užitečné zdroje a předpisy</h3>
+
+          <div class="grid-3">
+            <section class="card">
+              <h4>České strategie</h4>
+              <ul>
+                <li><a
+                    href="https://mpo.gov.cz/assets/cz/podnikani/2024/9/Narodni-strategie-umele-intelience-CR-2030.pdf"
+                    target="_blank" rel="noopener noreferrer">Národní strategie umělé inteligence ČR 2030 (MPO,
+                    2024)</a></li>
+                <li><a href="https://vlada.gov.cz/assets/evropske-zalezitosti/umela-inteligence/NAIS_kveten_2019.pdf"
+                    target="_blank" rel="noopener noreferrer">Národní strategie AI v ČR (2019)</a></li>
+                <li><a href="https://mpo.gov.cz/cz/podnikani/digitalni-ekonomika/umela-inteligence/" target="_blank"
+                    rel="noopener noreferrer">Tematický rozcestník MPO: Umělá inteligence</a></li>
+              </ul>
+            </section>
+
+            <section class="card">
+              <h4>Evropská strategie</h4>
+              <ul>
+                <li><a
+                    href="https://digital-strategy.ec.europa.eu/en/policies/european-approach-artificial-intelligence"
+                    target="_blank" rel="noopener noreferrer">Evropský přístup k umělé inteligenci (strategie excelence
+                    a důvěry)</a></li>
+                <li><a href="https://digital-strategy.ec.europa.eu/en/policies/plan-ai" target="_blank"
+                    rel="noopener noreferrer">Koordinovaný plán pro AI (EU)</a></li>
+                <li><a href="https://digital-strategy.ec.europa.eu/en/policies/ai-office" target="_blank"
+                    rel="noopener noreferrer">Evropský úřad pro AI (AI Office)</a></li>
+              </ul>
+            </section>
+
+            <section class="card">
+              <h4>Klíčové právní předpisy</h4>
+              <ul>
+                <li><a href="https://eur-lex.europa.eu/eli/reg/2024/1689/oj/eng" target="_blank"
+                    rel="noopener noreferrer">Nařízení (EU) 2024/1689 – Akt o umělé inteligenci (AI Act)</a></li>
+                <li><a href="https://eur-lex.europa.eu/eli/reg/2016/679/oj/eng" target="_blank"
+                    rel="noopener noreferrer">Nařízení (EU) 2016/679 – GDPR</a></li>
+                <li><a href="https://eur-lex.europa.eu/eli/dir/2022/2555/oj/eng" target="_blank"
+                    rel="noopener noreferrer">Směrnice (EU) 2022/2555 – NIS2</a></li>
+                <li><a href="https://eur-lex.europa.eu/eli/reg/2024/1183/oj/eng" target="_blank"
+                    rel="noopener noreferrer">Nařízení (EU) 2024/1183 – eIDAS 2 / Evropská digitální identita</a></li>
+                <li><a href="https://eur-lex.europa.eu/eli/reg/2023/2854/oj/eng" target="_blank"
+                    rel="noopener noreferrer">Nařízení (EU) 2023/2854 – Data Act</a></li>
+                <li><a href="https://eur-lex.europa.eu/eli/reg/2022/868/oj/eng" target="_blank"
+                    rel="noopener noreferrer">Nařízení (EU) 2022/868 – Data Governance Act</a></li>
+                <li><a href="https://eur-lex.europa.eu/eli/C/2024/1459/oj/eng" target="_blank"
+                    rel="noopener noreferrer">Rozhodnutí Komise C/2024/390 – zřízení Evropského úřadu pro AI</a></li>
+              </ul>
+            </section>
+          </div>
+
+          <details class="note" aria-label="Poznámka ke standardům">
+            <summary>Standardy a metodiky (doporučení)</summary>
+            <ul>
+              <li><a href="https://www.iso.org/standard/42001" target="_blank" rel="noopener noreferrer">ISO/IEC
+                  42001:2023 – Systémy řízení AI (AIMS)</a></li>
+              <li><a href="https://www.cencenelec.eu/areas-of-work/cen-cenelec-topics/artificial-intelligence/"
+                  target="_blank" rel="noopener noreferrer">CEN/CENELEC JTC 21 – standardizace pro AI</a></li>
+            </ul>
+          </details>
+        </section>
       </section>
     </div>
   </main>
@@ -114,7 +225,7 @@
           <h3>Informace</h3>
           <p><a href="podminky.html">Podmínky využití a ochrana osobních údajů</a></p>
           <p><a href="https://www.dia.gov.cz/cs/prohlaseni-o-pristupnosti" target="_blank"
-              rel="noopener noreferrer">Prohlášení o přístupnosti</a></p>
+              rel="noopener noreferrer">Prohlášení o přístupnosti</a></p>
         </section>
         <section class="footer-block">
           <h3>Kontakty</h3>
@@ -142,7 +253,7 @@
             <img src="logos/dia_logo.svg" alt="DIA logo">
           </div>
           <div class="footer-block">
-            <p>Vytvořeno v rámci projektu ROPIM – Reforma pro optimalizaci, implementaci a metodické řízení
+            <p>Vytvořeno v rámci projektu ROPIM – Reforma pro optimalizaci, implementaci a metodické řízení
               digitalizovaných služeb vč. jejich kapacitního plánování a komunikaci klientům veřejné správy,
               financovaného Evropskou unií NextGeneration.</p>
             <p>REG. Č.: CZ.31.5.0/0.0/.0./23_106/0008503</p>
@@ -150,7 +261,7 @@
         </div>
       </section>
       <div class="footer-bottom">
-        <p>2025 © Digitální a informační agentura • Informace jsou poskytovány v souladu se zákonem č. 106/1999 Sb.</p>
+        <p>2025 © Digitální a informační agentura • Informace jsou poskytovány v souladu se zákonem č. 106/1999 Sb.</p>
       </div>
     </div>
   </footer>
