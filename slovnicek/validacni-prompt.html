@@ -17,8 +17,7 @@
   <header>
     <div class="header-bar">
       <button class="hamburger" id="menuBtn" aria-label="Menu" aria-controls="mobile-menu" aria-expanded="false">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-          stroke-linejoin="round">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
           <line x1="3" y1="12" x2="21" y2="12"></line>
           <line x1="3" y1="6" x2="21" y2="6"></line>
           <line x1="3" y1="18" x2="21" y2="18"></line>
@@ -37,6 +36,7 @@
         <li><a href="../project.html">Katalog</a></li>
         <li><a href="../ai-gramotnost.html">AI gramotnost</a></li>
         <li><a href="../ai-compliance.html">AI compliance</a></li>
+        <li><a href="../prompt-inzenyrstvi.html">Prompt inženýrství</a></li>
         <li><a href="../clanky.html">Články</a></li>
         <li><a href="../slovnicek.html" aria-current="page">Slovníček</a></li>
         <li><a href="../wiki.html">Přidat use case</a></li>
@@ -56,8 +56,7 @@
           <li class="mobile-menu__item mobile-menu__item--catalog">
             <div class="mobile-menu__row">
               <a href="../project.html">Katalog</a>
-              <button class="mobile-menu__toggle" type="button" aria-expanded="false"
-                aria-controls="mobile-catalog-list">
+              <button class="mobile-menu__toggle" type="button" aria-expanded="false" aria-controls="mobile-catalog-list">
                 <span class="sr-only">Rozbalit menu katalogu</span>
                 <span aria-hidden="true">▶</span>
               </button>
@@ -77,34 +76,57 @@
   <main id="main">
     <div>
       <article class="glossary-entry">
-        <header class="glossary-entry__header">
-          <p class="glossary-entry__tag">praktická technika</p>
+        <div class="glossary-entry__header">
+          <p class="glossary-entry__tag">technický pojem</p>
           <h2>Validační prompt</h2>
-          <p class="glossary-entry__alt-name">Anglicky: Validation prompt</p>
-        </header>
+          <p class="glossary-entry__alt-name">validation prompt</p>
+        </div>
+
         <section>
-          <h3>Co říká definice</h3>
-          <p>Validační prompt je cíleně připravená instrukce, která vede generativní nebo jazykový model k tomu, aby
-            zkontroloval předchozí výstup – například porovnal odpověď s požadavky zadání, vyhledal chyby nebo potvrdil,
-            že jsou splněna daná kritéria. Obvykle navazuje na hlavní prompt a využívá stejné konverzace, aby model mohl
-            posoudit svůj vlastní výsledek nebo výsledek jiného systému.</p>
+          <p>Validační prompt (validation prompt) pomáhá úředníkům pochopit, jak mohou technologie posílit služby pro občany a zároveň zachovat odpovědnost veřejné správy.</p>
         </section>
+
+        <section class="highlight">
+          <p><strong>Validační prompt</strong> Validační prompt je speciálně formulovaný vstup pro jazykový nebo generativní model, jehož cílem je ověřit správnost, úplnost či konzistenci výstupu modelu. Typicky se používá k tomu, aby model sám sebe znovu zkontroloval, vyhodnotil varianty odpovědí nebo potvrdil, zda výsledek splňuje stanovená kritéria. Ve veřejné správě může validační prompt sloužit například k ověření, zda návrh textu odpovídá legislativním požadavkům nebo zda jsou vygenerovaná data v souladu s definovaným formátem.</p>
+        </section>
+
         <section>
-          <h3>Vysvětlení pro úředníky</h3>
-          <p>Představte si validační prompt jako druhou kontrolu po prvním návrhu textu či analýzy. Nejprve zadáte modelu
-            hlavní požadavek (například návrh dopisu). Následně použijete validační prompt, kterým model požádáte, aby
-            ověřil, zda jeho návrh splňuje konkrétní podmínky – třeba jestli obsahuje všechny povinné náležitosti nebo
-            zda někde nezůstal chybný údaj. Takový postup pomáhá zachytit chyby dříve, než se materiál odešle dál.</p>
+          <h3>Co Validační prompt znamená pro veřejnou správu</h3>
+          <p>Validační prompt (validation prompt) nastavuje společný jazyk mezi zadavateli digitalizačních projektů a odborníky z praxe. Když úředník ví, že Validační prompt je speciálně formulovaný vstup pro jazykový nebo generativní model, jehož cílem je ověřit správnost, úplnost či konzistenci výstupu modelu, dokáže lépe popsat očekávané přínosy a připravit argumenty pro vedení i politické představitele.</p>
+          <p>Důsledné pochopení tohoto pojmu zvyšuje schopnost plánovat rozvoj služeb pro občany. Úřad pak snáze rozpozná, které procesy se vyplatí automatizovat, kde je nutné posílit dohled člověka a jaké dopady může mít nasazení nového řešení na zaměstnance i klienty.</p>
         </section>
+
         <section>
-          <h3>Příklad z praxe</h3>
-          <p>Úředník nechá model připravit odpověď na žádost o informace. Poté zadá validační prompt ve znění „Zkontroluj
-            prosím předchozí návrh odpovědi a potvrď, zda obsahuje všechny povinné části podle zákona 106/1999 Sb. Pokud
-            něco chybí, navrhni doplnění.“ Model následně vypíše, že odpověď neobsahuje poučení o odvolání a nabídne
-            text, který tuto část doplní.</p>
+          <h3>Jak Validační prompt využít v praxi úřadu</h3>
+          <p>Prvním krokem je zmapovat agendy, ve kterých by se tento koncept mohl uplatnit. Patří sem inventura dostupných dat, posouzení bezpečnostních požadavků i rozhodnutí, zda je vhodné vlastní řešení nebo spolupráce s externím partnerem.</p>
+          <p>Následovat by měly pilotní projekty s jasnými metrikami úspěchu. Díky nim lze ověřit, zda řešení založené na tomto pojmu přináší očekávané výsledky, a zároveň nastavit provozní model – kdo řešení spravuje, kdo zajišťuje aktualizace a jak se budou sbírat zpětné vazby od uživatelů.</p>
         </section>
+
+        <section>
+          <h3>Na co si dát pozor, když využíváme validační prompt</h3>
+          <p>Technologie spojené s tímto pojmem jsou citlivé na kvalitu dat, kybernetickou bezpečnost i organizační změny. Bez jasně stanovených odpovědností může dojít k tomu, že projekt ztratí podporu a přínosy se neprojeví.</p>
+          <p>Je proto nutné průběžně vyhodnocovat rizika a nastavovat transparentní komunikaci s občany. Pokud úřad vysvětlí, proč tento přístup pomáhá zrychlit nebo zpřesnit služby, zároveň musí popsat i omezení a způsoby kontroly, aby si udržel důvěru veřejnosti.</p>
+        </section>
+
+        <section class="ai-gramotnost">
+          <h3>AI GRAMOTNOST</h3>
+          <h4>Proč to má znát i úředník?</h4>
+          <p><a href="../ai-gramotnost.html">AI gramotnost</a> znamená rozumět základním principům, jako je Validační prompt (validation prompt). Úředník, který pojem ovládá, umí klást lepší otázky dodavatelům i interním týmům a rychleji pozná, zda technologie odpovídá veřejnému zájmu.</p>
+          <p>Znalost pojmu zvyšuje schopnost vysvětlit kolegům, jaké jsou možnosti a limity řešení. Díky tomu se do projektů zapojují jen ty procesy, kde tento přístup dává smysl, a zároveň se nastaví realistická očekávání vedení i občanů.</p>
+          <p>Když úředník dokáže přiblížit občanům, co tento pojem znamená, posiluje důvěru v inovace a ukazuje, že digitalizace není samoúčelná. Přehled v pojmech pomáhá také předcházet obavám a podpořit otevřený dialog o využití umělé inteligence.</p>
+        </section>
+
+        <section>
+          <h3>Související pojmy</h3>
+          <ul>
+            <li><a href="algoritmus.html">Algoritmus (algorithm)</a></li>
+            <li><a href="automatizace.html">Automatizace (automation)</a></li>
+            <li><a href="captcha.html">CAPTCHA – CAPTCHA (Completely Automated Public Turing test to tell Computers and Humans Apart)</a></li>
+          </ul>
+        </section>
+
         <nav class="glossary-entry__back">
-          <a href="../slovnicek.html">&larr; Zpět na Slovníček</a>
+          <a href="../slovnicek.html" aria-label="Zpět na Slovníček">&larr; zpět na slovníček</a>
         </nav>
       </article>
     </div>
@@ -122,21 +144,17 @@
         <section class="footer-block">
           <h3>Informace</h3>
           <p><a href="../podminky.html">Podmínky využití a ochrana osobních údajů</a></p>
-          <p><a href="https://www.dia.gov.cz/cs/prohlaseni-o-pristupnosti" target="_blank"
-              rel="noopener noreferrer">Prohlášení o&nbsp;přístupnosti</a></p>
+          <p><a href="https://www.dia.gov.cz/cs/prohlaseni-o-pristupnosti" target="_blank" rel="noopener noreferrer">Prohlášení o&nbsp;přístupnosti</a></p>
         </section>
         <section class="footer-block">
           <h3>Kontakty</h3>
           <p><a href="mailto:kc@dia.gov.cz">kc@dia.gov.cz</a></p>
           <ul class="footer-social">
-            <li><a href="https://www.facebook.com/digitalniainformacniagentura" target="_blank"
-                rel="noreferrer nofollow">Facebook</a></li>
-            <li><a href="https://www.instagram.com/agentura_dia/" target="_blank" rel="noreferrer nofollow">Instagram</a>
-            </li>
+            <li><a href="https://www.facebook.com/digitalniainformacniagentura" target="_blank" rel="noreferrer nofollow">Facebook</a></li>
+            <li><a href="https://www.instagram.com/agentura_dia/" target="_blank" rel="noreferrer nofollow">Instagram</a></li>
             <li><a href="https://x.com/agentura_dia" target="_blank" rel="noreferrer nofollow">X</a></li>
             <li><a href="https://www.youtube.com/@agentura_dia" target="_blank" rel="noreferrer nofollow">YouTube</a></li>
-            <li><a href="https://www.linkedin.com/company/digitalniainformacniagentura" target="_blank"
-                rel="noreferrer nofollow">LinkedIn</a></li>
+            <li><a href="https://www.linkedin.com/company/digitalniainformacniagentura" target="_blank" rel="noreferrer nofollow">LinkedIn</a></li>
           </ul>
         </section>
       </div>
@@ -150,9 +168,7 @@
             <img src="../logos/dia_logo.svg" alt="DIA logo">
           </div>
           <div class="footer-block">
-            <p>Vytvořeno v&nbsp;rámci projektu ROPIM – Reforma pro optimalizaci, implementaci a metodické řízení
-              digitalizovaných služeb vč. jejich kapacitního plánování a komunikaci klientům veřejné správy,
-              financovaného Evropskou unií NextGeneration.</p>
+            <p>Vytvořeno v&nbsp;rámci projektu ROPIM – Reforma pro optimalizaci, implementaci a metodické řízení digitalizovaných služeb vč. jejich kapacitního plánování a komunikaci klientům veřejné správy, financovaného Evropskou unií NextGeneration.</p>
             <p>REG. Č.: CZ.31.5.0/0.0/.0./23_106/0008503</p>
           </div>
         </div>
