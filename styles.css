@@ -202,6 +202,91 @@ address {
     line-height: 1;
 }
 
+/* ===== AI gramotnost – akční bannery ===== */
+.ai-literacy-actions {
+    margin-top: 3rem;
+}
+
+.ai-literacy-actions__title {
+    font-size: clamp(1.5rem, 2vw + 1rem, 2.25rem);
+    margin-bottom: 1.5rem;
+}
+
+.ai-literacy-grid {
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+
+.ai-literacy-card {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    background: #ffffff;
+    border-radius: 16px;
+    padding: 1.75rem 1.5rem;
+    text-decoration: none;
+    color: inherit;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+    transition: transform 150ms ease, box-shadow 150ms ease;
+    min-height: 100%;
+}
+
+.ai-literacy-card:hover,
+.ai-literacy-card:focus-visible {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 32px rgba(32, 115, 21, 0.18);
+}
+
+.ai-literacy-card:focus-visible {
+    outline: 3px solid var(--primary);
+    outline-offset: 4px;
+}
+
+.ai-literacy-card__icon {
+    width: 64px;
+    height: 64px;
+    border-radius: 16px;
+    background: linear-gradient(135deg, rgba(32, 115, 21, 0.1), rgba(32, 115, 21, 0.2));
+    display: grid;
+    place-items: center;
+}
+
+.ai-literacy-card__icon svg {
+    width: 48px;
+    height: 48px;
+}
+
+.ai-literacy-card__motto {
+    margin: 0;
+    font-weight: 600;
+    font-size: 1.05rem;
+    color: #1a1a1a;
+}
+
+.ai-literacy-card__title {
+    margin: 0;
+    font-size: 1rem;
+    color: var(--primary);
+    font-weight: 700;
+}
+
+.ai-literacy-card--disabled {
+    background: #f0f0f0;
+    color: #7a7a7a;
+    box-shadow: none;
+    border: 1px dashed #c7c7c7;
+    cursor: not-allowed;
+}
+
+.ai-literacy-card--disabled .ai-literacy-card__icon {
+    background: #ebebeb;
+}
+
+.ai-literacy-card--disabled .ai-literacy-card__title {
+    color: #7a7a7a;
+}
+
 .popup .popup-close:focus {
     outline: 2px solid #fff;
     outline-offset: 2px;
