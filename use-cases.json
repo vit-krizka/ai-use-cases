@@ -720,5 +720,23 @@
     "Označení zdroje": null,
     "Obor činnosti": "Jiné: Interní IT podpora a správa znalostí",
     "Kategorie use case": "Komunikace a klientský servis; Analýza dokumentů a dat; Generování obsahu;Optimalizace procesů a zdrojů"
+  },
+  {
+    "id": 41,
+    "Název projektu": "Webová AI asistentka MAICA",
+    "Typ umělé inteligence": "Produkt využívá sadu modelů generativní AI (zejména modely OpenAI provozované v zabezpečeném prostředí v MS Azure) v kombinaci s vlastními algoritmy pro extrakci a zpracování informací z webů.",
+    "Hlavní kategorie use case": "Generování obsahu a chatboti úředníků",
+    "Krátký popis": "Projekt se zaměřuje na nasazení a provoz AI chatbota MAICA, který je určen pro města, obce a kraje jako digitální asistent pro komunikaci s občany. Cílem je automatizovat poskytování informací, zrychlit orientaci v agendách veřejné správy a snížit administrativní zátěž zaměstnanců úřadu. MAICA funguje na základě pokročilých AI technologií, které dokážou odpovídat na dotazy v přirozeném jazyce, a to na základě informací z webu města, vyhlášek, formulářů, kalendářů a dalších povolených zdrojů.",
+    "Řešený problém": "Úřady a samosprávy čelí vysokému počtu opakujících se dotazů ze strany občanů (např. kdy se vyváží odpad, kde vyřídit občanku, jaké jsou termíny zasedání zastupitelstva, kde najdu formuláře aj.). Tyto dotazy zatěžují pracovníky podatelny nebo odborů a zpomalují provoz. Zároveň je pro občany často obtížné dohledat aktuální a správné informace na webu. Produkt MAICA řeší tyto problémy tím, že umožňuje občanům pokládat dotazy v běžné řeči a AI chatbot jim okamžitě poskytne odpověď na základě oficiálních dat.",
+    "Instituce": "Město Louny",
+    "Dodavatel": "MULTIMA AI s.r.o.",
+    "Stav projektu": "Produkce",
+    "Očekávané dopady": "Zkrácení doby vyřízení dotazu občana z minut/hodin na okamžitou odpověď (v řádech sekund) \nSnížení zátěže podatelny a vybraných odborů\nZvýšení dostupnosti úřadu - MAICA funguje 24/7 i mimo úřední hodiny\nVyšší spokojenost občanů – jednoduché a srozumitelné odpovědi bez složitého hledání",
+    "Vyhodnocení úspěšnosti": "Míra správně zodpovězených dotazů: více než 90 % - průměrný čas odpovědi: 5 - 20 sekund (v závislosti na komplextnosti otázky) - počet dotazů vyřešených bez nutnosti zásahu úředníka: stovky měsíčně (dle velikosti obce/města) - pozitivní zpětná vazba od občanů (pravidelný sběr a vyhodnocování zpětné vazby)",
+    "Poučení pro příští projekty": "80% dotazů se opakuje na podobná témata - vydání dokladů, místní poplatky, svozový kalendář. Zaměřit se na průběžné zlepšování produktu v produkčním provozu (nelze vyladit veškeré možné kombinace otázek dopředu). Informovat občany a veřejnost o tom, jak s asistentem pracovat tak, aby dostali co nejrelevantnější odpověď.",
+    "Zdroj": "https://www.multima.ai",
+    "Označení zdroje": "Webová AI asistentka MAICA",
+    "Obor činnosti": "Telekomunikační a digitální infrastruktura",
+    "Kategorie use case": "Komunikace a klientský servis; Generování obsahu"
   }
 ]
