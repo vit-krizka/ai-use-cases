@@ -1,6 +1,36 @@
 /* Styl blízký dia.gov.cz – hlavní zelená #368537 */
 
 :root {
+    --font-family: Roboto, sans-serif;
+    --color-black: #000;
+    --color-white: #fff;
+    --color-transparent: hsla(0, 0%, 100%, 0);
+    --color-primary: #207315;
+    --color-primary-dark: #46ad48;
+    --color-primary-100: #f7fff5;
+    --color-primary-200: #e8f5e4;
+    --color-primary-300: #d1eec9;
+    --color-primary-400: #a2d893;
+    --color-primary-500: #6ba45c;
+    --color-primary-600: #40852e;
+    --color-primary-700: #207315;
+    --color-primary-800: #125600;
+    --color-primary-900: #214021;
+    --color-primary-950: #1f311f;
+    --color-secondary: #2e2d2c;
+    --color-secondary-light: #bdbcbc;
+    --color-secondary-dark: #767676;
+    --color-secondary-50: #fafafa;
+    --color-secondary-100: #f6f6f6;
+    --color-secondary-200: #f5f5f5;
+    --color-secondary-300: #eaeaea;
+    --color-secondary-400: #e7e7e7;
+    --color-secondary-500: #ddd;
+    --color-secondary-600: #616161;
+    --color-secondary-700: #424242;
+    --color-secondary-800: #262524;
+    --color-secondary-900: #1d1c1b;
+
     --primary: #207315;
     /* DIA green */
     --secondary: #f2f6fa;
@@ -253,11 +283,10 @@ h2 .download-btn-guard {
     display: inline-block;
     width: 22px;
     height: 22px;
-    float: right;
 }
 
 .download-btn:focus {
-    outline: 2px solid var(--primary);
+    outline: 2px solid var(--color-primary);
     outline-offset: 2px;
 }
 
@@ -307,14 +336,19 @@ body>header h1 a {
     color: inherit;
 }
 
+.header-divider {
+  height: 1px;
+  background-color: #bdbcbc;
+  opacity: 0.2;
+}
+
 
 .main-nav {
     position: fixed;
     top: var(--header-height);
     left: 0;
     width: 100%;
-    background: var(--primary);
-    color: #fff;
+    background: #fff;
     z-index: 950;
 }
 
@@ -353,14 +387,15 @@ body>header h1 a {
 
 /* po najetí myší na .main-nav__list li ztmavit barvu*/
 .main-nav__list li:hover a {
-    background-color: rgb(26, 93, 17);
+    background-color: #46AD48;
     font-weight: 800;
 }
 
 .main-nav__list a {
-    color: #fff;
+    color: rgb(46 45 44);
     text-decoration: none;
-    font-weight: 600;
+    font-size: var(1.125rem);
+    font-weight: 500;
     padding: 0.5rem 0.25rem;
     position: relative;
     display: inline-flex;
@@ -392,7 +427,7 @@ body>header h1 a {
 /* .main-nav__cta {
     padding: 0.5rem 1rem;
     background: #fff;
-    color: var(--primary) !important;
+    color: var(--color-primary) !important;
     border-radius: 999px;
 }
 
@@ -428,7 +463,7 @@ body>header h1 a {
 }
 
 .hamburger:focus {
-    outline: 2px solid var(--primary);
+    outline: 2px solid var(--color-primary);
     outline-offset: 2px;
 }
 
@@ -578,11 +613,11 @@ body>header h1 a {
 
 .mobile-menu__submenu li>a:hover,
 .mobile-menu__submenu li>a:focus {
-    background: var(--secondary);
+    background: var(--color-secondary);
 }
 
 .mobile-menu__submenu li>a.active {
-    background: var(--secondary);
+    background: var(--color-secondary);
     font-weight: 600;
 }
 
@@ -863,7 +898,7 @@ nav a {
 nav a:hover,
 nav a:focus,
 nav a.active {
-    background: var(--primary);
+    background: var(--color-primary);
     color: #fff;
 }
 
@@ -895,7 +930,7 @@ nav ul ul a {
 
 .category-toggle:hover,
 .category-toggle:focus {
-    background: var(--primary);
+    background: var(--color-primary);
     color: #fff;
 }
 
@@ -942,14 +977,14 @@ h2 {
     margin-top: 0;
     font-size: 1.7rem;
     line-height: 120%;
-    color: var(--primary);
+    color: var(--color-primary);
 }
 
 h3 {
     margin-top: 0;
     font-size: 1.25rem;
     line-height: 120%;
-    color: var(--primary);
+    color: var(--color-primary);
 }
 
 .ai-law-series {
@@ -973,7 +1008,7 @@ h3 {
 
 .ai-law-series .series-card h4 {
     margin-top: 0;
-    color: var(--primary);
+    color: var(--color-primary);
 }
 
 .ai-law-series .series-card ol {
@@ -1112,7 +1147,7 @@ h3 {
 .table-meta.card th {
     text-align: left;
     font-size: 0.95rem;
-    color: var(--primary);
+    color: var(--color-primary);
 }
 
 .main-content p {
@@ -1200,7 +1235,7 @@ h3 {
     font-size: clamp(2rem, 6vw, 3.5rem);
     font-weight: 700;
     line-height: 1;
-    color: var(--primary);
+    color: var(--color-primary);
     text-shadow: 0 12px 26px rgba(31, 65, 42, 0.2);
     transform-origin: center;
     will-change: transform;
@@ -1233,7 +1268,7 @@ h3 {
     margin: 0 auto;
     max-width: 42ch;
     font-size: clamp(1.1rem, 2vw, 1.5rem);
-    color: var(--primary);
+    color: var(--color-primary);
 }
 
 @media (max-width: 600px) {
@@ -1256,7 +1291,7 @@ h3 {
 
 .highlight {
     background: #f9f9f9;
-    border-left: 4px solid var(--primary);
+    border-left: 4px solid var(--color-primary);
     padding: 1rem;
     border-radius: 4px;
     margin-bottom: 1rem;
@@ -1280,7 +1315,7 @@ h3 {
     letter-spacing: 0.06em;
     text-transform: uppercase;
     margin-bottom: 0.5rem;
-    color: var(--primary);
+    color: var(--color-primary);
 }
 
 .ai-gramotnost h4 {
@@ -1310,7 +1345,7 @@ h3 {
 .info-grid dt {
     margin: 0;
     font-size: 1.1rem;
-    color: var(--primary);
+    color: var(--color-primary);
 }
 
 .info-grid dd {
@@ -1373,14 +1408,14 @@ h3 {
 
 .bottom-cards .card strong {
     font-size: 0.95rem;
-    color: var(--primary);
+    color: var(--color-primary);
 }
 
-.articles-section {
-    /* display: flex;
+/* .articles-section {
+    display: flex;
     flex-direction: column;
-    gap: 2.5rem; */
-}
+    gap: 2.5rem;
+} */
 
 .articles-grid {
     display: grid;
@@ -1520,7 +1555,7 @@ h3 {
 }
 
 .prompt-example code {
-    color: var(--primary);
+    color: var(--color-primary);
     font-weight: 600;
     display: block;
     font-family: monospace;
@@ -1652,7 +1687,7 @@ h3 {
 .article-detail__body h2,
 .article-detail__body h3 {
     margin-top: 0;
-    color: var(--primary);
+    color: var(--color-primary);
     font-size: 1.5rem;
 }
 
@@ -1668,7 +1703,7 @@ h3 {
 
 .article-detail__body .exkurz h3 {
     margin-top: 0;
-    color: var(--primary);
+    color: var(--color-primary);
     font-size: 1rem;
 }
 
@@ -1965,7 +2000,7 @@ h3 {
 }
 
 .category-popup .popup-close:focus {
-    outline: 2px solid var(--primary);
+    outline: 2px solid var(--color-primary);
     outline-offset: 2px;
 }
 
@@ -2223,7 +2258,7 @@ table#table-overview tr>*:first-child {
 }
 
 .glossary-entry code {
-    color: var(--primary);
+    color: var(--color-primary);
     font-weight: 600;
 }
 
@@ -2241,7 +2276,7 @@ table#table-overview tr>*:first-child {
     align-items: center;
     gap: 0.5rem;
     color: #fff;
-    background: var(--primary);
+    background: var(--color-primary);
     padding: 0.6rem 1.25rem;
     border-radius: 999px;
     box-shadow: 0 6px 16px rgba(32, 115, 21, 0.18);
@@ -2396,7 +2431,7 @@ table#table-overview tr>*:first-child {
 .ai-literacy-card__title {
     margin: 0;
     font-weight: 600;
-    color: var(--primary);
+    color: var(--color-primary);
 }
 
 .ai-literacy-card--disabled {
