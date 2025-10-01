@@ -426,7 +426,7 @@ async function initCatalog() {
       btn.setAttribute('aria-expanded', 'false');
       if (variant === 'desktop') btn.className = 'category-toggle';
       else btn.className = 'mobile-menu__category-toggle';
-      btn.innerHTML = `${catTitle}<span class="arrow" aria-hidden="true">▶</span>`;
+      btn.innerHTML = `${catTitle}<i class="bi bi-chevron-down" aria-hidden="true"></i>`;
       li.appendChild(btn);
 
       const subUl = document.createElement('ul');
