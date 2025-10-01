@@ -371,23 +371,23 @@ body>header h1 a {
 
 .main-nav__list li {
     display: flex;
-    align-items: stretch;
-    height: 100%;
-    /* margin: 0 0.25rem; */
-    width: 14.29%;
 }
 
 .main-nav__list li a {
-    display: flex;
+    display: inline-flex;
     align-items: center;
     justify-content: center;
-    width: 100%;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    width: auto;
     text-align: center;
+    transition: background-color 0.3s, font-weight 0.3s;
 }
 
 /* po najetí myší na .main-nav__list li ztmavit barvu*/
 .main-nav__list li:hover a {
-    background-color: #46AD48;
+    color: var(--color-primary);
+    background-color: rgba(70, 173, 72, 0.15); /* Jemně zelené pozadí s 15% průhledností */
     font-weight: 800;
 }
 
