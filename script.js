@@ -329,6 +329,14 @@ function createUseCaseSection(uc, categoryDescriptions) {
     <div class="card"><strong>Zdroj</strong><span>${docLink}</span></div>`;
 
   html += '</div>';
+
+  html += '<div class="card"><h3></h3>';
+  html += '</div>';
+
+  html += `<div class="highlight"><p><strong>Disclaimer / Upozornění</strong></p>
+<p>Veškeré informace uvedené v tomto katalogu byly sestaveny na základě veřejně dostupných zdrojů a mají pouze informativní charakter. Přestože usilujeme o jejich přesnost a aktuálnost, nemůžeme zaručit úplnost ani bezchybnost zde uvedených údajů. Obsah katalogu nepředstavuje právní, odborné ani závazné stanovisko a slouží výhradně k obecné orientaci.</p>
+<p>Pokud v katalogu zjistíte nesrovnalosti či nepřesnosti, prosíme, kontaktujte nás na (<a href="mailto:kc@dia.gov.cz">kc@dia.gov.cz</a>). Vaše podněty nám pomohou katalog dále zpřesňovat a rozvíjet.</p></div>`;
+
   section.innerHTML = html;
 
   return { section, category: uc['Hlavní kategorie use case']?.trim() || 'Ostatní', idStr, title: uc['Název projektu'], sectionId };
@@ -418,7 +426,7 @@ async function initCatalog() {
       btn.setAttribute('aria-expanded', 'false');
       if (variant === 'desktop') btn.className = 'category-toggle';
       else btn.className = 'mobile-menu__category-toggle';
-      btn.innerHTML = `${catTitle}<span class="arrow" aria-hidden="true">▶</span>`;
+      btn.innerHTML = `${catTitle}<i class="bi bi-chevron-down" aria-hidden="true"></i>`;
       li.appendChild(btn);
 
       const subUl = document.createElement('ul');
