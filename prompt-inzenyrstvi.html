@@ -237,59 +237,84 @@ Teprve poté ji začneme rozpracovávat do detailu.</code></pre>
                 ukládání dat, auditní logy a možnost nastavit přístupová práva pro tým.</p>
             </section>
           </section>
-          <section id="techniky">
-            <h2>3. Techniky promptování</h2>
-            <p>Techniky ukazují, jak zadání strukturovat, aby model pracoval spolehlivě. Každou z nich můžete
-              kombinovat a využít dle úkolu.</p>
-            <section id="otevreni-noveho-chatu">
-              <h3>3.1 Otevření nového chatu</h3>
-              <p>První je nutné se naučit, kdy začít nový chat. Většina modelů si pamatuje předchozí konverzace, což
-                může být výhodné
-                pro dlouhodobou práci na jednom tématu. Na druhou stranu to může vést k nechtěným zkreslením a
-                „přeučení“ modelu. Proto vždy začínejte novým chatem, když měníte téma nebo cíl.</p>
-              <p>Nový chat je také vhodný, když chcete model „resetovat“ a získat čerstvý pohled bez
-                vlivu předchozích odpovědí.
-              </p>
-              <p>Stejně tak je dobré začít nový chat, pokud jste s výstupem nespokojeni a chcete zkusit jiný přístup.
-                Tímto způsobem můžete experimentovat s různými styly promptů a zjistit, který funguje nejlépe pro
-                váš konkrétní úkol. Pokud model začne halucinovat, je to také vhodný okamžik pro otevření nového chatu.
-              </p>
-            </section>
-            <section id="role-a-persony">
-              <h3>3.2 Role a persony</h3>
-              <p>Role pomáhá modelu zvolit tón a perspektivu. V oblasti veřejné správy jde často o právníka, metodika
-                nebo tiskového mluvčího. Personu vyslovte v první větě promptu a připomeňte, pro koho je výstup určen.
-              </p>
-              <pre
-                class="prompt-example"><code>Jsi tiskový mluvčí krajského úřadu. Vyjadřuj se slušně, zdrženlivě. Média vždy preferují krátké a věcné odpovědi. Buď ovšem zdrženlivý, abychom se nikoho nedotkli.</code></pre>
-              <pre
-                class="prompt-example"><code>Jsi specialista na právo pozemních komunikací. Budeš připravovat odpovědi na mé otázky - vždy vycházej z platné legislativy a cituj konkrétní paragrafy.</code></pre>
-              <pre class="prompt-example-bad"><code>Jsi právník. Napiš mi něco o zákonech.</code></pre>
-            </section>
-            <section id="validacni-prompty">
-              <h3>3.3 Validační prompty</h3>
-              <p>Slouží ke kontrole výstupu nebo vstupních dat. Nejprve nechte AI připravit odpověď a následně ji
-                požádejte o vlastní audit – třeba ve formě checklistu nebo identifikace rizik. Tím snížíte riziko chyb
-                v legislativních textech.</p>
-              <pre
-                class="prompt-example"><code>Tady je návrh odpovědi žadateli o informace podle zákona 106/1999 Sb.: ... Zkontroluj, zda odpověď splňuje zákonné lhůty a navrhni úpravy, pokud něco chybí.</code></pre>
-            </section>
-            <section id="formaty-a-sablony">
-              <h3>3.4 Práce s formáty</h3>
-              <p>Požadujte konkrétní strukturu výstupu. AI dokáže vrátit tabulku, kód nebo například YAML. Díky tomu
-                lze snadno navázat dalším zpracováním – třeba vložením do redakčního systému nebo předání kolegovi.
-              </p>
-              <pre
-                class="prompt-example"><code>Sepiš návrh odůvodnění rozhodnutí o prominutí místního poplatku. Výstup rozděl na části: úvod, popis skutkového stavu, právní posouzení, závěr, doporučené přílohy.</code></pre>
-            </section>
-            <section id="iterativni-ladeni">
-              <h3>3.5 Iterativní ladění</h3>
-              <p>Nepřijímejte první odpověď jako finální. Pokračujte doplňujícími dotazy: požádejte o detail, jiný
-                pohled nebo shrnutí. Iterace je vhodná i pro týmovou práci – jeden kolega připraví základní prompt,
-                druhý ho upraví pro jinou cílovou skupinu.</p>
-              <pre
-                class="prompt-example"><code>Nejprve navrhni osnovu manuálu pro zavedení elektronického spisu na obecním úřadu. Až ji vypíšeš, doptám se na detaily jednotlivých kroků.</code></pre>
-            </section>
+          <section id="validacni-prompty">
+            <h3>3.3 Validační prompty</h3>
+            <p>
+              Validační prompty slouží ke <strong>kontrole správnosti a úplnosti</strong> výstupu od umělé inteligence.
+              Zatímco běžný prompt požaduje přímo výsledek, validační prompt se ptá na jeho kvalitu: zda je přesný,
+              zda neobsahuje halucinace, zda odpovídá právním předpisům a zda splňuje formální či obsahové požadavky.
+            </p>
+            <p>
+              Účelem validace je především <strong>minimalizace chyb a rizik</strong>. Model někdy generuje nesprávné
+              informace,
+              které působí věrohodně. Tento jev se označuje jako <a href="/slovnicek/halucinace.html">halucinace</a>.
+              Díky validačním promptům lze chyby včas odhalit a snížit riziko, že úředník převezme nepravdivý nebo
+              zavádějící výstup.
+            </p>
+            <p>
+              Validace může probíhat několika způsoby:
+            </p>
+            <ul>
+              <li><strong>Checklist</strong> – požádejte model, aby zkontroloval splnění jednotlivých povinností (např.
+                lhůty, náležitosti rozhodnutí, povinné odkazy na právní předpisy).</li>
+              <li><strong>Křížová kontrola</strong> – pošlete tentýž dotaz vícekrát, nebo požádejte o kontrolu proti
+                jinému zdroji (např. metodice či judikatuře).</li>
+              <li><strong>Identifikace rizik</strong> – nechte AI vypsat, kde by se mohly objevit nepřesnosti, chybějící
+                části nebo právní rizika.</li>
+              <li><strong>Omezení na zdroje</strong> – validujte, zda výstup odkazuje jen na platné právní předpisy či
+                oficiální dokumenty.</li>
+            </ul>
+
+            <h4>Příklady použití</h4>
+
+            <p><em>Správně:</em></p>
+            <pre class="prompt-example"><code>Tady je návrh odpovědi žadateli podle zákona č. 106/1999 Sb.:
+...
+Zkontroluj, zda odpověď obsahuje všechny povinné části (označení orgánu, datum, poučení o opravném prostředku),
+a zda odpovídá zákonné lhůtě 15 dnů.</code></pre>
+
+            <pre class="prompt-example"><code>Vyhledej judikaturu Nejvyššího správního soudu k tématu přezkoumatelnosti rozhodnutí podle § 68 odst. 3 správního řádu.
+Poté proveď validaci: zkontroluj, zda uvedené spisy skutečně existují a nejsou smyšlené.
+Pokud si nejsi jistý, uveď to.</code></pre>
+
+            <pre class="prompt-example"><code>Tady je metodický materiál k elektronickým spisům od ministerstva:
+...
+Zkontroluj, zda jsem správně shrnul hlavní závěry. Vypiš body, které jsem mohl opomenout.</code></pre>
+
+            <pre class="prompt-example"><code>Sepiš přehled relevantních ustanovení evropského práva k ochraně osobních údajů v oblasti zdravotnictví.
+Poté validuj, zda jsi vycházel pouze z GDPR a nařízení ePrivacy, a ne z jiných zdrojů.</code></pre>
+
+            <h4>Chybné použití</h4>
+
+            <p><em>Nesprávně:</em></p>
+            <pre
+              class="prompt-example-bad"><code>Napiš odpověď na žádost podle 106ky. Asi to bude něco o 15 dnech, ne?</code></pre>
+            <p>– příliš vágní, nepožaduje žádnou kontrolu ani validaci.</p>
+
+            <pre
+              class="prompt-example-bad"><code>Najdi mi rozsudky NSS o správním řízení a napiš, co si myslíš, že tam asi bylo.</code></pre>
+            <p>– úkol není validací, ale vyzývá k odhadu, čímž podporuje halucinace.</p>
+
+            <pre
+              class="prompt-example-bad"><code>Přepiš text metodiky. Nemusíš kontrolovat, zda něco chybí.</code></pre>
+            <p>– zcela rezignuje na kontrolní prvek, který je podstatou validačního promptu.</p>
+
+            <h4>Tipy pro úředníky</h4>
+            <ul>
+              <li>Validační prompt má <strong>ověřovat</strong>, nikoli jen generovat text.</li>
+              <li>Uveďte jasná <strong>kritéria kontroly</strong> – např. lhůty, náležitosti, odkazy na konkrétní
+                paragrafy.</li>
+              <li>Požadujte od AI, aby uvedla i <strong>nejistoty nebo nedostatky</strong>, ne pouze jednoznačnou
+                odpověď.</li>
+              <li>Pokud to téma umožňuje, nechte AI výstup <strong>porovnat s oficiálním dokumentem</strong> (metodika,
+                zákon, judikát).</li>
+            </ul>
+
+            <p>
+              Validační prompty tedy fungují jako <strong>bezpečnostní pojistka</strong>.
+              Zatímco generování textu je tvůrčí proces, validace představuje kontrolu, která chrání úředníka
+              před převzetím neúplného nebo nesprávného výstupu.
+            </p>
           </section>
           <section id="use-cases">
             <h2>4. Use cases z úřední praxe</h2>
