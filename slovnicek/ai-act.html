@@ -17,7 +17,7 @@
   <header>
     <div class="header-bar">
       <button class="hamburger" id="menuBtn" aria-label="Menu" aria-controls="mobile-menu" aria-expanded="false">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
           <line x1="3" y1="12" x2="21" y2="12"></line>
           <line x1="3" y1="6" x2="21" y2="6"></line>
           <line x1="3" y1="18" x2="21" y2="18"></line>
@@ -82,42 +82,118 @@
           <p class="glossary-entry__alt-name">AI Act</p>
         </div>
 
+        <!-- Úvod -->
         <section>
-          <p>Nařízení o umělé inteligenci (AI Act) je pro veřejnou správu bezpečnostní pojistkou při nasazování umělé inteligence.</p>
+          <p>Nařízení o&nbsp;umělé inteligenci (AI Act) je nový jednotný rámec EU, který stanovuje pravidla pro bezpečný, transparentní a férový vývoj a používání AI. Pro veřejnou správu funguje jako praktická mapa povinností – od řízení rizik přes dokumentaci až po dohled člověka.</p>
         </section>
 
-        <section class="highlight">
-          <p><strong>Nařízení o umělé inteligenci</strong> Nařízení Evropského parlamentu a Rady (EU) 2024/1689 ze dne 13. června 2024, kterým se stanoví harmonizovaná pravidla pro umělou inteligenci, tzv. akt o umělé inteligemci, stanovující harmonizovaná pravidla pro vývoj, uvádění na trh a využívání systémů umělé inteligence v Evropské unii. Zavádí povinnosti pro jednotlivé role v životním cyklu AI, klasifikaci systémů podle rizika a opatření na ochranu základních práv.</p>
+        <!-- Rychlé shrnutí pro veřejnost -->
+        <section aria-labelledby="quick-summary">
+          <h3 id="quick-summary">Rychlé shrnutí pro veřejnost</h3>
+          <ul>
+            <li>AI Act chrání lidi před škodlivým či diskriminačním použitím AI a posiluje důvěru v digitální služby.</li>
+            <li>Rozlišuje zakázané, vysoce rizikové, omezené a nízkorizikové systémy a podle toho určuje povinnosti.</li>
+            <li>Platí pro firmy i úřady v EU a dopadá i na subjekty mimo EU, pokud cílí na evropský trh.</li>
+            <li>Porušení pravidel může znamenat vysoké pokuty (miliony eur nebo % z obratu).</li>
+          </ul>
         </section>
 
-        <section>
-          <h3>Co Nařízení o umělé inteligenci ukládá veřejné správě</h3>
-          <p>Nařízení o umělé inteligenci (AI Act) nastavuje rámec, podle kterého mohou úřady bezpečně plánovat a provozovat systémy umělé inteligence. Nařízení o umělé inteligenci tím jasně vymezuje role, odpovědnosti i požadavky na dokumentaci.</p>
-          <p>Pokud úředník rozumí, že Nařízení Evropského parlamentu a Rady (EU) 2024/1689 ze dne 13. června 2024, kterým se stanoví harmonizovaná pravidla pro umělou inteligenci, tzv. akt o umělé inteligemci, stanovující harmonizovaná pravidla pro vývoj, uvádění na trh a využívání systémů umělé inteligence v Evropské unii, dokáže včas zapojit kolegy z právního, IT i odborného útvaru a sladit jejich očekávání. Nařízení tak nepůsobí jako překážka, ale jako mapa povinností, která zajišťuje ochranu práv občanů.</p>
+        <!-- Legální definice / zvýrazněný box -->
+        <section class="highlight" aria-labelledby="legal-def">
+          <h3 id="legal-def">Legální vymezení</h3>
+          <p><strong>Nařízení o&nbsp;umělé inteligenci (AI Act)</strong> je <em>Nařízení Evropského parlamentu a Rady (EU) 2024/1689 ze dne 13.&nbsp;června&nbsp;2024</em>, kterým se stanoví harmonizovaná pravidla pro umělou inteligenci v&nbsp;EU. Upravuje uvádění AI systémů na trh a jejich používání, definuje role a povinnosti v&nbsp;životním cyklu AI, klasifikuje systémy podle rizika a zavádí opatření na ochranu základních práv.</p>
         </section>
 
-        <section>
-          <h3>Jak Nařízení o umělé inteligenci promítnout do praxe úřadu</h3>
-          <p>Vedení úřadu by mělo podle nařízení o umělé inteligenci vytvořit interní pravidla pro řízení rizik, transparentnost a dohled člověka. Prakticky to znamená mít procesy pro posuzování dopadů, evidenci systémů a průběžné vyhodnocování, zda jsou splněny všechny legislativní požadavky.</p>
-          <p>Součástí implementace je také vzdělávání zaměstnanců a komunikace s partnery. Díky tomu lze při nákupech či vývoji AI řešení smluvně zajistit sdílení informací, přístup k datům i odpovědnost dodavatelů, kteří na nařízení o umělé inteligenci musí reagovat.</p>
+        <!-- Úrovně rizika -->
+        <section aria-labelledby="risk-levels">
+          <h3 id="risk-levels">Jak AI Act funguje – úrovně rizika</h3>
+          <ul>
+            <li><strong>Zakázané praktiky</strong> – např. sociální skórování občanů, podprahová manipulace, neadresné shromažďování biometrických údajů.</li>
+            <li><strong>Vysoké riziko</strong> – AI v&nbsp;oblasti zaměstnání, vzdělávání, zdravotnictví, správy kritické infrastruktury, justice nebo migrace. Platí přísné povinnosti: řízení rizik, dokumentace, testování, transparentnost, lidský dohled, <em>post-market monitoring</em> a hlášení incidentů, případně registrace do EU databáze.</li>
+            <li><strong>Omezené riziko</strong> – důraz na transparentnost (uživatel ví, že jedná s AI; syntetický obsah je zřetelně označen).</li>
+            <li><strong>Nízké riziko</strong> – bez zvláštních povinností; stále však platí jiné právní předpisy (např. GDPR, spotřebitelské právo).</li>
+          </ul>
         </section>
 
-        <section>
-          <h3>Co sledovat při aplikaci Nařízení o umělé inteligenci</h3>
-          <p>Je nutné průběžně sledovat metodiky Evropské komise, rozhodnutí dozorových orgánů a novely souvisejících předpisů. Nařízení o umělé inteligenci (AI Act) je živý rámec, který se může doplňovat o nové povinnosti například pro generativní modely nebo nové registry.</p>
-          <p>Transparentní komunikace směrem k občanům i dodavatelům je klíčová. Pokud úřad vysvětlí, jak nařízení o umělé inteligenci chrání základní práva, posiluje důvěru v digitální služby a zároveň motivuje zaměstnance, aby se k pravidlům aktivně hlásili.</p>
+        <!-- Role -->
+        <section aria-labelledby="roles">
+          <h3 id="roles">Role v životním cyklu AI</h3>
+          <ul>
+            <li><strong>Poskytovatel (provider)</strong> – vyvíjí nebo uvádí AI na trh.</li>
+            <li><strong>Zavádějící subjekt (deployer)</strong> – AI používá v praxi (např. úřad, nemocnice, škola).</li>
+            <li><strong>Distributor</strong> – zajišťuje další šíření systému v EU.</li>
+            <li><strong>Dovozce (importer)</strong> – uvádí na trh systém z&nbsp;třetí země.</li>
+          </ul>
         </section>
 
-        <section class="ai-gramotnost">
-          <h3>AI GRAMOTNOST</h3>
+        <!-- GPAI -->
+        <section aria-labelledby="gpai">
+          <h3 id="gpai">GPAI – obecné modely umělé inteligence</h3>
+          <p>AI Act řeší i tzv. <em>General Purpose AI</em> (GPAI) – obecné modely použitelné v&nbsp;mnoha kontextech (např. velké jazykové modely). Pro tyto modely platí zejména:</p>
+          <ul>
+            <li>transparentní dokumentace a souhrny tréninkových dat,</li>
+            <li>respektování autorského práva (TDM opt-out),</li>
+            <li>u nejvýkonnějších modelů navíc testování, posuzování bezpečnosti a mitigace systémových rizik.</li>
+          </ul>
+        </section>
+
+        <!-- Veřejná správa -->
+        <section aria-labelledby="public-sector">
+          <h3 id="public-sector">Co AI Act ukládá veřejné správě</h3>
+          <p>AI Act dává úřadům jasný proces, jak plánovat a provozovat AI projekty bezpečně a v&nbsp;souladu s&nbsp;právem. Klíčové je rozlišit, zda jde o&nbsp;systém s&nbsp;<em>vysokým rizikem</em>, a podle toho nastavit řízení rizik, dokumentaci a dohled.</p>
+          <ul>
+            <li><strong>FRIA</strong> – posouzení dopadů na základní práva u většiny použití high-risk AI.</li>
+            <li><strong>Lidský dohled a školení</strong> – vymezení kompetencí a postupů zásahu, poučení uživatelů.</li>
+            <li><strong>Evidence a registrace</strong> – vedení evidence nasazení a (je-li vyžadováno) registrace do EU databáze.</li>
+            <li><strong>Smluvní zajištění</strong> – přenesení relevantních povinností na dodavatele (přístup k logům, testování, bezpečnost, ohlašování incidentů) v rámci veřejných zakázek.</li>
+            <li><strong>Soulad s dalšími předpisy</strong> – zejména GDPR (DPIA), pravidla spotřebitele a kyberbezpečnost.</li>
+          </ul>
+        </section>
+
+        <!-- Implementace -->
+        <section aria-labelledby="implementation">
+          <h3 id="implementation">Jak AI Act promítnout do praxe úřadu</h3>
+          <ol>
+            <li><strong>Určete, zda jde o AI systém</strong> a jeho <strong>rizikovou kategorii</strong>.</li>
+            <li><strong>Nastavte governance</strong> – odpovědnosti, lidský dohled, schvalování změn modelu a provozní procesy.</li>
+            <li><strong>Připravte dokumentaci</strong> – technická dokumentace, návod k použití, záznamy o testech a o datech.</li>
+            <li><strong>Proveďte FRIA/DPIA</strong> a nastavte mitigace rizik (včetně školení a kontrolních mechanismů).</li>
+            <li><strong>Zajistěte provozní režim</strong> – logování, monitoring po nasazení, hlášení incidentů, pravidelné přezkumy.</li>
+          </ol>
+        </section>
+
+        <!-- Na co si dát pozor -->
+        <section aria-labelledby="watchouts">
+          <h3 id="watchouts">Na co si dát pozor</h3>
+          <ul>
+            <li><strong>Přechodné lhůty</strong> – některé povinnosti nabíhají postupně (zejména GPAI a legacy systémy).</li>
+            <li><strong>Harmonizované normy a společné specifikace</strong> – usnadňují prokázání souladu.</li>
+            <li><strong>Vztah k GDPR</strong> – AI Act je bez dotčení ochrany osobních údajů; DPIA může být nutná souběžně s FRIA.</li>
+            <li><strong>Dodavatelský řetězec</strong> – myslete na auditovatelnost, přístup k datům a logům a jasnou odpovědnost za incidenty.</li>
+            <li><strong>Transparentní komunikace</strong> – občanům i dodavatelům vysvětlujte, jak AI Act chrání práva a jaký je režim nápravy chyb.</li>
+          </ul>
+        </section>
+
+        <!-- Sankce -->
+        <section aria-labelledby="sanctions">
+          <h3 id="sanctions">Sankce</h3>
+          <ul>
+            <li>až <strong>35&nbsp;mil.&nbsp;€ nebo 7&nbsp;%</strong> obratu za zakázané praktiky,</li>
+            <li>až <strong>15&nbsp;mil.&nbsp;€ nebo 3&nbsp;%</strong> za porušení povinností u systémů vysokého rizika,</li>
+            <li>až <strong>7,5&nbsp;mil.&nbsp;€ nebo 1&nbsp;%</strong> za poskytnutí nepravdivých nebo neúplných informací.</li>
+          </ul>
+        </section>
+
+        <!-- AI gramotnost -->
+        <section class="ai-gramotnost" aria-labelledby="ai-literacy">
+          <h3 id="ai-literacy">AI GRAMOTNOST</h3>
           <h4>Proč to má znát i úředník?</h4>
-          <p>Součástí <a href="../ai-gramotnost.html">AI gramotnosti</a> je orientace v tom, co Nařízení o umělé inteligenci (AI Act) požaduje. Kdo zná hlavní povinnosti, dokáže rychle vyhodnotit, zda projekt s AI potřebuje právní posouzení nebo úpravu interních směrnic.</p>
-          <p>Porozumění nařízení o umělé inteligenci pomáhá nastavovat školení zaměstnanců a vytvářet kulturu odpovědného používání dat. Úředníci pak vědí, kdy vyžadovat audit, jak dokumentovat rozhodnutí a kdy zapojit do procesu lidský dohled.</p>
-          <p>Schopnost srozumitelně vysvětlit občanům i vedení, proč nařízení o umělé inteligenci chrání jejich práva, posiluje důvěru v digitální služby veřejné správy. Transparentní komunikace je klíčová zejména při zavádění nových systémů, které mohou mít zásadní dopad na život občanů.</p>
+          <p>Součástí <a href="../ai-gramotnost.html">AI gramotnosti</a> je orientace v hlavních povinnostech AI Actu. Díky tomu úředník rychle vyhodnotí, kdy projekt s AI potřebuje právní posouzení, jak nastavit lidský dohled a jaké informace vyžadovat po dodavateli. Porozumění pravidlům zároveň posiluje důvěru občanů v digitální služby.</p>
         </section>
 
-        <section>
-          <h3>Související pojmy</h3>
+        <!-- Související pojmy -->
+        <section aria-labelledby="related-terms">
+          <h3 id="related-terms">Související pojmy</h3>
           <ul>
             <li><a href="ai-gramotnost.html">AI gramotnost (AI literacy)</a></li>
             <li><a href="distributor.html">Distributor</a></li>
