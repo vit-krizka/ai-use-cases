@@ -30,6 +30,7 @@
       </h1>
     </div>
   </header>
+
   <nav class="main-nav" aria-label="Hlavní menu">
     <div class="header-divider"></div>
     <div class="main-nav__inner">
@@ -37,9 +38,9 @@
         <li><a href="../project.html">Katalog</a></li>
         <li><a href="../ai-gramotnost.html">AI gramotnost</a></li>
         <li><a href="../ai-a-pravo.html">AI a právo</a></li>
-        <li><a href="../prompt-inzenyrstvi.html">Prompt inženýrství</a></li>
+        <li><a href="../prompt-inzenyrstvi.html" aria-current="page">Prompt inženýrství</a></li>
         <li><a href="../clanky.html">Články</a></li>
-        <li><a href="../slovnicek.html" aria-current="page">Slovníček</a></li>
+        <li><a href="../slovnicek.html">Slovníček</a></li>
         <li><a href="../wiki.html">Přidat use case</a></li>
       </ul>
     </div>
@@ -54,21 +55,12 @@
       </div>
       <nav aria-label="Hlavní menu">
         <ul class="mobile-menu__list">
-          <li class="mobile-menu__item mobile-menu__item--catalog">
-            <div class="mobile-menu__row">
-              <a href="../project.html">Katalog</a>
-              <button class="mobile-menu__toggle" type="button" aria-expanded="false" aria-controls="mobile-catalog-list">
-                <span class="sr-only">Rozbalit menu katalogu</span>
-                <span aria-hidden="true">▶</span>
-              </button>
-            </div>
-            <ul id="mobile-catalog-list" class="mobile-menu__submenu" hidden></ul>
-          </li>
+          <li class="mobile-menu__item"><a href="../project.html">Katalog</a></li>
           <li class="mobile-menu__item"><a href="../ai-gramotnost.html">AI gramotnost</a></li>
           <li class="mobile-menu__item"><a href="../ai-a-pravo.html">AI a právo</a></li>
-          <li class="mobile-menu__item"><a href="../prompt-inzenyrstvi.html">Prompt inženýrství</a></li>
+          <li class="mobile-menu__item"><a href="../prompt-inzenyrstvi.html" aria-current="page">Prompt inženýrství</a></li>
           <li class="mobile-menu__item"><a href="../clanky.html">Články</a></li>
-          <li class="mobile-menu__item"><a href="../slovnicek.html" aria-current="page">Slovníček</a></li>
+          <li class="mobile-menu__item"><a href="../slovnicek.html">Slovníček</a></li>
           <li class="mobile-menu__item"><a href="../wiki.html">Přidat use case</a></li>
         </ul>
       </nav>
@@ -79,51 +71,142 @@
     <div>
       <article class="glossary-entry">
         <div class="glossary-entry__header">
-          <p class="glossary-entry__tag">technický pojem</p>
+          <p class="glossary-entry__tag">metodika</p>
           <h2>Prompt inženýrství</h2>
-          <p class="glossary-entry__alt-name">prompt engineering</p>
+          <p class="glossary-entry__alt-name">Návrh a správa zadání pro generativní modely</p>
         </div>
 
-        <section>
-          <p>Prompt inženýrství (prompt engineering) pomáhá úředníkům pochopit, jak mohou technologie posílit služby pro občany a zároveň zachovat odpovědnost veřejné správy.</p>
+        <section class="highlight" aria-labelledby="definice">
+          <h3 id="definice">Co je prompt inženýrství</h3>
+          <p>Prompt inženýrství je způsob, jak proměnit neurčitý nápad v řízený dialog s AI. Nejde jen o „dobře položenou otázku“ – součástí je nastavení role modelu, vysvětlení účelu, vymezení pravidel a domluva na formátu výstupu, aby výsledky byly předvídatelné, bezpečné a snadno auditovatelné. Ve veřejné správě takto převádíme běžné požadavky (shrnutí podkladů, příprava sdělení pro občany, extrakce údajů do IS) do jasných, znovupoužitelných zadání.</p>
         </section>
 
-        <section class="highlight">
-          <p><strong>Prompt inženýrství</strong> Inženýrství promptů (anglicky prompt engineering) je postup a disciplína spočívající v navrhování, testování a optimalizaci vstupních dotazů (promptů) pro generativní modely AI tak, aby tyto modely poskytovaly co nejlepší a nejpřesnější výstupy. Zahrnuje techniky, jak formulovat instrukce, dávat modelu kontext, příklady nebo jiná vodítka v promptu, aby model porozuměl úloze a vygeneroval požadovaný výsledek. Prompt engineering se stal důležitým zejména s nástupem velkých jazykových modelů, kde drobné změny v zadání mohou výrazně ovlivnit kvalitu odpovědi.</p>
+        <section aria-labelledby="proc-vs">
+          <h3 id="proc-vs">Proč je to důležité pro veřejnou správu</h3>
+          <p>Kvalitní prompt inženýrství snižuje náhodnost odpovědí a přibližuje se opakovatelnosti, kterou úřady potřebují. Sdílené šablony zadání a jasná pravidla umožňují <em>auditovat</em> postupy i výsledky. Zároveň se zkracuje cesta od textu k datům: model může vracet informace přímo jako JSON podle stanoveného schématu, což šetří čas a snižuje chybovost při napojení na agendové systémy.</p>
         </section>
 
-        <section>
-          <h3>Co Prompt inženýrství znamená pro veřejnou správu</h3>
-          <p>Prompt inženýrství (prompt engineering) nastavuje společný jazyk mezi zadavateli digitalizačních projektů a odborníky z praxe. Když úředník ví, že Inženýrství promptů (anglicky prompt engineering) je postup a disciplína spočívající v navrhování, testování a optimalizaci vstupních dotazů (promptů) pro generativní modely AI tak, aby tyto modely poskytovaly co nejlepší a nejpřesnější výstupy, dokáže lépe popsat očekávané přínosy a připravit argumenty pro vedení i politické představitele.</p>
-          <p>Důsledné pochopení tohoto pojmu zvyšuje schopnost plánovat rozvoj služeb pro občany. Úřad pak snáze rozpozná, které procesy se vyplatí automatizovat, kde je nutné posílit dohled člověka a jaké dopady může mít nasazení nového řešení na zaměstnance i klienty.</p>
+        <section aria-labelledby="co-dela-dobry">
+          <h3 id="co-dela-dobry">Co dělá dobré zadání</h3>
+          <p>Dobrý prompt vysvětluje proč, pro koho a v jakém tvaru má být výstup. Cíl (např. „shrň podklad pro radu města“), publikum („vedoucí odboru“ vs. „široká veřejnost“) a formát („pět stručných bodů“ nebo „platný JSON“) jsou explicitní. Pravidla – tón, jazyk, práce s citacemi, zákaz osobních údajů – patří do systémové zprávy a nemíchají se s vlastním zadáním. Tam, kde záleží na stylu, pomohou krátké ukázky; stačí jedna až dvě a model lépe drží formu.</p>
         </section>
 
-        <section>
-          <h3>Jak Prompt inženýrství využít v praxi úřadu</h3>
-          <p>Prvním krokem je zmapovat agendy, ve kterých by se tento koncept mohl uplatnit. Patří sem inventura dostupných dat, posouzení bezpečnostních požadavků i rozhodnutí, zda je vhodné vlastní řešení nebo spolupráce s externím partnerem.</p>
-          <p>Následovat by měly pilotní projekty s jasnými metrikami úspěchu. Díky nim lze ověřit, zda řešení založené na tomto pojmu přináší očekávané výsledky, a zároveň nastavit provozní model – kdo řešení spravuje, kdo zajišťuje aktualizace a jak se budou sbírat zpětné vazby od uživatelů.</p>
+        <section aria-labelledby="diagram">
+          <h3 id="diagram">Schéma procesu</h3>
+          <figure>
+            <!-- OPRAVENÉ A SJEDNOCENÉ SCHÉMA (vertikální šipka Validace → Výstup) -->
+            <svg role="img" aria-labelledby="svgTitle svgDesc" viewBox="0 0 940 340" width="100%" height="auto">
+              <title id="svgTitle">Od pravidel a zadání k validovanému JSON výstupu</title>
+              <desc id="svgDesc">System pravidla a User zadání s příklady vedou k šabloně; následuje pilot, validace schématu a výstup. Šipky jsou zarovnány na středy, bez překryvů.</desc>
+              <defs>
+                <style>
+                  .box { fill: #ffffff; stroke: #2E2D2C; stroke-width: 1.5; rx: 14; ry: 14; }
+                  .muted { fill: #F2F6FA; stroke: #B8C2CC; }
+                  .title { font: 600 14px "Inter","Segoe UI",Arial,sans-serif; fill: #1a1a1a; }
+                  .text { font: 12px "Inter","Segoe UI",Arial,sans-serif; fill: #333; }
+                  .mono { font: 12px "SFMono-Regular",Consolas,"Liberation Mono",monospace; fill: #333; }
+                  .arrow { stroke: #207315; stroke-width: 2.5; marker-end: url(#arrowhead); fill: none; }
+                </style>
+                <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+                  <polygon points="0 0, 10 3.5, 0 7" fill="#207315"></polygon>
+                </marker>
+              </defs>
+
+              <!-- Levý sloupec -->
+              <rect class="box muted" x="24" y="28" width="260" height="94"></rect>
+              <text class="title" x="40" y="50">System pravidla</text>
+              <text class="text" x="40" y="74">• jazyk, tón, citace, zásady bezpečnosti</text>
+              <text class="text" x="40" y="96">• co model nesmí (osobní údaje apod.)</text>
+
+              <rect class="box muted" x="24" y="160" width="260" height="94"></rect>
+              <text class="title" x="40" y="182">User zadání &amp; příklady</text>
+              <text class="text" x="40" y="206">• cíl, publikum, rozsah, formát</text>
+              <text class="text" x="40" y="228">• 1–2 ukázky (few-shot)</text>
+
+              <!-- Šipky doleva -> ŠABLONA -->
+              <line class="arrow" x1="284" y1="75" x2="390" y2="75"></line>
+              <line class="arrow" x1="284" y1="207" x2="390" y2="207"></line>
+
+              <!-- ŠABLONA -->
+              <rect class="box" x="390" y="66" width="180" height="140"></rect>
+              <text class="title" x="406" y="90">Šablona promptu</text>
+              <text class="text" x="406" y="114">• oddělené role</text>
+              <text class="text" x="406" y="134">• kontext &amp; omezení</text>
+              <text class="text" x="406" y="154">• formát (JSON/MD)</text>
+              <text class="text" x="406" y="174">• příklady</text>
+
+              <!-- Šipka → Pilot -->
+              <line class="arrow" x1="570" y1="136" x2="680" y2="136"></line>
+
+              <!-- Pilot -->
+              <rect class="box" x="680" y="102" width="220" height="68"></rect>
+              <text class="title" x="696" y="124">Pilot &amp; měření</text>
+              <text class="text" x="696" y="146">• přesnost, úplnost, čas</text>
+
+              <!-- Vertikální šipka Pilot → Validace -->
+              <line class="arrow" x1="790" y1="170" x2="790" y2="200"></line>
+
+              <!-- Validace -->
+              <rect class="box" x="700" y="200" width="200" height="60"></rect>
+              <text class="title" x="716" y="222">Validace schématu</text>
+              <text class="text" x="716" y="244">• kontrola JSON dle schema</text>
+
+              <!-- Vertikální šipka Validace → Výstup (NOVĚ) -->
+              <line class="arrow" x1="800" y1="260" x2="800" y2="280"></line>
+
+              <!-- Výstup (pod validací) -->
+              <rect class="box muted" x="700" y="280" width="200" height="60"></rect>
+              <text class="title" x="716" y="302">Výstup</text>
+              <text class="mono"  x="716" y="324">{ ... JSON ... } / markdown</text>
+            </svg>
+            <figcaption>Od nastavení pravidel a zadání přes šablonu a pilotní měření až k validovanému JSON/markdown výstupu.</figcaption>
+          </figure>
         </section>
 
-        <section>
-          <h3>Na co si dát pozor, když využíváme prompt inženýrství</h3>
-          <p>Technologie spojené s tímto pojmem jsou citlivé na kvalitu dat, kybernetickou bezpečnost i organizační změny. Bez jasně stanovených odpovědností může dojít k tomu, že projekt ztratí podporu a přínosy se neprojeví.</p>
-          <p>Je proto nutné průběžně vyhodnocovat rizika a nastavovat transparentní komunikaci s občany. Pokud úřad vysvětlí, proč tento přístup pomáhá zrychlit nebo zpřesnit služby, zároveň musí popsat i omezení a způsoby kontroly, aby si udržel důvěru veřejnosti.</p>
+        <section aria-labelledby="provoz">
+          <h3 id="provoz">Jak s tím pracovat v provozu</h3>
+          <p>Začněte malým pilotem na reálných případech. Nejprve se dohodněte na vstupech a očekáváních, nastavte pár jednoduchých metrik a připravte první verzi šablony. Během testů dolaďujte formulace i parametry; u složitějších úloh se vyplatí rozdělit práci na kroky – vytěžit fakta, zkontrolovat je a teprve potom psát shrnutí. Finální šablonu uložte do společného repozitáře, přiřaďte jí vlastníka a termín další revize.</p>
+        </section>
+
+        <section aria-labelledby="priklady">
+          <h3 id="priklady">Příklady z praxe</h3>
+          <p>Pro vedení odboru: „Jsi asistent pro veřejnou správu. Odpovídej česky, věcně a uveď zdroje. Z přiloženého textu připrav pět bodů pro rozhodnutí.“ Pro integrace do IS: „Vracej pouze JSON podle tohoto schématu; nechybějící pole vyplň, chybějící ponech jako <code>null</code>.“ A pokud potřebujete ustálit styl odpovědi občanovi, připojte dvě krátké ukázky „správné“ odpovědi a požádejte model, aby přesně následoval jejich formu.</p>
+        </section>
+
+        <section aria-labelledby="kvalita">
+          <h3 id="kvalita">Hodnocení kvality</h3>
+          <p>Kvalitu měřte jednoduše a pravidelně: u faktografických úloh sledujte správnost a úplnost, u integračních validitu formátu. Vstupy, parametry i výstupy logujte a občas porovnejte starou a novou verzi šablony na stejné sadě vzorků – rychle uvidíte, zda jste se zlepšili.</p>
+        </section>
+
+        <section aria-labelledby="rizika">
+          <h3 id="rizika">Rizika a prevence</h3>
+          <p>Do promptů nepatří osobní ani utajované informace. Systémová pravidla by měla taková data výslovně zakazovat a u RAG přístupu je důležité jasně vymezit povolené zdroje. Halucinacím brání požadavek na citace, vymezení domény a možnost odpovědět, že si model není jistý. Podrobné „myšlenkové kroky“ nejsou v produkci potřeba – stačí stručné, srozumitelné odůvodnění.</p>
         </section>
 
         <section class="ai-gramotnost">
           <h3>AI GRAMOTNOST</h3>
-          <h4>Proč to má znát i úředník?</h4>
-          <p><a href="../ai-gramotnost.html">AI gramotnost</a> znamená rozumět základním principům, jako je Prompt inženýrství (prompt engineering). Úředník, který pojem ovládá, umí klást lepší otázky dodavatelům i interním týmům a rychleji pozná, zda technologie odpovídá veřejnému zájmu.</p>
-          <p>Znalost pojmu zvyšuje schopnost vysvětlit kolegům, jaké jsou možnosti a limity řešení. Díky tomu se do projektů zapojují jen ty procesy, kde tento přístup dává smysl, a zároveň se nastaví realistická očekávání vedení i občanů.</p>
-          <p>Když úředník dokáže přiblížit občanům, co tento pojem znamená, posiluje důvěru v inovace a ukazuje, že digitalizace není samoúčelná. Přehled v pojmech pomáhá také předcházet obavám a podpořit otevřený dialog o využití umělé inteligence.</p>
+          <h4>Jak to zapadá do agendy úřadu</h4>
+          <p>Prompt inženýrství se nejlépe osvědčuje jako standardní proces: šablony mají vlastníky, verze a historii změn, existuje jednoduchý „předprodukční“ checklist (účel, publikum, formát, validace, metriky, fallback) a je jasné, kdo řeší incidenty. Díky tomu se z jednorázových experimentů stává běžná součást řízení kvality.</p>
+        </section>
+
+        <section aria-labelledby="zdroje">
+          <h3 id="zdroje">Další zdroje</h3>
+          <ul>
+            <li><a href="https://platform.openai.com/docs/guides/prompt-engineering" target="_blank" rel="noreferrer noopener">OpenAI – Prompt engineering (EN)</a></li>
+            <li><a href="https://platform.openai.com/docs/guides/structured-outputs" target="_blank" rel="noreferrer noopener">OpenAI – Structured Outputs (JSON Schema) (EN)</a></li>
+            <li><a href="https://ai.google.dev/gemini-api/docs/prompting-strategies" target="_blank" rel="noreferrer noopener">Google Gemini – Prompting strategies (EN)</a></li>
+            <li><a href="https://learn.microsoft.com/azure/ai-foundry/openai/concepts/prompt-engineering" target="_blank" rel="noreferrer noopener">Azure OpenAI – Prompt engineering best practices (EN)</a></li>
+            <li><a href="https://python.langchain.com/docs/concepts/prompt_templates/" target="_blank" rel="noreferrer noopener">LangChain – Prompt Templates (EN)</a></li>
+          </ul>
         </section>
 
         <section>
           <h3>Související pojmy</h3>
           <ul>
-            <li><a href="algoritmus.html">Algoritmus (algorithm)</a></li>
-            <li><a href="automatizace.html">Automatizace (automation)</a></li>
-            <li><a href="captcha.html">CAPTCHA – CAPTCHA (Completely Automated Public Turing test to tell Computers and Humans Apart)</a></li>
+            <li><a href="prompt.html">Prompt</a></li>
+            <li><a href="vektorova-databaze.html">Vektorová databáze</a></li>
+            <li><a href="rag.html" title="Retrieval-Augmented Generation">RAG</a></li>
+            <li><a href="llm.html" title="Large Language Model">Velký jazykový model (LLM)</a></li>
           </ul>
         </section>
 
@@ -183,5 +266,4 @@
 
   <script src="../script.js"></script>
 </body>
-
 </html>
