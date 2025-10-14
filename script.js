@@ -1,7 +1,7 @@
 'use strict';
 
-let openMobileMenu = () => {};
-let closeMobileMenu = () => {};
+let openMobileMenu = () => { };
+let closeMobileMenu = () => { };
 
 /** ======================
  *  Společné prvky stránek
@@ -296,11 +296,10 @@ function createUseCaseSection(uc, categoryDescriptions) {
       <tr><td><img src="icons/buildings.svg" alt="Instituce" class="table-icon" width="16" height="16"></td><th scope="row">Instituce</th><td>${uc['Instituce'] || '—'}</td></tr>
       <tr><td><img src="icons/contact-plus.svg" alt="Dodavatel" class="table-icon" width="16" height="16"></td><th scope="row">Dodavatel</th><td>${uc['Dodavatel'] || '—'}</td></tr>
       <tr><td><img src="icons/edit-box.svg" alt="Obor" class="table-icon" width="16" height="16"></td><th scope="row">Obor činnosti</th><td>${uc['Obor činnosti'] || '—'}</td></tr>
-      <tr><td><img src="icons/flag.svg" alt="Kategorie" class="table-icon" width="16" height="16"></td><th scope="row">Kategorie use case</th><td>${
-      categoryDescriptions.has(uc['Hlavní kategorie use case']?.split('(')[0].trim())
-        ? `<a href="#" class="category-link" data-category="${uc['Hlavní kategorie use case'].split('(')[0].trim()}">${uc['Hlavní kategorie use case']}</a>`
-        : uc['Hlavní kategorie use case'] || '—'
-      }</td></tr>
+      <tr><td><img src="icons/flag.svg" alt="Kategorie" class="table-icon" width="16" height="16"></td><th scope="row">Kategorie use case</th><td>${categoryDescriptions.has(uc['Hlavní kategorie use case']?.split('(')[0].trim())
+      ? `<a href="#" class="category-link" data-category="${uc['Hlavní kategorie use case'].split('(')[0].trim()}">${uc['Hlavní kategorie use case']}</a>`
+      : uc['Hlavní kategorie use case'] || '—'
+    }</td></tr>
     </tbody>
   </table>`;
 
@@ -333,9 +332,13 @@ function createUseCaseSection(uc, categoryDescriptions) {
   html += '<div class="card"><h3></h3>';
   html += '</div>';
 
-  html += `<div class="highlight"><p><strong>Disclaimer / Upozornění</strong></p>
-<p>Veškeré informace uvedené v tomto katalogu byly sestaveny na základě veřejně dostupných zdrojů a mají pouze informativní charakter. Přestože usilujeme o jejich přesnost a aktuálnost, nemůžeme zaručit úplnost ani bezchybnost zde uvedených údajů. Obsah katalogu nepředstavuje právní, odborné ani závazné stanovisko a slouží výhradně k obecné orientaci.</p>
-<p>Pokud v katalogu zjistíte nesrovnalosti či nepřesnosti, prosíme, kontaktujte nás na (<a href="mailto:kc@dia.gov.cz">kc@dia.gov.cz</a>). Vaše podněty nám pomohou katalog dále zpřesňovat a rozvíjet.</p></div>`;
+  html += `<div style="font-size: 12px;
+    padding: 16px;
+    line-height: 12px;
+    border-top: solid 1px black;
+    text-align: justify; "><p><strong>Upozornění</strong></p>
+<p>Veškeré informace uvedené v tomto katalogu byly sestaveny na základě veřejně dostupných zdrojů a mají pouze informativní charakter. Přestože usilujeme o jejich přesnost a aktuálnost, nemůžeme zaručit úplnost ani bezchybnost zde uvedených údajů. Obsah katalogu slouží výhradně k obecné orientaci.
+Pokud v katalogu zjistíte nesrovnalosti či nepřesnosti, prosíme, kontaktujte nás na (<a href="mailto:kc@dia.gov.cz">kc@dia.gov.cz</a>). Vaše podněty nám pomohou katalog dále zpřesňovat a rozvíjet.</p></div>`;
 
   section.innerHTML = html;
 
