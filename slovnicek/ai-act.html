@@ -17,7 +17,8 @@
   <header>
     <div class="header-bar">
       <button class="hamburger" id="menuBtn" aria-label="Menu" aria-controls="mobile-menu" aria-expanded="false">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+          stroke-linejoin="round" aria-hidden="true">
           <line x1="3" y1="12" x2="21" y2="12"></line>
           <line x1="3" y1="6" x2="21" y2="6"></line>
           <line x1="3" y1="18" x2="21" y2="18"></line>
@@ -50,14 +51,16 @@
     <div class="mobile-menu__panel" role="dialog" aria-modal="true">
       <div class="mobile-menu__header">
         <span>Menu</span>
-        <button class="mobile-menu__close" type="button" data-mobile-menu-close aria-label="Zavřít menu">&times;</button>
+        <button class="mobile-menu__close" type="button" data-mobile-menu-close
+          aria-label="Zavřít menu">&times;</button>
       </div>
       <nav aria-label="Hlavní menu">
         <ul class="mobile-menu__list">
           <li class="mobile-menu__item mobile-menu__item--catalog">
             <div class="mobile-menu__row">
               <a href="../project.html">Katalog</a>
-              <button class="mobile-menu__toggle" type="button" aria-expanded="false" aria-controls="mobile-catalog-list">
+              <button class="mobile-menu__toggle" type="button" aria-expanded="false"
+                aria-controls="mobile-catalog-list">
                 <span class="sr-only">Rozbalit menu katalogu</span>
                 <span aria-hidden="true">▶</span>
               </button>
@@ -86,29 +89,55 @@
 
         <!-- Úvod -->
         <section>
-          <p><strong>Nařízení Evropského parlamentu a Rady (EU) 2024/1689 o umělé inteligenci</strong> je prvním komplexním právním rámcem, který v EU stanovuje jednotná pravidla pro vývoj, uvádění na trh a používání systémů AI. Od <strong>1.&nbsp;srpna&nbsp;2024</strong> je v platnosti a jeho povinnosti nabíhají postupně. Jádrem je přístup založený na riziku: čím větší dopad systému na zdraví, bezpečnost či základní práva, tím přísnější požadavky na návrh, dokumentaci a dohled. Pro veřejnou správu jde o praktickou mapu povinností – od posouzení dopadů na základní práva (FRIA) a nastavení lidského dohledu až po evidenci, transparentní komunikaci a smluvní zajištění odpovědnosti dodavatelů.</p>
+          <p><strong>Nařízení Evropského parlamentu a Rady (EU) 2024/1689 o umělé inteligenci</strong> je prvním
+            komplexním právním rámcem, který v EU stanovuje jednotná pravidla pro vývoj, uvádění na trh a používání
+            systémů AI. Od <strong>1.&nbsp;srpna&nbsp;2024</strong> je v platnosti a jeho povinnosti nabíhají postupně.
+            Jádrem je přístup založený na riziku: čím větší dopad systému na zdraví, bezpečnost či základní práva, tím
+            přísnější požadavky na návrh, dokumentaci a dohled. Pro veřejnou správu jde o praktickou mapu povinností –
+            od posouzení dopadů na základní práva (FRIA) a nastavení lidského dohledu až po evidenci, transparentní
+            komunikaci a smluvní zajištění odpovědnosti dodavatelů.</p>
         </section>
 
         <!-- Rychlé shrnutí (zhuštěno do odstavců) -->
         <section aria-labelledby="quick-summary">
           <h3 id="quick-summary">Rychlé shrnutí pro veřejnost</h3>
-          <p>AI Act chrání občany před škodlivým či diskriminačním použitím AI a posiluje důvěru v digitální služby tím, že zavádí srozumitelná pravidla pro poskytovatele i uživatele systémů. Rozlišuje zakázané, vysoce rizikové, omezené a nízkorizikové aplikace a každé kategorii přiřazuje odpovídající povinnosti. Působí nejen na subjekty v EU, ale i na ty ze třetích zemí, pokud jejich systémy cílí na evropský trh. Porušení může vést k významným sankcím, takže prevence a průkaznost souladu jsou klíčové.</p>
+          <p>AI Act chrání občany před škodlivým či diskriminačním použitím AI a posiluje důvěru v digitální služby tím,
+            že zavádí srozumitelná pravidla pro poskytovatele i uživatele systémů. Rozlišuje zakázané, vysoce rizikové,
+            omezené a nízkorizikové aplikace a každé kategorii přiřazuje odpovídající povinnosti. Působí nejen na
+            subjekty v EU, ale i na ty ze třetích zemí, pokud jejich systémy cílí na evropský trh. Porušení může vést k
+            významným sankcím, takže prevence a průkaznost souladu jsou klíčové.</p>
         </section>
 
         <!-- Legální definice / zvýrazněný box -->
         <section class="highlight" aria-labelledby="legal-def">
           <h3 id="legal-def">Legální vymezení</h3>
-          <p><strong>AI Act</strong> (Nařízení (EU) 2024/1689, 13.&nbsp;června&nbsp;2024) harmonizuje pravidla pro umělou inteligenci v EU. Upravuje uvádění systémů AI na trh a jejich používání, vymezuje role a odpovědnosti v celém životním cyklu, zavádí kategorizaci podle rizika a stanoví opatření na ochranu základních práv, bezpečnosti a transparentnosti. Nařízení je přímo použitelné, bez potřeby transpozice do národního práva.</p>
+          <p><strong>AI Act</strong> (Nařízení (EU) 2024/1689, 13.&nbsp;června&nbsp;2024) harmonizuje pravidla pro
+            umělou inteligenci v EU. Upravuje uvádění systémů AI na trh a jejich používání, vymezuje role a odpovědnosti
+            v celém životním cyklu, zavádí kategorizaci podle rizika a stanoví opatření na ochranu základních práv,
+            bezpečnosti a transparentnosti. Nařízení je přímo použitelné, bez potřeby transpozice do národního práva.
+          </p>
         </section>
 
         <!-- Úrovně rizika – více souvislého textu + schéma -->
         <section aria-labelledby="risk-levels">
           <h3 id="risk-levels">Jak AI Act pracuje s rizikem</h3>
-          <p>Regulace rozlišuje čtyři patra. <strong>Zakázané praktiky</strong> (čl.&nbsp;5) jsou v demokratickém právním řádu nepřijatelné a zahrnují zejména sociální skórování osob, podprahovou manipulaci a plošné či neadresné biometrické sledování. <strong>Vysoké riziko</strong> (čl.&nbsp;6–29, příloha&nbsp;III) představují systémy, které mohou zásadně ovlivnit životní situace lidí – typicky v oblasti zaměstnání, vzdělávání, zdravotnictví, justice, migrace nebo správy kritické infrastruktury. Tyto systémy jsou přípustné, ale podléhají přísným povinnostem: řízení rizik, technické dokumentaci, testování přesnosti a robustnosti, zajištění lidského dohledu a v případech stanovených nařízením také registraci do evropské databáze. <strong>Omezené riziko</strong> cílí zejména na transparentnost vůči uživateli (např. jasné označení, že komunikuje s chatbotem, nebo že obsah je synteticky vytvořen). <strong>Nízké riziko</strong> nepodléhá zvláštní regulaci AI Actem, ale i zde platí obecné právní předpisy jako ochrana osobních údajů, autorské či spotřebitelské právo.</p>
+          <p>Regulace rozlišuje čtyři patra. <strong>Zakázané praktiky</strong> (čl.&nbsp;5) jsou v demokratickém
+            právním řádu nepřijatelné a zahrnují zejména sociální skórování osob, podprahovou manipulaci a plošné či
+            neadresné biometrické sledování. <strong>Vysoké riziko</strong> (čl.&nbsp;6–29, příloha&nbsp;III)
+            představují systémy, které mohou zásadně ovlivnit životní situace lidí – typicky v oblasti zaměstnání,
+            vzdělávání, zdravotnictví, justice, migrace nebo správy kritické infrastruktury. Tyto systémy jsou
+            přípustné, ale podléhají přísným povinnostem: řízení rizik, technické dokumentaci, testování přesnosti a
+            robustnosti, zajištění lidského dohledu a v případech stanovených nařízením také registraci do evropské
+            databáze. <strong>Omezené riziko</strong> cílí zejména na transparentnost vůči uživateli (např. jasné
+            označení, že komunikuje s chatbotem, nebo že obsah je synteticky vytvořen). <strong>Nízké riziko</strong>
+            nepodléhá zvláštní regulaci AI Actem, ale i zde platí obecné právní předpisy jako ochrana osobních údajů,
+            autorské či spotřebitelské právo.</p>
 
-          <figure role="img" aria-labelledby="aiact-pyramida-title" class="glossary-figure">
+          <img src="../images/narizeni-o-umele-inteligenci.png"
+            alt="Pyramida znázorňující klasifikaci systému AI dle rizik" class="glossary-image">
+          <!-- <figure role="img" aria-labelledby="aiact-pyramida-title" class="glossary-figure">
             <figcaption id="aiact-pyramida-title">Schéma: Pyramida rizik dle AI Act</figcaption>
-            <!-- SVG pyramida rizik -->
+            SVG pyramida rizik
             <svg viewBox="0 0 720 420" role="img" aria-hidden="true">
               <defs>
                 <linearGradient id="g1" x1="0" x2="0" y1="0" y2="1">
@@ -142,71 +171,111 @@
               <text x="360" y="290" text-anchor="middle" class="label">Nízké riziko (běžné aplikace)</text>
               <text x="360" y="380" text-anchor="middle">Čím výš, tím přísnější požadavky a sankce.</text>
             </svg>
-          </figure>
+          </figure> -->
         </section>
 
         <!-- Role – souvislý text + schéma -->
         <section aria-labelledby="roles">
           <h3 id="roles">Role v životním cyklu AI</h3>
-          <p>AI Act rozlišuje čtyři klíčové role v dodavatelském řetězci. <strong>Poskytovatel (provider)</strong> navrhuje a vyvíjí systém, uvádí jej na trh a nese hlavní odpovědnost za prokázání shody – zejména prostřednictvím systému řízení rizik, technické dokumentace a testování. <strong>Dovozce (importer)</strong> odpovídá za uvedení systému ze třetí země na trh EU a ověřuje, že jsou splněny požadavky. <strong>Distributor</strong> systém v EU dále nabízí či dodává odběratelům a musí respektovat režim shody. <strong>Nasazovatel (deployer)</strong> systém používá v praxi – ve veřejné správě typicky úřad či instituce – a zajišťuje lidský dohled, školení uživatelů, evidenci a u vysoce rizikových systémů také provedení FRIA před nasazením.</p>
+          <p>AI Act rozlišuje čtyři klíčové role v dodavatelském řetězci. <strong>Poskytovatel (provider)</strong>
+            navrhuje a vyvíjí systém, uvádí jej na trh a nese hlavní odpovědnost za prokázání shody – zejména
+            prostřednictvím systému řízení rizik, technické dokumentace a testování. <strong>Dovozce (importer)</strong>
+            odpovídá za uvedení systému ze třetí země na trh EU a ověřuje, že jsou splněny požadavky.
+            <strong>Distributor</strong> systém v EU dále nabízí či dodává odběratelům a musí respektovat režim shody.
+            <strong>Nasazovatel (deployer)</strong> systém používá v praxi – ve veřejné správě typicky úřad či instituce
+            – a zajišťuje lidský dohled, školení uživatelů, evidenci a u vysoce rizikových systémů také provedení FRIA
+            před nasazením.
+          </p>
 
-          <figure role="img" aria-labelledby="aiact-roles-title" class="glossary-figure">
+          <img src="../images/narizeni-o-umele-inteligenci-2.png"
+            alt="Schéma znázorňují role v životním cyklu AI systému" class="glossary-image">
+          <!-- <figure role="img" aria-labelledby="aiact-roles-title" class="glossary-figure">
             <figcaption id="aiact-roles-title">Schéma: Role a odpovědnosti v řetězci</figcaption>
-            <!-- SVG role -->
+
             <svg viewBox="0 0 820 180" role="img" aria-hidden="true">
               <style>
-                text{font-family:Inter,Segoe UI,Arial,sans-serif;fill:#111}
-                rect{rx:14;ry:14}
+                text {
+                  font-family: Inter, Segoe UI, Arial, sans-serif;
+                  fill: #111
+                }
+
+                rect {
+                  rx: 14;
+                  ry: 14
+                }
               </style>
-              <rect x="20" y="30" width="180" height="60" fill="#e6f4ea" stroke="#368537"/>
+              <rect x="20" y="30" width="180" height="60" fill="#e6f4ea" stroke="#368537" />
               <text x="110" y="66" text-anchor="middle" font-weight="600">Poskytovatel</text>
               <text x="110" y="86" text-anchor="middle" font-size="12">návrh, shoda, dokumentace</text>
 
-              <polygon points="210,60 250,60 250,40 290,80 250,120 250,100 210,100" fill="#368537"/>
-              <rect x="300" y="30" width="160" height="60" fill="#eef3fb" stroke="#2f7ebd"/>
+              <polygon points="210,60 250,60 250,40 290,80 250,120 250,100 210,100" fill="#368537" />
+              <rect x="300" y="30" width="160" height="60" fill="#eef3fb" stroke="#2f7ebd" />
               <text x="380" y="66" text-anchor="middle" font-weight="600">Dovozce</text>
               <text x="380" y="86" text-anchor="middle" font-size="12">uvedení ze 3. zemí</text>
 
-              <polygon points="460,60 500,60 500,40 540,80 500,120 500,100 460,100" fill="#2f7ebd"/>
-              <rect x="550" y="30" width="150" height="60" fill="#fff7e8" stroke="#e0a100"/>
+              <polygon points="460,60 500,60 500,40 540,80 500,120 500,100 460,100" fill="#2f7ebd" />
+              <rect x="550" y="30" width="150" height="60" fill="#fff7e8" stroke="#e0a100" />
               <text x="625" y="66" text-anchor="middle" font-weight="600">Distributor</text>
               <text x="625" y="86" text-anchor="middle" font-size="12">předání na trh EU</text>
 
-              <polygon points="700,60 740,60 740,40 780,80 740,120 740,100 700,100" fill="#e0a100"/>
-              <rect x="570" y="110" width="200" height="50" fill="#f0faf4" stroke="#368537"/>
+              <polygon points="700,60 740,60 740,40 780,80 740,120 740,100 700,100" fill="#e0a100" />
+              <rect x="570" y="110" width="200" height="50" fill="#f0faf4" stroke="#368537" />
               <text x="670" y="138" text-anchor="middle" font-weight="600">Nasazovatel (úřad)</text>
               <text x="670" y="156" text-anchor="middle" font-size="12">FRIA, dohled, evidence</text>
             </svg>
-          </figure>
+          </figure> -->
         </section>
 
         <!-- GPAI – souvislé odstavce -->
         <section aria-labelledby="gpai">
           <h3 id="gpai">GPAI – obecné modely umělé inteligence</h3>
-          <p>Vedle účelově vymezených systémů přináší AI Act režim pro <em>General Purpose AI</em> (GPAI), tedy univerzální modely využitelné v celé škále aplikací (např. velké jazykové modely). Poskytovatelé GPAI mají povinnost popsat architekturu a omezení modelu, zveřejnit souhrny tréninkových dat a respektovat autorskoprávní pravidla, zejména <em>TDM opt-out</em>. U nejvýkonnějších modelů se systémovým rizikem se přidávají nároky na testování bezpečnosti a mitigaci rizik. Pro veřejnou správu to prakticky znamená promítnout tyto povinnosti do smluv a přejímky, a to i v případě, že úřad využívá GPAI nepřímo prostřednictvím služeb dodavatele.</p>
+          <p>Vedle účelově vymezených systémů přináší AI Act režim pro <em>General Purpose AI</em> (GPAI), tedy
+            univerzální modely využitelné v celé škále aplikací (např. velké jazykové modely). Poskytovatelé GPAI mají
+            povinnost popsat architekturu a omezení modelu, zveřejnit souhrny tréninkových dat a respektovat
+            autorskoprávní pravidla, zejména <em>TDM opt-out</em>. U nejvýkonnějších modelů se systémovým rizikem se
+            přidávají nároky na testování bezpečnosti a mitigaci rizik. Pro veřejnou správu to prakticky znamená
+            promítnout tyto povinnosti do smluv a přejímky, a to i v případě, že úřad využívá GPAI nepřímo
+            prostřednictvím služeb dodavatele.</p>
         </section>
 
         <!-- Veřejná správa – souvislý text -->
         <section aria-labelledby="public-sector">
           <h3 id="public-sector">Co AI Act ukládá veřejné správě</h3>
-          <p>Úřady se nejčastěji ocitají v roli nasazovatele a jejich hlavní odpovědností je používat systém dle návodu, zajistit lidský dohled a školení obsluhy, vést evidenci používání a včas řešit incidenty. Pokud jde o systém vysokého rizika, provádí se před nasazením <strong>FRIA</strong> – posouzení dopadů na základní práva dotčených osob. FRIA rozšiřuje optiku známé DPIA z GDPR a není redukovaná jen na ochranu osobních údajů: vyhodnocuje rovněž rizika diskriminace, přiměřenosti, vysvětlitelnosti či přístupu k nápravě. V oblasti veřejných zakázek je vhodné smluvně vynutit dodání technické dokumentace, umožnit audit a přístup k logům, stanovit požadavky na kvalitu, bezpečnost a testování, a vymezit proces hlášení závažných incidentů.</p>
+          <p>Úřady se nejčastěji ocitají v roli nasazovatele a jejich hlavní odpovědností je používat systém dle návodu,
+            zajistit lidský dohled a školení obsluhy, vést evidenci používání a včas řešit incidenty. Pokud jde o systém
+            vysokého rizika, provádí se před nasazením <strong>FRIA</strong> – posouzení dopadů na základní práva
+            dotčených osob. FRIA rozšiřuje optiku známé DPIA z GDPR a není redukovaná jen na ochranu osobních údajů:
+            vyhodnocuje rovněž rizika diskriminace, přiměřenosti, vysvětlitelnosti či přístupu k nápravě. V oblasti
+            veřejných zakázek je vhodné smluvně vynutit dodání technické dokumentace, umožnit audit a přístup k logům,
+            stanovit požadavky na kvalitu, bezpečnost a testování, a vymezit proces hlášení závažných incidentů.</p>
         </section>
 
         <!-- Implementace – stručný, ale věcný postup -->
         <section aria-labelledby="implementation">
           <h3 id="implementation">Jak AI Act promítnout do praxe úřadu</h3>
-          <p>Úspěšná implementace připomíná zavádění GDPR: je to kontinuální práce, nikoli jednorázový projekt. V praxi se vyplatí postupovat v logických krocích – nejprve zmapovat, kde se AI používá nebo plánuje; poté systémy přiřadit do rizikových kategorií; nastavit governance (odpovědnosti, schvalování změn modelu, lidský dohled a provozní procesy); připravit dokumentaci včetně návodu k použití, záznamů o datech a testech; a nakonec zajistit provozní režim s logováním, monitoringem po nasazení, hlášením incidentů a pravidelnými přezkumy.</p>
+          <p>Úspěšná implementace připomíná zavádění GDPR: je to kontinuální práce, nikoli jednorázový projekt. V praxi
+            se vyplatí postupovat v logických krocích – nejprve zmapovat, kde se AI používá nebo plánuje; poté systémy
+            přiřadit do rizikových kategorií; nastavit governance (odpovědnosti, schvalování změn modelu, lidský dohled
+            a provozní procesy); připravit dokumentaci včetně návodu k použití, záznamů o datech a testech; a nakonec
+            zajistit provozní režim s logováním, monitoringem po nasazení, hlášením incidentů a pravidelnými přezkumy.
+          </p>
         </section>
 
         <!-- Na co si dát pozor – krátké odrážky ponechány -->
         <section aria-labelledby="watchouts">
           <h3 id="watchouts">Na co si dát pozor</h3>
           <ul>
-            <li><strong>Přechodné lhůty</strong> – zákazy čl. 5 od 2.&nbsp;2.&nbsp;2025; GPAI od 2.&nbsp;8.&nbsp;2025; hlavní režim vysokého rizika od 2.&nbsp;8.&nbsp;2026; pro největší GPAI očekávané požadavky v roce 2027.</li>
-            <li><strong>Harmonizované normy a společné specifikace</strong> – usnadní prokázání shody (dokumentace, testování, metriky).</li>
-            <li><strong>Vztah k GDPR</strong> – AI Act je bez dotčení ochrany osobních údajů; DPIA a FRIA se často dělají souběžně.</li>
-            <li><strong>Dodavatelský řetězec</strong> – smluvně zajistit auditovatelnost, přístup k datům a logům, hlášení incidentů, kvalitu a bezpečnost.</li>
-            <li><strong>Transparentní komunikace</strong> – jasně informovat občany, kdy a jak úřad AI používá a jak lze žádat nápravu.</li>
+            <li><strong>Přechodné lhůty</strong> – zákazy čl. 5 od 2.&nbsp;2.&nbsp;2025; GPAI od 2.&nbsp;8.&nbsp;2025;
+              hlavní režim vysokého rizika od 2.&nbsp;8.&nbsp;2026; pro největší GPAI očekávané požadavky v roce 2027.
+            </li>
+            <li><strong>Harmonizované normy a společné specifikace</strong> – usnadní prokázání shody (dokumentace,
+              testování, metriky).</li>
+            <li><strong>Vztah k GDPR</strong> – AI Act je bez dotčení ochrany osobních údajů; DPIA a FRIA se často
+              dělají souběžně.</li>
+            <li><strong>Dodavatelský řetězec</strong> – smluvně zajistit auditovatelnost, přístup k datům a logům,
+              hlášení incidentů, kvalitu a bezpečnost.</li>
+            <li><strong>Transparentní komunikace</strong> – jasně informovat občany, kdy a jak úřad AI používá a jak lze
+              žádat nápravu.</li>
           </ul>
         </section>
 
@@ -218,27 +287,34 @@
             <!-- SVG časová osa -->
             <svg viewBox="0 0 880 160" role="img" aria-hidden="true">
               <style>
-                text{font-family:Inter,Segoe UI,Arial,sans-serif;fill:#111}
-                .dot{stroke:#111;stroke-width:1.5}
+                text {
+                  font-family: Inter, Segoe UI, Arial, sans-serif;
+                  fill: #111
+                }
+
+                .dot {
+                  stroke: #111;
+                  stroke-width: 1.5
+                }
               </style>
-              <line x1="60" y1="80" x2="820" y2="80" stroke="#bbb" stroke-width="3"/>
-              <circle cx="120" cy="80" r="8" fill="#368537" class="dot"/>
+              <line x1="60" y1="80" x2="820" y2="80" stroke="#bbb" stroke-width="3" />
+              <circle cx="120" cy="80" r="8" fill="#368537" class="dot" />
               <text x="120" y="30" text-anchor="middle" font-weight="600">1. 8. 2024</text>
               <text x="120" y="50" text-anchor="middle" font-size="12">Vstup v platnost</text>
 
-              <circle cx="300" cy="80" r="8" fill="#b22222" class="dot"/>
+              <circle cx="300" cy="80" r="8" fill="#b22222" class="dot" />
               <text x="300" y="30" text-anchor="middle" font-weight="600">2. 2. 2025</text>
               <text x="300" y="50" text-anchor="middle" font-size="12">Zákazy čl. 5</text>
 
-              <circle cx="480" cy="80" r="8" fill="#2f7ebd" class="dot"/>
+              <circle cx="480" cy="80" r="8" fill="#2f7ebd" class="dot" />
               <text x="480" y="30" text-anchor="middle" font-weight="600">2. 8. 2025</text>
               <text x="480" y="50" text-anchor="middle" font-size="12">Povinnosti GPAI</text>
 
-              <circle cx="660" cy="80" r="8" fill="#e0a100" class="dot"/>
+              <circle cx="660" cy="80" r="8" fill="#e0a100" class="dot" />
               <text x="660" y="30" text-anchor="middle" font-weight="600">2. 8. 2026</text>
               <text x="660" y="50" text-anchor="middle" font-size="12">Vysoké riziko</text>
 
-              <circle cx="800" cy="80" r="8" fill="#7a4dd8" class="dot"/>
+              <circle cx="800" cy="80" r="8" fill="#7a4dd8" class="dot" />
               <text x="800" y="30" text-anchor="middle" font-weight="600">2027</text>
               <text x="800" y="50" text-anchor="middle" font-size="12">Systémové GPAI</text>
             </svg>
@@ -248,14 +324,23 @@
         <!-- Sankce – souvislý text -->
         <section aria-labelledby="sanctions">
           <h3 id="sanctions">Sankce</h3>
-          <p>AI Act zavádí odstupňované sankce obdobně přísné jako GDPR. Za zakázané praktiky mohou sankce dosáhnout až <strong>35&nbsp;mil.&nbsp;€ nebo 7&nbsp;% celosvětového obratu</strong>, za jiná porušení povinností až <strong>15&nbsp;mil.&nbsp;€ nebo 3&nbsp;%</strong> a za poskytnutí nepravdivých či neúplných údajů až <strong>7,5&nbsp;mil.&nbsp;€ nebo 1&nbsp;%</strong>. Výše sankce se přizpůsobuje ekonomické síle subjektu tak, aby byla účinná a odrazující. Veřejné orgány se sankčnímu režimu nevyhnou, zejména pokud by vědomě porušily zákaz nebo systémově zanedbaly své povinnosti.</p>
+          <p>AI Act zavádí odstupňované sankce obdobně přísné jako GDPR. Za zakázané praktiky mohou sankce dosáhnout až
+            <strong>35&nbsp;mil.&nbsp;€ nebo 7&nbsp;% celosvětového obratu</strong>, za jiná porušení povinností až
+            <strong>15&nbsp;mil.&nbsp;€ nebo 3&nbsp;%</strong> a za poskytnutí nepravdivých či neúplných údajů až
+            <strong>7,5&nbsp;mil.&nbsp;€ nebo 1&nbsp;%</strong>. Výše sankce se přizpůsobuje ekonomické síle subjektu
+            tak, aby byla účinná a odrazující. Veřejné orgány se sankčnímu režimu nevyhnou, zejména pokud by vědomě
+            porušily zákaz nebo systémově zanedbaly své povinnosti.
+          </p>
         </section>
 
         <!-- AI gramotnost -->
         <section class="ai-gramotnost" aria-labelledby="ai-literacy">
           <h3 id="ai-literacy">AI GRAMOTNOST</h3>
           <h4>Proč to má znát i úředník?</h4>
-          <p>Součástí <a href="../ai-gramotnost.html">AI gramotnosti</a> je orientace v hlavních povinnostech AI Actu. Díky tomu lze rychle vyhodnotit, kdy projekt s AI vyžaduje právní posouzení, jak nastavit lidský dohled a jaké informace vyžadovat po dodavateli. Lepší porozumění pravidlům posiluje důvěru občanů v digitální služby a snižuje riziko chyb.</p>
+          <p>Součástí <a href="../ai-gramotnost.html">AI gramotnosti</a> je orientace v hlavních povinnostech AI Actu.
+            Díky tomu lze rychle vyhodnotit, kdy projekt s AI vyžaduje právní posouzení, jak nastavit lidský dohled a
+            jaké informace vyžadovat po dodavateli. Lepší porozumění pravidlům posiluje důvěru občanů v digitální služby
+            a snižuje riziko chyb.</p>
         </section>
 
         <!-- Související pojmy -->
@@ -289,17 +374,22 @@
         <section class="footer-block">
           <h3>Informace</h3>
           <p><a href="../podminky.html">Podmínky využití a ochrana osobních údajů</a></p>
-          <p><a href="https://www.dia.gov.cz/cs/prohlaseni-o-pristupnosti" target="_blank" rel="noopener noreferrer">Prohlášení o&nbsp;přístupnosti</a></p>
+          <p><a href="https://www.dia.gov.cz/cs/prohlaseni-o-pristupnosti" target="_blank"
+              rel="noopener noreferrer">Prohlášení o&nbsp;přístupnosti</a></p>
         </section>
         <section class="footer-block">
           <h3>Kontakty</h3>
           <p><a href="mailto:kc@dia.gov.cz">kc@dia.gov.cz</a></p>
           <ul class="footer-social">
-            <li><a href="https://www.facebook.com/digitalniainformacniagentura" target="_blank" rel="noreferrer nofollow">Facebook</a></li>
-            <li><a href="https://www.instagram.com/agentura_dia/" target="_blank" rel="noreferrer nofollow">Instagram</a></li>
+            <li><a href="https://www.facebook.com/digitalniainformacniagentura" target="_blank"
+                rel="noreferrer nofollow">Facebook</a></li>
+            <li><a href="https://www.instagram.com/agentura_dia/" target="_blank"
+                rel="noreferrer nofollow">Instagram</a></li>
             <li><a href="https://x.com/agentura_dia" target="_blank" rel="noreferrer nofollow">X</a></li>
-            <li><a href="https://www.youtube.com/@agentura_dia" target="_blank" rel="noreferrer nofollow">YouTube</a></li>
-            <li><a href="https://www.linkedin.com/company/digitalniainformacniagentura" target="_blank" rel="noreferrer nofollow">LinkedIn</a></li>
+            <li><a href="https://www.youtube.com/@agentura_dia" target="_blank" rel="noreferrer nofollow">YouTube</a>
+            </li>
+            <li><a href="https://www.linkedin.com/company/digitalniainformacniagentura" target="_blank"
+                rel="noreferrer nofollow">LinkedIn</a></li>
           </ul>
         </section>
       </div>
@@ -313,13 +403,16 @@
             <img src="../logos/dia_logo.svg" alt="DIA logo">
           </div>
           <div class="footer-block">
-            <p>Vytvořeno v&nbsp;rámci projektu ROPIM – Reforma pro optimalizaci, implementaci a metodické řízení digitalizovaných služeb vč. jejich kapacitního plánování a komunikaci klientům veřejné správy, financovaného Evropskou unií NextGeneration.</p>
+            <p>Vytvořeno v&nbsp;rámci projektu ROPIM – Reforma pro optimalizaci, implementaci a metodické řízení
+              digitalizovaných služeb vč. jejich kapacitního plánování a komunikaci klientům veřejné správy,
+              financovaného Evropskou unií NextGeneration.</p>
             <p>REG. Č.: CZ.31.5.0/0.0/.0./23_106/0008503</p>
           </div>
         </div>
       </section>
       <div class="footer-bottom">
-        <p>2025 © Digitální a informační agentura • Informace jsou poskytovány v&nbsp;souladu se zákonem č.&nbsp;106/1999&nbsp;Sb.</p>
+        <p>2025 © Digitální a informační agentura • Informace jsou poskytovány v&nbsp;souladu se zákonem
+          č.&nbsp;106/1999&nbsp;Sb.</p>
       </div>
     </div>
   </footer>

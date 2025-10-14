@@ -17,7 +17,8 @@
   <header>
     <div class="header-bar">
       <button class="hamburger" id="menuBtn" aria-label="Menu" aria-controls="mobile-menu" aria-expanded="false">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+          stroke-linejoin="round">
           <line x1="3" y1="12" x2="21" y2="12"></line>
           <line x1="3" y1="6" x2="21" y2="6"></line>
           <line x1="3" y1="18" x2="21" y2="18"></line>
@@ -50,14 +51,16 @@
     <div class="mobile-menu__panel" role="dialog" aria-modal="true">
       <div class="mobile-menu__header">
         <span>Menu</span>
-        <button class="mobile-menu__close" type="button" data-mobile-menu-close aria-label="Zavřít menu">&times;</button>
+        <button class="mobile-menu__close" type="button" data-mobile-menu-close
+          aria-label="Zavřít menu">&times;</button>
       </div>
       <nav aria-label="Hlavní menu">
         <ul class="mobile-menu__list">
           <li class="mobile-menu__item mobile-menu__item--catalog">
             <div class="mobile-menu__row">
               <a href="../project.html">Katalog</a>
-              <button class="mobile-menu__toggle" type="button" aria-expanded="false" aria-controls="mobile-catalog-list">
+              <button class="mobile-menu__toggle" type="button" aria-expanded="false"
+                aria-controls="mobile-catalog-list">
                 <span class="sr-only">Rozbalit menu katalogu</span>
                 <span aria-hidden="true">▶</span>
               </button>
@@ -222,7 +225,8 @@
 
         <section>
           <h3>Jak vektorová databáze hledá podobnost?</h3>
-          <img src="../images/vector-database-2.png" alt="Vizualizace vektorů" class="glossary-image-aside">
+          <img src="../images/vector-database-2.png" alt="Vizualizace vektorů" class="glossary-image-aside"
+            style="max-width: 30%;">
           <p>Představme si, že každý dokument, věta nebo obrázek je bod v mnoharozměrném prostoru.
             Pokud chceme najít podobný dokument, ptáme se: <em>Které body leží nejblíže mému dotazu?</em>
             To je princip <strong>vyhledávání nejbližších sousedů (nearest neighbors search)</strong>.</p>
@@ -242,11 +246,11 @@
             velmi pomalé. Proto se v praxi používá <strong>přibližné vyhledávání nejbližších sousedů (ANN)</strong>.
             To pracuje s chytrými indexy (např. HNSW, IVF-PQ), které rychle zužují prostor možných kandidátů.
             Díky nim je možné hledat během milisekund i mezi miliony vektorů.</p>
-
+          <img src="../images/vector-database-3.png" alt="Vizualizace vektorů se zvířaty"
+            class="glossary-image-aside-left" style="max-width: 25%;">
           <p>Takové hledání je do určité míry <a href="slovnicek/black-box.html">černá skříňka</a>:
             my přesně nevíme, co znamená každý rozměr vektoru, ale víme, že algoritmus dokáže efektivně
             spočítat, které položky jsou si podle významu blízké.</p>
-
           <p>V praxi nestačí hledat jen podle významu. Úředníci často potřebují kombinovat
             významovou podobnost s přesnými podmínkami: hledám metodiku, která se týká
             „datových schránek“, ale jen z roku 2022. Proto se používá <strong>hybridní vyhledávání</strong>:</p>
@@ -264,6 +268,7 @@
 
         <section>
           <h3>Jak to souvisí s AI a jazykovými modely?</h3>
+
           <p><a href="large-language-model-llm.html">Velké jazykové modely</a> jako ChatGPT či Gemini dokážou
             generovat texty a odpovídat na otázky. Aby však
             mohly čerpat z konkrétních dokumentů, potřebují systém, který jim tyto dokumenty podle významu rychle
