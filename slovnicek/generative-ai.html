@@ -88,22 +88,22 @@
         </div>
 
         <section>
-          <p>Generativní AI dnes patří k nejčastěji zmiňovaným pojmům v souvislosti s umělou inteligencí. Pokud jste
+          <p>Generativní AI dnes patří k nejčastěji zmiňovaným pojmům v souvislosti s <a href="umela-inteligence.html">umělou inteligencí</a>. Pokud jste
             slyšeli o nástrojích jako ChatGPT nebo DALL·E, už jste se s ní setkali. Na rozdíl od klasických algoritmů,
             které hlavně rozpoznávají a třídí data, generativní AI dokáže vytvářet nový obsah – texty, obrázky, hudbu i
             kód.</p>
         </section>
 
         <section class="highlight">
-          <p><strong>Generativní AI</strong> označuje modely umělé inteligence navržené k tvorbě nových dat, která
-            odpovídají vzorům naučeným z trénovacích sad. Na základě zadaného podnětu (promtu) mohou vygenerovat
-            originální výstup, který působí realisticky a drží se kontextu. Typickými příklady jsou velké jazykové
-            modely pro generování textu nebo difuzní modely, které tvoří obrazy a zvuk.</p>
+          <p><strong>Generativní AI</strong> označuje modely <a href="umela-inteligence.html">umělé inteligence</a> navržené k tvorbě nových dat, která
+            odpovídají vzorům naučeným z trénovacích sad. Na základě zadaného podnětu (<a href="prompt.html">promptu</a>) mohou vygenerovat
+            originální výstup, který působí realisticky a drží se kontextu. Typickými příklady jsou <a href="large-language-model.html">velké jazykové
+            modely (LLM)</a> pro generování textu, difuzní modely pro tvorbu obrazů a zvuku, nebo <a href="large-multimodal-model.html">velké multimodální modely (LMM)</a>, které dokážou pracovat s více druhy vstupů současně – například kombinovat text, obraz a zvuk.</p>
         </section>
 
         <section>
           <h3>Jak se liší od jiné AI?</h3>
-          <p>Klasická umělá inteligence byla po dlouhá léta zaměřená hlavně na rozpoznávání a klasifikaci – uměla
+          <p>Klasická <a href="umela-inteligence.html">umělá inteligence</a> byla po dlouhá léta zaměřená hlavně na rozpoznávání a klasifikaci – uměla
             například identifikovat obličej na fotografii, rozlišit druh dopisu nebo rozpoznat hlas uživatele. Tento
             přístup stojí na předem definovaných vzorech: model se učí, jak vypadá určitý objekt, a poté ho hledá ve
             vstupních datech.</p>
@@ -125,19 +125,60 @@
             kdy Ian Goodfellow představil <strong>Generative Adversarial Networks (GANs)</strong>. Ty využívají princip
             soupeření dvou neuronových sítí – jedna tvoří a druhá hodnotí. Výsledkem je proces, který se postupně
             zlepšuje, až generované obrazy nebo zvuky začnou být nerozeznatelné od skutečných.</p>
-          <p>Na tento základ navázaly další technologie. Velké jazykové modely (<strong>Large Language Models –
-              LLMs</strong>) jako GPT přinesly schopnost pracovat s přirozeným jazykem, porozumět kontextu a tvořit
-            smysluplné texty. Následně se objevily <strong>difuzní modely</strong>, které obrátily tradiční způsob
-            generování naruby – začínají s náhodným šumem a postupně „odšumují“ obraz, dokud nevznikne realistická
-            podoba. Tento přístup pohání nástroje jako Stable Diffusion nebo DALL·E.</p>
+          <p>Na tento základ navázaly další technologie. <a href="large-language-model.html"><strong>Velké jazykové modely (LLMs)</strong></a> jako GPT přinesly schopnost pracovat s přirozeným jazykem, porozumět kontextu a tvořit
+            smysluplné texty. Následně se objevily <strong>difuzní modely</strong>, které generují obraz nebo zvuk
+            postupným odstraňováním šumu z náhodného signálu – tento princip využívají nástroje jako Stable Diffusion nebo DALL·E.
+            Nejnovějším krokem jsou <a href="large-multimodal-model.html"><strong>velké multimodální modely (LMMs)</strong></a>,
+            které spojují text, obraz, zvuk i video do jednoho systému a umožňují tak vytvářet komplexní interakce mezi různými typy dat.</p>
           <p>Dnešní boom generativní AI je tedy výsledkem několika zralých technologií, obrovského množství tréninkových
             dat a výpočetního výkonu, který dříve nebyl dostupný. Není to náhlý zázrak, ale přirozený krok ve vývoji
             strojového učení – krok, který otevřel nové pole kreativity i automatizace.</p>
         </section>
 
         <section>
+        <h3>Přehled typů generativních modelů a nástrojů</h3>
+        <table class="glossary-table">
+          <thead>
+            <tr>
+              <th>Typ výstupu</th>
+              <th>Model / technologie</th>
+              <th>Příklady nástrojů</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Text</strong></td>
+              <td><a href="large-language-model.html">Velké jazykové modely (LLM)</a></td>
+              <td>ChatGPT, Claude, Gemini, Mistral</td>
+            </tr>
+            <tr>
+              <td><strong>Obraz</strong></td>
+              <td>Difuzní modely</td>
+              <td>DALL·E, Midjourney, Stable Diffusion</td>
+            </tr>
+            <tr>
+              <td><strong>Video</strong></td>
+              <td><a href="large-multimodal-model.html">Velké multimodální modely (LMM)</a></td>
+              <td>Sora 2, Pika Labs, Runway ML</td>
+            </tr>
+            <tr>
+              <td><strong>Hudba / zvuk</strong></td>
+              <td>Generativní modely pro audio</td>
+              <td>Suno, Udio, MusicLM, Mubert</td>
+            </tr>
+            <tr>
+              <td><strong>3D / prostorová data</strong></td>
+              <td>Generativní modely pro 3D syntézu</td>
+              <td>Point-E, Shap-E, Gaussian Splatting, Luma AI</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+
+        <section>
           <h3>K čemu se používá?</h3>
-          <p>Generativní AI se dnes uplatňuje napříč odvětvími – od umění přes medicínu až po veřejnou správu. V praxi
+          <p>Generativní AI se dnes uplatňuje napříč odvětvími – od umění až po veřejnou správu. V praxi
             to znamená, že stejný princip, který umožní napsat článek nebo vytvořit obraz, může pomoci také analyzovat a
             vytvářet administrativní texty, návrhy rozhodnutí nebo přehledné odpovědi pro občany.</p>
           <p>V komerčním světě se generativní modely využívají pro návrh produktů, tvorbu marketingového obsahu,
@@ -150,7 +191,6 @@
           </p>
         </section>
 
-        <!-- TODO: zmínit LLM a LMM, tabulka (obrázky - DALL-E, Midjourny, text - ChatGPT, Claude, ..., videa - Sora 2, hudba - XXX) -->
         <section>
           <h3>Jak souvisí teplota s výstupem?</h3>
           <p>Při generování textu i obrázků lze ovlivnit chování modelu parametry, které řídí míru náhodnosti.
