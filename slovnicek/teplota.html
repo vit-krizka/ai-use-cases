@@ -89,12 +89,12 @@
         </section>
 
         <section class="highlight">
-          <p><strong>Teplota</strong> (temperature) je parametr velkých jazykových modelů (LLM), který určuje míru náhody v generování textu. Hodnota se obvykle pohybuje v rozmezí od 0 do 2. Nízká teplota znamená vyšší předvídatelnost a konzistenci odpovědí, zatímco vyšší teplota přináší větší variabilitu a kreativitu. Prakticky to znamená, že model s nižší teplotou vybírá slova s nejvyšší pravděpodobností, zatímco model s vyšší teplotou častěji zkouší méně pravděpodobné, ale zajímavé možnosti.</p>
+          <p><strong>Teplota</strong> (temperature) je parametr <a href="large-language-model.html">velkých jazykových modelů (LLM)</a>, který určuje míru náhody v generování textu. Hodnota se obvykle pohybuje v rozmezí od 0 do 2. Nízká teplota znamená vyšší předvídatelnost a konzistenci odpovědí, zatímco vyšší teplota přináší větší variabilitu a kreativitu. Prakticky to znamená, že model s nižší teplotou vybírá slova s nejvyšší pravděpodobností, zatímco model s vyšší teplotou častěji zkouší méně pravděpodobné, ale zajímavé možnosti.</p>
         </section>
 
         <section>
           <h3>Jak teplota ovlivňuje chování modelu?</h3>
-          <p>Velké jazykové modely nevybírají „správné“ odpovědi, ale generují další slova podle pravděpodobnostního rozložení. Parametr teploty toto rozložení rozšiřuje nebo zužuje – tedy určuje, jak „odvážně“ model experimentuje s volbou dalšího slova.</p>
+          <p><a href="large-language-model.html">Velké jazykové modely</a> nevybírají „správné“ odpovědi, ale generují další slova podle pravděpodobnostního rozložení. Parametr teploty toto rozložení rozšiřuje nebo zužuje – tedy určuje, jak „odvážně“ model experimentuje s volbou dalšího slova.</p>
           <ul>
             <li><strong>Nízká teplota (0–0.3):</strong> Výstupy jsou stabilní, přesné a málo kreativní. Vhodné pro odborné texty, úřední komunikaci, sumarizace nebo analýzy, kde je důležitá jednoznačnost a konzistence. Při nulové teplotě dostáváme téměř identické výsledky při opakování stejného dotazu.</li>
             <li><strong>Střední teplota (0.5–0.8):</strong> Vyvážený přístup – model zachovává smysl i strukturu, ale může nabídnout různé formulace nebo alternativní přístupy. Hodí se pro interní brainstorming, návrhy textů či úprav stylu.</li>
@@ -104,7 +104,13 @@
 
         <section>
           <h3>Jak teplotu nastavit?</h3>
-          <p>Hodnotu teploty lze měnit pouze při práci s rozhraním API nebo na tzv. <em>hřištích</em> (playground) dostupných v dokumentaci modelů. V rozhraní ChatGPT uživatel teplotu přímo nenastavuje – je ovlivněna prvním zadáním (tzv. systémovým promptem). Proto je <strong>první dotaz zásadní</strong>, protože určuje tón a přesnost následné konverzace.</p>
+          <p>Parametr <em>temperature</em> určuje míru kreativity a náhodnosti odpovědí <a href="generative-ai.html">generativního modelu</a> – nižší hodnoty (např. 0–0,3) vedou k přesnějším a konzistentnějším výstupům, vyšší (např. 1,0–2,0) pak k rozmanitějším, ale méně předvídatelným výsledkům. Tento princip je společný pro většinu velkých jazykových a multimodálních modelů (např. ChatGPT, Claude, Gemini, Mistral aj.).</p>
+          <p>Možnost ručně nastavit teplotu bývá dostupná především při práci s rozhraním API nebo na tzv. <em>hřištích</em> (playgrounds), která výrobci modelů poskytují ve své dokumentaci. V běžných konverzačních rozhraních (např. ChatGPT, Claude.ai) uživatel teplotu obvykle přímo nenastavuje – model ji volí podle typu rozhraní nebo podle tzv. systémového promptu, který definuje chování asistenta. Proto je <strong>první zadání zásadní</strong>, protože určuje tón, styl a přesnost celé konverzace.</p>
+        </section>
+
+        <section>
+          <h3>Souvislost s halucinacemi</h3>
+          <p>Teplota přímo ovlivňuje pravděpodobnost vzniku <a href="halucinace.html">halucinací</a> – tedy situací, kdy AI vytváří přesvědčivě znějící, ale nepravdivé informace. Při vyšší teplotě model častěji „riskuje“ a doplní neznámá místa v textu vlastní domněnkou. Naopak nízká teplota vede k opatrnějším, ale méně originálním odpovědím. Proto je při práci s AI v institucích důležité zvolit rovnováhu – například v analýzách a legislativě preferovat nižší teplotu, zatímco pro kreativní nástroje může být vhodná vyšší.</p>
         </section>
 
         <section class="ai-gramotnost">
@@ -118,9 +124,9 @@
         <section>
           <h3>Související pojmy</h3>
           <ul>
-            <li><a href="ai-gramotnost.html">AI gramotnost (AI literacy)</a></li>
             <li><a href="generative-ai.html">Generativní AI</a></li>
             <li><a href="halucinace.html">Halucinace</a></li>
+            <li><a href="large-language-model.html">Velký jazykový model</a></li>
           </ul>
         </section>
 
