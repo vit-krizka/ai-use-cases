@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="cs">
+{% include "include/html-head.njk" %}
+
+<body id="main-page">
+{% include "include/header.njk" %}
+
+  <main id="main">
+    <div>
+      <section>
+        <div class="hero-banner">
+          <div class="hero-image">
+            <img src="logos/lev_chip_bila.svg" alt="Budoucnost je digitální">
+          </div>
+          <div class="hero-text">
+            <h2>Katalog využití AI ve veřejném sektoru</h2>
+            <p>DIA představuje úspěšné příklady AI praxe ve veřejném sektoru</p>
+            <a href="project.html" class="btn-primary">Přejít do katalogu</a>
+            <p></p>
+            <a href="PDF/AI_use-cases.pdf" id="btn-tertiary" class="btn-tertiary" title="Stáhnout katalog"
+              target="_blank" rel="noreferrer nofollow">
+              <img src="icons/download_.svg" alt="Stáhnout katalog" width="20" height="20">
+              <span>Stáhnout katalog</span>
+            </a>
+          </div>
+        </div>
+        <div class="main-content">
+          <h2>K čemu slouží tento katalog?</h2>
+          <p>Umělá inteligence postupně proměňuje způsob, jakým stát funguje – od zdravotnictví a dopravy, přes
+            bezpečnost a
+            dohled, až po každodenní komunikaci úřadů s občany. Tento katalog přináší přehled konkrétních projektů,
+            které
+            dokazují, že AI už není jen vizí budoucnosti, ale reálným nástrojem, který dnes pomáhá veřejné správě lépe
+            fungovat. Najdete zde desítky příkladů, jež ukazují, jak lze díky moderním technologiím zefektivnit procesy,
+            snížit administrativní zátěž a zlepšit dostupnost služeb pro občany.</p>
+          <p>Cílem projektu je ukázat, jak rozmanité jsou způsoby využití AI a jaký mají skutečný dopad – od rychlejší
+            diagnostiky nemocí v nemocnicích, přes automatizované přepisy parlamentních jednání, až po chytré chatboty,
+            kteří usnadňují občanům komunikaci s úřady. Tyto příklady zároveň slouží jako inspirace a know-how pro další
+            instituce, které hledají nové cesty k digitalizaci a inovacím.</p>
+          <p>Projekt není jen souborem technologických řešení. Je také mapou zkušeností, která ukazuje, co se osvědčilo,
+            kde
+            je potřeba opatrnost a jak nastavit odpovědné využívání AI v prostředí veřejné správy. Katalog dává
+            nahlédnout,
+            které projekty jsou už dnes v ostrém provozu, které se testují v pilotním režimu a jaké mají očekávané
+            přínosy
+            do budoucna.</p>
+          <p>Umělá inteligence se tak stává jedním z klíčových nástrojů pro modernizaci veřejného sektoru. Přispívá
+            k efektivnějšímu fungování státu, transparentnějšímu rozhodování a dostupnějším službám pro všechny občany.
+            Tento katalog je prvním krokem k systematickému mapování a sdílení zkušeností, na jejichž základě může česká
+            veřejná správa stavět svou digitální budoucnost.</p>
+        </div>
+        <div><a href="wiki.html" class="btn-secondary" aria-label="Přidat use case">Přidat use case</a></div>
+        <p></p>
+      <h2>Katalog využití AI ve veřejném sektoru</h2>
+      <div id="table-overview-container"></div>
+      <script src="table-overview.js"></script>
+    </div>
+  </main>
+
+{% include "include/footer.njk" %}
+
+  <script src="script.js"></script>
+</body>
+
+</html>
