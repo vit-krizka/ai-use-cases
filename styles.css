@@ -1152,15 +1152,13 @@ h3 {
     isolation: isolate;
     margin: clamp(2.5rem, 6vw, 3.75rem) auto;
     padding: clamp(2rem, 5vw, 3rem) clamp(1.5rem, 4vw, 2.5rem);
-    background: none;
+    background: #c5c5c5; /* přesunuto sem místo ::before */
+    border-radius: 12px;
 }
 
+/* Odstraněno přesahující pseudo-pozadí */
 .usecase-counter::before {
-    content: "";
-    position: absolute;
-    inset: 0 calc(50% - 50vw);
-    background: #c5c5c5;
-    z-index: -1;
+    content: none;
 }
 
 .usecase-counter__inner {
@@ -1196,7 +1194,8 @@ h3 {
     padding: 8px 0;
     border-radius: 12px;
     background: linear-gradient(160deg, #ffffff, #f3f3f3 70%, #ffffff);
-    box-shadow: 0 18px 32px -28px rgba(22, 31, 38, 0.45), 0 10px 20px -22px rgba(22, 31, 38, 0.25);
+    box-shadow: 0 18px 32px -28px rgba(22, 31, 38, 0.45),
+                0 10px 20px -22px rgba(22, 31, 38, 0.25);
     border: 1px solid rgba(12, 24, 35, 0.08);
     perspective: 1000px;
     min-width: clamp(5ch, 7vw, 6ch);
@@ -1281,6 +1280,7 @@ h3 {
         font-size: clamp(1rem, 4.5vw, 1.3rem);
     }
 }
+
 
 .highlight {
     background: #f9f9f9;
