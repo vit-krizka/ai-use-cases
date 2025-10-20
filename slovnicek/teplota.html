@@ -93,7 +93,7 @@
         </section>
 
         <section>
-          <h3>Jak teplota ovlivňuje chování modelu?</h3>
+          <h3>Parametr teploty a jeho vliv na chování jazykových modelů</h3>
           <p><a href="large-language-model.html">Velké jazykové modely</a> nevybírají „správné“ odpovědi, ale generují další slova podle pravděpodobnostního rozložení. Parametr teploty toto rozložení rozšiřuje nebo zužuje – tedy určuje, jak „odvážně“ model experimentuje s volbou dalšího slova.</p>
           <ul>
             <li><strong>Nízká teplota (0–0.3):</strong> Výstupy jsou stabilní, přesné a málo kreativní. Vhodné pro odborné texty, úřední komunikaci, sumarizace nebo analýzy, kde je důležitá jednoznačnost a konzistence. Při nulové teplotě dostáváme téměř identické výsledky při opakování stejného dotazu.</li>
@@ -103,6 +103,8 @@
         </section>
 
         <section>
+          <img src="../images/teplota.png" alt="Znázornění teploty"
+            class="glossary-image-aside-left" style="max-width: 25%;">
           <h3>Jak teplotu nastavit?</h3>
           <p>Parametr <em>temperature</em> určuje míru kreativity a náhodnosti odpovědí <a href="generative-ai.html">generativního modelu</a> – nižší hodnoty (např. 0–0,3) vedou k přesnějším a konzistentnějším výstupům, vyšší (např. 1,0–2,0) pak k rozmanitějším, ale méně předvídatelným výsledkům. Tento princip je společný pro většinu velkých jazykových a multimodálních modelů (např. ChatGPT, Claude, Gemini, Mistral aj.).</p>
           <p>Možnost ručně nastavit teplotu bývá dostupná především při práci s rozhraním API nebo na tzv. <em>hřištích</em> (playgrounds), která výrobci modelů poskytují ve své dokumentaci. V běžných konverzačních rozhraních (např. ChatGPT, Claude.ai) uživatel teplotu obvykle přímo nenastavuje – model ji volí podle typu rozhraní nebo podle tzv. systémového promptu, který definuje chování asistenta. Proto je <strong>první zadání zásadní</strong>, protože určuje tón, styl a přesnost celé konverzace.</p>
