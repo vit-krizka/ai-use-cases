@@ -17,7 +17,8 @@
   <header>
     <div class="header-bar">
       <button class="hamburger" id="menuBtn" aria-label="Menu" aria-controls="mobile-menu" aria-expanded="false">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+          stroke-linejoin="round">
           <line x1="3" y1="12" x2="21" y2="12"></line>
           <line x1="3" y1="6" x2="21" y2="6"></line>
           <line x1="3" y1="18" x2="21" y2="18"></line>
@@ -50,14 +51,16 @@
     <div class="mobile-menu__panel" role="dialog" aria-modal="true">
       <div class="mobile-menu__header">
         <span>Menu</span>
-        <button class="mobile-menu__close" type="button" data-mobile-menu-close aria-label="Zavřít menu">&times;</button>
+        <button class="mobile-menu__close" type="button" data-mobile-menu-close
+          aria-label="Zavřít menu">&times;</button>
       </div>
       <nav aria-label="Hlavní menu">
         <ul class="mobile-menu__list">
           <li class="mobile-menu__item mobile-menu__item--catalog">
             <div class="mobile-menu__row">
               <a href="../project.html">Katalog</a>
-              <button class="mobile-menu__toggle" type="button" aria-expanded="false" aria-controls="mobile-catalog-list">
+              <button class="mobile-menu__toggle" type="button" aria-expanded="false"
+                aria-controls="mobile-catalog-list">
                 <span class="sr-only">Rozbalit menu katalogu</span>
                 <span aria-hidden="true">▶</span>
               </button>
@@ -81,46 +84,79 @@
         <div class="glossary-entry__header">
           <p class="glossary-entry__tag">technický pojem</p>
           <h2>Teplota</h2>
-          <p class="glossary-entry__alt-name">temperature</p>
+          <p class="glossary-entry__alt-name">Temperature</p>
         </div>
 
         <section>
-          <p>Proč někdy umělá inteligence odpovídá naprosto přesně – a jindy překvapí kreativní, ale nesmyslnou odpovědí? Klíčem je tzv. <strong>teplota</strong>. Tento nenápadný parametr rozhoduje o tom, zda bude model mluvit „jako úředník“ nebo „jako básník“ – tedy zda bude výsledek spíše formální a konzistentní, nebo naopak nápaditý a originální.</p>
+          <p>Proč někdy umělá inteligence odpovídá naprosto přesně – a jindy překvapí kreativní, ale nesmyslnou
+            odpovědí? Klíčem je tzv. <strong>teplota</strong>. Tento nenápadný parametr rozhoduje o tom, zda bude model
+            mluvit „jako úředník“ nebo „jako básník“ – tedy zda bude výsledek spíše formální a konzistentní, nebo naopak
+            nápaditý a originální.</p>
         </section>
 
         <section class="highlight">
-          <p><strong>Teplota</strong> (temperature) je parametr <a href="large-language-model.html">velkých jazykových modelů (LLM)</a>, který určuje míru náhody v generování textu. Hodnota se obvykle pohybuje v rozmezí od 0 do 2. Nízká teplota znamená vyšší předvídatelnost a konzistenci odpovědí, zatímco vyšší teplota přináší větší variabilitu a kreativitu. Prakticky to znamená, že model s nižší teplotou vybírá slova s nejvyšší pravděpodobností, zatímco model s vyšší teplotou častěji zkouší méně pravděpodobné, ale zajímavé možnosti.</p>
+          <p><strong>Teplota</strong> je parametr <a href="large-language-model.html">velkých jazykových modelů
+              (LLM)</a>, který určuje míru náhody v generování textu. Hodnota se obvykle pohybuje v rozmezí od 0 do 2.
+            Nízká teplota znamená vyšší předvídatelnost a konzistenci odpovědí, zatímco vyšší teplota přináší větší
+            variabilitu a kreativitu. Prakticky to znamená, že model s nižší teplotou vybírá slova s nejvyšší
+            pravděpodobností, zatímco model s vyšší teplotou častěji zkouší méně pravděpodobné, ale zajímavé možnosti.
+          </p>
         </section>
 
         <section>
           <h3>Parametr teploty a jeho vliv na chování jazykových modelů</h3>
-          <p><a href="large-language-model.html">Velké jazykové modely</a> nevybírají „správné“ odpovědi, ale generují další slova podle pravděpodobnostního rozložení. Parametr teploty toto rozložení rozšiřuje nebo zužuje – tedy určuje, jak „odvážně“ model experimentuje s volbou dalšího slova.</p>
+          <p><a href="large-language-model.html">Velké jazykové modely</a> nevybírají „správné“ odpovědi, ale generují
+            další slova podle pravděpodobnostního rozložení. Parametr teploty toto rozložení rozšiřuje nebo zužuje –
+            tedy určuje, jak „odvážně“ model experimentuje s volbou dalšího slova.</p>
           <ul>
-            <li><strong>Nízká teplota (0–0.3):</strong> Výstupy jsou stabilní, přesné a málo kreativní. Vhodné pro odborné texty, úřední komunikaci, sumarizace nebo analýzy, kde je důležitá jednoznačnost a konzistence. Při nulové teplotě dostáváme téměř identické výsledky při opakování stejného dotazu.</li>
-            <li><strong>Střední teplota (0.5–0.8):</strong> Vyvážený přístup – model zachovává smysl i strukturu, ale může nabídnout různé formulace nebo alternativní přístupy. Hodí se pro interní brainstorming, návrhy textů či úprav stylu.</li>
-            <li><strong>Vysoká teplota (1–2):</strong> Model „riskuje“ – vytváří originální, ale často i nepravdivé nebo nesmyslné odpovědi. Vhodné spíše pro kreativní úkoly, jako jsou slogany, příběhy nebo metafory. Hodnoty nad 1 se běžně nedoporučují pro seriózní použití.</li>
+            <li><strong>Nízká teplota (0–0.3):</strong> Výstupy jsou stabilní, přesné a málo kreativní. Vhodné pro
+              odborné texty, úřední komunikaci, sumarizace nebo analýzy, kde je důležitá jednoznačnost a konzistence.
+              Při nulové teplotě dostáváme téměř identické výsledky při opakování stejného dotazu.</li>
+            <li><strong>Střední teplota (0.5–0.8):</strong> Vyvážený přístup – model zachovává smysl i strukturu, ale
+              může nabídnout různé formulace nebo alternativní přístupy. Hodí se pro interní brainstorming, návrhy textů
+              či úprav stylu.</li>
+            <li><strong>Vysoká teplota (1–2):</strong> Model „riskuje“ – vytváří originální, ale často i nepravdivé nebo
+              nesmyslné odpovědi. Vhodné spíše pro kreativní úkoly, jako jsou slogany, příběhy nebo metafory. Hodnoty
+              nad 1 se běžně nedoporučují pro seriózní použití.</li>
           </ul>
         </section>
 
         <section>
-          <img src="../images/teplota.png" alt="Znázornění teploty"
-            class="glossary-image-aside-left" style="max-width: 25%;">
+          <img src="../images/teplota.png" alt="Znázornění teploty" class="glossary-image-aside-left"
+            style="max-width: 25%;">
           <h3>Jak teplotu nastavit?</h3>
-          <p>Parametr <em>temperature</em> určuje míru kreativity a náhodnosti odpovědí <a href="generative-ai.html">generativního modelu</a> – nižší hodnoty (např. 0–0,3) vedou k přesnějším a konzistentnějším výstupům, vyšší (např. 1,0–2,0) pak k rozmanitějším, ale méně předvídatelným výsledkům. Tento princip je společný pro většinu velkých jazykových a multimodálních modelů (např. ChatGPT, Claude, Gemini, Mistral aj.).</p>
-          <p>Možnost ručně nastavit teplotu bývá dostupná především při práci s rozhraním API nebo na tzv. <em>hřištích</em> (playgrounds), která výrobci modelů poskytují ve své dokumentaci. V běžných konverzačních rozhraních (např. ChatGPT, Claude.ai) uživatel teplotu obvykle přímo nenastavuje – model ji volí podle typu rozhraní nebo podle tzv. systémového promptu, který definuje chování asistenta. Proto je <strong>první zadání zásadní</strong>, protože určuje tón, styl a přesnost celé konverzace.</p>
+          <p>Parametr <em>temperature</em> určuje míru kreativity a náhodnosti odpovědí <a
+              href="generative-ai.html">generativního modelu</a> – nižší hodnoty (např. 0–0,3) vedou k přesnějším a
+            konzistentnějším výstupům, vyšší (např. 1,0–2,0) pak k rozmanitějším, ale méně předvídatelným výsledkům.
+            Tento princip je společný pro většinu velkých jazykových a multimodálních modelů (např. ChatGPT, Claude,
+            Gemini, Mistral aj.).</p>
+          <p>Možnost ručně nastavit teplotu bývá dostupná především při práci s rozhraním API nebo na tzv.
+            <em>hřištích</em> (playgrounds), která výrobci modelů poskytují ve své dokumentaci. V běžných konverzačních
+            rozhraních (např. ChatGPT, Claude.ai) uživatel teplotu obvykle přímo nenastavuje – model ji volí podle typu
+            rozhraní nebo podle tzv. systémového promptu, který definuje chování asistenta. Proto je <strong>první
+              zadání zásadní</strong>, protože určuje tón, styl a přesnost celé konverzace.</p>
         </section>
 
         <section>
           <h3>Souvislost s halucinacemi</h3>
-          <p>Teplota přímo ovlivňuje pravděpodobnost vzniku <a href="halucinace.html">halucinací</a> – tedy situací, kdy AI vytváří přesvědčivě znějící, ale nepravdivé informace. Při vyšší teplotě model častěji „riskuje“ a doplní neznámá místa v textu vlastní domněnkou. Naopak nízká teplota vede k opatrnějším, ale méně originálním odpovědím. Proto je při práci s AI v institucích důležité zvolit rovnováhu – například v analýzách a legislativě preferovat nižší teplotu, zatímco pro kreativní nástroje může být vhodná vyšší.</p>
+          <p>Teplota přímo ovlivňuje pravděpodobnost vzniku <a href="halucinace.html">halucinací</a> – tedy situací, kdy
+            AI vytváří přesvědčivě znějící, ale nepravdivé informace. Při vyšší teplotě model častěji „riskuje“ a doplní
+            neznámá místa v textu vlastní domněnkou. Naopak nízká teplota vede k opatrnějším, ale méně originálním
+            odpovědím. Proto je při práci s AI v institucích důležité zvolit rovnováhu – například v analýzách a
+            legislativě preferovat nižší teplotu, zatímco pro kreativní nástroje může být vhodná vyšší.</p>
         </section>
 
         <section class="ai-gramotnost">
           <h3>AI GRAMOTNOST</h3>
           <h4>Proč by měl úředník rozumět teplotě</h4>
-          <p>Porozumění teplotě pomáhá úředníkům chápat, proč model někdy odpovídá přesně a jindy odbočuje. Vědí, že nejde o „nespolehlivost“, ale o nastavení míry náhody, která ovlivňuje styl a tón odpovědí.</p>
-          <p>Při přípravě textů pro veřejnost nebo při tvorbě interních podkladů tak mohou úředníci rozlišit, kdy se vyplatí využít nízkou teplotu pro stabilní výsledky, a kdy naopak zvolit vyšší teplotu pro kreativní návrhy nebo brainstorming.</p>
-          <p>Znalost tohoto principu je znakem digitální a AI gramotnosti – umožňuje úředníkům lépe interpretovat chování AI nástrojů, vyžadovat vhodná nastavení od dodavatelů a efektivněji využívat umělou inteligenci ve službách veřejnosti.</p>
+          <p>Porozumění teplotě pomáhá úředníkům chápat, proč model někdy odpovídá přesně a jindy odbočuje. Vědí, že
+            nejde o „nespolehlivost“, ale o nastavení míry náhody, která ovlivňuje styl a tón odpovědí.</p>
+          <p>Při přípravě textů pro veřejnost nebo při tvorbě interních podkladů tak mohou úředníci rozlišit, kdy se
+            vyplatí využít nízkou teplotu pro stabilní výsledky, a kdy naopak zvolit vyšší teplotu pro kreativní návrhy
+            nebo brainstorming.</p>
+          <p>Znalost tohoto principu je znakem digitální a AI gramotnosti – umožňuje úředníkům lépe interpretovat
+            chování AI nástrojů, vyžadovat vhodná nastavení od dodavatelů a efektivněji využívat umělou inteligenci ve
+            službách veřejnosti.</p>
         </section>
 
         <section>
@@ -151,17 +187,22 @@
         <section class="footer-block">
           <h3>Informace</h3>
           <p><a href="../podminky.html">Podmínky využití a ochrana osobních údajů</a></p>
-          <p><a href="https://www.dia.gov.cz/cs/prohlaseni-o-pristupnosti" target="_blank" rel="noopener noreferrer">Prohlášení o&nbsp;přístupnosti</a></p>
+          <p><a href="https://www.dia.gov.cz/cs/prohlaseni-o-pristupnosti" target="_blank"
+              rel="noopener noreferrer">Prohlášení o&nbsp;přístupnosti</a></p>
         </section>
         <section class="footer-block">
           <h3>Kontakty</h3>
           <p><a href="mailto:kc@dia.gov.cz">kc@dia.gov.cz</a></p>
           <ul class="footer-social">
-            <li><a href="https://www.facebook.com/digitalniainformacniagentura" target="_blank" rel="noreferrer nofollow">Facebook</a></li>
-            <li><a href="https://www.instagram.com/agentura_dia/" target="_blank" rel="noreferrer nofollow">Instagram</a></li>
+            <li><a href="https://www.facebook.com/digitalniainformacniagentura" target="_blank"
+                rel="noreferrer nofollow">Facebook</a></li>
+            <li><a href="https://www.instagram.com/agentura_dia/" target="_blank"
+                rel="noreferrer nofollow">Instagram</a></li>
             <li><a href="https://x.com/agentura_dia" target="_blank" rel="noreferrer nofollow">X</a></li>
-            <li><a href="https://www.youtube.com/@agentura_dia" target="_blank" rel="noreferrer nofollow">YouTube</a></li>
-            <li><a href="https://www.linkedin.com/company/digitalniainformacniagentura" target="_blank" rel="noreferrer nofollow">LinkedIn</a></li>
+            <li><a href="https://www.youtube.com/@agentura_dia" target="_blank" rel="noreferrer nofollow">YouTube</a>
+            </li>
+            <li><a href="https://www.linkedin.com/company/digitalniainformacniagentura" target="_blank"
+                rel="noreferrer nofollow">LinkedIn</a></li>
           </ul>
         </section>
       </div>
@@ -175,13 +216,16 @@
             <img src="../logos/dia_logo.svg" alt="DIA logo">
           </div>
           <div class="footer-block">
-            <p>Vytvořeno v&nbsp;rámci projektu ROPIM – Reforma pro optimalizaci, implementaci a metodické řízení digitalizovaných služeb vč. jejich kapacitního plánování a komunikaci klientům veřejné správy, financovaného Evropskou unií NextGeneration.</p>
+            <p>Vytvořeno v&nbsp;rámci projektu ROPIM – Reforma pro optimalizaci, implementaci a metodické řízení
+              digitalizovaných služeb vč. jejich kapacitního plánování a komunikaci klientům veřejné správy,
+              financovaného Evropskou unií NextGeneration.</p>
             <p>REG. Č.: CZ.31.5.0/0.0/.0./23_106/0008503</p>
           </div>
         </div>
       </section>
       <div class="footer-bottom">
-        <p>2025 © Digitální a informační agentura • Informace jsou poskytovány v&nbsp;souladu se zákonem č.&nbsp;106/1999&nbsp;Sb.</p>
+        <p>2025 © Digitální a informační agentura • Informace jsou poskytovány v&nbsp;souladu se zákonem
+          č.&nbsp;106/1999&nbsp;Sb.</p>
       </div>
     </div>
   </footer>
