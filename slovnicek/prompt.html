@@ -85,12 +85,12 @@
         </div>
 
         <section>
-          <p><strong>Prompt</strong> je vstupní instrukce pro generativní model (LLM/LMM). Může mít podobu krátkého dotazu i strukturovaného zadání s rolí, pravidly, formátem výstupu a příklady. Kvalita a srozumitelnost promptu zásadně ovlivňuje kvalitu, přesnost a konzistenci výsledků.</p>
+          <p><strong>Prompt</strong> je zadání, kterým uživatel nebo aplikace řídí chování modelu umělé inteligence. Ve veřejné správě je to víc než „text do chatu“: jde o řízení procesu se zřetelným účelem, dohledatelností a kontrolou rizik. Protože modely odpovídají pravděpodobnostně, kvalita promptu rozhoduje o přesnosti, stabilitě a opakovatelnosti výsledků. Dobře napsaný prompt vymezuje mantinely vstupu i výstupu, drží model u ověřených zdrojů a umožňuje následný audit. </p>
         </section>
 
         <section class="highlight" aria-labelledby="definice">
           <h3 id="definice">Definice</h3>
-          <p><strong>Prompt</strong> v prostředí generativní AI označuje textové (případně multimodální) zadání, kterým uživatel nebo systém řídí chování modelu a specifikuje požadovaný výstup. Prompt může obsahovat: <em>účel</em>, <em>publikum</em>, <em>omezení</em> (délka, tón, jazyk), <em>příklady (few-shot)</em>, <em>požadovaný formát</em> (např. JSON/markdown/tabulka) a <em>mantinely</em> (co model nesmí dělat).</p>
+          <p><strong>Prompt</strong> v prostředí generativní AI označuje textové (případně multimodální) zadání, kterým uživatel nebo systém řídí chování modelu a specifikuje požadovaný výstup. Prompt může obsahovat: <em>účel</em>, <em>publikum</em>, <em>omezení</em> (délka, tón, jazyk), <em>příklady (few-shot)</em>, <em>požadovaný formát</em> (např. JSON/markdown/tabulka) a <em>mantinely</em> (co model nesmí dělat). Prompt je tedy přesně formulované zadání (instrukce, kontext a požadovaný formát), kterým uživatel nebo aplikace řídí chování modelu AI a vymezuje hranice jeho výstupu.</p>
         </section>
 
         <section aria-labelledby="diagram">
@@ -169,39 +169,37 @@
           </figure>
         </section>
 
-        <section aria-labelledby="vsvyznam">
+        <section>
           <h3 id="vsvyznam">Co „prompt“ znamená pro veřejnou správu</h3>
-          <ul>
-            <li><strong>Předvídatelnost &amp; auditovatelnost:</strong> standardizované šablony promptů zvyšují opakovatelnost výstupů a usnadňují interní kontrolu.</li>
-            <li><strong>Zpřesnění požadavků:</strong> úředník lépe definuje, co má AI provést, v jakém rozsahu a formátu (např. JSON pro napojení do IS).</li>
-            <li><strong>Bezpečnost &amp; ochrana údajů:</strong> prompty omezují, co má model dělat/nedělat, a minimalizují rizika (např. nepracovat s osobními údaji).</li>
-            <li><strong>Správa znalostí:</strong> sdílené knihovny promptů pomáhají šířit osvědčené postupy napříč útvary.</li>
-          </ul>
+          Klíčovým přínosem je <strong>předvídatelnost a auditovatelnost</strong>. Standardizované šablony promptů zvyšují opakovatelnost výstupů napříč útvary a zjednodušují interní kontrolu. <strong>Přesné vymezení požadavků</strong> pomáhá úředníkovi jasně stanovit, co má AI provést, v jakém rozsahu a jak výstup vypadá—typicky jako strukturovaný JSON pro napojení do informačních systémů. Prompty zároveň fungují jako <strong>bezpečnostní bariéra</strong>: explicitně určují, co model dělat nesmí (např. nepracovat s osobními údaji mimo daný účel, nevyvozovat právní závěry bez opory ve spisu) a minimalizují rizika. Organizace navíc získává nástroj <strong>správy znalostí</strong>: sdílené knihovny schválených promptů rozšiřují osvědčené postupy mezi týmy. </p>
         </section>
 
-        <section aria-labelledby="praxe">
+        <section>
+          <h3>Vrstvy a logika promptu</h3>
+          V praxi se osvědčuje držet vrstvy odděleně. Systémová (nebo „developer“) instrukce definuje roli a chování asistenta: například metodik veřejné správy, čeština, konzervativní tón, postup při nejistotě. Na ni navazuje zadání úlohy s jasnou posloupností kroků a měřitelnými kritérii přijatelnosti. Kontext tvoří výňatky ze spisu, metodické listy či citace zákona; pokud používáte RAG, prompt výslovně stanoví, že se model drží pouze těchto zdrojů. Stabilitu dále zvyšuje vynucený formát výstupu (stručný text s povinnými nadpisy, tabulka, nebo přesné JSON schéma - viz dále) a krátké ukázky žádoucího i nežádoucího výstupu, které nastaví styl i granularitu.</p>
+        </section>
+
+        <section>
           <h3 id="praxe">Jak prompt využít v praxi úřadu</h3>
-          <ol>
-            <li><strong>Vybudujte „šablonárnu“ promptů:</strong> společné repozitáře (Git/Confluence) se <em>schválenými</em> šablonami, verzování, code-review.</li>
-            <li><strong>Oddělte role:</strong> použijte systémovou/developer zprávu pro pravidla a user zprávu pro konkrétní zadání (konzistentní tón, jazyk, citace, omezení).</li>
-            <li><strong>Vynucujte formát:</strong> pro integrace preferujte <em>strukturované výstupy</em> (např. JSON dle schématu) a validujte je před zápisem do IS.</li>
-            <li><strong>Logujte a auditujte:</strong> uchovávejte verzi promptu, parametry modelu a výstupy pro zpětnou dohledatelnost.</li>
-            <li><strong>Proveďte pilot a měřte:</strong> definujte metriky (přesnost, úplnost, čas, úspora) a průběžně iterujte.</li>
-          </ol>
+          Dobře funguje „šablonárna“ promptů—společný repozitář (Git, Confluence) se schválenými šablonami, verzováním a jednoduchým review. Role oddělte technicky i procesně: systémová/developer zpráva drží pravidla, tón a citace, uživatelská (user) zpráva nese konkrétní zadání a data k danému případu. Pro integrace preferujte strukturované výstupy a jejich validaci před zápisem do IS (JSON dle schématu, Structured Outputs / function calling). Pro dohledatelnost logujte verzi šablony, parametry modelu i relevantní výstupy. Nasazení vždy začínejte pilotem s předem danými metrikami (přesnost, úplnost, čas zpracování, úspora práce) a podle výsledků iterujte.
+        </section>
+        
+        <section>
+          <h3 id="praxe">Typické úřední scénáře</h3>
+          V agendách se prompty nejčastěji používají pro strukturované shrnutí dokumentu do spisu, srozumitelné vysvětlení rozhodnutí pro občana a kontrolu náležitostí před vydáním rozhodnutí. V prvním případě model převádí nestrukturovaný text do pevné struktury, cituje pasáže a poctivě označuje chybějící podklady. V druhém přepisuje složitý text do srozumitelného jazyka bez vytváření nových právních závěrů a nejistoty přiznává. Ve třetím systematicky prochází povinné náležitosti, upozorňuje na rozpory a navrhuje konkrétní dotazy k doplnění s odkazem na identifikovatelné pasáže spisu. Ve všech scénářích zvyšují auditovatelnost reference na zdroje.
         </section>
 
-        <section aria-labelledby="best-practices">
-          <h3 id="best-practices">Osvědčené postupy (best practices)</h3>
-          <ul>
-            <li><strong>Buďte konkrétní:</strong> cíl, publikum, rozsah, formát, omezení. Vyhněte se vágním formulacím.</li>
-            <li><strong>Přidejte kontext a 1-3 příklady (few-shot):</strong> model snáz trefí styl a strukturu.</li>
-            <li><strong>Rozdělte složité úkoly na kroky:</strong> „nejprve vyjmi fakta → pak z nich vytvoř shrnutí → nakonec návrh opatření“.</li>
-            <li><strong>Vynucujte strukturu výstupu:</strong> JSON/CSV/tabulky, u JSON preferujte schéma (Structured Outputs / function calling).</li>
-            <li><strong>Myslete na bezpečnost:</strong> explicitně zakažte citlivá data, přidejte zásady pro citace zdrojů a disclaimery.</li>
-          </ul>
+        <section>
+          <h3 id="best-practices">Strategie a osvědčené postupy (best practices)</h3>
+          Buďte konkrétní: jasně definujte cíl, publikum, rozsah, formát a omezení. Přiložte stručný, relevantní kontext a málo, ale kvalitních příkladů (typicky 1-3 few-shot ukázky). Složité úlohy rozdělte do kroků („nejprve vyjmi fakta → pak vytvoř shrnutí → nakonec návrh opatření“), každému kroku dejte vlastní mikroprompt a pravidla kontroly. Výstup vynucujte strukturovaně—ideálně JSON se schématem, které validujete před dalším použitím. Myslete na bezpečnost: výslovně zakažte práci s citlivými údaji mimo účel, požadujte citace zdrojů a připojte stručný disclaimer pro oblasti s nejistotou.
         </section>
 
-        <section aria-labelledby="priklady">
+        <section>
+          <h3 id="best-practices">Není to kouzelná formulka</h3>
+          Formulace sama o sobě nenahradí chybějící data ani metodiku. Bez spolehlivého „zdroje pravdy“—konzistentních metodik, jednoznačných odkazů a přístupu ke spisu—se bude model odchylovat. Proto prompty patří do governance: jsou verzované, auditované, testované a chráněné proti prompt injection. Pokud si asistent není jistý, vrací úlohu k doplnění místo domýšlení.
+        </section>
+
+        <section>
           <h3 id="priklady">Příklady promptů</h3>
 
           <h4>1) Shrnutí dokumentu (úřednický styl)</h4>
