@@ -17,7 +17,8 @@
   <header>
     <div class="header-bar">
       <button class="hamburger" id="menuBtn" aria-label="Menu" aria-controls="mobile-menu" aria-expanded="false">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+          stroke-linejoin="round">
           <line x1="3" y1="12" x2="21" y2="12"></line>
           <line x1="3" y1="6" x2="21" y2="6"></line>
           <line x1="3" y1="18" x2="21" y2="18"></line>
@@ -51,14 +52,16 @@
     <div class="mobile-menu__panel" role="dialog" aria-modal="true">
       <div class="mobile-menu__header">
         <span>Menu</span>
-        <button class="mobile-menu__close" type="button" data-mobile-menu-close aria-label="Zavřít menu">&times;</button>
+        <button class="mobile-menu__close" type="button" data-mobile-menu-close
+          aria-label="Zavřít menu">&times;</button>
       </div>
       <nav aria-label="Hlavní menu">
         <ul class="mobile-menu__list">
           <li class="mobile-menu__item"><a href="../project.html">Katalog</a></li>
           <li class="mobile-menu__item"><a href="../ai-gramotnost.html">AI gramotnost</a></li>
           <li class="mobile-menu__item"><a href="../ai-a-pravo.html">AI a právo</a></li>
-          <li class="mobile-menu__item"><a href="../prompt-inzenyrstvi.html" aria-current="page">Prompt inženýrství</a></li>
+          <li class="mobile-menu__item"><a href="../prompt-inzenyrstvi.html" aria-current="page">Prompt inženýrství</a>
+          </li>
           <li class="mobile-menu__item"><a href="../clanky.html">Články</a></li>
           <li class="mobile-menu__item"><a href="../slovnicek.html">Slovníček</a></li>
           <li class="mobile-menu__item"><a href="../wiki.html">Přidat use case</a></li>
@@ -73,22 +76,31 @@
         <div class="glossary-entry__header">
           <p class="glossary-entry__tag">metodika</p>
           <h2>Prompt inženýrství</h2>
-          <p class="glossary-entry__alt-name">Návrh a správa zadání pro generativní modely</p>
+          <p class="glossary-entry__alt-name">Prompt engineering</p>
         </div>
 
         <section class="highlight" aria-labelledby="definice">
-          <h3 id="definice">Co je prompt inženýrství</h3>
-          <p>Prompt inženýrství je způsob, jak proměnit neurčitý nápad v řízený dialog s AI. Nejde jen o „dobře položenou otázku“ – součástí je nastavení role modelu, vysvětlení účelu, vymezení pravidel a domluva na formátu výstupu, aby výsledky byly předvídatelné, bezpečné a snadno auditovatelné. Ve veřejné správě takto převádíme běžné požadavky (shrnutí podkladů, příprava sdělení pro občany, extrakce údajů do IS) do jasných, znovupoužitelných zadání.</p>
+          <p><strong>Prompt inženýrství</strong> je postup a disciplína spočívající v navrhování, testování a
+            optimalizaci promptů pro generativní modely umělé inteligence tak, aby tyto modely poskytovaly co nejlepší a
+            nejpřesnější výstupy. Zahrnuje techniky, jak formulovat instrukce, dávat modelu kontext, příklady nebo jiná
+            vodítka v promptu, aby model porozuměl úloze a vygeneroval požadovaný výsledek..</p>
         </section>
 
         <section aria-labelledby="proc-vs">
           <h3 id="proc-vs">Proč je to důležité pro veřejnou správu</h3>
-          <p>Kvalitní prompt inženýrství snižuje náhodnost odpovědí a přibližuje se opakovatelnosti, kterou úřady potřebují. Sdílené šablony zadání a jasná pravidla umožňují <em>auditovat</em> postupy i výsledky. Zároveň se zkracuje cesta od textu k datům: model může vracet informace přímo jako JSON podle stanoveného schématu, což šetří čas a snižuje chybovost při napojení na agendové systémy.</p>
+          <p>Kvalitní prompt inženýrství snižuje náhodnost odpovědí a přibližuje se opakovatelnosti, kterou úřady
+            potřebují. Sdílené šablony zadání a jasná pravidla umožňují <em>auditovat</em> postupy i výsledky. Zároveň
+            se zkracuje cesta od textu k datům: model může vracet informace přímo jako JSON podle stanoveného schématu,
+            což šetří čas a snižuje chybovost při napojení na agendové systémy.</p>
         </section>
 
         <section aria-labelledby="co-dela-dobry">
           <h3 id="co-dela-dobry">Co dělá dobré zadání</h3>
-          <p>Dobrý prompt vysvětluje proč, pro koho a v jakém tvaru má být výstup. Cíl (např. „shrň podklad pro radu města“), publikum („vedoucí odboru“ vs. „široká veřejnost“) a formát („pět stručných bodů“ nebo „platný JSON“) jsou explicitní. Pravidla – tón, jazyk, práce s citacemi, zákaz osobních údajů – patří do systémové zprávy a nemíchají se s vlastním zadáním. Tam, kde záleží na stylu, pomohou krátké ukázky; stačí jedna až dvě a model lépe drží formu.</p>
+          <p>Dobrý prompt vysvětluje proč, pro koho a v jakém tvaru má být výstup. Cíl (např. „shrň podklad pro radu
+            města“), publikum („vedoucí odboru“ vs. „široká veřejnost“) a formát („pět stručných bodů“ nebo „platný
+            JSON“) jsou explicitní. Pravidla – tón, jazyk, práce s citacemi, zákaz osobních údajů – patří do systémové
+            zprávy a nemíchají se s vlastním zadáním. Tam, kde záleží na stylu, pomohou krátké ukázky; stačí jedna až
+            dvě a model lépe drží formu.</p>
         </section>
 
         <section aria-labelledby="diagram">
@@ -97,15 +109,44 @@
             <!-- OPRAVENÉ A SJEDNOCENÉ SCHÉMA (vertikální šipka Validace → Výstup) -->
             <svg role="img" aria-labelledby="svgTitle svgDesc" viewBox="0 0 940 340" width="100%" height="auto">
               <title id="svgTitle">Od pravidel a zadání k validovanému JSON výstupu</title>
-              <desc id="svgDesc">System pravidla a User zadání s příklady vedou k šabloně; následuje pilot, validace schématu a výstup. Šipky jsou zarovnány na středy, bez překryvů.</desc>
+              <desc id="svgDesc">System pravidla a User zadání s příklady vedou k šabloně; následuje pilot, validace
+                schématu a výstup. Šipky jsou zarovnány na středy, bez překryvů.</desc>
               <defs>
                 <style>
-                  .box { fill: #ffffff; stroke: #2E2D2C; stroke-width: 1.5; rx: 14; ry: 14; }
-                  .muted { fill: #F2F6FA; stroke: #B8C2CC; }
-                  .title { font: 600 14px "Inter","Segoe UI",Arial,sans-serif; fill: #1a1a1a; }
-                  .text { font: 12px "Inter","Segoe UI",Arial,sans-serif; fill: #333; }
-                  .mono { font: 12px "SFMono-Regular",Consolas,"Liberation Mono",monospace; fill: #333; }
-                  .arrow { stroke: #207315; stroke-width: 2.5; marker-end: url(#arrowhead); fill: none; }
+                  .box {
+                    fill: #ffffff;
+                    stroke: #2E2D2C;
+                    stroke-width: 1.5;
+                    rx: 14;
+                    ry: 14;
+                  }
+
+                  .muted {
+                    fill: #F2F6FA;
+                    stroke: #B8C2CC;
+                  }
+
+                  .title {
+                    font: 600 14px "Inter", "Segoe UI", Arial, sans-serif;
+                    fill: #1a1a1a;
+                  }
+
+                  .text {
+                    font: 12px "Inter", "Segoe UI", Arial, sans-serif;
+                    fill: #333;
+                  }
+
+                  .mono {
+                    font: 12px "SFMono-Regular", Consolas, "Liberation Mono", monospace;
+                    fill: #333;
+                  }
+
+                  .arrow {
+                    stroke: #207315;
+                    stroke-width: 2.5;
+                    marker-end: url(#arrowhead);
+                    fill: none;
+                  }
                 </style>
                 <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
                   <polygon points="0 0, 10 3.5, 0 7" fill="#207315"></polygon>
@@ -157,46 +198,67 @@
               <!-- Výstup (pod validací) -->
               <rect class="box muted" x="700" y="280" width="200" height="60"></rect>
               <text class="title" x="716" y="302">Výstup</text>
-              <text class="mono"  x="716" y="324">{ ... JSON ... } / markdown</text>
+              <text class="mono" x="716" y="324">{ ... JSON ... } / markdown</text>
             </svg>
-            <figcaption>Od nastavení pravidel a zadání přes šablonu a pilotní měření až k validovanému JSON/markdown výstupu.</figcaption>
+            <figcaption>Od nastavení pravidel a zadání přes šablonu a pilotní měření až k validovanému JSON/markdown
+              výstupu.</figcaption>
           </figure>
         </section>
 
         <section aria-labelledby="provoz">
           <h3 id="provoz">Jak s tím pracovat v provozu</h3>
-          <p>Začněte malým pilotem na reálných případech. Nejprve se dohodněte na vstupech a očekáváních, nastavte pár jednoduchých metrik a připravte první verzi šablony. Během testů dolaďujte formulace i parametry; u složitějších úloh se vyplatí rozdělit práci na kroky – vytěžit fakta, zkontrolovat je a teprve potom psát shrnutí. Finální šablonu uložte do společného repozitáře, přiřaďte jí vlastníka a termín další revize.</p>
+          <p>Začněte malým pilotem na reálných případech. Nejprve se dohodněte na vstupech a očekáváních, nastavte pár
+            jednoduchých metrik a připravte první verzi šablony. Během testů dolaďujte formulace i parametry; u
+            složitějších úloh se vyplatí rozdělit práci na kroky – vytěžit fakta, zkontrolovat je a teprve potom psát
+            shrnutí. Finální šablonu uložte do společného repozitáře, přiřaďte jí vlastníka a termín další revize.</p>
         </section>
 
         <section aria-labelledby="priklady">
           <h3 id="priklady">Příklady z praxe</h3>
-          <p>Pro vedení odboru: „Jsi asistent pro veřejnou správu. Odpovídej česky, věcně a uveď zdroje. Z přiloženého textu připrav pět bodů pro rozhodnutí.“ Pro integrace do IS: „Vracej pouze JSON podle tohoto schématu; nechybějící pole vyplň, chybějící ponech jako <code>null</code>.“ A pokud potřebujete ustálit styl odpovědi občanovi, připojte dvě krátké ukázky „správné“ odpovědi a požádejte model, aby přesně následoval jejich formu.</p>
+          <p>Pro vedení odboru: „Jsi asistent pro veřejnou správu. Odpovídej česky, věcně a uveď zdroje. Z přiloženého
+            textu připrav pět bodů pro rozhodnutí.“ Pro integrace do IS: „Vracej pouze JSON podle tohoto schématu;
+            nechybějící pole vyplň, chybějící ponech jako <code>null</code>.“ A pokud potřebujete ustálit styl odpovědi
+            občanovi, připojte dvě krátké ukázky „správné“ odpovědi a požádejte model, aby přesně následoval jejich
+            formu.</p>
         </section>
 
         <section aria-labelledby="kvalita">
           <h3 id="kvalita">Hodnocení kvality</h3>
-          <p>Kvalitu měřte jednoduše a pravidelně: u faktografických úloh sledujte správnost a úplnost, u integračních validitu formátu. Vstupy, parametry i výstupy logujte a občas porovnejte starou a novou verzi šablony na stejné sadě vzorků – rychle uvidíte, zda jste se zlepšili.</p>
+          <p>Kvalitu měřte jednoduše a pravidelně: u faktografických úloh sledujte správnost a úplnost, u integračních
+            validitu formátu. Vstupy, parametry i výstupy logujte a občas porovnejte starou a novou verzi šablony na
+            stejné sadě vzorků – rychle uvidíte, zda jste se zlepšili.</p>
         </section>
 
         <section aria-labelledby="rizika">
           <h3 id="rizika">Rizika a prevence</h3>
-          <p>Do promptů nepatří osobní ani utajované informace. Systémová pravidla by měla taková data výslovně zakazovat a u RAG přístupu je důležité jasně vymezit povolené zdroje. Halucinacím brání požadavek na citace, vymezení domény a možnost odpovědět, že si model není jistý. Podrobné „myšlenkové kroky“ nejsou v produkci potřeba – stačí stručné, srozumitelné odůvodnění.</p>
+          <p>Do promptů nepatří osobní ani utajované informace. Systémová pravidla by měla taková data výslovně
+            zakazovat a u RAG přístupu je důležité jasně vymezit povolené zdroje. Halucinacím brání požadavek na citace,
+            vymezení domény a možnost odpovědět, že si model není jistý. Podrobné „myšlenkové kroky“ nejsou v produkci
+            potřeba – stačí stručné, srozumitelné odůvodnění.</p>
         </section>
 
         <section class="ai-gramotnost">
           <h3>AI GRAMOTNOST</h3>
           <h4>Jak to zapadá do agendy úřadu</h4>
-          <p>Prompt inženýrství se nejlépe osvědčuje jako standardní proces: šablony mají vlastníky, verze a historii změn, existuje jednoduchý „předprodukční“ checklist (účel, publikum, formát, validace, metriky, fallback) a je jasné, kdo řeší incidenty. Díky tomu se z jednorázových experimentů stává běžná součást řízení kvality.</p>
+          <p>Prompt inženýrství se nejlépe osvědčuje jako standardní proces: šablony mají vlastníky, verze a historii
+            změn, existuje jednoduchý „předprodukční“ checklist (účel, publikum, formát, validace, metriky, fallback) a
+            je jasné, kdo řeší incidenty. Díky tomu se z jednorázových experimentů stává běžná součást řízení kvality.
+          </p>
         </section>
 
         <section aria-labelledby="zdroje">
           <h3 id="zdroje">Další zdroje</h3>
           <ul>
-            <li><a href="https://platform.openai.com/docs/guides/prompt-engineering" target="_blank" rel="noreferrer noopener">OpenAI – Prompt engineering (EN)</a></li>
-            <li><a href="https://platform.openai.com/docs/guides/structured-outputs" target="_blank" rel="noreferrer noopener">OpenAI – Structured Outputs (JSON Schema) (EN)</a></li>
-            <li><a href="https://ai.google.dev/gemini-api/docs/prompting-strategies" target="_blank" rel="noreferrer noopener">Google Gemini – Prompting strategies (EN)</a></li>
-            <li><a href="https://learn.microsoft.com/azure/ai-foundry/openai/concepts/prompt-engineering" target="_blank" rel="noreferrer noopener">Azure OpenAI – Prompt engineering best practices (EN)</a></li>
-            <li><a href="https://python.langchain.com/docs/concepts/prompt_templates/" target="_blank" rel="noreferrer noopener">LangChain – Prompt Templates (EN)</a></li>
+            <li><a href="https://platform.openai.com/docs/guides/prompt-engineering" target="_blank"
+                rel="noreferrer noopener">OpenAI – Prompt engineering (EN)</a></li>
+            <li><a href="https://platform.openai.com/docs/guides/structured-outputs" target="_blank"
+                rel="noreferrer noopener">OpenAI – Structured Outputs (JSON Schema) (EN)</a></li>
+            <li><a href="https://ai.google.dev/gemini-api/docs/prompting-strategies" target="_blank"
+                rel="noreferrer noopener">Google Gemini – Prompting strategies (EN)</a></li>
+            <li><a href="https://learn.microsoft.com/azure/ai-foundry/openai/concepts/prompt-engineering"
+                target="_blank" rel="noreferrer noopener">Azure OpenAI – Prompt engineering best practices (EN)</a></li>
+            <li><a href="https://python.langchain.com/docs/concepts/prompt_templates/" target="_blank"
+                rel="noreferrer noopener">LangChain – Prompt Templates (EN)</a></li>
           </ul>
         </section>
 
@@ -229,17 +291,22 @@
         <section class="footer-block">
           <h3>Informace</h3>
           <p><a href="../podminky.html">Podmínky využití a ochrana osobních údajů</a></p>
-          <p><a href="https://www.dia.gov.cz/cs/prohlaseni-o-pristupnosti" target="_blank" rel="noopener noreferrer">Prohlášení o&nbsp;přístupnosti</a></p>
+          <p><a href="https://www.dia.gov.cz/cs/prohlaseni-o-pristupnosti" target="_blank"
+              rel="noopener noreferrer">Prohlášení o&nbsp;přístupnosti</a></p>
         </section>
         <section class="footer-block">
           <h3>Kontakty</h3>
           <p><a href="mailto:kc@dia.gov.cz">kc@dia.gov.cz</a></p>
           <ul class="footer-social">
-            <li><a href="https://www.facebook.com/digitalniainformacniagentura" target="_blank" rel="noreferrer nofollow">Facebook</a></li>
-            <li><a href="https://www.instagram.com/agentura_dia/" target="_blank" rel="noreferrer nofollow">Instagram</a></li>
+            <li><a href="https://www.facebook.com/digitalniainformacniagentura" target="_blank"
+                rel="noreferrer nofollow">Facebook</a></li>
+            <li><a href="https://www.instagram.com/agentura_dia/" target="_blank"
+                rel="noreferrer nofollow">Instagram</a></li>
             <li><a href="https://x.com/agentura_dia" target="_blank" rel="noreferrer nofollow">X</a></li>
-            <li><a href="https://www.youtube.com/@agentura_dia" target="_blank" rel="noreferrer nofollow">YouTube</a></li>
-            <li><a href="https://www.linkedin.com/company/digitalniainformacniagentura" target="_blank" rel="noreferrer nofollow">LinkedIn</a></li>
+            <li><a href="https://www.youtube.com/@agentura_dia" target="_blank" rel="noreferrer nofollow">YouTube</a>
+            </li>
+            <li><a href="https://www.linkedin.com/company/digitalniainformacniagentura" target="_blank"
+                rel="noreferrer nofollow">LinkedIn</a></li>
           </ul>
         </section>
       </div>
@@ -253,17 +320,21 @@
             <img src="../logos/dia_logo.svg" alt="DIA logo">
           </div>
           <div class="footer-block">
-            <p>Vytvořeno v&nbsp;rámci projektu ROPIM – Reforma pro optimalizaci, implementaci a metodické řízení digitalizovaných služeb vč. jejich kapacitního plánování a komunikaci klientům veřejné správy, financovaného Evropskou unií NextGeneration.</p>
+            <p>Vytvořeno v&nbsp;rámci projektu ROPIM – Reforma pro optimalizaci, implementaci a metodické řízení
+              digitalizovaných služeb vč. jejich kapacitního plánování a komunikaci klientům veřejné správy,
+              financovaného Evropskou unií NextGeneration.</p>
             <p>REG. Č.: CZ.31.5.0/0.0/.0./23_106/0008503</p>
           </div>
         </div>
       </section>
       <div class="footer-bottom">
-        <p>2025 © Digitální a informační agentura • Informace jsou poskytovány v&nbsp;souladu se zákonem č.&nbsp;106/1999&nbsp;Sb.</p>
+        <p>2025 © Digitální a informační agentura • Informace jsou poskytovány v&nbsp;souladu se zákonem
+          č.&nbsp;106/1999&nbsp;Sb.</p>
       </div>
     </div>
   </footer>
 
   <script src="../script.js"></script>
 </body>
+
 </html>
