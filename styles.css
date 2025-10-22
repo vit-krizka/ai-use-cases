@@ -337,9 +337,9 @@ body>header h1 a {
 }
 
 .header-divider {
-  height: 1px;
-  background-color: #bdbcbc;
-  opacity: 0.2;
+    height: 1px;
+    background-color: #bdbcbc;
+    opacity: 0.2;
 }
 
 
@@ -387,7 +387,8 @@ body>header h1 a {
 /* po najetí myší na .main-nav__list li ztmavit barvu*/
 .main-nav__list li:hover a {
     color: var(--color-primary);
-    background-color: rgba(70, 173, 72, 0.15); /* Jemně zelené pozadí s 15% průhledností */
+    background-color: rgba(70, 173, 72, 0.15);
+    /* Jemně zelené pozadí s 15% průhledností */
     font-weight: 800;
 }
 
@@ -544,13 +545,15 @@ body>header h1 a {
 }
 
 .mobile-menu__category-toggle,
-.mobile-menu__row > a,
+.mobile-menu__row>a,
 .mobile-menu__toggle {
     display: flex;
     align-items: center;
-    justify-content: space-between;  /* text vlevo, chevron vpravo */
+    justify-content: space-between;
+    /* text vlevo, chevron vpravo */
     width: 100%;
-    padding: 0.85rem 1.25rem;        /* sjednocené s hlavními položkami */
+    padding: 0.85rem 1.25rem;
+    /* sjednocené s hlavními položkami */
     font-size: 1rem;
     font-weight: 600;
     text-align: left;
@@ -1152,15 +1155,14 @@ h3 {
     isolation: isolate;
     margin: clamp(2.5rem, 6vw, 3.75rem) auto;
     padding: clamp(2rem, 5vw, 3rem) clamp(1.5rem, 4vw, 2.5rem);
-    background: none;
+    background: #c5c5c5;
+    /* přesunuto sem místo ::before */
+    border-radius: 12px;
 }
 
+/* Odstraněno přesahující pseudo-pozadí */
 .usecase-counter::before {
-    content: "";
-    position: absolute;
-    inset: 0 calc(50% - 50vw);
-    background: #c5c5c5;
-    z-index: -1;
+    content: none;
 }
 
 .usecase-counter__inner {
@@ -1196,7 +1198,8 @@ h3 {
     padding: 8px 0;
     border-radius: 12px;
     background: linear-gradient(160deg, #ffffff, #f3f3f3 70%, #ffffff);
-    box-shadow: 0 18px 32px -28px rgba(22, 31, 38, 0.45), 0 10px 20px -22px rgba(22, 31, 38, 0.25);
+    box-shadow: 0 18px 32px -28px rgba(22, 31, 38, 0.45),
+        0 10px 20px -22px rgba(22, 31, 38, 0.25);
     border: 1px solid rgba(12, 24, 35, 0.08);
     perspective: 1000px;
     min-width: clamp(5ch, 7vw, 6ch);
@@ -1281,6 +1284,7 @@ h3 {
         font-size: clamp(1rem, 4.5vw, 1.3rem);
     }
 }
+
 
 .highlight {
     background: #f9f9f9;
@@ -1824,17 +1828,19 @@ h3 {
     }
 
     #sidebar .bi {
-    display: inline-block;      /* aby šla transformace použít */
-    vertical-align: middle;
-    margin-left: 0.5em;
-    width: 1em;
-    height: auto;
-    transition: transform 0.3s ease; /* přidáme animaci pro otáčení */
+        display: inline-block;
+        /* aby šla transformace použít */
+        vertical-align: middle;
+        margin-left: 0.5em;
+        width: 1em;
+        height: auto;
+        transition: transform 0.3s ease;
+        /* přidáme animaci pro otáčení */
     }
 
     /* otáčení při rozbaleném stavu */
     #sidebar [aria-expanded="true"] .bi {
-    transform: rotate(180deg);
+        transform: rotate(180deg);
     }
 
     footer .footer-project div {
@@ -2161,6 +2167,40 @@ table#table-overview tr>*:first-child {
     line-height: 1.55;
 }
 
+/* .glossary-chip {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.75rem;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    background: rgba(32, 115, 21, 0.1);
+    color: var(--dark);
+    border-radius: 999px;
+    padding: 0.25rem 0.75rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.glossary-chip.grey {
+    color: rgb(72, 72, 72);
+    background-color: rgb(195, 195, 195);
+}
+
+.glossary-link.locked {
+    pointer-events: none;
+    cursor: not-allowed;
+    color: #777;
+    text-decoration: none;
+}
+
+.glossary-link.locked .glossary-title::after {
+    content: " 🔒";
+    font-size: 0.9em;
+    margin-left: .25rem;
+} */
+
+/* Chip (zachováno, jen drobně zpřesněné názvosloví) */
 .glossary-chip {
     display: inline-flex;
     align-items: center;
@@ -2175,6 +2215,32 @@ table#table-overview tr>*:first-child {
     font-weight: 600;
     margin-bottom: 0.5rem;
 }
+
+.locked .glossary-chip {
+    color: rgb(72, 72, 72);
+    background-color: rgb(195, 195, 195);
+}
+
+/* Zamčená položka – kurzor na wrapperu, aby fungoval i s pointer-events */
+th.locked {
+    cursor: not-allowed;
+}
+
+/* Zneaktivnění odkazu uvnitř zamčené buňky */
+th.locked .glossary-link {
+    pointer-events: none;
+    /* nekliknutelné */
+    color: #777;
+    text-decoration: none;
+}
+
+/* Ikona zámku za názvem */
+th.locked .glossary-title::after {
+    content: " 🔒";
+    font-size: 0.9em;
+    margin-left: .25rem;
+}
+
 
 .glossary-entry {
     background: #fff;
