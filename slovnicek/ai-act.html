@@ -101,15 +101,17 @@
 
         <!-- Legální definice / zvýrazněný box -->
         <section class="highlight" aria-labelledby="legal-def">
-          <!-- <h3 id="legal-def">Legální vymezení</h3> -->
-          <p><strong>Nařízení o umělé inteligenci</strong> je nařízení Evropského parlamentu a Rady (EU) 2024/1689 ze
-            dne 13. června 2024, kterým
-            se stanoví harmonizovaná pravidla pro umělou inteligenci, tzv. akt o umělé inteligemci, stanovující
-            harmonizovaná pravidla pro vývoj, uvádění na trh a využívání systémů umělé inteligence v Evropské unii.
-            Zavádí povinnosti pro jednotlivé role v životním cyklu AI, klasifikaci systémů podle rizika a opatření na
-            ochranu základních práv.
-          </p>
-        </section>
+  <!-- <h3 id="legal-def">Legální vymezení</h3> -->
+  <p>
+    <strong>Nařízení o umělé inteligenci</strong> je
+    <a href="https://eur-lex.europa.eu/legal-content/CS/TXT/HTML/?uri=OJ:L_202401689#art_3"
+      target="_blank">Nařízení Evropského parlamentu a Rady (EU) 2024/1689 ze dne 13. června 2024, kterým se stanoví
+      harmonizovaná pravidla pro umělou inteligenci</a>, tzv. akt o umělé inteligemci, stanovující harmonizovaná
+    pravidla pro vývoj, uvádění na trh a využívání systémů umělé inteligence v Evropské unii. Zavádí povinnosti
+    pro jednotlivé role v životním cyklu AI, klasifikaci systémů podle rizika a opatření na ochranu základních práv.
+  </p>
+</section>
+
 
 
 
@@ -188,7 +190,7 @@
             prostřednictvím systému řízení rizik, technické dokumentace a testování. <strong>Dovozce (importer)</strong>
             odpovídá za uvedení systému ze třetí země na trh EU a ověřuje, že jsou splněny požadavky.
             <strong>Distributor</strong> systém v EU dále nabízí či dodává odběratelům a musí respektovat režim shody.
-            <strong>Nasazovatel (deployer)</strong> systém používá v praxi – ve veřejné správě typicky úřad či instituce
+            <strong>Zavádějící subjekt (deployer)</strong> systém používá v praxi – ve veřejné správě typicky úřad či instituce
             – a zajišťuje lidský dohled, školení uživatelů, evidenci a u vysoce rizikových systémů také provedení FRIA
             před nasazením.
           </p>
@@ -236,7 +238,9 @@
         <section aria-labelledby="gpai">
           <h3 id="gpai">GPAI – obecné modely umělé inteligence</h3>
           <p>Vedle účelově vymezených systémů přináší AI Act režim pro <em>General Purpose AI</em> (GPAI), tedy
-            univerzální modely využitelné v celé škále aplikací (např. velké jazykové modely). Poskytovatelé GPAI mají
+            univerzální modely využitelné v celé škále aplikací (např. velké jazykové modely). Poskytovatelé <a href="https://eur-lex.europa.eu/legal-content/CS/TXT/HTML/?uri=OJ:L_202401689#cpt_V" target="_blank">
+      <strong>GPAI</strong>
+    </a> mají
             povinnost popsat architekturu a omezení modelu, zveřejnit souhrny tréninkových dat a respektovat
             autorskoprávní pravidla, zejména <em>TDM opt-out</em>. U nejvýkonnějších modelů se systémovým rizikem se
             přidávají nároky na testování bezpečnosti a mitigaci rizik. Pro veřejnou správu to prakticky znamená
@@ -245,16 +249,22 @@
         </section>
 
         <!-- Veřejná správa – souvislý text -->
-        <section aria-labelledby="public-sector">
-          <h3 id="public-sector">Co AI Act ukládá veřejné správě</h3>
-          <p>Úřady se nejčastěji ocitají v roli nasazovatele a jejich hlavní odpovědností je používat systém dle návodu,
-            zajistit lidský dohled a školení obsluhy, vést evidenci používání a včas řešit incidenty. Pokud jde o systém
-            vysokého rizika, provádí se před nasazením <strong>FRIA</strong> – posouzení dopadů na základní práva
-            dotčených osob. FRIA rozšiřuje optiku známé DPIA z GDPR a není redukovaná jen na ochranu osobních údajů:
-            vyhodnocuje rovněž rizika diskriminace, přiměřenosti, vysvětlitelnosti či přístupu k nápravě. V oblasti
-            veřejných zakázek je vhodné smluvně vynutit dodání technické dokumentace, umožnit audit a přístup k logům,
-            stanovit požadavky na kvalitu, bezpečnost a testování, a vymezit proces hlášení závažných incidentů.</p>
-        </section>
+<section aria-labelledby="public-sector">
+  <h3 id="public-sector">Co AI Act ukládá veřejné správě</h3>
+  <p>
+    Úřady se nejčastěji ocitají v roli nasazovatele a jejich hlavní odpovědností je používat systém dle návodu,
+    zajistit lidský dohled a školení obsluhy, vést evidenci používání a včas řešit incidenty. Pokud jde o systém
+    vysokého rizika, provádí se před nasazením
+    <a href="https://eur-lex.europa.eu/legal-content/CS/TXT/HTML/?uri=OJ:L_202401689#art_27" target="_blank">
+      <strong>FRIA</strong>
+    </a>
+    – posouzení dopadů na základní práva dotčených osob. FRIA rozšiřuje optiku známé DPIA z GDPR a není redukovaná jen
+    na ochranu osobních údajů: vyhodnocuje rovněž rizika diskriminace, přiměřenosti, vysvětlitelnosti či přístupu k
+    nápravě. V oblasti veřejných zakázek je vhodné smluvně vynutit dodání technické dokumentace, umožnit audit a přístup
+    k logům, stanovit požadavky na kvalitu, bezpečnost a testování, a vymezit proces hlášení závažných incidentů.
+  </p>
+</section>
+
 
         <!-- Implementace – stručný, ale věcný postup -->
         <section aria-labelledby="implementation">
@@ -286,46 +296,48 @@
         </section>
 
         <!-- Časová osa – schéma -->
-        <section aria-labelledby="timeline">
-          <h3 id="timeline">Časová osa účinnosti</h3>
-          <figure role="img" aria-labelledby="aiact-timeline-title" class="glossary-figure">
-            <figcaption id="aiact-timeline-title">Schéma: Hlavní milníky AI Act (2024–2027)</figcaption>
-            <!-- SVG časová osa -->
-            <svg viewBox="0 0 880 160" role="img" aria-hidden="true">
-              <style>
-                text {
-                  font-family: Inter, Segoe UI, Arial, sans-serif;
-                  fill: #111
-                }
+<section aria-labelledby="timeline">
+  <h3 id="timeline">Časová osa účinnosti</h3>
+  <figure role="img" aria-labelledby="aiact-timeline-title" class="glossary-figure">
+    <figcaption id="aiact-timeline-title">Schéma: Hlavní milníky AI Act (2024–2027)</figcaption>
 
-                .dot {
-                  stroke: #111;
-                  stroke-width: 1.5
-                }
-              </style>
-              <line x1="60" y1="80" x2="860" y2="80" stroke="#bbb" stroke-width="3" />
-              <circle cx="120" cy="80" r="8" fill="#368537" class="dot" />
-              <text x="120" y="30" text-anchor="middle" font-weight="600">1. 8. 2024</text>
-              <text x="120" y="50" text-anchor="middle" font-size="12">Vstup v platnost</text>
+    <svg viewBox="0 0 880 160" role="img" aria-hidden="true" preserveAspectRatio="xMidYMid meet">
+      <style>
+        text { font-family: Inter, Segoe UI, Arial, sans-serif; fill: #111; }
+        .dot { stroke: #111; stroke-width: 1.5; }
+      </style>
 
-              <circle cx="300" cy="80" r="8" fill="#368537" class="dot" />
-              <text x="300" y="30" text-anchor="middle" font-weight="600">2. 2. 2025</text>
-              <text x="300" y="50" text-anchor="middle" font-size="12">Zákazy čl. 5</text>
+      <!-- základní linie -->
+      <line x1="60" y1="80" x2="860" y2="80" stroke="#bbb" stroke-width="3" />
 
-              <circle cx="480" cy="80" r="8" fill="#368537" class="dot" />
-              <text x="480" y="30" text-anchor="middle" font-weight="600">2. 8. 2025</text>
-              <text x="480" y="50" text-anchor="middle" font-size="12">Povinnosti GPAI</text>
+      <!-- 1) 120 -->
+      <circle cx="120" cy="80" r="8" fill="#368537" class="dot" />
+      <text x="120" y="30" text-anchor="middle" font-weight="600">1. 8. 2024</text>
+      <text x="120" y="50" text-anchor="middle" font-size="12">Vstup v platnost</text>
 
-              <circle cx="660" cy="80" r="8" fill="#368537" class="dot" />
-              <text x="660" y="30" text-anchor="middle" font-weight="600">2. 8. 2026</text>
-              <text x="660" y="50" text-anchor="middle" font-size="12">Vysoké riziko</text>
+      <!-- 2) 290 -->
+      <circle cx="290" cy="80" r="8" fill="#368537" class="dot" />
+      <text x="290" y="30" text-anchor="middle" font-weight="600">2. 2. 2025</text>
+      <text x="290" y="50" text-anchor="middle" font-size="12">Zákazy čl. 5</text>
 
-              <circle cx="800" cy="80" r="8" fill="#368537" class="dot" />
-              <text x="800" y="30" text-anchor="middle" font-weight="600">2027</text>
-              <text x="800" y="50" text-anchor="middle" font-size="12">Systémové GPAI</text>
-            </svg>
-          </figure>
-        </section>
+      <!-- 3) 460 -->
+      <circle cx="460" cy="80" r="8" fill="#368537" class="dot" />
+      <text x="460" y="30" text-anchor="middle" font-weight="600">2. 8. 2025</text>
+      <text x="460" y="50" text-anchor="middle" font-size="12">Povinnosti GPAI</text>
+
+      <!-- 4) 630 -->
+      <circle cx="630" cy="80" r="8" fill="#368537" class="dot" />
+      <text x="630" y="30" text-anchor="middle" font-weight="600">2. 8. 2026</text>
+      <text x="630" y="50" text-anchor="middle" font-size="12">Vysoké riziko</text>
+
+      <!-- 5) 800 -->
+      <circle cx="800" cy="80" r="8" fill="#368537" class="dot" />
+      <text x="800" y="30" text-anchor="middle" font-weight="600">2027</text>
+      <text x="800" y="50" text-anchor="middle" font-size="12">Systémové GPAI</text>
+    </svg>
+  </figure>
+</section>
+
 
         <!-- Sankce – souvislý text -->
         <section aria-labelledby="sanctions">
@@ -354,8 +366,8 @@
           <h3 id="related-terms">Související pojmy</h3>
           <ul>
             <li><a href="../ai-gramotnost.html">AI gramotnost (AI literacy)</a></li>
-            <li><a href="fria.html">FRIA (posouzení dopadů na základní práva)</a></li>
-            <li><a href="gpai.html">GPAI (obecné modely AI)</a></li>
+            <li><a href="https://eur-lex.europa.eu/legal-content/CS/TXT/HTML/?uri=OJ:L_202401689#art_27" target="_blank">FRIA (posouzení dopadů na základní práva)</a></li>
+            <li><a href="https://eur-lex.europa.eu/legal-content/CS/TXT/HTML/?uri=OJ:L_202401689#art_5" target="_blank">GPAI (obecné modely AI)</a></li>
             <li><a href="distributor.html">Distributor</a></li>
             <li><a href="dovozce.html">Dovozce (importer)</a></li>
           </ul>
