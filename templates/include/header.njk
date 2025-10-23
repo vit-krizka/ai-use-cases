@@ -1,0 +1,54 @@
+  <a href="#main" class="skip-link">Přeskočit na obsah</a>
+  <header>
+    <div class="header-bar">
+      <button class="hamburger" id="menuBtn" aria-label="Menu" aria-controls="mobile-menu" aria-expanded="false">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+          stroke-linejoin="round">
+          <line x1="3" y1="12" x2="21" y2="12"></line>
+          <line x1="3" y1="6" x2="21" y2="6"></line>
+          <line x1="3" y1="18" x2="21" y2="18"></line>
+        </svg>
+      </button>
+      <h1>
+        <a href="index.html">
+          <img src="logos/katalog_AI.svg" alt="DIA: Katalog využití AI ve veřejném sektoru">
+        </a>
+      </h1>
+    </div>
+  </header>
+  <nav class="main-nav" aria-label="Hlavní menu">
+    <div class="header-divider"></div>
+    <div class="main-nav__inner">
+      <ul class="main-nav__list">
+        <li><a href="project.html"{% if template == "project.njk" %} aria-current="page"{% endif %}>Katalog</a></li>
+        <li><a href="wiki.html"{% if template == "wiki.njk" %} aria-current="page"{% endif %}>Přidat use case</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div id="mobile-menu" class="mobile-menu" aria-hidden="true">
+    <div class="mobile-menu__overlay" data-mobile-menu-close></div>
+    <div class="mobile-menu__panel" role="dialog" aria-modal="true">
+      <div class="mobile-menu__header">
+        <span>Menu</span>
+        <button class="mobile-menu__close" type="button" data-mobile-menu-close
+          aria-label="Zavřít menu">&times;</button>
+      </div>
+      <nav aria-label="Hlavní menu">
+        <ul class="mobile-menu__list">
+          <li class="mobile-menu__item mobile-menu__item--catalog">
+            <div class="mobile-menu__row">
+              <a href="project.html"{% if template == "project.njk" %} aria-current="page"{% endif %}>Katalog</a>
+              <button class="mobile-menu__toggle" type="button" aria-expanded="false"
+                aria-controls="mobile-catalog-list">
+                <span class="sr-only">Rozbalit menu katalogu</span>
+                <span class="bi bi-chevron-down" aria-hidden="true"></span>
+              </button>
+            </div>
+            <ul id="mobile-catalog-list" class="mobile-menu__submenu" hidden></ul>
+          </li>
+          <li class="mobile-menu__item"><a href="wiki.html"{% if template == "wiki.njk" %} aria-current="page"{% endif %}>Přidat use case</a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>

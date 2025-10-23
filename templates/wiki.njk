@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="cs">
+{% set subtitle = "Přidání nového případu užití" %}
+{% include "include/html-head.njk" %}
+
+<body>
+{% include "include/header.njk" %}
+  <main id="main">
+    <div>
+      <section class="main-content">
+        <h2>Co znamená AI use case?</h2>
+        <p>
+          Use case popisuje konkrétní nasazení umělé inteligence ve veřejném sektoru – jaký problém řeší, jaký typ AI je
+          využit a v jakém stavu realizace se projekt nachází. Smyslem katalogu je shromažďovat ověřené příklady
+          použití,
+          aby se z nich dalo vycházet při plánování dalších projektů.
+        </p>
+        <div>
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLSeMnjLBUkiFR6cAExs28azQ6emrvqm1ptWcizBmWRx2Om3ejQ/viewform"
+            class="btn-secondary" aria-label="Přidat use case">
+            Přidat use case
+          </a>
+        </div>
+        <p></p>
+
+        <h2>Struktura dat o use casu</h2>
+        <ul>
+          <li>ID - unikátní identifikátor</li>
+          <li>Garant - osoba odpovědná za projekt</li>
+          <li>Název projektu</li>
+          <li>Typ umělé inteligence</li>
+          <li>Hlavní kategorie use case</li>
+          <li>Krátký popis a Řešený problém</li>
+          <li>Instituce a případně Dodavatel</li>
+          <li>Stav projektu (např. pilot, produkce)</li>
+          <li>Očekávané dopady, Vyhodnocení úspěšnosti, Poučení pro příští projekty</li>
+          <li>Zdroj, Označení zdroje, Informace o zdroji a kontaktní osoba</li>
+          <li>Obor činnosti, Kategorie use case</li>
+        </ul>
+
+        <h2>Kategorizace use cases</h2>
+        <p>
+        </p>
+        <p>
+        </p>
+        <ol class="compact-paragraphs headings">
+          <li>
+            <p>Analýza audiovizuálních dat</p>
+            <p>Tato kategorie zahrnuje využití umělé inteligence pro zpracování obrazového a zvukového materiálu
+              v různých agendách veřejné správy. Technologie jako počítačové vidění, rozpoznávání řeči či
+              hluboké neuronové sítě umožňují rychlou a přesnou analýzu snímků, videí nebo hlasových záznamů,
+              a to jak v oblasti zdravotnictví, tak při správě a kontrole veřejných činností. Cílem je
+              automatizace rutinních úkonů, zvýšení přesnosti rozhodnutí a zlepšení dostupnosti informací.</p>
+          </li>
+          <li>
+            <p>Generování obsahu a chatboti úředníků</p>
+            <p>V této kategorii se AI nástroje využívají pro generování textových výstupů, podporu rozhodování a
+              asistenci při administrativní práci. Úředníkům pomáhají například s návrhy dokumentů, vytvářením
+              úředních rozhodnutí, vyhledáváním relevantních právních předpisů nebo zpracováním podkladů.
+              Nejčastěji jde o implementaci velkých jazykových modelů (LLM), chatbotů či nástrojů pro extrakci
+              informací z textu.</p>
+          </li>
+          <li>
+            <p>Komunikace a klientský servis</p>
+            <p>Tato kapitola se věnuje využití AI nástrojů pro přímou komunikaci s veřejností. Chatboti, hlasoví
+              asistenti nebo inteligentní formuláře napomáhají občanům orientovat se ve veřejných službách,
+              zjišťovat informace nebo elektronicky komunikovat s úřady. Umělá inteligence zde přispívá ke
+              zvýšení dostupnosti služeb, snižování bariér při používání digitálních nástrojů a k posílení
+              transparentnosti veřejné správy.</p>
+          </li>
+          <li>
+            <p>Monitoring, bezpečnost a dohled</p>
+            <p>Tato kategorie se zaměřuje na využití umělé inteligence v oblastech, kde je třeba sledovat a
+              vyhodnocovat velké objemy dat v reálném čase. Může jít o sledování bezpečnostních incidentů,
+              detekci kybernetických útoků, kontrolu dodržování pravidel nebo identifikaci rizikových situací
+              ve veřejném prostoru. Díky schopnosti AI detekovat vzorce a anomálie lze včas reagovat na
+              potenciální hrozby a zároveň optimalizovat dohledové a inspekční procesy.</p>
+          </li>
+          <li>
+            <p>Optimalizace úředních procesů</p>
+            <p>Umělá inteligence může významně přispět ke zjednodušení, zrychlení a automatizaci vnitřních
+              procesů úřadů. Tato oblast zahrnuje například kontrolu správnosti podkladů, klasifikaci
+              dokumentů, automatické přiřazování úkolů, správu agend nebo revizi souladu dokumentace s
+              pravidly. AI tak pomáhá snižovat rutinní administrativní zátěž, zlepšuje kvalitu výstupů a
+              umožňuje zaměstnancům veřejné správy věnovat se odbornější práci.</p>
+          </li>
+          <li>
+            <p>Predikce a automatizované rozhodování</p>
+            <p>V této kategorii je AI využívána k podpoře nebo přímo k provedení rozhodnutí na základě analýzy
+              dat. Jde o oblasti, kde je třeba předvídat budoucí vývoj (např. poptávku, zatížení, rizika) nebo
+              kde lze částečně nahradit lidské rozhodování opakujícími se algoritmickými postupy. Klíčový je
+              důraz na transparentnost, vysvětlitelnost a právní rámec automatizace.</p>
+          </li>
+        </ol>
+
+        <h2>Jaká data o use casu sbíráme</h2>
+        <p>
+          Pro každý projekt je vhodné vyplnit všechny výše uvedené atributy. Kromě základního popisu a stavu realizace
+          se
+          zaměřujeme také na:
+        </p>
+        <ul>
+          <li>Konkrétní problém, který AI řeší, a očekávané přínosy,</li>
+          <li>Použitou technologii (např. RPA, hluboké učení, LLM),</li>
+          <li>Kontaktní osobu a zdroj informací pro ověření,</li>
+          <li>Poučení nebo doporučení, která mohou pomoci dalším institucím.</li>
+        </ul>
+        <p>
+          Takto strukturovaná data umožňují jednotné vyhledávání, porovnávání projektů a sdílení zkušeností v rámci
+          veřejné správy.
+        </p>
+      </section>
+    </div>
+  </main>
+
+{% include "include/footer.njk" %}
+
+  <script src="script.js"></script>
+</body>
+
+</html>
