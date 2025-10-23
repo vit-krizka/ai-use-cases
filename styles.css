@@ -527,6 +527,8 @@ body>header h1 a {
     padding: 0;
 }
 
+mobile-menu__list>li>a,
+mobile-menu__list>li>button,
 .mobile-menu__item>a,
 .mobile-menu__item>button {
     display: block;
@@ -540,6 +542,7 @@ body>header h1 a {
     color: var(--text);
 }
 
+mobile-menu__list>li>a,
 .mobile-menu__item>a {
     font-weight: 600;
 }

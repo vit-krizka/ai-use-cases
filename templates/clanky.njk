@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="cs">
+
+{% set subtitle = "Články" %}
+{% include "include/html-head.njk" %}
+
+<body>
+{% include "include/header.njk" %}
+
+  <main id="main">
+    <div>
+      <section class="main-content articles-section">
+        <h2>Články z oblasti AI, práva a státní správy</h2>
+        <p>Na této stránce najdete články, které se věnují různým aspektům umělé inteligence, jejího využití ve veřejném
+          sektoru a souvisejícím právním otázkám. Články jsou psány odborníky z&nbsp;oblasti AI, práva a státní správy a
+          poskytují hlubší pohled na aktuální témata a výzvy spojené s&nbsp;implementací AI technologií ve veřejné
+          správě. Chcete-li zde publikovat vlastní článek, kontaktuje nás na <a
+            href="mailto:kc@dia.gov.cz">kc@dia.gov.cz</a>.</p>
+
+        <div class="articles-grid">
+          <article class="article-card">
+            <a class="article-card__link" href="slovnicek/vektorova-databaze.html">
+              <div class="article-card__image-wrapper">
+                <img src="images/vector-database-2.webp" alt="Ilustrační vizualizace vektorové databáze"
+                  class="article-card__image" loading="lazy">
+              </div>
+              <div class="article-card__content">
+                <span class="article-card__tag">Slovníček</span>
+                <h3>Vektorová databáze</h3>
+                <p class="article-card__meta">
+                  <time datetime="2025-09-20">20. 9. 2025</time>
+                </p>
+                <p class="article-card__excerpt">Vektorové databáze ukládají embeddingy a umožňují vyhledávání podle
+                  významu,
+                  čímž doplňují relační databáze a tvoří základ pro AI aplikace pracující s nestrukturovanými daty.</p>
+              </div>
+            </a>
+          </article>
+
+          <article class="article-card">
+            <a class="article-card__link" href="clanky/materialni-prameny-ai-prava.html">
+              <div class="article-card__image-wrapper">
+                <img src="images/materialni-prameny-prava.webp" alt="Ilustrace materiálních pramenů AI práva"
+                  class="article-card__image" loading="lazy">
+              </div>
+              <div class="article-card__content">
+                <span class="article-card__tag">AI a právo</span>
+                <h3>Materiální prameny AI práva</h3>
+                <p class="article-card__meta">
+                  <span class="article-card__author">Vít Křížka</span>
+                  <span aria-hidden="true">•</span>
+                  <time datetime="2025-09-21">21. 9. 2025</time>
+                </p>
+                <p class="article-card__excerpt">Kultura, technologie, literatura, móda i náboženství formují očekávání
+                  společnosti a dávají právu signály, jak reagovat na nástup umělé inteligence.</p>
+              </div>
+            </a>
+          </article>
+
+          <article class="article-card">
+            <a class="article-card__link" href="slovnicek/strojove-uceni.html">
+              <div class="article-card__image-wrapper">
+                <img src="images/strojove-uceni.webp" alt="Grafické ztvárnění strojového učení"
+                  class="article-card__image" loading="lazy">
+              </div>
+              <div class="article-card__content">
+                <span class="article-card__tag">Slovníček</span>
+                <h3>Strojové učení</h3>
+                <p class="article-card__meta">
+                  <time datetime="2025-09-21">21. 9. 2025</time>
+                </p>
+                <p class="article-card__excerpt">Strojové učení je podoblast AI, v níž se modely učí z dat odhalovat
+                  vzory a
+                  pomáhají úřadům plánovat služby, automatizovat procesy i nastavit dohled nad pilotními projekty.</p>
+              </div>
+            </a>
+          </article>
+
+          <article class="article-card">
+            <a class="article-card__link" href="clanky/fyzicka-pravnicka-a-elektronicka-osoba.html">
+              <div class="article-card__image-wrapper">
+                <img src="images/elektronicka-osoba.webp" alt="Symbolické zobrazení elektronické osoby"
+                  class="article-card__image" loading="lazy">
+              </div>
+              <div class="article-card__content">
+                <span class="article-card__tag">AI a právo</span>
+                <h3>Fyzická, právnická a elektronická osoba?</h3>
+                <p class="article-card__meta">
+                  <span class="article-card__author">Vít Křížka</span>
+                  <span aria-hidden="true">•</span>
+                  <time datetime="2025-09-21">21. 9. 2025</time>
+                </p>
+                <p class="article-card__excerpt">Zavedení elektronické osoby by mohlo právnímu řádu pomoci rozlišit
+                  odpovědnost
+                  za autonomní systémy, ale zároveň vyvolává otázky o účelu, kontrole i ochraně základních práv.</p>
+              </div>
+            </a>
+          </article>
+        </div>
+      </section>
+    </div>
+  </main>
+
+{% include "include/footer.njk" %}
+
+  <script src="script.js" defer></script>
+</body>
+
+</html>

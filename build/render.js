@@ -14,6 +14,12 @@ env.addFilter('date', function(dateInput, formatStr) {
   return format(date, formatStr);
 });
 
+env.addGlobal('menuLink', function(name, url, output) {
+    if(url === output)
+        return `<li><a href="${url}" aria-current="page">${name}</a></li>`;
+    return `<li><a href="${url}">${name}</a></li>`;
+});
+
 // Projdi všechny soubory v adresáři templates
 fs.readdirSync(inputDir).forEach(file => {
   if (path.extname(file) === '.njk') {
@@ -23,7 +29,7 @@ fs.readdirSync(inputDir).forEach(file => {
 
     // Data pro šablonu
     const data = {
-        template: path.basename(file)
+        output: outputFilename
     };
 
     // Vykresli a ulož
