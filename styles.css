@@ -257,43 +257,6 @@ address {
     /* jemné zvýraznění při hover */
 }
 
-/* ===== Download ikona ===== */
-.download-btn {
-    position: fixed;
-    top: 170px;
-    background: #FFFFFF;
-    color: white;
-    border-radius: 50%;
-    width: 60px;
-    height: 60px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 28px;
-    cursor: pointer;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-    transition: background 0.3s;
-    text-decoration: none;
-    z-index: 2100;
-    /* nad category-popup (má 2000) */
-    right: max(5px, calc((100vw - 80rem) / 2 + 5px));
-}
-
-h2 .download-btn-guard {
-    display: inline-block;
-    width: 22px;
-    height: 22px;
-}
-
-.download-btn:focus {
-    outline: 2px solid var(--color-primary);
-    outline-offset: 2px;
-}
-
-.download-btn:hover {
-    background: #FFFFFF;
-}
-
 /* ===== Top bar ===== */
 .header-bar {
     display: flex;
@@ -814,48 +777,6 @@ footer .footer-bottom p {
     text-decoration: none;
     transition: background-color 0.2s ease;
 }
-
-.btn-tertiary {
-    display: inline-flex;
-    /* pro zarovnání ikony a textu */
-    align-items: center;
-    gap: 0.5rem;
-    /* mezera mezi ikonou a textem */
-    padding: 0.75rem 1.5rem;
-    /* stejné jako btn-primary */
-    font-size: 1rem;
-    /* stejné jako btn-primary */
-    font-weight: 600;
-    border-radius: 6px;
-    /* stejné jako btn-primary */
-    background-color: #ffffff;
-    /* bílé pozadí */
-    color: #207315;
-    /* zelený text */
-    border: 2px solid #207315;
-    /* zelený rámeček */
-    text-decoration: none;
-    transition: all 0.2s ease;
-    cursor: pointer;
-}
-
-.btn-tertiary img {
-    height: 20px;
-    width: 20px;
-    display: block;
-}
-
-.btn-tertiary:hover {
-    background-color: #207315;
-    /* inverze na hover */
-    color: #ffffff;
-}
-
-.btn-tertiary:hover img {
-    filter: brightness(0) invert(1);
-    /* ikona zbělá */
-}
-
 
 /* ===== Sidebar ===== */
 #sidebar {
