@@ -9,33 +9,66 @@
   <link rel="icon" type="image/svg+xml" href="https://www.dia.gov.cz/favicon.svg?v2">
   <link rel="shortcut icon" href="https://www.dia.gov.cz/favicon.ico?v2">
   <link rel="apple-touch-icon" sizes="180x180" href="https://www.dia.gov.cz/apple-touch-icon.png?v2">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
   <link rel="stylesheet" href="styles.css">
 </head>
 
+
 <body>
-  <a href="#main" class="skip-link">Přeskočit na obsah</a>
-  <header>
-    <div class="header-bar">
-      <button class="hamburger" id="menuBtn" aria-label="Menu" aria-controls="mobile-menu" aria-expanded="false">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-          stroke-linejoin="round">
-          <line x1="3" y1="12" x2="21" y2="12"></line>
-          <line x1="3" y1="6" x2="21" y2="6"></line>
-          <line x1="3" y1="18" x2="21" y2="18"></line>
-        </svg>
-      </button>
-      <h1>
-        <a href="index.html">
-          <img src="logos/katalog_AI.svg" alt="DIA: Katalog využití AI ve veřejném sektoru">
-        </a>
-      </h1>
+<a href="#main" class="skip-link">Přeskočit na obsah</a>
+<header>
+  <div class="header-bar">
+    <button class="hamburger" id="menuBtn" aria-label="Menu" aria-controls="mobile-menu" aria-expanded="false">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+           stroke-linejoin="round" aria-hidden="true">
+        <line x1="3" y1="12" x2="21" y2="12"></line>
+        <line x1="3" y1="6" x2="21" y2="6"></line>
+        <line x1="3" y1="18" x2="21" y2="18"></line>
+      </svg>
+    </button>
+    <h1>
+      <a href="index.html">
+        <img src="logos/katalog_AI.svg" alt="DIA: Katalog využití AI ve veřejném sektoru">
+      </a>
+    </h1>
+  </div>
+</header>
+<nav class="main-nav" aria-label="Hlavní menu">
+  <div class="header-divider"></div>
+  <div class="main-nav__inner">
+    <ul class="main-nav__list">
+      <li><a href="project.html">Katalog</a></li>
+      <li><a href="ai-gramotnost.html" aria-current="page">AI gramotnost</a></li>
+      <li><a href="ai-a-pravo.html">AI a právo</a></li>
+      <li><a href="prompt-inzenyrstvi.html">Prompt inženýrství</a></li>
+      <li><a href="clanky.html">Články</a></li>
+      <li><a href="slovnicek.html">Slovníček</a></li>
+      <li><a href="wiki.html">Přidat use case</a></li>
+    </ul>
+  </div>
+</nav>
+
+<div id="mobile-menu" class="mobile-menu" aria-hidden="true">
+  <div class="mobile-menu__overlay" data-mobile-menu-close></div>
+  <div class="mobile-menu__panel" role="dialog" aria-modal="true" aria-labelledby="mobile-menu-title">
+    <div class="mobile-menu__header">
+      <span id="mobile-menu-title">Menu</span>
+      <button class="mobile-menu__close" type="button" data-mobile-menu-close
+              aria-label="Zavřít menu">&times;</button>
     </div>
-  </header>
-  <nav class="main-nav" aria-label="Hlavní menu">
-    <div class="header-divider"></div>
-    <div class="main-nav__inner">
-      <ul class="main-nav__list">
-        <li><a href="project.html">Katalog</a></li>
+    <nav aria-label="Hlavní menu">
+      <ul class="mobile-menu__list">
+        <li class="mobile-menu__item--catalog">
+          <div class="mobile-menu__row">
+            <a href="project.html">Katalog</a>
+            <button class="mobile-menu__toggle" type="button" aria-expanded="false"
+                    aria-controls="mobile-catalog-list">
+              <span class="sr-only">Rozbalit menu katalogu</span>
+              <span class="bi bi-chevron-down" aria-hidden="true"></span>
+            </button>
+          </div>
+          <ul id="mobile-catalog-list" class="mobile-menu__submenu" hidden></ul>
+        </li>
         <li><a href="ai-gramotnost.html" aria-current="page">AI gramotnost</a></li>
         <li><a href="ai-a-pravo.html">AI a právo</a></li>
         <li><a href="prompt-inzenyrstvi.html">Prompt inženýrství</a></li>
@@ -43,40 +76,9 @@
         <li><a href="slovnicek.html">Slovníček</a></li>
         <li><a href="wiki.html">Přidat use case</a></li>
       </ul>
-    </div>
-  </nav>
-
-  <div id="mobile-menu" class="mobile-menu" aria-hidden="true">
-    <div class="mobile-menu__overlay" data-mobile-menu-close></div>
-    <div class="mobile-menu__panel" role="dialog" aria-modal="true">
-      <div class="mobile-menu__header">
-        <span>Menu</span>
-        <button class="mobile-menu__close" type="button" data-mobile-menu-close
-          aria-label="Zavřít menu">&times;</button>
-      </div>
-      <nav aria-label="Hlavní menu">
-        <ul class="mobile-menu__list">
-          <li class="mobile-menu__item mobile-menu__item--catalog">
-            <div class="mobile-menu__row">
-              <a href="project.html">Katalog</a>
-              <button class="mobile-menu__toggle" type="button" aria-expanded="false"
-                aria-controls="mobile-catalog-list">
-                <span class="sr-only">Rozbalit menu katalogu</span>
-                <span aria-hidden="true">▶</span>
-              </button>
-            </div>
-            <ul id="mobile-catalog-list" class="mobile-menu__submenu" hidden></ul>
-          </li>
-          <li class="mobile-menu__item"><a href="ai-gramotnost.html" aria-current="page">AI gramotnost</a></li>
-          <li class="mobile-menu__item"><a href="ai-a-pravo.html">AI a právo</a></li>
-          <li class="mobile-menu__item"><a href="prompt-inzenyrstvi.html">Prompt inženýrství</a></li>
-          <li class="mobile-menu__item"><a href="clanky.html">Články</a></li>
-          <li class="mobile-menu__item"><a href="slovnicek.html">Slovníček</a></li>
-          <li class="mobile-menu__item"><a href="wiki.html">Přidat use case</a></li>
-        </ul>
-      </nav>
-    </div>
+    </nav>
   </div>
+</div>
 
 
   <main id="main">
@@ -84,32 +86,32 @@
       <section class="main-content">
         <h2>AI gramotnost</h2>
         <div class="highlight">
-          <p>Poskytovatelé systémů AI a subjekty zavádějící AI přijímají opatření, aby v co největší možné míře
-            zajistili dostatečnou úroveň gramotnosti v oblasti AI u svých zaměstnanců i u všech dalších osob, které se
-            jejich jménem zabývají provozem a používáním systémů AI, s přihlédnutím k jejich technickým znalostem,
-            zkušenostem, vzdělání a odborné přípravě a prostředí, v němž mají být systémy AI používány, a s ohledem na
+          <p>Poskytovatelé systémů AI a subjekty zavádějící AI přijímají opatření, aby v co největší možné míře
+            zajistili dostatečnou úroveň gramotnosti v oblasti AI u svých zaměstnanců i u všech dalších osob, které se
+            jejich jménem zabývají provozem a používáním systémů AI, s přihlédnutím k jejich technickým znalostem,
+            zkušenostem, vzdělání a odborné přípravě a prostředí, v němž mají být systémy AI používány, a s ohledem na
             osoby nebo skupiny osob, na kterých mají být systémy AI používány.</p>
-          <p style="text-align: right; color: #207315">Čl. 4 nařízení o umělé inteligenci</p>
+          <p style="text-align: right; color: #207315">Čl. 4 nařízení o umělé inteligenci</p>
         </div>
         <p>
           <strong>AI gramotnost</strong> ve veřejné správě není jen módní pojem, ale praktická schopnost rozumět tomu,
           jak systémy umělé inteligence fungují, co umí a kde mají své limity, a dokázat je používat bezpečně,
-          odpovědně a v souladu s právem. V pojetí evropské regulace jde o přiměřenou úroveň znalostí,
-          dovedností a porozumění u osob, které systémy AI navrhují, nasazují nebo s nimi pracují
+          odpovědně a v souladu s právem. V pojetí evropské regulace jde o přiměřenou úroveň znalostí,
+          dovedností a porozumění u osob, které systémy AI navrhují, nasazují nebo s nimi pracují
           jménem organizace, aby mohly činit informovaná rozhodnutí a předcházet škodám.
         </p>
         <p>
           Smyslem AI gramotnosti <strong>není</strong> pouze schopnost <strong>„umět napsat prompt“</strong>. Psaní
           zadání pro generativní nástroje, tzv. <a href="prompt-inzenyrstvi.html">prompt inženýrství</a>,
           je užitečná dovednost, ale skutečná gramotnost sahá hlouběji: zahrnuje základní pochopení toho,
-          z čeho a jak AI vyvozuje své výstupy, jaké jsou typické chyby a omyly, jak pracovat s nejistotou,
-          jak vyhodnocovat kvalitu a jaké povinnosti z používání AI plynou. Patří sem i orientace v ochraně
+          z čeho a jak AI vyvozuje své výstupy, jaké jsou typické chyby a omyly, jak pracovat s nejistotou,
+          jak vyhodnocovat kvalitu a jaké povinnosti z používání AI plynou. Patří sem i orientace v ochraně
           osobních údajů, transparentnosti, lidském dohledu a dokumentaci tak, aby bylo vždy jasné, co bylo
-          použito, proč a s jakými výsledky.
+          použito, proč a s jakými výsledky.
         </p>
 
         <section class="ai-literacy-actions" aria-labelledby="ai-literacy-actions-title">
-          <h3 id="ai-literacy-actions-title">Jak se zlepšit v AI gramotnosti?</h3>
+          <h3 id="ai-literacy-actions-title">Jak se zlepšit v AI gramotnosti?</h3>
           <div class="ai-literacy-actions__grid">
             <a class="ai-literacy-card" href="slovnicek.html">
               <div class="ai-literacy-card__icon" aria-hidden="true">
@@ -196,7 +198,6 @@
     </div>
   </main>
 
-
   <footer>
     <div>
       <div class="footer-contacts">
@@ -232,9 +233,9 @@
         <h3>Portál využití AI ve veřejném sektoru vám přináší</h3>
         <div>
           <div class="footer-block logos">
-            <img src="logos/EU_logo.png" alt="EU logo">
-            <img src="logos/NPO_logo.png" alt="NPO logo">
-            <img src="logos/ictu_logo.png" alt="ICTÚ logo">
+            <img src="logos/EU_logo.webp" alt="EU logo">
+            <img src="logos/NPO_logo.webp" alt="NPO logo">
+            <img src="logos/ictu_logo.webp" alt="ICTÚ logo">
             <img src="logos/dia_logo.svg" alt="DIA logo">
           </div>
           <div class="footer-block">
@@ -250,6 +251,7 @@
       </div>
     </div>
   </footer>
+
 
   <script src="script.js"></script>
 </body>

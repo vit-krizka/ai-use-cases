@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="cs">
+
+{% set subtitle = "Prompt inženýrství" %}
+{% include "include/html-head.njk" %}
+
+<body>
+{% include "include/header.njk" %}
+
+<main id="main">
+    <div>
+      <section class="main-content">
+        <h2>Příručka prompt inženýrství</h2>
+        <p>
+          <a href="slovnicek/prompt-inzenyrstvi.html">Prompt inženýrství</a> je dovednost vytváření efektivních zadání
+          (<a href="slovnicek/prompt.html">promptů</a>) pro <a href="slovnicek/generative-ai.html">generativní
+            modely umělé inteligence</a>, jako jsou <a href="slovnicek/large-language-model.html">velké jazykové
+            modely</a> (např. Grok, Perplexity či Copilot) nebo modely pro generování obrázků
+          (např. DALL·E či MidJourney). Cílem prompt inženýrství je navrhnout taková zadání, která povedou k požadovaným
+          a
+          kvalitním výstupům od AI systémů.
+        </p>
+        <p>
+          Dobře navržený <a href="slovnicek/prompt.html">prompt</a> může výrazně ovlivnit kvalitu, relevanci
+          a užitečnost odpovědí generovaných AI. <a href="slovnicek/prompt-inzenyrstvi.html">Prompt inženýrství</a>
+          zahrnuje různé techniky, jako je
+          specifikace kontextu, použití příkladů, kladení otevřen
+          ých otázek a iterativní ladění promptů na základě zpětné vazby.
+        </p>
+        <p>
+          V kontextu veřejné správy může <a href="slovnicek/prompt-inzenyrstvi.html">prompt inženýrství</a> pomoci
+          úředníkům a dalším pracovníkům efektivněji využívat
+          AI nástroje pro
+          zpracování dokumentů, analýzu dat, tvorbu textů a další úkoly, čímž se zvyšuje produktivita a kvalita služeb
+          poskytovaných
+          občanům.
+        </p>
+        <p>Na této stránce naleznete příručku a tipy pro efektivní psaní <a href="slovnicek/prompt.html">promptů</a>
+          nezávisle na tom, jaký konkrétní AI nástroj používáte. Příručku postupně aktualizujeme a rozšiřujeme.</p>
+        <article class="main-content prirucka-prompt-inzenyrstvi-detail">
+          <h1>Příručka promptování pro úředníka</h1>
+
+          <section id="proc-prompty">
+            <h2>1. Proč jsou prompty důležité?</h2>
+            <p>Prompt inženýrství je cílené psaní zadání pro generativní modely. Ovlivňujeme jím nejen obsah, ale také
+              strukturu, tón a kvalitu odpovědí. Dobře navržený prompt dokáže nahradit desítky minut ruční práce a
+              předejít riziku, že model vytvoří zavádějící nebo nekompletní výstup.</p>
+            <p>Ve veřejné správě to platí dvojnásob. Úředníci často pracují s citlivými informacemi, legislativou a
+              formálními postupy. Prompt proto musí jasně vymezit účel, právní rámec a očekávaný formát, aby se výstup
+              dal snadno zkontrolovat a převést do úředního dokumentu.</p>
+          </section>
+          <section id="strategicky-postup">
+            <h2>2. Strategický postup</h2>
+            <p>Do cíle vždy postupujte postupně, jednotlivými instrukcemi. Psaní promptu je podobné <strong>zadávání
+                práce kolegovi</strong> –
+              čím lépe popíšete očekávání, tím méně času strávíte opravami.</p>
+            <section id="cil">
+              <h3>2.1 Vyjasněte si cíl</h3>
+              <p>
+                Na začátku si ujasněte konečný účel, tedy co má AI skutečně vyřešit. Tento cíl si napište
+                jednou větou – bude sloužit jako „severka“, k níž směřuje celá konverzace. Model by měl
+                tento účel znát, ale samotné zadávání je vhodné rozdělit do postupných kroků.
+                Namísto přímého požadavku na kompletní výstup (např. metodiku) začněte nejprve dílčími
+                úkoly (např. osnovou, návrhem kapitol, klíčovými pojmy). Tím se zvýší kvalita, srozumitelnost
+                i kontrola nad výsledkem.
+              </p>
+              <p>
+                K vyjasnění účelu se často používá i technika tzv.
+                <a href="#role-a-persony">persony</a>, která modelu pomáhá přizpůsobit jazyk, tón i formát odpovědi.
+              </p>
+
+              <pre class="prompt-example-bad"><code>Napiš metodiku pro úřady k využití AI.</code></pre>
+              <pre class="prompt-example"><code>Potřebujeme připravit metodiku pro úřady k využití AI.
+Nejprve prosím navrhni osnovu kapitol, která by pokryla hlavní témata.
+Teprve poté ji začneme rozpracovávat do detailu.</code></pre>
+
+              <pre
+                class="prompt-example"><code>Potřebuji připravit stručné vysvětlení programu Nová zelená úsporám pro občany, kteří žádají o dotaci poprvé. Nejprve si spolu ujasníme terminologii.</code></pre>
+            </section>
+
+            <section id="kontext">
+              <h3>2.2 Dodejte kontext, data a informace</h3>
+              <p>Model nezná vaše interní metodiky ani aktuální data. V promptu proto shrňte vstupy: klíčová čísla,
+                text zákona, profil adresáta či předchozí kroky. U delších zadání rozdělte informace do logických
+                bloků a postupně je AI posílejte.</p>
+              <pre
+                class="prompt-example"><code>Jsi specialista na veřejné zakázky města Jihlava. Zde je výtah z interních pravidel (citace): ... Jaké tři otázky bys položil dodavateli, pokud chybí doklad o technické kvalifikaci?</code></pre>
+            </section>
+            <section id="format-vystupu">
+              <h3>2.3 Popište formát a kritéria</h3>
+              <p>Řekněte, v jaké podobě má výstup přijít: tabulka, odstavce, JSON, seznam kontrolních bodů. Stanovte
+                kritéria úspěchu – například požadovanou délku, míru odbornosti nebo to, že odpověď musí odkazovat na
+                paragrafy.</p>
+              <pre
+                class="prompt-example"><code>Vytvoř kontrolní seznam pro schvalování dotačních žádostí. Vrať ho jako tabulku se sloupci krok, popis, odpovědný útvar, poznámka pro žadatele.</code></pre>
+            </section>
+          </section>
+          <section id="volba-nastroje">
+            <h2>3. Volba nástroje a modelu</h2>
+            <p>Výsledek promptu závisí i na platformě. Jazykové modely dnes najdeme v chatbotech, kancelářských
+              nástrojích i specializovaných asistentech. Kombinujte je podle úkolu – někdy stačí jednoduchý chat,
+              jindy potřebujete API napojené na interní systém.</p>
+            <section id="prehled-nastroju">
+              <h3>3.1 Přehled základních nástrojů</h3>
+              <p>Následující přehled ukazuje, jaké služby jsou na českém trhu nejčastěji využívané:</p>
+              <table class="prompt-tool-table">
+                <thead>
+                  <tr>
+                    <th>Nástroj</th>
+                    <th>Co nabízí</th>
+                    <th>Kdy se hodí</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>ChatGPT</td>
+                    <td>Webový chat a API s modely GPT-4o, GPT-4o mini či specializovanými módy (analýza dat,
+                      multimodalita).</td>
+                    <td>Rychlé psaní textů, analýzy a konverzační asistence; Plus účet pro práci s dokumenty a týmy.
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Microsoft Copilot</td>
+                    <td>Integrace do Microsoft 365, generování textů a tabulek, doplnění Outlooku či PowerPointu.</td>
+                    <td>Instituce využívající M365, kde je výhodou bezpečnostní režim Tenant a napojení na firemní
+                      data.</td>
+                  </tr>
+                  <tr>
+                    <td>Grok</td>
+                    <td>Chatbot společnosti xAI zaměřený na aktuální informace z internetu a otevřené zdroje.</td>
+                    <td>Rychlé získání kontextu z veřejných dat a sledování trendů, vhodné pro rešerše.</td>
+                  </tr>
+                  <tr>
+                    <td>Perplexity</td>
+                    <td>Vyhledávací asistent kombinující jazykový model s ověřenými odkazy.</td>
+                    <td>Přehledové rešerše s citacemi a možností exportu zdrojů pro další ověření.</td>
+                  </tr>
+                  <tr>
+                    <td>Anthropic Claude</td>
+                    <td>Důraz na bezpečnost a dlouhý kontext (Claude 3 Opus/Sonnet/Haiku), dostupný přes web i API.
+                    </td>
+                    <td>Zpracování rozsáhlých dokumentů, právní texty, týmová spolupráce s vyšším limitem tokenů.</td>
+                  </tr>
+                  <tr>
+                    <td>Google Gemini</td>
+                    <td>Multimodální model integrovaný do Workspace a mobilních aplikací.</td>
+                    <td>Analýza obrázků a textů v jednom zadání, využití v týmech Google Workspace.</td>
+                  </tr>
+                </tbody>
+              </table>
+            </section>
+            <section id="vyber-modelu">
+              <h3>3.2 Jak vybírat model</h3>
+              <p>Rozhodujte podle datové bezpečnosti, rozpočtu a typu úlohy. Zvažte, zda potřebujete přístup přes web,
+                nebo integraci přes API. U projektů veřejné správy se zaměřte na to, jak provozovatel nakládá s daty a
+                zda umožňuje režim bez učení na vašich vstupech. Krátké srovnání kritérií:</p>
+              <ul class="prompt-inline-list">
+                <li><strong>Přesnost:</strong> komplexní právní texty zvládají pokročilejší modely (GPT-4o, Claude 3).
+                </li>
+                <li><strong>Rychlost:</strong> pro každodenní chat postačí odlehčené varianty (GPT-4o mini, Claude
+                  Haiku).</li>
+                <li><strong>Integrace:</strong> pokud potřebujete automatizaci, vybírejte nástroj s API a dobrou
+                  dokumentací.</li>
+              </ul>
+              <p>Nezapomeňte, že mnoho služeb nabízí tzv. Enterprise nebo Government režim. Ten zajišťuje oddělené
+                ukládání dat, auditní logy a možnost nastavit přístupová práva pro tým.</p>
+            </section>
+          </section>
+          <section id="techniky">
+            <h2>4. Techniky promptování</h2>
+            <p>Techniky ukazují, jak zadání strukturovat, aby model pracoval spolehlivě. Každou z nich můžete
+              kombinovat a využít dle úkolu.</p>
+            <section id="otevreni-noveho-chatu">
+              <h3>4.1 Otevření nového chatu</h3>
+              <p>První je nutné se naučit, kdy začít nový chat. Většina modelů si pamatuje předchozí konverzace, což
+                může být výhodné
+                pro dlouhodobou práci na jednom tématu. Na druhou stranu to může vést k nechtěným zkreslením a
+                „přeučení“ modelu. Proto vždy začínejte novým chatem, když měníte téma nebo cíl.</p>
+              <p>Nový chat je také vhodný, když chcete model „resetovat“ a získat čerstvý pohled bez
+                vlivu předchozích odpovědí.
+              </p>
+              <p>Stejně tak je dobré začít nový chat, pokud jste s výstupem nespokojeni a chcete zkusit jiný přístup.
+                Tímto způsobem můžete experimentovat s různými styly promptů a zjistit, který funguje nejlépe pro
+                váš konkrétní úkol. Pokud model začne halucinovat, je to také vhodný okamžik pro otevření nového chatu.
+              </p>
+            </section>
+            <section id="role-a-persony">
+              <h3>4.2 Role a persony</h3>
+              <p>Role pomáhá modelu zvolit tón a perspektivu. V oblasti veřejné správy jde často o právníka, metodika
+                nebo tiskového mluvčího. Personu vyslovte v první větě promptu a připomeňte, pro koho je výstup určen.
+              </p>
+              <pre
+                class="prompt-example"><code>Jsi tiskový mluvčí krajského úřadu. Vyjadřuj se slušně, zdrženlivě. Média vždy preferují krátké a věcné odpovědi. Buď ovšem zdrženlivý, abychom se nikoho nedotkli.</code></pre>
+              <pre
+                class="prompt-example"><code>Jsi specialista na právo pozemních komunikací. Budeš připravovat odpovědi na mé otázky - vždy vycházej z platné legislativy a cituj konkrétní paragrafy.</code></pre>
+              <pre class="prompt-example-bad"><code>Jsi právník. Napiš mi něco o zákonech.</code></pre>
+            </section>
+            <section id="validacni-prompty">
+              <h3>4.3 Validační prompty</h3>
+              <p>
+                Validační prompty slouží ke <strong>kontrole správnosti a úplnosti</strong> výstupu od umělé
+                inteligence.
+                Zatímco běžný prompt požaduje přímo výsledek, validační prompt se ptá na jeho kvalitu: zda je přesný,
+                zda neobsahuje halucinace, zda odpovídá právním předpisům a zda splňuje formální či obsahové požadavky.
+              </p>
+              <p>
+                Účelem validace je především <strong>minimalizace chyb a rizik</strong>. Model někdy generuje nesprávné
+                informace,
+                které působí věrohodně. Tento jev se označuje jako <a href="/slovnicek/halucinace.html">halucinace</a>.
+                Díky validačním promptům lze chyby včas odhalit a snížit riziko, že úředník převezme nepravdivý nebo
+                zavádějící výstup.
+              </p>
+              <p>
+                Validace může probíhat několika způsoby:
+              </p>
+              <ul>
+                <li><strong>Checklist</strong> – požádejte model, aby zkontroloval splnění jednotlivých povinností
+                  (např.
+                  lhůty, náležitosti rozhodnutí, povinné odkazy na právní předpisy).</li>
+                <li><strong>Křížová kontrola</strong> – pošlete tentýž dotaz vícekrát, nebo požádejte o kontrolu proti
+                  jinému zdroji (např. metodice či judikatuře).</li>
+                <li><strong>Identifikace rizik</strong> – nechte AI vypsat, kde by se mohly objevit nepřesnosti,
+                  chybějící
+                  části nebo právní rizika.</li>
+                <li><strong>Omezení na zdroje</strong> – validujte, zda výstup odkazuje jen na platné právní předpisy či
+                  oficiální dokumenty.</li>
+              </ul>
+
+              <h4>Příklady použití</h4>
+
+              <p><em>Správně:</em></p>
+              <pre class="prompt-example"><code>Tady je návrh odpovědi žadateli podle zákona č. 106/1999 Sb.:
+...
+Zkontroluj, zda odpověď obsahuje všechny povinné části (označení orgánu, datum, poučení o opravném prostředku),
+a zda odpovídá zákonné lhůtě 15 dnů.</code></pre>
+
+              <pre class="prompt-example"><code>Vyhledej judikaturu Nejvyššího správního soudu k tématu přezkoumatelnosti rozhodnutí podle § 68 odst. 3 správního řádu.
+Poté proveď validaci: zkontroluj, zda uvedené spisy skutečně existují a nejsou smyšlené.
+Pokud si nejsi jistý, uveď to.</code></pre>
+
+              <pre class="prompt-example"><code>Tady je metodický materiál k elektronickým spisům od ministerstva:
+...
+Zkontroluj, zda jsem správně shrnul hlavní závěry. Vypiš body, které jsem mohl opomenout.</code></pre>
+
+              <pre class="prompt-example"><code>Sepiš přehled relevantních ustanovení evropského práva k ochraně osobních údajů v oblasti zdravotnictví.
+Poté validuj, zda jsi vycházel pouze z GDPR a nařízení ePrivacy, a ne z jiných zdrojů.</code></pre>
+
+              <h4>Chybné použití</h4>
+
+              <p><em>Nesprávně:</em></p>
+              <pre
+                class="prompt-example-bad"><code>Napiš odpověď na žádost podle 106ky. Asi to bude něco o 15 dnech, ne?</code></pre>
+              <p>– příliš vágní, nepožaduje žádnou kontrolu ani validaci.</p>
+
+              <pre
+                class="prompt-example-bad"><code>Najdi mi rozsudky NSS o správním řízení a napiš, co si myslíš, že tam asi bylo.</code></pre>
+              <p>– úkol není validací, ale vyzývá k odhadu, čímž podporuje halucinace.</p>
+
+              <pre
+                class="prompt-example-bad"><code>Přepiš text metodiky. Nemusíš kontrolovat, zda něco chybí.</code></pre>
+              <p>– zcela rezignuje na kontrolní prvek, který je podstatou validačního promptu.</p>
+
+              <h4>Tipy pro úředníky</h4>
+              <ul>
+                <li>Validační prompt má <strong>ověřovat</strong>, nikoli jen generovat text.</li>
+                <li>Uveďte jasná <strong>kritéria kontroly</strong> – např. lhůty, náležitosti, odkazy na konkrétní
+                  paragrafy.</li>
+                <li>Požadujte od AI, aby uvedla i <strong>nejistoty nebo nedostatky</strong>, ne pouze jednoznačnou
+                  odpověď.</li>
+                <li>Pokud to téma umožňuje, nechte AI výstup <strong>porovnat s oficiálním dokumentem</strong>
+                  (metodika,
+                  zákon, judikát).</li>
+              </ul>
+
+              <p>
+                Validační prompty tedy fungují jako <strong>bezpečnostní pojistka</strong>.
+                Zatímco generování textu je tvůrčí proces, validace představuje kontrolu, která chrání úředníka
+                před převzetím neúplného nebo nesprávného výstupu.
+              </p>
+            </section>
+            <section id="use-cases">
+              <h2>5. Use cases z úřední praxe</h2>
+              <p>Konkrétní scénáře ukazují, jak prompty přizpůsobit dané agendě veřejné správy. Příkladové prompty
+                můžete upravit pro vlastní potřeby.</p>
+              <section id="vzdelavani">
+                <h3>5.1 Vzdělávání zaměstnanců</h3>
+                <p>AI může připravit studijní materiály nebo simulace rozhovoru s klientem. Zaměřte se na jasný cíl
+                  školení a úroveň znalostí účastníků.</p>
+                <pre
+                  class="prompt-example"><code>Vytvoř scénář krátkého e-learningu pro nové referenty přestupkového oddělení. Struktura: cíle kurzu, tři modelové situace, otázky k sebehodnocení.</code></pre>
+              </section>
+              <section id="sebevzdelavani">
+                <h3>5.2 Seberozvoj a vzdělávání</h3>
+                <p>Ai také můžete využít pro vlastní seberozvoj. Prompt může obsahovat téma, úroveň
+                  znalostí a formát – například shrnutí, otázky k zamyšlení nebo doporučenou literaturu.</p>
+                <pre
+                  class="prompt-example"><code>Jsem začátečník v oblasti datové analytiky. Připrav mi pět klíčových konceptů, které bych měl znát, a doporuč mi tři knihy pro další studium.</code></pre>
+              </section>
+              <section id="preklady">
+                <h3>5.3 Překlady a lokalizace</h3>
+                <p>Při překladu úředních textů uveďte jazyk, očekávaný styl a upozorněte na citlivé pojmy. Výsledný text
+                  vždy projde lidskou revizí, AI však rychle připraví první verzi.</p>
+                <pre
+                  class="prompt-example"><code>Přelož do angličtiny tento odstavec z rozhodnutí o přidělení bytu. Zachovej neutrální úřední tón a názvy právních předpisů nepřekládej: ...</code></pre>
+              </section>
+              <section id="spravni-dokumenty">
+                <h3>5.4 Správní dokumenty</h3>
+                <p>Při tvorbě rozhodnutí nebo výzev je zásadní jasně popsat právní základ. Prompt může obsahovat odkaz
+                  na konkrétní paragrafy i požadovaný slovník.</p>
+                <pre
+                  class="prompt-example"><code>Na základě paragrafu § 129 stavebního zákona připrav návrh výzvy k doplnění dokumentace pro stavební řízení. Uveď seznam povinných příloh a lhůtu pro doplnění.</code></pre>
+              </section>
+              <section id="reserse">
+                <h3>5.5 Rešerše a analýza</h3>
+                <p>Rešeršní prompty by měly obsahovat klíčová slova, časové období a požadavek na citace. Pokud
+                  využíváte nástroje jako Perplexity, AI automaticky přidá odkazy na zdroje.</p>
+                <pre
+                  class="prompt-example"><code>Vyhledej a shrň tři nejnovější iniciativy EU v oblasti otevřených dat pro samosprávy. Každý bod popiš jedním odstavcem a uveď zdroj.</code></pre>
+              </section>
+              <section id="shrnovani">
+                <h3>5.6 Shrnování textů</h3>
+                <p>Pro rychlé pochopení dlouhých dokumentů požádejte AI o více úrovní shrnutí – například nejprve pět
+                  vět, poté seznam doporučených kroků pro váš úřad.</p>
+                <pre
+                  class="prompt-example"><code>Sečti hlavní závěry kontroly hospodaření příspěvkové organizace. Nejprve napiš shrnutí v pěti větách, poté přidej seznam tří doporučených opatření pro zřizovatele.</code></pre>
+              </section>
+            </section>
+            <section id="workflow">
+              <h2>6. Zavádění v týmu</h2>
+              <p>Promptování není jen individuální dovednost. Ve chvíli, kdy AI využívá více lidí, vyplatí se nastavit
+                sdílené standardy a bezpečnostní pravidla.</p>
+              <section id="tymova-pravidla">
+                <h3>6.1 Stanovte pravidla</h3>
+                <p>Vytvořte knihovnu ověřených promptů pro různé agendy – například šablonu pro odpovědi podle zákona
+                  106/1999 Sb. nebo pro komunikaci s občany. Sdílejte je v interním wiki a průběžně aktualizujte podle
+                  legislativních změn.</p>
+              </section>
+              <section id="overovani">
+                <h3>6.2 Kontrola a bezpečnost</h3>
+                <p>Výstupy AI vždy procházejí lidskou kontrolou. Stanovte, kdo je za ověření odpovědný a jak se
+                  zaznamenávají úpravy. Pracujete-li s osobními údaji, zvolte nástroj, který umožňuje vypnout ukládání
+                  promptů a dodržuje bezpečnostní certifikace (ISO, SOC2).</p>
+              </section>
+            </section>
+            <section id="zdroje">
+              <h2>7. Další zdroje</h2>
+              <p>Průběžně sledujte novinky a aktualizace modelů. Doporučujeme portál <a href="https://www.dia.gov.cz"
+                  target="_blank" rel="noreferrer noopener">Digitální a informační agentury</a>, náš <a
+                  href="slovnicek.html">Slovníček</a> pro rychlé ověření pojmů a oficiální dokumentaci jednotlivých
+                nástrojů. Díky tomu budete mít přehled o limitech, cenách i nových možnostech integrace.</p>
+            </section>
+        </article>
+      </section>
+    </div>
+  </main>
+
+{% include "include/footer.njk" %}
+
+<script src="script.js"></script>
+</body>
+
+</html>
