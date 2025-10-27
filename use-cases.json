@@ -758,5 +758,23 @@
     "Označení zdroje": "Checkathon",
     "Obor činnosti": "Veřejné zakázky a hospodářská soutěž",
     "Kategorie use case": "Generování obsahu a chatboti úředníků; Optimalizace úředních procesů; Predikce a automatizované rozhodování"
+  },
+  {
+    "id": 44,
+    "Název projektu": "AI asistent pro práci s dokumenty a znalostní bází České pošty",
+    "Typ umělé inteligence": "Generativní AI\nLLM (Large Language Model)\nRetrieval-Augmented Generation (RAG)",
+    "Hlavní kategorie use case": "Optimalizace úředních procesů",
+    "Krátký popis": "Projekt řeší nasazení AI asistenta, který umožňuje zaměstnancům České pošty klást otázky k interním i veřejně dostupným dokumentům prostřednictvím konverzace v přehledném webovém rozhraní. Cílem je zjednodušit a zrychlit orientaci v předpisech, pokynech a podmínkách služeb a tím podpořit kvalitu zákaznické podpory i interních procesů.",
+    "Řešený problém": "Zaměstnanci často čelí časově náročnému dohledávání aktuálně platných informací v rozsáhlých a často aktualizovaných dokumentech. Projekt řeší tuto výzvu pomocí LLM asistenta schopného odpovídat na dotazy výhradně na základě schválené dokumentace, čímž zvyšuje efektivitu a eliminuje riziko chybných interpretací či práce s neaktuální verzí dokumentu.",
+    "Instituce": "Česká pošta, s. p.",
+    "Dodavatel": "Cloudfield a.s.",
+    "Stav projektu": "Pilot / PoC",
+    "Očekávané dopady": "Zkrácení času pro vyhledání informací z dokumentace až o 80 %\n Vyšší konzistence v interpretaci vnitřních předpisů\n Jednodušší onboarding nových pracovníků\n Možnost interní segmentace přístupů dle oddělení (např. call centrum, pobočky, právní oddělení)\n V budoucnu možnost využití i pro veřejnost (např. podmínky poštovních služeb)",
+    "Vyhodnocení úspěšnosti": "V pilotní fázi proběhlo testování s vybranými interními uživateli, kteří ověřovali přesnost odpovědí a uživatelskou přívětivost aplikace. Úspěšnost odpovědí přesáhla 90 %, uživatelé pozitivně hodnotili výrazné zrychlení přístupu k informacím a možnost vést přirozený dialog. Cíle PoC byly naplněny a systém je připraven k rozšíření.",
+    "Poučení pro příští projekty": "Nutnost důsledného řízení verzí dokumentace a metadat o platnosti. Vyplatí se oddělit přístupové domény pro různé role (např. veřejnost vs. interní). Chatbot potřebuje jednoduchý nástroj pro resetování kontextu během delší konverzace. Vysoce přínosná je integrace s M365 a SharePointem pro automatizované aktualizace znalostní báze. Vhodné je počítat s hybridní formou dotazování - kombinace dialogu a formulářového režimu",
+    "Zdroj": null,
+    "Označení zdroje": null,
+    "Obor činnosti": "Jiné: Poštovní a doručovatelské služby ",
+    "Kategorie use case": "Generování obsahu a chatboti úředníků; Optimalizace úředních procesů"
   }
 ]
