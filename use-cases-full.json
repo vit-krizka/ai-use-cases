@@ -900,6 +900,26 @@
     "Informace o zdroji a kontaktní osoba": null,
     "Obor činnosti": "Doprava",
     "Kategorie use case": "Optimalizace úředních procesů; Generování obsahu a chatboti pro úředníky;"
+  },
+  {
+    "id": 47,
+    "Autor": " Matouš Vydra",
+    "Název projektu": "AI asistent pro zpracování faktur",
+    "Typ umělé inteligence": "Computer Vision (OCR – rozpoznávání textu)\nStrojové učení (klasifikace dokumentů, přiřazování kategorií)\nGenerativní AI (doplnění chybějících metadat, vysvětlení nejistých případů)",
+    "Hlavní kategorie use case": "Optimalizace úředních procesů",
+    "Krátký popis": "Projekt se zaměřuje na zavedení AI řešení pro automatizované zpracování přijatých faktur a účtenek v různých formátech (PDF, sken, e-mailová příloha). Cílem je odstranit časově náročnou manuální práci při přepisování údajů do účetního systému, zvýšit přesnost a umožnit rychlejší zpracování většího množství dokumentů. AI řešení se napojuje na stávající ERP systém a funguje jako samostatná komponenta, která rozpoznává klíčová data, kontroluje jejich správnost a předává je do procesu pro schválení s návrhem na zaúčtování dle účetních pravidel ŘSD.",
+    "Řešený problém": "Manuální zpracování faktur a účtenek je pomalé, nákladné a náchylné k chybám. Organizace často přijímají dokumenty v různých formátech a jazycích, což komplikuje jejich kategorizaci a zaúčtování. Výsledkem bývají chyby v účetnictví, zpoždění plateb a vysoké administrativní náklady. AI dokáže tento proces výrazně zefektivnit a snížit riziko chyb.",
+    "Instituce": "Ředitelství silnic a dálnic ",
+    "Dodavatel": "Cloudfield a.s.",
+    "Stav projektu": "Produkce",
+    "Očekávané dopady": "Úspora času při zpracování faktur. Snížení chybovosti přepisů. Rychlejší schvalovací procesy → zkrácení lhůt plateb. Možnost škálovat řešení na tisíce dokumentů měsíčně bez nárůstu administrativy",
+    "Vyhodnocení úspěšnosti":"V pilotní fázi bylo dosaženo průměrné přesnosti rozpoznání nad 85 % a doba zpracování jedné faktury se zkrátila z několika minut. Cíle projektu byly naplněny, organizace plánuje rozšíření do dalších procesů (např. klasifikace dokumentů). Uživatelská zpětná vazba potvrdila výraznou úsporu času a snížení rutinní administrativy.",
+    "Poučení pro příští projekty": "Nutnost mít dobře připravené trénovací datasety (různé formáty faktur). Vyplatí se postupovat pilotně a řešit postupně jednotlivé typy dokumentů. Uživatelé musí vždy mit zodpovědnost za finální validace u všech případů. Riziko: špatná integrace s ERP → nutné počítat s testovací fází. Dobrá praxe: aktivní zapojení účetního týmu do návrhu workflow.",
+    "Zdroj": null,
+    "Označení zdroje": null,
+    "Informace o zdroji a kontaktní osoba": null,
+    "Obor činnosti": "Doprava",
+    "Kategorie use case": "Optimalizace úředních procesů"
   }
 ]
 
