@@ -776,5 +776,25 @@
     "Označení zdroje": null,
     "Obor činnosti": "Jiné: Poštovní a doručovatelské služby ",
     "Kategorie use case": "Generování obsahu a chatboti úředníků; Optimalizace úředních procesů"
+  },
+  {
+    "id": 45,
+    "Autor": "David Sláma",
+    "Název projektu": "AI asistent k přestupkovému řízení pro obce s rozšířenou působností",
+    "Typ umělé inteligence": "Generativní AI\nLLM (Large Language Model) prostřednictvím Azure OpenAI Service\nDocument Intelligence pro extrakci textu a struktur z PDF\nLangChain pro integraci s LLM službami\nLangGraph pro práce s AI agenty a workflow",
+    "Hlavní kategorie use case": "Optimalizace úředních procesů",
+    "Krátký popis": "Systém poskytuje inteligentní podporu úředníkům městských úřadů při zpracování přestupkové agendy. Funguje jako postupný průvodce jednotlivými fázemi přestupkového řízení od analýzy vstupních dokumentů až po přípravu finálních rozhodnutí. Automatizuje rutinní administrativní úkoly, kontroluje formální náležitosti dokumentů a generuje potřebné úřední dokumenty",
+    "Řešený problém": "Obce s rozšířenou působností čelí rostoucímu objemu administrativy v přestupkovém řízení. Tradiční metody zpracování dokumentů narážejí na limity v rychlosti, přesnosti a jednotnosti rozhodovací praxe. Riziko procesních chyb a nekonzistentního přístupu k podobným případům napříč různými úředníky. Časově náročné zpracování spisů a kontrola kompletnosti dokumentace",
+    "Instituce": "Ministerstvo vnitra",
+    "Dodavatel": "Cloudfield a.s.",
+    "Stav projektu": "Pilot / PoC",
+    "Očekávané dopady": "Výrazné úspory času při zpracování přestupkové agendy\nSnížení chyb způsobených lidským faktorem při rutinní administrativě\nSjednocení kvality rozhodování napříč různými úřady\nAutomatizace kontroly kompletnosti spisů\nJednotnost rozhodovací praxe při podobných případech\nPostupné zavedení umožní přizpůsobení specifickým potřebám jednotlivých úřadů",
+    "Vyhodnocení úspěšnosti": "Systém byl navržen jako strukturovaný workflow s možností automatického směrování. Implementována modulární architektura umožňující nezávislé úpravy jednotlivých uzlů. Zajištěna integrace s Azure cloud službami pro vysokou dostupnost a škálovatelnost. Vytvořeny konfigurovatelné workflow pro různé typy řízení. Připraven pro testování s pilotními úřady",
+    "Poučení pro příští projekty": "Mikroservisní architektura umožňuje nezávislý vývoj a postupné nasazování nových funkcí. Cloudové nasazení na Azure zajišťuje compliance s evropskými standardy a GDPR. Důležitost vrstvené bezpečnostní architektury s OAuth ověřením a rate limitingem. Využití LangChain a LangGraph poskytuje modularitu a možnost integrace s různými LLM službami. Strukturovaný workflow graf umožňuje flexibilní rozhodovací logiku a rozšiřitelnost systému",
+    "Zdroj": null,
+    "Označení zdroje": null,
+    "Informace o zdroji a kontaktní osoba": null,
+    "Obor činnosti": "Vnitřní věci a bezpečnost",
+    "Kategorie use case": "Optimalizace úředních procesů; Generování obsahu a chatboti pro úředníky; Predikce a automatizované rozhodování "
   }
 ]
