@@ -880,6 +880,26 @@
     "Informace o zdroji a kontaktní osoba": null,
     "Obor činnosti": "Vnitřní věci a bezpečnost",
     "Kategorie use case": "Optimalizace úředních procesů; Generování obsahu a chatboti pro úředníky; Predikce a automatizované rozhodování "
+  },
+   {
+    "id": 46,
+    "Autor": " Matouš Vydra",
+    "Název projektu": "AI asistent vnitřních směrnic a předpisů",
+    "Typ umělé inteligence": "Generativní AI\nLLM (Large Language Model)\nStrojové učení",
+    "Hlavní kategorie use case": "Optimalizace úředních procesů",
+    "Krátký popis": "Projekt přináší centrální AI asistenta pro zaměstnance Ředitelství silnic a dálnic (ŘSD). Asistent je integrován do SharePointu a umožňuje přirozeným jazykem vyhledávat, sumarizovat či porovnávat interní směrnice a předpisy uložené v Azure Blob Storage. Směrnice se synchronizují automaticky; uživatel tak vždy pracuje s aktuální verzí dokumentu. Cílem je zkrátit čas potřebný k dohledání závazných informací, omezit chybovost způsobenou manuálním hledáním a umožnit lepší sdílení znalostí napříč organizací.",
+    "Řešený problém": "Pracovníci ŘSD trávili desítky minut hledáním správného znění předpisu v různých úložištích a často využívali zastaralé verze dokumentů, což vedlo k chybám a prodlevám ve správních procesech. Projekt využívá umělou inteligenci k okamžitému vyhledání relevantních pasáží, jejich kontextové analýze a přímému odkázání na zdrojový dokument v SharePointu.",
+    "Instituce": "Ředitelství silnic a dálnic ",
+    "Dodavatel": "Cloudfield a.s.",
+    "Stav projektu": "Produkce",
+    "Očekávané dopady": "Zkrácení doby vyhledání směrnice\nSnížení chyb způsobených použitím neplatných verzí \nJednotné místo znalostí → vyšší sdílení know-how mezi útvary\nÚspora pracovních hodin (odhad na 500 uživatelů)\nPozitivní zaměstnanecká zpětná vazba (NPS > 40 po 3 měsících)",
+    "Vyhodnocení úspěšnosti":"7 500 zodpovězených dotazů, průměrné hodnocení odpovědí 4,6 / 5. Průměrná doba nalezení správné směrnice 45 s (cíl ≤1 min splněn). 0 bezpečnostních incidentů; autentizace přes Entra ID",
+    "Poučení pro příští projekty": "Data first: kvalitní struktura a verzování směrnic je klíčové. SSO nutnost: bez plynulého přihlášení by adopce klesla. Riziko přetížení LLM: je třeba nastavit limit délky dotazu i odpovědi. Dobrá praxe: transparentně zobrazovat odkazy na zdrojové dokumenty – posiluje důvěru. Špatná praxe: nadměrné manuální tagování dokumentů; automatické NLP tagy se ukázaly spolehlivější.",
+    "Zdroj": null,
+    "Označení zdroje": null,
+    "Informace o zdroji a kontaktní osoba": null,
+    "Obor činnosti": "Doprava",
+    "Kategorie use case": "Optimalizace úředních procesů; Generování obsahu a chatboti pro úředníky;"
   }
 ]
 
