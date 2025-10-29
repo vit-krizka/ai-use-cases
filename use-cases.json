@@ -856,5 +856,25 @@
     "Informace o zdroji a kontaktní osoba": null,
     "Obor činnosti": "Doprava",
     "Kategorie use case": "Analýza audiovizuálních dat"
+  },
+  {
+    "id": 49,
+    "Autor": "Walter Pavliš",
+    "Název projektu": "BABEL - Systém řečové technologie pro transkripci, překlad textu a rozpoznání jazyka",
+    "Typ umělé inteligence": "<strong>Strojové učení:</strong> Základem technologie převodu řeči na text jsou pokročilé algoritmy strojového učení a rozpoznávání řeči. Tyto algoritmy přepisují mluvené slovo na plynulý a přesný text.\n<strong>Hluboké neuronové sítě:</strong> Moderní metody přepisu řeči na text využívají hluboké neuronové sítě, které automaticky extrahují složité vzorce a souvislosti ve zvukovém signálu. ",
+    "Hlavní kategorie use case": "Analýza audiovizuálních dat",
+    "Krátký popis": "Projekt Babel se zaměřuje na řečové technologie a komplexní zpracování audia. Jeho hlavním účelem a cílem je poskytnout systém pro transkripci mluveného slova na text, automatické rozpoznání zdrojového jazyka audio nahrávky a následný překlad přepsaného textu do požadovaného jazyka. Systém využívá pokročilé algoritmy strojového učení a model Azure Speech to Text od Microsoftu k dosažení vysoké přesnosti a plynulosti přepisu. Důraz je kladen na uživatelskou přívětivost, flexibilitu a možnosti integrace s dalšími aplikacemi, což umožňuje snadný import, export a sdílení dat. ",
+    "Řešený problém": "Projekt řeší problém s nedostupností a vysokou cenou za tlumočníka. S ohledem na vysoký počet možných jazyků (přes 100) jde o univerzálního a ihned dostupného systému pro zápis a tlumočení.",
+    "Instituce": "Cizinecká policie ",
+    "Dodavatel": "DATERA s.r.o.",
+    "Stav projektu": "Pilot / PoC",
+    "Očekávané dopady": "Okamžitá dostupnost tlumočení\nNízká cena oproti klasickému tlumočníkovi\nPřesný strojový přepis a překlad",
+    "Vyhodnocení úspěšnosti":"Projekt Babel byl testován s primárním cílem zjistit, zda může umělá inteligence nahradit tlumočníky a přinést úspory času a finančních prostředků pro Policii ČR. Aplikace je vhodná především pro prvotní úkony a základní komunikaci s cizinci, zejména při poskytování pokynů a poučení.",
+    "Poučení pro příští projekty": "Přizpůsobit UI podle koncového uživatele a zařízení (notebook nebo telefon). Vytvoření přednastavených dialogů: Připravit přednastavené dialogy pro běžné úkony v různých nářečích",
+    "Zdroj": "https://youtu.be/lh6fxD3P6yg?si=YV28mqWFlJhO0aSE",
+    "Označení zdroje": "BABEL",
+    "Informace o zdroji a kontaktní osoba": null,
+    "Obor činnosti": "Vnitřní věci a bezpečnost",
+    "Kategorie use case": "Analýza audiovizuálních dat;Genrování obsahu a chatboti pro úředníky; Oprtimalizace úředních procesů"
   }
 ]
