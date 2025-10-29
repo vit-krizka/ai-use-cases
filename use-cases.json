@@ -836,5 +836,25 @@
     "Informace o zdroji a kontaktní osoba": null,
     "Obor činnosti": "Doprava",
     "Kategorie use case": "Optimalizace úředních procesů"
+  },
+  {
+    "id": 48,
+    "Autor": " Správa železnic",
+    "Název projektu": "AI Feedback Portal – automatizovaný sběr a analýza zpětné vazby",
+    "Typ umělé inteligence": "Speech-to-text (Whisper) – automatická transkripce hlasových zpráv\nNatural Language Processing (OpenAI LLM) – analýza textu, sentiment, klíčová slova\nComputer Vision (OpenAI Image API) – rozpoznání a popis obsahu fotografií\nGenerativní AI – shrnutí a strukturování výsledků",
+    "Hlavní kategorie use case": "Analýza audiovizuálních dat",
+    "Krátký popis": "Cílem projektu je vytvořit portál, který umožňuje uživatelům jednoduše zanechat zpětnou vazbu různými formami – textem, hlasovou zprávou, fotografií nebo kombinací. Veškerá data jsou automaticky zpracována pomocí AI (transkripce, analýza sentimentu, kategorizace, extrakce klíčových slov), uložena v Azure Blob Storage a následně vizualizována v Power BI dashboardech. Řešení poskytuje okamžitý přehled o spokojenosti uživatelů, hlavních tématech a trendech, a umožňuje rychlejší reakci na podněty.",
+    "Řešený problém": "Organizace dnes sbírají zpětnou vazbu z mnoha kanálů a ve více formátech, což ztěžuje její konsolidaci a efektivní využití. Manuální zpracování textů, audia či obrázků je časově náročné, chybové a často končí jen u anekdotických poznatků. AI Feedback Portal tuto výzvu řeší konsolidovaným přístupem – automatizovaně sjednocuje a vyhodnocuje data, díky čemuž je možné získat spolehlivý a škálovatelný přehled o potřebách zákazníků či občanů.",
+    "Instituce": "Správa železnic ",
+    "Dodavatel": "Cloudfield a.s.",
+    "Stav projektu": "Produkce",
+    "Očekávané dopady": "Zrychlení zpracování zpětné vazby oproti manuálnímu postupu\nKonsolidace více formátů (text, audio, obrázek) do jednoho pohledu a datové struktury\nOkamžitá dostupnost metrik (sentiment, témata, lokace) v Power BI\nVyšší využitelnost dat pro rozhodování managementu\nLepší transparentnost a kvalita zpětné vazby",
+    "Vyhodnocení úspěšnosti":"PoC potvrdil funkčnost celého workflow od sběru dat po jejich vizualizaci. Byla dosažena vysoká přesnost při transkripci audia a uspokojivé výsledky při kategorizaci fotografií. Power BI dashboard umožnil sledovat sentiment a trendy v čase. Projekt naplnil cíle PoC.",
+    "Poučení pro příští projekty": "Nutné je od začátku zahrnout právní validaci pro práci s multimediálními daty (GDPR, autorská práva k fotografiím). Vyplatí se mít připravená testovací data pro všechny modality (text, audio, obraz). Uživatelé ocení okamžitou zpětnou vazbu a jednoduché UI → zapojit UX tým včas. Dobrá praxe: využití jednoduché BI nástroje pro vizualizace, které jsou uživatelsky známé a snadno rozšiřitelné.",
+    "Zdroj": null,
+    "Označení zdroje": null,
+    "Informace o zdroji a kontaktní osoba": null,
+    "Obor činnosti": "Doprava",
+    "Kategorie use case": "Analýza audiovizuálních dat"
   }
 ]
