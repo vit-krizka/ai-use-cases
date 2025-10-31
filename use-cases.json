@@ -956,5 +956,23 @@
     "Označení zdroje": null,
     "Obor činnosti": "Vnitřní věci a bezpečnost",
     "Kategorie use case": "Monitoring, bezpečnost a dohled"
+  },
+  {
+    "id": 55,
+    "Název projektu": "Digitální vyšetřovatel Policie ČR",
+    "Typ umělé inteligence": "Natural Language Processing (NLP)\nStrojové učení\nGenerativní AI\nVelké jazykové modely (LLM)",
+    "Hlavní kategorie use case": "Monitoring, bezpečnost a dohled",
+    "Krátký popis": "Projekt Digitální vyšetřovatel pomáhá efektivně čelit prudce rostoucí kybernetické kriminalitě. Systém na základě výpovědi poškozeného automaticky analyzuje data z případu a autonomně komunikuje s klíčovými institucemi, jako jsou státní zastupitelství, banky nebo poskytovatelé domén. Vyšetřovatel dokáže žádat o prolomení bankovního tajemství, blokace podezřelých účtů, přístup k transakční historii či detailům o doménách. V případě obvinění vytváří přehlednou vizualizaci finančních toků, disponentů a blokací. Řešení přináší policii výraznou úsporu času a umožňuje soustředit se na komplexnější případy ekonomické kriminality.",
+    "Řešený problém": "Kybernetická kriminalita v ČR prudce roste a denně jsou podvedeny desítky lidí. Prošetřování těchto trestných činů vyžaduje značné kapacity policie, které pak chybí při řešení závažnějších kriminálních kauz. Digitální vyšetřovatel zrychluje a automatizuje rutinní kroky vyšetřování, čímž snižuje administrativní zátěž policistů a zvyšuje jejich efektivitu. Zároveň pomáhá odhalovat vzorce chování pachatelů a skupin organizovaného zločinu.",
+    "Instituce": "Policie České republiky",
+    "Dodavatel": "Born Digital s.r.o.",
+    "Stav projektu": "Pilot / PoC",
+    "Očekávané dopady": "Výrazná úspora času vyšetřovatelů díky automatizaci komunikace s institucemi\nRychlejší reakce na podvody – možnost včasného blokování účtů a transakcí\nZvýšení efektivity Policie ČR – více kapacit pro složité případy ekonomické kriminality\nLepší přehled o případech díky vizualizaci finančních toků a souvislostí\nSchopnost předcházet organizovanému zločinu odhalením vzorců chování",
+    "Vyhodnocení úspěšnosti":"Projekt byl nasazen pilotně ve Středočeském kraji a ukázal, že AI dokáže převzít rutinní agendu vyšetřování kybernetických podvodů. Digitální vyšetřovatel byl schopen zpracovat výpovědi poškozených, generovat žádosti a vizualizovat finanční toky s vysokou přesností. Policie hodnotí nasazení pozitivně, přičemž byly identifikovány oblasti pro další rozvoj, zejména v integraci s bankovními a justičními systémy.",
+    "Poučení pro příští projekty": "Potřeba úzké spolupráce s policií a státním zastupitelstvím při návrhu procesů a legislativních kroků. AI dokáže zásadně odlehčit vyšetřovatelům, ale vyžaduje validaci výstupů expertem. Nutné zajistit vysoký stupeň bezpečnosti a ochrany citlivých dat. Postupné rozšiřování funkcionalit (např. predikce chování pachatelů) umožní plné využití potenciálu",
+    "Zdroj":"https://www.e15.cz/byznys/technologie-a-media/policie-zamestnala-digitalniho-detektiva-pomaha-s-bankovnimi-podvody-1416863",
+    "Označení zdroje":"Digitální detektiv",
+    "Obor činnosti": "Vnitřní věci a bezpečnost",
+    "Kategorie use case": "Monitoring, bezpečnost a dohled; Optimalizace úředních procesů"
   }
 ]
