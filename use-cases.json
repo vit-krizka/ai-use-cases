@@ -974,5 +974,23 @@
     "Označení zdroje":"Digitální detektiv",
     "Obor činnosti": "Vnitřní věci a bezpečnost",
     "Kategorie use case": "Monitoring, bezpečnost a dohled; Optimalizace úředních procesů"
+  },
+    {
+    "id": 56,
+    "Název projektu": "Automatizace kontrolního procesu žádostí o platbu v rámci dotačních programů Centra pro regionální rozvoj České republiky ",
+    "Typ umělé inteligence": "Natural Language Processing (NLP)\nStrojové učení\nComputer Vision",
+    "Hlavní kategorie use case": "Optimalizace úředních procesů",
+    "Krátký popis": "Projekt spočívá v implementaci AI řešení, které automatizuje kontrolu žádostí o platbu v rámci dotačních programů. Příjemci dotací do systému nahrávají potřebné podklady (faktury, dodací listy, výpisy z účtů, plné moci apod.). Systém provádí klasifikaci dokumentů, extrakci klíčových údajů a ověřuje podpis či oprávnění zástupců prostřednictvím napojení na externí registry. Na základě předdefinované logiky systém vyhodnocuje jednotlivé žádosti a poskytuje rozhodnutí ve formě „ano / ne / irelevantní“. Generuje také shrnutí s odůvodněním, které vysvětluje výsledky kontroly, a umožňuje export výstupů pro další zpracování. Implementace přinesla významné zrychlení a zpřesnění administrativních procesů při správě dotačních žádostí.",
+    "Řešený problém": "Ruční kontrola žádostí o platbu byla časově náročná, zatěžovala pracovníky CRR a byla náchylná k chybám. Rostoucí objem agendy vedl k prodlužování lhůt a zvýšenému riziku nesrovnalostí. AI asistent tento problém řeší automatizovanou analýzou a verifikací dokumentů, čímž zrychluje proces, zvyšuje jeho přesnost a umožňuje pracovníkům soustředit se na složitější případy.",
+    "Instituce": "Centrum pro regionální rozvoj České republiky",
+    "Dodavatel": "Born Digital s.r.o.",
+    "Stav projektu": "Produkce",
+    "Očekávané dopady": "Zrychlení administrace kontrol dotačních žádostí o desítky procent\nSnížení rizika chyb díky automatizované validaci dokumentů a podpisů\nVyšší transparentnost a konzistentnost kontrolního procesu\nUvolnění kapacit zaměstnanců CRR pro složitější úkoly\nMožnost škálovat řešení na rostoucí počet žádostí",
+    "Vyhodnocení úspěšnosti":"Systém byl nasazen v ostrém provozu a dokázal úspěšně automatizovat klíčové kroky kontrolního procesu. CRR potvrzuje, že došlo k výraznému zkrácení doby zpracování žádostí a ke snížení chybovosti. AI asistent generuje konzistentní výsledky a poskytuje odůvodnění pro každé rozhodnutí, což zvyšuje důvěru v systém. Projekt splnil cíle a je hodnocen jako významný krok k digitalizaci a efektivnějšímu řízení dotačních procesů.",
+    "Poučení pro příští projekty": "Zapojení pracovníků úřadu do definování pravidel zvyšuje relevanci výsledků. Kvalitní vstupní data jsou zásadní pro úspěšnou extrakci a přesnost rozhodnutí. AI může nahradit rutinní kontrolní činnosti, ale vyžaduje lidský dohled u sporných případů. Přehledné odůvodnění výsledků je klíčové pro akceptaci výstupů zaměstnanci. Vhodné je od počátku myslet na škálovatelnost řešení a jeho rozšíření na další agendy",
+    "Zdroj":null,
+    "Označení zdroje":null,
+    "Obor činnosti": "Místní rozvoj",
+    "Kategorie use case": "Optimalizace úředních procesů"
   }
 ]
