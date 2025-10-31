@@ -1064,5 +1064,23 @@
     "Označení zdroje":null,
     "Obor činnosti": "Finance a daně",
     "Kategorie use case": "Optimalizace úředních procesů; Komunikace a klientský servis (chatboti pro veřejnost)"
+  },
+   {
+    "id": 61,
+    "Název projektu": "AI nábor pro Policii ČR",
+    "Typ umělé inteligence": "Feedyou Platform\nFeedyou Cognitive Services (SLMs)\nGenerativní AI (LLMs)",
+    "Hlavní kategorie use case": "Komunikace a klientský servis",
+    "Krátký popis": "Řešení využívá AI technologie Feedyou Platform, Feedyou Cognitive Services a Microsoft Azure OpenAI Services pro automatizovanou komunikaci s kandidáty",
+    "Řešený problém": "V reakci na personální potřebu PČR a hledání cest, jak moderně komunikovat s uchazeči o práci, nastavujeme akční kroky a strategii pro digitální transformace HR. V centru dění je právě implementace umělé inteligence a dalších nejmodernějších technologií. Cílem AI náboráře je automatizovaně odbavit výraznou část příchozích dotazů ze strany kandidátů a zároveň jim pomoci   s výběrem vhodné pozice napříč resorty PČR.",
+    "Instituce": "Policie ČR",
+    "Dodavatel": "Feedyou",
+    "Stav projektu": "Produkce",
+    "Očekávané dopady": "Zlepšení candidate experience\nDostupnost 24/7\nÚspora času personalistů",
+    "Vyhodnocení úspěšnosti":"Nasazení AI v praxi tak bylo velmi pozitivně přijato. V provozu 2 měsíce od 1.7.2025. Přes 22 tisíc komunikací s kandidáty. V průměru komunikují s řešením 2,9 min. 54 % kandidátů komunikuje s ženskou avatarkou. 46 % dává přednost mužskému avatarovi. 41 % komunikací je v mimopracovních hodinách, 20 % interakcí probíhá o víkendech",
+    "Poučení pro příští projekty": "Potřeba úzké spolupráce s klientem, resp. primárně dobrá kvalita dat (znalostní báze) a dostupnost systémů a jejich REST API endpoints, se kterými má AI náborář pracovat. Kvalitní zpětná vazba jsou klíčové pro interní testování a následný fine-tuning po spuštění řešení do produkce",
+    "Zdroj":null,
+    "Označení zdroje":null,
+    "Obor činnosti": "Práce a zaměstnanost",
+    "Kategorie use case": "Optimalizace úředních procesů; Komunikace a klientský servis (chatboti pro veřejnost); Generování obsahu a chatboti pro úředníky"
   }
 ]
