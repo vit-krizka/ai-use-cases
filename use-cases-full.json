@@ -1140,6 +1140,26 @@
     "Informace o zdroji a kontaktní osoba":"Karel Holý - holy@jh.cz",
     "Obor činnosti": "Místní rozvoj",
     "Kategorie use case": "Optimalizace úředních procesů; Komunikace a klientský servis (chatboti pro veřejnost)"
+  },
+  {
+    "id": 59,
+    "Autor": "Gabriela Kiššová",
+    "Název projektu": "Digitální asistent auditora a automatizace interních procesů pomocí AI pro Nejvyšší kontrolní úřad ČR",
+    "Typ umělé inteligence": "Natural Language Processing (NLP)\nStrojové učení\nVelké jazykové modely (LLMs)",
+    "Hlavní kategorie use case": "Optimalizace úředních procesů",
+    "Krátký popis": "Projekt byl zaměřen na ověření využití umělé inteligence pro automatizaci klíčových interních procesů. Řešení se soustředilo na tři oblasti: <strong>1.</strong>Nástroj pro klasifikaci dokumentů poskytovaných kontrolovanými subjekty a extrakci klíčových informací, čímž se zrychlil a zpřesnil proces auditu. <strong>2.</strong>HR chatbot poskytující novým zaměstnancům centrální zdroj informací a usnadňující orientaci v interních regulacích, manuálech a tréninkových materiálech. <strong>3.</strong>Model strojového učení pro automatickou kategorizaci a směrování příchozích e-mailů na příslušné zaměstnance, včetně vizualizace výsledků v Kibana. Cílem bylo zefektivnit každodenní práci úřadu, snížit manuální zásahy a uvolnit kapacity zaměstnanců pro komplexnější úkoly.",
+    "Řešený problém": "NKÚ čelí vysoké administrativní zátěži při provádění auditů, onboardingu nových zaměstnanců a zpracování velkého objemu e-mailové komunikace. Tyto rutinní činnosti vyžadovaly značný podíl manuální práce a snižovaly efektivitu organizace. PoC ověřil, že AI dokáže tyto procesy automatizovat - od kategorizace dokumentů a extrakce dat, přes podporu HR oddělení, až po automatické třídění e-mailů - a tím ulevit zaměstnancům od repetitivních činností.",
+    "Instituce": "Nejvyšší kontrolní úřad České republiky",
+    "Dodavatel": "Born Digital s.r.o.",
+    "Stav projektu": "Pilot / PoC",
+    "Očekávané dopady": "Zrychlení a zpřesnění zpracování auditní dokumentace\nÚspora času HR týmu při onboardingu nových zaměstnanců\nAutomatizace třídění e-mailů a rychlejší reakce na podněty\nSnížení manuální administrativní zátěže v rutinních procesech\nSnížení manuální administrativní zátěže v rutinních procesech",
+    "Vyhodnocení úspěšnosti":"Proof of Concept byl navržen a testován interaktivně se zástupci NKÚ. Řešení splnilo očekávání - AI prokázala schopnost efektivně třídit dokumenty, extrahovat informace, poskytovat podporu při onboardingu a automaticky směrovat e-maily. Výsledky byly NKÚ hodnoceny jako přínosné a otevřely prostor pro diskusi o širším využití AI v kontrolních procesech i mimo původní rámec PoC.",
+    "Poučení pro příští projekty": "Zapojení uživatelů (auditorů, HR a administrativy) od začátku projektu je klíčové pro nastavení správných scénářů. LLM technologie poskytují vysokou přesnost, ale je nutná průběžná validace výsledků. Vizualizace dat (např. Kibana) zvyšuje přehlednost a usnadňuje rozhodování",
+    "Zdroj":null,
+    "Označení zdroje":null,
+    "Informace o zdroji a kontaktní osoba":"Gabriela Kiššová - gabriela.kissova@nku.cz",
+    "Obor činnosti": "Veřejné zakázky a hospodářská soutěž",
+    "Kategorie use case": "Optimalizace úředních procesů"
   }
 ]
 
