@@ -1100,6 +1100,26 @@
     "Informace o zdroji a kontaktní osoba":"Miloš Šenkýř - milos.senkyr@crr.cz",
     "Obor činnosti": "Místní rozvoj",
     "Kategorie use case": "Optimalizace úředních procesů"
+  },
+  {
+    "id": 57,
+    "Autor": "Kateřina Šveřepová",
+    "Název projektu": "AI asistent pro PASMO portál",
+    "Typ umělé inteligence": "Natural Language Processing (NLP)\nStrojové učení\nGenerativní AI\nVelké jazykové modely (LLMs)",
+    "Hlavní kategorie use case": "Generování obsahu a chatboti úředníků",
+    "Krátký popis": "Projekt AI asistenta je nedílnou součástí informačního a znalostního portálu PASMO. Asistent poskytuje členům Svazu snadný přístup k ověřeným informacím, aktuální legislativě a osvědčeným postupům, čímž zjednodušuje každodenní činnost samospráv. Virtuální asistent umožňuje rychlé vyhledávání informací a odpovědí na specifické dotazy, pomáhá řešit konkrétní situace a problémy. Řešení zvyšuje efektivitu práce zaměstnanců místních samospráv, podporuje sdílení know-how a přispívá k modernizaci a zkvalitnění služeb poskytovaných občanům.",
+    "Řešený problém": "Místní samosprávy v ČR se potýkají s velkým množstvím legislativy a agend, které je nutné efektivně spravovat. Ruční dohledávání relevantních informací je časově náročné a zvyšuje riziko chyb. AI asistent tento problém řeší centralizovaným přístupem k ověřeným zdrojům, okamžitým vyhledáváním legislativních informací a sdílením osvědčených postupů mezi členy Svazu.",
+    "Instituce": "Svaz měst a obcí České republiky",
+    "Dodavatel": "Born Digital s.r.o.",
+    "Stav projektu": "Produkce",
+    "Očekávané dopady": "Úspora času díky rychlému přístupu k legislativě a ověřeným informacím\nZvýšení efektivity a přesnosti práce zaměstnanců místních samospráv\nLepší reakce na legislativní změny a aktuální požadavky\nSdílení osvědčených postupů napříč členskými obcemi\nPřispění k modernizaci a digitalizaci veřejné správy",
+    "Vyhodnocení úspěšnosti":"Nasazení AI asistenta v rámci PASMO portálu bylo pozitivně přijato členy Svazu. Systém prokázal schopnost rychle vyhledávat legislativní informace a poskytovat praktické odpovědi, což vedlo k výrazným časovým úsporám a vyšší efektivitě. Uživatelé oceňují jednoduchost ovládání a okamžitou dostupnost ověřených zdrojů. Projekt splnil cíle a je považován za důležitý krok k digitalizaci místní správy.",
+    "Poučení pro příští projekty": "Potřeba úzké spolupráce s odborníky na legislativu a samosprávu pro nastavení relevantních scénářů. Kvalitní a aktuální zdroje dat jsou klíčové pro přesnost odpovědí. Uživatelská přívětivost rozhraní zásadně ovlivňuje přijetí řešení mezi zaměstnanci. Vhodné je od začátku počítat s rozšiřitelností na další oblasti samosprávy",
+    "Zdroj":null,
+    "Označení zdroje":null,
+    "Informace o zdroji a kontaktní osoba":"sverepova@smocr.cz",
+    "Obor činnosti": "Místní rozvoj",
+    "Kategorie use case": "Optimalizace úředních procesů; Generování obsahu a chatboti úředníků"
   }
 ]
 
