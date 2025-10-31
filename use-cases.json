@@ -902,5 +902,23 @@
     "Označení zdroje": null,
     "Obor činnosti": "Jiné: Komplexní služba občanům",
     "Kategorie use case": "Analýza dokumentů a dat; Generování obsahu"
+  },
+  {
+    "id": 52,
+    "Název projektu": "Letiště Praha – Digitální asistent",
+    "Typ umělé inteligence": "Generativní AI\nVelké jazykové modely (LLMs)\nStrojové učení\nNLP",
+    "Hlavní kategorie use case": "Komunikace a klientský servis",
+    "Krátký popis": "Projekt se zaměřuje na vytvoření konverzačního AI asistenta, který zajišťuje automatizovanou komunikaci s cestujícími Letiště Praha. Asistent je dostupný 24/7 na platformách WhatsApp a Meta Messenger a poskytuje cestujícím rychlé a přesné odpovědi na jejich dotazy. Umožňuje například sledování letů prostřednictvím služby „Hlídat let“, zasílání push notifikací o změnách stavu letů, doporučení obchodů, restaurací a služeb na letišti nebo propojení s operátorem informačních služeb. Součástí řešení je také administrátorská aplikace pro správu scénářů, ladění AI a analytiku výkonu. Cílem projektu je zlepšit zákaznickou zkušenost, zjednodušit přístup k informacím a snížit zatížení call centra. ",
+    "Řešený problém": "Letiště Praha čelilo výzvě, jak efektivně komunikovat s rostoucím počtem cestujících a návštěvníků, kteří očekávají okamžité a přesné informace dostupné kdykoliv a v různých jazycích. Dosavadní komunikační kanály nebyly dostatečně kapacitně flexibilní, aby zvládaly nápor dotazů, a cestující často museli vyhledávat informace manuálně. Digitální asistent tento problém řeší zavedením inteligentní konverzační AI, která poskytuje personalizovanou a spolehlivou podporu v reálném čase, čímž zlepšuje plynulost cestovatelského zážitku a snižuje administrativní zátěž zaměstnanců.",
+    "Instituce": "Letiště Praha, a.s. ",
+    "Dodavatel": "Born Digital s.r.o.",
+    "Stav projektu": "Veřejná zakázka / výběr dodavatele",
+    "Očekávané dopady": "24/7 dostupnost zákaznické podpory bez navýšení počtu operátorů\nZkrácení doby odezvy na dotazy cestujících z minut na sekundy\nSnížení zátěže call centra až o 30–40 % díky zodpovídání častých dotazů automatizovaně\nZvýšení přesnosti poskytovaných informací",
+    "Vyhodnocení úspěšnosti":null,
+    "Poučení pro příští projekty": null,
+    "Zdroj": "https://tenderarena.cz/dodavatel/seznam-profilu-zadavatelu/detail/Z0005204/zakazka/783963",
+    "Označení zdroje": "VZ Digitální asistent",
+    "Obor činnosti": "Doprava",
+    "Kategorie use case": "Komunikace a klientský servis  (chatboti pro veřejnost); Predikce a automatizované rozhodování"
   }
 ]
