@@ -1082,5 +1082,23 @@
     "Označení zdroje":null,
     "Obor činnosti": "Práce a zaměstnanost",
     "Kategorie use case": "Optimalizace úředních procesů; Komunikace a klientský servis (chatboti pro veřejnost); Generování obsahu a chatboti pro úředníky"
+  },
+   {
+    "id": 62,
+    "Název projektu": "Interní AI helpdesk pro studenty VŠB-TUO",
+    "Typ umělé inteligence": "Feedyou Platform\nFeedyou Cognitive Services (SLMs)\nGenerativní AI (LLMs)",
+    "Hlavní kategorie use case": "Komunikace a klientský servis",
+    "Krátký popis": "Řešení využívá AI technologie Feedyou Platform, Feedyou Cognitive Services a Microsoft Azure OpenAI Services pro automatizovanou komunikaci se studenty.",
+    "Řešený problém": "V průběhu studia na vysoké škole vyvstává pro studenty celá řada interakcí se studijním oddělením, IT podporou a dalšími odděleními, které se doposud odehrávají na bázi osobního, telefonického nebo e-mailového kontaktu. Cílem AI helpdesku je nad přesně ohraničenou doménovou znalostní bází pomocí technologie velkých jazykových modelů umožnit tyto komunikace automatizovaně odbavit nebo uživatele navést na příslušná dedikovaná místa bez nutnosti přímé konzultace se zaměstnanci VŠB v jakoukoliv denní dobu.",
+    "Instituce": "Vysoká škola báňská - Technická univerzita Ostrava",
+    "Dodavatel": "Feedyou",
+    "Stav projektu": "Produkce",
+    "Očekávané dopady": "Zlepšení uživatelského zážitku\nZavedené nejmodernějších technologií do prostředí akademického světa\nDostupnost 24/7\nÚspora času v rámci podpůrných oddělení",
+    "Vyhodnocení úspěšnosti":"Nasazení AI v praxi tak bylo velmi pozitivně přijato. Pilot / PoC pro IT podporu v provozu 12 měsíců od 09/2025. Přes 2 500 úspěšně zodpovězených dotazů. Přes 1 700 unikátních uživatelů. Snížení zátěže pro IT helpdesk kanály (e-mail, telefon, osobní konzultace) o cca 40 % v průběhu minulého akademického roku. Pokrytí hlavního peaku (začátek semestru a nástup tisíců studentů prvního ročníku)",
+    "Poučení pro příští projekty": "Příprava kvalitních dobře strukturovaných dat / znalostní báze pro trénink. Nastavení realistických cílů, KPIs a očekávání. Rozfázování celého projektu, postup evolučními inkrementálními kroky. Výhoda pracovat s časovými polštáři - dostatečný čas a péče například pro testovací fázi (interně na straně dodavatele, interně na straně klienta - vytvoření focus groups, postupné zavádění do produkce a testování, resp. ladění na reálných uživatelích",
+    "Zdroj":null,
+    "Označení zdroje":null,
+    "Obor činnosti": "Školství, věda a výzkum",
+    "Kategorie use case": "Optimalizace úředních procesů; Komunikace a klientský servis (chatboti pro veřejnost); Generování obsahu a chatboti pro úředníky; Predikce a automatizované rozhodování"
   }
 ]
