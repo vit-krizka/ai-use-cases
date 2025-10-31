@@ -1160,6 +1160,26 @@
     "Informace o zdroji a kontaktní osoba":"Gabriela Kiššová - gabriela.kissova@nku.cz",
     "Obor činnosti": "Veřejné zakázky a hospodářská soutěž",
     "Kategorie use case": "Optimalizace úředních procesů"
+  },
+  {
+    "id": 60,
+    "Autor": "Lukáš Bažanovský",
+    "Název projektu": "Collections Voicebot - AI řešení pro automatizované vymáhání pohledávek pro Exetukorský úřad Praha 6",
+    "Typ umělé inteligence": "Natural Language Processing (NLP)\nText-to-speech (TTS)",
+    "Hlavní kategorie use case": "Komunikace a klientský servis",
+    "Krátký popis": "Projekt Collections Voicebot je konverzační AI řešení, které automatizuje telefonní komunikaci při správě a vymáhání pohledávek. Asistent zvládá obousměrnou hlasovou komunikaci se zákazníky, dokáže ověřit identitu volaného, poskytnout informace o dluhu a nabídnout možnosti úhrady. Díky integraci se SMS kanálem může zasílat platební instrukce nebo odkazy na online platbu. Systém generuje detailní reporty a analýzy, které poskytují přehled o výsledcích hovorů, úspěšnosti kontaktování a dohodnutých krocích. Collections Voicebot tak pomáhá organizacím výrazně snížit náklady na vymáhání pohledávek a zvýšit úspěšnost jejich inkasa.",
+    "Řešený problém": "Tradiční proces vymáhání pohledávek je velmi nákladný, personálně náročný a často neefektivní. Operátoři tráví mnoho času opakováním stejných sdělení a přitom zvládají jen omezený počet hovorů. Collections Voicebot tento problém řeší plně automatizovaným, dostupným a škálovatelným řešením, které umožňuje obsloužit tisíce hovorů denně bez zvýšení nákladů a současně zajistit jednotnou kvalitu komunikace.",
+    "Instituce": "Exekutorský úřad pro Prahu 6",
+    "Dodavatel": "Born Digital s.r.o.",
+    "Stav projektu": "Produkce",
+    "Očekávané dopady": "Výrazná úspora času a nákladů oproti manuálnímu vymáhání\nZvýšení úspěšnosti inkasa díky okamžité reakci a personalizované komunikaci\nŠkálovatelnost - možnost obsloužit tisíce paralelních hovorů denně\nTransparentní reporting výsledků a přehled o komunikaci se zákazníky",
+    "Vyhodnocení úspěšnosti":"Collections Voicebot byl v rámci pilotních implementací úspěšně nasazen a prokázal schopnost automatizovat velký objem hovorů s vysokou mírou přesnosti. Zákazníci oceňují okamžitou dostupnost, možnost obdržet platební instrukce formou SMS a konzistentní komunikaci. Organizace potvrzují snížení nákladů a zvýšení míry vymožených pohledávek.",
+    "Poučení pro příští projekty": "Klíčová je integrace na systémy klienta (CRM, fakturační či inkasní systémy)\nNutné počítat s různorodostí zákazníků (emoce, jazykové varianty, odlišné chování)\n Důležitý je kvalitní design konverzačních scénářů a testování na reálných datech. SMS notifikace jako doplněk k hlasové komunikaci zvyšují úspěšnost inkasa. Reporting a analýzy jsou zásadní pro průběžnou optimalizaci kampaní",
+    "Zdroj":null,
+    "Označení zdroje":null,
+    "Informace o zdroji a kontaktní osoba":"Lukáš Bažanovský - lukas.bazanovsky@exekutorsky-urad.cz",
+    "Obor činnosti": "Finance a daně",
+    "Kategorie use case": "Optimalizace úředních procesů; Komunikace a klientský servis (chatboti pro veřejnost)"
   }
 ]
 
