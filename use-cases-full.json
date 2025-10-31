@@ -1164,7 +1164,7 @@
   {
     "id": 60,
     "Autor": "Lukáš Bažanovský",
-    "Název projektu": "Collections Voicebot - AI řešení pro automatizované vymáhání pohledávek pro Exetukorský úřad Praha 6",
+    "Název projektu": "Collections Voicebot - AI řešení pro automatizované vymáhání pohledávek pro Exekutorský úřad Praha 6",
     "Typ umělé inteligence": "Natural Language Processing (NLP)\nText-to-speech (TTS)",
     "Hlavní kategorie use case": "Komunikace a klientský servis",
     "Krátký popis": "Projekt Collections Voicebot je konverzační AI řešení, které automatizuje telefonní komunikaci při správě a vymáhání pohledávek. Asistent zvládá obousměrnou hlasovou komunikaci se zákazníky, dokáže ověřit identitu volaného, poskytnout informace o dluhu a nabídnout možnosti úhrady. Díky integraci se SMS kanálem může zasílat platební instrukce nebo odkazy na online platbu. Systém generuje detailní reporty a analýzy, které poskytují přehled o výsledcích hovorů, úspěšnosti kontaktování a dohodnutých krocích. Collections Voicebot tak pomáhá organizacím výrazně snížit náklady na vymáhání pohledávek a zvýšit úspěšnost jejich inkasa.",
