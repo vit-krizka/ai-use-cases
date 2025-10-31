@@ -1120,6 +1120,26 @@
     "Informace o zdroji a kontaktní osoba":"sverepova@smocr.cz",
     "Obor činnosti": "Místní rozvoj",
     "Kategorie use case": "Optimalizace úředních procesů; Generování obsahu a chatboti úředníků"
+  },
+  {
+    "id": 58,
+    "Autor": "Karel Holý",
+    "Název projektu": "Chatbot pro Portál občana - Město Jindřichův Hradec",
+    "Typ umělé inteligence": "Natural Language Processing (NLP)\nStrojové učení\nVelké jazykové modely (LLMs)",
+    "Hlavní kategorie use case": "Komunikace a klientský servis",
+    "Krátký popis": "Projekt AI chatbota jako součásti Portálu občana má za cíl zlepšit dostupnost a digitalizaci služeb města. Chatbot poskytuje občanům informační asistenci 24/7, pomáhá při řešení životních situací a odpovídá na nejčastější dotazy spojené s agendami úřadu. Uživatelé tak mají k dispozici rychlý a intuitivní přístup k informacím bez nutnosti fyzické návštěvy úřadu nebo opakovaného telefonování. Součástí projektu je vytvoření znalostních databází pro veřejnost i přihlášené uživatele, integrace chatbota do portálu města a nástroje pro administraci, reporting a postupné učení systému. Chatbot je navržen tak, aby se postupně rozšiřoval o nové funkce a podporoval i personalizovanou komunikaci.",
+    "Řešený problém": "Dosavadní úroveň digitalizace města byla nedostatečná - občané museli většinu agend řešit osobně nebo složitě dohledávat informace, což vedlo k chybovosti, nízkému komfortu a vysoké zátěži pracovníků úřadu. Chatbot tento problém řeší dostupným, spolehlivým a centralizovaným zdrojem informací, který omezuje repetitivní dotazy a zvyšuje efektivitu práce úředníků.",
+    "Instituce": "Město Jindřichův Hradec",
+    "Dodavatel": "Born Digital s.r.o.",
+    "Stav projektu": "Veřejná zakázka / výběr dodavatele",
+    "Očekávané dopady": "Zajištění dostupnosti informací 24/7 bez nutnosti fyzické návštěvy úřadu\nSnížení počtu repetitivních dotazů a úspora času pracovníků úřadu\nZlepšení orientace občanů v životních situacích a agendách města\nZefektivnění interních procesů a vyšší transparentnost komunikace\nPostupná modernizace a digitalizace služeb města",
+    "Vyhodnocení úspěšnosti":null,
+    "Poučení pro příští projekty": null,
+    "Zdroj":"https://nen.nipez.cz/verejne-zakazky/detail-zakazky/N006-24-V00010993/zadavaci-dokumentace",
+    "Označení zdroje":"Chatbot pro portál občana - ZD",
+    "Informace o zdroji a kontaktní osoba":"Karel Holý - holy@jh.cz",
+    "Obor činnosti": "Místní rozvoj",
+    "Kategorie use case": "Optimalizace úředních procesů; Komunikace a klientský servis (chatboti pro veřejnost)"
   }
 ]
 
