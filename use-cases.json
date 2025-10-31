@@ -884,5 +884,23 @@
     "Označení zdroje": null,
     "Obor činnosti": "Místní rozvoj",
     "Kategorie use case": "Analýza audiovizuálních dat; Oprtimalizace úředních procesů"
+  },
+  {
+    "id": 51,
+    "Název projektu": "Digitální úředník: Asistent pro občany a firmy",
+    "Typ umělé inteligence": "Zpracování přirozeného jazyka (NLP)\nVelké jazykové modely (LLM)\nGenerativní AI\nStrojové učení.",
+    "Hlavní kategorie use case": "Komunikace a klientský servis",
+    "Krátký popis": "Cílem projektu je vytvoření (Digitálního úředníka) - komplexního virtuálního asistenta, který slouží jako další kontaktní bod pro občany a firmy. Asistent aktivně provází uživatele řešením jejich životních situací (např. stavba domu, narození dítěte) poskytováním personalizovaných návodů a pomocí s vyplňováním formulářů. Současně systém automatizuje navazující interní agendy, jako je třídění a přidělování pošty (inteligentní podatelna), zpracování žádostí o informace dle zákona č. 106/1999 Sb. a proaktivní upozorňování občanů na jejich povinnosti.",
+    "Řešený problém": "Občané často čelí různě složitým postupům pro každé jednotlivé řešení životních situací, což vede k chybám v žádostech a velkému množství rutinních dotazů směřovaných na úředníky. Interní procesy jako třídění pošty či příprava odpovědí na žádosti o informace jsou manuální, pomalé a neefektivní. Digitální úředník tento problém řeší vytvořením jednoho inteligentního rozhraní, které zjednodušuje interakci s úřadem pro veřejnost a zároveň automatizuje repetitivní administrativní úkony.",
+    "Instituce": "Obce s rozšířenou působností, kraje, ministerstva (potencionální)",
+    "Dodavatel": "Aricoma Systems",
+    "Stav projektu": "Nápad / záměr",
+    "Očekávané dopady": "Snížení počtu rutinních dotazů občanů a uvolnění kapacity úředníků.\nZvýšení spokojenosti občanů díky rychlému a srozumitelnému vedení.\nSnížení chybovosti v podávaných žádostech.<br>* Zrychlení zpracování příchozí komunikace a žádostí o informace.\nZlepšení plnění povinností ze strany občanů díky proaktivním notifikacím.",
+    "Vyhodnocení úspěšnosti":"Úspěšnost projektu by se dala měřit podílem dotazů vyřešených plně automatizovaně, průměrným časem pro vyřízení žádosti dle zákona č. 106/1999 Sb., zkrácením času od přijetí zprávy podatelnou po její přiřazení řešiteli a mírou spokojenosti občanů měřenou prostřednictvím zpětné vazby.",
+    "Poučení pro příští projekty": "Zásadní je zajištění bezpečného přístupu k aktuálním datům ze základních registrů pro předvyplňování údajů. Nutnost garantovat soukromí a ochranu osobních údajů (GDPR). AI poskytuje informace, ale finální právní odpovědnost zůstává na straně úřadu. Doporučuje se začít s pilotním provozem pro několik vybraných životních situací a systém postupně rozšiřovat.",
+    "Zdroj": null,
+    "Označení zdroje": null,
+    "Obor činnosti": "Jiné: Komplexní služba občanům",
+    "Kategorie use case": "Analýza dokumentů a dat; Generování obsahu"
   }
 ]

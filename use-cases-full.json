@@ -723,7 +723,7 @@
   },
   {
     "id": 38,
-    "Autor": "Hynek Cihlář",
+    "Autor": "Jaroslav Kafka",
     "Název projektu": "Detekce a analýza poškození vozovek pomocí AI",
     "Typ umělé inteligence": "Počítačové vidění (Computer Vision)\nHluboké učení (Deep Learning)\nKonvoluční neuronové sítě (CNN)",
     "Hlavní kategorie use case": "Predikce a automatizované rozhodování",
@@ -743,7 +743,7 @@
   },
   {
     "id": 39,
-    "Autor": "Hynek Cihlář",
+    "Autor": "Jaroslav Kafka",
     "Název projektu": "Podpora životního cyklu veřejných zakázek pomocí AI",
     "Typ umělé inteligence": "Zpracování přirozeného jazyka (NLP)\nVelké jazykové modely (LLM)\nGenerativní AI, Strojové učení",
     "Hlavní kategorie use case": "Analýza audiovizuálních dat",
@@ -763,7 +763,7 @@
   },
   {
     "id": 40,
-    "Autor": "Hynek Cihlář",
+    "Autor": "Jaroslav Kafka",
     "Název projektu": "Znalostní báze a AI asistent pro interní ICT systémy",
     "Typ umělé inteligence": "Zpracování přirozeného jazyka (NLP)\nVelké jazykové modely (LLM)\nGenerativní AI",
     "Hlavní kategorie use case": "Komunikace a klientský servis",
@@ -969,7 +969,7 @@
     "Hlavní kategorie use case": "Optimalizace úředních procesů",
     "Krátký popis": "Projekt řeší komplexní automatizaci a informační obohacení celého cyklu jednání zastupitelstev a rad. Cílem je zefektivnit a zrychlit administrativní procesy spojené s jednáními a současně zvýšit kvalitu rozhodování volených zástupců. Systém v první fázi automatizuje přepis audiozáznamu z jednání na strukturovaný textový zápis, včetně identifikace mluvčích, bodů programu, usnesení a extrakce úkolů. Ve druhé fázi funguje jako proaktivní asistent, který k jednotlivým bodům programu automaticky připravuje analytické podklady, rešerše a souhrny, čímž poskytuje zastupitelům relevantní kontext pro jejich rozhodování.",
     "Řešený problém": "Manuální přepis a tvorba zápisů z několikahodinových jednání je extrémně časově náročná, nákladná a náchylná k lidským chybám. Zároveň zastupitelé často nemají dostatek času na důkladnou přípravu a rešerši všech souvislostí projednávaných bodů. Tento systém řeší neefektivitu administrativních procesů a informační asymetrii při politickém rozhodování",
-    "Instituce": "Městský/Obecní úřad",
+    "Instituce": "Městský/Obecní úřad (potencionální)",
     "Dodavatel": "Aricoma Systems",
     "Stav projektu": "Pilot / PoC (Interní)",
     "Očekávané dopady": "Radikální snížení času (odhadem o 80–90 %) potřebného na vyhotovení zápisu z jednání\nZvýšení přesnosti a objektivity zápisů, minimalizace chyb z přepisu\nOkamžitá extrakce a distribuce úkolů vyplývajících z usnesení\nZvýšení informovanosti a kvality rozhodování zastupitelů díky automaticky generovaným podkladům\nZvýšení transparentnosti práce úřadu vůči občanům.",
@@ -980,6 +980,26 @@
     "Informace o zdroji a kontaktní osoba": null,
     "Obor činnosti": "Místní rozvoj",
     "Kategorie use case": "Analýza audiovizuálních dat; Oprtimalizace úředních procesů"
+  },
+  {
+    "id": 51,
+    "Autor": "Jaroslav Kafka",
+    "Název projektu": "Digitální úředník: Asistent pro občany a firmy",
+    "Typ umělé inteligence": "Zpracování přirozeného jazyka (NLP)\nVelké jazykové modely (LLM)\nGenerativní AI\nStrojové učení.",
+    "Hlavní kategorie use case": "Komunikace a klientský servis",
+    "Krátký popis": "Cílem projektu je vytvoření (Digitálního úředníka) - komplexního virtuálního asistenta, který slouží jako další kontaktní bod pro občany a firmy. Asistent aktivně provází uživatele řešením jejich životních situací (např. stavba domu, narození dítěte) poskytováním personalizovaných návodů a pomocí s vyplňováním formulářů. Současně systém automatizuje navazující interní agendy, jako je třídění a přidělování pošty (inteligentní podatelna), zpracování žádostí o informace dle zákona č. 106/1999 Sb. a proaktivní upozorňování občanů na jejich povinnosti.",
+    "Řešený problém": "Občané často čelí různě složitým postupům pro každé jednotlivé řešení životních situací, což vede k chybám v žádostech a velkému množství rutinních dotazů směřovaných na úředníky. Interní procesy jako třídění pošty či příprava odpovědí na žádosti o informace jsou manuální, pomalé a neefektivní. Digitální úředník tento problém řeší vytvořením jednoho inteligentního rozhraní, které zjednodušuje interakci s úřadem pro veřejnost a zároveň automatizuje repetitivní administrativní úkony.",
+    "Instituce": "Obce s rozšířenou působností, kraje, ministerstva (potencionální)",
+    "Dodavatel": "Aricoma Systems",
+    "Stav projektu": "Nápad / záměr",
+    "Očekávané dopady": "Snížení počtu rutinních dotazů občanů a uvolnění kapacity úředníků.\nZvýšení spokojenosti občanů díky rychlému a srozumitelnému vedení.\nSnížení chybovosti v podávaných žádostech.<br>* Zrychlení zpracování příchozí komunikace a žádostí o informace.\nZlepšení plnění povinností ze strany občanů díky proaktivním notifikacím.",
+    "Vyhodnocení úspěšnosti":"Úspěšnost projektu by se dala měřit podílem dotazů vyřešených plně automatizovaně, průměrným časem pro vyřízení žádosti dle zákona č. 106/1999 Sb., zkrácením času od přijetí zprávy podatelnou po její přiřazení řešiteli a mírou spokojenosti občanů měřenou prostřednictvím zpětné vazby.",
+    "Poučení pro příští projekty": "Zásadní je zajištění bezpečného přístupu k aktuálním datům ze základních registrů pro předvyplňování údajů. Nutnost garantovat soukromí a ochranu osobních údajů (GDPR). AI poskytuje informace, ale finální právní odpovědnost zůstává na straně úřadu. Doporučuje se začít s pilotním provozem pro několik vybraných životních situací a systém postupně rozšiřovat.",
+    "Zdroj": null,
+    "Označení zdroje": null,
+    "Informace o zdroji a kontaktní osoba": null,
+    "Obor činnosti": "Jiné: Komplexní služba občanům",
+    "Kategorie use case": "Analýza dokumentů a dat; Generování obsahu"
   }
 ]
 
