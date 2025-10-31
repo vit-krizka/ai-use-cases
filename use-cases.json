@@ -920,5 +920,23 @@
     "Označení zdroje": "VZ Digitální asistent",
     "Obor činnosti": "Doprava",
     "Kategorie use case": "Komunikace a klientský servis  (chatboti pro veřejnost); Predikce a automatizované rozhodování"
+  },
+  {
+    "id": 53,
+    "Název projektu": "Virtuální asistentka Anežka pro Úřad městské části Praha 8",
+    "Typ umělé inteligence": "NLP\nVelké jazykové modely (LLM)\nGenerativní AI\nText-to-Speech (TTS)",
+    "Hlavní kategorie use case": "Komunikace a klientský servis",
+    "Krátký popis": "Projekt Virtuální asistentka Anežka je inovativní řešení implementované na telefonní linku Úřadu MČ Praha 8. Jejím cílem je zajistit dostupnost služeb občanům i mimo úřední hodiny a snížit zátěž pracovníků úřadu. Anežka uvítá volajícího, položí otevřenou otázku a na základě odpovědi zjistí důvod volání. Obecné dotazy jsou automaticky přepsány do textu a odeslány na definovaný e-mail příslušnému odboru.Pokud Anežka rozpozná konkrétní agendu (např. sjednání schůzky s vedoucím stavebního úřadu nebo ověření stavu vyřízení žádosti), doptá se na potřebné doplňující informace, aby mohl být požadavek efektivně zpracován. Ve spolupráci s odbory (územního rozvoje a výstavby, dopravy a životního prostředí) poskytuje také nejčastěji vyhledávané informace - o úředních hodinách, požadovaných dokumentech či postupech při vyřizování žádostí. Projekt je navržen tak, aby byl v dalších fázích snadno rozšiřitelný o nové oblasti komunikace s občany.",
+    "Řešený problém": "Úřad MČ Praha 8 se potýkal s vysokým množstvím příchozích hovorů, především mimo úřední hodiny, kdy občané neměli možnost získat informace ani zaznamenat svůj požadavek. To vedlo ke snížené spokojenosti občanů a administrativní zátěži pracovníků. Virtuální hlasová asistentka Anežka tento problém řeší tím, že poskytuje občanům okamžitou dostupnost informací, možnost zaznamenat dotaz kdykoli a zároveň předává úřadu strukturované podklady pro následné vyřízení. Tím zajišťuje kontinuitu komunikace, zlepšuje komfort občanů a umožňuje zaměstnancům úřadu věnovat více času složitějším případům a osobním konzultacím.",
+    "Instituce": "Městská část Praha 8",
+    "Dodavatel": "Born Digital s.r.o.",
+    "Stav projektu": "Produkce",
+    "Očekávané dopady": "Nepřetržitá dostupnost 24/7/365\nAutomatizované odbavení vybraných témat\nZrychlení odezvy na dotazy zákazníků\nEfektivnější směřování zákazníků k dostupným informacím\nZlepšení zákaznické obslužnosti",
+    "Vyhodnocení úspěšnosti":"Virtuální hlasová asistentka Anežka úspěšně odbavuje velkou část hovorů mimo úřední hodiny. Přesnost rozpoznání záměru volajících se pohybuje kolem 85–90 %. Přepisy požadavků jsou spolehlivě doručovány příslušným odborům, což usnadňuje jejich následné zpracování. Nasazení bylo pozitivně přijato jak občany, tak zaměstnanci úřadu.",
+    "Poučení pro příští projekty": "Potřeba úzké spolupráce s pracovníky úřadu při tvorbě scénářů a nastavení procesů. AI asistentka efektivně pomáhá zvládat vysoký objem dotazů a odlehčuje zaměstnancům. Kvalitní trénink na reálných dorazech občanů a zpětná vazba jsou klíčové pro přesnost a přijetí",
+    "Zdroj": null,
+    "Označení zdroje": null,
+    "Obor činnosti": "Územní plánování, stavební řízení a evidence nemovitostí",
+    "Kategorie use case": "Komunikace a klientský servis  (chatboti pro veřejnost)"
   }
 ]
