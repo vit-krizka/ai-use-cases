@@ -723,7 +723,7 @@
   },
   {
     "id": 38,
-    "Autor": "Vojtěch Duraj",
+    "Autor": "Hynek Cihlář",
     "Název projektu": "Detekce a analýza poškození vozovek pomocí AI",
     "Typ umělé inteligence": "Počítačové vidění (Computer Vision)\nHluboké učení (Deep Learning)\nKonvoluční neuronové sítě (CNN)",
     "Hlavní kategorie use case": "Predikce a automatizované rozhodování",
@@ -743,7 +743,7 @@
   },
   {
     "id": 39,
-    "Autor": "Vojtěch Duraj",
+    "Autor": "Hynek Cihlář",
     "Název projektu": "Podpora životního cyklu veřejných zakázek pomocí AI",
     "Typ umělé inteligence": "Zpracování přirozeného jazyka (NLP)\nVelké jazykové modely (LLM)\nGenerativní AI, Strojové učení",
     "Hlavní kategorie use case": "Analýza audiovizuálních dat",
@@ -763,7 +763,7 @@
   },
   {
     "id": 40,
-    "Autor": "Vojtěch Duraj",
+    "Autor": "Hynek Cihlář",
     "Název projektu": "Znalostní báze a AI asistent pro interní ICT systémy",
     "Typ umělé inteligence": "Zpracování přirozeného jazyka (NLP)\nVelké jazykové modely (LLM)\nGenerativní AI",
     "Hlavní kategorie use case": "Komunikace a klientský servis",
@@ -960,6 +960,26 @@
     "Informace o zdroji a kontaktní osoba": null,
     "Obor činnosti": "Vnitřní věci a bezpečnost",
     "Kategorie use case": "Analýza audiovizuálních dat;Genrování obsahu a chatboti pro úředníky; Oprtimalizace úředních procesů"
+  },
+  {
+    "id": 50,
+    "Autor": "Jaroslav Kafka",
+    "Název projektu": "Automatizace zápisů a příprava podkladů pro jednání orgánů obce/města",
+    "Typ umělé inteligence": "Speech-to-Text\nZpracování přirozeného jazyka (NLP)\nRozpoznávání mluvčích\nVelké jazykové modely (LLM)\nGenerativní AI",
+    "Hlavní kategorie use case": "Optimalizace úředních procesů",
+    "Krátký popis": "Projekt řeší komplexní automatizaci a informační obohacení celého cyklu jednání zastupitelstev a rad. Cílem je zefektivnit a zrychlit administrativní procesy spojené s jednáními a současně zvýšit kvalitu rozhodování volených zástupců. Systém v první fázi automatizuje přepis audiozáznamu z jednání na strukturovaný textový zápis, včetně identifikace mluvčích, bodů programu, usnesení a extrakce úkolů. Ve druhé fázi funguje jako proaktivní asistent, který k jednotlivým bodům programu automaticky připravuje analytické podklady, rešerše a souhrny, čímž poskytuje zastupitelům relevantní kontext pro jejich rozhodování.",
+    "Řešený problém": "Manuální přepis a tvorba zápisů z několikahodinových jednání je extrémně časově náročná, nákladná a náchylná k lidským chybám. Zároveň zastupitelé často nemají dostatek času na důkladnou přípravu a rešerši všech souvislostí projednávaných bodů. Tento systém řeší neefektivitu administrativních procesů a informační asymetrii při politickém rozhodování",
+    "Instituce": "Městský/Obecní úřad",
+    "Dodavatel": "Aricoma Systems",
+    "Stav projektu": "Pilot / PoC (Interní)",
+    "Očekávané dopady": "Radikální snížení času (odhadem o 80–90 %) potřebného na vyhotovení zápisu z jednání\nZvýšení přesnosti a objektivity zápisů, minimalizace chyb z přepisu\nOkamžitá extrakce a distribuce úkolů vyplývajících z usnesení\nZvýšení informovanosti a kvality rozhodování zastupitelů díky automaticky generovaným podkladům\nZvýšení transparentnosti práce úřadu vůči občanům.",
+    "Vyhodnocení úspěšnosti":"Úspěšnost PoC by byla měřena pomocí následujících metrik:počet člověkohodin ušetřených na tvorbě jednoho zápisu. Zkrácení doby od konce jednání po zveřejnění finálního zápisu. Snížení počtu žádostí o opravu zápisu a kvalitativní zpětná vazba od zastupitelů a úředníků ohledně přínosnosti analytických podkladů",
+    "Poučení pro příští projekty": "Klíčová je kvalita audio nahrávky pro přesnost přepisu. Je nutné zachovat princip (human-in-the-loop) – finální verze zápisu musí být vždy zkontrolována a schválena pověřenou osobou. Zajistit soulad se zákonem o obcích a jednacím řádem konkrétního zastupitelstva. Řešit ochranu osobních údajů (GDPR) a případných citlivých informací projednávaných v neveřejném režimu.",
+    "Zdroj": null,
+    "Označení zdroje": null,
+    "Informace o zdroji a kontaktní osoba": null,
+    "Obor činnosti": "Místní rozvoj",
+    "Kategorie use case": "Analýza audiovizuálních dat; Oprtimalizace úředních procesů"
   }
 ]
 

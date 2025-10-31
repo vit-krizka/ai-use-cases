@@ -779,7 +779,6 @@
   },
   {
     "id": 45,
-    "Autor": "David Sláma",
     "Název projektu": "AI asistent k přestupkovému řízení pro obce s rozšířenou působností",
     "Typ umělé inteligence": "Generativní AI\nLLM (Large Language Model) prostřednictvím Azure OpenAI Service\nDocument Intelligence pro extrakci textu a struktur z PDF\nLangChain pro integraci s LLM službami\nLangGraph pro práce s AI agenty a workflow",
     "Hlavní kategorie use case": "Optimalizace úředních procesů",
@@ -793,13 +792,11 @@
     "Poučení pro příští projekty": "Mikroservisní architektura umožňuje nezávislý vývoj a postupné nasazování nových funkcí. Cloudové nasazení na Azure zajišťuje compliance s evropskými standardy a GDPR. Důležitost vrstvené bezpečnostní architektury s OAuth ověřením a rate limitingem. Využití LangChain a LangGraph poskytuje modularitu a možnost integrace s různými LLM službami. Strukturovaný workflow graf umožňuje flexibilní rozhodovací logiku a rozšiřitelnost systému",
     "Zdroj": null,
     "Označení zdroje": null,
-    "Informace o zdroji a kontaktní osoba": null,
     "Obor činnosti": "Vnitřní věci a bezpečnost",
     "Kategorie use case": "Optimalizace úředních procesů; Generování obsahu a chatboti pro úředníky; Predikce a automatizované rozhodování "
   },
   {
     "id": 46,
-    "Autor": " Matouš Vydra",
     "Název projektu": "AI asistent vnitřních směrnic a předpisů",
     "Typ umělé inteligence": "Generativní AI\nLLM (Large Language Model)\nStrojové učení",
     "Hlavní kategorie use case": "Optimalizace úředních procesů",
@@ -813,13 +810,11 @@
     "Poučení pro příští projekty": "Data first: kvalitní struktura a verzování směrnic je klíčové. SSO nutnost: bez plynulého přihlášení by adopce klesla. Riziko přetížení LLM: je třeba nastavit limit délky dotazu i odpovědi. Dobrá praxe: transparentně zobrazovat odkazy na zdrojové dokumenty – posiluje důvěru. Špatná praxe: nadměrné manuální tagování dokumentů; automatické NLP tagy se ukázaly spolehlivější.",
     "Zdroj": null,
     "Označení zdroje": null,
-    "Informace o zdroji a kontaktní osoba": null,
     "Obor činnosti": "Doprava",
     "Kategorie use case": "Optimalizace úředních procesů; Generování obsahu a chatboti pro úředníky;"
   },
   {
     "id": 47,
-    "Autor": " Matouš Vydra",
     "Název projektu": "AI asistent pro zpracování faktur",
     "Typ umělé inteligence": "Computer Vision (OCR – rozpoznávání textu)\nStrojové učení (klasifikace dokumentů, přiřazování kategorií)\nGenerativní AI (doplnění chybějících metadat, vysvětlení nejistých případů)",
     "Hlavní kategorie use case": "Optimalizace úředních procesů",
@@ -833,13 +828,11 @@
     "Poučení pro příští projekty": "Nutnost mít dobře připravené trénovací datasety (různé formáty faktur). Vyplatí se postupovat pilotně a řešit postupně jednotlivé typy dokumentů. Uživatelé musí vždy mit zodpovědnost za finální validace u všech případů. Riziko: špatná integrace s ERP → nutné počítat s testovací fází. Dobrá praxe: aktivní zapojení účetního týmu do návrhu workflow.",
     "Zdroj": null,
     "Označení zdroje": null,
-    "Informace o zdroji a kontaktní osoba": null,
     "Obor činnosti": "Doprava",
     "Kategorie use case": "Optimalizace úředních procesů"
   },
   {
     "id": 48,
-    "Autor": " Správa železnic",
     "Název projektu": "AI Feedback Portal – automatizovaný sběr a analýza zpětné vazby",
     "Typ umělé inteligence": "Speech-to-text (Whisper) – automatická transkripce hlasových zpráv\nNatural Language Processing (OpenAI LLM) – analýza textu, sentiment, klíčová slova\nComputer Vision (OpenAI Image API) – rozpoznání a popis obsahu fotografií\nGenerativní AI – shrnutí a strukturování výsledků",
     "Hlavní kategorie use case": "Analýza audiovizuálních dat",
@@ -853,13 +846,11 @@
     "Poučení pro příští projekty": "Nutné je od začátku zahrnout právní validaci pro práci s multimediálními daty (GDPR, autorská práva k fotografiím). Vyplatí se mít připravená testovací data pro všechny modality (text, audio, obraz). Uživatelé ocení okamžitou zpětnou vazbu a jednoduché UI → zapojit UX tým včas. Dobrá praxe: využití jednoduché BI nástroje pro vizualizace, které jsou uživatelsky známé a snadno rozšiřitelné.",
     "Zdroj": null,
     "Označení zdroje": null,
-    "Informace o zdroji a kontaktní osoba": null,
     "Obor činnosti": "Doprava",
     "Kategorie use case": "Analýza audiovizuálních dat"
   },
   {
     "id": 49,
-    "Autor": "Walter Pavliš",
     "Název projektu": "BABEL - Systém řečové technologie pro transkripci, překlad textu a rozpoznání jazyka",
     "Typ umělé inteligence": "<strong>Strojové učení:</strong> Základem technologie převodu řeči na text jsou pokročilé algoritmy strojového učení a rozpoznávání řeči. Tyto algoritmy přepisují mluvené slovo na plynulý a přesný text.\n<strong>Hluboké neuronové sítě:</strong> Moderní metody přepisu řeči na text využívají hluboké neuronové sítě, které automaticky extrahují složité vzorce a souvislosti ve zvukovém signálu. ",
     "Hlavní kategorie use case": "Analýza audiovizuálních dat",
@@ -873,8 +864,25 @@
     "Poučení pro příští projekty": "Přizpůsobit UI podle koncového uživatele a zařízení (notebook nebo telefon). Vytvoření přednastavených dialogů: Připravit přednastavené dialogy pro běžné úkony v různých nářečích",
     "Zdroj": "https://youtu.be/lh6fxD3P6yg?si=YV28mqWFlJhO0aSE",
     "Označení zdroje": "BABEL",
-    "Informace o zdroji a kontaktní osoba": null,
     "Obor činnosti": "Vnitřní věci a bezpečnost",
     "Kategorie use case": "Analýza audiovizuálních dat;Genrování obsahu a chatboti pro úředníky; Oprtimalizace úředních procesů"
+  },
+  {
+    "id": 50,
+    "Název projektu": "Automatizace zápisů a příprava podkladů pro jednání orgánů obce/města",
+    "Typ umělé inteligence": "Speech-to-Text\nZpracování přirozeného jazyka (NLP)\nRozpoznávání mluvčích\nVelké jazykové modely (LLM)\nGenerativní AI",
+    "Hlavní kategorie use case": "Optimalizace úředních procesů",
+    "Krátký popis": "Projekt řeší komplexní automatizaci a informační obohacení celého cyklu jednání zastupitelstev a rad. Cílem je zefektivnit a zrychlit administrativní procesy spojené s jednáními a současně zvýšit kvalitu rozhodování volených zástupců. Systém v první fázi automatizuje přepis audiozáznamu z jednání na strukturovaný textový zápis, včetně identifikace mluvčích, bodů programu, usnesení a extrakce úkolů. Ve druhé fázi funguje jako proaktivní asistent, který k jednotlivým bodům programu automaticky připravuje analytické podklady, rešerše a souhrny, čímž poskytuje zastupitelům relevantní kontext pro jejich rozhodování.",
+    "Řešený problém": "Manuální přepis a tvorba zápisů z několikahodinových jednání je extrémně časově náročná, nákladná a náchylná k lidským chybám. Zároveň zastupitelé často nemají dostatek času na důkladnou přípravu a rešerši všech souvislostí projednávaných bodů. Tento systém řeší neefektivitu administrativních procesů a informační asymetrii při politickém rozhodování",
+    "Instituce": "Městský/Obecní úřad",
+    "Dodavatel": "Aricoma Systems",
+    "Stav projektu": "Pilot / PoC (Interní)",
+    "Očekávané dopady": "Radikální snížení času (odhadem o 80–90 %) potřebného na vyhotovení zápisu z jednání\nZvýšení přesnosti a objektivity zápisů, minimalizace chyb z přepisu\nOkamžitá extrakce a distribuce úkolů vyplývajících z usnesení\nZvýšení informovanosti a kvality rozhodování zastupitelů díky automaticky generovaným podkladům\nZvýšení transparentnosti práce úřadu vůči občanům.",
+    "Vyhodnocení úspěšnosti":"Úspěšnost PoC by byla měřena pomocí následujících metrik:počet člověkohodin ušetřených na tvorbě jednoho zápisu. Zkrácení doby od konce jednání po zveřejnění finálního zápisu. Snížení počtu žádostí o opravu zápisu a kvalitativní zpětná vazba od zastupitelů a úředníků ohledně přínosnosti analytických podkladů",
+    "Poučení pro příští projekty": "Klíčová je kvalita audio nahrávky pro přesnost přepisu. Je nutné zachovat princip (human-in-the-loop) – finální verze zápisu musí být vždy zkontrolována a schválena pověřenou osobou. Zajistit soulad se zákonem o obcích a jednacím řádem konkrétního zastupitelstva. Řešit ochranu osobních údajů (GDPR) a případných citlivých informací projednávaných v neveřejném režimu.",
+    "Zdroj": null,
+    "Označení zdroje": null,
+    "Obor činnosti": "Místní rozvoj",
+    "Kategorie use case": "Analýza audiovizuálních dat; Oprtimalizace úředních procesů"
   }
 ]
