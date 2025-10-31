@@ -1040,6 +1040,26 @@
     "Informace o zdroji a kontaktní osoba":"Simona Hejná - simona.hejna@praha8.cz",
     "Obor činnosti": "Územní plánování, stavební řízení a evidence nemovitostí",
     "Kategorie use case": "Komunikace a klientský servis  (chatboti pro veřejnost)"
+  },
+  {
+    "id": 54,
+    "Autor": "Ondřej Smotlacha",
+    "Název projektu": "Analytika interakcí na lince 158 Policie ČR",
+    "Typ umělé inteligence": "Natural Language Processing (NLP)\nStrojové učení\nGenerativní AI",
+    "Hlavní kategorie use case": "Monitoring, bezpečnost a dohled",
+    "Krátký popis": "Projekt byl realizován s cílem ověřit možnosti využití umělé inteligence pro analýzu hovorů na tísňové lince 158 a související interní rádiové komunikace policie. Řešení zahrnuje transkripci hovorů a detekci klíčových informací, jako jsou typy trestných činů, jména, adresy či další relevantní údaje. AI systém zároveň dokáže automatizovat následné kroky – propojuje rádiovou komunikaci s původními hovory, vytváří přehledové souhrny a identifikuje neobvyklé situace. Výsledky jsou exportovány do prostředí Excel pro snadný přístup a práci analytiků. Projekt byl interaktivně vyvíjen a testován ve spolupráci s příslušníky Policie ČR v rámci pilotního nasazení pro Středočeský kraj.",
+    "Řešený problém": "Policie ČR se potýká s velkým množstvím hovorů na linku 158 a související rádiovou komunikací, což představuje vysokou zátěž na operátory i analytiky. Zpracování hovorů a jejich provázání je časově náročné a riziko přehlédnutí klíčových informací je vysoké.",
+    "Instituce": "Policie České republiky",
+    "Dodavatel": "Born Digital s.r.o.",
+    "Stav projektu": "Pilot / PoC",
+    "Očekávané dopady": "Úspora času policejních operátorů a analytiků díky automatizace přepisů a souhrnů\nVčasná identifikace neobvyklých situací a rizikových událostí\nZlepšení kvality a efektivity linky 158",
+    "Vyhodnocení úspěšnosti":"PoC bylo testováno ve spolupráci s příslušníky Policie ČR ve Středočeském kraji. Byla ověřena funkčnost přepisů i analytických výstupů a porovnány výsledky s očekáváním a procesními potřebami policie. Výstupy prokázaly schopnost AI detekovat relevantní informace a automatizovat následné kroky, ačkoli byly identifikovány i určité technologické limity při specifických typech komunikace. Celkově byl projekt policií hodnocen pozitivně jako užitečný podklad pro další rozvoj.",
+    "Poučení pro příští projekty": "Potřeba úzké spolupráce s policejními operátory a analytiky při definování klíčových scénářů a výstupů. AI je efektivní nástroj pro zvládání vysokého objemu hovorů a rádiové komunikace, ale vyžaduje kvalitní integraci do procesů. Technologická omezení (např. kvalita přenosu, šum, silné přízvuky) ovlivňují přesnost přepisu a musí se s nimi počítat",
+    "Zdroj": null,
+    "Označení zdroje": null,
+    "Informace o zdroji a kontaktní osoba":"Ondřej Smotlacha - ondrej.smotlacha@pcr.cz",
+    "Obor činnosti": "Vnitřní věci a bezpečnost",
+    "Kategorie use case": "Monitoring, bezpečnost a dohled"
   }
 ]
 
