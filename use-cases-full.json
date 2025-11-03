@@ -1082,26 +1082,6 @@
     "Kategorie use case": "Monitoring, bezpečnost a dohled; Optimalizace úředních procesů"
   },
   {
-    "id": 56,
-    "Autor": "Miloš Šenkýř",
-    "Název projektu": "Automatizace kontrolního procesu žádostí o platbu v rámci dotačních programů Centra pro regionální rozvoj České republiky ",
-    "Typ umělé inteligence": "Natural Language Processing (NLP)\nStrojové učení\nComputer Vision",
-    "Hlavní kategorie use case": "Optimalizace úředních procesů",
-    "Krátký popis": "Projekt spočívá v implementaci AI řešení, které automatizuje kontrolu žádostí o platbu v rámci dotačních programů. Příjemci dotací do systému nahrávají potřebné podklady (faktury, dodací listy, výpisy z účtů, plné moci apod.). Systém provádí klasifikaci dokumentů, extrakci klíčových údajů a ověřuje podpis či oprávnění zástupců prostřednictvím napojení na externí registry. Na základě předdefinované logiky systém vyhodnocuje jednotlivé žádosti a poskytuje rozhodnutí ve formě „ano / ne / irelevantní“. Generuje také shrnutí s odůvodněním, které vysvětluje výsledky kontroly, a umožňuje export výstupů pro další zpracování. Implementace přinesla významné zrychlení a zpřesnění administrativních procesů při správě dotačních žádostí.",
-    "Řešený problém": "Ruční kontrola žádostí o platbu byla časově náročná, zatěžovala pracovníky CRR a byla náchylná k chybám. Rostoucí objem agendy vedl k prodlužování lhůt a zvýšenému riziku nesrovnalostí. AI asistent tento problém řeší automatizovanou analýzou a verifikací dokumentů, čímž zrychluje proces, zvyšuje jeho přesnost a umožňuje pracovníkům soustředit se na složitější případy.",
-    "Instituce": "Centrum pro regionální rozvoj České republiky",
-    "Dodavatel": "Born Digital s.r.o.",
-    "Stav projektu": "Produkce",
-    "Očekávané dopady": "Zrychlení administrace kontrol dotačních žádostí o desítky procent\nSnížení rizika chyb díky automatizované validaci dokumentů a podpisů\nVyšší transparentnost a konzistentnost kontrolního procesu\nUvolnění kapacit zaměstnanců CRR pro složitější úkoly\nMožnost škálovat řešení na rostoucí počet žádostí",
-    "Vyhodnocení úspěšnosti":"Systém byl nasazen v ostrém provozu a dokázal úspěšně automatizovat klíčové kroky kontrolního procesu. CRR potvrzuje, že došlo k výraznému zkrácení doby zpracování žádostí a ke snížení chybovosti. AI asistent generuje konzistentní výsledky a poskytuje odůvodnění pro každé rozhodnutí, což zvyšuje důvěru v systém. Projekt splnil cíle a je hodnocen jako významný krok k digitalizaci a efektivnějšímu řízení dotačních procesů.",
-    "Poučení pro příští projekty": "Zapojení pracovníků úřadu do definování pravidel zvyšuje relevanci výsledků. Kvalitní vstupní data jsou zásadní pro úspěšnou extrakci a přesnost rozhodnutí. AI může nahradit rutinní kontrolní činnosti, ale vyžaduje lidský dohled u sporných případů. Přehledné odůvodnění výsledků je klíčové pro akceptaci výstupů zaměstnanci. Vhodné je od počátku myslet na škálovatelnost řešení a jeho rozšíření na další agendy",
-    "Zdroj":null,
-    "Označení zdroje":null,
-    "Informace o zdroji a kontaktní osoba":"Miloš Šenkýř - milos.senkyr@crr.cz",
-    "Obor činnosti": "Místní rozvoj",
-    "Kategorie use case": "Optimalizace úředních procesů"
-  },
-  {
     "id": 57,
     "Autor": "Kateřina Šveřepová",
     "Název projektu": "AI asistent pro PASMO portál",
@@ -1260,6 +1240,26 @@
     "Informace o zdroji a kontaktní osoba":"doc. MUDr. Marián Hajdúch, Ph.D. marian.hajduch@upol.cz",
     "Obor činnosti": "Zdravotnictví",
     "Kategorie use case": "Generování obsahu a chatboti pro úředníky; Komunikace a klientský servis (chatboti pro veřejnost)"
+  },
+  {
+    "id": 65,
+    "Autor": "Jan Krechl",
+    "Název projektu": "AI Capability Assessment – Hodnocení připravenosti organizací na implementaci AI",
+    "Typ umělé inteligence": "Prediktivní modely (AI readiness scoring)\nFramework pro správu AI projektů\nData governance a AI lifecycle modely",
+    "Hlavní kategorie use case": "Predikce a automatizované rozhodování",
+    "Krátký popis": "Projekt DNAi poskytuje metodiku a nástroj pro objektivní posouzení technologické připravenosti organizací na nasazení AI řešení. Hodnocení se provádí prostřednictvím AI Capability Assessment frameworku, který mapuje klíčové oblasti – od datové infrastruktury, aplikací a governance po lidské zdroje a životní cyklus AI. Cílem je umožnit veřejným i soukromým institucím získat jasný přehled o své současné úrovni, definovat cílový stav a sestavit implementační roadmapu pro efektivní a bezpečné zavedení AI.",
+    "Řešený problém": "Veřejný sektor i firmy často čelí problému, že nevědí, zda jsou organizačně, procesně a technologicky připravené na AI projekty. Bez této znalosti dochází k neefektivnímu utrácení rozpočtů, nerealistickým očekáváním a selhání projektů.DNAi řešení poskytuje systematickou metodiku hodnocení připravenosti (AI audit), která umožňuje identifikovat slabá místa, doporučit priority a obhájit investice do AI před vedením nebo regulátory.",
+    "Instituce": "Zentiva Group, a.s.",
+    "Dodavatel": "DNAi s.r.o.",
+    "Stav projektu": "Pilot / PoC",
+    "Očekávané dopady": "Zefektivnění rozhodování o investicích do AI projektů\nZvýšení transparentnosti a obhajitelnosti projektů vůči vedení a kontrolním orgánům\nSnížení rizika neúspěchu při implementaci AI díky objektivnímu posouzení připravenosti\nMožnost srovnání úrovně připravenosti různých organizací na základě jednotného frameworku",
+    "Vyhodnocení úspěšnosti":"V pilotních nasazeních v Zentiva se framework osvědčil jako praktický nástroj pro sestavení AI roadmapy. Přinesl měřitelné výstupy (radarové grafy, readiness scoring, doporučené priority), které se staly podkladem pro rozhodnutí vedení a plánování konkrétních AI projektů.",
+    "Poučení pro příští projekty": "Nutná úzká spolupráce mezi IT a business částí organizace. AI projekty mají smysl pouze tam, kde jsou zajištěny datové základy a governance. Transparentní a standardizované hodnocení zvyšuje důvěru managementu i veřejnosti. Přístup PoC/Pilot ukázal, že i částečné vyhodnocení přináší hodnotu.",
+    "Zdroj": null,
+    "Označení zdroje": null,
+    "Informace o zdroji a kontaktní osoba":"Jan Krechl - jan.krechl@zentiva.com",
+    "Obor činnosti": "Zdravotnictví",
+    "Kategorie use case": "Optimalizace úředních procesů; Predikce a automazitované rozhodování"
   }
 ]
 
