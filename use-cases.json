@@ -1118,5 +1118,24 @@
     "Označení zdroje":"Digitální asistent MPSV",
     "Obor činnosti": "Práce a zaměstnanost",
     "Kategorie use case": "Generování obsahu a chatboti pro úředníky; Komunikace a klientský servis (chatboti pro veřejnost)"
+  },
+  {
+    "id": 64,
+    "Autor": "Marián Hajdúch",
+    "Název projektu": "NZIP - Veřejný zdravotní chatbot",
+    "Typ umělé inteligence": "Large Language Model (LLM)\nRetrieval-Augmented Generation (RAG)\nStrojové učení (machine learning)",
+    "Hlavní kategorie use case": "Komunikace a klientský servis",
+    "Krátký popis": "Projekt ověřuje využití AI chatbota, který čerpá znalosti z databáze obsahu portálu NZIP.cz. Chatbot je aktuálně dostupný pouze v rámci PoC prostředí, kde se testuje kvalita odpovědí a schopnost pracovat s ověřenými zdravotnickými informacemi. Možností  další fáze (produkční nasazení) by byla integrace takového řešení jako widgetu přímo na web NZIP.cz, aby byl veřejnosti dostupný 24/7.",
+    "Řešený problém": "Veřejnost hledá zdravotní informace často na neověřených zdrojích internetu. NZIP sice poskytuje kvalitní a ověřený obsah, ale orientace v něm může být pro uživatele časově náročná. PoC ukazuje, že chatbot nad NZIP databází by umožňoval rychlé a přesné vyhledávání informací, čímž by vyřešil bariéry v dostupnosti informací.",
+    "Instituce": "ÚZIS - Ústav zdravotnických informací a statistiky České republiky",
+    "Dodavatel": "DNAi s.r.o.",
+    "Stav projektu": "Pilot / PoC",
+    "Očekávané dopady": "24/7 dostupnost ověřených informací pro veřejnost\nZkrácení doby vyhledávání informací z minut na sekundy\nSnížení zátěže pracovníků na straně podpory/redakce NZIP\nTransparentní a konzistentní komunikace s občany",
+    "Vyhodnocení úspěšnosti":"V rámci PoC bylo ověřeno, že chatbot dokáže s dostatečnou přesností poskytovat odpovědi na základě obsahu NZIP.cz. Chatbot ještě není integrován na veřejný web, ale testování ukazuje možnosti takového řešení a co by bylo potřeba pro produkční nasazení.",
+    "Poučení pro příští projekty": "Důležitost jasného kurátorství obsahu a pravidelné aktualizace znalostní báze. Potřeba úzké spolupráce s redakcí NZIP při nastavování tónu komunikace. Uživatelská zpětná vazba je klíčová pro další trénink a zlepšování systému",
+    "Zdroj":null,
+    "Označení zdroje":null,
+    "Obor činnosti": "Zdravotnictví",
+    "Kategorie use case": "Generování obsahu a chatboti pro úředníky; Komunikace a klientský servis (chatboti pro veřejnost)"
   }
 ]
