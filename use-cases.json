@@ -1100,5 +1100,23 @@
     "Označení zdroje":null,
     "Obor činnosti": "Školství, věda a výzkum",
     "Kategorie use case": "Optimalizace úředních procesů; Komunikace a klientský servis (chatboti pro veřejnost); Generování obsahu a chatboti pro úředníky; Predikce a automatizované rozhodování"
+  },
+  {
+    "id": 63,
+    "Název projektu": "Digitální asistent MPSV - chatbot a voicebot pro veřejnou komunikaci",
+    "Typ umělé inteligence": "Velké jazykové modely (LLM)\nRetrieval-Augmented Generation (RAG)\nSemantic Search (vektorové vyhledávání)\nHlasové rozpoznávání a syntéza řeči",
+    "Hlavní kategorie use case": "Komunikace a klientský servis",
+    "Krátký popis": "Projekt zavádí digitálního asistenta MPSV ve formě chatbota a voicebota pro poskytování ověřených veřejných informací občanům. Asistent využívá technologii retrieval-augmented generation (RAG), semantic search a hlasové rozpoznávání pro rychlou, konzistentní a dostupnou komunikaci. Cílem je zpřístupnit občanům spolehlivé odpovědi 24/7, snížit zátěž call center a zefektivnit komunikaci státní správy s veřejností.",
+    "Řešený problém": "Občané často čelí složité orientaci v agendách MPSV a call centra jsou přetížená vysokým počtem dotazů. Ruční vyřizování dotazů je časově náročné, zvyšuje administrativní zátěž a snižuje efektivitu. Projekt řeší tuto výzvu prostřednictvím AI asistenta, který automatizuje zodpovídání častých dotazů a umožňuje rychlé předání složitějších případů na lidské operátory.",
+    "Instituce": "Ministerstvo práce a sociálních věcí ČR",
+    "Dodavatel": "Tekies s.r.o.",
+    "Stav projektu": "Produkce",
+    "Očekávané dopady": "Dostupnost dle stanovené otevírací doby úřadem práce\nSnížení administrativní zátěže call center až o 40 %\nRychlejší přístup občanů k ověřeným informacím",
+    "Vyhodnocení úspěšnosti":"Systém je již v produkčním provozu a dosahuje vysoké přesnosti – chybovost odpovědí je pod 5 %. Digitální asistent zpracoval desítky tisíc dotazů občanů. Nasazení výrazně přispělo ke snížení zatížení call center a bylo pozitivně přijato veřejností i pracovníky MPSV.",
+    "Poučení pro příští projekty": "Nutná průběžná aktualizace znalostní báze dle změn legislativy. Doporučení kombinovat AI odpovědi s lidským dohledem (Review App) pro zajištění maximální přesnosti. Důležitost přístupnosti a multikanálové podpory (web, telefon). Zajištění vysokých standardů bezpečnosti a ochrany osobních údajů. Komunikace dostupných komunikačních kanálů na klienty v dostatečné míře (marketing / aktuality). Jasně specifikovaná akceptační kritéria.",
+    "Zdroj":"https://www.tekies.eu/case-studies/digitisation-of-key-agendas-for-hundreds-of-thousands-of-users",
+    "Označení zdroje":"Digitální asistent MPSV",
+    "Obor činnosti": "Práce a zaměstnanost",
+    "Kategorie use case": "Generování obsahu a chatboti pro úředníky; Komunikace a klientský servis (chatboti pro veřejnost)"
   }
 ]
