@@ -1193,7 +1193,7 @@
     "Dodavatel": "Feedyou",
     "Stav projektu": "Produkce",
     "Očekávané dopady": "Zlepšení candidate experience\nDostupnost 24/7\nÚspora času personalistů",
-    "Vyhodnocení úspěšnosti":"Nasazení AI v praxi tak bylo velmi pozitivně přijato. V provozu 2 měsíce od 1.7.2025. Přes 22 tisíc komunikací s kandidáty. V průměru komunikují s řešením 2,9 min. 54 % kandidátů komunikuje s ženskou avatarkou. 46 % dává přednost mužskému avatarovi. 41 % komunikací je v mimopracovních hodinách, 20 % interakcí probíhá o víkendech",
+    "Vyhodnocení úspěšnosti":"Nasazení AI v praxi tak bylo velmi pozitivně přijato. V provozu 2 měsíce od 1.7.2025. Přes 22 tisíc komunikací s kandidáty. V průměru komunikují s řešením 2,9 min. 54 % kandidátů komunikuje s ženskou avatarkou. 46 % dává přednost mužskému avatarovi. 41 % komunikací je v mimopracovních hodinách, 20 % interakcí probíhá o víkendech. 24,85 % konverzní poměr (kandidátů chce podat přihlášku k PČR). Úspěšnost správné detekce záměru uživatele (match rate) a relevantnosti odpovědi pro cílovou skupinu (helpful rate) na úrovni 98,7 %  ",
     "Poučení pro příští projekty": "Potřeba úzké spolupráce s klientem, resp. primárně dobrá kvalita dat (znalostní báze) a dostupnost systémů a jejich REST API endpoints, se kterými má AI náborář pracovat. Kvalitní zpětná vazba jsou klíčové pro interní testování a následný fine-tuning po spuštění řešení do produkce",
     "Zdroj":null,
     "Označení zdroje":null,
