@@ -361,8 +361,8 @@ async function initCatalog() {
 
   try {
     const [casesRes, categoriesRes] = await Promise.all([
-      fetch('use-cases.json'),
-      fetch('categories.json')
+      fetch(`${baseUrl}/use-cases.json`),
+      fetch(`${baseUrl}/categories.json`)
     ]);
     const useCases = await casesRes.json();
     const categories = await categoriesRes.json();
@@ -443,7 +443,7 @@ async function initCatalog() {
       items.forEach(item => {
         const subLi = document.createElement('li');
         const a = document.createElement('a');
-        const href = isCatalogPage ? `#${item.sectionId}` : `project.html#${item.sectionId}`;
+        const href = isCatalogPage ? `#${item.sectionId}` : `${baseUrl}/project.html#${item.sectionId}`;
         a.href = href;
         a.textContent = item.title;
         subLi.appendChild(a);
@@ -542,3 +542,8 @@ document.addEventListener('DOMContentLoaded', () => {
   initUseCaseCounter();
   initInfoBanner();
 });
+
+const baseUrl = (() => {
+    const scriptUrl = document.currentScript.src;
+    return scriptUrl.substring(0, scriptUrl.lastIndexOf('/'));
+})();
