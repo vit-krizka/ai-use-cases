@@ -547,3 +547,25 @@ const baseUrl = (() => {
     const scriptUrl = document.currentScript.src;
     return scriptUrl.substring(0, scriptUrl.lastIndexOf('/'));
 })();
+
+const grid = document.querySelector('.ai-literacy-actions__grid');
+const btnLeft = document.querySelector('.carousel-btn.left');
+const btnRight = document.querySelector('.carousel-btn.right');
+
+btnRight.addEventListener('click', () => {
+    const cardWidth = grid.querySelector('.ai-literacy-card').offsetWidth + parseInt(getComputedStyle(grid).gap);
+    grid.scrollBy({ left: cardWidth, behavior: 'smooth' });
+
+    if (grid.scrollLeft + grid.offsetWidth >= grid.scrollWidth - 1) {
+        setTimeout(() => { grid.scrollLeft = 0; }, 300);
+    }
+});
+
+btnLeft.addEventListener('click', () => {
+    const cardWidth = grid.querySelector('.ai-literacy-card').offsetWidth + parseInt(getComputedStyle(grid).gap);
+    grid.scrollBy({ left: -cardWidth, behavior: 'smooth' });
+
+    if (grid.scrollLeft <= 0) {
+        setTimeout(() => { grid.scrollLeft = grid.scrollWidth; }, 300);
+    }
+});
