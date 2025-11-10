@@ -1099,7 +1099,8 @@ h3 {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
+    white-space: nowrap;
     margin: 0;
     gap: clamp(0.5rem, 2vw, 1rem);
     font-size: clamp(1.4rem, 2.4vw, 2.1rem);
@@ -1193,16 +1194,10 @@ h3 {
         padding: clamp(1.5rem, 6vw, 2rem) clamp(1rem, 5vw, 1.75rem);
     }
 
-    .usecase-counter__headline {
-        font-size: clamp(1.1rem, 5vw, 1.6rem);
-    }
-
-    .usecase-counter__number {
-        font-size: clamp(1.9rem, 14vw, 3rem);
-    }
-
+    .usecase-counter__headline,
+    .usecase-counter__number,
     .usecase-counter__note {
-        font-size: clamp(1rem, 4.5vw, 1.3rem);
+        font-size: clamp(1.1rem, 4vw, 1.1rem);
     }
 }
 
