@@ -543,29 +543,82 @@ document.addEventListener('DOMContentLoaded', () => {
   initInfoBanner();
 });
 
-const baseUrl = (() => {
-    const scriptUrl = document.currentScript.src;
-    return scriptUrl.substring(0, scriptUrl.lastIndexOf('/'));
-})();
-
+/** ======================
+ *  Carousel pro AI literacy akce
+ *  ====================== */
 const grid = document.querySelector('.ai-literacy-actions__grid');
+const cards = document.querySelectorAll('.ai-literacy-card');
 const btnLeft = document.querySelector('.carousel-btn.left');
 const btnRight = document.querySelector('.carousel-btn.right');
 
-btnRight.addEventListener('click', () => {
-    const cardWidth = grid.querySelector('.ai-literacy-card').offsetWidth + parseInt(getComputedStyle(grid).gap);
-    grid.scrollBy({ left: cardWidth, behavior: 'smooth' });
+let currentIndex = 0;
+let isDragging = false;
+let startX;
+let scrollLeft;
 
-    if (grid.scrollLeft + grid.offsetWidth >= grid.scrollWidth - 1) {
-        setTimeout(() => { grid.scrollLeft = 0; }, 300);
-    }
+// 🔹 zvýrazni aktuální kartu
+function updateActiveCard() {
+  cards.forEach((card, i) => {
+    card.classList.toggle('active', i === currentIndex);
+  });
+}
+
+// 🔹 posuň o jednu kartu
+function scrollToCard(index) {
+  const card = cards[index];
+  if (!card) return;
+  grid.scrollTo({
+    left: card.offsetLeft - grid.offsetLeft,
+    behavior: 'smooth',
+  });
+  updateActiveCard();
+}
+
+// 🔹 tlačítka
+btnRight.addEventListener('click', () => {
+  currentIndex = (currentIndex + 1) % cards.length;
+  scrollToCard(currentIndex);
 });
 
 btnLeft.addEventListener('click', () => {
-    const cardWidth = grid.querySelector('.ai-literacy-card').offsetWidth + parseInt(getComputedStyle(grid).gap);
-    grid.scrollBy({ left: -cardWidth, behavior: 'smooth' });
-
-    if (grid.scrollLeft <= 0) {
-        setTimeout(() => { grid.scrollLeft = grid.scrollWidth; }, 300);
-    }
+  currentIndex = (currentIndex - 1 + cards.length) % cards.length;
+  scrollToCard(currentIndex);
 });
+
+// 🔹 přetažení prstem
+grid.addEventListener('mousedown', e => {
+  isDragging = true;
+  startX = e.pageX - grid.offsetLeft;
+  scrollLeft = grid.scrollLeft;
+});
+grid.addEventListener('mouseleave', () => (isDragging = false));
+grid.addEventListener('mouseup', e => {
+  if (!isDragging) return;
+  isDragging = false;
+  const moveX = e.pageX - grid.offsetLeft - startX;
+  if (moveX > 50) btnLeft.click();
+  else if (moveX < -50) btnRight.click();
+});
+grid.addEventListener('mousemove', e => {
+  if (!isDragging) return;
+  e.preventDefault();
+  const x = e.pageX - grid.offsetLeft;
+  const walk = (x - startX) * 1.2;
+  grid.scrollLeft = scrollLeft - walk;
+});
+
+// 🔹 touch (mobil)
+grid.addEventListener('touchstart', e => {
+  isDragging = true;
+  startX = e.touches[0].pageX;
+  scrollLeft = grid.scrollLeft;
+});
+grid.addEventListener('touchend', e => {
+  isDragging = false;
+  const moveX = e.changedTouches[0].pageX - startX;
+  if (moveX > 50) btnLeft.click();
+  else if (moveX < -50) btnRight.click();
+});
+
+updateActiveCard();
+scrollToCard(currentIndex);
