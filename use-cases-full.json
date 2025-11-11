@@ -872,7 +872,7 @@
     "Instituce": "Ministerstvo vnitra",
     "Dodavatel": "Cloudfield a.s.",
     "Stav projektu": "Pilot / PoC",
-    "Očekávané dopady": "Výrazné úspory času při zpracování přestupkové agendy\nSnížení chyb způsobených lidským faktorem při rutinní administrativě\nSjednocení kvality rozhodování napříč různými úřady\nAutomatizace kontroly kompletnosti spisů\nJednotnost rozhodovací praxe při podobných případech\nPostupné zavedení umožní přizpůsobení specifickým potřebám jednotlivých úřadů",
+    "Očekávané dopady": "Ověření potenciálu AI technologie v rámci přestupkové agendy\nOvěření potenciálu v analýze textu a klasifikaci podkladů",
     "Vyhodnocení úspěšnosti": "Systém byl navržen jako strukturovaný workflow s možností automatického směrování. Implementována modulární architektura umožňující nezávislé úpravy jednotlivých uzlů. Zajištěna integrace s Azure cloud službami pro vysokou dostupnost a škálovatelnost. Vytvořeny konfigurovatelné workflow pro různé typy řízení. Připraven pro testování s pilotními úřady",
     "Poučení pro příští projekty": "Mikroservisní architektura umožňuje nezávislý vývoj a postupné nasazování nových funkcí. Cloudové nasazení na Azure zajišťuje compliance s evropskými standardy a GDPR. Důležitost vrstvené bezpečnostní architektury s OAuth ověřením a rate limitingem. Využití LangChain a LangGraph poskytuje modularitu a možnost integrace s různými LLM službami. Strukturovaný workflow graf umožňuje flexibilní rozhodovací logiku a rozšiřitelnost systému",
     "Zdroj": null,
