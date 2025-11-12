@@ -2362,6 +2362,13 @@ th.locked .glossary-title::after {
   overflow: hidden;
 }
 
+/* Wrapper pro grid – omezuje viditelný prostor na oblast mezi šipkami */
+.ai-literacy-actions__viewport {
+  overflow-x: hidden;
+  position: relative;
+  margin: 0 1rem; /* mezera od šipek: 3rem = 1rem šipka + 2rem vizuální odsazení */
+}
+
 .ai-literacy-actions__grid {
   display: flex;
   gap: 1.5rem;
@@ -2370,6 +2377,11 @@ th.locked .glossary-title::after {
   scroll-snap-type: x mandatory;
   -webkit-overflow-scrolling: touch;
   scrollbar-width: none;
+  position: relative;
+
+  /* odsazení od šipek */
+  padding: 0 1rem; /* 2.5rem = šipka (1rem) + prostor (1.5rem) */
+  box-sizing: content-box; /* aby padding neovlivnil scroll šířku */
 }
 
 .ai-literacy-card {
@@ -2404,30 +2416,30 @@ th.locked .glossary-title::after {
     height: 80%;
 }
 
-.ai-literacy-card__motto {
+p.ai-literacy-card__motto {
   margin: 0;
   font-weight: 700;
   font-size: 1.05rem;
   color: #1a1a1a;
-  white-space: nowrap; /* jeden řádek */
   overflow: hidden;
+  text-align: left;
   text-overflow: ellipsis;
 }
 
-.ai-literacy-card__title {
+p.ai-literacy-card__title {
   margin: 0;
   font-weight: 600;
   color: var(--color-primary, #207315);
-  white-space: nowrap; /* jeden řádek */
   overflow: hidden;
   text-overflow: ellipsis;
+  text-align: left;
   line-height: 1.2;
 }
 
 /* Šipky */
 .carousel-btn {
   position: absolute;
-  top: 50%;
+  top: 62%;
   transform: translateY(-50%);
   background: transparent;
   border: none;
@@ -2435,10 +2447,10 @@ th.locked .glossary-title::after {
   padding: 0.3em 0.4em;
   border-radius: 50%;
   cursor: pointer;
-  z-index: 5;
+  z-index: 10;
 }
-.carousel-btn.left { left: 0.5rem; }
-.carousel-btn.right { right: 0.5rem; }
+.carousel-btn.left { left: -0.25rem; }
+.carousel-btn.right { right: -0.25rem; }
 
 /* --- Responsivní úpravy --- */
 @media (max-width: 768px) {
