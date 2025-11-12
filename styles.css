@@ -2371,9 +2371,6 @@ th.locked .glossary-title::after {
   -webkit-overflow-scrolling: touch;
   scrollbar-width: none;
 }
-.ai-literacy-actions__grid::-webkit-scrollbar {
-  display: none;
-}
 
 .ai-literacy-card {
   flex: 0 0 30%; /* 3 karty na desktop */
@@ -2407,14 +2404,6 @@ th.locked .glossary-title::after {
     height: 80%;
 }
 
-.ai-literacy-card__content {
-  display: flex;
-  flex-direction: column; /* texty pod sebe */
-  justify-content: center;
-  gap: 0.25rem;
-  overflow: hidden;
-}
-
 .ai-literacy-card__motto {
   margin: 0;
   font-weight: 700;
@@ -2435,49 +2424,52 @@ th.locked .glossary-title::after {
   line-height: 1.2;
 }
 
-.ai-literacy-card.active {
-  transform: scale(1.05);
-  box-shadow: 0 12px 28px rgba(32,115,21,0.2);
-}
-
-@media (min-width: 640px) {
-    .ai-literacy-card { flex: 0 0 calc(45% - 1rem); }
-}
-@media (min-width: 1024px) {
-    .ai-literacy-card { flex: 0 0 calc(30% - 1rem); }
-}
-
 /* Šipky */
 .carousel-btn {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  background: #fff;
+  background: transparent;
   border: none;
+  font-size: 1.8rem;
+  padding: 0.3em 0.4em;
   border-radius: 50%;
-  width: 42px;
-  height: 42px;
   cursor: pointer;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-  z-index: 10;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  z-index: 5;
 }
-.carousel-btn i {
-  font-size: 1.4rem;
-  color: #207315;
-}
-.carousel-btn.left {
-  left: 0.5rem;
-}
-.carousel-btn.right {
-  right: 0.5rem;
-}
+.carousel-btn.left { left: 0.5rem; }
+.carousel-btn.right { right: 0.5rem; }
 
 /* --- Responsivní úpravy --- */
 @media (max-width: 768px) {
   .ai-literacy-card {
     flex: 0 0 90%;
+    height: auto; /* aby se výška přizpůsobila víceřádkovému textu */
+    align-items: flex-start; /* zarovná obsah nahoře */
+    padding: 1rem;
+  }
+
+  .ai-literacy-card__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .ai-literacy-card__motto,
+  .ai-literacy-card__title {
+    white-space: normal; /* umožní zalomení textu */
+    overflow: visible;
+    text-overflow: unset;
+    font-size: clamp(0.9rem, 4vw, 1rem); /* menší, responsivní písmo */
+    line-height: 1.3;
+  }
+
+  .ai-literacy-card__motto {
+    font-weight: 700;
+  }
+
+  .ai-literacy-card__title {
+    font-weight: 600;
+    color: var(--color-primary, #207315);
   }
 }

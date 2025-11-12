@@ -547,78 +547,70 @@ document.addEventListener('DOMContentLoaded', () => {
  *  Carousel pro AI literacy akce
  *  ====================== */
 const grid = document.querySelector('.ai-literacy-actions__grid');
-const cards = document.querySelectorAll('.ai-literacy-card');
 const btnLeft = document.querySelector('.carousel-btn.left');
 const btnRight = document.querySelector('.carousel-btn.right');
 
-let currentIndex = 0;
-let isDragging = false;
+const cardWidth = grid.querySelector('.ai-literacy-card').offsetWidth + 16; // mezera mezi kartami
+
+// 🔹 Funkce pro aktualizaci viditelnosti šipek
+function updateArrows() {
+  const maxScrollLeft = grid.scrollWidth - grid.clientWidth;
+
+  if (grid.scrollLeft <= 5) {
+    btnLeft.style.display = 'none'; // skryj levou
+  } else {
+    btnLeft.style.display = 'flex';
+  }
+
+  if (grid.scrollLeft >= maxScrollLeft - 5) {
+    btnRight.style.display = 'none'; // skryj pravou
+  } else {
+    btnRight.style.display = 'flex';
+  }
+}
+
+// 🔹 Posun vlevo/vpravo
+btnLeft.addEventListener('click', () => {
+  grid.scrollBy({ left: -cardWidth, behavior: 'smooth' });
+});
+
+btnRight.addEventListener('click', () => {
+  grid.scrollBy({ left: cardWidth, behavior: 'smooth' });
+});
+
+// 🔹 Drag/swipe ovládání
+let isDown = false;
 let startX;
 let scrollLeft;
 
-// 🔹 zvýrazni aktuální kartu
-function updateActiveCard() {
-  cards.forEach((card, i) => {
-    card.classList.toggle('active', i === currentIndex);
-  });
-}
-
-// 🔹 posuň o jednu kartu
-function scrollToCard(index) {
-  const card = cards[index];
-  if (!card) return;
-  grid.scrollTo({
-    left: card.offsetLeft - grid.offsetLeft,
-    behavior: 'smooth',
-  });
-  updateActiveCard();
-}
-
-// 🔹 tlačítka
-btnRight.addEventListener('click', () => {
-  currentIndex = (currentIndex + 1) % cards.length;
-  scrollToCard(currentIndex);
-});
-
-btnLeft.addEventListener('click', () => {
-  currentIndex = (currentIndex - 1 + cards.length) % cards.length;
-  scrollToCard(currentIndex);
-});
-
-// 🔹 přetažení prstem
-grid.addEventListener('mousedown', e => {
-  isDragging = true;
+grid.addEventListener('mousedown', (e) => {
+  isDown = true;
   startX = e.pageX - grid.offsetLeft;
   scrollLeft = grid.scrollLeft;
+  grid.classList.add('dragging');
 });
-grid.addEventListener('mouseleave', () => (isDragging = false));
-grid.addEventListener('mouseup', e => {
-  if (!isDragging) return;
-  isDragging = false;
-  const moveX = e.pageX - grid.offsetLeft - startX;
-  if (moveX > 50) btnLeft.click();
-  else if (moveX < -50) btnRight.click();
+
+grid.addEventListener('mouseleave', () => {
+  isDown = false;
+  grid.classList.remove('dragging');
 });
-grid.addEventListener('mousemove', e => {
-  if (!isDragging) return;
+
+grid.addEventListener('mouseup', () => {
+  isDown = false;
+  grid.classList.remove('dragging');
+});
+
+grid.addEventListener('mousemove', (e) => {
+  if (!isDown) return;
   e.preventDefault();
   const x = e.pageX - grid.offsetLeft;
   const walk = (x - startX) * 1.2;
   grid.scrollLeft = scrollLeft - walk;
 });
 
-// 🔹 touch (mobil)
-grid.addEventListener('touchstart', e => {
-  isDragging = true;
-  startX = e.touches[0].pageX;
-  scrollLeft = grid.scrollLeft;
-});
-grid.addEventListener('touchend', e => {
-  isDragging = false;
-  const moveX = e.changedTouches[0].pageX - startX;
-  if (moveX > 50) btnLeft.click();
-  else if (moveX < -50) btnRight.click();
-});
+// 🔹 Sleduj scroll a aktualizuj stav šipek
+grid.addEventListener('scroll', updateArrows);
 
-updateActiveCard();
-scrollToCard(currentIndex);
+// 🔹 Inicializace po načtení
+window.addEventListener('load', updateArrows);
+window.addEventListener('resize', updateArrows);
