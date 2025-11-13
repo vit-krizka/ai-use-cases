@@ -543,6 +543,11 @@ document.addEventListener('DOMContentLoaded', () => {
   initInfoBanner();
 });
 
+const baseUrl = (() => {
+    const scriptUrl = document.currentScript.src;
+    return scriptUrl.substring(0, scriptUrl.lastIndexOf('/'));
+})();
+
 /** ======================
  *  Carousel pro AI literacy akce
  *  ====================== */
