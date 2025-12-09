@@ -1137,5 +1137,41 @@
     "Označení zdroje": null,
     "Obor činnosti": "Zdravotnictví",
     "Kategorie use case": "Optimalizace úředních procesů; Predikce a automazitované rozhodování"
+  },
+  {
+    "id": 66,
+    "Název projektu": "Třídění požadavků v helpdesku",
+    "Typ umělé inteligence": "Azure AI\nPHP",
+    "Hlavní kategorie use case": "Predikce a automatizované rozhodování",
+    "Krátký popis": "Projekt řeší automatické třídění požadavků v interním helpdesku. Robot přes API načítá požadavky přijaté e-mailem do vstupní fronty, analyzuje jejich obsah a podle něj je automaticky zařazuje do správné fronty (IT / správa budov a další oblasti).Účelem je zjednodušit podávání požadavků a zrychlit jejich předání správnému řešiteli. Cílem je snížit ruční přeposílání a přetřiďování ticketů, zkrátit dobu od přijetí požadavku k jeho řešení a zvýšit konzistenci a kvalitu zařazení. Testování probíhalo tak, že robot nejprve paralelně vyhodnocoval ručně zadané požadavky a pouze navrhoval, do které fronty by je zařadil, teprve po ověření úspěšnosti byl nasazen pro automatické zařazování.",
+    "Řešený problém": "Interní helpdesk má cca 50 různých front obsluhovaných zhruba 20 řešiteli, takže pro uživatele je obtížné vybrat správnou frontu a často dochází k chybnému zařazení požadavků. To vede ke zdržení, opakovanému přeposílání mezi frontami a zbytečné administrativní zátěži na straně řešitelů. AI je zde využitá k tomu, aby z textu e-mailu spolehlivě určila správnou kategorii/frontu a minimalizovala tyto chyby hned při přijetí požadavku.",
+    "Instituce": "Krajský úřad Jihočeského kraje",
+    "Dodavatel": "Interní vývoj",
+    "Stav projektu": "Produkce",
+    "Očekávané dopady": "Zvýšen byl hlavně komfort při sdělování problémů vůči IT a správě budov\nUživatelé již ani nemusí používat helpdesk. Jen pošlou e-mail na adresu helpdesku",
+    "Vyhodnocení úspěšnosti":null,
+    "Poučení pro příští projekty": null,
+    "Zdroj": null,
+    "Označení zdroje": null,
+    "Obor činnosti": "Místní rozvoj",
+    "Kategorie use case": "Optimalizace úředních procesů"
+  },
+  {
+    "id": 67,
+    "Název projektu": "Interní chatbot",
+    "Typ umělé inteligence": "Azure AI\n Azure cognitive search\nPHP, Javascript",
+    "Hlavní kategorie use case": "Optimalizace úředních procesů",
+    "Krátký popis": "AI asistent pro zaměstnance Jihočeského kraje, který pomáhá rychle dohledat a srozumitelně vysvětlit informace z interních zdrojů, jež nemáme nebo nechceme mít veřejně dostupné v cloudu (např. vnitřní předpisy a směrnice, návody, metodiky a další interní dokumenty). Zároveň umí pracovat i se strukturovanými daty přes interní API (např. telefonní seznam, databáze obcí či zřizovaných organizací) a zjednodušuje některé administrativní úkony, například předvyplnění vybraných personálních formulářů.Účelem projektu je sjednotit přístup k interním informacím a zrychlit jejich vyhledávání tak, aby zaměstnanci trávili méně času dohledáváním podkladů a více času vlastní agendou. Cílem je bezpečně zpřístupnit relevantní znalosti napříč úřadem, snížit chybovost způsobenou neaktuálními či neúplnými informacemi a vytvořit škálovatelné AI rozhraní dostupné pro všechny zaměstnance.",
+    "Řešený problém": "Hlavním důvodem, proč jsme řešení stavěli vlastními silami, byla možnost mít plnou kontrolu nad tím, jak se vyhledávají a skládají podklady pro kontext chatbota, a tento proces průběžně upravovat podle potřeb. Aktuálně chatbot prohledává interní směrnice a dokumenty v Azure Cognitive Search. Zároveň umí volat různá interní API, která vrací data např. z telefonního seznamu, databáze obcí nebo evidence zřizovaných organizací. Dále dokáže předvyplňovat vybrané personální formuláře (např. žádost o home office).Řešení je navržené jako multiagentní AI systém: každý agent má na starosti konkrétní zdroj dat, který umí samostatně obsloužit, filtrovat a dodat do odpovědi relevantní informace.",
+    "Instituce": "Krajský úřad Jihočeského kraje",
+    "Dodavatel": "Interní vývoj",
+    "Stav projektu": "Produkce",
+    "Očekávané dopady": "Vyšší využití interních směrnic: zaměstnanci čerpají informace z vnitřních směrnic ve větší míře přes chatbota (centralizovaný a jednotný přístup k informacím).\nZDenní vytížení: chatbot denně zpracuje přibližně 40 dotazů.\nNeomezený „ChatGPT styl“ přístup pro zaměstnance: chatbot slouží i jako jednoduché AI chatovací rozhraní a zaměstnanci s ním mohou komunikovat bez omezení (bez nutnosti individuálních licencí na uživatele).\nRychlejší dohledání informací (kvalitativně): kratší čas strávený hledáním v dokumentech a menší závislost na tom, „kdo ví kde co je“.",
+    "Vyhodnocení úspěšnosti":null,
+    "Poučení pro příští projekty": null,
+    "Zdroj": null,
+    "Označení zdroje": null,
+    "Obor činnosti": "Místní rozvoj",
+    "Kategorie use case": "Optimalizace úředních procesů; Generování obsahu a chatboti úředníků"
   }
 ]
