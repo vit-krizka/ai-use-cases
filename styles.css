@@ -5,7 +5,7 @@
     --color-black: #000;
     --color-white: #fff;
     --color-transparent: hsla(0, 0%, 100%, 0);
-    --color-primary: #207315;
+    --color-primary: #00387d;
     --color-primary-dark: #46ad48;
     --color-primary-100: #f7fff5;
     --color-primary-200: #e8f5e4;
@@ -13,7 +13,7 @@
     --color-primary-400: #a2d893;
     --color-primary-500: #6ba45c;
     --color-primary-600: #40852e;
-    --color-primary-700: #207315;
+    --color-primary-700: #00387d;
     --color-primary-800: #125600;
     --color-primary-900: #214021;
     --color-primary-950: #1f311f;
@@ -31,10 +31,10 @@
     --color-secondary-800: #262524;
     --color-secondary-900: #1d1c1b;
 
-    --primary: #207315;
+    --primary: #00387d;
     /* DIA green */
     --secondary: #f2f6fa;
-    --dark: rgb(32, 115, 21);
+    --dark: rgb(0, 70, 155);
     --text: #1a1a1a;
     --sidebar-width: 260px;
     --header-height: 103px;
@@ -759,7 +759,7 @@ footer .footer-bottom p {
     padding: 0.75rem 1.5rem;
     font-size: 1rem;
     font-weight: 600;
-    background-color: #207315 !important;
+    background-color: #00387d !important;
     /* zelená */
     color: #ffffff !important;
     /* bílý text */
@@ -772,7 +772,7 @@ footer .footer-bottom p {
     padding: 0.75rem 1.5rem;
     font-size: 1rem;
     font-weight: 600;
-    background-color: #207315 !important;
+    background-color: #00387d !important;
     /* zelená */
     color: #ffffff !important;
     /* bílý text */
@@ -2389,7 +2389,7 @@ p.ai-literacy-card__motto {
 p.ai-literacy-card__title {
   margin: 0;
   font-weight: 600;
-  color: var(--color-primary, #207315);
+  color: var(--color-primary, #00387d);
   overflow: hidden;
   text-overflow: ellipsis;
   text-align: left;
@@ -2442,6 +2442,6 @@ p.ai-literacy-card__title {
 
   .ai-literacy-card__title {
     font-weight: 600;
-    color: var(--color-primary, #207315);
+    color: var(--color-primary, #00387d);
   }
 }
